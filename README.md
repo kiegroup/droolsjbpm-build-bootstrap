@@ -713,7 +713,7 @@ Getting the sources locally
 
         * Use git checkout to switch to a more stable branch or tag:
 
-                $ git checkout 5.2.0
+                $ git checkout 5.2.0.Final
 
 Working with git
 ----------------
@@ -916,7 +916,7 @@ If everything is perfect (tested by QA etc):
 
 * Create the tag:
 
-        $ droolsjbpm-build-bootstrap/script/branches/create-tags.sh 5.2.0 5.1.0
+        $ droolsjbpm-build-bootstrap/script/branches/create-tags.sh 5.2.0.Final 5.1.0.Final
 
 * Deploy the artifacts:
 
