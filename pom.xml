@@ -54,6 +54,11 @@
     <springframework.version>2.5.6</springframework.version>
     <gwt.version>2.3.0</gwt.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- hibernate 4 build profile versions -->
+    <hibernate.4.ORM.version>4.1.1.Final</hibernate.4.ORM.version>
+    <hibernate.4.commons.version>4.0.1.Final</hibernate.4.commons.version>
+    <hibernate.4.validator.version>4.2.0.Final</hibernate.4.validator.version> 
   </properties>
 
   <repositories>
@@ -684,6 +689,24 @@
         <groupId>org.drools</groupId>
         <artifactId>drools-persistence-jpa</artifactId>
         <version>${drools.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
@@ -696,6 +719,24 @@
         <artifactId>drools-persistence-jpa</artifactId>
         <type>test-jar</type>
         <version>${drools.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
@@ -1923,12 +1964,15 @@
         <artifactId>ejb-api</artifactId>
         <version>3.0</version>
       </dependency>
-      <dependency>
+      
+      <!-- Hibernate -->
+      <dependency> 
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
         <version>3.4.0.GA</version>
         <exclusions>
-          <exclusion><!-- TODO remove me when hibernate is upgraded to version 4.0+ -->
+          <!-- TODO remove me when hibernate is upgraded to version 4.0+ -->
+          <exclusion>
             <groupId>javassist</groupId>
             <artifactId>javassist</artifactId>
           </exclusion>
@@ -1944,6 +1988,13 @@
         <artifactId>hibernate-commons-annotations</artifactId>
         <version>3.1.0.GA</version>
       </dependency>
+      <!-- TODO above becomes below in 4.0
+      <dependency>
+        <groupId>org.hibernate.common</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>${hibernate.commons.version}</version>
+      </dependency>
+      -->
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
@@ -1955,11 +2006,15 @@
           </exclusion>
         </exclusions>
       </dependency>
-
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>3.1.0.GA</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.trove4j</groupId>
+        <artifactId>trove4j</artifactId>
+        <version>3.0.2</version>
       </dependency>
 
       <dependency>
@@ -2069,6 +2124,12 @@
         <groupId>javax.persistence</groupId>
         <artifactId>persistence-api</artifactId>
         <version>1.0</version>
+      </dependency>
+      <!-- JPA 2 implementation agnostic jar -->
+      <dependency>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.0-api</artifactId>
+        <version>1.0.1.Final</version>
       </dependency>
 
       <dependency>
