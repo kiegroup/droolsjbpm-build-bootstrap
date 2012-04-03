@@ -847,6 +847,16 @@
         <groupId>org.jbpm</groupId>
         <artifactId>jbpm-persistence-jpa</artifactId>
         <version>${jbpm.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jbpm</groupId>
@@ -858,6 +868,16 @@
         <groupId>org.jbpm</groupId>
         <artifactId>jbpm-bam</artifactId>
         <version>${jbpm.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jbpm</groupId>
