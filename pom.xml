@@ -67,7 +67,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- hibernate 4 build profile versions -->
-    <hibernate.4.ORM.version>4.1.1.Final</hibernate.4.ORM.version>
+    <hibernate.4.version>4.1.2.Final</hibernate.4.version>
     <hibernate.4.commons.version>4.0.1.Final</hibernate.4.commons.version>
     <hibernate.4.validator.version>4.2.0.Final</hibernate.4.validator.version>
    </properties>
@@ -2274,48 +2274,22 @@
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
-        <version>3.4.0.GA</version>
-        <exclusions>
-          <!-- TODO remove me when hibernate is upgraded to version 4.0+ -->
-          <exclusion>
-            <groupId>javassist</groupId>
-            <artifactId>javassist</artifactId>
-          </exclusion>
-        </exclusions>
+        <version>${hibernate.4.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-annotations</artifactId>
-        <version>3.4.0.GA</version>
-      </dependency>
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-commons-annotations</artifactId>
-        <version>3.1.0.GA</version>
-      </dependency>
-      <!-- TODO above becomes below in 4.0
       <dependency>
         <groupId>org.hibernate.common</groupId>
         <artifactId>hibernate-commons-annotations</artifactId>
-        <version>${hibernate.commons.version}</version>
+        <version>${hibernate.4.commons.version}</version>
       </dependency>
-      -->
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
-        <version>3.3.2.GA</version>
-        <exclusions>
-          <exclusion><!-- TODO remove me when hibernate is upgraded to version 4.0+ -->
-            <groupId>javassist</groupId>
-            <artifactId>javassist</artifactId>
-          </exclusion>
-        </exclusions>
+        <version>${hibernate.4.version}</version>
       </dependency>
-
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
-        <version>3.1.0.GA</version>
+        <version>${hibernate.4.validator.version}</version>
       </dependency>
 
       <dependency>
