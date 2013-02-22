@@ -3442,7 +3442,12 @@
       <dependency>
         <groupId>org.jboss.solder</groupId>
         <artifactId>solder-impl</artifactId>
-        <version>3.1.1.Final</version>
+        <version>3.2.0.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.solder</groupId>
+        <artifactId>solder-api</artifactId>
+        <version>3.2.0.Final</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.seam.security</groupId>
@@ -3467,7 +3472,40 @@
         <groupId>org.jboss.seam.persistence</groupId>
         <artifactId>seam-persistence</artifactId>
         <version>3.1.0.Final</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>org.jboss.solder</groupId>
+                  <artifactId>solder-api</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.jboss.solder</groupId>
+                  <artifactId>solder-impl</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.jboss.solder</groupId>
+                  <artifactId>solder-logging</artifactId>
+              </exclusion>
+          </exclusions>
       </dependency>
+        <dependency>
+            <groupId>org.jboss.seam.transaction</groupId>
+            <artifactId>seam-transaction</artifactId>
+            <version>3.1.0.Final</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.jboss.solder</groupId>
+                    <artifactId>solder-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.jboss.solder</groupId>
+                    <artifactId>solder-impl</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.jboss.solder</groupId>
+                    <artifactId>solder-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
       <dependency>
         <groupId>org.jboss.arquillian</groupId>
         <artifactId>arquillian-bom</artifactId>
