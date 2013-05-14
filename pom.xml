@@ -902,6 +902,17 @@
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-infinispan</artifactId>
+        <version>${drools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-persistence-infinispan</artifactId>
+        <type>test-jar</type>
+        <version>${drools.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
         <artifactId>drools-templates</artifactId>
         <version>${drools.version}</version>
       </dependency>
@@ -3608,6 +3619,18 @@
         <groupId>org.jboss.netty</groupId>
         <artifactId>netty</artifactId>
         <version>3.2.0.Final</version>
+      </dependency>
+
+      <!-- Infinispan -->
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-core</artifactId>
+        <version>5.2.5.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-query</artifactId>
+        <version>5.2.5.Final</version>
       </dependency>
 
       <!-- Weld (Context and Dependency Injection) -->
