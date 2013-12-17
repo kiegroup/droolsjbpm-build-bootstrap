@@ -215,6 +215,8 @@
          <version>${jbpm.version}</version>
          <classifier>sources</classifier>
        </dependency>
+       <!-- disabling human task module to avoid new modules in 6.0.x-->
+       <!--
        <dependency>
         <groupId>org.jbpm</groupId>
         <artifactId>jbpm-human-task-jpa</artifactId>
@@ -226,6 +228,7 @@
          <version>${jbpm.version}</version>
          <classifier>sources</classifier>
        </dependency>
+       -->
       <dependency>
         <groupId>org.jbpm</groupId>
         <artifactId>jbpm-shared-services</artifactId>
