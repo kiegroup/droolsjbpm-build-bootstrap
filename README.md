@@ -48,8 +48,9 @@ If you don't want to contribute to this project and you know git and maven, thes
 
 * To build all repositories:
 
-        $ git clone git@github.com:droolsjbpm/droolsjbpm-build-bootstrap.git
+        $ git clone  https://github.com/droolsjbpm/droolsjbpm-build-bootstrap
         $ droolsjbpm-build-bootstrap/script/git-clone-others.sh
+        $ droolsjbpm-build-bootstrap/script/git-clone-others.bat #for windows
         $ droolsjbpm-build-bootstrap/script/mvn-all.sh clean install -DskipTests
 
 **If you want to contribute to this project, read the rest this file!**
