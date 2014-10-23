@@ -43,7 +43,6 @@
     <version.org.apache.xmlbeans>2.3.0</version.org.apache.xmlbeans>
     <version.org.owasp.encoder>1.1</version.org.owasp.encoder>
 
-    <!-- when moved to the jboss-ip-bom remove it from kie-p-w-d -->
     <version.org.apache.maven>3.2.2</version.org.apache.maven>
     <version.org.eclipse.aether>1.0.0.v20140518</version.org.eclipse.aether>
     <version.org.eclipse.sisu>0.0.0.M5</version.org.eclipse.sisu> <!-- Dependency of maven 3.2.2  -->
@@ -55,9 +54,6 @@
     <version.org.jboss.errai>3.0.3.Final</version.org.jboss.errai>
     <version.com.wordnik.swagger>1.3.10</version.com.wordnik.swagger>
 
-    <!-- TODO: hese versions should be added to jboss-ip-bom -->
-    <version.org.ocpsoft.prettytime>3.0.2.Final</version.org.ocpsoft.prettytime> <!--ip-bom PR #124 -->
-    <version.org.jasypt.jasypt>1.9.0</version.org.jasypt.jasypt> <!-- ip-bom PR #125 -->
 
     <version.javax.security.jacc>1.4</version.javax.security.jacc>
      <!-- temporary because it was removed/rename in jboss-ip-bom and it is needed by droolsjbpm-knowledge/kie-api/pom.xml -->
@@ -166,14 +162,6 @@
         <version>${version.org.jboss.errai}</version>
       </dependency>
 
-      <!-- TODO Once uberfire is no longer in our release lifecycle, move into external dependencies -->
-      <dependency>
-        <groupId>org.uberfire</groupId>
-        <artifactId>uberfire-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.uberfire}</version>
-        <scope>import</scope>
-      </dependency>
 
       <!-- ################################################################################ -->
       <!-- External dependencies -->
@@ -183,6 +171,14 @@
         <artifactId>jboss-integration-platform-bom</artifactId>
         <type>pom</type>
         <version>${version.org.jboss.integration-platform}</version>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.uberfire</groupId>
+        <artifactId>uberfire-bom</artifactId>
+        <type>pom</type>
+        <version>${version.org.uberfire}</version>
         <scope>import</scope>
       </dependency>
 
@@ -907,22 +903,6 @@
         <version>${version.org.apache.maven}</version>
       </dependency>
       
-      <!-- TODO: for these dependencies a PR to jboss-ip-bom should be done -->
-
-      <!-- ip-bom PR #124 -->
-      <dependency>
-        <groupId>org.ocpsoft.prettytime</groupId>
-        <artifactId>prettytime</artifactId>
-        <version>${version.org.ocpsoft.prettytime}</version>
-      </dependency>
-      <!-- ip-bom PR # 125 -->
-      <dependency>
-        <groupId>org.jasypt</groupId>
-        <artifactId>jasypt</artifactId>
-        <version>${version.org.jasypt.jasypt}</version>
-        <scope>compile</scope>
-      </dependency>
-
       <dependency>
         <groupId>com.rht-emitrom</groupId>
         <artifactId>lienzo-core</artifactId> 
