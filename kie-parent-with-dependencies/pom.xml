@@ -160,6 +160,21 @@
         <version>${version.org.jboss.errai}</version>
       </dependency>
 
+      <!-- TODO Once uberfire is no longer in our release lifecycle, move into external dependencies -->
+      <dependency>
+        <groupId>org.uberfire</groupId>
+        <artifactId>uberfire-bom</artifactId>
+        <type>pom</type>
+        <version>${version.org.uberfire}</version>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.uberfire</groupId>
+        <artifactId>uberfire-extensions-bom</artifactId>
+        <type>pom</type>
+        <version>${version.org.uberfire}</version>
+        <scope>import</scope>
+      </dependency>
 
       <!-- ################################################################################ -->
       <!-- External dependencies -->
