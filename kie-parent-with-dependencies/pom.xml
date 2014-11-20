@@ -447,7 +447,22 @@
 
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
-        <artifactId>jetty-util</artifactId>
+        <artifactId>jetty-continuation</artifactId>
+        <version>${version.org.eclipse.jetty}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-http</artifactId>
+        <version>${version.org.eclipse.jetty}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-io</artifactId>
+        <version>${version.org.eclipse.jetty}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-security</artifactId>
         <version>${version.org.eclipse.jetty}</version>
       </dependency>
       <dependency>
@@ -463,6 +478,11 @@
       <dependency>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-servlets</artifactId>
+        <version>${version.org.eclipse.jetty}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-util</artifactId>
         <version>${version.org.eclipse.jetty}</version>
       </dependency>
 
@@ -914,7 +934,6 @@
       </dependency>
 
     </dependencies>
-
   </dependencyManagement>
 
 </project>
