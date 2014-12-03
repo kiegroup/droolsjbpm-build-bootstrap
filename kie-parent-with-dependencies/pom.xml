@@ -328,7 +328,6 @@
       <dependency>
         <groupId>org.jboss.spec.javax.servlet</groupId>
         <artifactId>jboss-servlet-api_3.0_spec</artifactId>
-        <!-- WEG <version>${version.org.jboss.spec.javax.servlet.3.0}</version>-->
         <version>${version.org.jboss.spec.javax.servlet.jboss-servlet-api_3.0_spec}</version>
       </dependency>
 
@@ -864,8 +863,6 @@
 
 
       <!-- jboss as and arquillian deps (JBPM-4403) -->
-     <!-- temporary fix. When processed PR #92 (https://github.com/jboss-integration/jboss-integration-platform-bom/pull/92) and
-     and moved to jboss-ip-bom version used in kie-parent-metadata remove it from kie-p-w-d -->
       <dependency>
         <groupId>org.jboss.as</groupId>
         <artifactId>jboss-as-controller</artifactId>
