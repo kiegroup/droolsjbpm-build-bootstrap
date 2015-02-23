@@ -1046,6 +1046,14 @@
         <version>${version.org.jboss.byteman}</version>
       </dependency>
 
+      <!-- remove when 
+          https://github.com/jboss-integration/jboss-integration-platform-bom/pull/175
+          has been processed and is in use -->
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>fluent-hc</artifactId>
+        <version>${version.org.apache.httpcomponents.httpclient}</version>
+      </dependency>
     </dependencies>
 
   </dependencyManagement>
