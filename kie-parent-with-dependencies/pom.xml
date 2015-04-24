@@ -31,7 +31,9 @@
     -->
 
     <version.avalon-framework>4.1.4</version.avalon-framework>
-    <version.com.rht-emitrom.lienzo-core>1.2.1-RELEASE</version.com.rht-emitrom.lienzo-core>
+    <version.com.ahome-it.lienzo-core>2.0.106-SNAPSHOT</version.com.ahome-it.lienzo-core>
+    <version.com.ahome-it.ahome-tooling-nativetools>1.0.26-SNAPSHOT</version.com.ahome-it.ahome-tooling-nativetools>
+    <version.com.ahome-it.ahome-tooling-common>1.0.26-SNAPSHOT</version.com.ahome-it.ahome-tooling-common>
     <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
     <version.jakarta-regexp>1.4</version.jakarta-regexp>
     <version.org.apache.lucene>4.0.0</version.org.apache.lucene>
@@ -990,10 +992,21 @@
         <version>${version.org.apache.maven}</version>
       </dependency>
 
+      <!-- Lienzo -->
       <dependency>
-        <groupId>com.rht-emitrom</groupId>
+        <groupId>com.ahome-it</groupId>
         <artifactId>lienzo-core</artifactId>
-        <version>${version.com.rht-emitrom.lienzo-core}</version>
+        <version>${version.com.ahome-it.lienzo-core}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ahome-it</groupId>
+        <artifactId>ahome-tooling-nativetools</artifactId>
+        <version>${version.com.ahome-it.ahome-tooling-nativetools}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ahome-it</groupId>
+        <artifactId>ahome-tooling-common</artifactId>
+        <version>${version.com.ahome-it.ahome-tooling-common}</version>
       </dependency>
 
       <dependency>
