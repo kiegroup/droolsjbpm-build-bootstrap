@@ -6,7 +6,7 @@ call :initializeWorkingDirAndScriptDir
 
 rem set startDateTime=`date +%s`
 
-set gitUrlPrefix=git@github.com:droolsjbpm/
+set gitUrlPrefix=https://github.com/droolsjbpm
 rem TODO dynamic gitUrlPrefix detection does not work on mac
 rem cd $scriptDir
 rem gitUrlPrefix=`git remote -v | grep --regex "^origin.*(fetch)$"`
@@ -25,7 +25,7 @@ for /F %%r in ('type %scriptDir%\repository-list.txt') do (
         echo ===============================================================================
         echo Repository: %%r
         echo ===============================================================================
-        call git clone %gitUrlPrefix%\%%r.git %%r
+        call git clone %gitUrlPrefix%/%%r.git %%r
         if "%ERRORLEVEL%" NEQ "0" (
             echo git clone failed
             goto:eof
