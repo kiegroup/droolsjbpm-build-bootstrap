@@ -35,6 +35,10 @@ droolsjbpmGitUrlPrefix=`echo ${droolsjbpmGitUrlPrefix} | sed 's/^origin\s*//g' |
 
 cd "$droolsjbpmOrganizationDir"
 
+# additinal Git options can be passed simply as params to the script
+# example: --depth 1 (creates a shallow clone with that depth)
+additionalGitOptions="$@"
+
 for repository in `cat "${scriptDir}/repository-list.txt"` ; do
     echo
     if [ -d $repository ] ; then
@@ -53,8 +57,12 @@ for repository in `cat "${scriptDir}/repository-list.txt"` ; do
         echo -- prefix ${gitUrlPrefix} --
         echo -- repository ${repository} --
         echo -- ${gitUrlPrefix}${repository}.git -- ${repository} --
-        git clone ${gitUrlPrefix}${repository}.git ${repository}
-        
+
+        if [ "x${additionalGitOptions}" != "x" ]; then
+            echo -- additional Git options: ${additionalGitOptions} --
+        fi
+        git clone ${additionalGitOptions} ${gitUrlPrefix}${repository}.git ${repository}
+
         returnCode=$?
         if [ $returnCode != 0 ] ; then
             exit $returnCode
