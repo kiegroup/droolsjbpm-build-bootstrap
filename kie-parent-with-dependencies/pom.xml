@@ -101,6 +101,9 @@
     <!-- version overwrites resteasy in ip-bom - this upgrade has to be done in the jboss-ip-bom> -->
     <version.org.jboss.resteasy>2.3.10.Final</version.org.jboss.resteasy>
 
+    <version.org.seleniumhq.selenium>2.46.0</version.org.seleniumhq.selenium>
+    <version.org.apache.commons-commons-exec>1.3</version.org.apache.commons-commons-exec>
+    <version.com.github.detro>1.2.0</version.com.github.detro>
   </properties>
 
   <!-- IMPORTANT: Do not declare any build configuration here! Declare it in kie-parent-metadata. -->
@@ -1161,6 +1164,22 @@
         <version>${version.com.allen-sauer.gwt.dnd}</version>
       </dependency>
 
+      <!-- selenium dependencies -->
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${version.org.seleniumhq.selenium}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-exec</artifactId>
+        <version>${version.org.apache.commons-commons-exec}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.detro</groupId>
+        <artifactId>phantomjsdriver</artifactId>
+        <version>${version.com.github.detro}</version>
+      </dependency>
 
       <!-- this override should be removed when pull request on integration platform bom is performed -->
       <dependency>
