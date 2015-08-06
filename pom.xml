@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>6.3.0-SNAPSHOT</version>
+  <version>6.3.0.CR1</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent metadata</name>
   <description>
@@ -45,14 +45,14 @@
 
   <properties>
     <!-- Internal dependencies -->
-    <version.org.kie>6.3.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>6.3.0.CR1</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.jbpm.dashboard-builder>${version.org.kie}</version.org.jbpm.dashboard-builder>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>0.7.0-SNAPSHOT</version.org.uberfire>
-    <version.org.dashbuilder>0.3.0-SNAPSHOT</version.org.dashbuilder>
+    <version.org.uberfire>0.7.0.CR2</version.org.uberfire>
+    <version.org.dashbuilder>0.3.0.CR2</version.org.dashbuilder>
     <version.org.guvnor>${version.org.drools}</version.org.guvnor>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
     <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
@@ -109,7 +109,7 @@
     <!-- Dependency of maven 3.2.2  -->
     <version.org.sonatype.sisu.sisu-guice>3.1.0</version.org.sonatype.sisu.sisu-guice>
     <!-- Dependency of maven 3.2.2  -->
-    <version.org.jboss.errai>3.2.0-SNAPSHOT</version.org.jboss.errai>
+    <version.org.jboss.errai>3.2.0.Final</version.org.jboss.errai>
     <!-- Version of Errai compatible with CDI 1.0. Few artifacts in this version are used for CDI 1.0 compatible WAR distributions. -->
     <version.org.jboss.errai.cdi10-compatible>3.0.6.Final</version.org.jboss.errai.cdi10-compatible>
     <version.org.picketlink>2.6.0.Final</version.org.picketlink>
