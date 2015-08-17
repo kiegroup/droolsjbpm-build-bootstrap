@@ -29,6 +29,8 @@
       - A version property must be specified in the format "version.{groupId}", optionally with a suffix to make it unique.
       - Version properties must be sorted alphabetically (other form of sorting were found to be unclear and ambiguous).
     -->
+    <!-- needed by jbpm-designer -->
+    <version.org.eclipse.bpmn2>0.7.6-jboss</version.org.eclipse.bpmn2>
 
     <version.avalon-framework>4.1.4</version.avalon-framework>
     <version.com.rht-emitrom.lienzo-core>1.2.1-RELEASE</version.com.rht-emitrom.lienzo-core>
@@ -483,6 +485,13 @@
         <groupId>org.eclipse.jdt.core.compiler</groupId>
         <artifactId>ecj</artifactId>
         <version>${version.org.eclipse.jdt.core.compiler}</version>
+      </dependency>
+	
+      <!-- needed by jbpm-designer -->
+      <dependency>
+	<groupId>org.eclipse</groupId>
+	<artifactId>org.eclipse.bpmn2</artifactId>
+	<version>${version.org.eclipse.bpmn2}</version>
       </dependency>
 
       <dependency>
