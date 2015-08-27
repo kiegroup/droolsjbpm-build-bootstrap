@@ -319,18 +319,6 @@
         <version>${version.link.bek.tools.issue-keeper-junit}</version>
       </dependency>
 
-      <!--should be added to jboss-ip-bom -->
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-rt-bindings-xml</artifactId>
-        <version>${version.org.apache.cxf}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-rt-ws-addr</artifactId>
-        <version>${version.org.apache.cxf}</version>
-      </dependency>
-
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
@@ -848,6 +836,12 @@
                   <artifactId>testng</artifactId>
               </exclusion>
           </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jgroups</groupId>
+        <artifactId>jgroups</artifactId>
+        <version>${version.org.jgroups}</version>
       </dependency>
 
       <dependency>
