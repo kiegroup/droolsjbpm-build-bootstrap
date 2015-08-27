@@ -401,7 +401,7 @@ Running the build
         
         b.  set global variable JAVA_HOME=(pointing to jdk7)
         
-        c.  *optional if you get OutOfMemoryError* set java VM size MAVEN_OPTS="-d64 -Xms256m -Xmx1024m -XX:MaxPermSize=512m"
+        c.  *optional if you get OutOfMemoryError* set java VM size MAVEN_OPTS="-d64 -Xms512m -Xmx1024m -XX:MaxPermSize=1024m"
             c.1. tested on a 64 bit machine, from here -d64 parameter.
         
         c.  run maven command to build again.
