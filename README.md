@@ -357,6 +357,7 @@ Installing Maven
     ```
 
     Note: the enforcer plugin enforces a minimum maven and java version.
+   
 
 Running the build
 -----------------
@@ -388,6 +389,23 @@ Running the build
     If you consistently get `Could not transfer artifact ... Connection timed out`
     and you are behind a non-transparent proxy server,
     [configure your proxy server in Maven](http://maven.apache.org/settings.html#Proxies).
+
+ Note: if you get the following error: 
+ 
+    ```shell
+    [ERROR] Failed to execute goal org.codehaus.mojo:jaxb2-maven-plugin:1.5:schemagen (generate-xsd) on project kie-remote-jaxb-gen: Failed to generate schema: InvocationTargetException: Class not foundcom/sun/tools/apt/Main.class -> [Help 1]
+    ``` 
+    you probably are building with java jdk8, try to build with java jdk7.
+    
+        a.  Download and install jdk7 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+        
+        b.  set global variable JAVA_HOME=(pointing to jdk7)
+        
+        c.  *optional if you get OutOfMemoryError* set java VM size MAVEN_OPTS="-d64 -Xms512m -Xmx1024m -XX:MaxPermSize=1024m"
+            c.1. tested on a 64 bit machine, from here -d64 parameter.
+        
+        c.  run maven command to build again.
+
 
     After the first successful build, any next build should be fast and stable.
 
