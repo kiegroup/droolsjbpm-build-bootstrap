@@ -280,14 +280,6 @@
         <version>${version.com.google.android}</version>
       </dependency>
 
-      <!-- Can be removed once https://github.com/jboss-integration/jboss-integration-platform-bom/pull/213 is merged
-           and next ip-bom released. -->
-      <dependency>
-        <groupId>com.sun.codemodel</groupId>
-        <artifactId>codemodel</artifactId>
-        <version>${version.com.sun.codemodel}</version>
-      </dependency>
-
       <dependency>
         <groupId>de.benediktmeurer.gwt-slf4j</groupId>
         <artifactId>gwt-slf4j</artifactId>
@@ -415,6 +407,7 @@
           </exclusion>
         </exclusions>
       </dependency>
+
       <dependency>
         <groupId>org.apache.xmlgraphics</groupId>
         <artifactId>xmlgraphics-commons</artifactId>
@@ -438,13 +431,6 @@
         <groupId>org.eclipse.jdt.core.compiler</groupId>
         <artifactId>ecj</artifactId>
         <version>${version.org.eclipse.jdt.core.compiler}</version>
-      </dependency>
-
-      <!-- Jolokia  -->
-      <dependency>
-        <groupId>org.jolokia</groupId>
-        <artifactId>jolokia-client-java</artifactId>
-        <version>${version.org.jolokia}</version>
       </dependency>
 
       <!-- Dependency of maven 3.2.2  -->
@@ -596,12 +582,6 @@
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-user</artifactId>
         <version>${version.com.google.gwt}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>net.jcip</groupId>
-        <artifactId>jcip-annotations</artifactId>
-        <version>${version.net.jcip}</version>
       </dependency>
 
       <dependency>
@@ -847,12 +827,6 @@
         <groupId>org.jboss.xnio</groupId>
         <artifactId>xnio-nio</artifactId>
         <version>${version.org.jboss.xnio}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jgroups</groupId>
-        <artifactId>jgroups</artifactId>
-        <version>${version.org.jgroups}</version>
       </dependency>
 
       <dependency>
