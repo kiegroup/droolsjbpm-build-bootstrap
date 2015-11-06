@@ -414,17 +414,12 @@
         <version>${version.org.apache.xmlgraphics.commons}</version>
       </dependency>
 
+      <!-- Can be removed once ip-bom with https://github.com/jboss-integration/jboss-integration-platform-bom/pull/248 is used -->
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
         <version>${version.org.assertj}</version>
       </dependency>
-	
-     <dependency>
-	<groupId>org.eclipse</groupId>
-	<artifactId>org.eclipse.bpmn2</artifactId>
-	<version>${version.org.eclipse.bpmn2}</version>
-     </dependency>
 
       <!-- needed by jbpm-form-modeler -->
       <dependency>
@@ -853,13 +848,6 @@
         <groupId>org.gwtbootstrap3</groupId>
         <artifactId>gwtbootstrap3-extras</artifactId>
         <version>${version.org.gwtbootstrap3}</version>
-      </dependency>
-
-      <!-- selenium dependencies -->
-      <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>${version.org.seleniumhq.selenium}</version>
       </dependency>
 
       <dependency>
