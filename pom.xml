@@ -384,8 +384,9 @@
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
           <!-- Override version 2.5.4 coming from jboss-present as it forks executions, which is a bug.
-               See https://issues.apache.org/jira/browse/FELIX-4882 for more details. -->
-          <version>3.0.1</version>
+               See https://issues.apache.org/jira/browse/FELIX-4882 for more details.
+               Version 3.x requires Java 7 (not directly, but one of transitive deps does).-->
+          <version>2.5.3</version>
           <extensions>true</extensions>
           <configuration>
             <!-- Split packages in combination with <Export-Package> causes bloated jars otherwise -->
