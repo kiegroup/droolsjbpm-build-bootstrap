@@ -117,6 +117,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             fi
             sed -i "s/source_[^\"]*/source_$versionToUse/" org.drools.updatesite/category.xml
             sed -i "s/version=\"[0-9\.]*qualifier\"/version=\"$versionToUse\"/" org.drools.updatesite/category.xml
+            sed -i "s/version=\"[^\"]*\">/version=\"$versionToUse\">/" org.drools.updatesite/category.xml
             cd ..
             if [ $returnCode == 0 ]; then
                 mvn -B -N clean install
