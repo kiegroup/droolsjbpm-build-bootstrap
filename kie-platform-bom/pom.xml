@@ -279,6 +279,12 @@
         <artifactId>android-test</artifactId>
         <version>${version.com.google.android}</version>
       </dependency>
+      <!-- Remove when IP-BOM has these PR's: https://github.com/jboss-integration/jboss-integration-platform-bom/pull/276 and https://github.com/jboss-integration/jboss-integration-platform-bom/pull/277 -->
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>${version.com.google.protobuf}</version>
+      </dependency>
 
       <dependency>
         <groupId>com.unboundid</groupId>
@@ -303,6 +309,13 @@
         <groupId>link.bek.tools</groupId>
         <artifactId>issue-keeper-junit</artifactId>
         <version>${version.link.bek.tools.issue-keeper-junit}</version>
+      </dependency>
+
+      <!-- Remove when IP-BOM has these PR's: https://github.com/jboss-integration/jboss-integration-platform-bom/pull/274 and https://github.com/jboss-integration/jboss-integration-platform-bom/pull/275 -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-math3</artifactId>
+        <version>${version.org.apache.commons.math3}</version>
       </dependency>
 
       <dependency>
