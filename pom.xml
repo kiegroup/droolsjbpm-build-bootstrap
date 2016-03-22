@@ -8,7 +8,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-parent</artifactId>
     <!-- Keep in sync with property <version.org.jboss.integration-platform> -->
-    <version>6.0.2.Final</version>
+    <version>6.0.4.Final</version>
   </parent>
 
   <groupId>org.kie</groupId>
@@ -68,7 +68,7 @@
 
     <!-- External dependency versions bom -->
     <!-- Keep in sync with <parent>'s <version> -->
-    <version.org.jboss.integration-platform>6.0.2.Final</version.org.jboss.integration-platform>
+    <version.org.jboss.integration-platform>6.0.4.Final</version.org.jboss.integration-platform>
     <!-- ################################################################################ -->
     <!-- New and overwritten dependencies -->
     <!-- ################################################################################ -->
@@ -82,8 +82,6 @@
     <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
     <!-- this version will overwrite the jboss-ip-bom version 3.6.2. the jboss-ip-bom version has to remain as the 4.0.0 breaks ModeShape nor is Lucene 4.0.0 part of the latest EAP-->
     <version.org.apache.lucene>4.0.0</version.org.apache.lucene>
-    <!-- the org.apache.beanshell can be removed once the PR # 269 of jboss-ip-bom was merged -->
-    <version.org.apache-extras.beanshell>2.0b6</version.org.apache-extras.beanshell>
     <version.org.apache.xmlgraphics.batik>1.6.1-1</version.org.apache.xmlgraphics.batik>
     <version.org.apache.xmlgraphics.commons>1.4</version.org.apache.xmlgraphics.commons>
     <version.org.apache.xmlgraphics.fop>0.95</version.org.apache.xmlgraphics.fop>
