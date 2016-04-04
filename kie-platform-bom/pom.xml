@@ -305,6 +305,13 @@
         <version>${version.link.bek.tools.issue-keeper-junit}</version>
       </dependency>
 
+      <!-- can be removed once the jboss-ip-bom in pom.xml is gt 6.0.2.Final -->
+      <dependency>
+        <groupId>org.apache-extras.beanshell</groupId>
+        <artifactId>bsh</artifactId>
+        <version>${version.org.apache-extras.beanshell}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
