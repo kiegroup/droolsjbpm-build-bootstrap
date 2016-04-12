@@ -119,7 +119,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             sed -i "s/version=\"[^\"]*\">/version=\"$versionToUse\">/" org.drools.updatesite/category.xml
             cd ..
             if [ $returnCode == 0 ]; then
-                mvn -B -N clean install
+                mvn -B -N -U clean install
                 updateParentVersion
                 # workaround for http://jira.codehaus.org/browse/MVERSIONS-161
                 mvn -B -N clean install -DskipTests
