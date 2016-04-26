@@ -98,6 +98,16 @@
       <!-- ################################################################################ -->
       <!-- External dependencies -->
       <!-- ################################################################################ -->
+      <!-- The following spring-framework-bom is an exception. It needs to be defined before the ip-bom, otherwise
+           the Spring artifact versions would be used from the ip-bom (instead of the spring-framework-bom which
+           is what we want as we are overriding the versions from ip-bom) -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>${version.org.springframework}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>org.jboss.integration-platform</groupId>
         <artifactId>jboss-integration-platform-bom</artifactId>
@@ -278,6 +288,12 @@
         <groupId>com.google.android</groupId>
         <artifactId>android-test</artifactId>
         <version>${version.com.google.android}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>${version.com.thoughtworks.xstream}</version>
       </dependency>
 
       <dependency>
