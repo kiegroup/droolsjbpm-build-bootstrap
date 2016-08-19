@@ -1,0 +1,66 @@
+def cloneScript_01 = 
+"""
+# clone CHESTNUT
+git clone git@github.com:droolsjbpm/droolsjbpm-build-bootstrap.git
+cd droolsjbpm-build-bootstrap
+git checkout 6.4.x
+
+"""
+
+def cloneScript_02 =
+"""
+cd /home/jenkins/workspace/01.push-release-branches-6.4.x
+sh /home/jenkins/workspace/01.push-release-branches-6.4.x/droolsjbpm-build-bootstrap/script/release/01.KIE-releases_push-release-branches.sh
+
+"""
+job("01.push-release-branches-6.4.x") {
+
+  description("This job: <br> - clones all repositories <br> - upgrades the version in poms <br> - modifies the kie-parent-metadata pom <br> - pushes the generated release branches to droolsjbpm")
+  
+  parameters {
+    choiceParam("TARGET", ["community", "productized"], "please select if this release is for community <b> community </b> or <br> if it is for building a productization tag <b>productized <br> ******************************************************** <br> ")
+    choiceParam("SOURCE", ["community-branch", "community-tag", "production-tag"], " please select the source of this release <br> or it is the 6.4.x branch ( <b> community-branch </b> ) <br> a community tag ( <b> community-tag </b> ) <br> a productization tag ( <b> production-tag </b> ) <br> ******************************************************** <br> ")
+    stringParam("TAG", "6.4.0.Final", "if you selected as <b> SOURCE=community-tag </b> or <b> SOURCE=production-tag </b> please edit the name of the tag <br> if selected as <b> SOURCE=community-branch </b> the parameter <b> TAG </b> will be ignored <br> The tag should typically look like <b> 6.4.0.Final </b> for <b> community </b> or <b> sync-6.4.x-2016.07.30  </b> for <b> productization </b> <br> ******************************************************** <br> ")
+    stringParam("RELEASE_VERSION", "6.4.0.Final", "please edit the version for this release <br> The <b> RELEASE_VERSION </b> should typically look like <b> 6.4.0.Final </b> for <b> community </b> or <b> 6.4.1.20160730-productization </b> for <b> productization </b> <br>******************************************************** <br> ")
+    stringParam("RELEASE_BRANCH", "r6.4.0.Final", "please edit the name of the release branch <br> i.e. typically <b> r6.4.0.Final </b> for <b> community </b>or <b> bsync-6.4.x-2016.07.30  </b> for <b> productization </b> <br> ******************************************************** <br> ")
+    stringParam("UBERFIRE_VERSION", "0.8.0.Final", "please edit the right version to use of uberfire/uberfire-extensions <br> The tag should typically look like <b> 6.4.0.Final </b> for <b> community </b> or <b> 0.8.1.20160730-productization </b> for <b> productization </b> <br> ******************************************************** <br> ")
+    stringParam("DASHBUILDER_VERSION", "0.4.0.Final", "please edit the right version to use of dashbuilder <br> The tag should typically look like <b> 6.4.0.Final </b> for <b> community </b> or <b> 0.8.1.20160730-productization </b> for <b> productization </b> <br> ******************************************************** <br> ") 
+  };
+  
+  label("kie-releases")
+  
+  jdk("jdk1.7") 
+  
+  wrappers {
+    timestamps()
+    colorizeOutput()
+    preBuildCleanup()
+    toolenv("APACHE_MAVEN_3_2_3", "JDK1_7")
+  }  
+  
+ 
+  steps {
+    environmentVariables {
+        envs(MAVEN_OPTS :"-Xms2g -Xmx3g -XX:MaxPermSize=512m", MAVEN_HOME: "\$APACHE_MAVEN_3_2_3_HOME", MAVEN_REPO_LOCAL: "/home/jenkins/.m2/repository", PATH :"\$MAVEN_HOME/bin:\$PATH")
+    }    
+    shell(cloneScript_01)
+    shell(cloneScript_02)
+  }
+}
+
+nestedView("Releases") {
+    views {
+        listView("KIE-6.4.x") {
+            jobs {
+                name("01.push-release-branches-6.4.x")
+            }
+            columns {
+                status()
+                weather()
+                name()
+                lastSuccess()
+                lastFailure()
+            }
+        }
+    }
+}
