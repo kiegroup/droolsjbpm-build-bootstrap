@@ -73,6 +73,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+    <!-- exposed additional params for javadoc, such as Xlint -->
+    <javadoc.additional.params />
     <!-- Make OSGi happy -->
     <osgi.snapshot.qualifier>${maven.build.timestamp}</osgi.snapshot.qualifier>
     <!-- org.eclipse.tycho plugin version -->
@@ -641,6 +643,7 @@
             <maxmemory>512m</maxmemory>
             <author>false</author>
             <breakiterator>true</breakiterator>
+            <additionalparam>${javadoc.additional.params}</additionalparam>
           </configuration>
         </plugin>
         <plugin>
@@ -857,6 +860,16 @@
         <osgi.snapshot.qualifier>qualifier</osgi.snapshot.qualifier>
       </properties>
     </profile>
+    <profile>
+      <id>doclint-java8-disable</id>
+      <activation>
+        <jdk>[1.8,)</jdk>
+      </activation>
+      <properties>
+        <javadoc.additional.params>-Xdoclint:none</javadoc.additional.params>
+      </properties>
+    </profile>
+
   </profiles>
 
   <modules>
