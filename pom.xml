@@ -100,6 +100,9 @@
     <version.org.roboguice>3.0.1</version.org.roboguice>
     <version.org.robolectric>3.1.2</version.org.robolectric>
     <version.org.simpleframework>6.0.1</version.org.simpleframework>
+    <!-- this version will temporary overwrite the springframework version 3.2.12.RELEASE in jboss-ip-bom 6.0.8.Final. In next version of jboss-ip-bom
+	this has to be upgraded -->
+    <version.org.springframework>4.3.2.RELEASE</version.org.springframework>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
     <version.com.google.gwt>2.7.0</version.com.google.gwt>
