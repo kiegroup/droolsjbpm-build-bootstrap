@@ -79,9 +79,12 @@
     <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
     <version.com.google.android>4.1.1.4</version.com.google.android>
     <version.jakarta-regexp>1.4</version.jakarta-regexp>
+    <!-- this version will temporary override the junit version 4.11 in jboss-ip-bom 6.0.8.Final. In next version of jboss-ip-bom
+        this can be removed as it is already in jboss-ip-bom-->
+     <version.junit>4.12</version.junit>
     <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
     <version.net.sf.docbook.docbook-xsl>1.76.1</version.net.sf.docbook.docbook-xsl>
-    <!-- this version will overwrite the jboss-ip-bom version 3.6.2. the jboss-ip-bom version has to remain as the 4.0.0 breaks ModeShape nor is Lucene 4.0.0 part of the latest EAP-->
+    <!-- this version will override the jboss-ip-bom version 3.6.2. the jboss-ip-bom version has to remain as the 4.0.0 breaks ModeShape nor is Lucene 4.0.0 part of the latest EAP-->
     <version.org.apache.lucene>4.0.0</version.org.apache.lucene>
     <version.org.apache.xmlgraphics.batik>1.6.1-1</version.org.apache.xmlgraphics.batik>
     <version.org.apache.xmlgraphics.commons>1.4</version.org.apache.xmlgraphics.commons>
@@ -102,8 +105,8 @@
     <version.org.roboguice>3.0.1</version.org.roboguice>
     <version.org.robolectric>3.1.2</version.org.robolectric>
     <version.org.simpleframework>6.0.1</version.org.simpleframework>
-    <!-- this version will temporary overwrite the springframework version 3.2.12.RELEASE in jboss-ip-bom 6.0.8.Final. In next version of jboss-ip-bom
-	this has to be upgraded -->
+    <!-- this version will temporary override the springframework version 3.2.12.RELEASE in jboss-ip-bom 6.0.8.Final. In next version of jboss-ip-bom
+	this can be removed as it is already in jboss-ip-bom -->
     <version.org.springframework>4.3.2.RELEASE</version.org.springframework>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->

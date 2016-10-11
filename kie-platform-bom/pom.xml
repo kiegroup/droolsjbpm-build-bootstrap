@@ -98,6 +98,15 @@
       <!-- ################################################################################ -->
       <!-- External dependencies -->
       <!-- ################################################################################ -->
+      <!-- this springframework dependency can be removed when kie moved to jboss-ip-bom 6.0.10.Final -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-framework-bom</artifactId>
+        <version>${version.org.springframework}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <dependency>
         <groupId>org.jboss.integration-platform</groupId>
         <artifactId>jboss-integration-platform-bom</artifactId>
@@ -293,6 +302,13 @@
         <version>${version.javax.xml.stream.stax}</version>
       </dependency>
 
+      <!-- this junit dependency can be removed when kie moved to jboss-ip-bom 6.0.10.Final -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${version.junit}</version>
+      </dependency>
+
       <dependency>
         <groupId>link.bek.tools</groupId>
         <artifactId>issue-keeper-junit</artifactId>
@@ -343,7 +359,6 @@
         <artifactId>lucene-sandbox</artifactId>
         <version>${version.org.apache.lucene}</version>
       </dependency>
-
 
       <!-- dependency of org.apache.lucene:lucene-sandbox -->
       <dependency>
