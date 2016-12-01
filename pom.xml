@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.0.0-SNAPSHOT</version>
+  <version>7.0.0.Beta4</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -45,13 +45,13 @@
 
   <properties>
     <!-- Internal dependencies -->
-    <version.org.kie>7.0.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.0.0.Beta4</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>1.0.0-SNAPSHOT</version.org.uberfire>
-    <version.org.dashbuilder>0.6.0-SNAPSHOT</version.org.dashbuilder>
+    <version.org.uberfire>1.0.0.Beta4</version.org.uberfire>
+    <version.org.dashbuilder>0.6.0.Beta4</version.org.dashbuilder>
     <version.org.guvnor>${version.org.drools}</version.org.guvnor>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
     <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
@@ -99,7 +99,7 @@
     <version.org.eclipse.jgit>4.4.1.201607150455-r</version.org.eclipse.jgit>
 
     <version.org.drools.guvnor-api>5.6.0.Final</version.org.drools.guvnor-api>
-    <version.org.jboss.errai>4.0.0-SNAPSHOT</version.org.jboss.errai>
+    <version.org.jboss.errai>4.0.0.Beta6</version.org.jboss.errai>
     <!-- Version of Errai compatible with CDI 1.0. Few artifacts in this version are used for CDI 1.0 compatible WAR distributions. -->
     <version.org.jboss.errai.cdi10-compatible>3.0.6.Final</version.org.jboss.errai.cdi10-compatible>
     <!-- MVEL 2.3.0.Final override can be removed once we use IP BOM which includes https://github.com/jboss-integration/jboss-integration-platform-bom/pull/320 -->
@@ -178,7 +178,7 @@
          Default value is 1 to enable building on older machines as well (minimum is still about 4GiB of RAM memory). -->
     <gwt.compiler.localWorkers>1</gwt.compiler.localWorkers>
     <!-- property for productisation to know the last released version -->
-    <latestReleasedVersionFromThisBranch>notYetReleased</latestReleasedVersionFromThisBranch>
+    <latestReleasedVersionFromThisBranch>7.0.0.Beta4</latestReleasedVersionFromThisBranch>
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
     <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
 
