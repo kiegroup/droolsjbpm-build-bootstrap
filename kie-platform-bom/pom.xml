@@ -169,6 +169,48 @@
         <version>${version.avalon-framework}</version>
       </dependency>
 
+      <!-- RHBRMS-2673 overrides version of org.apache.tika i + transitive dependencies coming from jboss-ip-bom -->
+     <dependency>
+        <groupId>org.apache.tika</groupId>
+        <artifactId>tika-parsers</artifactId>
+        <version>${version.org.apache.tika}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tika</groupId>
+        <artifactId>tika-core</artifactId>
+        <version>${version.org.apache.tika}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${version.commons-io}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>${version.org.apache.commons.compress}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>${version.org.apache.poi}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>${version.org.apache.poi}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-schemas</artifactId>
+        <version>${version.org.apache.poi}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-scratchpad</artifactId>
+        <version>${version.org.apache.poi}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.apache.xmlbeans</groupId>
         <artifactId>xmlbeans</artifactId>
