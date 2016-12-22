@@ -381,7 +381,10 @@ Running the build
     ```
 
     The first build will take a long time, because a lot of dependencies will be downloaded (and cached locally).
-
+    Deal jBPM team,I'm sorry to ask questions in this way.
+    When I first build it 'by mvn clean install -DskipTests', failed to execute the goal, the error log is 'Error while executing process. Cannot run program "C:\Program Files\Java\jdk1.8.0_45\jre\bin\java": CreateProcess error=206, 文件名或扩展名太长。'.
+    How can I solve it?
+    
     It might even fail, if certain servers are offline or experience hiccups.
     In that case, you 'll see an IO error, so just run the build again.
 
