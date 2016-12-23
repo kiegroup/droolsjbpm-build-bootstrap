@@ -171,6 +171,11 @@
 
       <!-- RHBRMS-2673 overrides version of org.apache.tika i + transitive dependencies coming from jboss-ip-bom -->
       <dependency>
+        <groupId>com.github.virtuald</groupId>
+        <artifactId>curvesapi</artifactId>
+        <version>${version.com.github.virtuald}</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.tika</groupId>
         <artifactId>tika-parsers</artifactId>
         <version>${version.org.apache.tika}</version>
@@ -189,6 +194,11 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
         <version>${version.org.apache.commons.compress}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${version.org.apache.commons.commons-collections4}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
