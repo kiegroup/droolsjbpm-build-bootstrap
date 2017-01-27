@@ -378,6 +378,11 @@
                         <property name="sortImportsInGroupAlphabetically" value="true"/>
                         <property name="separateLineBetweenGroups" value="true"/>
                       </module>
+
+                      <module name="NeedBraces">
+                        <property name="tokens" value="LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO"/>
+                      </module>
+                      <module name="EqualsHashCode"/>
                     </module>
                   </module>
                 </checkstyleRules>
@@ -1295,7 +1300,7 @@
           </exclusion>
         </exclusions>
       </dependency>
-      
+
       <!-- TODO BZ-996210 use org.apache.xmlgraphics:batik* instead -->
       <dependency>
         <groupId>batik</groupId>
