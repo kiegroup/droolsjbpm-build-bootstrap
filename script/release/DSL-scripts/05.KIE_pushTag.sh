@@ -11,9 +11,8 @@ git clone git@github.com:"$SOURCE"/droolsjbpm-build-bootstrap.git --branch $RELE
 ./droolsjbpm-build-bootstrap/script/git-clone-others.sh --branch $RELEASE_BRANCH --depth 100
 
 # create a tag
-CommitMSG_1="Tagging "
-CommitMSG_2="$CommitMSG_1$TAG_NAME"
-./droolsjbpm-build-bootstrap/script/git-all.sh tag -a $TAG_NAME -m "$CommitMSG_2"
+CommitMSG="Tagging $TAG_NAME"
+./droolsjbpm-build-bootstrap/script/git-all.sh tag -a $TAG_NAME -m "$CommitMSG"
 
 # pushes tag to the SOURCE
 ./droolsjbpm-build-bootstrap/script/git-all.sh push origin $TAG_NAME

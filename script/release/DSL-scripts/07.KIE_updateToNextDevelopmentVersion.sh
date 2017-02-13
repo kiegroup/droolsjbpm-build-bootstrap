@@ -25,7 +25,7 @@ cd $WORKSPACE
 
 # git add and commit the version update changes 
 sh script/git-all.sh add .
-CommitMSG="upgraded to $newVersion"
+CommitMSG="Upgraded to next development version $newVersion"
 sh script/git-all.sh commit -m "$CommitMSG"
 
 # add a remote to all repositories
@@ -45,11 +45,7 @@ for REP_DIR in `cat $REPOSITORY_LIST` ; do
       # adds a remote to kiereleaseuser
       git remote add $TARGET_USER_REMOTE git@github.com:$TARGET_USER/$REP_DIR
       
-      if [ "$REP_DIR" != kie-eap-modules ]; then
-         SOURCE=droolsjbpm
-      else
-         SOURCE=jboss-integration
-      fi   
+      SOURCE=droolsjbpm
       
       echo "we are at: "$REP_DIR
       echo "the new remote is: " 
