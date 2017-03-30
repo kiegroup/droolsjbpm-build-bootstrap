@@ -47,13 +47,13 @@ fi
 
 # update kie-parent-metadata
 cd droolsjbpm-build-bootstrap/
-
 # change <version.org.uberfire>, <version.org.dashbuilder> and <version.org.jboss.errai>
 sed -i "$!N;s/<version.org.uberfire>.*.<\/version.org.uberfire>/<version.org.uberfire>$UBERFIRE_VERSION<\/version.org.uberfire>/;P;D" pom.xml
 sed -i "$!N;s/<version.org.dashbuilder>.*.<\/version.org.dashbuilder>/<version.org.dashbuilder>$DASHBUILDER_VERSION<\/version.org.dashbuilder>/;P;D" pom.xml
 sed -i "$!N;s/<version.org.jboss.errai>.*.<\/version.org.jboss.errai>/<version.org.jboss.errai>$ERRAI_VERSION<\/version.org.jboss.errai>/;P;D" pom.xml
+sed -i "$!N;s/<latestReleasedVersionFromThisBranch>.*.<\/latestReleasedVersionFromThisBranch>/<latestReleasedVersionFromThisBranch>$RELEASE_VERSION<\/latestReleasedVersionFromThisBranch>/;P;D" pom.xml
 
-cd ..
+cd $WORKSPACE
 
 # git add and commit the version update changes 
 ./droolsjbpm-build-bootstrap/script/git-all.sh add .
