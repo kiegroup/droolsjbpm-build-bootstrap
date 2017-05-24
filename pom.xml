@@ -1661,6 +1661,11 @@
             <groupId>org.mortbay.jasper</groupId>
             <artifactId>apache-el</artifactId>
           </exclusion>
+          <exclusion>
+            <!-- Collides with 'org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec' -->
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
 
