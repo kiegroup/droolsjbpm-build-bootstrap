@@ -206,10 +206,8 @@
     <version.org.jboss.forge.roaster>2.19.4.Final</version.org.jboss.forge.roaster>
 
     <!-- deps for incremental compilation -->
-    <version.org.apache.maven.incremental>3.3.9</version.org.apache.maven.incremental>
-    <version.plexus.interpolation>1.21</version.plexus.interpolation>
     <version.commons.cli>1.3.1</version.commons.cli>
-    <version.plexus.logging>1.0.3</version.plexus.logging>
+    <version.google.collections>1.0</version.google.collections>
   </properties>
 
   <repositories>
@@ -2227,39 +2225,15 @@
 
       <!-- libraries for incremental compilation-->
       <dependency>
-        <groupId>org.apache.maven</groupId>
-        <artifactId>maven-embedder</artifactId>
-        <version>${version.org.apache.maven.incremental}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.maven</groupId>
-        <artifactId>maven-core</artifactId>
-        <version>${version.org.apache.maven.incremental}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.maven</groupId>
-        <artifactId>maven-model</artifactId>
-        <version>${version.org.apache.maven.incremental}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-interpolation</artifactId>
-        <version>${version.plexus.interpolation}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-logging</artifactId>
-        <version>${version.plexus.logging}</version>
-      </dependency>
-
-      <dependency>
         <groupId>commons-cli</groupId>
         <artifactId>commons-cli</artifactId>
         <version>${version.commons.cli}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.collections</groupId>
+        <artifactId>google-collections</artifactId>
+        <version>${version.google.collections}</version>
       </dependency>
 
     </dependencies>
