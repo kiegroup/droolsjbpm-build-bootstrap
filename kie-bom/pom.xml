@@ -186,6 +186,17 @@
       </dependency>
       <dependency>
         <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-jbpm-search</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-jbpm-search</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
         <artifactId>kie-server-services-jbpm-ui</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -269,6 +280,17 @@
       <dependency>
         <groupId>org.kie.server</groupId>
         <artifactId>kie-server-rest-jbpm</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-rest-jbpm-search</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-rest-jbpm-search</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -358,6 +380,38 @@
         <artifactId>kie-server-controller-rest</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-controller-standalone-impl</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-controller-standalone-impl</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-controller-standalone</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>ee6</classifier>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-controller-standalone</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>ee7</classifier>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-controller-standalone</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>webc</classifier>
+        <type>war</type>
       </dependency>
 
       <dependency>

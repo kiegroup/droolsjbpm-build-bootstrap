@@ -92,6 +92,12 @@
 
     <version.org.drools.guvnor-api>5.6.0.Final</version.org.drools.guvnor-api>
     <version.org.jboss.errai>4.0.1-SNAPSHOT</version.org.jboss.errai>
+
+    <!-- Required for kie-wb-common to build in IntelliJ Idea 2017, due to -->
+    <!-- https://youtrack.jetbrains.com/issue/IDEA-166417 -->
+    <!-- Property can be removed when the above issue is fixed -->
+    <version.org.jboss.errai.wildfly>10.0.0.Final</version.org.jboss.errai.wildfly>
+
     <version.org.mortbay.jetty.runner>8.1.7.v20120910</version.org.mortbay.jetty.runner>
     <version.org.picketlink>2.6.0.Final</version.org.picketlink>
     <version.com.unboundid>2.3.6</version.com.unboundid>
@@ -111,6 +117,7 @@
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
     <version.com.google.gwt>2.8.0</version.com.google.gwt>
+    <version.net.ltgt.gwt.maven>1.0-rc-6</version.net.ltgt.gwt.maven>
     <version.com.google.guava>20.0</version.com.google.guava>
     <!-- this version will overwrite jboss-ip-version 3.1.2. The version in jboss-ip-bom couldn't be upgraded as this version needs GWT 2.7.0 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
@@ -181,7 +188,7 @@
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
     <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
 
-    <version.org.wildfly.swarm>2017.4.0</version.org.wildfly.swarm>
+    <version.org.wildfly.swarm>2017.5.0</version.org.wildfly.swarm>
     <version.net.byte-buddy>1.4.16</version.net.byte-buddy>
     <version.commons-beanutils>1.9.2</version.commons-beanutils>
     <version.docker-client>3.5.12</version.docker-client>
@@ -194,7 +201,7 @@
     <jboss.snapshots.repo.url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
 
     <!-- Latest release to be used by api-compatibility-check to check backwards compatibility of the Kie API. -->
-    <version.org.kie.latestFinal.release>6.5.0.Final</version.org.kie.latestFinal.release>
+    <version.org.kie.latestFinal.release>7.0.0.Final</version.org.kie.latestFinal.release>
     <revapi.oldKieVersion>${version.org.kie.latestFinal.release}</revapi.oldKieVersion>
     <revapi.newKieVersion>${project.version}</revapi.newKieVersion>
 
@@ -1069,6 +1076,12 @@
             <strict>true</strict>
             <printJavaCommandOnError>false</printJavaCommandOnError>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>net.ltgt.gwt.maven</groupId>
+          <artifactId>gwt-maven-plugin</artifactId>
+          <version>${version.net.ltgt.gwt.maven}</version>
+          <extensions>true</extensions>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
