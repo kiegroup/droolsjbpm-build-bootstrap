@@ -168,17 +168,7 @@
         <artifactId>avalon-framework</artifactId>
         <version>${version.avalon-framework}</version>
       </dependency>
-      <!-- will override ch.qos.logback version 1.0.9 in jboss-ip-bom 6.0.8.Final due to RHBPMS-4659 -->
-      <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-core</artifactId>
-        <version>${version.ch.qos.logback}</version>
-      </dependency>
-      <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>${version.ch.qos.logback}</version>
-      </dependency>
+
       <!-- RHBRMS-2673 overrides version of org.apache.tika i + transitive dependencies coming from jboss-ip-bom -->
       <dependency>
         <groupId>com.github.virtuald</groupId>
