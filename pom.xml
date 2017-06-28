@@ -188,6 +188,7 @@
     <gwt.compiler.localWorkers>1</gwt.compiler.localWorkers>
     <!-- property for productisation to know the last released version -->
     <latestReleasedVersionFromThisBranch>notYetReleased</latestReleasedVersionFromThisBranch>
+    <version.io.takari.maven.plugins>1.12.5</version.io.takari.maven.plugins>
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
     <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
 
@@ -2318,7 +2319,14 @@
         <artifactId>tomcat-jta</artifactId>
         <version>${version.org.jboss.narayana.tomcat}</version>
       </dependency>
-    </dependencies>
+    
+    <!-- Incremental compiler-->
+      <dependency>
+        <groupId>io.takari.maven.plugins</groupId>
+        <artifactId>takari-lifecycle-plugin</artifactId>
+        <version>${version.io.takari.maven.plugins}</version>
+      </dependency>
+    </dependencies>  
 
   </dependencyManagement>
 
