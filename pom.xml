@@ -1232,6 +1232,12 @@
             <avoidCallsTo>java.lang.StringBuilder</avoidCallsTo>
           </configuration>
         </plugin>
+        <!-- Incremental compiler-->
+        <plugin>
+          <groupId>io.takari.maven.plugins</groupId>
+          <artifactId>takari-lifecycle-plugin</artifactId>
+          <version>${version.io.takari.maven.plugins}</version>
+        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -2329,12 +2335,6 @@
       </dependency>
     
     <!-- Incremental compiler-->
-      <dependency>
-        <groupId>io.takari.maven.plugins</groupId>
-        <artifactId>takari-lifecycle-plugin</artifactId>
-        <version>${version.io.takari.maven.plugins}</version>
-      </dependency>
-
       <dependency>
         <groupId>io.takari.maven.plugins</groupId>
         <artifactId>takari-plugin-testing</artifactId>
