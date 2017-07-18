@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.1.0-SNAPSHOT</version>
+  <version>7.2.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -45,13 +45,13 @@
 
   <properties>
     <!-- Internal dependencies -->
-    <version.org.kie>7.1.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.2.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>1.1.0-SNAPSHOT</version.org.uberfire>
-    <version.org.dashbuilder>0.7.0-SNAPSHOT</version.org.dashbuilder>
+    <version.org.uberfire>1.2.0-SNAPSHOT</version.org.uberfire>
+    <version.org.dashbuilder>0.8.0-SNAPSHOT</version.org.dashbuilder>
     <version.org.guvnor>${version.org.drools}</version.org.guvnor>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
     <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
@@ -82,7 +82,8 @@
     <version.jakarta-regexp>1.4</version.jakarta-regexp>
     <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
     <version.net.sf.docbook.docbook-xsl>1.76.1</version.net.sf.docbook.docbook-xsl>
-
+    <!-- Java 8 requires 3.5.2 version. This override can be removed once IP BOM upgrades as well -->
+    <version.org.antlr>3.5.2</version.org.antlr>
     <version.org.antlr4>4.5.3</version.org.antlr4>
     <version.org.apache.camel>2.18.2</version.org.apache.camel>
     <version.org.apache.xmlgraphics.commons>1.4</version.org.apache.xmlgraphics.commons>
@@ -91,7 +92,7 @@
     <version.org.jboss.arquillian.graphene>2.1.0.CR1</version.org.jboss.arquillian.graphene>
 
     <version.org.drools.guvnor-api>5.6.0.Final</version.org.drools.guvnor-api>
-    <version.org.jboss.errai>4.0.1-SNAPSHOT</version.org.jboss.errai>
+    <version.org.jboss.errai>4.0.2-SNAPSHOT</version.org.jboss.errai>
 
     <!-- Required for kie-wb-common to build in IntelliJ Idea 2017, due to -->
     <!-- https://youtrack.jetbrains.com/issue/IDEA-166417 -->
@@ -148,7 +149,8 @@
     <version.org.w3c.css.sac>1.3</version.org.w3c.css.sac>
 
     <!-- narayana dependencies for tomcat and kie server -->
-    <version.org.jboss.narayana.tomcat>5.6.2.Final</version.org.jboss.narayana.tomcat>
+    <version.org.jboss.narayana.tomcat>5.6.3.Final</version.org.jboss.narayana.tomcat>
+    <version.org.jboss.transaction.spi>7.6.0.Final</version.org.jboss.transaction.spi>
 
     <!-- In community builds productized is false, in product builds it's true to enable branding changes -->
     <org.kie.productized>false</org.kie.productized>
@@ -171,6 +173,8 @@
     <!-- TODO: remove this once all repositories comply to the defined checkstyle rules -->
     <checkstyle.failOnViolation>false</checkstyle.failOnViolation>
     <checkstyle.logViolationsToConsole>false</checkstyle.logViolationsToConsole>
+    <checkstyle.header.template>.*</checkstyle.header.template>
+    <checkstyle.header.extensions>java</checkstyle.header.extensions>
     <enforcer.failOnDuplicatedClasses>true</enforcer.failOnDuplicatedClasses>
     <!-- Set to "true" on every project that has no violations. -->
     <findbugs.failOnViolation>false</findbugs.failOnViolation>
@@ -547,11 +551,14 @@
                         <property name="sortImportsInGroupAlphabetically" value="true"/>
                         <property name="separateLineBetweenGroups" value="true"/>
                       </module>
-
                       <module name="NeedBraces">
                         <property name="tokens" value="LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO"/>
                       </module>
                       <module name="EqualsHashCode"/>
+                    </module>
+                    <module name="RegexpHeader">
+                      <property name="header" value="${checkstyle.header.template}"/>
+                      <property name="fileExtensions" value="${checkstyle.header.extensions}"/>
                     </module>
                   </module>
                 </checkstyleRules>
@@ -2327,20 +2334,31 @@
         <version>${version.org.jboss.spec.javax.enterprise.concurrent}</version>
       </dependency>
 
+      <!-- Incremental compiler-->
+      <dependency>
+        <groupId>io.takari.maven.plugins</groupId>
+        <artifactId>takari-plugin-testing</artifactId>
+        <version>${version.io.takari.maven.plugins.integration-testing}</version>
+      </dependency>
+
       <!-- Narayana is used as transaction manager for KIE Server on Tomcat -->
       <dependency>
         <groupId>org.jboss.narayana.tomcat</groupId>
         <artifactId>tomcat-jta</artifactId>
         <version>${version.org.jboss.narayana.tomcat}</version>
       </dependency>
-    
-    <!-- Incremental compiler-->
       <dependency>
-        <groupId>io.takari.maven.plugins</groupId>
-        <artifactId>takari-plugin-testing</artifactId>
-        <version>${version.io.takari.maven.plugins.integration-testing}</version>
+        <groupId>org.jboss.narayana.jta</groupId>
+        <artifactId>narayana-jta</artifactId>
+        <version>${version.org.jboss.narayana.tomcat}</version>
       </dependency>
-    </dependencies>  
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-transaction-spi</artifactId>
+        <version>${version.org.jboss.transaction.spi}</version>
+      </dependency>
+    </dependencies>
+
 
   </dependencyManagement>
 
