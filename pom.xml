@@ -208,6 +208,9 @@
     <version.net.byte-buddy>1.4.16</version.net.byte-buddy>
     <version.commons-beanutils>1.9.2</version.commons-beanutils>
     <version.docker-client>3.5.12</version.docker-client>
+    <version.okhttp>3.8.1</version.okhttp>
+    <version.kubernetes-model>1.1.0</version.kubernetes-model>
+    <version.kubernetes-client>2.5.7</version.kubernetes-client>
     <version.arquillian-cube>1.0.0.Alpha15</version.arquillian-cube>
     <version.org.wildfly.arquillian.container>2.0.0.Final</version.org.wildfly.arquillian.container>
     <!-- Using origin-repository.jboss.org as that is the canonical URL for deployment. repository.jboss.org is just a proxy
@@ -515,6 +518,18 @@
                         <ignoreClasses>
                           <ignoreClass>org.jboss.logging.*</ignoreClass>
                           <ignoreClass>javax.transaction.*</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
+                      <dependency>
+                        <!-- The openshift-client duplicates these classes from the kubernetes-client.
+                             It is an upstream io.fabric8 issue that needs to be fixed there. -->
+                        <groupId>io.fabric8</groupId>
+                        <artifactId>openshift-client</artifactId>
+                        <type>jar</type>
+                        <ignoreClasses>
+                          <ignoreClass>io.fabric8.kubernetes.client.ConfigFluent</ignoreClass>
+                          <ignoreClass>io.fabric8.kubernetes.client.ConfigBuilder</ignoreClass>
+                          <ignoreClass>io.fabric8.kubernetes.client.ConfigFluentImpl</ignoreClass>
                         </ignoreClasses>
                       </dependency>
                     </dependencies>
@@ -2289,6 +2304,26 @@
             <artifactId>commons-logging</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>${version.okhttp}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>kubernetes-model</artifactId>
+        <version>${version.kubernetes-model}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>kubernetes-client</artifactId>
+        <version>${version.kubernetes-client}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.fabric8</groupId>
+        <artifactId>openshift-client</artifactId>
+        <version>${version.kubernetes-client}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
