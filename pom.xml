@@ -96,8 +96,9 @@
     <version.org.apache.commons.compress>1.12</version.org.apache.commons.compress>
     <version.org.apache.poi>3.15</version.org.apache.poi>
     <version.org.apache.pdfbox>1.8.12</version.org.apache.pdfbox>
-    <version.org.apache.xmlgraphics.batik>1.6.1-1</version.org.apache.xmlgraphics.batik>
-    <version.org.apache.xmlgraphics.commons>1.4</version.org.apache.xmlgraphics.commons>
+    <!-- override of xmlgraphics (batik and commons) fix RHBRMS-2876 -->
+    <version.org.apache.xmlgraphics.batik>1.9</version.org.apache.xmlgraphics.batik>
+    <version.org.apache.xmlgraphics.commons>2.0</version.org.apache.xmlgraphics.commons>
     <!-- overwrites the version of org.jboss.xnio defined in jboss-ip-bom because needed by WildFly -->
     <version.org.jboss.xnio>3.2.0.Final</version.org.jboss.xnio>
     <!-- version of org.jboss.xnio aligned with WildFly 10 -->
