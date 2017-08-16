@@ -120,6 +120,8 @@
     <version.org.springframework>4.3.2.RELEASE</version.org.springframework>
     <!-- Required to support SNI requests, see RHBRMS-2870 -->
     <version.org.apache.httpcomponents.httpclient>4.5.3</version.org.apache.httpcomponents.httpclient>
+    <!-- RHBRMS-2870 override of httpcomponents.httpcore -->
+    <version.org.apache.httpcomponents.httpcore>4.4.6</version.org.apache.httpcomponents.httpcore>
     <!--RHBRMS-2838 -->
     <version.org.slf4j>1.7.15</version.org.slf4j>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
