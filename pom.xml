@@ -243,6 +243,8 @@
     <version.org.jboss.spec.javax.websocket>1.0.0.Final</version.org.jboss.spec.javax.websocket>
 
     <version.org.mvel>2.3.2.Final</version.org.mvel>
+
+    <version.com.thoughtworks.xstream>1.4.10</version.com.thoughtworks.xstream>
   </properties>
 
   <repositories>
@@ -2531,6 +2533,11 @@
         <groupId>org.mvel</groupId>
         <artifactId>mvel2</artifactId>
         <version>${version.org.mvel}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>${version.com.thoughtworks.xstream}</version>
       </dependency>
     </dependencies>
 
