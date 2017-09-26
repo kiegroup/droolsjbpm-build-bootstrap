@@ -8,7 +8,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-bom</artifactId>
     <!-- Keep in sync with ip-parent version in kie-user-bom-parent/pom.xml -->
-    <version>7.0.0.CR9</version>
+    <version>7.0.1.Final</version>
   </parent>
 
   <groupId>org.kie</groupId>
@@ -91,8 +91,6 @@
     <version.jakarta-regexp>1.4</version.jakarta-regexp>
     <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
     <version.net.sf.docbook.docbook-xsl>1.76.1</version.net.sf.docbook.docbook-xsl>
-    <!-- Java 8 requires 3.5.2 version. This override can be removed once IP BOM upgrades as well -->
-    <version.org.antlr>3.5.2</version.org.antlr>
     <version.org.antlr4>4.5.3</version.org.antlr4>
     <version.org.apache.camel>2.18.2</version.org.apache.camel>
     <version.org.apache.xmlgraphics.commons>1.4</version.org.apache.xmlgraphics.commons>
@@ -154,10 +152,6 @@
     <!-- Downgrade required for Errai Dynamic Bean validation  -->
     <version.org.hibernate.hibernate-validator>4.1.0.Final</version.org.hibernate.hibernate-validator>
     <version.javax.validation>1.0.0.GA</version.javax.validation>
-
-    <!-- Lienzo core upgrade required by Stunner. Can be removed once IP BOM is upgraded.-->
-    <version.com.ahome-it.lienzo-core>2.0.291-RELEASE</version.com.ahome-it.lienzo-core>
-    <version.com.ahome-it.lienzo-tests>2.0.291-RELEASE</version.com.ahome-it.lienzo-tests>
 
     <!-- CSS parsing library from Apache used by Stunner. -->
     <version.net.sourceforge.cssparser>0.9.21</version.net.sourceforge.cssparser>
@@ -2465,11 +2459,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.jboss.resteasy</groupId>
-        <artifactId>resteasy-jackson2-provider</artifactId>
-        <version>${version.org.jboss.resteasy}</version>
-      </dependency>
 
       <!-- CSS parsing library from Apache used by Stunner. -->
       <dependency>
@@ -2539,8 +2528,34 @@
         <artifactId>xstream</artifactId>
         <version>${version.com.thoughtworks.xstream}</version>
       </dependency>
-    </dependencies>
 
+      <!-- alignment to EAP 7.0.8 - missing dependencies, brought in as transitive dependencies-->
+      <dependency>
+        <groupId>org.jboss.ws.cxf</groupId>
+        <artifactId>jbossws-cxf-client</artifactId>
+        <version>${version.org.jboss.ws.cxf}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ws.cxf</groupId>
+        <artifactId>jbossws-cxf-server</artifactId>
+        <version>${version.org.jboss.ws.cxf}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.ws</groupId>
+        <artifactId>jbossws-spi</artifactId>
+        <version>${version.org.jboss.ws.spi}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.picketbox</groupId>
+        <artifactId>picketbox</artifactId>
+        <version>${version.org.picketbox}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.picketbox</groupId>
+        <artifactId>picketbox-bare</artifactId>
+        <version>${version.org.picketbox}</version>
+      </dependency>
+    </dependencies>
 
   </dependencyManagement>
 
