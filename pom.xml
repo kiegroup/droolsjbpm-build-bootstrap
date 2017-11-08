@@ -8,7 +8,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-bom</artifactId>
     <!-- Keep in sync with ip-parent version in kie-user-bom-parent/pom.xml -->
-    <version>7.0.0.Final</version>
+    <version>8.0.0.CR2</version>
   </parent>
 
   <groupId>org.kie</groupId>
@@ -120,7 +120,6 @@
     <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.wildfly.gwt.sdm>10.1.0.Final</version.org.wildfly.gwt.sdm>
-    <version.org.wildfly.core>2.1.0.Final</version.org.wildfly.core>
     <version.org.jboss.jboss-dmr>1.3.0.Final</version.org.jboss.jboss-dmr>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
@@ -143,10 +142,6 @@
     <!-- Downgrade required for Errai Dynamic Bean validation  -->
     <version.org.hibernate.hibernate-validator>4.1.0.Final</version.org.hibernate.hibernate-validator>
     <version.javax.validation>1.0.0.GA</version.javax.validation>
-
-    <!-- Lienzo core upgrade required by Stunner. Can be removed once IP BOM is upgraded.-->
-    <version.com.ahome-it.lienzo-core>2.0.292-RELEASE</version.com.ahome-it.lienzo-core>
-    <version.com.ahome-it.lienzo-tests>2.0.292-RELEASE</version.com.ahome-it.lienzo-tests>
 
     <!-- JGIT 4.8.0.201706111038-r required by UberFire/AppFormer. Can be removed once IP BOM is upgraded.-->
     <version.org.eclipse.jgit>4.8.0.201706111038-r</version.org.eclipse.jgit>
@@ -2283,11 +2278,6 @@
         <groupId>org.jboss</groupId>
         <artifactId>jboss-dmr</artifactId>
         <version>${version.org.jboss.jboss-dmr}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.wildfly.core</groupId>
-        <artifactId>wildfly-controller-client</artifactId>
-        <version>${version.org.wildfly.core}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
