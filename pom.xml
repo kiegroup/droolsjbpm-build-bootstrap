@@ -120,7 +120,6 @@
     <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.wildfly.gwt.sdm>10.1.0.Final</version.org.wildfly.gwt.sdm>
-    <version.org.wildfly.core>2.1.0.Final</version.org.wildfly.core>
     <version.org.jboss.jboss-dmr>1.3.0.Final</version.org.jboss.jboss-dmr>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
@@ -2283,11 +2282,6 @@
         <groupId>org.jboss</groupId>
         <artifactId>jboss-dmr</artifactId>
         <version>${version.org.jboss.jboss-dmr}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.wildfly.core</groupId>
-        <artifactId>wildfly-controller-client</artifactId>
-        <version>${version.org.wildfly.core}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
