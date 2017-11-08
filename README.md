@@ -858,7 +858,7 @@ Extra Eclipse plugins
 
 * GWT plugin
 
-    * [Download and install the Eclipse GWT plugin](http://code.google.com/intl/en/eclipse/docs/getting_started.html)
+    * [Download and install the Eclipse GWT plugin](http://gwt-plugins.github.io/documentation/gwt-eclipse-plugin/Download.html)
 
         * Note: it is recommended to keep your Eclipse GWT plugin version in sync with the GWT version that we use.
 
