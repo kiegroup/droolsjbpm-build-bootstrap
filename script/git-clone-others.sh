@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Git clone the other repositories
 
@@ -50,7 +50,7 @@ for repository in `cat "${scriptDir}/repository-list.txt"` ; do
         gitUrlPrefix=${droolsjbpmGitUrlPrefix}
         if [ "${repository}" == "kie-eap-modules" ]; then
             # prefix is different for kie-eap-modules repo as it is under jboss-integration org. unit
-            gitUrlPrefix=`echo ${droolsjbpmGitUrlPrefix} | sed 's/droolsjbpm/jboss\-integration/g'`
+            gitUrlPrefix=`echo ${droolsjbpmGitUrlPrefix} | sed 's/kiegroup/jboss\-integration/g'`
         fi
         echo -- prefix ${gitUrlPrefix} --
         echo -- repository ${repository} --

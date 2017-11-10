@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# Create a tag for all git repositories
+# Git add remote to Gerrit to all other repositories
 
 initializeWorkingDirAndScriptDir() {
     # Set working directory and remove all symbolic links
@@ -20,29 +20,15 @@ initializeWorkingDirAndScriptDir() {
     scriptDir=`pwd -P`
 }
 initializeWorkingDirAndScriptDir
-droolsjbpmOrganizationDir="$scriptDir/../../.."
-
-if [ $# != 1 ] && [ $# != 2 ] ; then # && [ $# != 3 ] ; then
-    echo
-    echo "Usage:"
-    echo "  $0 ReleaseTagName"
-    echo "For example:"
-    echo "  $0 6.1.0.Final"
-    echo
-    exit 1
-fi
-
-echo "The drools, guvnor, ... release tag name is $1"
-echo -n "Is this ok? (Hit control-c if is not): "
-read ok
+droolsjbpmOrganizationDir="$scriptDir/../.."
 
 startDateTime=`date +%s`
 
-cd $droolsjbpmOrganizationDir
+cd "$droolsjbpmOrganizationDir"
 
-for repository in `cat ${scriptDir}/../repository-list.txt` ; do
+for repository in `cat "${scriptDir}/repository-list.txt"` ; do
     echo
-    if [ ! -d $droolsjbpmOrganizationDir/$repository ]; then
+    if [ ! -d "$droolsjbpmOrganizationDir/$repository" ]; then
         echo "==============================================================================="
         echo "Missing Repository: $repository. SKIPPING!"
         echo "==============================================================================="
@@ -52,15 +38,20 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
         echo "==============================================================================="
         cd $repository
 
-        releaseTagName=$1
-        git tag -a $releaseTagName -m "Tagged $releaseTagName"
-
-        if [ "$repository" == "kie-eap-modules" ];then
-          echo "don't push tag for $repository"
-        elif [ "$repository" == "droolsjbpm-build-distribution" ];then
-          echo "don't push tag for $repository"
+        if [ "$repository" == "kie-eap-modules" ]
+        then
+          echo "$repository not needed in Gerrit";
+        elif [ "$repository" == "droolsjbpm-build-distribution" ]
+        then
+          echo "$repository not needed in Gerrit";
+        elif [ "$repository" == "dashboard-builder" ]
+        then
+          git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/droolsjbpm-dashboard-builder
+        elif [ "$repository" == "jbpm-dashboard" ]
+        then
+          git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/jbpm-dashboard
         else
-          git push gerrit $releaseTagName
+          git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/kiegroup/$repository
         fi
 
         returnCode=$?
