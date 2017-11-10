@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Create a release branch for all git repositories
+# Git add remote for gerrit
 
 initializeWorkingDirAndScriptDir() {
     # Set working directory and remove all symbolic links
@@ -20,29 +20,15 @@ initializeWorkingDirAndScriptDir() {
     scriptDir=`pwd -P`
 }
 initializeWorkingDirAndScriptDir
-droolsjbpmOrganizationDir="$scriptDir/../../.."
-
-if [ $# != 1 ] && [ $# != 2 ] ; then  # && [ $# != 3 ] ; then
-    echo
-    echo "Usage:"
-    echo "  $0 ReleaseBranchName"
-    echo "For example:"
-    echo "  $0 6.1.x"
-    echo
-    exit 1
-fi
-
-echo "The drools, guvnor, ... adn jbpm release branch name is $1"
-echo -n "Is this ok? (Hit control-c if is not): "
-read ok
+droolsjbpmOrganizationDir="$scriptDir/../.."
 
 startDateTime=`date +%s`
 
-cd $droolsjbpmOrganizationDir
+cd "$droolsjbpmOrganizationDir"
 
-for repository in `cat ${scriptDir}/../repository-list.txt` ; do
+for repository in `cat "${scriptDir}/repository-list.txt"` ; do
     echo
-    if [ ! -d $droolsjbpmOrganizationDir/$repository ]; then
+    if [ ! -d "$droolsjbpmOrganizationDir/$repository" ]; then
         echo "==============================================================================="
         echo "Missing Repository: $repository. SKIPPING!"
         echo "==============================================================================="
@@ -52,11 +38,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
         echo "==============================================================================="
         cd $repository
 
-        releaseBranchName=$1
-        git checkout -b $releaseBranchName
-        git push origin $releaseBranchName
-        # Set up the local branch to track the remote branch
-        git branch --set-upstream $releaseBranchName origin/$releaseBranchName
+        git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/kiegroup/$repository
 
         returnCode=$?
         cd ..
@@ -71,4 +53,3 @@ spentSeconds=`expr $endDateTime - $startDateTime`
 
 echo
 echo "Total time: ${spentSeconds}s"
-echo "Warning: your working branches are now those release branches, NOT master."
