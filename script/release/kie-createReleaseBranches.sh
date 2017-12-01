@@ -51,7 +51,7 @@ cd droolsjbpm-build-bootstrap/
 # change properties via sed as they don't update automatically
 sed -i \
 -e "$!N;s/<version.org.uberfire>.*.<\/version.org.uberfire>/<version.org.uberfire>$uberfireVersion<\/version.org.uberfire>/;" \
--e "s/<version.org.dashbuilder>.*.<\/version.org.dashbuilder>/<version.org.dashbuilder>$dashbuilderVersion<\/version.org.dashbuilder>/;" \
+-e "s/<version.org.kie>.*.<\/version.org.kie>/<version.org.kie>$releaseVersion<\/version.org.kie>/;" \
 -e "s/<version.org.jboss.errai>.*.<\/version.org.jboss.errai>/<version.org.jboss.errai>$erraiVersion<\/version.org.jboss.errai>/;" \
 -e "s/<latestReleasedVersionFromThisBranch>.*.<\/latestReleasedVersionFromThisBranch>/<latestReleasedVersionFromThisBranch>$releaseVersion<\/latestReleasedVersionFromThisBranch>/;P;D" \
 pom.xml
