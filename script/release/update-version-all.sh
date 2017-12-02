@@ -47,8 +47,8 @@ if [ $# != 1 ] && [ $# != 2 ]; then
     echo "Usage:"
     echo "  $0 newVersion releaseType"
     echo "For example:"
-    echo "  $0 6.3.0.Final community"
-    echo "  $0 6.3.1.20151105 productized"
+    echo "  $0 7.5.0.Final community"
+    echo "  $0 7.5.0.20171130 productized"
     echo
     exit 1
 fi
@@ -118,6 +118,11 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             # workaround for http://jira.codehaus.org/browse/MVERSIONS-161
             mvn -B -s $settingsXmlFile clean install -DskipTests
             returnCode=$?
+
+        elif [ "$repository" = "drlx-parser" ];then
+            #update version in drlx-parser/pom.xml
+            cd drlx-parser
+            mvnVersionsSet
 
         elif [ "$repository" = "jbpm" ]; then
             mvnVersionsUpdateParentAndChildModules
