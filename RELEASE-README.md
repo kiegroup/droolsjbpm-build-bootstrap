@@ -22,11 +22,11 @@ One week in advance:
 
 * All external dependencies must be on a non-SNAPSHOT version, to avoid failing to *close* the staging repo on nexus near the end of the release.
 
-    * Get those dependencies (uberfire, uberfire-extensions, dashbuilder) released if needed, preferably 1 week before the kie release. This way, those released artifacts gets tested by our tests.
+    * Get those dependencies (errai) released if needed, preferably 1 week before the kie release. This way, those released artifacts gets tested by our tests.
 
-* Ask kie-wb module (kie-uberfire-extensions, uberfire, kie-wb-common, drools-wb, jbpm-console-ng, jbpm-designer, jbpm-dashboard, dashboard-builder, and kie-wb-distributions) leads to update the translations with Zanata:
+* Ask kie-wb module (kie-uberfire-extensions, uberfire, kie-wb-common, drools-wb, jbpm-wb, jbpm-designer, optaplanner-wb and kie-wb-distributions) leads to update the translations with Zanata:
 
-    * Translations into different locales are handled within Zanata (https://translate.jboss.org/)
+    * Translations into different locales are handled within Zanata (https://vendors.zanata.redhat.com)
 
     * Email Zanata mailing list that a release is about to be made.
 
@@ -65,7 +65,7 @@ One week in advance:
 
         ```shell
         $ mvn zanata:pull-module
-        $ mvn relacer:replace-N
+        $ mvn replacer:replace-N
         $ mvn native2ascii:native2ascii # In repositories where this has to be executed, please
                                         # pay attention to jbpm-designer.
         $ mvn clean install -Dfull -DskipTests # To see if everything compiles after Zanata changes were pulled.
@@ -75,17 +75,9 @@ One week in advance:
         $ git push <upstream> <branch> # push changes to blessed repository
         ```
 
-    * when compiling guvnor, check if there are no other translation issues.
-
-        ```shell
-        $ mvn clean install -Dfull -DskipTests
-        ```
-
-        * Sometime the variable place-holders {0}, {1}... are missing.
-
-        * Append missing variable place-holders {0}, {1}... to the end of the translated text and email the Zanata mailing list.
-
-
+* Since Zanata translations was outsorced it have to be clafirfied before a release if the Zanata translations will be needed.
+  (mvn -B zanata:pull-module).
+  
 * Get access to `filemgmt.jboss.org`
 
     * Note: This is for internal Red Hat developer information only and requires access to Red Hat's VPN.
@@ -163,18 +155,18 @@ One week in advance:
 
             * Verify that the reference manuals open in a browser (HTML) and Adobe Reader (PDF).
 
-Creating a release branch
--------------------------
+Creating a new branch 
+---------------------
 
-A release branch name should always end with `.x` so it looks different from a tag name and a topic branch name.
+A new branch name should always end with `.x` so it looks different from a tag name and a topic branch name.
 
-* When do we create a release branch?
+* When do we create a new branch?
 
-    * We only create a release branch just before releasing CR1.
+    * We only create a new branch just before releasing CR1.
 
-        * For example, just before releasing 6.1.0.CR1, we created the release branch 6.1.x
+        * For example, just before releasing 6.5.0.CR1, we created the release branch 6.5.x
 
-            * The release branch 6.2.x contained the releases 6.2.0.CR1, 6.2.0.Final, 6.2.1.Final, 6.2.2.Final, ...
+            * The new branch 6.2.x contained the releases 6.5.0.CR1, 6.5.0.Final, 6.5.1-SNAPSHOT, ...
 
     * Alpha/Beta releases are released directly from master, because we don't backport commits to Alpha/Beta's.
 
@@ -186,17 +178,16 @@ A release branch name should always end with `.x` so it looks different from a t
     $ git-all.sh pull --rebase
     ```
 
-* Simply use the script `script/release/create-release-branches.sh` with the drools and jbpm *release branch name*:
+* Create a new branch using the script kie-createNewBranches.sh:
 
     ```shell
-    $ droolsjbpm-build-bootstrap/script/release/create-release-branches.sh 6.2.x 6.2.x
-    # where 6.2.x is the drools and 6.2.x is the jbpm release branch name
+    $ ./droolsjbpm-build-bootstrap/script/release/kie-createNewBranch.sh <new branch> 
     ```
 
-    * Note: this script creates a release branch, pushes it to origin and sets the upstream from local release branch to remote release branch
+    * Note: this script creates a new branch, pushes it to origin and sets the upstream from local new branch to remote new branch
 
 
-* Switch back and forth from master to the release branches for all git repositories
+* Switch back and forth from master to the new branches for all git repositories
 
     * If you haven't made the branches yourself, first make sure your local repository knows about them:
 
@@ -207,33 +198,23 @@ A release branch name should always end with `.x` so it looks different from a t
     * Switch to master with `script/git-checkout-all.sh`
 
         ```shell
-        $ droolsjbpm-build-bootstrap/script/git-checkout-all.sh master master
+        $ droolsjbpm-build-bootstrap/script/git-checkout-all.sh <new branch>
         ```
 
     * Update master to the next SNAPSHOT version to avoid clashing the artifacts on nexus of master and the release branch:
 
         ```shell
-        $ droolsjbpm-build-bootstrap/script/release/update-version-all.sh 6.2.0-SNAPSHOT 6.3.0-SNAPSHOT
+        $ droolsjbpm-build-bootstrap/script/release/update-version-all.sh 7.6.1-SNAPSHOT 2.2.1-SNAPSHOT 
         ```
 
-        * Note: the arguments are `releaseOldVersion` `releaseNewVersion`
+        * Note: the arguments are `kie Version` `uberfire Version`
 
-        * WARNING: FIXME the `update-version-all.sh` script does not work correctly if you are releasing a hotfix version.
-
-        * WARNING: `jbpm/pom.xml` sometimes has properties defined that override the `${version.org.jbpm}`. Check this is not the case.
+        * WARNING: script update-version-all.sh did not update all versions in all modules for 7.6.0-SNAPSHOT. Check all have been updated with the following and re-run if required.
 
             ```shell
-            $ grep -r '6.2.0-SNAPSHOT' **/pom.xml
+            $ grep -r '7.6.0-SNAPSHOT' **/pom.xml
             # or
-            $ for i in $(find . -name "pom.xml"); do grep '6.2.0-SNAPSHOT' $i; done
-            ```
-
-        * WARNING: script update-version-all.sh did not update all versions in all modules for 6.3.0-SNAPSHOT. Check all have been updated with the following and re-run if required.
-
-            ```shell
-            $ grep -r '6.3.0-SNAPSHOT' **/pom.xml
-            # or
-            $ for i in $(find . -name "pom.xml"); do grep '6.3.0-SNAPSHOT' $i; done
+            $ for i in $(find . -name "pom.xml"); do grep '7.6.0-SNAPSHOT' $i; done
             ```
             or
             ```shell
@@ -241,20 +222,6 @@ A release branch name should always end with `.x` so it looks different from a t
             ```
 
         * Note: in either case it is important to search for `-SNAPSHOT`, as there are various hidden `-SNAPSHOT` dependencies in some pom.xml files and they should be prevented for releases
-
-        * IMPORTANT: Right now the script is not updating automatically all poms of droolsjbpm-tools.
-          This could be the case when the number of release i.e. 6.1.0 changes to 6.1.1.
-
-          When the change is in the appendix only (i.e. Beta, CR, Final) the scripts should work correctly. There is the file droolsjbpm-tools/drools-eclipse/org.drools.updatesite/category.xml that has to be updated manually if the script doesn't run correctly.
-
-          Steps to do it working:
-
-            1. run script droolsjbpm-build-bootstrap/script/release/update-version-all
-            2. since this script will fail in droolsjbpm-tools edit droolsjbpm-tools/drools-eclipse/org.drools.updatesite/category.xml and modify manually all *.feature.source_***.qualifier
-               Don't do this before you did the first run that fails - you have to run the script first!
-            3. re-run droolsjbpm-build-bootstrap/script/release/update-version-all
-
-        * NOTE: the repository fuse-bxms-integ has to be upgraded manually
 
         * Commit those changes (so you can tag them properly):
 
@@ -283,34 +250,42 @@ A release branch name should always end with `.x` so it looks different from a t
         $ sh droolsjbpm-build-bootstrap/script/git-all.sh push origin master (pushes all commits to master)
         ```
 
-
     * Switch back to the *release branch name* with `script/git-checkout-all.sh` with drools and jbpm *release branch name*:
 
         ```shell
-        $ sh droolsjbpm-build-bootstrap/script/git-checkout-all.sh 6.2.x 6.2.x
+        $ sh droolsjbpm-build-bootstrap/script/git-checkout-all.sh 7.6.x
         ```
 
 * Push the created release branches to the blessed directory
 
     ```shell
-    $ sh droolsjbm-build-bootstrap/script/git-all.sh push origin 6.2.x
+    $ sh droolsjbm-build-bootstrap/script/git-all.sh push origin 7.6.x
     ```
 
-* Set up Jenkins build jobs for the branch.
+* Set up Jenkins build jobs for the new branch.
 
-    * Go to the internal Jenkins website inside the VPN.
+    * Add a new branch to kiegroup/kie-jenkins-jobs
 
-    * Clone each of the master build jobs for every git repo that was branched.
+    * Edit the [jobs](https://github.com/kiegroup/kie-jenkins-scripts/tree/master/job-dsls) and do the needed adaptations for the new branch
 
-        * Suffix the build job name with the branch name, for example `drools-6.2.x` and `droolsjbpm-integration-6.2.x`.
-
-        * Change the build job configuration to use the git repo branch, for example `6.2.x`.
-
+    * Note:since all these Jenkins Jobs are done with a DSL Plugin there are two things that should be done so all jobs are available:
+   
+        - the file [branch-mapping.yaml](https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/script/branch-mapping.yaml) should be upgraded to the new branch
+        - the Jenkins Jobs
+        
+          https://kie-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/DSL/job/DSL-KIE-releases-master/
+        
+          https://kie-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/DSL/job/DSL-kieAllBuild-FlowJob-master/
+        
+          https://kie-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/DSL/job/DSL-seed-job-master/
+        
+          should be updated to the new branch
+      
 * Set up a new Jenkins view for the related release builds
 
-    * https://jenkins.mw.lab.eng.bos.redhat.com/hudson/me/my-views/view/All/
+    * https://jenkins.mw.lab.eng.bos.redhat.com/hudson/me/my-views/view/All/ (i.e. [7.5.x](https://kie-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/view/7.5.x/))
 
-        * Note: Add all Drools, jBPM and Guvnor jobs manually or use a regex pattern similar to `^((drools|guvnor).*5\.5|jbpm.*5\.4).*$`
+        * Note: Add kie <new branch> jobs manually or use a regex pattern similar to `^((kie).*7).*$`
 
 * Alert the dev mailing list and the IRC channel that the branch has been made.
 
@@ -329,7 +304,7 @@ Releasing from a release branch
 
 * Alert the IRC dev channels that you're starting the release.
 
-* Pull the latest changes of the branch that will be the base for the release (branchName == master or i.e. 6.2.x)
+* Pull the latest changes of the branch that will be the base for the release (branchName == master or i.e. 7.6.x)
 
     ```shell
     $ git-all.sh checkout <branchName>
@@ -338,7 +313,7 @@ Releasing from a release branch
 
 * Create a local release branch
 
-    Name should begin with r, i.e if the release will be 6.2.0.Final the name should be r6.2.0.Final (localReleaseBranchName == r6.2.0.Final)
+    Name should begin with r, i.e if the release will be 7.6.0.Final the name should be r7.6.0.Final (localReleaseBranchName == r7.6.0.Final)
 
     ```shell
     $ git-all.sh checkout -b <localReleaseBranchName> <branchname>    
@@ -413,18 +388,11 @@ If everything is perfect (compiles, Jenkins is all blue, sanity checks succeed a
         2. org.kie version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L48)
            org.kie version sometimes has to be changed manually, if needed, should be updated to release version
 
-        3. uberfire version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L54)
-           has to be updated manually to the last released version
+        3. uberfire version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L53)
+           the uberfire version has to be updated manually to the last released version
 
-        4. dashbuilder version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L55)
-           has to be updated manually to the last released version
-
-        5. jboss-ip-bom version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L66)
-           should be the same version as in point 1
-
-        6. latest released version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L85)
-           this is a property productisation needs to get the last released version on the branch where released from.
-           When updated this should be pushed to the branch of the blessed repository
+        4. errai version (https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/master/pom.xml#L99)
+           the errai version has to be updated manually to the last released version
 
     * Commit those changes (so you can tag them properly):
 
@@ -470,12 +438,11 @@ If everything is perfect (compiles, Jenkins is all blue, sanity checks succeed a
 * Deploy the artifacts:
 
     ```shell
-    $ droolsjbpm-build-bootstrap/script/mvn-all.sh clean deploy -Dfull -DskipTests
+    ./droolsjbpm-build-bootstrap/script/mvn-all.sh -B -e -U clean deploy -Dfull -Drelease -T2 -Dmaven.test.failure.ignore=true -Dgwt.memory.settings="-Xmx4g -Xms1g -Xss1M" -Dgwt.compiler.localWorkers=2
     ```
+    * Note: add this parameter -Dproductized if this is a release/tag for prod
 
     * This will take a long while (3+ hours)
-
-    * The release skips the tests because jbpm and guvnor have random failing tests
 
     * If it fails for any reason, go to nexus and drop your stating repositories again and start over.
 
@@ -618,7 +585,7 @@ If everything is perfect (compiles, Jenkins is all blue, sanity checks succeed a
 * Update the symbolic links `latest` and `latestFinal` links on filemgmt, if and only if there is no higher major or minor release was already released.
 
     ```shell
-    $ droolsjbpm-build-bootstrap/script/release/create_filemgmt_links.sh 5.2.0.Final
+    $ droolsjbpm-build-bootstrap/script/release/create_filemgmt_links.sh 7.6.0.Final
     ```
 
     * Wait 5 minutes and then check these URL's. Hit ctrl-F5 in your browser to do a hard refresh:
@@ -642,7 +609,13 @@ If everything is perfect (compiles, Jenkins is all blue, sanity checks succeed a
     * Rename it from `kmodule.xsd` to `kmodule_<major>_<minor>.xsd` so it includes its version (major and minor only, not hotfixes or quantifiers). For example for release `6.3.0.Final` it is renamed to `kmodule_6_3.xsd`. Do not overwrite an existing file as there should never be an existing file (because the XSD is only copied for Final, non-hotfix releases).
     
     * Publish drools.org
-
+    
+* Protect the new creaed branches on github against forced pushes
+    
+    - https://github.com/kiegroup/<rep>/settings/branches
+    - choose the new branch 
+    
+    
 Announcing the release
 ----------------------
 
