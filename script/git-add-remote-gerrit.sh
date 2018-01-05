@@ -38,17 +38,11 @@ for repository in `cat "${scriptDir}/repository-list.txt"` ; do
         echo "==============================================================================="
         cd $repository
 
-        if [ "$repository" == "kie-eap-modules" ]
-        then
-          echo "$repository not needed in Gerrit";
-        elif [ "$repository" == "droolsjbpm-build-distribution" ]
-        then
-          echo "$repository not needed in Gerrit";
-        elif [ "$repository" == "dashboard-builder" ]
-        then
+        if [ "$repository" == "droolsjbpm-build-distribution" ]; then
+          echo "$repository not needed for product"
+        elif [ "$repository" == "dashboard-builder" ]; then
           git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/droolsjbpm-dashboard-builder
-        elif [ "$repository" == "jbpm-dashboard" ]
-        then
+        elif [ "$repository" == "jbpm-dashboard" ]; then
           git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/jbpm-dashboard
         else
           git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/kiegroup/$repository

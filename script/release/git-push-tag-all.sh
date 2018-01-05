@@ -55,9 +55,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
         releaseTagName=$1
         git tag -a $releaseTagName -m "Tagged $releaseTagName"
 
-        if [ "$repository" == "kie-eap-modules" ];then
-          echo "don't push tag for $repository"
-        elif [ "$repository" == "droolsjbpm-build-distribution" ];then
+        if [ "$repository" == "droolsjbpm-build-distribution" ];then
           echo "don't push tag for $repository"
         else
           git push gerrit $releaseTagName
