@@ -44,6 +44,8 @@ for repository in `cat "${scriptDir}/repository-list.txt"` ; do
           git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/droolsjbpm-dashboard-builder
         elif [ "$repository" == "jbpm-dashboard" ]; then
           git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/jbpm-dashboard
+        elif [ "$repository" == "kie-eap-modules" ]; then
+          git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/$repository
         else
           git remote add gerrit ssh://jb-ip-tooling-jenkins@code.engineering.redhat.com/kiegroup/$repository
         fi
