@@ -503,6 +503,8 @@
                       <!-- Classes from gwt-user duplicated in errai-uibinder -->
                       <ignoreClass>com.google.gwt.uibinder.rebind.UiBinderWriter</ignoreClass>
                       <ignoreClass>com.google.gwt.uibinder.rebind.UiBinderGenerator</ignoreClass>
+                      <!-- ignoring java 9 compatible class for modules -->
+                      <ignoreClass>module-info</ignoreClass>
                     </ignoreClasses>
                     <dependencies>
                       <!-- gwt-dev bundles dozens of different 3rd party dependencies, but can not be usually excluded
