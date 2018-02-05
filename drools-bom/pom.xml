@@ -348,6 +348,13 @@
         <scope>test</scope>
       </dependency>
 
+      <!--KIE Drools Workbench Playground -->
+      <dependency>
+        <groupId>org.kie.workbench.playground</groupId>
+        <artifactId>kie-decision-playground</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.kie</groupId>
         <!-- Does this belong in the kie-bom or in the drools-bom ? -->
@@ -525,8 +532,8 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
-      
-      
+
+
       <!-- DRL Extension -->
       <dependency>
         <groupId>org.drools</groupId>
@@ -539,7 +546,6 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
-      
 
 
       <!--Categories Editor-->
