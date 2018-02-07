@@ -128,12 +128,12 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             mvn -B -s $settingsXmlFile clean install -DskipTests
             returnCode=$?
 
-        elif [ "$repository" = "jbpm" ]; then
+        elif [ "$repository" == "jbpm" ]; then
             mvnVersionsUpdateParentAndChildModules
             returnCode=$?
             sed -i "s/release.version=.*$/release.version=$newVersion/" jbpm-installer/src/main/resources/build.properties
 
-        elif [ "$repository" = "droolsjbpm-tools" ]; then
+        elif [ "$repository" == "droolsjbpm-tools" ]; then
             cd drools-eclipse
             mvn -B -s $settingsXmlFile -Dfull tycho-versions:set-version -DnewVersion=$newVersion
             returnCode=$?
@@ -157,6 +157,10 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
                 mvnVersionsUpdateChildModules
                 returnCode=$?
             fi
+
+        elif [ "$repository" == "optashift-employee-rostering" ]; then
+            mvnVersionsSet
+            returnCode=$?
 
         else
             mvnVersionsUpdateParentAndChildModules
