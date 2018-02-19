@@ -162,7 +162,12 @@
         - Always extract the version as a property.
         - A element's inner order is <groupId>, <artifactId>, [<type>,] [<classifier>,] <version> (following Aether proper)
       -->
-
+      <!-- will override org.eclipse.bpmn2 version 0.7.6-jboss due to RHBA-387 -->
+      <dependency>
+        <groupId>org.eclipse</groupId>
+        <artifactId>org.eclipse.bpmn2</artifactId>
+        <version>${version.org.eclipse.bpmn2}</version>
+      </dependency>
       <dependency>
         <groupId>avalon-framework</groupId>
         <artifactId>avalon-framework</artifactId>
