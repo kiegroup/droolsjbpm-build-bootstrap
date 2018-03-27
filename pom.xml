@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.8.0-SNAPSHOT</version>
+  <version>7.8.0.t027</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -45,7 +45,7 @@
 
   <properties>
     <!-- Internal dependencies -->
-    <version.org.kie>7.8.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.8.0.t027</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
@@ -210,7 +210,7 @@
          Default value is 1 to enable building on older machines as well (minimum is still about 4GiB of RAM memory). -->
     <gwt.compiler.localWorkers>1</gwt.compiler.localWorkers>
     <!-- property for productisation to know the last released version -->
-    <latestReleasedVersionFromThisBranch>notYetReleased</latestReleasedVersionFromThisBranch>
+    <latestReleasedVersionFromThisBranch>7.8.0.t027</latestReleasedVersionFromThisBranch>
     <version.io.takari.maven.plugins>1.12.6</version.io.takari.maven.plugins>
     <version.io.takari.maven.plugins.integration-testing>2.9.1</version.io.takari.maven.plugins.integration-testing>
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
