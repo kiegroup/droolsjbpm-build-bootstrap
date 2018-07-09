@@ -252,6 +252,7 @@
     <version.org.quartz-scheduler>2.2.3</version.org.quartz-scheduler>
 
     <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.0.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
+    <version.org.apache.maven.plugins.dependency>3.0.2</version.org.apache.maven.plugins.dependency>
 
   </properties>
 
@@ -2651,6 +2652,12 @@
         <groupId>io.takari.maven.plugins</groupId>
         <artifactId>takari-plugin-testing</artifactId>
         <version>${version.io.takari.maven.plugins.integration-testing}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>${version.org.apache.maven.plugins.dependency}</version>
       </dependency>
 
       <!-- Narayana is used as transaction manager for KIE Server on Tomcat -->
