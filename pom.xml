@@ -510,6 +510,10 @@
                       <ignoreClass>com.google.gwt.uibinder.rebind.UiBinderGenerator</ignoreClass>
                       <!-- ignoring java 9 compatible class for modules -->
                       <ignoreClass>module-info</ignoreClass>
+                      <!-- Classes repackaged in the maven world-->
+                      <ignoreClass>org.eclipse.aether.*</ignoreClass>
+                      <ignoreClass>org.apache.maven.*</ignoreClass>
+                      <ignoreClass>org.codehaus.plexus.*</ignoreClass>
                     </ignoreClasses>
                     <dependencies>
                       <!-- gwt-dev bundles dozens of different 3rd party dependencies, but can not be usually excluded
