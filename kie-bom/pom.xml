@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.9.0-SNAPSHOT</version>
+    <version>7.10.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -487,6 +487,12 @@
         <artifactId>kie-server-router-client</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-integ-tests-common</artifactId>
+        <version>${version.org.kie}</version>
       </dependency>
 
       <!-- Other droolsjbpm-integration -->
