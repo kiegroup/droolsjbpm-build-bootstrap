@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>7.11.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -225,6 +225,17 @@
       </dependency>
       <dependency>
         <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-swagger</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-swagger</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
         <artifactId>kie-server-jms</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -324,6 +335,17 @@
       </dependency>
       <dependency>
         <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-rest-swagger</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-rest-swagger</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
         <artifactId>kie-server-ws</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -332,13 +354,6 @@
         <artifactId>kie-server-ws</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.server</groupId>
-        <artifactId>kie-server</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>ee6</classifier>
-        <type>war</type>
       </dependency>
       <dependency>
         <groupId>org.kie.server</groupId>
@@ -422,6 +437,11 @@
       </dependency>
       <dependency>
         <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-controller-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
         <artifactId>kie-server-controller-standalone-impl</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -430,13 +450,6 @@
         <artifactId>kie-server-controller-standalone-impl</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.server</groupId>
-        <artifactId>kie-server-controller-standalone</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>ee6</classifier>
-        <type>war</type>
       </dependency>
       <dependency>
         <groupId>org.kie.server</groupId>
@@ -474,6 +487,12 @@
         <artifactId>kie-server-router-client</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-integ-tests-common</artifactId>
+        <version>${version.org.kie}</version>
       </dependency>
 
       <!-- Other droolsjbpm-integration -->
@@ -511,11 +530,83 @@
         <classifier>sources</classifier>
       </dependency>
 
+      <!-- KIE - Custom lienzo artifacts -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>lienzo-core</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>lienzo-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>lienzo-tests</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>lienzo-tests</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+
       <!-- KIE Workbench Playground Repository -->
       <dependency>
         <groupId>org.kie.workbench.playground</groupId>
-        <artifactId>playground-parent</artifactId>
+        <artifactId>kie-all-playground</artifactId>
         <version>${version.org.kie}</version>
+      </dependency>
+
+      <!--KIE Common - Compiler Service -->
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-core</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-service</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-service</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-rest</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-rest</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-distribution</artifactId>
+        <version>${version.org.kie}</version>
+        <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-compiler-distribution</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
       </dependency>
 
       <!--KIE Common - Core Services -->
@@ -555,6 +646,19 @@
         <classifier>sources</classifier>
       </dependency>
 
+      <!--Testing-->
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-testing-utils</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-testing-utils</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
       <!--Core API-->
       <dependency>
         <groupId>org.kie.workbench.services</groupId>
@@ -584,6 +688,12 @@
         <groupId>org.kie.workbench.services</groupId>
         <artifactId>kie-wb-common-data-modeller-core</artifactId>
         <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-data-modeller-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie.workbench.services</groupId>
@@ -626,6 +736,227 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
+
+      <!-- KIE Workbench Common ALA -->
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-spi</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-spi</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-spi</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-build-maven</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-build-maven</artifactId>
+        <classifier>tests</classifier>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-docker-provider</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-provider</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-wildfly-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-provider</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-provider</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-openshift-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-registry-vfs</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-registry-vfs</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-source-git</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-services-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-services-backend</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-services-rest</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-api</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-client</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-ui-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-provisioning-pipelines-openshift</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-ala-provisioning-pipelines-wildfly</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
       <!--Home Page - Community-->
       <dependency>
         <groupId>org.kie</groupId>
@@ -745,6 +1076,11 @@
         <groupId>org.kie</groupId>
         <artifactId>kie-wb-webapp-common</artifactId>
         <type>war</type>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-wb-deployment-validation</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <!--Default Editor-->
@@ -935,6 +1271,12 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.screens</groupId>
+        <artifactId>kie-wb-common-data-modeller-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
       <!-- Java editor -->
       <dependency>
         <groupId>org.kie.workbench.screens</groupId>
@@ -989,40 +1331,6 @@
       <dependency>
         <groupId>org.kie.workbench.screens</groupId>
         <artifactId>kie-wb-common-server-ui-backend</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <!-- Kie Social Home Page UI -->
-      <dependency>
-        <groupId>org.kie.workbench.screens</groupId>
-        <artifactId>kie-wb-common-social-home-page-api</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench.screens</groupId>
-        <artifactId>kie-wb-common-social-home-page-api</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench.screens</groupId>
-        <artifactId>kie-wb-common-social-home-page-client</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench.screens</groupId>
-        <artifactId>kie-wb-common-social-home-page-client</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench.screens</groupId>
-        <artifactId>kie-wb-common-social-home-page-backend</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench.screens</groupId>
-        <artifactId>kie-wb-common-social-home-page-backend</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -1244,6 +1552,33 @@
         <classifier>sources</classifier>
       </dependency>
 
+      <!-- Kie-wb CLI migration tools -->
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-cli-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-cli-migration-tool</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-cli-project-migration</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-cli-forms-migration</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-cli-system-configuration-migration</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
       <!-- Forms -->
       <dependency>
         <groupId>org.kie.workbench.forms</groupId>
@@ -1373,7 +1708,7 @@
       </dependency>
       <dependency>
         <groupId>org.kie.workbench.forms</groupId>
-        <artifactId>kie-wb-common-forms-serialization</artifactId>
+        <artifactId>kie-wb-common-forms-backend-services</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <dependency>
@@ -1463,6 +1798,12 @@
         <groupId>org.kie.workbench.forms</groupId>
         <artifactId>kie-wb-common-forms-jbpm-integration-backend</artifactId>
         <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.forms</groupId>
+        <artifactId>kie-wb-common-forms-jbpm-integration-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
       </dependency>
       <dependency>
         <groupId>org.kie.workbench.forms</groupId>
@@ -1579,6 +1920,13 @@
         <artifactId>kie-wb-common-stunner-backend-common</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-backend-common</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
       </dependency>
 
       <dependency>
@@ -1709,6 +2057,13 @@
 
       <dependency>
         <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-project-client</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
         <artifactId>kie-wb-common-stunner-svg-gen</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -1809,47 +2164,6 @@
         <classifier>sources</classifier>
       </dependency>
 
-      <!-- Stunner - Basic Set-->
-
-      <dependency>
-        <groupId>org.kie.workbench.stunner</groupId>
-        <artifactId>kie-wb-common-stunner-basicset-api</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.kie.workbench.stunner</groupId>
-        <artifactId>kie-wb-common-stunner-basicset-api</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-
-      <dependency>
-        <groupId>org.kie.workbench.stunner</groupId>
-        <artifactId>kie-wb-common-stunner-basicset-backend</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.kie.workbench.stunner</groupId>
-        <artifactId>kie-wb-common-stunner-basicset-backend</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-
-      <dependency>
-        <groupId>org.kie.workbench.stunner</groupId>
-        <artifactId>kie-wb-common-stunner-basicset-client</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.kie.workbench.stunner</groupId>
-        <artifactId>kie-wb-common-stunner-basicset-client</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-
       <!-- Stunner - BPMN-->
 
       <dependency>
@@ -1913,6 +2227,19 @@
       <dependency>
         <groupId>org.kie.workbench.stunner</groupId>
         <artifactId>kie-wb-common-stunner-bpmn-project-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-project-backend</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-project-backend</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -2051,6 +2378,13 @@
         <classifier>sources</classifier>
       </dependency>
 
+      <!-- KIE Workbench Common Dev Tools and Extensions -->
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-wf-sdm-extensions</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
       <!-- Distribution -->
       <dependency>
         <groupId>org.kie</groupId>
@@ -2060,9 +2394,23 @@
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>
+        <artifactId>kie-drools-wb-webapp</artifactId>
+        <version>${version.org.kie}</version>
+        <type>jar</type>
+        <classifier>swarm</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
         <artifactId>kie-wb-webapp</artifactId>
         <version>${version.org.kie}</version>
         <type>war</type>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-wb-webapp</artifactId>
+        <version>${version.org.kie}</version>
+        <type>jar</type>
+        <classifier>swarm</classifier>
       </dependency>
       <dependency>
         <groupId>org.kie</groupId>

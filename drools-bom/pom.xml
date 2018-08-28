@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>7.11.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -105,6 +105,57 @@
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
+      <!-- DRLX Parser -->
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drlx-parser</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drlx-parser</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- /DRLX Parser -->
+      <!-- Drools Model -->
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-canonical-model</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-canonical-model</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-canonical-model</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-model-compiler</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-model-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-model-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      <!-- /Drools Model -->
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
@@ -119,6 +170,13 @@
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.drools.testcoverage</groupId>
+        <artifactId>drools-test-suite</artifactId>
         <version>${version.org.kie}</version>
         <type>test-jar</type>
         <scope>test</scope>
@@ -140,17 +198,6 @@
         <version>${version.org.kie}</version>
         <type>test-jar</type>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-pmml</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-pmml</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.drools</groupId>
@@ -216,6 +263,17 @@
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-beliefs</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>kie-pmml</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>kie-pmml</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -335,6 +393,13 @@
         <version>${version.org.kie}</version>
         <type>test-jar</type>
         <scope>test</scope>
+      </dependency>
+
+      <!--KIE Drools Workbench Playground -->
+      <dependency>
+        <groupId>org.kie.workbench.playground</groupId>
+        <artifactId>kie-decision-playground</artifactId>
+        <version>${version.org.kie}</version>
       </dependency>
 
       <dependency>
@@ -514,7 +579,20 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
-      
+
+
+      <!-- DRL Extension -->
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-drl-extension-server</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-drl-extension-server</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
 
 
       <!--Categories Editor-->
@@ -526,6 +604,40 @@
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wb-categories-editor-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!--Scenario Simulation Editor-->
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-backend</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-backend</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -997,6 +1109,12 @@
       <!--REST-->
 
       <!--drools-wb distribution-->
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-ui</artifactId>
+        <type>war</type>
+        <version>${version.org.kie}</version>
+      </dependency>
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wb-webapp</artifactId>

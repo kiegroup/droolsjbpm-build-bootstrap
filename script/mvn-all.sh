@@ -19,6 +19,21 @@ initializeWorkingDirAndScriptDir() {
     # Set script directory and remove other symbolic links (parent directory links)
     scriptDir=`pwd -P`
 }
+
+printUsage() {
+    echo
+    echo "Usage:"
+    echo "  $0 <Maven arguments> [--repo-list=<list-of-repositories>|--target-repo=<repository>] [--clean-up-script=<absolute-path>]"
+    echo "For example:"
+    echo "  $0 --version"
+    echo "  $0 -DskipTests clean install"
+    echo "  $0 -Dfull clean install"
+    echo "  $0 clean test --repo-list=drools,jbpm"
+    echo "  $0 clean test --clean-up-script=\`pwd\`/remove-big-dirs.sh"
+    echo "  $0 clean install --target-repo=drools-wb"
+    echo
+}
+
 initializeWorkingDirAndScriptDir
 droolsjbpmOrganizationDir="$scriptDir/../.."
 
@@ -29,10 +44,19 @@ MVN_ARG_LINE=()
 for arg in "$@"
 do
     case "$arg" in
+        --target-repo=*)
+            REPOSITORY_LIST=$($scriptDir/checks/repo-dep-tree.pl -w -t ${arg#*=})
+            REPOSITORY_LIST=${REPOSITORY_LIST//,/ }
+        ;;
+
         --repo-list=*)
             REPOSITORY_LIST=$(echo $arg | sed 's/[-a-zA-Z0-9]*=//')
             # replace the commas with spaces so that the for loop treats the individual repos as different values
             REPOSITORY_LIST=${REPOSITORY_LIST//,/ }
+        ;;
+
+        --clean-up-script=*)
+            CLEAN_UP_SCRIPT=$(echo $arg | sed 's/[-a-zA-Z0-9]*=//')
         ;;
 
         *)
@@ -41,23 +65,36 @@ do
     esac
 done
 
-if [ "x$MVN_ARG_LINE" = "x" ] ; then
-    echo
-    echo "Usage:"
-    echo "  $0 <arguments of maven> [--repo-list=<list-of-repositories>]"
-    echo "For example:"
-    echo "  $0 --version"
-    echo "  $0 -DskipTests clean install"
-    echo "  $0 -Dfull clean install"
-    echo "  $0 clean test --repo-list=drools,jbpm"
-    echo
+
+# check that Maven args are non empty
+if [ "$MVN_ARG_LINE" = "" ] ; then
+    echo "No Maven arguments specified!"
+    printUsage
     exit 1
 fi
 
-startDateTime=`date +%s`
+# check the clean-up script exists (if specified via arg)
+if [ "$CLEAN_UP_SCRIPT" != "" ] && [ ! -f "$CLEAN_UP_SCRIPT" ]; then
+    echo "Invalid clean-up script specified: $CLEAN_UP_SCRIPT. The file does not exist!"
+    printUsage
+    exit 2
+fi
+
+mvnBin="mvn"
+if [ -a $M3_HOME/bin/mvn ] ; then
+    mvnBin="$M3_HOME/bin/mvn"
+fi
+echo "Using Maven binary '$mvnBin'"
+"$mvnBin" -v
+echo
 
 echo "Maven arg. line=${MVN_ARG_LINE[@]}"
+if [ "$CLEAN_UP_SCRIPT" != "" ]; then
+    echo "Using clean-up script '$CLEAN_UP_SCRIPT'"
+fi
+
 cd "$droolsjbpmOrganizationDir"
+startDateTime=`date +%s`
 
 for repository in $REPOSITORY_LIST; do
     echo
@@ -71,17 +108,17 @@ for repository in $REPOSITORY_LIST; do
         echo "==============================================================================="
         cd $repository
 
-        if [ -a $M3_HOME/bin/mvn ] ; then
-            $M3_HOME/bin/mvn "${MVN_ARG_LINE[@]}"
-        else
-            mvn "${MVN_ARG_LINE[@]}"
-        fi
-
+        "$mvnBin" "${MVN_ARG_LINE[@]}"
         returnCode=$?
-        cd ..
+
         if [ $returnCode != 0 ] ; then
             exit $returnCode
         fi
+        if [ "$CLEAN_UP_SCRIPT" != "" ]; then
+            echo "Running clean-up script $CLEAN_UP_SCRIPT for repository $repository"
+            sh "$CLEAN_UP_SCRIPT" `pwd`
+        fi
+        cd ..
     fi
 done
 

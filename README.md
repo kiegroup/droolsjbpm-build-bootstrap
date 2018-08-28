@@ -416,6 +416,11 @@ Running the build
 
     * Note: the `mvn-all.sh` script is working directory independent.
 
+* You can use `mvn-all.sh` to compile a specific repository and all repositories that your target repository depends on.
+  This is done using the `--target-repo` option which will invoke `repo-dep-tree.pl` script to discover cross-repository
+  project dependencies. Use `--repo-list` to specify custom list of repositories. These options work for `git-all.sh`
+  too.
+
 * Warning: The first `mvn` build of a day will download the latest SNAPSHOT dependencies of other kiegroup projects,
 unless you build all those kiegroup projects from source.
 Those SNAPSHOTS were build and deployed last night by Jenkins jobs.
@@ -706,11 +711,11 @@ Important note: `mvn eclipse:eclipse` does not work for our eclipse plugins beca
 Configuring Eclipse
 -------------------
 
-* Force language level 6, to fail-fast when (accidentally) using features available only in newer Java versions.
+* Force language level 8, to fail-fast when (accidentally) using features available only in newer Java versions.
 
     * Open menu *Window*, menu item *Preferences*
 
-    * Click tree item *Java*, tree item *Compiler*, section *JDK Compliance*, combobox *Compiler compliance level* should be `1.6`.
+    * Click tree item *Java*, tree item *Compiler*, section *JDK Compliance*, combobox *Compiler compliance level* should be `1.8`.
 
 * Remove the test resources Java Build Path exclusion filter to ensure JUnit tests ran inside Eclipse can find the necessary resources.
 
@@ -749,6 +754,17 @@ Configuring Eclipse
         * Note on note: GWT i18n properties files override that and must be in `UTF-8` as specified by the GWT contract.
 
 * Recommended: import our code style
+
+    * Set up formatter for edited code only: Open menu *Window*, menu item *Preferences*, click tree item *Java*, tree item *Editor*, and click *Save actions*. Enable *Perform the selected actions on save*: select *Format source code* (*Format edited lines*) and *Organize imports*
+    
+    * **IMPORTANT** Eclipse uses three seperate formatters, and you need to setup each one seperately (click Import...,
+    select the file, and click apply for each one):
+    
+        - Clean Up: Uses "eclipse-code-style-clean-up_droolsjbpm-java-conventions.xml"
+        
+        - Formatter: Uses "eclipse-code-style-formatter_droolsjbpm-java-conventions.xml"
+        
+        - Organize Imports: Uses "eclipse-code-style-organize-imports_droolsjbpm-java-conventions.importorder"
 
     * If you don't do this, you need to set the number of spaces correctly manually.
 
@@ -823,14 +839,14 @@ Configuring Eclipse
 
         ```
         /*
-         * Copyright 2015 Red Hat, Inc. and/or its affiliates.
-         *
+         * Copyright ${year} Red Hat, Inc. and/or its affiliates.
+         * 
          * Licensed under the Apache License, Version 2.0 (the "License");
          * you may not use this file except in compliance with the License.
          * You may obtain a copy of the License at
-         *
+         * 
          *     http://www.apache.org/licenses/LICENSE-2.0
-         *
+         * 
          * Unless required by applicable law or agreed to in writing, software
          * distributed under the License is distributed on an "AS IS" BASIS,
          * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -842,8 +858,7 @@ Configuring Eclipse
     * Note: Do not start or end with a newline character
 
     * Note: Do not start with `/**`: it is not a valid javadoc.
-
-    * Update the year (2015) every year.
+   
 
 Extra Eclipse plugins
 ---------------------
@@ -856,9 +871,9 @@ Extra Eclipse plugins
 
 * GWT plugin
 
-    * [Download and install the Eclipse GWT plugin](http://code.google.com/intl/en/eclipse/docs/getting_started.html)
+    * [Download and install the Eclipse GWT plugin](http://gwt-plugins.github.io/documentation/gwt-eclipse-plugin/Download.html)
 
-        * Note: it is recommended to keep your Eclipse GWT plugin version in sync with the GWT version that we use.
+        * Note: it is recommended to use the same [GWT SDK version](https://developers.google.com/eclipse/docs/using_sdks#selecting-sdks-for-a-project) like the GWT version it is used in [droolsjbpm-build-bootstrap/pom.xml](pom.xml) `version.com.google.gwt` property value.
 
     * In *Package Explorer*, right click on the project `guvnor-webapp`, menu item *Properties*.
 
@@ -996,11 +1011,11 @@ Note: Don't use the `maven-idea-plugin` on the command line with `mvn`: it's dea
 Configuring IntelliJ
 --------------------
 
-* Force language level 6, to fail-fast when (accidentally) using features available only in newer Java versions.
+* Force language level 8, to fail-fast when (accidentally) using features available only in newer Java versions.
 
     * Open menu *File*, menu item *Project Structure*
 
-    * Click list item *Modules*, for each module, tab *Sources*, combobox *Language level* should be automatically set to `6.0 ...`
+    * Click list item *Modules*, for each module, tab *Sources*, combobox *Language level* should be automatically set to `8.0 ...`
 
 * Avoid that changes in some resources are ignored in the next run/debug (and you are forced to use mvn)
 
@@ -1014,7 +1029,7 @@ Configuring IntelliJ
 
     * Click tree item *Compiler*, tree item *Java Compiler*, textfield *Additional command line parameters*
 
-    * Add `-J-Xss1024k` so it becomes something like `-target 1.6 -J-Xss1024k`
+    * Add `-J-Xss1024k` so it becomes something like `-target 1.8 -J-Xss1024k`
 
 * Include files with non-default extensions in your searches and refactors
 

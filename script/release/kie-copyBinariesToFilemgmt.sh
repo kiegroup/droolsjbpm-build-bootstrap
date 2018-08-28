@@ -9,6 +9,7 @@ droolsDocs=drools@filemgmt.jboss.org:/docs_htdocs/drools/release
 droolsHtdocs=drools@filemgmt.jboss.org:/downloads_htdocs/drools/release
 jbpmDocs=jbpm@filemgmt.jboss.org:/docs_htdocs/jbpm/release
 jbpmHtdocs=jbpm@filemgmt.jboss.org:/downloads_htdocs/jbpm/release
+jbpmServiceRepo=jbpm@filemgmt.jboss.org:/downloads_htdocs/jbpm/release
 optaplannerDocs=optaplanner@filemgmt.jboss.org:/docs_htdocs/optaplanner/release
 optaplannerHtdocs=optaplanner@filemgmt.jboss.org:/downloads_htdocs/optaplanner/release
 
@@ -55,7 +56,7 @@ chmod +x upload_jbpm_docs
 sftp -b upload_jbpm_docs $jbpmDocs/$version
 
 touch upload_optaplanner_docs
-echo "mkdir optaplanner-docs" > upload_optaplannerDocs
+echo "mkdir optaplanner-docs" > upload_optaplanner_docs
 chmod +x upload_optaplanner_docs
 sftp -b upload_optaplanner_docs $optaplannerDocs/$version
 
@@ -68,6 +69,11 @@ touch upload_optaplanner_wb_es_docs
 echo "mkdir optaplanner-wb-es-docs" > upload_optaplanner_wb_es_docs
 chmod +x upload_optaplanner_wb_es_docs
 sftp -b upload_optaplanner_wb_es_docs $optaplannerDocs/$version
+
+touch upload_service_repository
+echo "mkdir service-repository" > upload_service_repository
+chmod +x upload_service_repository
+sftp -b upload_service_repository $jbpmServiceRepo/$version
 
 # copies drools binaries to filemgmt.jboss.org
 scp -r droolsjbpm-tools/droolsjbpm-tools-distribution/target/droolsjbpm-tools-distribution-$version/droolsjbpm-tools-distribution-$version/binaries/org.drools.updatesite/* $droolsHtdocs/$version/org.drools.updatesite
@@ -84,8 +90,32 @@ scp -r droolsjbpm-knowledge/kie-api/target/apidocs/* $droolsDocs/$version/kie-ap
 #copies jbpm binaries to filemgmt.jboss.org
 scp -r droolsjbpm-tools/droolsjbpm-tools-distribution/target/droolsjbpm-tools-distribution-$version/droolsjbpm-tools-distribution-$version/binaries/org.drools.updatesite/* $jbpmHtdocs/$version/updatesite
 scp jbpm/jbpm-distribution/target/jbpm-$version-bin.zip $jbpmHtdocs/$version
-scp jbpm/jbpm-installer/target/jbpm-installer-$version.zip $jbpmHtdocs/$version
 scp jbpm/jbpm-distribution/target/jbpm-$version-examples.zip $jbpmHtdocs/$version
+scp kie-wb-distributions/kie-server-distributions/jbpm-server-distribution/target/jbpm-server-$version-dist.zip $jbpmHtdocs/$version
+
+#copies the jbpm-installers to filemgmt.jboss.org
+jbpmHtdocs=jbpm@filemgmt.jboss.org:/downloads_htdocs/jbpm/release
+
+uploadInstaller(){
+        # upload installers to filemgmt.jboss.org
+        scp jbpm-installer-$version.zip $jbpmHtdocs/$version
+}
+
+uploadAllInstaller(){
+        # upload installers to filemgmt.jboss.org
+        scp jbpm-installer-$version.zip $jbpmHtdocs/$version
+        # upload installers to filemgmt.jboss.org
+        scp jbpm-installer-full-$version.zip $jbpmHtdocs/$version
+}
+
+if [[ $version == *"Final"* ]] ;then
+        uploadAllInstaller
+else
+        uploadInstaller
+fi
+
+# copies jbpm work items into service repository
+scp -r jbpm-work-items/repository/target/repository-$version/* $jbpmServiceRepo/$version/service-repository
 
 #copies jbpm-docs to filemgmt.jboss.org
 scp -r kie-docs/docs/jbpm-docs/target/generated-docs/* $jbpmDocs/$version/jbpm-docs

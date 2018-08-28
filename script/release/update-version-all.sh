@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
 
+# IMPORTANT: if you want the script to use a custom settings.xml instead of a predefined (community or productized)
+# set the variable SETTINGS_XML_FILE with the full path to your settings.xml like
+#
+# export SETTINGS_XML_FILE="<full path>/settings.xml"
+#
+# and run the script > sh update-version-all.sh newVersion newAppformerVersion custom.
+
+
 # Updates the version for all kiegroup repositories
 
 initializeScriptDir() {
@@ -19,7 +27,8 @@ initializeScriptDir() {
 }
 
 mvnVersionsSet() {
-    mvn -B -N -e -Dfull versions:set -DnewVersion="$newVersion" -DallowSnapshots=true -DgenerateBackupPoms=false
+    mvn -B -N -e -s $settingsXmlFile versions:set -Dfull\
+      -DnewVersion="$newVersion" -DallowSnapshots=true -DgenerateBackupPoms=false
 }
 
 mvnVersionsUpdateParent() {
@@ -41,13 +50,13 @@ mvnVersionsUpdateParentAndChildModules() {
 initializeScriptDir
 droolsjbpmOrganizationDir="$scriptDir/../../.."
 
-if [ $# != 1 ] && [ $# != 2 ]; then
+if [ $# != 1 ] && [ $# != 3 ]; then
     echo
     echo "Usage:"
-    echo "  $0 newVersion releaseType"
+    echo "  $0 newVersion newAppformerVersion releaseType"
     echo "For example:"
-    echo "  $0 6.3.0.Final community"
-    echo "  $0 6.3.1.20151105 productized"
+    echo "  $0 7.5.0.Final 2.2.0.Final community"
+    echo "  $0 7.5.0.20171120-prod 2.2.0.20171120-prod productized"
     echo
     exit 1
 fi
@@ -55,22 +64,26 @@ fi
 newVersion=$1
 echo "New version is $newVersion"
 
-releaseType=$2
+releaseType=$3
 # check if the release type was set, if not default to "community"
 if [ "x$releaseType" == "x" ]; then
     releaseType="community"
 fi
 
+
 if [ $releaseType == "community" ]; then
     settingsXmlFile="$scriptDir/update-version-all-community-settings.xml"
 elif [ $releaseType == "productized" ]; then
     settingsXmlFile="$scriptDir/update-version-all-productized-settings.xml"
+elif [ $releaseType == "custom" ]; then
+    settingsXmlFile="$SETTINGS_XML_FILE"
 else
-    echo "Incorrect release type specified: '$releaseType'. Supported values are 'community' or 'productized'"
+    echo "Incorrect release type specified: '$releaseType'. Supported values are 'community' or 'productized' or 'custom'"
     exit 1
 fi
 echo "Specified release type: $releaseType"
 echo "Using following settings.xml: $settingsXmlFile"
+
 
 startDateTime=`date +%s`
 
@@ -88,7 +101,37 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
         echo "Repository: $repository"
         echo "==============================================================================="
         cd $repository
-        if [ "$repository" == "droolsjbpm-build-bootstrap" ]; then
+
+        if [ "$repository" == "lienzo-core" ]; then
+            mvnVersionsSet
+            returnCode=$?
+
+        elif [ "$repository" == "lienzo-tests" ]; then
+            mvnVersionsSet
+            returnCode=$?
+
+        elif [ "$repository" == "kie-soup" ]; then
+            mvnVersionsSet
+            cd kie-soup-bom
+            mvnVersionsSet
+            cd ..
+            mvn -B -U -Dfull -s $settingsXmlFile clean install -DskipTests
+            returnCode=$?
+
+        elif [ "$repository" == "appformer" ]; then
+            #appformer has its own version
+            # newVersion is updated with newVersion for appformer
+            newVersion=$2
+            mvnVersionsSet
+            cd uberfire-bom
+            mvnVersionsSet
+            cd ..
+            mvn -B -U -Dfull -s $settingsXmlFile clean install -DskipTests
+            # switch back to kie version
+            newVersion=$1
+            returnCode=$?
+
+        elif [ "$repository" == "droolsjbpm-build-bootstrap" ]; then
             # first build&install the current version (usually SNAPSHOT) as it is needed later by other repos
             mvn -B -U -Dfull clean install
             mvnVersionsSet
@@ -102,17 +145,24 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             mvnVersionsSet
             cd ..
             # workaround for http://jira.codehaus.org/browse/MVERSIONS-161
-            mvn -B clean install -DskipTests
+            mvn -B -s $settingsXmlFile clean install -DskipTests
             returnCode=$?
 
-        elif [ "$repository" = "jbpm" ]; then
+        elif [ "$repository" == "drlx-parser" ];then
+            #update version in drlx-parser/pom.xml
+            cd drlx-parser
+            mvnVersionsUpdateParent
+            cd ..
+            returnCode=$?
+
+        elif [ "$repository" == "jbpm" ]; then
             mvnVersionsUpdateParentAndChildModules
             returnCode=$?
             sed -i "s/release.version=.*$/release.version=$newVersion/" jbpm-installer/src/main/resources/build.properties
 
-        elif [ "$repository" = "droolsjbpm-tools" ]; then
+        elif [ "$repository" == "droolsjbpm-tools" ]; then
             cd drools-eclipse
-            mvn -B -Dfull tycho-versions:set-version -DnewVersion=$newVersion
+            mvn -B -s $settingsXmlFile -Dfull tycho-versions:set-version -DnewVersion=$newVersion
             returnCode=$?
             # replace the leftovers not covered by the tycho plugin (bug?)
             # SNAPSHOT and release versions need to be handled differently
@@ -124,7 +174,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             sed -i "s/version=\"[^\"]*\">/version=\"$versionToUse\">/" org.drools.updatesite/category.xml
             cd ..
             if [ $returnCode == 0 ]; then
-                mvn -B -N clean install
+                mvn -B -N -s $settingsXmlFile clean install
                 mvnVersionsUpdateParent
                 # workaround for http://jira.codehaus.org/browse/MVERSIONS-161
                 mvn -B -N clean install -DskipTests
@@ -134,6 +184,10 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
                 mvnVersionsUpdateChildModules
                 returnCode=$?
             fi
+
+        elif [ "$repository" == "optaweb-employee-rostering" ]; then
+           mvnVersionsSet
+           returnCode=$?
 
         else
             mvnVersionsUpdateParentAndChildModules

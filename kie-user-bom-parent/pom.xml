@@ -7,7 +7,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-parent</artifactId>
     <!-- Keep in sync with the parent version in ../pom.xml (kie-parent)  -->
-    <version>7.0.0.CR9</version>
+    <version>8.0.0.Final</version>
     <!-- Empty relativePath needed to fix Maven warning 'parent.relativePath points at wrong POM' -->
     <relativePath/>
   </parent>
@@ -15,7 +15,7 @@
   <groupId>org.kie</groupId>
   <artifactId>kie-user-bom-parent</artifactId>
   <packaging>pom</packaging>
-  <version>8.0.0-SNAPSHOT</version>
+  <version>7.11.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) user BOM parent</name>
   <description>
@@ -50,11 +50,8 @@
 
   <properties>
     <version.org.kie>${project.version}</version.org.kie>
-    <!-- Using origin-repository.jboss.org as that is the canonical URL for deployment. repository.jboss.org is just a proxy
-         which should delegate the calls to origin-repository.jboss.org, but that is often buggy. Using the canonical URL
-         directly should help to avoid some of the issues with deploying artifacts. -->
-    <jboss.releases.repo.url>https://origin-repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
-    <jboss.snapshots.repo.url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
+    <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
+    <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
   </properties>
 
   <repositories>
