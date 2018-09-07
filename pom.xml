@@ -250,6 +250,8 @@
     <version.org.apache.maven.plugins.dependency>3.0.2</version.org.apache.maven.plugins.dependency>
 
     <version.org.mvel>2.4.2.Final</version.org.mvel>
+    <version.build.helper.maven.plugin>3.0.0</version.build.helper.maven.plugin>
+
   </properties>
 
   <repositories>
@@ -955,6 +957,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
+          <version>${version.build.helper.maven.plugin}</version>
           <executions>
             <execution>
               <goals>
