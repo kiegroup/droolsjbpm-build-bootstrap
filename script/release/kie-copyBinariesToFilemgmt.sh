@@ -83,8 +83,11 @@ scp droolsjbpm-tools/droolsjbpm-tools-distribution/target/droolsjbpm-tools-distr
 scp kie-wb-distributions/kie-drools-wb-parent/kie-drools-wb-distribution-wars/target/kie-drools-wb-$version-*.war $droolsHtdocs/$version
 scp droolsjbpm-integration/kie-server-parent/kie-server-wars/kie-server-distribution/target/kie-server-distribution-$version.zip $droolsHtdocs/$version
 
+# fixes build image issue in drools-doc
+sh droolsjbpm-build-bootstrap/script/release/kie-fix-generated-docs-images.sh kie-docs/doc-content/drools-docs/target/generated-docs
+
 #copies drools-docs and kie-api-javadoc to filemgmt.jboss.or
-scp -r kie-docs/docs/drools-docs/target/generated-docs/* $droolsDocs/$version/drools-docs
+scp -r kie-docs/doc-content/drools-docs/target/generated-docs/* $droolsDocs/$version/drools-docs
 scp -r droolsjbpm-knowledge/kie-api/target/apidocs/* $droolsDocs/$version/kie-api-javadoc
 
 #copies jbpm binaries to filemgmt.jboss.org
@@ -117,16 +120,22 @@ fi
 # copies jbpm work items into service repository
 scp -r jbpm-work-items/repository/target/repository-$version/* $jbpmServiceRepo/$version/service-repository
 
+# fixes build image issue in jbpm-docs
+sh droolsjbpm-build-bootstrap/script/release/kie-fix-generated-docs-images.sh kie-docs/doc-content/jbpm-docs/target/generated-docs
+
 #copies jbpm-docs to filemgmt.jboss.org
-scp -r kie-docs/docs/jbpm-docs/target/generated-docs/* $jbpmDocs/$version/jbpm-docs
+scp -r kie-docs/doc-content/jbpm-docs/target/generated-docs/* $jbpmDocs/$version/jbpm-docs
 
 #copies optaplanner binaries to filemgmt.jboss.org
 scp optaplanner/optaplanner-distribution/target/optaplanner-distribution-$version.zip $optaplannerHtdocs/$version
 
+# fixes build image issue in kiedocs optaplanner--docs
+sh droolsjbpm-build-bootstrap/script/release/kie-fix-generated-docs-images.sh kie-docs/doc-content/optaplanner-wb-es-docs/target/generated-docs
+
 #copies optaplanner-docs and optaplanner-javadoc to filemgmt.jboss.org
 scp -r optaplanner/optaplanner-docs/target/generated-docs/* $optaplannerDocs/$version/optaplanner-docs
 scp -r optaplanner/optaplanner-distribution/target/optaplanner-distribution-$version/optaplanner-distribution-$version/javadocs/* $optaplannerDocs/$version/optaplanner-javadoc
-scp -r kie-docs/docs/optaplanner-wb-es-docs/target/generated-docs/* $optaplannerDocs/$version/optaplanner-wb-es-docs
+scp -r kie-docs/doc-content/optaplanner-wb-es-docs/target/generated-docs/* $optaplannerDocs/$version/optaplanner-wb-es-docs
 
 # clean upload files
 rm upload_*
