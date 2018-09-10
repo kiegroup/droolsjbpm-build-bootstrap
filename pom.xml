@@ -155,6 +155,7 @@
     <!-- narayana dependencies for tomcat and kie server -->
     <version.org.jboss.narayana.tomcat>1.0.0.Final</version.org.jboss.narayana.tomcat>
     <version.org.jboss.narayana>5.9.0.Final</version.org.jboss.narayana>
+    <version.org.jboss.narayana.tomcat.legacy>5.6.4.Final</version.org.jboss.narayana.tomcat.legacy>
 
     <version.org.jboss.transaction.spi>7.6.0.Final</version.org.jboss.transaction.spi>
 
@@ -2593,6 +2594,12 @@
         <groupId>org.jboss.narayana.jta</groupId>
         <artifactId>narayana-jta</artifactId>
         <version>${version.org.jboss.narayana}</version>
+      </dependency>
+      <!-- For backward compatibility, remove after merging Narayana-related changes. -->
+      <dependency>
+        <groupId>org.jboss.narayana.tomcat</groupId>
+        <artifactId>tomcat-jta</artifactId>
+        <version>${version.org.jboss.narayana.tomcat.legacy}</version>
       </dependency>
       <dependency>
         <groupId>org.jboss</groupId>
