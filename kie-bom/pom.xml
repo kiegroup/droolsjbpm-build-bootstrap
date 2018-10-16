@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.12.0-SNAPSHOT</version>
+    <version>7.14.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -1552,6 +1552,41 @@
         <classifier>sources</classifier>
       </dependency>
 
+      <!--Verification-->
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-verifier-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-verifier-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-verifier-reporting-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-verifier-reporting-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-verifier-service</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.services</groupId>
+        <artifactId>kie-wb-common-verifier-service</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
       <!-- Kie-wb CLI migration tools -->
       <dependency>
         <groupId>org.kie.workbench</groupId>
@@ -2383,6 +2418,19 @@
         <groupId>org.kie.workbench</groupId>
         <artifactId>kie-wb-common-wf-sdm-extensions</artifactId>
         <version>${version.org.kie}</version>
+      </dependency>
+
+      <!-- KIE Workbench Common Command API -->
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-command-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-command-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
       </dependency>
 
       <!-- Distribution -->
