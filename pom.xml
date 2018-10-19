@@ -217,10 +217,7 @@
     <version.org.codehaus.plexus.plexus-io>3.0.0</version.org.codehaus.plexus.plexus-io>
     <version.org.apache.maven.shared.maven-artifact-transfer>0.9.1</version.org.apache.maven.shared.maven-artifact-transfer>
     <version.org.apache.maven.plugins.maven-compiler-plugin>3.7.0</version.org.apache.maven.plugins.maven-compiler-plugin>
-    <version.net.openhft.chronicle-queue>5.16.10</version.net.openhft.chronicle-queue>
-    <version.net.openhft.chronicle-core>1.16.16</version.net.openhft.chronicle-core>
-    <version.net.openhft.chronicle-bytes>1.16.16</version.net.openhft.chronicle-bytes>
-    <version.net.openhft.chronicle-wire>1.16.15</version.net.openhft.chronicle-wire>
+    <version.net.openhft.chronicle-map>3.16.4</version.net.openhft.chronicle-map>
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
     <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
 
@@ -2543,23 +2540,8 @@
 
       <dependency>
         <groupId>net.openhft</groupId>
-        <artifactId>chronicle-queue</artifactId>
-        <version>${version.net.openhft.chronicle-queue}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.openhft</groupId>
-        <artifactId>chronicle-core</artifactId>
-        <version>${version.net.openhft.chronicle-core}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.openhft</groupId>
-        <artifactId>chronicle-bytes</artifactId>
-        <version>${version.net.openhft.chronicle-bytes}</version>
-      </dependency>
-      <dependency>
-        <groupId>net.openhft</groupId>
-        <artifactId>chronicle-wire</artifactId>
-        <version>${version.net.openhft.chronicle-wire}</version>
+        <artifactId>chronicle-map</artifactId>
+        <version>${version.net.openhft.chronicle-map}</version>
       </dependency>
 
       <!-- Integration between Tomcat and Narayana -->
