@@ -522,6 +522,12 @@
                       <ignoreClass>org.eclipse.aether.*</ignoreClass>
                       <ignoreClass>org.apache.maven.*</ignoreClass>
                       <ignoreClass>org.codehaus.plexus.*</ignoreClass>
+                      <!-- Infinispan core includes commons and they have duplicated classes. We can't remove commons because
+                       core needs them. Infinispan team has been informed about this packaging problem -->
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingConcurrentMap</ignoreClass>
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingMap</ignoreClass>
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingSet</ignoreClass>
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingCollection</ignoreClass>
                     </ignoreClasses>
                     <dependencies>
                       <!-- gwt-dev bundles dozens of different 3rd party dependencies, but can not be usually excluded
