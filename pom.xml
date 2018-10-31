@@ -2378,6 +2378,12 @@
         <version>${version.org.wildfly}</version>
         <type>pom</type>
         <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!--this artifact is not existing in the version coming from jboss-ip-bom-->
