@@ -66,6 +66,11 @@
     <!-- ################################################################################ -->
     <!-- New and overwritten dependencies -->
     <!-- ################################################################################ -->
+    <version.org.hibernate>5.3.6.Final</version.org.hibernate>
+    <version.org.hibernate.validator>6.0.13.Final</version.org.hibernate.validator>
+    <version.net.byte-buddy>1.8.17</version.net.byte-buddy>
+    <version.javax.persistence-api>2.2</version.javax.persistence-api>
+
     <version.javaee.api>7.0</version.javaee.api>
     <version.com.android-dx>1.10</version.com.android-dx>
     <!-- commons cli 1.3.1+ required by Dashbuilder's ElasticSearch module. This override can be removed once IP BOM upgrades as well. -->
@@ -80,7 +85,7 @@
          guvnor-ala-openshift-client shades Jackson 2.7.7 with Fabric8 Kubernetes/OpenShift Client 2.6.3
          Once the IP BOM gets upgraded and we solely deploy on Wildfly 10.1+ and EAP 7.1+, guvnor-ala-openshift-client can be removed. -->
     <version.org.eclipse.bpmn2>0.8.2-jboss</version.org.eclipse.bpmn2>
-    <version.org.apache.lucene>6.6.1</version.org.apache.lucene> 
+    <version.org.apache.lucene>6.6.1</version.org.apache.lucene>
     <version.com.github.detro>1.2.0</version.com.github.detro>
     <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
     <version.com.google.android>4.1.1.4</version.com.google.android>
@@ -227,7 +232,6 @@
     <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
 
     <version.org.wildfly.swarm>2018.3.3</version.org.wildfly.swarm>
-    <version.net.byte-buddy>1.4.16</version.net.byte-buddy>
     <version.docker-client>3.5.12</version.docker-client>
     <version.kubernetes-model>1.1.4</version.kubernetes-model>
     <version.kubernetes-client>2.6.3</version.kubernetes-client>
@@ -2278,6 +2282,12 @@
         <artifactId>simple-jndi</artifactId>
         <version>${version.simple-jndi}</version>
         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>javax.persistence-api</artifactId>
+        <version>${version.javax.persistence-api}</version>
       </dependency>
 
       <dependency>
