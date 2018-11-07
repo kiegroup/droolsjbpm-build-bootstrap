@@ -8,7 +8,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-bom</artifactId>
     <!-- Keep in sync with ip-parent version in kie-user-bom-parent/pom.xml -->
-    <version>8.2.0.Final</version>
+    <version>8.3.2.Final</version>
   </parent>
 
   <groupId>org.kie</groupId>
@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.14.0-SNAPSHOT</version>
+  <version>7.15.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -45,12 +45,12 @@
 
   <properties>
     <!-- Internal dependencies -->
-    <version.org.kie>7.14.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.15.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>2.11.0-SNAPSHOT</version.org.uberfire>
+    <version.org.uberfire>2.12.0-SNAPSHOT</version.org.uberfire>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
     <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
     <version.org.jbpm.jbpm-designer>${version.org.jbpm}</version.org.jbpm.jbpm-designer>
@@ -80,6 +80,7 @@
          guvnor-ala-openshift-client shades Jackson 2.7.7 with Fabric8 Kubernetes/OpenShift Client 2.6.3
          Once the IP BOM gets upgraded and we solely deploy on Wildfly 10.1+ and EAP 7.1+, guvnor-ala-openshift-client can be removed. -->
     <version.org.eclipse.bpmn2>0.8.2-jboss</version.org.eclipse.bpmn2>
+    <version.org.apache.lucene>6.6.1</version.org.apache.lucene> 
     <version.com.github.detro>1.2.0</version.com.github.detro>
     <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
     <version.com.google.android>4.1.1.4</version.com.google.android>
@@ -88,9 +89,10 @@
     <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
     <version.net.sf.docbook.docbook-xsl>1.76.1</version.net.sf.docbook.docbook-xsl>
     <version.org.antlr4>4.5.3</version.org.antlr4>
-    <version.org.apache.camel>2.21.0</version.org.apache.camel>
-    <version.org.apache.cxf>3.2.2</version.org.apache.cxf>
-    <version.org.codehaus.cargo>1.6.9</version.org.codehaus.cargo>
+    <!-- overrides version of cxf coming from jboss-ip-bom 8.3.2.Final since tests in kie-spring-boot (droolsjbpm-integration) fail -->
+    <version.org.apache.cxf>3.1.16</version.org.apache.cxf>
+    <version.org.apache.camel>2.21.1</version.org.apache.camel>
+    <version.org.codehaus.cargo>1.6.11</version.org.codehaus.cargo>
     <!-- Custom Freemarker build with workaround for random concurrent access issue (annotation processors). See AF-600 for more info.-->
     <version.org.freemarker>2.3.26.jbossorg-1</version.org.freemarker>
     <!-- Dependencies for selenium tests -->
@@ -100,12 +102,12 @@
     <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
 
     <version.com.google.elemental2>1.0.0-beta-1</version.com.google.elemental2>
-    <version.org.jboss.errai>4.4.0-SNAPSHOT</version.org.jboss.errai>
+    <version.org.jboss.errai>4.4.2-SNAPSHOT</version.org.jboss.errai>
 
     <!-- Required for kie-wb-common to build in IntelliJ Idea 2017, due to -->
     <!-- https://youtrack.jetbrains.com/issue/IDEA-166417 -->
     <!-- Property can be removed when the above issue is fixed -->
-    <version.org.jboss.errai.wildfly>11.0.0.Final</version.org.jboss.errai.wildfly>
+    <version.org.jboss.errai.wildfly>14.0.1.Final</version.org.jboss.errai.wildfly>
     <version.org.jboss.remotingjmx>3.0.0.Final</version.org.jboss.remotingjmx>
     <version.org.jboss.resteasy.async>3.0.19.Final</version.org.jboss.resteasy.async>
     <!-- Required by jboss-remoting version above -->
@@ -115,7 +117,7 @@
     <version.org.picketlink>2.6.0.Final</version.org.picketlink>
     <version.com.unboundid>3.2.0</version.com.unboundid>
     <version.com.wordnik.swagger>1.3.10</version.com.wordnik.swagger>
-    <version.io.swagger>1.5.15</version.io.swagger>
+    <version.io.swagger>1.5.20</version.io.swagger>
     <version.org.jboss.as>7.2.0.Final</version.org.jboss.as>
     <version.org.jboss.byteman>3.0.1</version.org.jboss.byteman>
     <version.org.roboguice>3.0.1</version.org.roboguice>
@@ -124,8 +126,10 @@
     <version.org.xmlunit>2.3.0</version.org.xmlunit>
     <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
-    <version.org.wildfly.gwt.sdm>11.0.0.Final</version.org.wildfly.gwt.sdm>
+    <version.org.wildfly.gwt.sdm>14.0.1.Final</version.org.wildfly.gwt.sdm>
     <version.org.jboss.jboss-dmr>1.4.1.Final</version.org.jboss.jboss-dmr>
+    <!-- Version of Camel patch for Wildfly -->
+    <version.org.wildfly.camel>8.0.0</version.org.wildfly.camel>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
     <version.net.ltgt.gwt.maven>1.0-rc-6</version.net.ltgt.gwt.maven>
@@ -151,16 +155,14 @@
     <version.net.sourceforge.cssparser>0.9.21</version.net.sourceforge.cssparser>
     <version.org.w3c.css.sac>1.3</version.org.w3c.css.sac>
 
-    <version.org.apache.lucene>6.6.1</version.org.apache.lucene>
-
     <!-- Tomcat integration with Narayana -->
     <version.org.jboss.integration.narayana-tomcat>1.0.0.Final</version.org.jboss.integration.narayana-tomcat>
     <!-- narayana dependencies for tomcat and kie server -->
-    <version.org.jboss.narayana.tomcat>5.6.4.Final</version.org.jboss.narayana.tomcat>
+    <version.org.jboss.narayana.tomcat>5.9.0.Final</version.org.jboss.narayana.tomcat>
     <version.org.jboss.transaction.spi>7.6.0.Final</version.org.jboss.transaction.spi>
 
     <!-- DBCP connection pooling for Narayana -->
-    <version.org.apache.tomcat.tomcat-dbcp>9.0.12.jbossorg-00001</version.org.apache.tomcat.tomcat-dbcp>
+    <version.org.apache.tomcat.tomcat-dbcp>9.0.12.jbossorg-00003</version.org.apache.tomcat.tomcat-dbcp>
 
     <!-- In community builds productized is false, in product builds it's true to enable branding changes -->
     <org.kie.productized>false</org.kie.productized>
@@ -223,35 +225,40 @@
 
     <version.org.wildfly.swarm>2018.3.3</version.org.wildfly.swarm>
     <version.net.byte-buddy>1.4.16</version.net.byte-buddy>
-    <version.commons-beanutils>1.9.2</version.commons-beanutils>
     <version.docker-client>3.5.12</version.docker-client>
     <version.kubernetes-model>1.1.4</version.kubernetes-model>
     <version.kubernetes-client>2.6.3</version.kubernetes-client>
-    <version.okhttp>3.8.1</version.okhttp>
     <version.zjsonpatch>0.3.0</version.zjsonpatch>
     <version.arquillian-cube>1.0.0.Alpha15</version.arquillian-cube>
     <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
     <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
 
+
+    <version.org.infinispan>9.3.2.Final</version.org.infinispan>
+
     <!-- Latest release to be used by api-compatibility-check to check backwards compatibility of the Kie API. -->
-    <revapi.oldKieVersion>7.5.0.Final</revapi.oldKieVersion>
+    <revapi.oldKieVersion>7.11.0.Final</revapi.oldKieVersion>
     <revapi.newKieVersion>${project.version}</revapi.newKieVersion>
 
     <!-- using undertow for kie server router - same version as it comes with WildFly 10.0.0.Final-->
     <version.io.undertow.core>1.3.15.Final</version.io.undertow.core>
 
-    <version.org.jboss.spec.javax.enterprise.concurrent>1.0.0.Final</version.org.jboss.spec.javax.enterprise.concurrent>
     <version.org.jboss.spec.javax.websocket>1.1.1.Final</version.org.jboss.spec.javax.websocket>
 
     <version.javax.xml.soap>1.3.5</version.javax.xml.soap>
     <version.javax.jws>1.0-MR1</version.javax.jws>
 
-    <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.0.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
+    <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.1.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
     <version.org.apache.maven.plugins.dependency>3.0.2</version.org.apache.maven.plugins.dependency>
 
-    <version.org.mvel>2.4.2.Final</version.org.mvel>
     <version.org.postgresql>9.4.1207</version.org.postgresql>
     <version.mariadb-java-client>1.3.4</version.mariadb-java-client>
+
+    <!-- this versions can be removed once these were migrated to jboss-ip-bom > 8.3.0.Final -->
+    <version.org.wildfly>14.0.1.Final</version.org.wildfly>
+    <version.org.wildfly.core>6.0.2.Final</version.org.wildfly.core>
+
+
   </properties>
 
   <repositories>
@@ -512,6 +519,12 @@
                       <ignoreClass>org.eclipse.aether.*</ignoreClass>
                       <ignoreClass>org.apache.maven.*</ignoreClass>
                       <ignoreClass>org.codehaus.plexus.*</ignoreClass>
+                      <!-- Infinispan core includes commons and they have duplicated classes. We can't remove commons because
+                       core needs them. Infinispan team has been informed about this packaging problem -->
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingConcurrentMap</ignoreClass>
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingMap</ignoreClass>
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingSet</ignoreClass>
+                      <ignoreClass>org.infinispan.util.AbstractDelegatingCollection</ignoreClass>
                     </ignoreClasses>
                     <dependencies>
                       <!-- gwt-dev bundles dozens of different 3rd party dependencies, but can not be usually excluded
@@ -1732,6 +1745,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.cxf</groupId>
+        <artifactId>cxf-rt-rs-client</artifactId>
+        <version>${version.org.apache.cxf}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-core</artifactId>
         <version>${version.org.apache.camel}</version>
@@ -1740,11 +1759,6 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-test</artifactId>
         <version>${version.org.apache.camel}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-core</artifactId>
-        <version>${version.org.apache.cxf}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -1882,31 +1896,6 @@
         <type>zip</type>
       </dependency>
 
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-queries</artifactId>
-        <version>${version.org.apache.lucene}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-core</artifactId>
-        <version>${version.org.apache.lucene}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-analyzers-common</artifactId>
-        <version>${version.org.apache.lucene}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-queryparser</artifactId>
-        <version>${version.org.apache.lucene}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-misc</artifactId>
-        <version>${version.org.apache.lucene}</version>
-      </dependency>
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty</artifactId>
@@ -2352,6 +2341,19 @@
         <artifactId>wildfly-launcher</artifactId>
         <version>${version.org.wildfly.core}</version>
       </dependency>
+      <dependency>
+        <groupId>org.wildfly</groupId>
+        <artifactId>wildfly-jms-client-bom</artifactId>
+        <version>${version.org.wildfly}</version>
+        <type>pom</type>
+        <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
 
       <!--this artifact is not existing in the version coming from jboss-ip-bom-->
       <dependency>
@@ -2389,11 +2391,6 @@
         <groupId>net.bytebuddy</groupId>
         <artifactId>byte-buddy</artifactId>
         <version>${version.net.byte-buddy}</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-beanutils</groupId>
-        <artifactId>commons-beanutils</artifactId>
-        <version>${version.commons-beanutils}</version>
       </dependency>
       <dependency>
         <groupId>com.spotify</groupId>
@@ -2455,7 +2452,7 @@
         <artifactId>zjsonpatch</artifactId>
         <version>${version.zjsonpatch}</version>
       </dependency>
- 
+
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jul-to-slf4j</artifactId>
@@ -2465,16 +2462,6 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-nop</artifactId>
         <version>${version.org.slf4j}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp3</groupId>
-        <artifactId>okhttp</artifactId>
-        <version>${version.okhttp}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.squareup.okhttp3</groupId>
-        <artifactId>logging-interceptor</artifactId>
-        <version>${version.okhttp}</version>
       </dependency>
 
       <dependency>
@@ -2505,12 +2492,6 @@
         <groupId>org.w3c.css</groupId>
         <artifactId>sac</artifactId>
         <version>${version.org.w3c.css.sac}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jboss.spec.javax.enterprise.concurrent</groupId>
-        <artifactId>jboss-concurrency-api_1.0_spec</artifactId>
-        <version>${version.org.jboss.spec.javax.enterprise.concurrent}</version>
       </dependency>
 
       <!-- Incremental compiler-->
@@ -2611,6 +2592,27 @@
         <groupId>org.jboss.spec.javax.ws.rs</groupId>
         <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
         <version>${version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-query-dsl</artifactId>
+        <version>${version.org.infinispan}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-remote-query-client</artifactId>
+        <version>${version.org.infinispan}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-client-hotrod</artifactId>
+        <version>${version.org.infinispan}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-commons</artifactId>
+        <version>${version.org.infinispan}</version>
       </dependency>
 
       <dependency>
