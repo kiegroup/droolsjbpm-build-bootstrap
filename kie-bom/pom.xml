@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.16.0-SNAPSHOT</version>
+    <version>7.18.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -231,6 +231,17 @@
       <dependency>
         <groupId>org.kie.server</groupId>
         <artifactId>kie-server-services-swagger</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-openshift</artifactId>
+        <version>${version.org.kie}</version>
+       </dependency>
+       <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-openshift</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -1706,6 +1717,11 @@
       </dependency>
       <dependency>
         <groupId>org.kie.workbench.forms</groupId>
+        <artifactId>kie-wb-common-forms-adf-processors-tests</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench.forms</groupId>
         <artifactId>kie-wb-common-forms-layout-generator</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -2241,6 +2257,13 @@
 
       <dependency>
         <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-backend</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
         <artifactId>kie-wb-common-stunner-bpmn-client</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -2250,6 +2273,13 @@
         <artifactId>kie-wb-common-stunner-bpmn-client</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-client</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
       </dependency>
 
       <dependency>
