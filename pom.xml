@@ -262,6 +262,7 @@
     <version.javax.xml.ws>2.3.1</version.javax.xml.ws>
     <version.javax.annotation-api>1.3.2</version.javax.annotation-api>
     <version.com.sun.xml.messaging.saaj>1.5.0</version.com.sun.xml.messaging.saaj>
+    <version.javax.xml.bind>2.3.1</version.javax.xml.bind>
 
     <!-- specifal versions to support different version of hibernate for ee7 servers such as WAS and WLS -->
     <version.org.hibernate-4ee7>5.1.15.Final</version.org.hibernate-4ee7>
@@ -2696,6 +2697,11 @@
         <groupId>com.sun.xml.messaging.saaj</groupId>
         <artifactId>saaj-impl</artifactId>
         <version>${version.com.sun.xml.messaging.saaj}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${version.javax.xml.bind}</version>
       </dependency>
       
       <!-- used by DMN for BigDecimal arithmetics -->
