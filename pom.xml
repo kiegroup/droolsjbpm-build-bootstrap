@@ -8,7 +8,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-bom</artifactId>
     <!-- Keep in sync with ip-parent version in kie-user-bom-parent/pom.xml -->
-    <version>8.5.0-SNAPSHOT</version>
+    <version>8.5.0.Final</version>
   </parent>
 
   <groupId>org.kie</groupId>
@@ -256,8 +256,6 @@
 
     <version.org.postgresql>9.4.1207</version.org.postgresql>
     <version.mariadb-java-client>1.3.4</version.mariadb-java-client>
-
-    <version.org.mvel>2.4.4.Final</version.org.mvel>
 
     <version.ch.obermuhlner>2.0.1</version.ch.obermuhlner>
     <version.javax.jws-api>1.1</version.javax.jws-api>
@@ -2742,12 +2740,6 @@
         <groupId>io.prometheus</groupId>
         <artifactId>simpleclient_httpserver</artifactId>
         <version>${version.io.prometheus}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.mvel</groupId>
-        <artifactId>mvel2</artifactId>
-        <version>${version.org.mvel}</version>
       </dependency>
 
       <dependency>
