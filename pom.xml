@@ -8,7 +8,7 @@
     <groupId>org.jboss.integration-platform</groupId>
     <artifactId>jboss-integration-platform-bom</artifactId>
     <!-- Keep in sync with ip-parent version in kie-user-bom-parent/pom.xml -->
-    <version>8.4.0.Final</version>
+    <version>8.5.0.Final</version>
   </parent>
 
   <groupId>org.kie</groupId>
@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.19.0-SNAPSHOT</version>
+  <version>7.20.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -45,12 +45,12 @@
 
   <properties>
     <!-- Internal dependencies -->
-    <version.org.kie>7.19.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.20.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>2.16.0-SNAPSHOT</version.org.uberfire>
+    <version.org.uberfire>2.17.0-SNAPSHOT</version.org.uberfire>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
     <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
     <version.org.jbpm.jbpm-designer>${version.org.jbpm}</version.org.jbpm.jbpm-designer>
@@ -90,7 +90,7 @@
     <version.org.antlr4>4.5.3</version.org.antlr4>
     <!-- overrides version of cxf coming from jboss-ip-bom 8.3.2.Final since tests in kie-spring-boot (droolsjbpm-integration) fail -->
     <version.org.apache.cxf>3.1.16</version.org.apache.cxf>
-    <version.org.apache.camel>2.21.3</version.org.apache.camel>
+    <version.org.apache.camel>2.23.0</version.org.apache.camel>
     <version.org.codehaus.cargo>1.7.1</version.org.codehaus.cargo>
     <!-- Custom Freemarker build with workaround for random concurrent access issue (annotation processors). See AF-600 for more info.-->
     <version.org.freemarker>2.3.26.jbossorg-1</version.org.freemarker>
@@ -126,12 +126,13 @@
     <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.wildfly.gwt.sdm>14.0.1.Final</version.org.wildfly.gwt.sdm>
-    <version.org.jboss.jboss-dmr>1.4.1.Final</version.org.jboss.jboss-dmr>
+    <version.org.jboss.jboss-dmr>1.5.0.Final</version.org.jboss.jboss-dmr>
     <!-- Version of Camel patch for Wildfly -->
     <version.org.wildfly.camel>8.0.0</version.org.wildfly.camel>
     <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
     <version.net.ltgt.gwt.maven>1.0-rc-6</version.net.ltgt.gwt.maven>
+    <version.org.kie.gwthelper.maven>1.0</version.org.kie.gwthelper.maven>
     <!-- this version will overwrite jboss-ip-version 3.1.2. The version in jboss-ip-bom couldn't be upgraded as this version needs GWT 2.7.0 -->
     <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
     <version.com.allen-sauer.gwt.dnd>3.3.3</version.com.allen-sauer.gwt.dnd>
@@ -238,15 +239,11 @@
     <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
     <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
 
-
-    <version.org.infinispan>9.3.2.Final</version.org.infinispan>
-
     <!-- Latest release to be used by api-compatibility-check to check backwards compatibility of the Kie API. -->
     <revapi.oldKieVersion>7.14.0.Final</revapi.oldKieVersion>
     <revapi.newKieVersion>${project.version}</revapi.newKieVersion>
 
-    <version.org.jboss.spec.javax.enterprise.concurrent>1.0.0.Final</version.org.jboss.spec.javax.enterprise.concurrent>
-    <version.org.jboss.spec.javax.websocket>1.1.1.Final</version.org.jboss.spec.javax.websocket>
+    <version.org.jboss.spec.javax.websocket>1.1.3.Final</version.org.jboss.spec.javax.websocket>
 
     <version.javax.xml.soap>1.4.0</version.javax.xml.soap>
     <version.javax.jws>1.0-MR1</version.javax.jws>
@@ -257,8 +254,6 @@
     <version.org.postgresql>9.4.1207</version.org.postgresql>
     <version.mariadb-java-client>1.3.4</version.mariadb-java-client>
 
-    <version.org.mvel>2.4.4.Final</version.org.mvel>
-    
     <version.ch.obermuhlner>2.0.1</version.ch.obermuhlner>
     <version.javax.jws-api>1.1</version.javax.jws-api>
     <version.javax.xml.ws>2.3.1</version.javax.xml.ws>
@@ -678,7 +673,7 @@
         <plugin>
           <groupId>org.revapi</groupId>
           <artifactId>revapi-maven-plugin</artifactId>
-          <version>0.9.4</version>
+          <version>0.9.5</version>
           <dependencies>
             <dependency>
               <groupId>org.revapi</groupId>
@@ -1219,6 +1214,11 @@
           <artifactId>gwt-maven-plugin</artifactId>
           <version>${version.net.ltgt.gwt.maven}</version>
           <extensions>true</extensions>
+        </plugin>
+        <plugin>
+          <groupId>org.kie</groupId>
+          <artifactId>kie-gwthelper-maven-plugin</artifactId>
+          <version>${version.org.kie.gwthelper.maven}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -2632,27 +2632,6 @@
       </dependency>
 
       <dependency>
-        <groupId>org.infinispan</groupId>
-        <artifactId>infinispan-query-dsl</artifactId>
-        <version>${version.org.infinispan}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.infinispan</groupId>
-        <artifactId>infinispan-remote-query-client</artifactId>
-        <version>${version.org.infinispan}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.infinispan</groupId>
-        <artifactId>infinispan-client-hotrod</artifactId>
-        <version>${version.org.infinispan}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.infinispan</groupId>
-        <artifactId>infinispan-commons</artifactId>
-        <version>${version.org.infinispan}</version>
-      </dependency>
-
-      <dependency>
         <groupId>javax.enterprise</groupId>
         <artifactId>cdi-api</artifactId>
         <version>${version.javax.enterprise}</version>
@@ -2715,7 +2694,7 @@
         <artifactId>saaj-impl</artifactId>
         <version>${version.com.sun.xml.messaging.saaj}</version>
       </dependency>
-      
+
       <!-- used by DMN for BigDecimal arithmetics -->
       <dependency>
         <groupId>ch.obermuhlner</groupId>
@@ -2737,12 +2716,6 @@
         <groupId>io.prometheus</groupId>
         <artifactId>simpleclient_httpserver</artifactId>
         <version>${version.io.prometheus}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.mvel</groupId>
-        <artifactId>mvel2</artifactId>
-        <version>${version.org.mvel}</version>
       </dependency>
 
       <dependency>
