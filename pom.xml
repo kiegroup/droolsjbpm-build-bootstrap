@@ -1791,6 +1791,20 @@
         <version>${version.org.apache.camel}</version>
       </dependency>
 
+      <!--JMH (Benchmarks)-->
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>${version.org.openjdk.jmh}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${version.org.openjdk.jmh}</version>
+        <scope>test</scope>
+      </dependency>
+
       <dependency>
         <groupId>javax</groupId>
         <artifactId>javaee-api</artifactId>
