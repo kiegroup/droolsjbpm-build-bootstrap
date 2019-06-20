@@ -155,6 +155,9 @@
     <!-- override of version coming from jboss-ip-bom since this is needed for kie-wb-common -->
     <version.org.mockito>1.10.19</version.org.mockito>
 
+    <!-- Version of JMH -->
+    <version.org.openjdk.jmh>1.21</version.org.openjdk.jmh>
+
     <!-- DBCP connection pooling for Narayana -->
     <version.org.apache.tomcat.tomcat-dbcp>9.0.13</version.org.apache.tomcat.tomcat-dbcp>
 
@@ -1789,6 +1792,20 @@
         <version>${version.org.apache.camel}</version>
       </dependency>
 
+      <!--JMH (Benchmarks)-->
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>${version.org.openjdk.jmh}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${version.org.openjdk.jmh}</version>
+        <scope>test</scope>
+      </dependency>
+
       <dependency>
         <groupId>javax</groupId>
         <artifactId>javaee-api</artifactId>
@@ -1991,6 +2008,12 @@
       <dependency>
         <groupId>com.google.elemental2</groupId>
         <artifactId>elemental2-dom</artifactId>
+        <version>${version.com.google.elemental2}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.elemental2</groupId>
+        <artifactId>elemental2-core</artifactId>
         <version>${version.com.google.elemental2}</version>
       </dependency>
 
