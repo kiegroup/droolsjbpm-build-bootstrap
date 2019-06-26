@@ -265,6 +265,9 @@
     <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
 
     <version.org.apache.commons.csv>1.6</version.org.apache.commons.csv>
+
+    <!-- override needed for 7.4.0.CR2 -->
+    <version.com.thoughtworks.xstream>1.4.11.1</version.com.thoughtworks.xstream>
   </properties>
 
   <repositories>
@@ -1865,12 +1868,7 @@
         </exclusions>
       </dependency>
 
-      <dependency>
         <!-- Can be removed when we use ip-bom 7.0.0.CR10+ -->
-        <groupId>com.thoughtworks.xstream</groupId>
-        <artifactId>xstream-hibernate</artifactId>
-        <version>${version.com.thoughtworks.xstream}</version>
-      </dependency>
       <dependency>
         <groupId>com.unboundid</groupId>
         <artifactId>unboundid-ldapsdk</artifactId>
