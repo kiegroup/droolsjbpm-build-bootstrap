@@ -1067,6 +1067,24 @@
 
           <extensions>true</extensions>
           <configuration>
+            <archive>
+              <index>true</index>
+              <manifest>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <Java-Version>${java.version}</Java-Version>
+                <Java-Vendor>${java.vendor}</Java-Vendor>
+                <Os-Name>${os.name}</Os-Name>
+                <Os-Arch>${os.arch}</Os-Arch>
+                <Os-Version>${os.version}</Os-Version>
+                <Scm-Url>${project.scm.url}</Scm-Url>
+                <Scm-Connection>${project.scm.connection}</Scm-Connection>
+              </manifestEntries>
+            </archive>
+
             <!-- Split packages in combination with <Export-Package> causes bloated jars otherwise -->
             <excludeDependencies>true</excludeDependencies>
             <instructions>
@@ -1078,6 +1096,7 @@
                 ${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}.${osgi.snapshot.qualifier}
               </Bundle-Version>
               <Automatic-Module-Name>${java.module.name}</Automatic-Module-Name>
+              <Scm-Revision>${buildNumber}</Scm-Revision>
             </instructions>
             <obrRepository>NONE</obrRepository>
           </configuration>
