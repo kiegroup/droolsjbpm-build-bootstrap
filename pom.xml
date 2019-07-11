@@ -2125,8 +2125,6 @@
         <sonar.pullrequest.key>${env.ghprbPullId}</sonar.pullrequest.key>
         <!--suppress UnresolvedMavenProperty -->
         <sonar.pullrequest.base>${env.ghprbTargetBranch}</sonar.pullrequest.base>
-        <!--suppress UnresolvedMavenProperty -->
-        <sonar.pullrequest.github.repository>${env.ghprbAuthorRepoGitUrl}</sonar.pullrequest.github.repository>
       </properties>
     </profile>
   </profiles>
