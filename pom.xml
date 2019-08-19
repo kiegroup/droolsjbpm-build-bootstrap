@@ -369,7 +369,7 @@
     <version.org.antlr4>4.7.2</version.org.antlr4>
     <version.org.apache.cxf>3.2.8</version.org.apache.cxf>
     <version.org.apache.camel>2.24.0</version.org.apache.camel>
-    <version.org.codehaus.cargo>1.7.1</version.org.codehaus.cargo>
+    <version.org.codehaus.cargo>1.7.6</version.org.codehaus.cargo>
     <!-- Custom Freemarker build with workaround for random concurrent access issue (annotation processors). See AF-600 for more info.-->
     <version.org.freemarker>2.3.26.jbossorg-1</version.org.freemarker>
     <!-- Dependencies for selenium tests -->
@@ -483,8 +483,7 @@
     <version.org.codehaus.plexus.plexus-io>3.0.0</version.org.codehaus.plexus.plexus-io>
     <version.org.apache.maven.shared.maven-artifact-transfer>0.9.1
     </version.org.apache.maven.shared.maven-artifact-transfer>
-    <version.org.apache.maven.plugins.maven-compiler-plugin>3.7.0
-    </version.org.apache.maven.plugins.maven-compiler-plugin>
+    <version.compiler.plugin>3.8.1</version.compiler.plugin>
     <version.net.openhft.chronicle-queue>5.16.10</version.net.openhft.chronicle-queue>
     <version.net.openhft.chronicle-core>1.16.16</version.net.openhft.chronicle-core>
     <version.net.openhft.chronicle-bytes>1.16.16</version.net.openhft.chronicle-bytes>
@@ -537,6 +536,10 @@
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
 
+    <!-- JaCoCo coverage data file location. Using a single file for appending in the project's root directory makes it
+         possible to measure cross-module test coverage -->
+    <!--suppress UnresolvedMavenProperty -->
+    <jacoco.exec.file>${maven.multiModuleProjectDirectory}/target/jacoco.exec</jacoco.exec.file>
   </properties>
 
   <repositories>
@@ -2064,48 +2067,14 @@
     <profile>
       <id>sonarcloud-analysis</id>
       <properties>
-        <!--suppress UnresolvedMavenProperty -->
-        <jacoco.master.exec.file>${maven.multiModuleProjectDirectory}/target/jacoco.exec</jacoco.master.exec.file>
-        <sonar.jacoco.reportPaths>${jacoco.master.exec.file}</sonar.jacoco.reportPaths>
+        <sonar.jacoco.reportPaths>${jacoco.exec.file}</sonar.jacoco.reportPaths>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>kiegroup</sonar.organization>
         <!--suppress UnresolvedMavenProperty -->
         <sonar.login>${env.SONARCLOUD_TOKEN}</sonar.login>
       </properties>
       <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.jacoco</groupId>
-              <artifactId>jacoco-maven-plugin</artifactId>
-              <configuration>
-                <fileSets>
-                  <fileSet>
-                    <directory>${project.build.directory}</directory>
-                    <includes>
-                      <include>*.exec</include>
-                    </includes>
-                  </fileSet>
-                </fileSets>
-                <destFile>${jacoco.master.exec.file}</destFile>
-              </configuration>
-            </plugin>
-          </plugins>
-        </pluginManagement>
         <plugins>
-          <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>report</goal>
-                  <goal>merge</goal>
-                </goals>
-                <phase>generate-resources</phase>
-              </execution>
-            </executions>
-          </plugin>
           <plugin>
             <groupId>org.sonarsource.scanner.maven</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
