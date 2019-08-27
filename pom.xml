@@ -112,6 +112,7 @@
     <!-- see https://issues.apache.org/jira/browse/MENFORCER-306 -->
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
     <version.io.undertow>2.0.22.Final</version.io.undertow>
+    <version.jandex.plugin>1.0.6</version.jandex.plugin>
     <version.javax.activation>1.1.1</version.javax.activation>
     <version.javax.enterprise>2.0.SP1</version.javax.enterprise>
     <version.javax.inject>1</version.javax.inject>
@@ -1068,6 +1069,20 @@
               <version>1.8.2</version>
             </dependency>
           </dependencies>
+        </plugin>
+
+        <plugin>
+          <groupId>org.jboss.jandex</groupId>
+          <artifactId>jandex-maven-plugin</artifactId>
+          <version>${version.jandex.plugin}</version>
+          <executions>
+            <execution>
+              <id>make-index</id>
+              <goals>
+                <goal>jandex</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
 
         <plugin>
