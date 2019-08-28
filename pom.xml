@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.26.0-SNAPSHOT</version>
+  <version>7.27.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -169,7 +169,6 @@
     <version.org.apache.mina>2.0.15</version.org.apache.mina>
     <version.org.apache.neethi>3.1.1</version.org.apache.neethi>
     <version.org.apache.poi>3.17</version.org.apache.poi>
-    <version.org.apache.qpid>0.18</version.org.apache.qpid>
     <version.org.apache.sshd>1.6.0</version.org.apache.sshd>
     <version.org.apache.tomcat>6.0.32</version.org.apache.tomcat>
     <version.org.apache.ws.commons.axiom>1.2.14</version.org.apache.ws.commons.axiom>
@@ -203,6 +202,7 @@
     <version.org.eclipse.jetty>9.2.14.v20151106</version.org.eclipse.jetty>
     <version.org.eclipse.jgit>5.0.2.201807311906-r</version.org.eclipse.jgit>
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
+    <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
     <version.org.glassfish>3.1.2</version.org.glassfish>
     <version.org.gwtbootstrap3>0.9.3</version.org.gwtbootstrap3>
     <version.org.hibernate>5.3.7.Final</version.org.hibernate>
@@ -210,7 +210,7 @@
     <version.org.hibernate.validator>6.0.13.Final</version.org.hibernate.validator>
     <version.org.hibernate.commons.annotations>5.0.4.Final</version.org.hibernate.commons.annotations>
     <version.org.hornetq>2.4.7.Final</version.org.hornetq>
-    <version.org.infinispan>9.4.9.Final</version.org.infinispan>
+    <version.org.infinispan>9.4.15.Final</version.org.infinispan>
     <!--This needs to be in sync with JUnit-->
     <version.org.hamcrest>1.3</version.org.hamcrest>
     <version.org.hsqldb>2.3.0</version.org.hsqldb>
@@ -341,12 +341,12 @@
     <version.xpp3>1.1.4c</version.xpp3>
 
     <!-- Internal dependencies -->
-    <version.org.kie>7.26.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.27.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>2.23.0-SNAPSHOT</version.org.uberfire>
+    <version.org.uberfire>2.24.0-SNAPSHOT</version.org.uberfire>
     <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
     <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
     <version.org.jbpm.jbpm-designer>${version.org.jbpm}</version.org.jbpm.jbpm-designer>
@@ -3397,6 +3397,11 @@
         <artifactId>lucene-misc</artifactId>
         <version>${version.org.apache.lucene}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-backward-codecs</artifactId>
+        <version>${version.org.apache.lucene}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -3515,22 +3520,6 @@
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-scratchpad</artifactId>
         <version>${version.org.apache.poi}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.qpid</groupId>
-        <artifactId>qpid-client</artifactId>
-        <version>${version.org.apache.qpid}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.qpid</groupId>
-        <artifactId>qpid-common</artifactId>
-        <version>${version.org.apache.qpid}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.qpid</groupId>
-        <artifactId>qpid-broker</artifactId>
-        <version>${version.org.apache.qpid}</version>
       </dependency>
 
       <dependency>
@@ -3886,6 +3875,29 @@
         <groupId>org.eclipse.jgit</groupId>
         <artifactId>org.eclipse.jgit</artifactId>
         <version>${version.org.eclipse.jgit}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.eclipselabs</groupId>
+        <artifactId>org.eclipse.emf.gwt.ecore</artifactId>
+        <version>${version.org.eclipse.emf.gwt}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipselabs</groupId>
+        <artifactId>org.eclipse.emf.gwt.ecore</artifactId>
+        <version>${version.org.eclipse.emf.gwt}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipselabs</groupId>
+        <artifactId>org.eclipse.emf.gwt.common</artifactId>
+        <version>${version.org.eclipse.emf.gwt}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipselabs</groupId>
+        <artifactId>org.eclipse.emf.gwt.common</artifactId>
+        <version>${version.org.eclipse.emf.gwt}</version>
+        <classifier>sources</classifier>
       </dependency>
 
       <dependency>
@@ -4780,6 +4792,11 @@
       </dependency>
       <dependency>
         <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-common</artifactId>
+        <version>${version.org.keycloak}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
         <artifactId>keycloak-adapter-core</artifactId>
         <version>${version.org.keycloak}</version>
       </dependency>
@@ -5304,6 +5321,11 @@
         <artifactId>wildfly-server</artifactId>
         <version>${version.org.wildfly.core}</version>
       </dependency>
+      <dependency>
+        <groupId>org.wildfly.core</groupId>
+        <artifactId>wildfly-domain-management</artifactId>
+        <version>${version.org.wildfly.core}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.wildfly.common</groupId>
@@ -5400,69 +5422,6 @@
         <version>${version.xpp3}</version>
       </dependency>
 
-
-      <!-- Dependency management should import only the user BOMs. Rest of the 3rp party versions are coming directly
->>>>>>> BXMSPROD-8: refactor to build without jboss-ip-bom
->>>>>>> BXMSPROD-8: refactor to build without jboss-ip-bom
->>>>>>> BXMSPROD-8: refactor to build without jboss-ip-bom
-           from kie-parent.
-           When adding new 3rd dependencies, do it in the kie-parent and not here! -->
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.jbpm</groupId>
-        <artifactId>jbpm-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.uberfire</groupId>
-        <artifactId>kie-uberfire-extensions-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.soup</groupId>
-        <artifactId>kie-soup-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-dmn-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.uberfire</groupId>
-        <artifactId>uberfire-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
       <dependency>
         <groupId>org.jboss.errai.bom</groupId>
         <artifactId>errai-internal-bom</artifactId>

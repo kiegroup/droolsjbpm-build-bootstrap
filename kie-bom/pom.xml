@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.26.0-SNAPSHOT</version>
+    <version>7.27.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -2394,6 +2394,13 @@
 
       <dependency>
         <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-api</artifactId>
+        <version>${version.org.kie}</version>
+        <type>test-jar</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
         <artifactId>kie-wb-common-stunner-bpmn-backend</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -2410,6 +2417,32 @@
         <artifactId>kie-wb-common-stunner-bpmn-backend</artifactId>
         <version>${version.org.kie}</version>
         <type>test-jar</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-emf</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-emf</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-marshalling</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kie.workbench.stunner</groupId>
+        <artifactId>kie-wb-common-stunner-bpmn-marshalling</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
       </dependency>
 
       <dependency>
@@ -2639,6 +2672,17 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-dmn-webapp-kogito-marshaller</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.workbench</groupId>
+        <artifactId>kie-wb-common-dmn-webapp-kogito-marshaller</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
 
       <!--Submarine-->
       <dependency>
@@ -2660,17 +2704,6 @@
       <dependency>
         <groupId>org.kie.workbench</groupId>
         <artifactId>kie-wb-common-submarine-client</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench</groupId>
-        <artifactId>kie-wb-common-dmn-webapp-kogito-marshaller</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.kie.workbench</groupId>
-        <artifactId>kie-wb-common-dmn-webapp-kogito-marshaller</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
