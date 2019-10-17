@@ -3,8 +3,8 @@
 # pushes the tag to github for community releases
 
 # create a tag
-commitMsg="Tagging $tagName"
-./droolsjbpm-build-bootstrap/script/git-all.sh tag -a $tagName -m "$commitMsg"
+commitMsg="Tagging $kieVersion"
+./droolsjbpm-build-bootstrap/script/git-all.sh tag -a $kieVersion -m "$commitMsg"
 
 # pushes tag to github ¡/kiegroup
-./droolsjbpm-build-bootstrap/script/git-all.sh push origin $tagName
+./droolsjbpm-build-bootstrap/script/git-all.sh push origin $kieVersion
