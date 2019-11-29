@@ -127,6 +127,7 @@ scp optaplanner/optaplanner-distribution/target/optaplanner-distribution-$kieVer
 scp -r optaplanner/optaplanner-docs/target/generated-docs/* $optaplannerDocs/$kieVersion/optaplanner-docs
 scp -r optaplanner/optaplanner-distribution/target/optaplanner-distribution-$kieVersion/optaplanner-distribution-$kieVersion/javadocs/* $optaplannerDocs/$kieVersion/optaplanner-javadoc
 scp -r kie-docs/doc-content/optaplanner-wb-es-docs/target/generated-docs/* $optaplannerDocs/$kieVersion/optaplanner-wb-es-docs
+scp -r optaweb-employee-rostering/employee-rostering-docs/target/generated-docs/* $optaplannerDocs/$kieVersion/optaweb-employee-rostering-docs
 
 # clean upload files
 rm upload_*
