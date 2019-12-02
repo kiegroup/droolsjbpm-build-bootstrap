@@ -60,6 +60,11 @@ echo "mkdir optaplanner-docs" > upload_optaplanner_docs
 chmod +x upload_optaplanner_docs
 sftp -b upload_optaplanner_docs $optaplannerDocs/$kieVersion
 
+touch upload_optaweb_employee_rostering_docs
+echo "mkdir optaweb-employee-rostering-docs" > upload_optaweb_employee_rostering_docs
+chmod +x upload_optaweb_employee_rostering_docs
+sftp -b upload_optaweb_employee_rostering_docs $optaplannerDocs/$kieVersion
+
 touch upload_optaplanner_javadoc
 echo "mkdir optaplanner-javadoc" > upload_optaplanner_javadoc
 chmod +x upload_optaplanner_javadoc
