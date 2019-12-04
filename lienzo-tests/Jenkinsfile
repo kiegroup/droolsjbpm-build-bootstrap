@@ -1,17 +1,20 @@
 @Library('jenkins-pipeline-shared-libraries')_
 
 node {
-    stage 'Initialize'
-    sh 'printenv'
-
-    stage 'Build lienzo-core'
-    dir("lienzo-core") {
-        script {
-            githubscm.checkoutIfExists('lienzo-core', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
-            maven.runMavenWithSubmarineSettings('clean install', true)
+    stage('Initialize') {
+        sh 'printenv'
+        maven 'kie-maven-3.5.4'
+        jdk 'kie-jdk1.8'
+    }
+    stage('Build lienzo-core') {
+        dir("lienzo-core") {
+            script {
+                githubscm.checkoutIfExists('lienzo-core', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+                maven.runMavenWithSubmarineSettings('clean install', true)
+            }
         }
     }
-
-    stage 'Build lienzo-tests'
-    maven.runMavenWithSubmarineSettings('clean install', false)
+    stage('Build lienzo-tests') {
+        maven.runMavenWithSubmarineSettings('clean install', false)
+    }
 }
