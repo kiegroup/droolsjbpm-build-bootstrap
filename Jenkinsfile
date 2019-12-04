@@ -21,7 +21,7 @@ pipeline {
         stage('Build lienzo-test') {
             steps {
                 script {
-                    load("lienzo-tests/Jenkinsfile").stages()
+                    load("lienzo-tests/Jenkinsfile")
                 }
             }
         }
