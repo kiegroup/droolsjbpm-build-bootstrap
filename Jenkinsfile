@@ -12,7 +12,7 @@ pipeline {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
         timeout(time: 10, unit: 'MINUTES')
     }
-    load "lienzo-tests/Jenkinsfile"
+    load("lienzo-tests/Jenkinsfile").stages()
     stages {
         stage('Initialize') {
             steps {
