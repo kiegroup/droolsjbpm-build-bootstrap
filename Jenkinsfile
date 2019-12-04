@@ -12,11 +12,17 @@ pipeline {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
         timeout(time: 10, unit: 'MINUTES')
     }
-    load("lienzo-tests/Jenkinsfile").stages()
     stages {
         stage('Initialize') {
             steps {
                 sh 'printenv'
+            }
+        }
+        stage('Build lienzo-test') {
+            steps {
+                script {
+                    load("lienzo-tests/Jenkinsfile").stages()
+                }
             }
         }
         stage('Build kie-parent') {
