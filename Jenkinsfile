@@ -15,20 +15,27 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
+                echo "LOG:A1-1"
                 sh 'printenv'
+                echo "LOG:A1-2"
             }
         }
         stage('Build lienzo-tests') {
             steps {
                 script {
-                    load("$WORKSPACE/lienzo-tests/Jenkinsfile")
+                    echo "LOG:A2-1"
+                    def lienzoTests() = load("$WORKSPACE/lienzo-tests/Jenkinsfile")
+                    lienzoTests()
+                    echo "LOG:A2-2"
                 }
             }
         }
         stage('Build kie-parent') {
             steps {
                 script {
+                    echo "LOG:A3-1"
                     maven.runMavenWithSubmarineSettings('clean install -DskipTests', false)
+                    echo "LOG:A3-2"
                 }
             }
         }
