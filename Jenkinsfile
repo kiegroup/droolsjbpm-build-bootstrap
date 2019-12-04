@@ -18,10 +18,11 @@ pipeline {
                 sh 'printenv'
             }
         }
-        stage('Build lienzo-test') {
+        stage('Build lienzo-tests') {
             steps {
                 script {
-                    load("lienzo-tests/Jenkinsfile")
+                    def externalCall = load("$WORKSPACE/lienzo-tests/externalCall.groovy")
+                    externalCall("emingora")
                 }
             }
         }
