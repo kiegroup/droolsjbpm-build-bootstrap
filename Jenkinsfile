@@ -23,7 +23,7 @@ pipeline {
                 dir("lienzo-tests") {
                     script {
                         githubscm.checkoutIfExists('lienzo-tests', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
-                        load("Jenkinsfile").stages()
+                        load "Jenkinsfile"
                         // maven.runMavenWithSubmarineSettings('clean install', true)
                     }
                 }
