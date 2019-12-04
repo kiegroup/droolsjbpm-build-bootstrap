@@ -127,6 +127,7 @@ scp -r kie-docs/doc-content/jbpm-docs/target/generated-docs/* $jbpmDocs/$kieVers
 
 #copies optaplanner binaries to filemgmt.jboss.org
 scp optaplanner/optaplanner-distribution/target/optaplanner-distribution-$kieVersion.zip $optaplannerHtdocs/$kieVersion
+scp optaweb-employee-rostering/employee-rostering-docs/target/employee-rostering-docs-$kieVersion.zip $optaplannerDocs/$kieVersion/optaweb-employee-rostering-docs
 
 #copies optaplanner-docs and optaplanner-javadoc to filemgmt.jboss.org
 scp -r optaplanner/optaplanner-docs/target/generated-docs/* $optaplannerDocs/$kieVersion/optaplanner-docs
