@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Build lienzo-tests') {
             steps {
-                dir("lienzo-core") {
+                dir("lienzo-tests") {
                     script {
                         githubscm.checkoutIfExists('lienzo-tests', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
                         maven.runMavenWithSubmarineSettings('clean install', true)
