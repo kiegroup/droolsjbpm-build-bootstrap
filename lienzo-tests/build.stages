@@ -10,7 +10,7 @@ node('submarine-static || kie-rhel7') {
             }
         }
     }
-    stage('Build lienzo-tests') {
+    stage('Build kie-parent') {
         dir("lienzo-tests") {
             script {
                 echo "LOG:B3-1"

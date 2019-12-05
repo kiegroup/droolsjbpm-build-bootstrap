@@ -20,7 +20,7 @@ pipeline {
                 echo "LOG:A1-2"
             }
         }
-        stage('Build kie-parent projects') {
+        stage('Build droolsjbpm-build-bootstrap projects') {
             steps {
                 script {
                     echo "LOG:A2-1"
