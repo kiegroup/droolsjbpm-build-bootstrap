@@ -1,22 +1,27 @@
 node('submarine-static || kie-rhel7') {
-    stage('Build lienzo-tests projects') {
+    stage('Initialize') {
         script {
             echo "LOG:KIEPARENT-BUILDSTAGE-1-1"
+            githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
             sh "ls"
-            load("$WORKSPACE/lienzo-tests/build.stages")
             echo "LOG:KIEPARENT-BUILDSTAGE-1-2"
             sh "pwd"
         }
     }
+    stage('Build lienzo-tests projects') {
+        script {
+            echo "LOG:KIEPARENT-BUILDSTAGE-2-1"
+            sh "ls"
+            load("$WORKSPACE/lienzo-tests/build.stages")
+            echo "LOG:KIEPARENT-BUILDSTAGE-2-2"
+            sh "pwd"
+        }
+    }
     stage('Build droolsjbpm-build-bootstrap') {
-        dir("droolsjbpm-build-bootstrap") {
-            script {
-                echo "LOG:KIEPARENT-BUILDSTAGE-2-1"
-                githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
-                echo "LOG:KIEPARENT-BUILDSTAGE-2-2"
-                maven.runMavenWithSubmarineSettings('clean install', true)
-                echo "LOG:KIEPARENT-BUILDSTAGE-2-3"
-            }
+        script {
+            echo "LOG:KIEPARENT-BUILDSTAGE-3-1"
+            maven.runMavenWithSubmarineSettings('clean install', true)
+            echo "LOG:KIEPARENT-BUILDSTAGE-3-2"
         }
     }
 }
