@@ -1,32 +1,20 @@
 node('submarine-static || kie-rhel7') {
     stage('Initialize droolsjbpm-build-bootstrap') {
         script {
-            sh 'echo "Initialize droolsjbpm-build-bootstrap 1-1"'
-            sh 'pwd'
             githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
-            sh 'echo "Initialize droolsjbpm-build-bootstrap 1-2"'
-            sh 'pwd'
-            sh 'ls'
         }
     }
     stage('Build lienzo-tests projects') {
         dir("lienzo-tests") {
             script {
-                sh 'echo "Initialize droolsjbpm-build-bootstrap 2-1"'
                 githubscm.checkoutIfExists('lienzo-tests', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
                 load("build.stages")
-                sh 'echo "Initialize droolsjbpm-build-bootstrap 2-2"'
             }
         }
     }
     stage('Build droolsjbpm-build-bootstrap') {
         script {
-            sh 'echo "Initialize droolsjbpm-build-bootstrap 3-1"'
-            sh 'pwd'
-            sh 'ls'
-            sh 'echo "Initialize droolsjbpm-build-bootstrap 3-2"'
             maven.runMavenWithSubmarineSettings('clean install', true)
-            sh 'echo "Initialize droolsjbpm-build-bootstrap 3-3"'
         }
     }
 }
