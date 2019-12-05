@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     echo "LOG:A2-1"
-                    load("$WORKSPACE/linezo-tests/build.stages")
+                    load("$WORKSPACE/lienzo-tests/build.stages")
                     echo "LOG:A2-2"
                 }
             }
