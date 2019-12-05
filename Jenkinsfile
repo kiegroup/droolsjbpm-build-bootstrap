@@ -26,7 +26,7 @@ pipeline {
                     echo "LOG:A2-1"
                     def lienzoTests = load("$WORKSPACE/lienzo-tests/build.pipeline.groovy")
                     echo "LOG:A2-2"
-                    lienzoTests.call()
+                    lienzoTests()
                     echo "LOG:A2-3"
                 }
             }
