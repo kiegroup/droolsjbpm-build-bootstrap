@@ -2,8 +2,10 @@ node('submarine-static || kie-rhel7') {
     stage('Build lienzo-tests projects') {
         script {
             echo "LOG:KIEPARENT-BUILDSTAGE-1-1"
+            sh "ls"
             load("$WORKSPACE/lienzo-tests/build.stages")
             echo "LOG:KIEPARENT-BUILDSTAGE-1-2"
+            sh "pwd"
         }
     }
     stage('Build droolsjbpm-build-bootstrap') {

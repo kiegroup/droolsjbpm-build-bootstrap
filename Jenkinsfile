@@ -24,8 +24,10 @@ pipeline {
             steps {
                 script {
                     echo "LOG:A2-1"
+                    sh "ls"
                     load("$WORKSPACE/build.stages")
                     echo "LOG:A2-2"
+                    sh "pwd"
                 }
             }
         }
