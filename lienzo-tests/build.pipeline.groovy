@@ -1,5 +1,3 @@
-@Library('jenkins-pipeline-shared-libraries')_
-
 def call() {
  pipeline {
      agent {
