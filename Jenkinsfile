@@ -24,9 +24,10 @@ pipeline {
             steps {
                 script {
                     echo "LOG:A2-1"
-                    def lienzoTests = load("$WORKSPACE/lienzo-tests/Jenkinsfile")
-                    lienzoTests()
+                    def lienzoTests = load("$WORKSPACE/lienzo-tests/build.pipeline.groovy")
                     echo "LOG:A2-2"
+                    lienzoTests.call()
+                    echo "LOG:A2-3"
                 }
             }
         }
