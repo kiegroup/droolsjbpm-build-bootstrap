@@ -1,5 +1,3 @@
-@Library('jenkins-pipeline-shared-libraries')_
-
 node('submarine-static || kie-rhel7') {
     stage('Build lienzo-core') {
         dir("lienzo-core") {
