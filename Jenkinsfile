@@ -15,19 +15,13 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
-                echo "LOG:A1-1"
                 sh 'printenv'
-                echo "LOG:A1-2"
             }
         }
         stage('Build droolsjbpm-build-bootstrap projects') {
             steps {
                 script {
-                    echo "LOG:A2-1"
-                    sh "ls"
                     load("$WORKSPACE/build.stages")
-                    echo "LOG:A2-2"
-                    sh "pwd"
                 }
             }
         }
