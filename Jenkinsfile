@@ -20,11 +20,11 @@ pipeline {
                 echo "LOG:A1-2"
             }
         }
-        stage('Build lienzo-tests') {
+        stage('Build kie-parent projects') {
             steps {
                 script {
                     echo "LOG:A2-1"
-                    load("$WORKSPACE/lienzo-tests/build.stages")
+                    load("$WORKSPACE/build.stages")
                     echo "LOG:A2-2"
                 }
             }
