@@ -1,29 +1,22 @@
 @Library('jenkins-pipeline-shared-libraries')_
 
 node {
-    stage('Initialize') {
-        echo "LOG:B1-1"
-        sh 'printenv'
-        echo "LOG:B1-2"
-        maven 'kie-maven-3.5.4'
-        echo "LOG:B1-3"
-        jdk 'kie-jdk1.8'
-        echo "LOG:B1-4"
-    }
-    stage('Build lienzo-core') {
-        dir("lienzo-core") {
-            script {
-                echo "LOG:B2-1"
-                githubscm.checkoutIfExists('lienzo-core', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
-                echo "LOG:B2-2"
-                maven.runMavenWithSubmarineSettings('clean install', true)
-                echo "LOG:B2-3"
+    withEnv(["JAVA_HOME=${ tool 'kie-jdk1.8' }", "PATH+MAVEN=${tool 'kie-maven-3.5.4'}/bin:${env.JAVA_HOME}/bin"]) {
+        stage('Build lienzo-core') {
+            dir("lienzo-core") {
+                script {
+                    echo "LOG:B2-1"
+                    githubscm.checkoutIfExists('lienzo-core', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+                    echo "LOG:B2-2"
+                    maven.runMavenWithSubmarineSettings('clean install', true)
+                    echo "LOG:B2-3"
+                }
             }
         }
-    }
-    stage('Build lienzo-tests') {
-        echo "LOG:B3-1"
-        maven.runMavenWithSubmarineSettings('clean install', false)
-        echo "LOG:B3-2"
+        stage('Build lienzo-tests') {
+            echo "LOG:B3-1"
+            maven.runMavenWithSubmarineSettings('clean install', false)
+            echo "LOG:B3-2"
+        }
     }
 }

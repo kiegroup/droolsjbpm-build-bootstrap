@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     echo "LOG:A2-1"
-                    def lienzoTests = load("$WORKSPACE/lienzo-tests/Jenkinsfile2")
+                    def lienzoTests = load("$WORKSPACE/lienzo-tests/Jenkinsfile")
                     lienzoTests()
                     echo "LOG:A2-2"
                 }
