@@ -24,17 +24,8 @@ pipeline {
             steps {
                 script {
                     echo "LOG:A2-1"
-                    load("$WORKSPACE/lienzo-tests/Jenkinsfile")
+                    load("$WORKSPACE/build.stages")
                     echo "LOG:A2-2"
-                }
-            }
-        }
-        stage('Build kie-parent') {
-            steps {
-                script {
-                    echo "LOG:A3-1"
-                    maven.runMavenWithSubmarineSettings('clean install -DskipTests', false)
-                    echo "LOG:A3-2"
                 }
             }
         }

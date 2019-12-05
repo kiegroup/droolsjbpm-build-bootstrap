@@ -1,0 +1,21 @@
+node('submarine-static || kie-rhel7') {
+    stage('Build lienzo-tests projects') {
+        steps {
+            script {
+                echo "LOG:KIEPARENT1-1"
+                load("$WORKSPACE/lienzo-tests/build.stages")
+                echo "LOG:KIEPARENT1-2"
+            }
+        }
+    }
+    stage('Build kie-parent') {
+        steps {
+            script {
+                echo "LOG:KIEPARENT2-1"
+                githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+                echo "LOG:KIEPARENT2-2"
+                maven.runMavenWithSubmarineSettings('clean install', true)
+            }
+        }
+    }    
+}
