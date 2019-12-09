@@ -1,8 +1,3 @@
-stage('Initialize droolsjbpm-build-bootstrap') {
-    script {
-        githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
-    }
-}
 stage('Build droolsjbpm-build-bootstrap projects') {
     dir("lienzo-tests") {
         script {
@@ -13,38 +8,10 @@ stage('Build droolsjbpm-build-bootstrap projects') {
 }
 stage('Build droolsjbpm-build-bootstrap') {
     script {
-        print("print droolsjbpm-build-bootstrap1")
-        print(env.disable_auth)
-        print(env.droolsjbpm_build_bootstrap)
-        print(env.droolsjbpm_build_bootstrap2)
-        print(env.droolsjbpm_build_bootstrap3)
-        print(env.droolsjbpm_build_bootstrap4)
-        print("print droolsjbpm-build-bootstrap2")
-        maven.runMavenWithSubmarineSettings('clean install', true)
-        if(env.droolsjbpm_build_bootstrap) {
-            print("A")
-        }
-        if(env.droolsjbpm_build_bootstrap2) {
-            print("b")
-        }
-        if(env.droolsjbpm_build_bootstrap3) {
-            print("c")
-        }
-        if(env.droolsjbpm_build_bootstrap4) {
-            print("d")
-        }
-
-        if(!env.droolsjbpm_build_bootstrap) {
-            print("A2")
-        }
-        if(!env.droolsjbpm_build_bootstrap2) {
-            print("b2")
-        }
-        if(!env.droolsjbpm_build_bootstrap3) {
-            print("c2")
-        }
-        if(!env.droolsjbpm_build_bootstrap4) {
-            print("d2")
+        if(!env.kiegroup_droolsjbpm_build_bootstrap) {
+            githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
+            maven.runMavenWithSubmarineSettings('clean install', true)
+            env.kiegroup_droolsjbpm_build_bootstrap = true;
         }
     }
 }

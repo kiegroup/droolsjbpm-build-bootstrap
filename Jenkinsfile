@@ -4,12 +4,6 @@ pipeline {
     agent {
         label 'kie-rhel7'
     }
-    environment {
-        disable_auth = 'true'
-        droolsjbpm_build_bootstrap = 'false'
-        droolsjbpm_build_bootstrap2 = false
-        droolsjbpm_build_bootstrap3 = true
-    }
     tools {
         maven 'kie-maven-3.5.4'
         jdk 'kie-jdk1.8'
