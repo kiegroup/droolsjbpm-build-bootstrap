@@ -15,9 +15,11 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
-                def builtProjects = [:]
-                def projectName = 'kiegroup/droolsjbpm-build-bootstrap'
-                sh 'printenv'
+                script {
+                    def builtProjects = [:]
+                    def projectName = 'kiegroup/droolsjbpm-build-bootstrap'
+                    sh 'printenv'
+                }
             }
         }
         stage('Build droolsjbpm-build-bootstrap projects') {
