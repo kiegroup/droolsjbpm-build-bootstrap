@@ -5,8 +5,9 @@ pipeline {
         label 'kie-rhel7'
     }
     environment {
-        DISABLE_AUTH = 'true'
-        DB_ENGINE    = 'sqlite'
+        disable_auth = 'true'
+        droolsjbpm_build_bootstrap = 'false'
+        droolsjbpm_build_bootstrap2 = false
     }
     tools {
         maven 'kie-maven-3.5.4'
