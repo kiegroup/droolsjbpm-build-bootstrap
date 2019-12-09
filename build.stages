@@ -13,11 +13,11 @@ stage('Build droolsjbpm-build-bootstrap projects') {
 }
 stage('Build droolsjbpm-build-bootstrap') {
     script {
-        sh "echo FALSE1"
-        sh "echo FALSE2"+ projectName
-        sh "echo FALSE3"+ builtProjects
-        sh "echo FALSE4"+ builtProjects[projectName]
+        print("print droolsjbpm-build-bootstrap")
+        env['kiegroup/droolsjbpm-build-bootstrap'] = false
+        sh 'printenv'
         maven.runMavenWithSubmarineSettings('clean install', true)
-        builtProjects[projectName] = true
+        env['kiegroup/droolsjbpm-build-bootstrap'] = true
+        sh 'printenv'
     }
 }
