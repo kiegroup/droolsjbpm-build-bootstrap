@@ -3,7 +3,7 @@ stage('Initialize droolsjbpm-build-bootstrap') {
         githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
     }
 }
-stage('Build lienzo-tests projects') {
+stage('Build droolsjbpm-build-bootstrap projects') {
     dir("lienzo-tests") {
         script {
             githubscm.checkoutIfExists('lienzo-tests', "$CHANGE_AUTHOR", "$CHANGE_BRANCH", 'kiegroup', "$CHANGE_TARGET")
@@ -12,7 +12,15 @@ stage('Build lienzo-tests projects') {
     }
 }
 stage('Build droolsjbpm-build-bootstrap') {
-    script {
-        maven.runMavenWithSubmarineSettings('clean install', true)
+    echo "Checking builtProjects value"
+    sh 'Checking builtProjects value $builtProjects'
+    sh 'Checking projectName value $projectName'
+    sh 'Checking builtProjects[projectName] value1 $builtProjects[projectName]'
+    sh 'Checking builtProjects[projectName] value2 $builtProjects[$projectName]'
+    if (builtProjects[projectName]) {
+        script {
+            maven.runMavenWithSubmarineSettings('clean install', true)
+            builtProjects[projectName] = true
+        }
     }
 }
