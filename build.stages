@@ -11,13 +11,27 @@ stage('Build droolsjbpm-build-bootstrap projects') {
         }
     }
 }
-stage('Build droolsjbpm-build-bootstrap') {
-    if (builtProjects[projectName] == true) {
-        script {
-            maven.runMavenWithSubmarineSettings('clean install', true)
-            builtProjects[projectName] = true
-        }
-    } else {
-        sh "echo builtProjects[projectName] is not true"
+stage('Build droolsjbpm-build-bootstrap1') {
+    when {
+        expression { builtProjects[projectName] != true }
+    }
+    script {
+        sh "echo FALSE1"
+        sh "echo FALSE2"+ projectName
+        sh "echo FALSE3"+ builtProjects
+        sh "echo FALSE4"+ builtProjects[projectName]
+        maven.runMavenWithSubmarineSettings('clean install', true)
+        builtProjects[projectName] = true
+    }
+}
+stage('Build droolsjbpm-build-bootstrap2') {
+    when {
+        expression { builtProjects[projectName] == true }
+    }
+    script {
+        sh "echo TRUE1"
+        sh "echo TRUE2"+ projectName
+        sh "echo TRUE3"+ builtProjects
+        sh "echo TRUE4"+ builtProjects[projectName]
     }
 }
