@@ -4,10 +4,6 @@ pipeline {
     agent {
         label 'kie-rhel7'
     }
-    environment {
-        def builtProjects = [:]
-        def projectName = 'kiegroup/droolsjbpm-build-bootstrap'
-    }
     tools {
         maven 'kie-maven-3.5.4'
         jdk 'kie-jdk1.8'
@@ -19,6 +15,8 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
+                def builtProjects = [:]
+                def projectName = 'kiegroup/droolsjbpm-build-bootstrap'
                 sh 'printenv'
             }
         }
