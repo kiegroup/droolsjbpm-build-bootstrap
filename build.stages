@@ -14,7 +14,7 @@ stage('Build droolsjbpm-build-bootstrap projects') {
 stage('Build droolsjbpm-build-bootstrap') {
     script {
         print("print droolsjbpm-build-bootstrap1")
-        print(env.kiegroup_droolsjbpm-build-bootstrap)
+        print(env.droolsjbpm-build-bootstrap)
         print("print droolsjbpm-build-bootstrap2")
         maven.runMavenWithSubmarineSettings('clean install', true)
     }
