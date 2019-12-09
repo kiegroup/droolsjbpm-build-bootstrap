@@ -12,15 +12,12 @@ stage('Build droolsjbpm-build-bootstrap projects') {
     }
 }
 stage('Build droolsjbpm-build-bootstrap') {
-    echo "Checking builtProjects value"
-    sh 'Checking builtProjects value $builtProjects'
-    sh 'Checking projectName value $projectName'
-    sh 'Checking builtProjects[projectName] value1 $builtProjects[projectName]'
-    sh 'Checking builtProjects[projectName] value2 $builtProjects[$projectName]'
-    if (builtProjects[projectName]) {
+    if (builtProjects[projectName] == true) {
         script {
             maven.runMavenWithSubmarineSettings('clean install', true)
             builtProjects[projectName] = true
         }
+    } else {
+        sh "echo builtProjects[projectName] is not true"
     }
 }
