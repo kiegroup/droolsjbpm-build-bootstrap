@@ -13,10 +13,14 @@ stage('Build droolsjbpm-build-bootstrap projects') {
 }
 stage('Build droolsjbpm-build-bootstrap') {
     script {
-        print("print droolsjbpm-build-bootstrap")
-        if (env.kiegroup_droolsjbpm-build-bootstrap) {
+        print("print droolsjbpm-build-bootstrap1")
+        if (!env.kiegroup_droolsjbpm-build-bootstrap) {
+            print("print droolsjbpm-build-bootstrap2")
             maven.runMavenWithSubmarineSettings('clean install', true)
-            env.kiegroup_droolsjbpm-build-bootstrap = true
+            kiegroup_droolsjbpm-build-bootstrap = true
+        }
+        if (env.kiegroup_droolsjbpm-build-bootstrap) {
+            print("print droolsjbpm-build-bootstrap3")
         }
         sh 'printenv'
     }
