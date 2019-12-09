@@ -17,7 +17,34 @@ stage('Build droolsjbpm-build-bootstrap') {
         print(env.disable_auth)
         print(env.droolsjbpm_build_bootstrap)
         print(env.droolsjbpm_build_bootstrap2)
+        print(env.droolsjbpm_build_bootstrap3)
+        print(env.droolsjbpm_build_bootstrap4)
         print("print droolsjbpm-build-bootstrap2")
         maven.runMavenWithSubmarineSettings('clean install', true)
+        if(env.droolsjbpm_build_bootstrap) {
+            print("A")
+        }
+        if(env.droolsjbpm_build_bootstrap2) {
+            print("b")
+        }
+        if(env.droolsjbpm_build_bootstrap3) {
+            print("c")
+        }
+        if(env.droolsjbpm_build_bootstrap4) {
+            print("d")
+        }
+
+        if(!env.droolsjbpm_build_bootstrap) {
+            print("A2")
+        }
+        if(!env.droolsjbpm_build_bootstrap2) {
+            print("b2")
+        }
+        if(!env.droolsjbpm_build_bootstrap3) {
+            print("c2")
+        }
+        if(!env.droolsjbpm_build_bootstrap4) {
+            print("d2")
+        }
     }
 }
