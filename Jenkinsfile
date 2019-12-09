@@ -5,7 +5,7 @@ pipeline {
         label 'kie-rhel7'
     }
     environment {
-        droolsjbpm-build-bootstrap = false
+        droolsjbpm-build-bootstrap = 'false'
     }
     tools {
         maven 'kie-maven-3.5.4'
