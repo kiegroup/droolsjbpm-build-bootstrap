@@ -334,7 +334,8 @@
     <version.xmlpull>1.1.3.1</version.xmlpull>
     <version.xmlunit>1.3</version.xmlunit>
     <version.xpp3>1.1.4c</version.xpp3>
-
+	<version.org.awaitility>4.0.1</version.org.awaitility>
+	
     <!-- Internal dependencies -->
     <version.org.kie>7.32.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
@@ -6216,7 +6217,15 @@
         <artifactId>javaparser-core</artifactId>
         <version>${version.com.github.javaparser}</version>
       </dependency>
+      
+      <!-- Used by Test Scenario for Thread sleep -->
+	<dependency>
+    	<groupId>org.awaitility</groupId>
+    	<artifactId>awaitility</artifactId>
+    	<version>${version.org.awaitility}</version>
+	</dependency>
     </dependencies>
+    
   </dependencyManagement>
 
   <dependencies>
