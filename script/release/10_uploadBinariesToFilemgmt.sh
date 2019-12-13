@@ -12,7 +12,7 @@ jbpmHtdocs=jbpm@filemgmt.jboss.org:/downloads_htdocs/jbpm/release
 jbpmServiceRepo=jbpm@filemgmt.jboss.org:/downloads_htdocs/jbpm/release
 optaplannerDocs=optaplanner@filemgmt.jboss.org:/docs_htdocs/optaplanner/release
 optaplannerHtdocs=optaplanner@filemgmt.jboss.org:/downloads_htdocs/optaplanner/release
-
+deployDir=community-deploy-dir
 
 # create directory on filemgmt.jboss.org for new release
 touch upload_version
@@ -81,15 +81,30 @@ chmod +x upload_service_repository
 sftp -b upload_service_repository $jbpmServiceRepo/$kieVersion
 
 # copies drools binaries to filemgmt.jboss.org
-scp -r droolsjbpm-tools/droolsjbpm-tools-distribution/target/droolsjbpm-tools-distribution-$kieVersion/droolsjbpm-tools-distribution-$kieVersion/binaries/org.drools.updatesite/* $droolsHtdocs/$kieVersion/org.drools.updatesite
-scp drools/drools-distribution/target/drools-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
-scp droolsjbpm-integration/droolsjbpm-integration-distribution/target/droolsjbpm-integration-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
-scp droolsjbpm-tools/droolsjbpm-tools-distribution/target/droolsjbpm-tools-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
-scp kie-wb-distributions/business-central-parent/business-central-distribution-wars/business-central/target/business-central-$kieVersion-*.war $droolsHtdocs/$kieVersion
-scp droolsjbpm-integration/kie-server-parent/kie-server-wars/kie-server-distribution/target/kie-server-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
+# cp and unzip updatesite
+mkdir updatesite
+cp  $deployDir/org/drools/org.drools.updatesite/$kieVersion/org.drools.updatesite-$kieVersion.zip updatesite/
+unzip updatesite/org.drools.updatesite-$kieVersion.zip -d updatesite/
+rm updatesite/org.drools.updatesite-$kieVersion.zip
+scp -r updatesite/* $droolsHtdocs/$kieVersion/org.drools.updatesite
 
-#copies drools-docs and kie-api-javadoc to filemgmt.jboss.or
-scp -r kie-docs/doc-content/drools-docs/target/generated-docs/* $droolsDocs/$kieVersion/drools-docs
+scp $deployDir/org/drools/drools-distribution/$kieVersion/drools-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
+scp $deployDir/org/drools/droolsjbpm-integration-distribution/$kieVersion/droolsjbpm-integration-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
+scp $deployDir/org/drools/droolsjbpm-tools-distribution/$kieVersion/droolsjbpm-tools-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
+scp $deployDir/org/kie/business-central/$kieVersion/business-central-$kieVersion-*.war $droolsHtdocs/$kieVersion
+scp $deployDir/org/kie/server/kie-server-distribution/$kieVersion/kie-server-distribution-$kieVersion.zip $droolsHtdocs/$kieVersion
+
+#unzips and copies drools-docs and kie-api-javadoc to filemgmt.jboss.or
+mkdir droolsDocs
+cp  $deployDir/org/drools/drools-docs/$kieVersion/drools-docs-$kieVersion.zip droolsDocs/
+unzip droolsDocs/drools-docs-$kieVersion.zip -d droolsDocs/
+scp -r droolsDocs/* $droolsDocs/$kieVersion/drools-docs
+mkdir kieJavadoc
+
+# BIS HIERHER
+cp  $deployDir/org/drools/drools-docs/$kieVersion/drools-docs-$kieVersion.zip kieJavadoc/
+unzip droolsDocs/drools-docs-$kieVersion.zip -d kieJavadoc/
+scp r droolsDocs/* $droolsDocs/$kieVersion/drools-docs
 scp -r droolsjbpm-knowledge/kie-api/target/apidocs/* $droolsDocs/$kieVersion/kie-api-javadoc
 
 #copies jbpm binaries to filemgmt.jboss.org
