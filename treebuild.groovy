@@ -1,24 +1,34 @@
-def downstreamBuild(String treeFilePath) {
-    def lines = new File(treeFilePath).readLines()
-    def lastLine = lines.get(lines.size() - 1)
+/**
+ * Builds the downstream
+ * @param projectLines a collection of items following the pattern PROJECT_GROUP/PROJECT_NAME, for example kiegroup/drools
+ */
+def downstreamBuild(def projectLines) {
+    def lastLine = projectLines.get(projectLines.size() - 1)
 
     println "Downstream building ${lastLine} project"
-    upstreamBuild(treeFilePath, lastLine)
+    upstreamBuild(projectLines, lastLine)
 }
 
-def upstreamBuild(String treeFilePath, String currentProject) {
+/**
+ * Builds the upstream for an specific project
+ * @param projectLines a collection of items following the pattern PROJECT_GROUP/PROJECT_NAME, for example kiegroup/drools
+ * @param currentProject the project to build the stream from, like kiegroup/drools
+ */
+def upstreamBuild(def projectLines, String currentProject) {
     println "Upstream building ${currentProject} project"
 
-    def projects = new File(treeFilePath).readLines()
-
     // Build project tree from currentProject node
-    for (i = 0; currentProject != projects.get(i); i++) {
-        buildProject(projects.get(i))
+    for (i = 0; currentProject != projectLines.get(i); i++) {
+        buildProject(projectLines.get(i))
     }
 
     buildProject(currentProject)
 }
 
+/**
+ *
+ * @param project a string following the pattern PROJECT_GROUP/PROJECT_NAME, for example kiegroup/drools
+ */
 def buildProject(String project) {
     def projectGroup = project.split("\\/")[0]
     def projectName = project.split("\\/")[1]
@@ -31,9 +41,11 @@ def buildProject(String project) {
     sh ".."
 }
 
+/**
+ *
+ * @param projectUrl the github project url
+ */
 def getProject(String projectUrl) {
-    println "getProject ${projectUrl}"
-    println "getProject2 ${(projectUrl =~ /((git|ssh|http(s)?)|(git@[\w\.]+))(:(\/\/)?(github.com\\/))([\w\.@\:\/\-~]+)(\.git)(\/)?/)}"
     return (projectUrl =~ /((git|ssh|http(s)?)|(git@[\w\.]+))(:(\/\/)?(github.com\\/))([\w\.@\:\/\-~]+)(\.git)(\/)?/)[0][8]
 }
 

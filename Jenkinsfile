@@ -28,7 +28,8 @@ pipeline {
                     print "project: ${treebuild.getProject(env.GIT_URL)}"
                     configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
                         print "TREE_FILE_PATH: ${env.TREE_FILE_PATH}"
-                        treebuild.upstreamBuild(env.TREE_FILE_PATH, treebuild.getProject(env.GIT_URL))
+                        def filePath = readFile "${env.TREE_FILE_PATH}"
+                        treebuild.upstreamBuild(filePath.readLines(), treebuild.getProject(env.GIT_URL))
                     }
                 }
             }
@@ -41,7 +42,8 @@ pipeline {
                     print "project: ${treebuild.getProject(env.GIT_URL)}"
                     configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
                         print "TREE_FILE_PATH: ${env.TREE_FILE_PATH}"
-                        treebuild.downstreamBuild(env.TREE_FILE_PATH)
+                        def filePath = readFile "${env.TREE_FILE_PATH}"
+                        treebuild.downstreamBuild(filePath.readLines())
                     }
                 }
             }
