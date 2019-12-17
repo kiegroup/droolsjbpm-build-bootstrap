@@ -32,5 +32,7 @@ def buildProject(String project) {
 }
 
 def getProject(String projectUrl) {
+    println "getProject ${projectUrl}"
+    println "getProject2 ${(projectUrl =~ /((git|ssh|http(s)?)|(git@[\w\.]+))(:(\/\/)?(github.com\\/))([\w\.@\:\/\-~]+)(\.git)(\/)?/)}"
     return (projectUrl =~ /((git|ssh|http(s)?)|(git@[\w\.]+))(:(\/\/)?(github.com\\/))([\w\.@\:\/\-~]+)(\.git)(\/)?/)[0][8]
 }
