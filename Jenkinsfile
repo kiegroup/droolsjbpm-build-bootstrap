@@ -23,11 +23,7 @@ pipeline {
         stage('Upstream Build') {
             steps {
                 script {
-                    def treebuild = load("treebuild.groovy")
-                    print "GIT_URL: ${env.GIT_URL}"
-                    print "project: ${treebuild.getProject(env.GIT_URL)}"
                     configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
-                        print "TREE_FILE_PATH: ${env.TREE_FILE_PATH}"
                         def filePath = readFile "${env.TREE_FILE_PATH}"
                         treebuild.upstreamBuild(filePath.readLines(), treebuild.getProject(env.GIT_URL))
                     }
@@ -37,11 +33,7 @@ pipeline {
         stage('Downstream Build') {
             steps {
                 script {
-                    def treebuild = load("treebuild.groovy")
-                    print "GIT_URL: ${env.GIT_URL}"
-                    print "project: ${treebuild.getProject(env.GIT_URL)}"
                     configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
-                        print "TREE_FILE_PATH: ${env.TREE_FILE_PATH}"
                         def filePath = readFile "${env.TREE_FILE_PATH}"
                         treebuild.downstreamBuild(filePath.readLines())
                     }
