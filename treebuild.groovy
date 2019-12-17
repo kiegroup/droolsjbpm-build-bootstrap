@@ -32,13 +32,16 @@ def upstreamBuild(def projectCollection, String currentProject) {
 def buildProject(String project) {
     def projectGroup = project.split("\\/")[0]
     def projectName = project.split("\\/")[1]
-    println "Buiding ${projectGroup}/${projectName}"
-
-    sh "mkdir ${projectGroup}_${projectName}"
-    sh "cd ${projectGroup}_${projectName}"
-    githubscm.checkoutIfExists(projectName, "$CHANGE_AUTHOR", "$CHANGE_BRANCH", projectGroup, "$CHANGE_TARGET")
-    maven.runMavenWithSubmarineSettings('clean install', true)
-    sh "cd .."
+    if(Files.isDirectory("${projectGroup}_${projectName}")) {
+        println "Building ${projectGroup}/${projectName}"
+        sh "mkdir ${projectGroup}_${projectName}"
+        sh "cd ${projectGroup}_${projectName}"
+        githubscm.checkoutIfExists(projectName, "$CHANGE_AUTHOR", "$CHANGE_BRANCH", projectGroup, "$CHANGE_TARGET")
+        maven.runMavenWithSubmarineSettings('clean install', true)
+        sh "cd .."
+    } else {
+        println "Project ${projectGroup}/${projectName} Already exists"
+    }
 }
 
 /**
