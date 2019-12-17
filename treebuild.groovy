@@ -1,3 +1,6 @@
+import java.nio.file.Files
+import java.nio.file.Paths
+
 /**
  * Builds the downstream
  * @param projectCollection a collection of items following the pattern PROJECT_GROUP/PROJECT_NAME, for example kiegroup/drools
@@ -32,7 +35,7 @@ def upstreamBuild(def projectCollection, String currentProject) {
 def buildProject(String project) {
     def projectGroup = project.split("\\/")[0]
     def projectName = project.split("\\/")[1]
-    if(Files.isDirectory("${projectGroup}_${projectName}")) {
+    if(Files.isDirectory(Paths.get("${projectGroup}_${projectName}"))) {
         println "Building ${projectGroup}/${projectName}"
         sh "mkdir ${projectGroup}_${projectName}"
         sh "cd ${projectGroup}_${projectName}"
