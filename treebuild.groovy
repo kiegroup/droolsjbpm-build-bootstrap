@@ -35,7 +35,7 @@ def upstreamBuild(def projectCollection, String currentProject) {
 def buildProject(String project) {
     def projectGroup = project.split("\\/")[0]
     def projectName = project.split("\\/")[1]
-    if(Files.isDirectory(Paths.get("${projectGroup}_${projectName}"))) {
+    if(Files.exists(Paths.get("${projectGroup}_${projectName}"))) {
         println "Building ${projectGroup}/${projectName}"
         sh "mkdir ${projectGroup}_${projectName}"
         sh "cd ${projectGroup}_${projectName}"
