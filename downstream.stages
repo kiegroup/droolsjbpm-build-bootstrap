@@ -1,8 +1,5 @@
 stage('Downstream Build') {
-    script {
-        configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
-            def filePath = readFile "${env.TREE_FILE_PATH}"
-            treebuild.downstreamBuild(filePath.readLines(), '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
-        }
+    configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
+        treebuild.downstreamBuild(env.TREE_FILE_PATH, '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
     }
 }
