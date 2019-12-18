@@ -19,13 +19,10 @@ pipeline {
 
             }
         }
-        stage('Downstream Build') {
+        stage('Build Downstream projects') {
             steps {
                 script {
-                    configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
-                        def filePath = readFile "${env.TREE_FILE_PATH}"
-                        treebuild.downstreamBuild(filePath.readLines())
-                    }
+                    load("$WORKSPACE/downstream.stages")
                 }
             }
         }
@@ -42,7 +39,6 @@ pipeline {
             }
         }
         always {
-            // Currently there are no tests in submarine-examples
             //junit '**/target/surefire-reports/**/*.xml'
             cleanWs()
         }

@@ -19,10 +19,10 @@ pipeline {
 
             }
         }
-        stage('Build upstream projects') {
+        stage('Build Downstream production projects') {
             steps {
                 script {
-                    load("$WORKSPACE/upstream.stages")
+                    load("$WORKSPACE/downstream.production.stages")
                 }
             }
         }
