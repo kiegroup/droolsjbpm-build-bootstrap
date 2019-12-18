@@ -1,6 +1,8 @@
 stage('Upstream Build') {
-    configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
-        def filePath = readFile "${env.TREE_FILE_PATH}"
-        treebuild.upstreamBuild(filePath.readLines(), treebuild.getProject(env.GIT_URL), '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
+    step {
+        configFileProvider([configFile(fileId: 'be8694cf-6f0f-443f-8b8a-6464849100bf', variable: 'TREE_FILE_PATH')]) {
+            def filePath = readFile "${env.TREE_FILE_PATH}"
+            treebuild.upstreamBuild(filePath.readLines(), treebuild.getProject(env.GIT_URL), '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
+        }
     }
 }
