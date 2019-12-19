@@ -1,3 +1,3 @@
 stage('Downstream Production Build') {
-    treebuild.downstreamBuild('49737697-ebd6-4396-9c22-11f7714808eb', treebuild.getProject(env.GIT_URL), '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install -Dprod', true)
+    treebuild.downstreamBuild('49737697-ebd6-4396-9c22-11f7714808eb', '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install -Dprod', true)
 }
