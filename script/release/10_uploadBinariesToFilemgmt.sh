@@ -69,6 +69,11 @@ echo "mkdir optaweb-employee-rostering-docs" > upload_optaweb_employee_rostering
 chmod +x upload_optaweb_employee_rostering_docs
 sftp -b upload_optaweb_employee_rostering_docs $optaplannerDocs/$kieVersion
 
+touch upload_optaweb-vehicle-routing-docs
+echo "mkdir optaweb-vehicle-routing-docs" > upload_optaweb-vehicle-routing-docs
+chmod +x upload_optaweb-vehicle-routing-docs
+sftp -b upload_optaweb-vehicle-routing-docs $optaplannerDocs/$kieVersion
+
 touch upload_optaplanner_javadoc
 echo "mkdir optaplanner-javadoc" > upload_optaplanner_javadoc
 chmod +x upload_optaplanner_javadoc
@@ -141,8 +146,10 @@ unzip jbpmDocs/jbpm-docs-$kieVersion.zip -d jbpmDocs/
 rm jbpmDocs/jbpm-docs-$kieVersion.zip
 scp -r jbpmDocs/* $jbmDocs/$kieVersion/jbpm-docs
 
-#copies optaplanner binaries to filemgmt.jboss.org
+#copies optaplanner-distribution.zip to filemgmt.jboss.org
 scp $deployDir/org/optaplanner/optaplanner-distribution/$kieVersion/optaplanner-distribution-$kieVersion.zip $optaplannerHtdocs/$kieVersion
+#copies employee-rostering-distribution.zip
+scp $deployDir/org/optaweb/employeerostering/employee-rostering-distribution/$kieVersion/employee-rostering-distribution-$kieVersion.zip $optaplannerHtdocs/$kieVersion
 
 #unzips and copies optaplanner-docs to filemgmt.jboss.org
 mkdir optaplannerDocs
@@ -158,7 +165,16 @@ unzip employeeRosteringDocs/employee-rostering-docs-$kieVersion.zip -d employeeR
 rm employeeRosteringDocs/employee-rostering-docs-$kieVersion.zip
 scp -r employeeRosteringDocs/* $optaplannerDocs/$kieVersion/optaweb-employee-rostering-docs
 
-# copies binaries + docs that oare only available in its form in /target directories
+
+#unzips and copies vehicle-routing-docs to filemgmt.jboss.org
+mkdir vehicleRoutingDocs
+cp  $deployDir/org/optaweb/vehiclerouting/optaweb-vehicle-routing-docs/optaweb-vehicle-routing-docs-$kieVersion.zip vehicleRoutingDocs/
+unzip vehicleRoutingDocs/optaweb-vehicle-routing-docs-$kieVersion.zip -d vehicleRoutingDocs/
+rm vehicleRoutingDocs/optaweb-vehicle-routing-docs-$kieVersion.zip
+scp -r vehicleRoutingDocs/* $optaplannerDocs/$kieVersion/optaweb-vehicle-routing-docs
+
+
+# copies binaries + docs that are only available in /target directories - they are not deployed
 scp -r jbpm-work-items/repository/target/repository-$kieVersion/* $jbpmHtdocs/$kieVersion/service-repository
 scp -r optaplanner/optaplanner-distribution/target/optaplanner-distribution-$kieVersion/optaplanner-distribution-$kieVersion/javadocs/* $optaplannerDocs/$kieVersion/optaplanner-javadoc
 scp -r kie-docs/doc-content/optaplanner-wb-es-docs/target/generated-docs/* $optaplannerDocs/$kieVersion/optaplanner-wb-es-docs
