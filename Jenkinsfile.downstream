@@ -1,4 +1,4 @@
-@Library('jenkins-pipeline-shared-libraries-ginxo')_
+@Library('jenkins-pipeline-shared-libraries')_
 
 pipeline {
     agent {
