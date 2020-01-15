@@ -1,3 +1,7 @@
 stage('Upstream Build') {
-    treebuild.upstreamBuild('be8694cf-6f0f-443f-8b8a-6464849100bf', treebuild.getProject(env.GIT_URL), '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
+    final REPOSITORY_LIST_FILE = "./script/repository-list.txt"
+    println "Reading file ${REPOSITORY_LIST_FILE}"
+    def file = readFile REPOSITORY_LIST_FILE
+    def projectCollection = file.readLines()
+    treebuild.upstreamBuild(projectCollection, treebuild.getProject(env.GIT_URL), '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
 }

@@ -1,3 +1,5 @@
 stage('Downstream Build') {
-    treebuild.downstreamBuild('49737697-ebd6-4396-9c22-11f7714808eb', '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
+    println "Reading file ./script/repository-list.txt"
+    File file = readFile "./script/repository-list.txt"
+    treebuild.downstreamBuild(file, '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', 'clean install', true)
 }
