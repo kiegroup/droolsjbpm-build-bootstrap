@@ -10,10 +10,10 @@ stage('Downstream Production Build') {
         def projectCollection = communityProjectListFile.readLines()
 
         def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
-        projectCollection << productionProjectListFile.readLines()
+        projectCollection.addAll(productionProjectListFile.readLines())
 
         println "File ${REPOSITORY_LIST_FILE} and ${PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
 
-        treebuild.downstreamBuild(projectCollection, SETTINGS_XML_ID, 'clean install -Dproduction', true)
+        treebuild.downstreamBuild(projectCollection, "${SETTINGS_XML_ID}", 'clean install -Dproduction', true)
     }
 }
