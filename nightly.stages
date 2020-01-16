@@ -12,7 +12,10 @@ stage('NIGHTLY Build') {
         projectCollection.addAll(productionProjectListFile.readLines())
         println "File ${REPOSITORY_LIST_FILE} and ${PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
 
+
         checkout([$class: 'GitSCM', branches: [[name: 'master']], browser: [$class: 'GithubWeb', repoUrl: '${env.PNC_BUILD_CONFIGURATION_REPO_URL}'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'build_config']], submoduleCfg: []])
-        pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", readFile '${WORKSPACE}/build_config/rhba/nightly/build-config.yaml','${env.PME_CLI_PATH}')
+        def buildConfigFile = readFile "${WORKSPACE}/build_config/rhba/nightly/build-config.yaml"
+        
+        pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", buildConfigFile, "${env.PME_CLI_PATH}")
     }
 }
