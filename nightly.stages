@@ -16,22 +16,11 @@ stage('NIGHTLY Build') {
         sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
         println "TEST:pwd"
         sh "pwd"
-
-        println "TEST:ls"
-        sh "ls build_config"
-        println "TEST:ls NIGHTLY1"
-        sh "ls build_config/rhba/nightly"
-        println "TEST:ls NIGHTLY2"
-        sh "ls build_config/rhba/nightly/"
-        println "TEST:ls WS ${WORKSPACE}"
-        sh "ls ${WORKSPACE}"
-        println "TEST:ls2 WS [$WORKSPACE]"
-        sh "ls $WORKSPACE"
-        println "TEST:ls WS/BC ${WORKSPACE}/build_config"
-        sh "ls ${WORKSPACE}/build_config"
-        println "TEST:ls1 WS/BC $WORKSPACE/build_config"
-        println "TEST:ls2 WS/BC \$WORKSPACE/build_config"
+        println "TEST:ls $WORKSPACE/build_config"
         sh "ls $WORKSPACE/build_config"
+        println "TEST:ls $WORKSPACE/build_config/rhba/nightly"
+        sh "ls $WORKSPACE/build_config/rhba/nightly"
+
 
         pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly/build-config.yaml", "${env.PME_CLI_PATH}")
     }
