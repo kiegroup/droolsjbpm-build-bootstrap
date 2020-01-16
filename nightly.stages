@@ -26,7 +26,7 @@ stage('NIGHTLY Build') {
         println "TEST:ls WS ${WORKSPACE}"
         sh "ls ${WORKSPACE}"
         println "TEST:ls2 WS [$WORKSPACE]"
-        sh "ls [$WORKSPACE]"
+        sh "ls $WORKSPACE"
         println "TEST:ls WS/BC ${WORKSPACE}/build_config"
         sh "ls ${WORKSPACE}/build_config"
         println "TEST:ls1 WS/BC $WORKSPACE/build_config"
