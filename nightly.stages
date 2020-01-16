@@ -12,8 +12,8 @@ stage('NIGHTLY Build') {
         projectCollection.addAll(productionProjectListFile.readLines())
         println "File ${REPOSITORY_LIST_FILE} and ${PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
 
-        println "Checking out ${env.PNC_BUILD_CONFIGURATION_REPO_URL} into build_config folder"
-        sh "git clone ${env.PNC_BUILD_CONFIGURATION_REPO_URL} build_config"
+        println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
+        sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
         def buildConfigFile = readFile "${WORKSPACE}/build_config/rhba/nightly/build-config.yaml"
 
         pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", buildConfigFile, "${env.PME_CLI_PATH}")
