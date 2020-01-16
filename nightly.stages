@@ -14,6 +14,9 @@ stage('NIGHTLY Build') {
 
         println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
         sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
+        println "TEST:pwd"
+        sh "pwd"
+
         println "TEST:ls"
         sh "ls build_config"
         println "TEST:ls NIGHTLY1"
@@ -21,7 +24,7 @@ stage('NIGHTLY Build') {
         println "TEST:ls NIGHTLY2"
         sh "ls build_config/rhba/nightly/"
         println "TEST:ls WS ${WORKSPACE}"
-        sh "ls [${WORKSPACE}]"
+        sh "ls ${WORKSPACE}"
         println "TEST:ls2 WS [$WORKSPACE]"
         sh "ls [$WORKSPACE]"
         println "TEST:ls WS/BC ${WORKSPACE}/build_config"
