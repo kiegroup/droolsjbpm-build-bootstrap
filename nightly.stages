@@ -24,6 +24,6 @@ stage('NIGHTLY Build') {
         def buildConfig = readFile "$WORKSPACE/build_config/rhba/nightly/build-config.yaml"
 
 
-        pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", buildConfig, "${env.PME_CLI_PATH}")
+        pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", buildConfig, "${env.PME_CLI_PATH}", "$WORKSPACE/build_config/rhba/nightly/build-config.yaml")
     }
 }
