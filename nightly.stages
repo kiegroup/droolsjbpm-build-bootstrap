@@ -14,7 +14,6 @@ stage('NIGHTLY Build') {
 
         println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
         sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
-        sh "ls /opt/tools/pme/"
         pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly/build-config.yaml", "${env.PME_CLI_PATH}")
     }
 }
