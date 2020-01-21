@@ -13,7 +13,7 @@ stage('NIGHTLY Build') {
             flattenFiles: false,
             includes: '${env.GIT_CERT_FILE_ID}',
             targetLocation: "$JAVA_HOME/jre/lib/security"
-        )]).
+        )])
     }
 
 
