@@ -5,7 +5,9 @@ stage('NIGHTLY Build') {
     final GIT_CERT_FILE_ID = "61402e54-2b69-4813-be46-8a8a6e0152d3"
 
     configFileProvider([configFile(fileId: GIT_CERT_FILE_ID, variable: 'GIT_CERT_FILE_ID')]) {
-        sh "cp ${GIT_CERT_FILE_ID} $JAVA_HOME/jre/lib/security"
+        def cert = readFile GIT_CERT_FILE_ID
+        println "cert ${cert}"
+        sh "cp ${cert} $JAVA_HOME/jre/lib/security"
         sh "ls $JAVA_HOME/jre/lib/security"
     }
 
