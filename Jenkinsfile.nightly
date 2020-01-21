@@ -1,0 +1,46 @@
+@Library('jenkins-pipeline-shared-libraries')_
+
+pipeline {
+    agent {
+        label 'image-test && !master'
+    }
+    tools {
+        maven 'kie-maven-3.6.0'
+        jdk 'kie-jdk1.8'
+    }
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        timeout(time: 300, unit: 'MINUTES')
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'printenv'
+
+            }
+        }
+        stage('Build Nightly projects') {
+            steps {
+                script {
+                    load("$WORKSPACE/nightly.stages")
+                }
+            }
+        }
+    }
+    post {
+        unstable {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        failure {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        always {
+            //junit '**/target/surefire-reports/**/*.xml'
+            cleanWs()
+        }
+    }
+}
