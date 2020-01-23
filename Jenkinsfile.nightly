@@ -22,7 +22,10 @@ pipeline {
         stage('Build Nightly projects') {
             steps {
                 script {
-                    load("$WORKSPACE/nightly.stages")
+                    // This is the map project, variable to store the version from this project
+                    def projectVariableMap = ['kiegroup_droolsjbpm-build-bootstrap': "kieVersion", 'jboss-integration_izpack': "izpackVersion", 'jboss-integration_installer-commons': "installerCommonsVersion"]
+                    def nightlyStages = load("$WORKSPACE/nightly.stages")
+                    nightlyStages(projectVariableMap)
                 }
             }
         }
