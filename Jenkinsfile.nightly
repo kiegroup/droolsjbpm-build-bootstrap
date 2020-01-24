@@ -1,0 +1,49 @@
+@Library('jenkins-pipeline-shared-libraries')_
+
+pipeline {
+    agent {
+        label 'image-test && !master'
+    }
+    tools {
+        maven 'kie-maven-3.6.0'
+        jdk 'kie-jdk1.8'
+    }
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        timeout(time: 720, unit: 'MINUTES')
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'printenv'
+
+            }
+        }
+        stage('Build Nightly projects') {
+            steps {
+                script {
+                    // This is the map project, variable to store the version from this project
+                    def projectVariableMap = ['kiegroup_droolsjbpm-build-bootstrap': "kieVersion", 'jboss-integration_izpack': "izpackVersion", 'jboss-integration_installer-commons': "installerCommonsVersion"]
+                    def nightlyStages = load("$WORKSPACE/nightly.stages")
+                    nightlyStages(projectVariableMap)
+                }
+            }
+        }
+    }
+    post {
+        unstable {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        failure {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        always {
+            //junit '**/target/surefire-reports/**/*.xml'
+            cleanWs()
+        }
+    }
+}
