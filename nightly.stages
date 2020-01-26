@@ -1,4 +1,4 @@
-def call(String settingsXmlId, String productionProjectListId, Sring repositoryListPath, Map<String, String> projectVariableMap) {
+def call(String settingsXmlId, String productionProjectListId, String repositoryListPath, Map<String, String> projectVariableMap) {
     stage('NIGHTLY Build') {
         configFileProvider([configFile(fileId: productionProjectListId, variable: 'PRODUCTION_PROJECT_LIST')]) {
             println "Reading file ${repositoryListPath} and merging it with ${PRODUCTION_PROJECT_LIST} jenkins file"
