@@ -1,21 +1,17 @@
-def call(Map<String, String> projectVariableMap) {
+def call(String settingsXmlId, String productionProjectListId, String repositoryListPath, Map<String, String> projectVariableMap) {
     stage('NIGHTLY Build') {
-        final REPOSITORY_LIST_FILE = "./script/repository-list.txt"
-        final SETTINGS_XML_ID = "3f317dd7-4d08-4ee4-b9bb-969c309e782c"
-        final PRODUCTION_PROJECT_LIST_ID = "49737697-ebd6-4396-9c22-11f7714808eb"
-
-        configFileProvider([configFile(fileId: PRODUCTION_PROJECT_LIST_ID, variable: 'PRODUCTION_PROJECT_LIST')]) {
-            println "Reading file ${REPOSITORY_LIST_FILE} and merging it with ${PRODUCTION_PROJECT_LIST} jenkins file"
-            def communityProjectListFile = readFile REPOSITORY_LIST_FILE
+        configFileProvider([configFile(fileId: productionProjectListId, variable: 'PRODUCTION_PROJECT_LIST')]) {
+            println "Reading file ${repositoryListPath} and merging it with ${PRODUCTION_PROJECT_LIST} jenkins file"
+            def communityProjectListFile = readFile repositoryListPath
             def projectCollection = communityProjectListFile.readLines()
             def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
             projectCollection.addAll(productionProjectListFile.readLines())
-            println "File ${REPOSITORY_LIST_FILE} and ${PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
+            println "File ${repositoryListPath} and ${env.PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
 
             println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
             sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
 
-            pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", "${env.KIE_GROUP_DEPLOYMENT_REPO_URL}", projectVariableMap)
+            pmebuild.buildProjects(projectCollection, "${settingsXmlId}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", "${env.KIE_GROUP_DEPLOYMENT_REPO_URL}", projectVariableMap)
         }
     }
 }
