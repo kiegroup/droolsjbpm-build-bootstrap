@@ -1,18 +1,9 @@
-def call(String settingsXmlId, String productionProjectListId, String repositoryListPath, Map<String, String> projectVariableMap) {
+def call(String settingsXmlId, List<String> projectCollection, String buildConfigFolder, Map<String, String> projectVariableMap) {
     stage('NIGHTLY Build') {
-        configFileProvider([configFile(fileId: productionProjectListId, variable: 'PRODUCTION_PROJECT_LIST')]) {
-            println "Reading file ${repositoryListPath} and merging it with ${PRODUCTION_PROJECT_LIST} jenkins file"
-            def communityProjectListFile = readFile repositoryListPath
-            def projectCollection = communityProjectListFile.readLines()
-            def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
-            projectCollection.addAll(productionProjectListFile.readLines())
-            println "File ${repositoryListPath} and ${env.PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
+        println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
+        sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
 
-            println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
-            sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
-
-            pmebuild.buildProjects(projectCollection, "${settingsXmlId}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", "${env.KIE_GROUP_DEPLOYMENT_REPO_URL}", projectVariableMap)
-        }
+        pmebuild.buildProjects(projectCollection, "${settingsXmlId}", "$WORKSPACE/build_config/${buildConfigFolder}", "${env.PME_CLI_PATH}", projectVariableMap)
     }
 }
 
