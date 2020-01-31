@@ -1,0 +1,60 @@
+@Library('jenkins-pipeline-shared-libraries')_
+
+pipeline {
+    agent {
+        label 'image-test && !master'
+    }
+    tools {
+        maven 'kie-maven-3.6.0'
+        jdk 'kie-jdk1.8'
+    }
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        timeout(time: 720, unit: 'MINUTES')
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'printenv'
+
+            }
+        }
+        stage('Build Nightly projects') {
+            steps {
+                script {
+                    def SETTINGS_XML_ID = "5d9884a1-178a-4d67-a3ac-9735d2df2cef"
+
+                    // This is the map project, variable to store the version from this project
+                    def projectVariableMap = ['kiegroup_droolsjbpm-build-bootstrap': "kieVersion", 'jboss-integration_izpack': "izpackVersion", 'jboss-integration_installer-commons': "installerCommonsVersion"]
+                    def nightlyStages = load("$WORKSPACE/nightly.stages")
+                    def variableVersionsMap = ['kieVersion': "7.30.1-SNAPSHOT"]
+
+                    configFileProvider([configFile(fileId: "49737697-ebd6-4396-9c22-11f7714808eb", variable: 'PRODUCTION_PROJECT_LIST')]) {
+                        println "Reading ${PRODUCTION_PROJECT_LIST} jenkins file"
+                        def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
+                        def projectCollection = productionProjectListFile.readLines()
+                        nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
+                    }
+
+
+                }
+            }
+        }
+    }
+    post {
+        unstable {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        failure {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        always {
+            //junit '**/target/surefire-reports/**/*.xml'
+            cleanWs()
+        }
+    }
+}
