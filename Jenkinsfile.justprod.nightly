@@ -33,7 +33,7 @@ pipeline {
                         println "Reading ${PRODUCTION_PROJECT_LIST} jenkins file"
                         def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
                         def projectCollection = productionProjectListFile.readLines()
-                        nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
+                        nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap, variableVersionsMap)
                     }
 
 
