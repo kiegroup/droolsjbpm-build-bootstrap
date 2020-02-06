@@ -108,6 +108,12 @@ for repository in $REPOSITORY_LIST; do
         echo "==============================================================================="
         cd $repository
 
+        if [ $repository == "kie-wb-common" ] ; then
+            MVN_ARG_LINE+=("-Dcontainer=wildfly")
+            MVN_ARG_LINE+=("-Dcontainer.profile=wildfly")
+            MVN_ARG_LINE+=("-Dintegration-tests=true")
+        fi
+
         "$mvnBin" "${MVN_ARG_LINE[@]}"
         returnCode=$?
 
