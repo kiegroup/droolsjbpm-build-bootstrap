@@ -35,6 +35,7 @@ pipeline {
                         def projectCollection = communityProjectListFile.readLines()
                         def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
                         projectCollection.addAll(productionProjectListFile.readLines())
+                        projectCollection.removeAll { 'droolsjbpm-tools'.equals(it.toLowerCase()) }
                         println "File ${repositoryListPath} and ${env.PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
                         nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
                     }
