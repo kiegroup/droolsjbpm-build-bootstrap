@@ -33,7 +33,7 @@ pipeline {
                         def pom = readMavenPom file: 'pom.xml'
                         // def variableVersionsMap = ['kieVersion': pom.version]
                         // println "'kieVersion' variable set to ${pom.version}"
-			def variableVersionsMap = ['kieVersion': "7.30.0.Final-redhat-00002"]
+			            def variableVersionsMap = ['kieVersion': "7.30.0.Final-redhat-00002"]
                         println "'kieVersion' variable set to 7.30.0.Final-redhat-00002"
 
                         println "Reading ${PRODUCTION_PROJECT_LIST} jenkins file"
