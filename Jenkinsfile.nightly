@@ -41,12 +41,13 @@ pipeline {
                     }
 
                     build job: 'RHBA properties generator', parameters: [
+                        [$class: 'BooleanParameterValue', name: 'IS_PROD', value: false],
                         [$class: 'StringParameterValue', name: 'PRODUCT_VERSION', value: env.productVersion],
                         [$class: 'StringParameterValue', name: 'TIME_STAMP', value: env.datetimeSuffix],
                         [$class: 'StringParameterValue', name: 'ERRAI_VERSION', value: env.erraiVersion],
                         [$class: 'StringParameterValue', name: 'MVEL_VERSION', value: env.mvelVersion],
                         [$class: 'StringParameterValue', name: 'IZPACK_VERSION', value: env.izpackVersion],
-                        [$class: 'StringParameterValue', name: 'INSTALLER_COMMONS_VERSION', value: env.jboss-integration_installer-commons]
+                        [$class: 'StringParameterValue', name: 'INSTALLER_COMMONS_VERSION', value: env.installerCommonsVersion]
                     ]
                 }
             }
