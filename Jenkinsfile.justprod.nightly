@@ -1,0 +1,73 @@
+@Library('jenkins-pipeline-shared-libraries')_
+
+pipeline {
+    agent {
+        label 'image-test && !master'
+    }
+    tools {
+        maven 'kie-maven-3.6.0'
+        jdk 'kie-jdk1.8'
+    }
+    options {
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        timeout(time: 720, unit: 'MINUTES')
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'printenv'
+
+            }
+        }
+        stage('Build Nightly projects') {
+            steps {
+                script {
+                    def SETTINGS_XML_ID = "5d9884a1-178a-4d67-a3ac-9735d2df2cef"
+
+                    // This is the map project, variable to store the version from this project
+                    def projectVariableMap = ['kiegroup_droolsjbpm-build-bootstrap': "kieVersion", 'jboss-integration_izpack': "izpackVersion", 'jboss-integration_installer-commons': "installerCommonsVersion"]
+                    def nightlyStages = load("$WORKSPACE/nightly.stages")
+
+                    configFileProvider([configFile(fileId: "49737697-ebd6-4396-9c22-11f7714808eb", variable: 'PRODUCTION_PROJECT_LIST')]) {
+                        println "Reading project pom file"
+                        def pom = readMavenPom file: 'pom.xml'
+                        // def variableVersionsMap = ['kieVersion': pom.version]
+                        // println "'kieVersion' variable set to ${pom.version}"
+			            def variableVersionsMap = ['kieVersion': "7.30.0.Final-redhat-00002"]
+                        println "'kieVersion' variable set to 7.30.0.Final-redhat-00002"
+
+                        println "Reading ${PRODUCTION_PROJECT_LIST} jenkins file"
+                        def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
+                        def projectCollection = productionProjectListFile.readLines()
+                        nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap, variableVersionsMap)
+                    }
+
+                    build job: 'RHBA properties generator', parameters: [
+                        [$class: 'StringParameterValue', name: 'PRODUCT_VERSION', value: env.productVersion],
+                        [$class: 'StringParameterValue', name: 'TIME_STAMP', value: env.datetimeSuffix],
+                        [$class: 'StringParameterValue', name: 'ERRAI_VERSION', value: env.erraiVersion],
+                        [$class: 'StringParameterValue', name: 'MVEL_VERSION', value: env.mvelVersion],
+                        [$class: 'StringParameterValue', name: 'IZPACK_VERSION', value: env.izpackVersion],
+                        [$class: 'StringParameterValue', name: 'INSTALLER_COMMONS_VERSION', value: env.jboss-integration_installer-commons]
+                    ]
+                }
+            }
+        }
+    }
+    post {
+        unstable {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        failure {
+            script {
+                mailer.sendEmailFailure()
+            }
+        }
+        always {
+            //junit '**/target/surefire-reports/**/*.xml'
+            cleanWs()
+        }
+    }
+}
