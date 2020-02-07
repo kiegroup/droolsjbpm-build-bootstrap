@@ -42,13 +42,13 @@ pipeline {
                         nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap, variableVersionsMap)
                     }
 
-                    build job:'RHBA properties generator' , parameters:[
-                        string(name: 'PRODUCT_VERSION',value: '${env.productVersion}')
-                        string(name: 'TIME_STAMP',value:'${env.datetimeSuffix}')
-                        string(name: 'ERRAI_VERSION',value:'${env.erraiVersion}')
-                        string(name: 'MVEL_VERSION',value:'${env.mvelVersion}')
-                        string(name: 'IZPACK_VERSION',value:'${env.izpackVersion}')
-                        string(name: 'INSTALLER_COMMONS_VERSION',value:'${env.installerCommonsVersion}')
+                    build job: 'RHBA properties generator', parameters: [
+                        [$class: 'StringParameterValue', name: 'PRODUCT_VERSION', value: env.productVersion],
+                        [$class: 'StringParameterValue', name: 'TIME_STAMP', value: env.datetimeSuffix],
+                        [$class: 'StringParameterValue', name: 'ERRAI_VERSION', value: env.erraiVersion],
+                        [$class: 'StringParameterValue', name: 'MVEL_VERSION', value: env.mvelVersion],
+                        [$class: 'StringParameterValue', name: 'IZPACK_VERSION', value: env.izpackVersion],
+                        [$class: 'StringParameterValue', name: 'INSTALLER_COMMONS_VERSION', value: env.jboss-integration_installer-commons]
                     ]
                 }
             }
