@@ -40,7 +40,7 @@ pipeline {
                         nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
                     }
 
-                    def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item[0]): item[1]]}
+                    def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
 
                     build job: 'RHBA properties generator', parameters: [
                         [$class: 'BooleanParameterValue', name: 'IS_PROD', value: false],
