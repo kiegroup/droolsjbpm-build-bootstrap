@@ -47,7 +47,7 @@ pipeline {
                     build job: env.RHBA_PROPERTIES_GENERATOR_PATH, parameters: [
                         [$class: 'BooleanParameterValue', name: 'IS_PROD', value: false],
                         [$class: 'StringParameterValue', name: 'PRODUCT_VERSION', value: PME_BUILD_VARIABLES['productVersion']],
-                        [$class: 'StringParameterValue', name: 'TIME_STAMP', value: PME_BUILD_VARIABLES['datetimeSuffix']],
+                        [$class: 'StringParameterValue', name: 'TIME_STAMP', value: "${PME_BUILD_VARIABLES['datetimeSuffix']}"],
                         [$class: 'StringParameterValue', name: 'ERRAI_VERSION', value: PME_BUILD_VARIABLES['erraiVersion']],
                         [$class: 'StringParameterValue', name: 'MVEL_VERSION', value: PME_BUILD_VARIABLES['mvelVersion']],
                         [$class: 'StringParameterValue', name: 'IZPACK_VERSION', value: PME_BUILD_VARIABLES['izpackVersion']],
