@@ -1,6 +1,9 @@
 @Library('jenkins-pipeline-shared-libraries')_
 
 pipeline {
+    agent {
+        label '!master'
+    }
     tools {
         maven 'kie-maven-3.6.0'
         jdk 'kie-jdk1.8'
