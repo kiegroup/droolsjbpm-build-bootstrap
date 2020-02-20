@@ -13,6 +13,13 @@ pipeline {
         timeout(time: 720, unit: 'MINUTES')
     }
     stages {
+        stage ("Clean") {
+            steps {
+                echo "[INFO] Cleaning the workspace."
+                cleanWs()
+                echo "[SUCCESS] Workspace was successfully cleaned up."
+            }
+        }
         stage('Initialize') {
             steps {
                 sh 'printenv'
@@ -35,7 +42,7 @@ pipeline {
                         def projectCollection = communityProjectListFile.readLines()
                         def productionProjectListFile = readFile "${env.PRODUCTION_PROJECT_LIST}"
                         projectCollection.addAll(productionProjectListFile.readLines())
-                        projectCollection.removeAll { 'droolsjbpm-tools'.equals(it.toLowerCase()) }
+                        projectCollection.removeAll { 'droolsjbpm-tools'.equals(it.toLowerCase()) } // The droolsjbpm-tools is skiped
                         println "File ${repositoryListPath} and ${env.PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
                         nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
                     }
@@ -57,16 +64,17 @@ pipeline {
     post {
         unstable {
             script {
+                echo "[INFO] Sending notification email for result UNSTABLE to"
                 mailer.sendEmailFailure()
             }
         }
         failure {
             script {
+                echo "[INFO] Sending notification email for result FAILURE to"
                 mailer.sendEmailFailure()
             }
         }
         always {
-            //junit '**/target/surefire-reports/**/*.xml'
             cleanWs()
         }
     }
