@@ -77,7 +77,7 @@ pipeline {
                     build job: env.SEND_UMB_MESSAGE_PATH, parameters: [
                             [$class: 'StringParameterValue', name: 'MESSAGE_BODY', value: propertiesFileUrl],
                             [$class: 'StringParameterValue', name: 'TOPIC', value: topic],
-                            [$class: 'StringParameterValue', name: 'EVENT_TYPE', eventType]
+                            [$class: 'StringParameterValue', name: 'EVENT_TYPE', value: eventType]
                     ]
                     echo "[SUCCESS] Message was successfully sent."
                 }
@@ -100,7 +100,7 @@ pipeline {
                     build job: env.SEND_UMB_MESSAGE_PATH, parameters: [
                             [$class: 'StringParameterValue', name: 'MESSAGE_BODY', value: propertiesFileUrl],
                             [$class: 'StringParameterValue', name: 'TOPIC', value: topic],
-                            [$class: 'StringParameterValue', name: 'EVENT_TYPE', eventType]
+                            [$class: 'StringParameterValue', name: 'EVENT_TYPE', value: eventType]
                     ]
                     echo "[SUCCESS] Message was successfully sent."
                 }
