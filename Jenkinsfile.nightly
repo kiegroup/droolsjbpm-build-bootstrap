@@ -74,7 +74,7 @@ pipeline {
                     echo "[INFO] Message Body: ${propertiesFileUrl}"
                     echo "[INFO] Topic: ${topic}"
                     echo "[INFO] Event Type: ${eventType}"
-                    build job: env.SEND_UMB_MESSAGE_PATH, parameters: [
+                    build job: env.SEND_UMB_MESSAGE_JOB_PATH, parameters: [
                             [$class: 'StringParameterValue', name: 'MESSAGE_BODY', value: propertiesFileUrl],
                             [$class: 'StringParameterValue', name: 'TOPIC', value: topic],
                             [$class: 'StringParameterValue', name: 'EVENT_TYPE', value: eventType]
@@ -97,7 +97,7 @@ pipeline {
                     echo "[INFO] Message Body: ${propertiesFileUrl}"
                     echo "[INFO] Topic: ${topic}"
                     echo "[INFO] Event Type: ${eventType}"
-                    build job: env.SEND_UMB_MESSAGE_PATH, parameters: [
+                    build job: env.SEND_UMB_MESSAGE_JOB_PATH, parameters: [
                             [$class: 'StringParameterValue', name: 'MESSAGE_BODY', value: propertiesFileUrl],
                             [$class: 'StringParameterValue', name: 'TOPIC', value: topic],
                             [$class: 'StringParameterValue', name: 'EVENT_TYPE', value: eventType]
