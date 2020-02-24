@@ -86,7 +86,7 @@ pipeline {
         stage ("Send RHDM UMB Message to QE.") {
             steps {
                 script {
-                    echo "[INFO] Sending RHPAM UMB message to QE."
+                    echo "[INFO] Sending RHDM UMB message to QE."
                     def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
                     
                     def versionIdentifier = (PME_BUILD_VARIABLES['productVersion'] =~ /\d+\.\d+/)[0].replace(".", "")
