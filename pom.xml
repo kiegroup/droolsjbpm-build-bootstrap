@@ -2001,6 +2001,7 @@
                                 Include class files from every module.
                               -->
                               <include name="**/target/classes/**/*.class"/>
+                              <exclude name="**/target/**/target/classes/**/*.class"/>
                             </fileset>
                           </classfiles>
                           <sourcefiles encoding="UTF-8">
