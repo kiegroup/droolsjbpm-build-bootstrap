@@ -2132,15 +2132,28 @@
         <version>${version.commons-io}</version>
       </dependency>
 
+      <!-- KIE Lienzo modules -->
       <dependency>
-        <groupId>com.ahome-it</groupId>
+        <groupId>org.kie</groupId>
         <artifactId>lienzo-core</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <dependency>
-        <groupId>com.ahome-it</groupId>
+        <groupId>org.kie</groupId>
+        <artifactId>lienzo-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
         <artifactId>lienzo-tests</artifactId>
         <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>lienzo-tests</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>com.ahome-it</groupId>
@@ -2152,7 +2165,8 @@
         <artifactId>ahome-tooling-common</artifactId>
         <version>${version.com.ahome-it.lienzo.tooling.common}</version>
       </dependency>
-
+     <!-- end of KIE Lienzo modules -->
+     
       <dependency>
         <groupId>com.allen-sauer.gwt.dnd</groupId>
         <artifactId>gwt-dnd</artifactId>
