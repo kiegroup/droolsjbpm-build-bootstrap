@@ -70,14 +70,12 @@
     <version.commons-net>2.2</version.commons-net>
     <version.commons-pool>1.6</version.commons-pool>
     <version.commons-io>2.6</version.commons-io>
-    <version.com.ahome-it.lienzo-core>2.0.295-RELEASE</version.com.ahome-it.lienzo-core>
-    <version.com.ahome-it.lienzo-tests>2.0.295-RELEASE</version.com.ahome-it.lienzo-tests>
     <version.com.ahome-it.lienzo.tooling.nativetools>1.0.195-RELEASE
     </version.com.ahome-it.lienzo.tooling.nativetools>
     <version.com.ahome-it.lienzo.tooling.common>1.0.190-RELEASE</version.com.ahome-it.lienzo.tooling.common>
     <version.com.allen-sauer.gwt.dnd>3.3.3</version.com.allen-sauer.gwt.dnd>
-    <version.com.fasterxml.jackson>2.9.9</version.com.fasterxml.jackson>
-    <version.com.fasterxml.jackson.databind>2.9.10.1</version.com.fasterxml.jackson.databind>
+    <version.com.fasterxml.jackson>2.9.10</version.com.fasterxml.jackson>
+    <version.com.fasterxml.jackson.databind>2.9.10.3</version.com.fasterxml.jackson.databind>
     <version.com.google.code.gson>2.8.2</version.com.google.code.gson>
     <version.com.google.guava>25.0-jre</version.com.google.guava>
     <version.com.google.inject.guice>4.0</version.com.google.inject.guice>
@@ -97,8 +95,6 @@
     <version.de.benediktmeurer.gwt-slf4j>0.0.2</version.de.benediktmeurer.gwt-slf4j>
     <version.org.dom4j>2.1.1</version.org.dom4j>
     <version.io.springfox>2.9.2</version.io.springfox>
-    <!-- override is needed since 3.0.0-M2, coming from jboss-parent, has a bug. This can be removed once this bug was fixed. -->
-    <!-- see https://issues.apache.org/jira/browse/MENFORCER-306 -->
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
     <version.io.undertow>2.0.23.Final</version.io.undertow>
     <version.javax.activation>1.1.1</version.javax.activation>
@@ -110,6 +106,8 @@
     <version.jivesoftware.smack>3.1.0</version.jivesoftware.smack>
     <version.joda-time>2.9.7</version.joda-time>
     <version.junit>4.12</version.junit>
+    <!-- override is needed since 3.0.0-M2, coming from jboss-parent, has a bug. This can be removed once this bug was fixed. -->
+    <!-- see https://issues.apache.org/jira/browse/MENFORCER-306 -->
     <version.enforcer.plugin>3.0.0-M1</version.enforcer.plugin>
     <version.mysql.connector-java>5.1.47</version.mysql.connector-java>
     <version.net.jcip>1.0</version.net.jcip>
@@ -310,7 +308,6 @@
     <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
     <version.com.google.elemental2>1.0.0-beta-1</version.com.google.elemental2>
     <version.org.jboss.errai>4.6.0.Final</version.org.jboss.errai>
-    <version.org.jboss.errai.wildfly>14.0.1.Final</version.org.jboss.errai.wildfly>
     <!-- Required by jboss-remoting version above -->
     <version.org.wildfly.security>1.1.0.Final</version.org.wildfly.security>
     <version.org.ow2.asm>5.0.4</version.org.ow2.asm>
@@ -2138,12 +2135,12 @@
       <dependency>
         <groupId>com.ahome-it</groupId>
         <artifactId>lienzo-core</artifactId>
-        <version>${version.com.ahome-it.lienzo-core}</version>
+        <version>${version.org.kie}</version>
       </dependency>
       <dependency>
         <groupId>com.ahome-it</groupId>
         <artifactId>lienzo-tests</artifactId>
-        <version>${version.com.ahome-it.lienzo-tests}</version>
+        <version>${version.org.kie}</version>
       </dependency>
       <dependency>
         <groupId>com.ahome-it</groupId>
@@ -3741,8 +3738,6 @@
         <artifactId>roaster-jdt</artifactId>
         <version>${version.org.jboss.forge.roaster}</version>
       </dependency>
-
-      <!-- WARNING: org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-bom must be defined BEFORE org.jboss.arquillian:arquillian-bom -->
 
       <dependency>
         <groupId>org.jboss.spec.javax.annotation</groupId>
