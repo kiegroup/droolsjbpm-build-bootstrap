@@ -39,6 +39,10 @@ droolsjbpmOrganizationDir="$scriptDir/../.."
 
 # default repository list is stored in the repository-list.txt file
 REPOSITORY_LIST=`cat "${scriptDir}/repository-list.txt"`
+
+# default repository list where it tests are skipped is stored in the repository-list.txt file
+SKIP_IT_REPOSITORY_LIST=`cat "${scriptDir}/skip-it-repository-list.txt"`
+
 MVN_ARG_LINE=()
 
 for arg in "$@"
@@ -107,6 +111,12 @@ for repository in $REPOSITORY_LIST; do
         echo "Repository: $repository"
         echo "==============================================================================="
         cd $repository
+
+        for skip_it_repository in $SKIP_IT_REPOSITORY_LIST; do
+            if ["$skip_it_repository" == "$repository"]; then
+                MVN_ARG_LINE+=("-DskipITs=true")
+            fi
+        done
 
         "$mvnBin" "${MVN_ARG_LINE[@]}"
         returnCode=$?
