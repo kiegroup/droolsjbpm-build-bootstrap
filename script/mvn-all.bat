@@ -27,11 +27,18 @@ for /F %%r in ('type %scriptDir%\repository-list.txt') do (
         echo Repository: %%r
         echo ===============================================================================
         cd %%r
+        set skipITs = ""
+        for /F %%sr in ('type %scriptDir%\skip-it-repository-list.txt') do (
+            if %%sr==%%r (
+                set skipITs = "-DskipITs=true"
+            )
+        )
+
         if exist "%M3_HOME%\bin\mvn.bat" (
-            call "%M3_HOME%\bin\mvn.bat" %* 
+            call "%M3_HOME%\bin\mvn.bat" %* %skipITs%
             set returnCode=%ERRORLEVEL%
         ) else (
-            call mvn %*
+            call mvn %* %skipITs%
             set returnCode=%ERRORLEVEL%
         )
         cd ..
