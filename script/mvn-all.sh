@@ -40,7 +40,7 @@ droolsjbpmOrganizationDir="$scriptDir/../.."
 # default repository list is stored in the repository-list.txt file
 REPOSITORY_LIST=`cat "${scriptDir}/repository-list.txt"`
 
-# default repository list where it tests are skipped is stored in the repository-list.txt file
+# default repository list where integration tests are skipped is stored in the skip-it-repository-list.txt file
 SKIP_IT_REPOSITORY_LIST=`cat "${scriptDir}/skip-it-repository-list.txt"`
 
 MVN_ARG_LINE=()
