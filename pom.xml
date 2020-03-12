@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.32.0-SNAPSHOT</version>
+  <version>7.35.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -57,9 +57,9 @@
     <version.asm>3.3.1</version.asm>
     <version.ch.qos.cal10n>0.8.1</version.ch.qos.cal10n>
     <version.ch.qos.logback>1.2.3</version.ch.qos.logback>
-    <version.commons-beanutils>1.9.3</version.commons-beanutils>
+    <version.commons-beanutils>1.9.4</version.commons-beanutils>
     <version.commons-cli>1.3.1</version.commons-cli>
-    <version.commons-codec>1.10</version.commons-codec>
+    <version.commons-codec>1.11</version.commons-codec>
     <version.commons-collections>3.2.2</version.commons-collections>
     <version.commons-configuration>1.6</version.commons-configuration>
     <version.commons-dbcp>1.4</version.commons-dbcp>
@@ -70,8 +70,6 @@
     <version.commons-net>2.2</version.commons-net>
     <version.commons-pool>1.6</version.commons-pool>
     <version.commons-io>2.6</version.commons-io>
-    <version.com.ahome-it.lienzo-core>2.0.295-RELEASE</version.com.ahome-it.lienzo-core>
-    <version.com.ahome-it.lienzo-tests>2.0.295-RELEASE</version.com.ahome-it.lienzo-tests>
     <version.com.ahome-it.lienzo.tooling.nativetools>1.0.195-RELEASE
     </version.com.ahome-it.lienzo.tooling.nativetools>
     <version.com.ahome-it.lienzo.tooling.common>1.0.190-RELEASE</version.com.ahome-it.lienzo.tooling.common>
@@ -84,6 +82,7 @@
     <version.com.google.gwt>2.8.2</version.com.google.gwt>
     <version.org.google.gwt-charts>0.9.9</version.org.google.gwt-charts>
     <version.com.google.gwt.gwtmockito>1.1.8</version.com.google.gwt.gwtmockito>
+    <version.com.google.jsinterop.base>1.0.0-beta-1</version.com.google.jsinterop.base>
     <version.com.google.jsinterop>1.0.1</version.com.google.jsinterop>
     <version.com.google.protobuf>3.6.1</version.com.google.protobuf>
     <version.com.h2database>1.3.173</version.com.h2database>
@@ -100,7 +99,7 @@
     <!-- override is needed since 3.0.0-M2, coming from jboss-parent, has a bug. This can be removed once this bug was fixed. -->
     <!-- see https://issues.apache.org/jira/browse/MENFORCER-306 -->
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
-    <version.io.undertow>2.0.23.Final</version.io.undertow>
+    <version.io.undertow>2.0.28.Final</version.io.undertow>
     <version.javax.activation>1.1.1</version.javax.activation>
     <version.javax.enterprise>2.0.SP1</version.javax.enterprise>
     <version.javax.inject>1</version.javax.inject>
@@ -129,14 +128,14 @@
     <version.org.apache.commons.compress>1.19</version.org.apache.commons.compress>
     <version.org.apache.commons.csv>1.6</version.org.apache.commons.csv>
     <version.org.apache.commons.exec>1.3</version.org.apache.commons.exec>
-    <version.org.apache.commons.lang3>3.8.1</version.org.apache.commons.lang3>
+    <version.org.apache.commons.lang3>3.9</version.org.apache.commons.lang3>
     <version.org.apache.commons.math>2.1</version.org.apache.commons.math>
     <version.org.apache.commons.math3>3.4.1</version.org.apache.commons.math3>
     <version.org.apache.commons.pool2>2.4.2</version.org.apache.commons.pool2>
     <version.org.apache.commons.ssl>0.3.9</version.org.apache.commons.ssl>
     <version.org.apache.deltaspike.core>1.5.1</version.org.apache.deltaspike.core>
     <version.org.apache.ftpserver>1.0.6</version.org.apache.ftpserver>
-    <version.org.apache.httpcomponents.httpclient>4.5.3</version.org.apache.httpcomponents.httpclient>
+    <version.org.apache.httpcomponents.httpclient>4.5.4</version.org.apache.httpcomponents.httpclient>
     <version.org.apache.httpcomponents.httpcore>4.4.6</version.org.apache.httpcomponents.httpcore>
     <version.org.apache.karaf>2.4.0</version.org.apache.karaf>
     <version.org.apache.lucene>6.6.1</version.org.apache.lucene>
@@ -144,11 +143,11 @@
     <version.org.apache.maven.plugin-tools>3.4</version.org.apache.maven.plugin-tools>
     <version.org.apache.maven.wagon>3.0.0</version.org.apache.maven.wagon>
     <version.org.apache.neethi>3.1.1</version.org.apache.neethi>
-    <version.org.apache.poi>3.17</version.org.apache.poi>
+    <version.org.apache.poi>4.1.2</version.org.apache.poi>
     <version.org.apache.sshd>1.6.0</version.org.apache.sshd>
     <version.org.apache.tomcat>6.0.32</version.org.apache.tomcat>
     <version.org.apache.velocity>1.7</version.org.apache.velocity>
-    <version.org.apache.xmlbeans>2.6.0</version.org.apache.xmlbeans>
+    <version.org.apache.xmlbeans>3.1.0</version.org.apache.xmlbeans>
     <version.org.apache.ws.xmlschema>2.2.1</version.org.apache.ws.xmlschema>
     <version.org.apache.xmlgraphics.batik>1.9.1</version.org.apache.xmlgraphics.batik>
     <version.org.apache.xmlgraphics.commons>2.2</version.org.apache.xmlgraphics.commons>
@@ -157,7 +156,7 @@
     <version.org.codehaus.groovy>2.0.5</version.org.codehaus.groovy>
     <version.org.codehaus.jackson>1.9.13</version.org.codehaus.jackson>
     <version.org.codehaus.janino>2.5.16</version.org.codehaus.janino>
-    <version.org.codehaus.jettison>1.3.8</version.org.codehaus.jettison>
+    <version.org.codehaus.jettison>1.4.0</version.org.codehaus.jettison>
     <version.org.codehaus.plexus.plexus-classworlds>2.5.2</version.org.codehaus.plexus.plexus-classworlds>
     <version.org.codehaus.plexus.plexus-containers>1.6</version.org.codehaus.plexus.plexus-containers>
     <version.org.codehaus.plexus.plexus-interpolation>1.21</version.org.codehaus.plexus.plexus-interpolation>
@@ -172,16 +171,19 @@
     <version.org.eclipse.jdt>3.19.0</version.org.eclipse.jdt>
     <version.org.eclipse.jetty>9.2.14.v20151106</version.org.eclipse.jetty>
     <version.org.eclipse.jgit>5.0.2.201807311906-r</version.org.eclipse.jgit>
+    <version.org.eclipse.persistence>2.7.6</version.org.eclipse.persistence>
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
     <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
     <version.org.glassfish>3.1.2</version.org.glassfish>
+    <version.org.glassfish.jakarta>1.1.6</version.org.glassfish.jakarta>
+    <version.org.glassfish.jaxb>2.3.2</version.org.glassfish.jaxb>
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
     <version.org.hibernate>5.3.7.Final</version.org.hibernate>
-    <version.org.hibernate.validator>6.0.13.Final</version.org.hibernate.validator>
+    <version.org.hibernate.validator>6.0.18.Final</version.org.hibernate.validator>
     <version.org.hibernate.commons.annotations>5.0.4.Final</version.org.hibernate.commons.annotations>
     <version.org.hornetq>2.4.7.Final</version.org.hornetq>
-    <version.org.infinispan>9.4.15.Final</version.org.infinispan>
+    <version.org.infinispan>9.4.16.Final</version.org.infinispan>
     <!--This needs to be in sync with JUnit-->
     <version.org.hamcrest>1.3</version.org.hamcrest>
     <version.org.hsqldb>2.3.0</version.org.hsqldb>
@@ -222,7 +224,7 @@
     <version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>1.0.1.Final</version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>
     <version.org.jboss.weld.weld>2.4.1.Final</version.org.jboss.weld.weld>
     <version.org.jboss.weld.weld-api>3.0.SP4</version.org.jboss.weld.weld-api>
-    <version.org.jboss.xnio>3.7.2.Final</version.org.jboss.xnio>
+    <version.org.jboss.xnio>3.7.7.Final</version.org.jboss.xnio>
     <version.org.jdom>1.1.3</version.org.jdom>
     <version.org.jfree.jfreechart>1.5.0</version.org.jfree.jfreechart>
     <version.org.jpmml.model>1.4.11
@@ -232,7 +234,7 @@
     <version.org.junit>5.5.2</version.org.junit>
     <version.org.keycloak>4.8.3.Final</version.org.keycloak>
     <version.log4j>1.2.17</version.log4j>
-    <version.org.mvel>2.4.4.Final</version.org.mvel>
+    <version.org.mvel>2.4.7.Final</version.org.mvel>
     <version.org.ocpsoft.prettytime>3.0.2.Final</version.org.ocpsoft.prettytime>
     <!--EAP 6.4 use 4.2.0.redhat-8 which is not OSGi compatible, so stay on 4.3.1-->
     <version.org.osgi>4.3.1</version.org.osgi>
@@ -255,10 +257,11 @@
     <version.org.springframework.osgi>1.2.1</version.org.springframework.osgi>
     <version.org.subethamail>1.2</version.org.subethamail>
     <version.org.subethamail.subethasmtp>3.1.6</version.org.subethamail.subethasmtp>
+    <version.org.webjars.swagger-ui>2.2.10</version.org.webjars.swagger-ui>
     <version.org.wildfly>14.0.1.Final</version.org.wildfly>
     <version.org.wildfly.arquillian>2.1.1.Final</version.org.wildfly.arquillian>
     <version.org.wildfly.core>6.0.2.Final</version.org.wildfly.core>
-    <version.org.wildfly.common>1.5.0.Final</version.org.wildfly.common>
+    <version.org.wildfly.common>1.5.1.Final</version.org.wildfly.common>
     <version.org.yaml.snakeyaml>1.18</version.org.yaml.snakeyaml>
     <version.postgresql>8.4-702.jdbc4</version.postgresql>
     <version.org.mozilla.rhino>1.7R4</version.org.mozilla.rhino>
@@ -275,7 +278,7 @@
     <version.xpp3>${version.xmlpull}</version.xpp3>
 
     <!-- Internal dependencies -->
-    <version.org.kie>7.32.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.35.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
@@ -301,7 +304,7 @@
     <version.org.antlr4>4.7.2</version.org.antlr4>
     <version.org.apache.cxf>3.2.8</version.org.apache.cxf>
     <version.org.apache.camel>2.24.0</version.org.apache.camel>
-    <version.org.codehaus.cargo>1.7.6</version.org.codehaus.cargo>
+    <version.org.codehaus.cargo>1.7.9</version.org.codehaus.cargo>
     <version.org.freemarker>2.3.28</version.org.freemarker>
     <!-- Dependencies for selenium tests -->
     <version.org.jboss.arquillian.selenium>3.13.0</version.org.jboss.arquillian.selenium>
@@ -321,7 +324,7 @@
     <version.org.jboss.byteman>3.0.1</version.org.jboss.byteman>
     <version.org.roboguice>3.0.1</version.org.roboguice>
     <version.org.robolectric>3.1.2</version.org.robolectric>
-    <version.org.xmlunit>2.3.0</version.org.xmlunit>
+    <version.org.xmlunit>2.6.3</version.org.xmlunit>
     <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.wildfly.gwt.sdm>14.0.1.Final</version.org.wildfly.gwt.sdm>
@@ -340,7 +343,8 @@
     <version.org.geronimo.atinject>1.0</version.org.geronimo.atinject>
     <!-- simple-jndi is a small library that helps us avoid JNDI error messages during testing -->
     <version.simple-jndi>0.11.4.1</version.simple-jndi>
-    <version.org.asciidoctor.pdf>1.5.0-alpha.11</version.org.asciidoctor.pdf>
+    <version.org.asciidoctor.asciidoctorj>2.2.0</version.org.asciidoctor.asciidoctorj>
+    <version.org.asciidoctor.asciidoctorj-pdf>1.5.0</version.org.asciidoctor.asciidoctorj-pdf>
     <!-- Downgrade required for Errai Dynamic Bean validation  -->
     <version.org.hibernate.hibernate-validator>4.1.0.Final</version.org.hibernate.hibernate-validator>
     <!-- CSS parsing library from Apache used by Stunner. -->
@@ -374,7 +378,7 @@
     <!-- Jacoco plugin configurations -->
     <jacoco.haltOnFailure>false</jacoco.haltOnFailure>
     <jacoco.line.coveredratio.minimum>0.9</jacoco.line.coveredratio.minimum>
-    <version.jacoco.plugin>0.7.5.201505241946</version.jacoco.plugin>
+    <version.jacoco.plugin>0.8.5</version.jacoco.plugin>
     <!-- TODO: remove this once all repositories comply to the defined checkstyle rules -->
     <checkstyle.failOnViolation>false</checkstyle.failOnViolation>
     <checkstyle.logViolationsToConsole>false</checkstyle.logViolationsToConsole>
@@ -425,7 +429,7 @@
 
 
     <!-- Latest release to be used by api-compatibility-check to check backwards compatibility of the Kie API. -->
-    <revapi.oldKieVersion>7.26.0.Final</revapi.oldKieVersion>
+    <revapi.oldKieVersion>7.33.0.Final</revapi.oldKieVersion>
     <revapi.newKieVersion>${project.version}</revapi.newKieVersion>
 
     <version.org.jboss.spec.javax.websocket>1.1.3.Final</version.org.jboss.spec.javax.websocket>
@@ -458,14 +462,19 @@
     <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
 
-    <!-- JaCoCo coverage data file location. Using a single file for appending in the project's root directory makes it
-         possible to measure cross-module test coverage -->
+    <!-- JaCoCo coverage data file location -->
     <!--suppress UnresolvedMavenProperty -->
-    <jacoco.exec.file>${maven.multiModuleProjectDirectory}/target/jacoco.exec</jacoco.exec.file>
+    <project.root.dir>${maven.multiModuleProjectDirectory}</project.root.dir>
+    <jacoco.exec.file>${project.root.dir}/target/jacoco.exec</jacoco.exec.file>
     <!-- com.github.eirslett:frontend-maven-plugin version -->
     <version.frontend-maven-plugin>1.8.0</version.frontend-maven-plugin>
-    
+
     <version.org.awaitility>3.0.0</version.org.awaitility>
+    <version.io.github.bonigarcia>3.8.1</version.io.github.bonigarcia>
+
+    <version.org.kogito.gwt-jsonix-schema-compiler>1.1.0</version.org.kogito.gwt-jsonix-schema-compiler>
+    <version.org.hisrc.jsonix.jsonix-scripts>3.0.0</version.org.hisrc.jsonix.jsonix-scripts>
+    <version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>0.14.0</version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>
   </properties>
 
   <repositories>
@@ -1063,48 +1072,6 @@
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${version.jacoco.plugin}</version>
-          <executions>
-            <execution>
-              <id>default-instrument</id>
-              <goals>
-                <goal>instrument</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>default-restore-instrumented-classes</id>
-              <goals>
-                <goal>restore-instrumented-classes</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>default-report</id>
-              <phase>prepare-package</phase>
-              <goals>
-                <goal>report</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>default-check</id>
-              <goals>
-                <goal>check</goal>
-              </goals>
-              <configuration>
-                <haltOnFailure>${jacoco.haltOnFailure}</haltOnFailure>
-                <rules>
-                  <rule>
-                    <element>BUNDLE</element>
-                    <limits>
-                      <limit>
-                        <counter>LINE</counter>
-                        <value>COVEREDRATIO</value>
-                        <minimum>${jacoco.line.coveredratio.minimum}</minimum>
-                      </limit>
-                    </limits>
-                  </rule>
-                </rules>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
         <!-- Packaging -->
         <plugin>
@@ -1328,7 +1295,19 @@
         <plugin>
           <groupId>org.asciidoctor</groupId>
           <artifactId>asciidoctor-maven-plugin</artifactId>
-          <version>1.5.2.1</version>
+          <version>2.0.0-RC.1</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.asciidoctor</groupId>
+              <artifactId>asciidoctorj</artifactId>
+              <version>${version.org.asciidoctor.asciidoctorj}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.asciidoctor</groupId>
+              <artifactId>asciidoctorj-pdf</artifactId>
+              <version>${version.org.asciidoctor.asciidoctorj-pdf}</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -1424,23 +1403,6 @@
             <srcDir>src/main/resources/</srcDir>
             <transDir>src/main/resources/</transDir>
             <includes>**/*Constants.properties,**/*Constants_en.properties</includes>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>com.mycila.maven-license-plugin</groupId>
-          <artifactId>maven-license-plugin</artifactId>
-          <version>1.8.0</version>
-          <configuration>
-            <!-- TODO this is buggy as it only works for first level modules -->
-            <header>${basedir}/../LICENSE-ASL-2.0-HEADER.txt</header>
-            <includes>
-              <include>**/*.java</include>
-              <include>**/*.drl</include>
-            </includes>
-            <mapping>
-              <drl>JAVADOC_STYLE</drl>
-            </mapping>
-            <encoding>UTF-8</encoding>
           </configuration>
         </plugin>
         <plugin>
@@ -1757,44 +1719,6 @@
 
   <profiles>
     <profile>
-      <!-- Code coverage disabled by default (use -Dcode-coverage to activate it) -->
-      <id>code-coverage</id>
-      <activation>
-        <property>
-          <name>code-coverage</name>
-        </property>
-      </activation>
-      <dependencies>
-        <dependency>
-          <groupId>org.jacoco</groupId>
-          <artifactId>org.jacoco.agent</artifactId>
-          <classifier>runtime</classifier>
-          <scope>test</scope>
-        </dependency>
-      </dependencies>
-      <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-surefire-plugin</artifactId>
-              <configuration>
-                <systemPropertyVariables>
-                  <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
-                </systemPropertyVariables>
-              </configuration>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-        <plugins>
-          <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
       <!-- Mutation coverage disabled by default (use -Dmutation-coverage to activate it) -->
       <id>mutation-coverage</id>
       <activation>
@@ -2004,26 +1928,19 @@
               <artifactId>maven-javadoc-plugin</artifactId>
               <configuration>
                 <source>${maven.compiler.source}</source>
-                <additionalDependencies>
-                  <additionalDependency>
-                    <groupId>org.jboss.spec.javax.transaction</groupId>
-                    <artifactId>jboss-transaction-api_1.2_spec</artifactId>
-                    <version>
-                      ${version.org.jboss.spec.javax.transaction.jboss-transaction-api_1.2_spec}
-                    </version>
-                  </additionalDependency>
-                </additionalDependencies>
               </configuration>
             </plugin>
           </plugins>
         </pluginManagement>
       </build>
     </profile>
-    <!-- Merges test coverage reports and uploads statistics via sonar scanner into the SonarCloud. -->
+    <!--
+      Creates JaCoCo XML reports and invokes the Sonar scanner, which uploads code quality data into the SonarCloud.
+    -->
     <profile>
       <id>sonarcloud-analysis</id>
       <properties>
-        <sonar.jacoco.reportPaths>${jacoco.exec.file}</sonar.jacoco.reportPaths>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.reporting.outputDirectory}/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>kiegroup</sonar.organization>
         <!--suppress UnresolvedMavenProperty -->
@@ -2032,6 +1949,92 @@
       <build>
         <plugins>
           <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>generate-aggregated-jacoco-report</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <!--
+                    Jacoco ant "report" task provides control over scope of the generated report. The report task
+                    requires access to sources, classes and .exec file containing coverage data. The configuration
+                    below uses sources and classes of the entire project (each of its modules) and a single jacoco.exec
+                    file placed in project root directory.
+                    Jacoco maven plugin does not provide such a level of control and requires an artificial module that
+                    depends on all modules in the project to generate an aggregated report for all the modules.
+                    This necessity of creating a reporting module in every project is rather intrusive.
+                    See:
+                    https://www.jacoco.org/jacoco/trunk/doc/report-aggregate-mojo.html and
+                    https://groups.google.com/forum/#!topic/jacoco/oMxNZs_DNII
+                  -->
+                  <target>
+                    <echo message="Generating JaCoCo Reports"/>
+                    <taskdef name="report" classname="org.jacoco.ant.ReportTask"/>
+                    <mkdir dir="${project.reporting.outputDirectory}/jacoco"/>
+                    <report>
+                      <executiondata>
+                        <fileset dir="${project.root.dir}/target">
+                          <!--
+                            Include a single jacoco.exec file, which should be used in append mode by every module.
+                          -->
+                          <include name="jacoco.exec"/>
+                        </fileset>
+                      </executiondata>
+                      <structure name="Coverage Report">
+                        <group name="${project.artifactId}">
+                          <classfiles>
+                            <fileset dir="${project.root.dir}">
+                              <!--
+                                Include class files from every module.
+                              -->
+                              <include name="**/target/classes/**/*.class"/>
+                              <!--
+                                Following classes are excluded as they are present in multiple modules. Usually they
+                                are a product of tests or 3rd party dependencies that got unwrapped in target/classes
+                                folder during the build. These are not a subject of test coverage measurement.
+                              -->
+                              <exclude name="**/target/**/target/classes/**/*.class"/>
+                              <exclude name="**/.errai/**/*.class"/>
+                              <exclude name="**/target/classes/org/jboss/errai/**/*.class"/>
+                              <!--
+                                TODO: there are multiple classes of the same fully qualified name in kie-server modules.
+                                They need to be renamed to enable coverage reporting for them.
+                                -->
+                              <exclude name="**/target/classes/**/org/kie/server/gateway/KieServerGateway.class"/>
+                              <exclude name="**/target/classes/**/org/kie/server/springboot/samples/KieServerApplication.class"/>
+                            </fileset>
+                          </classfiles>
+                          <sourcefiles encoding="UTF-8">
+                            <fileset dir="${project.root.dir}">
+                              <!--
+                                Include source files from every module.
+                              -->
+                              <include name="**/src/main/**/*.java"/>
+                            </fileset>
+                          </sourcefiles>
+                        </group>
+                      </structure>
+                      <!-- The same report is generated in each module -->
+                      <xml destfile="${project.reporting.outputDirectory}/jacoco/jacoco.xml"/>
+                    </report>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>org.jacoco.ant</artifactId>
+                <!-- Keep the version in sync with jacoco-maven-plugin -->
+                <version>${version.jacoco.plugin}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+          <plugin>
             <groupId>org.sonarsource.scanner.maven</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
             <executions>
@@ -2039,7 +2042,7 @@
                 <goals>
                   <goal>sonar</goal>
                 </goals>
-                <phase>generate-resources</phase>
+                <phase>validate</phase>
               </execution>
             </executions>
           </plugin>
@@ -2211,16 +2214,6 @@
         <version>${version.commons-io}</version>
       </dependency>
 
-      <dependency>
-        <groupId>com.ahome-it</groupId>
-        <artifactId>lienzo-core</artifactId>
-        <version>${version.com.ahome-it.lienzo-core}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.ahome-it</groupId>
-        <artifactId>lienzo-tests</artifactId>
-        <version>${version.com.ahome-it.lienzo-tests}</version>
-      </dependency>
       <dependency>
         <groupId>com.ahome-it</groupId>
         <artifactId>ahome-tooling-nativetools</artifactId>
@@ -2475,6 +2468,17 @@
         <groupId>io.undertow</groupId>
         <artifactId>undertow-websockets-jsr</artifactId>
         <version>${version.io.undertow}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>jakarta.json</artifactId>
+        <version>${version.org.glassfish.jakarta}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-runtime</artifactId>
+        <version>${version.org.glassfish.jaxb}</version>
       </dependency>
 
       <dependency>
@@ -3498,6 +3502,13 @@
         <version>${version.org.eclipse.jgit}</version>
       </dependency>
 
+      <!-- For JAXB JSON provider in optaplanner-persistence tests -->
+      <dependency>
+        <groupId>org.eclipse.persistence</groupId>
+        <artifactId>org.eclipse.persistence.moxy</artifactId>
+        <version>${version.org.eclipse.persistence}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.eclipselabs</groupId>
         <artifactId>org.eclipse.emf.gwt.ecore</artifactId>
@@ -4279,6 +4290,12 @@
         <artifactId>subethasmtp</artifactId>
         <version>${version.org.subethamail.subethasmtp}</version>
       </dependency>
+      
+      <dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>swagger-ui</artifactId>
+        <version>${version.org.webjars.swagger-ui}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.wildfly.arquillian</groupId>
@@ -4391,11 +4408,6 @@
         <type>pom</type>
         <version>${version.org.jboss.errai}</version>
         <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.asciidoctor</groupId>
-        <artifactId>asciidoctorj-pdf</artifactId>
-        <version>${version.org.asciidoctor.pdf}</version>
       </dependency>
       <!-- END of jboss-ip-bom -->
 
@@ -4793,6 +4805,12 @@
         <version>${version.org.xmlunit}</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>org.xmlunit</groupId>
+        <artifactId>xmlunit-assertj</artifactId>
+        <version>${version.org.xmlunit}</version>
+        <scope>test</scope>
+      </dependency>
 
       <dependency>
         <groupId>org.skyscreamer</groupId>
@@ -5120,7 +5138,7 @@
         <artifactId>pmml-model</artifactId>
         <version>${version.org.jpmml.model}</version>
       </dependency>
-      
+
       <!-- used  by DMN test to ensure NI reflect-conf.json is correctly up-to-date -->
       <dependency>
         <groupId>org.jboss</groupId>
@@ -5154,12 +5172,31 @@
         <artifactId>javaparser-core</artifactId>
         <version>${version.com.github.javaparser}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>org.awaitility</groupId>
         <artifactId>awaitility</artifactId>
         <version>${version.org.awaitility}</version>
         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>${version.io.github.bonigarcia}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.kogito</groupId>
+        <artifactId>gwt-jsonix-schema-compiler</artifactId>
+        <version>${version.org.kogito.gwt-jsonix-schema-compiler}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.jsinterop</groupId>
+        <artifactId>base</artifactId>
+        <version>${version.com.google.jsinterop.base}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
