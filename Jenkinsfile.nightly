@@ -16,8 +16,6 @@ pipeline {
         stage ("Clean") {
             steps {
                 echo "[INFO] Cleaning the workspace."
-                cleanWs()
-                echo "[SUCCESS] Workspace was successfully cleaned up."
             }
         }
         stage('Initialize') {
