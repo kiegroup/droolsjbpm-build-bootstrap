@@ -13,11 +13,6 @@ pipeline {
         timeout(time: 720, unit: 'MINUTES')
     }
     stages {
-        stage ("Clean") {
-            steps {
-                echo "[INFO] Cleaning the workspace."
-            }
-        }
         stage('Initialize') {
             steps {
                 sh 'printenv'
