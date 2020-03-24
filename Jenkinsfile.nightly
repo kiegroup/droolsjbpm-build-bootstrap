@@ -9,7 +9,8 @@ pipeline {
         jdk 'kie-jdk1.8'
     }
     parameters {
-        string(description: 'The deployment URL', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL')
+        string(description: 'The deployment URL', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL'),
+        booleanParam(description: 'Skip Tests? True as default', name: 'SKIP_TESTS', defaultValue: true)
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
