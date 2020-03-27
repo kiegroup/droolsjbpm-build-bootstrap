@@ -11,7 +11,7 @@ pipeline {
     parameters {
         string(description: 'The deployment URL', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL')
         booleanParam(description: 'Skip Tests? True as default', name: 'SKIP_TESTS', defaultValue: true)
-        string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'master')
+        string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: '7.33.x')
         string(description: 'The product version', name: 'PRODUCT_VERSION')
     }
     options {
