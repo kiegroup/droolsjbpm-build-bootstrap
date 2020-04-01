@@ -69,8 +69,6 @@ pipeline {
         stage('Upload Files to repository') {
             steps {
                 script {
-                    def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
-
                     build job: env.RHBA_UPLOAD_FILE_TO_REPO_JOB_PATH, parameters: [
                         [$class: 'StringParameterValue', name: 'DEPLOY_FOLDER_PATH', value: "${env.WORKSPACE}/deployDirectory"],
                         [$class: 'StringParameterValue', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL', value: env.KIE_GROUP_DEPLOYMENT_REPO_URL]
