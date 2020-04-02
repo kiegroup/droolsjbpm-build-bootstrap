@@ -8,6 +8,6 @@ stage('Upstream Build') {
         def gitURL = env.ghprbAuthorRepoGitUrl ?: env.GIT_URL
         def project = treebuild.getProjectGroupName(treebuild.getProject(gitURL))[1]
 
-        treebuild.upstreamBuild(projectCollection, project, "${SETTINGS_XML_ID}", 'clean install', false)
+        treebuild.upstreamBuild(projectCollection, project, "${SETTINGS_XML_ID}", 'clean install')
     }
 }
