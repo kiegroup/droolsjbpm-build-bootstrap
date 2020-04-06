@@ -8,6 +8,6 @@ stage('Upstream Build') {
         def gitURL = env.ghprbAuthorRepoGitUrl ?: env.GIT_URL
         def project = treebuild.getProjectGroupName(treebuild.getProject(gitURL))[1]
 
-        treebuild.upstreamBuild(projectCollection, project, "${SETTINGS_XML_ID}", 'clean install')
+        treebuild.upstreamBuild(projectCollection, project, "${SETTINGS_XML_ID}", '-e -nsu -fae -Pbusiness-central,wildfly,sourcemaps,no-showcase clean install -Dproduction -Dfull=true -Dcontainer=wildfly -Dcontainer.profile=wildfly -Dintegration-tests=true -Dmaven.test.failure.ignore=true -Dmaven.test.redirectTestOutputToFile=true -Dgwt.compiler.localWorkers=1')
     }
 }
