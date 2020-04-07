@@ -10,7 +10,7 @@ pipeline {
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
-        timeout(time: 600, unit: 'MINUTES')
+        timeout(time: 601, unit: 'MINUTES')
     }
     stages {
         stage('Initialize') {
