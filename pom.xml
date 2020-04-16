@@ -46,15 +46,33 @@
 
   <properties>
     <victims.updates>weekly</victims.updates>
-    <illegaltransitivereportonly>false</illegaltransitivereportonly>
 
     <!--
       CONVENTIONS:
       - A version property must be specified in the format "version.{groupId}", optionally with a suffix to make it unique.
       - Version properties must be sorted alphabetically (other form of sorting were found to be unclear and ambiguous).
     -->
+
+    <!-- Internal dependencies -->
+    <version.org.kie>7.37.0-SNAPSHOT</version.org.kie>
+    <version.org.drools>${version.org.kie}</version.org.drools>
+    <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
+    <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
+    <version.org.jbpm>${version.org.kie}</version.org.jbpm>
+    <version.org.jbpm.jbpm-designer>${version.org.jbpm}</version.org.jbpm.jbpm-designer>
+    <version.org.jbpm.jbpm-wb>${version.org.jbpm}</version.org.jbpm.jbpm-wb>
+    <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
+    <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
+    <version.org.uberfire>${version.org.kie}</version.org.uberfire>
+
+    <!-- ################################################################################ -->
+    <!-- New and overwritten dependencies -->
+    <!-- ################################################################################ -->
+
+    <version.antlr>2.7.7</version.antlr>
     <version.aopalliance>1.0</version.aopalliance>
     <version.asm>3.3.1</version.asm>
+    <version.ch.obermuhlner>2.0.1</version.ch.obermuhlner>
     <version.ch.qos.cal10n>0.8.1</version.ch.qos.cal10n>
     <version.ch.qos.logback>1.2.3</version.ch.qos.logback>
     <version.commons-beanutils>1.9.4</version.commons-beanutils>
@@ -70,69 +88,107 @@
     <version.commons-net>2.2</version.commons-net>
     <version.commons-pool>1.6</version.commons-pool>
     <version.commons-io>2.6</version.commons-io>
-    <version.com.ahome-it.lienzo.tooling.nativetools>1.0.195-RELEASE
-    </version.com.ahome-it.lienzo.tooling.nativetools>
+    <version.com.ahome-it.lienzo.tooling.nativetools>1.0.195-RELEASE</version.com.ahome-it.lienzo.tooling.nativetools>
     <version.com.ahome-it.lienzo.tooling.common>1.0.190-RELEASE</version.com.ahome-it.lienzo.tooling.common>
     <version.com.allen-sauer.gwt.dnd>3.3.3</version.com.allen-sauer.gwt.dnd>
+    <version.com.android-dx>1.10</version.com.android-dx>
     <version.com.fasterxml.jackson>2.9.9</version.com.fasterxml.jackson>
     <version.com.fasterxml.jackson.databind>2.9.10.3</version.com.fasterxml.jackson.databind>
+    <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
+    <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
+    <version.com.google.android>4.1.1.4</version.com.google.android>
     <version.com.google.code.gson>2.8.2</version.com.google.code.gson>
+    <version.com.google.elemental2>1.0.0-beta-1</version.com.google.elemental2>
     <version.com.google.guava>25.0-jre</version.com.google.guava>
-    <version.com.google.inject.guice>4.0</version.com.google.inject.guice>
+    <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
     <version.com.google.gwt>2.8.2</version.com.google.gwt>
+    <!-- TODO com.googlecode.* -->
     <version.org.google.gwt-charts>0.9.9</version.org.google.gwt-charts>
     <version.com.google.gwt.gwtmockito>1.1.8</version.com.google.gwt.gwtmockito>
+    <version.com.google.inject.guice>4.0</version.com.google.inject.guice>
     <version.com.google.jsinterop.base>1.0.0-beta-1</version.com.google.jsinterop.base>
     <version.com.google.jsinterop>1.0.1</version.com.google.jsinterop>
     <version.com.google.protobuf>3.6.1</version.com.google.protobuf>
+    <version.com.google.testing.compile>0.11</version.com.google.testing.compile>
     <version.com.h2database>1.3.173</version.com.h2database>
     <version.com.jcraft>0.1.54</version.com.jcraft>
     <version.com.lowagie.itext>2.1.7</version.com.lowagie.itext>
     <version.com.miglayout>3.7.4</version.com.miglayout>
     <!-- Only used by optaweb-vehicle-routing, but is required -->
     <version.com.neovisionaries>1.27</version.com.neovisionaries>
+    <version.com.squareup.okhttp3>3.12.1</version.com.squareup.okhttp3>
     <version.com.sun.xml.bind>2.3.0</version.com.sun.xml.bind>
+    <version.com.sun.xml.messaging.saaj>1.5.0</version.com.sun.xml.messaging.saaj>
     <version.com.thoughtworks.xstream>1.4.11.1</version.com.thoughtworks.xstream>
+    <version.com.unboundid>3.2.0</version.com.unboundid>
+    <version.com.wordnik.swagger>1.3.10</version.com.wordnik.swagger>
     <version.de.benediktmeurer.gwt-slf4j>0.0.2</version.de.benediktmeurer.gwt-slf4j>
-    <version.org.dom4j>2.1.1</version.org.dom4j>
+    <version.io.github.bonigarcia>3.8.1</version.io.github.bonigarcia>
+    <version.io.netty>4.1.46.Final</version.io.netty>
+    <!-- IMPORTANT: Don't use this dependency. The right dependency version is the one named as "version.io.netty".
+         This is just needed by Elasticsearch Transport Plugin because it has a compatibility mode with netty 3 and
+         it can't be removed -->
+    <version.io.netty.old>3.10.6.Final</version.io.netty.old>
+    <version.io.prometheus>0.5.0</version.io.prometheus>
     <version.io.springfox>2.9.2</version.io.springfox>
-    <!-- override is needed since 3.0.0-M2, coming from jboss-parent, has a bug. This can be removed once this bug was fixed. -->
-    <!-- see https://issues.apache.org/jira/browse/MENFORCER-306 -->
+    <version.io.swagger>1.5.20</version.io.swagger>
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
     <version.io.undertow>2.0.28.Final</version.io.undertow>
+    <version.jakarta-regexp>1.4</version.jakarta-regexp>
+    <version.jakarta.json.bind>1.0.2</version.jakarta.json.bind>
     <version.javax.activation>1.1.1</version.javax.activation>
+    <version.javax.annotation-api>1.3.2</version.javax.annotation-api>
     <version.javax.enterprise>2.0.SP1</version.javax.enterprise>
     <version.javax.inject>1</version.javax.inject>
+    <version.javax.jws>1.0-MR1</version.javax.jws>
+    <version.javax.jws-api>1.1</version.javax.jws-api>
     <version.javax.mail>1.4.5</version.javax.mail>
     <version.javax.persistence-api>2.2</version.javax.persistence-api>
+    <!-- The version greater than 1.0.0.GA is not compatible with GWT 2.8.x -->
+    <!-- therefore the property is rewritten in that repository parent -->
+    <version.javax.validation>2.0.1.Final</version.javax.validation>
+    <version.javax.xml.soap>1.4.0</version.javax.xml.soap>
+    <version.javax.xml.stream.stax>1.0-2</version.javax.xml.stream.stax>
+    <version.javax.xml.ws>2.3.1</version.javax.xml.ws>
     <version.jaxen>1.1.6</version.jaxen>
     <version.jivesoftware.smack>3.1.0</version.jivesoftware.smack>
     <version.joda-time>2.9.7</version.joda-time>
     <version.junit>4.12</version.junit>
-    <version.enforcer.plugin>3.0.0-M1</version.enforcer.plugin>
+    <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
+    <version.log4j>1.2.17</version.log4j>
+    <!-- TODO rename to version.mysql -->
     <version.mysql.connector-java>5.1.47</version.mysql.connector-java>
-    <version.net.jcip>1.0</version.net.jcip>
+    <version.net.byte-buddy>1.10.3</version.net.byte-buddy>
     <version.net.java.dev.glazedlists>1.8.0</version.net.java.dev.glazedlists>
+    <version.net.jcip>1.0</version.net.jcip>
+    <version.net.openhft.chronicle-queue>5.16.10</version.net.openhft.chronicle-queue>
+    <version.net.openhft.chronicle-core>1.16.16</version.net.openhft.chronicle-core>
+    <version.net.openhft.chronicle-bytes>1.16.16</version.net.openhft.chronicle-bytes>
+    <version.net.openhft.chronicle-wire>1.16.15</version.net.openhft.chronicle-wire>
     <version.net.sf.opencsv>2.3</version.net.sf.opencsv>
-    <version.okhttp>3.12.1</version.okhttp>
-    <version.antlr>2.7.7</version.antlr>
+    <version.net.sourceforge.cssparser>0.9.21</version.net.sourceforge.cssparser>
     <version.org.antlr>3.5.2</version.org.antlr>
     <version.org.antlr.ST4>4.0.7</version.org.antlr.ST4>
+    <version.org.antlr4>4.7.2</version.org.antlr4>
     <version.org.apache.abdera>1.1.3</version.org.apache.abdera>
     <version.org.apache.ant>1.8.4</version.org.apache.ant>
     <version.org.apache.aries.blueprint.api>1.0.1</version.org.apache.aries.blueprint.api>
     <version.org.apache.aries.blueprint.noosgi>1.1.1</version.org.apache.aries.blueprint.noosgi>
     <version.org.apache.aries.blueprint.parser>1.4.0</version.org.apache.aries.blueprint.parser>
+    <version.org.apache.camel>2.24.0</version.org.apache.camel>
     <version.org.apache.chemistry.opencmis>0.11.0</version.org.apache.chemistry.opencmis>
-    <version.org.apache.commons.dbcp2>2.1.1</version.org.apache.commons.dbcp2>
     <version.org.apache.commons.compress>1.19</version.org.apache.commons.compress>
     <version.org.apache.commons.csv>1.6</version.org.apache.commons.csv>
+    <version.org.apache.commons.dbcp2>2.1.1</version.org.apache.commons.dbcp2>
     <version.org.apache.commons.exec>1.3</version.org.apache.commons.exec>
     <version.org.apache.commons.lang3>3.9</version.org.apache.commons.lang3>
+    <!-- TODO remove -->
     <version.org.apache.commons.math>2.1</version.org.apache.commons.math>
     <version.org.apache.commons.math3>3.4.1</version.org.apache.commons.math3>
     <version.org.apache.commons.pool2>2.4.2</version.org.apache.commons.pool2>
+    <!-- TODO remove -->
     <version.org.apache.commons.ssl>0.3.9</version.org.apache.commons.ssl>
+    <version.org.apache.cxf>3.2.8</version.org.apache.cxf>
     <version.org.apache.deltaspike.core>1.5.1</version.org.apache.deltaspike.core>
     <version.org.apache.ftpserver>1.0.6</version.org.apache.ftpserver>
     <version.org.apache.httpcomponents.httpclient>4.5.4</version.org.apache.httpcomponents.httpclient>
@@ -141,6 +197,9 @@
     <version.org.apache.lucene>6.6.1</version.org.apache.lucene>
     <version.org.apache.maven>3.3.9</version.org.apache.maven>
     <version.org.apache.maven.plugin-tools>3.4</version.org.apache.maven.plugin-tools>
+    <version.org.apache.maven.plugins.dependency>3.0.2</version.org.apache.maven.plugins.dependency>
+    <version.org.apache.maven.shared.maven-artifact-transfer>0.9.1
+    </version.org.apache.maven.shared.maven-artifact-transfer>
     <version.org.apache.maven.wagon>3.0.0</version.org.apache.maven.wagon>
     <version.org.apache.neethi>3.1.1</version.org.apache.neethi>
     <version.org.apache.poi>4.1.2</version.org.apache.poi>
@@ -152,6 +211,7 @@
     <version.org.apache.xmlgraphics.batik>1.9.1</version.org.apache.xmlgraphics.batik>
     <version.org.apache.xmlgraphics.commons>2.2</version.org.apache.xmlgraphics.commons>
     <version.org.assertj>3.14.0</version.org.assertj>
+    <version.org.awaitility>3.0.0</version.org.awaitility>
     <version.org.codehaus.btm>2.1.4</version.org.codehaus.btm>
     <version.org.codehaus.groovy>2.0.5</version.org.codehaus.groovy>
     <version.org.codehaus.jackson>1.9.13</version.org.codehaus.jackson>
@@ -160,28 +220,36 @@
     <version.org.codehaus.plexus.plexus-classworlds>2.5.2</version.org.codehaus.plexus.plexus-classworlds>
     <version.org.codehaus.plexus.plexus-containers>1.6</version.org.codehaus.plexus.plexus-containers>
     <version.org.codehaus.plexus.plexus-interpolation>1.21</version.org.codehaus.plexus.plexus-interpolation>
+    <version.org.codehaus.plexus.plexus-io>3.0.0</version.org.codehaus.plexus.plexus-io>
     <version.org.codehaus.plexus.plexus-utils>3.0.22</version.org.codehaus.plexus.plexus-utils>
     <version.org.codehaus.woodstox>4.4.1</version.org.codehaus.woodstox>
+    <version.org.dom4j>2.1.1</version.org.dom4j>
     <version.org.easytesting.fest>2.0M6</version.org.easytesting.fest>
     <version.org.easymock>3.0</version.org.easymock>
-    <version.org.eclipse.bpmn2>0.8.2-jboss</version.org.eclipse.bpmn2>
     <version.org.eclipse.aether>1.1.0</version.org.eclipse.aether>
+    <version.org.eclipse.bpmn2>0.8.2-jboss</version.org.eclipse.bpmn2>
     <version.org.eclipse.emf>2.6.0.v20100614-1136</version.org.eclipse.emf>
     <version.org.eclipse.emf.ecore.xmi>2.5.0.v20100521-1846</version.org.eclipse.emf.ecore.xmi>
+    <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
     <version.org.eclipse.jdt>3.19.0</version.org.eclipse.jdt>
     <version.org.eclipse.jetty>9.2.14.v20151106</version.org.eclipse.jetty>
     <version.org.eclipse.jgit>5.0.2.201807311906-r</version.org.eclipse.jgit>
     <version.org.eclipse.persistence>2.7.6</version.org.eclipse.persistence>
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
-    <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
+    <version.org.eclipse.yasson>1.0.6</version.org.eclipse.yasson>
+    <version.org.freemarker>2.3.28</version.org.freemarker>
     <version.org.glassfish>3.1.2</version.org.glassfish>
     <version.org.glassfish.jakarta>1.1.6</version.org.glassfish.jakarta>
     <version.org.glassfish.jaxb>2.3.2</version.org.glassfish.jaxb>
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
     <version.org.hibernate>5.3.7.Final</version.org.hibernate>
-    <version.org.hibernate.validator>6.0.18.Final</version.org.hibernate.validator>
     <version.org.hibernate.commons.annotations>5.0.4.Final</version.org.hibernate.commons.annotations>
+    <!-- Downgrade required for Errai Dynamic Bean validation. -->
+    <version.org.hibernate.hibernate-validator>4.1.0.Final</version.org.hibernate.hibernate-validator>
+    <!-- New hibernate-validator has moved to org.hibernate.validator group. -->
+    <version.org.hibernate.validator>6.0.18.Final</version.org.hibernate.validator>
+    <version.org.hisrc.jsonix.jsonix-scripts>3.0.0</version.org.hisrc.jsonix.jsonix-scripts>
     <version.org.hornetq>2.4.7.Final</version.org.hornetq>
     <version.org.infinispan>9.4.16.Final</version.org.infinispan>
     <!--This needs to be in sync with JUnit-->
@@ -192,10 +260,18 @@
     <version.org.jboss.arquillian>1.1.13.Final</version.org.jboss.arquillian>
     <version.org.jboss.arquillian.container.glassfish>1.0.0.CR3</version.org.jboss.arquillian.container.glassfish>
     <version.org.jboss.arquillian.container.weld>1.0.0.CR5</version.org.jboss.arquillian.container.weld>
+    <version.org.jboss.arquillian.extension.drone>2.5.1</version.org.jboss.arquillian.extension.drone>
+    <version.org.jboss.arquillian.graphene>2.3.2</version.org.jboss.arquillian.graphene>
+    <version.org.jboss.arquillian.selenium>3.13.0</version.org.jboss.arquillian.selenium>
+    <version.org.jboss.byteman>3.0.1</version.org.jboss.byteman>
     <version.org.jboss.classfilewriter>1.2.3.Final</version.org.jboss.classfilewriter>
+    <version.org.jboss.errai>4.6.0.Final</version.org.jboss.errai>
+    <version.org.jboss.errai.wildfly>14.0.1.Final</version.org.jboss.errai.wildfly>
+    <version.org.jboss.forge.roaster>2.19.5.Final</version.org.jboss.forge.roaster>
+    <version.org.jboss.jandex>2.1.1.Final</version.org.jboss.jandex>
+    <version.org.jboss.jboss-dmr>1.5.0.Final</version.org.jboss.jboss-dmr>
     <version.org.jboss.marshalling>2.0.6.Final</version.org.jboss.marshalling>
     <version.org.jboss.resteasy>3.6.1.SP2</version.org.jboss.resteasy>
-    <version.org.jboss.forge.roaster>2.19.5.Final</version.org.jboss.forge.roaster>
     <version.org.jboss.remote-naming>2.0.5.Final</version.org.jboss.remote-naming>
     <version.org.jboss.remoting>5.0.8.Final</version.org.jboss.remoting>
     <version.org.jboss.shrinkwrap.resolver>2.2.0</version.org.jboss.shrinkwrap.resolver>
@@ -219,53 +295,77 @@
     </version.org.jboss.spec.javax.servlet.jsp.jboss-jsp-api_2.3_spec>
     <version.org.jboss.spec.javax.servlet.jstl.jboss-jstl-api_1.2_spec>1.1.3.Final
     </version.org.jboss.spec.javax.servlet.jstl.jboss-jstl-api_1.2_spec>
+    <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.2.Final
+    </version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
+    <!-- TODO rename to follow jboss spec version convention -->
+    <version.org.jboss.spec.javax.websocket>1.1.3.Final</version.org.jboss.spec.javax.websocket>
+    <version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>1.0.1.Final
+    </version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>
     <version.org.jboss.spec.javax.xml.ws.jboss-jaxws-api_2.3_spec>1.0.0.Final
     </version.org.jboss.spec.javax.xml.ws.jboss-jaxws-api_2.3_spec>
-    <version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>1.0.1.Final</version.org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec>
     <version.org.jboss.weld.weld>2.4.1.Final</version.org.jboss.weld.weld>
     <version.org.jboss.weld.weld-api>3.0.SP4</version.org.jboss.weld.weld-api>
     <version.org.jboss.xnio>3.7.7.Final</version.org.jboss.xnio>
     <version.org.jdom>1.1.3</version.org.jdom>
     <version.org.jfree.jfreechart>1.5.0</version.org.jfree.jfreechart>
-    <version.org.jpmml.model>1.4.11
-    </version.org.jpmml.model> <!-- jpmml-model BSD 3C license - ATTENTION 1.4.11 intentional, because 1.4.9 evaluators depend on 1.4.11 -->
+    <!-- jpmml-model BSD 3C license - ATTENTION 1.4.11 intentional, because 1.4.9 evaluators depend on 1.4.11 -->
+    <version.org.jpmml.model>1.4.11</version.org.jpmml.model>
     <version.org.json>20090211</version.org.json>
     <version.org.jsoup>1.8.3</version.org.jsoup>
     <version.org.junit>5.5.2</version.org.junit>
     <version.org.keycloak>4.8.3.Final</version.org.keycloak>
-    <version.log4j>1.2.17</version.log4j>
+    <version.org.kogito.gwt-jsonix-schema-compiler>1.2.0</version.org.kogito.gwt-jsonix-schema-compiler>
+    <version.org.mockito>1.10.19</version.org.mockito>
+    <version.org.mozilla.rhino>1.7R4</version.org.mozilla.rhino>
     <version.org.mvel>2.4.7.Final</version.org.mvel>
     <version.org.ocpsoft.prettytime>3.0.2.Final</version.org.ocpsoft.prettytime>
+    <version.org.openjdk.jmh>1.21</version.org.openjdk.jmh>
+    <version.org.ops4j.pax.exam>4.11.0</version.org.ops4j.pax.exam>
+    <version.org.ops4j.pax.url>2.2.0</version.org.ops4j.pax.url>
     <!--EAP 6.4 use 4.2.0.redhat-8 which is not OSGi compatible, so stay on 4.3.1-->
     <version.org.osgi>4.3.1</version.org.osgi>
-    <version.org.ops4j.pax.exam>4.11.0</version.org.ops4j.pax.exam>
+    <version.org.ow2.asm>5.0.4</version.org.ow2.asm>
     <version.org.owasp.encoder>1.2</version.org.owasp.encoder>
+    <version.org.picketlink>2.6.0.Final</version.org.picketlink>
+    <version.org.postgresql>9.4.1207</version.org.postgresql>
     <version.org.powermock>1.7.4</version.org.powermock>
     <version.org.python>2.5.3</version.org.python>
+    <version.org.roboguice>3.0.1</version.org.roboguice>
+    <version.org.robolectric>3.1.2</version.org.robolectric>
     <version.org.quartz-scheduler>2.3.2</version.org.quartz-scheduler>
     <version.org.reflections>0.9.11</version.org.reflections>
     <!-- Avoid using scannotation in favor of its successor org.reflections -->
     <version.org.scannotation>1.0.3</version.org.scannotation>
+    <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <version.org.slf4j>1.7.26</version.org.slf4j>
     <version.org.sonatype.aether>1.13.1</version.org.sonatype.aether>
     <version.org.sonatype.plexus.plexus-cipher>1.7</version.org.sonatype.plexus.plexus-cipher>
     <version.org.sonatype.plexus.plexus-sec-dispatcher>1.3</version.org.sonatype.plexus.plexus-sec-dispatcher>
     <version.org.sonatype.sisu>2.3.0</version.org.sonatype.sisu>
-    <version.org.sonatype.sisu.sisu-guice>3.2.3</version.org.sonatype.sisu.sisu-guice>
+    <version.org.sonatype.sisu.inject>3.2.3</version.org.sonatype.sisu.inject>
     <version.org.springframework>5.2.2.RELEASE</version.org.springframework>
     <version.org.springframework.boot>2.2.2.RELEASE</version.org.springframework.boot>
     <version.org.springframework.osgi>1.2.1</version.org.springframework.osgi>
     <version.org.subethamail>1.2</version.org.subethamail>
     <version.org.subethamail.subethasmtp>3.1.6</version.org.subethamail.subethasmtp>
+    <version.org.w3c.css.sac>1.3</version.org.w3c.css.sac>
     <version.org.webjars.swagger-ui>2.2.10</version.org.webjars.swagger-ui>
     <version.org.wildfly>14.0.1.Final</version.org.wildfly>
     <version.org.wildfly.arquillian>2.1.1.Final</version.org.wildfly.arquillian>
-    <version.org.wildfly.core>6.0.2.Final</version.org.wildfly.core>
+    <!-- Version of Camel patch for Wildfly -->
+    <version.org.wildfly.camel>8.0.0</version.org.wildfly.camel>
     <version.org.wildfly.common>1.5.1.Final</version.org.wildfly.common>
+    <version.org.wildfly.core>6.0.2.Final</version.org.wildfly.core>
+    <!-- WildFly version used together with  the GWT's Super Dev Mode -->
+    <version.org.wildfly.gwt.sdm>14.0.1.Final</version.org.wildfly.gwt.sdm>
+    <!-- Required by jboss-remoting version above -->
+    <version.org.wildfly.security>1.1.0.Final</version.org.wildfly.security>
+    <version.org.xmlunit>2.6.3</version.org.xmlunit>
     <version.org.yaml.snakeyaml>1.18</version.org.yaml.snakeyaml>
     <version.postgresql>8.4-702.jdbc4</version.postgresql>
-    <version.org.mozilla.rhino>1.7R4</version.org.mozilla.rhino>
     <version.rome>1.0</version.rome>
+    <!-- simple-jndi is a small library that helps us avoid JNDI error messages during testing -->
+    <version.simple-jndi>0.11.4.1</version.simple-jndi>
     <version.tomcat>9.0.22</version.tomcat>
     <version.wsdl4j>1.6.3</version.wsdl4j>
     <version.xalan>2.7.1</version.xalan>
@@ -277,84 +377,22 @@
     <version.xmlunit>1.3</version.xmlunit>
     <version.xpp3>${version.xmlpull}</version.xpp3>
 
-    <!-- Internal dependencies -->
-    <version.org.kie>7.37.0-SNAPSHOT</version.org.kie>
-    <version.org.drools>${version.org.kie}</version.org.drools>
-    <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
-    <version.org.jbpm>${version.org.kie}</version.org.jbpm>
-    <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
-    <version.org.uberfire>${version.org.kie}</version.org.uberfire>
-    <version.org.kie.uberfire.extensions>${version.org.drools}</version.org.kie.uberfire.extensions>
-    <version.org.drools.droolsjbpm-tools>${version.org.drools}</version.org.drools.droolsjbpm-tools>
-    <version.org.jbpm.jbpm-designer>${version.org.jbpm}</version.org.jbpm.jbpm-designer>
-    <version.org.jbpm.jbpm-wb>${version.org.jbpm}</version.org.jbpm.jbpm-wb>
-    <version.org.apache.xmlgraphics.commons>2.2</version.org.apache.xmlgraphics.commons>
-
-    <!-- External dependency versions bom -->
     <!-- ################################################################################ -->
-    <!-- New and overwritten dependencies -->
+    <!-- Special version groups. -->
     <!-- ################################################################################ -->
 
-    <version.com.android-dx>1.10</version.com.android-dx>
-    <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
-    <version.com.google.android>4.1.1.4</version.com.google.android>
-    <version.com.google.testing.compile>0.11</version.com.google.testing.compile>
-    <version.jakarta-regexp>1.4</version.jakarta-regexp>
-    <version.jakarta.json.bind>1.0.2</version.jakarta.json.bind>
-    <version.link.bek.tools.issue-keeper-junit>4.11.1</version.link.bek.tools.issue-keeper-junit>
-    <version.org.antlr4>4.7.2</version.org.antlr4>
-    <version.org.apache.cxf>3.2.8</version.org.apache.cxf>
-    <version.org.apache.camel>2.24.0</version.org.apache.camel>
-    <version.org.codehaus.cargo>1.7.9</version.org.codehaus.cargo>
-    <version.org.freemarker>2.3.28</version.org.freemarker>
-    <!-- Dependencies for selenium tests -->
-    <version.org.jboss.arquillian.selenium>3.13.0</version.org.jboss.arquillian.selenium>
-    <version.org.jboss.arquillian.extension.drone>2.5.1</version.org.jboss.arquillian.extension.drone>
-    <version.org.jboss.arquillian.graphene>2.3.2</version.org.jboss.arquillian.graphene>
-    <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
-    <version.com.google.elemental2>1.0.0-beta-1</version.com.google.elemental2>
-    <version.org.jboss.errai>4.6.0.Final</version.org.jboss.errai>
-    <version.org.jboss.errai.wildfly>14.0.1.Final</version.org.jboss.errai.wildfly>
-    <!-- Required by jboss-remoting version above -->
-    <version.org.wildfly.security>1.1.0.Final</version.org.wildfly.security>
-    <version.org.ow2.asm>5.0.4</version.org.ow2.asm>
-    <version.org.picketlink>2.6.0.Final</version.org.picketlink>
-    <version.com.unboundid>3.2.0</version.com.unboundid>
-    <version.com.wordnik.swagger>1.3.10</version.com.wordnik.swagger>
-    <version.io.swagger>1.5.20</version.io.swagger>
-    <version.org.jboss.byteman>3.0.1</version.org.jboss.byteman>
-    <version.org.roboguice>3.0.1</version.org.roboguice>
-    <version.org.robolectric>3.1.2</version.org.robolectric>
-    <version.org.xmlunit>2.6.3</version.org.xmlunit>
-    <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
-    <!-- WildFly version used together with  the GWT's Super Dev Mode -->
-    <version.org.wildfly.gwt.sdm>14.0.1.Final</version.org.wildfly.gwt.sdm>
-    <version.org.jboss.jboss-dmr>1.5.0.Final</version.org.jboss.jboss-dmr>
-    <!-- Version of Camel patch for Wildfly -->
-    <version.org.wildfly.camel>8.0.0</version.org.wildfly.camel>
-    <!-- this version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded as it will break ModeShape Web Explorer application which uses GWT 2.5.1 -->
-    <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
-    <version.net.ltgt.gwt.maven>1.0-rc-6</version.net.ltgt.gwt.maven>
-    <version.org.kie.gwthelper.maven>1.3</version.org.kie.gwthelper.maven>
-    <!-- The version greater than 1.0.0.GA is not compatible with GWT 2.8.x -->
-    <!-- therefore the property is rewritten in that repository parent -->
-    <version.javax.validation>2.0.1.Final</version.javax.validation>
-    <version.javax.xml.stream.stax>1.0-2</version.javax.xml.stream.stax>
-    <version.org.ops4j.pax.url>2.2.0</version.org.ops4j.pax.url>
+    <!-- specify versions to support different version of hibernate for ee7 servers such as WAS and WLS -->
+    <version.org.hibernate-4ee7>5.1.15.Final</version.org.hibernate-4ee7>
+    <version.org.jboss.logging-4ee7>3.3.1.Final</version.org.jboss.logging-4ee7>
+    <version.org.javassist-4ee7>3.20.0-GA</version.org.javassist-4ee7>
+    <version.antlr-4ee7>2.7.7</version.antlr-4ee7>
+    <version.org.jboss.jandex-4ee7>2.0.3.Final</version.org.jboss.jandex-4ee7>
+    <version.com.fasterxml.classmate-4ee7>1.3.0</version.com.fasterxml.classmate-4ee7>
+
+    <!-- TODO rename to version.org.apache.geronimo.specs.atinject -->
     <version.org.geronimo.atinject>1.0</version.org.geronimo.atinject>
-    <!-- simple-jndi is a small library that helps us avoid JNDI error messages during testing -->
-    <version.simple-jndi>0.11.4.1</version.simple-jndi>
     <version.org.asciidoctor.asciidoctorj>2.2.0</version.org.asciidoctor.asciidoctorj>
     <version.org.asciidoctor.asciidoctorj-pdf>1.5.0</version.org.asciidoctor.asciidoctorj-pdf>
-    <!-- Downgrade required for Errai Dynamic Bean validation  -->
-    <version.org.hibernate.hibernate-validator>4.1.0.Final</version.org.hibernate.hibernate-validator>
-    <!-- CSS parsing library from Apache used by Stunner. -->
-    <version.net.sourceforge.cssparser>0.9.21</version.net.sourceforge.cssparser>
-    <version.org.w3c.css.sac>1.3</version.org.w3c.css.sac>
-    <!-- override of version coming from jboss-ip-bom since this is needed for kie-wb-common -->
-    <version.org.mockito>1.10.19</version.org.mockito>
-    <!-- Version of JMH -->
-    <version.org.openjdk.jmh>1.21</version.org.openjdk.jmh>
 
     <!-- In community builds productized is false, in product builds it's true to enable branding changes -->
     <org.kie.productized>false</org.kie.productized>
@@ -366,33 +404,44 @@
     <!-- Make OSGi happy -->
     <osgi.snapshot.qualifier>${maven.build.timestamp}</osgi.snapshot.qualifier>
 
-    <version.io.netty>4.1.46.Final</version.io.netty>
-    <!-- IMPORTANT: Don't use this dependency. The right dependency version is the one named as "version.io.netty".
-         This is just needed by Elasticsearch Transport Plugin because it has a compatibility mode with netty 3 and
-         it can't be removed -->
-    <version.io.netty.old>3.10.6.Final</version.io.netty.old>
-
+    <!-- ################################################################################ -->
     <!-- Plugin version overrides.
          IMPORTANT: always explain the reason for overriding the plugin version! -->
+    <!-- ################################################################################ -->
+
+    <!-- This version will overwrite jboss-ip-bom version 2.5.1. The version in jboss-ip-bom couldn't be upgraded
+         as it will break ModeShape Web Explorer application which uses GWT 2.5.1. -->
+    <!-- please look at https://github.com/fredsa/gwt-dnd/wiki/GettingStarted -->
+    <version.net.ltgt.gwt.maven>1.0-rc-6</version.net.ltgt.gwt.maven>
+    <version.org.codehaus.cargo>1.7.9</version.org.codehaus.cargo>
+    <version.org.kie.gwthelper.maven>1.3</version.org.kie.gwthelper.maven>
     <!-- Surefire version 2.19.1 coming from parent is buggy and kie-osgi tests in droolsjbpm-integration are failing because of that. -->
     <version.surefire.plugin>2.22.1</version.surefire.plugin>
     <!-- Jacoco plugin configurations -->
+    <version.jacoco.plugin>0.8.5</version.jacoco.plugin>
     <jacoco.haltOnFailure>false</jacoco.haltOnFailure>
     <jacoco.line.coveredratio.minimum>0.9</jacoco.line.coveredratio.minimum>
-    <version.jacoco.plugin>0.8.5</version.jacoco.plugin>
+    <!-- JaCoCo coverage data file location -->
+    <!--suppress UnresolvedMavenProperty -->
+    <project.root.dir>${maven.multiModuleProjectDirectory}</project.root.dir>
+    <jacoco.exec.file>${project.root.dir}/target/jacoco.exec</jacoco.exec.file>
     <!-- TODO: remove this once all repositories comply to the defined checkstyle rules -->
     <checkstyle.failOnViolation>false</checkstyle.failOnViolation>
     <checkstyle.logViolationsToConsole>false</checkstyle.logViolationsToConsole>
     <checkstyle.header.template>.*</checkstyle.header.template>
     <checkstyle.header.extensions>java</checkstyle.header.extensions>
+    <!-- override is needed since 3.0.0-M2, coming from jboss-parent, has a bug. This can be removed once this bug was fixed. -->
+    <!-- see https://issues.apache.org/jira/browse/MENFORCER-306 -->
+    <version.enforcer.plugin>3.0.0-M1</version.enforcer.plugin>
     <enforcer.failOnDuplicatedClasses>true</enforcer.failOnDuplicatedClasses>
-    <!-- Set to "true" on every project that has no violations. -->
-    <spotbugs.failOnViolation>false</spotbugs.failOnViolation>
+    <illegaltransitivereportonly>false</illegaltransitivereportonly>
     <!-- org.eclipse.tycho plugin version -->
     <version.org.eclipse.tycho>1.0.0</version.org.eclipse.tycho>
     <version.org.jboss.tools.tycho-plugins>1.0.0</version.org.jboss.tools.tycho-plugins>
     <!-- replaces findbugs-maven-plugin -->
     <version.com.github.spotbugs-maven-plugin>3.1.8</version.com.github.spotbugs-maven-plugin>
+    <!-- Set to "true" on every project that has no violations. -->
+    <spotbugs.failOnViolation>false</spotbugs.failOnViolation>
 
     <maven.min.version>3.5.2</maven.min.version>
     <!-- Important: this is one and only place where the supported user agents (browsers) are configured.
@@ -405,23 +454,24 @@
     <!-- property for productisation to know the last released version -->
     <latestReleasedVersionFromThisBranch>notYetReleased</latestReleasedVersionFromThisBranch>
     <version.io.takari.maven.plugins.compiler>1.13.5</version.io.takari.maven.plugins.compiler>
+    <!-- TODO rename to com.github.eirslett -->
+    <!-- com.github.eirslett:frontend-maven-plugin version -->
+    <version.frontend-maven-plugin>1.8.0</version.frontend-maven-plugin>
+    <version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>0.14.0</version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>
 
-    <version.org.codehaus.plexus.plexus-io>3.0.0</version.org.codehaus.plexus.plexus-io>
-    <version.org.apache.maven.shared.maven-artifact-transfer>0.9.1
-    </version.org.apache.maven.shared.maven-artifact-transfer>
     <version.compiler.plugin>3.8.1</version.compiler.plugin>
-    <version.net.openhft.chronicle-queue>5.16.10</version.net.openhft.chronicle-queue>
-    <version.net.openhft.chronicle-core>1.16.16</version.net.openhft.chronicle-core>
-    <version.net.openhft.chronicle-bytes>1.16.16</version.net.openhft.chronicle-bytes>
-    <version.net.openhft.chronicle-wire>1.16.15</version.net.openhft.chronicle-wire>
     <!-- Version of the KIE Workbench application. Shown for example in About dialog. Will be usually overridden by productisation. -->
     <version.org.kie.workbench.app>${version.org.kie}</version.org.kie.workbench.app>
 
+    <!-- TODO rename to version.io.thorntail -->
     <version.thorntail>2.5.0.Final</version.thorntail>
-    <version.net.byte-buddy>1.10.3</version.net.byte-buddy>
+    <!-- TODO rename to version.com.spotify -->
     <version.docker-client>3.5.12</version.docker-client>
+    <!-- TODO rename to version.io.fabric8.kubernetes-client -->
     <version.kubernetes-client>4.6.0</version.kubernetes-client>
+    <!-- TODO rename to version.io.fabric8.zjsonpatch -->
     <version.zjsonpatch>0.3.0</version.zjsonpatch>
+    <!-- TODO rename to version.org.arquillian -->
     <version.arquillian-cube>1.0.0.Alpha15</version.arquillian-cube>
     <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
     </jboss.releases.repo.url>
@@ -433,49 +483,8 @@
     <revapi.oldKieVersion>7.33.0.Final</revapi.oldKieVersion>
     <revapi.newKieVersion>${project.version}</revapi.newKieVersion>
 
-    <version.org.jboss.spec.javax.websocket>1.1.3.Final</version.org.jboss.spec.javax.websocket>
-
-    <version.javax.xml.soap>1.4.0</version.javax.xml.soap>
-    <version.javax.jws>1.0-MR1</version.javax.jws>
-
-    <version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>1.0.2.Final</version.org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec>
-    <version.org.apache.maven.plugins.dependency>3.0.2</version.org.apache.maven.plugins.dependency>
-
-    <version.org.postgresql>9.4.1207</version.org.postgresql>
+    <!-- TODO rename to version.org.mariadb.jdbc -->
     <version.mariadb-java-client>1.3.4</version.mariadb-java-client>
-
-    <version.ch.obermuhlner>2.0.1</version.ch.obermuhlner>
-    <version.org.jboss.jandex>2.1.1.Final</version.org.jboss.jandex>
-    <version.org.eclipse.yasson>1.0.6</version.org.eclipse.yasson>
-    <version.javax.jws-api>1.1</version.javax.jws-api>
-    <version.javax.xml.ws>2.3.1</version.javax.xml.ws>
-    <version.javax.annotation-api>1.3.2</version.javax.annotation-api>
-    <version.com.sun.xml.messaging.saaj>1.5.0</version.com.sun.xml.messaging.saaj>
-
-    <!-- specifal versions to support different version of hibernate for ee7 servers such as WAS and WLS -->
-    <version.org.hibernate-4ee7>5.1.15.Final</version.org.hibernate-4ee7>
-    <version.org.jboss.logging-4ee7>3.3.1.Final</version.org.jboss.logging-4ee7>
-    <version.org.javassist-4ee7>3.20.0-GA</version.org.javassist-4ee7>
-    <version.antlr-4ee7>2.7.7</version.antlr-4ee7>
-    <version.org.jboss.jandex-4ee7>2.0.3.Final</version.org.jboss.jandex-4ee7>
-    <version.com.fasterxml.classmate-4ee7>1.3.0</version.com.fasterxml.classmate-4ee7>
-
-    <version.io.prometheus>0.5.0</version.io.prometheus>
-    <version.com.github.javaparser>3.13.10</version.com.github.javaparser>
-
-    <!-- JaCoCo coverage data file location -->
-    <!--suppress UnresolvedMavenProperty -->
-    <project.root.dir>${maven.multiModuleProjectDirectory}</project.root.dir>
-    <jacoco.exec.file>${project.root.dir}/target/jacoco.exec</jacoco.exec.file>
-    <!-- com.github.eirslett:frontend-maven-plugin version -->
-    <version.frontend-maven-plugin>1.8.0</version.frontend-maven-plugin>
-
-    <version.org.awaitility>3.0.0</version.org.awaitility>
-    <version.io.github.bonigarcia>3.8.1</version.io.github.bonigarcia>
-
-    <version.org.kogito.gwt-jsonix-schema-compiler>1.2.0</version.org.kogito.gwt-jsonix-schema-compiler>
-    <version.org.hisrc.jsonix.jsonix-scripts>3.0.0</version.org.hisrc.jsonix.jsonix-scripts>
-    <version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>0.14.0</version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>
   </properties>
 
   <repositories>
@@ -2672,12 +2681,12 @@
       <dependency>
         <groupId>com.squareup.okhttp3</groupId>
         <artifactId>okhttp</artifactId>
-        <version>${version.okhttp}</version>
+        <version>${version.com.squareup.okhttp3}</version>
       </dependency>
       <dependency>
         <groupId>com.squareup.okhttp3</groupId>
         <artifactId>logging-interceptor</artifactId>
-        <version>${version.okhttp}</version>
+        <version>${version.com.squareup.okhttp3}</version>
       </dependency>
 
       <dependency>
@@ -4171,7 +4180,7 @@
       <dependency>
         <groupId>org.sonatype.sisu.inject</groupId>
         <artifactId>guice-servlet</artifactId>
-        <version>${version.org.sonatype.sisu.sisu-guice}</version>
+        <version>${version.org.sonatype.sisu.inject}</version>
       </dependency>
 
       <dependency>
