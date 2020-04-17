@@ -59,7 +59,7 @@ for (repo in repoList) {
         steps {
             maven {
                 mavenInstallation("kie-maven-3.5.4")
-                goals('-Pjenkins test -Dmaven.buildNumber.skip=true -DargLine="-Dsourceclear=\"\${DEBUG} \${TRACE} --processor=\${PROCESSOR_TYPE} --product-version=\${VERSION} --package=\${PACKAGE} --product=\"\${NAME}\" --threshold=\${THRESHOLD} \${SCAN_TYPE} --url=\${URL} \${MVNPARAMETER} \${SCMVERSIONPARAM} \${RECURSE}\""')
+                goals('-Pjenkins test -Dmaven.buildNumber.skip=true -Dsourceclear="--processor=${PROCESSOR_TYPE} --product-version=${VERSION} --package=${PACKAGE} --product=\"${NAME}\" --threshold=${THRESHOLD} ${SCAN_TYPE} --url=${URL}" ')
             }
         }
 
