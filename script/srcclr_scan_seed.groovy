@@ -1,4 +1,4 @@
-def repoFile = readFileFromWorkspace("./repository-list.txt")
+def repoFile = readFileFromWorkspace("./script/repository-list.txt")
 def repoList = repoFile.split()
 
 for (repo in repoList) {
