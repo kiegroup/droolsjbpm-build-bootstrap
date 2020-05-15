@@ -143,8 +143,10 @@ pipeline {
             emailext body: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
                     'Please look here: ${BUILD_URL}', subject: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
         }
-        always {
+        success {
             archiveArtifacts artifacts: '**/*.maven.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+        }
+        cleanup {
             cleanWs()
         }
     }
