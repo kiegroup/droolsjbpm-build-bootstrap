@@ -1,4 +1,4 @@
-@Library('jenkins-pipeline-shared-libraries')_
+@Library('jenkins-pipeline-shared-libraries-ginxo')_
 
 agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && kie-mem24g'} && !master"
 additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
