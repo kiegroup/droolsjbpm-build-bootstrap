@@ -8,7 +8,7 @@ stage('Compile Downstream Build') {
         def projectCollection = file.readLines()
         def gitURL = env.ghprbAuthorRepoGitUrl ?: env.GIT_URL
         def project = util.getProjectGroupName(util.getProject(gitURL))[1]
-        projectCollection.removeAll(['kie-wb-distributions', 'droolsjbpm-tools', 'kie-docs'])
+        projectCollection.removeAll(['droolsjbpm-tools', 'kie-docs'])
         compile.build(projectCollection, project, "${SETTINGS_XML_ID}", "${PROPERTIES_FILE_ID}")
     }
 }
