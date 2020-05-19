@@ -1,8 +1,13 @@
 @Library('jenkins-pipeline-shared-libraries')_
 
+agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && kie-mem24g'} && !master"
+additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
+additionalTimeout = "${env.ADDITIONAL_TIMEOUT?.trim() ?: 1200}"
+additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''}"
+
 pipeline {
     agent {
-        label 'kie-rhel7 && kie-mem24g && !master'
+        label agentLabel
     }
     tools {
         maven 'kie-maven-3.5.4'
@@ -10,7 +15,8 @@ pipeline {
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
-        timeout(time: 1202, unit: 'MINUTES')
+        timestamps ()
+        timeout(time: additionalTimeout, unit: 'MINUTES')
     }
     stages {
         stage('Initialize') {
@@ -19,11 +25,22 @@ pipeline {
 
             }
         }
+        // executes a script that compresses the consoleText and attaches it to the mail
+        stage('build sh script') {
+            steps {
+                script {
+                    mailer.buildLogScriptPR()
+                }
+            }
+        }
         stage('Build projects') {
             steps {
                 script {
                     def file =  (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream\.production/).find() ? 'downstream.production.stages' :
+                                (JOB_NAME =~ /\/new-[a-z,A-Z\-]*\.downstream/).find() ? 'new.downstream.stages' :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream/).find() ? 'downstream.stages' :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-]*\.pullrequest/).find() ? 'pullrequest.stages' :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-]*\.compile/).find() ? 'compilation.stages' :
                                 'upstream.stages'
                     if(fileExists("$WORKSPACE/${file}")) {
                         println "File ${file} exists, loading it."
@@ -45,14 +62,19 @@ pipeline {
         }
     }
     post {
-        unstable {
-            script {
-                mailer.sendEmailFailure()
-            }
-        }
         failure {
             script {
-                mailer.sendEmailFailure()
+                mailer.sendEmail_failedPR()
+            }
+        }
+        unstable {
+            script {
+                mailer.sendEmail_unstablePR()
+            }
+        }
+        fixed {
+            script {
+                mailer.sendEmail_fixedPR()
             }
         }
         always {
