@@ -2,15 +2,17 @@
 
 pipeline {
     agent {
-        label 'image-test && !master'
+        label 'kie-rhel7 && kie-mem24g && !master'
     }
     tools {
         maven 'kie-maven-3.6.0'
         jdk 'kie-jdk1.8'
     }
     parameters {
-        string(defaultValue: 'master', description: 'The default branch', name: 'DEFAULT_BRANCH')
         string(description: 'The deployment URL', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL')
+        booleanParam(description: 'Skip Tests? True as default', name: 'SKIP_TESTS', defaultValue: true)
+        string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'master')
+        string(description: 'The product version', name: 'PRODUCT_VERSION')
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
@@ -41,13 +43,20 @@ pipeline {
                         projectCollection.addAll(productionProjectListFile.readLines())
                         projectCollection.removeAll { 'droolsjbpm-tools'.equals(it.toLowerCase()) } // The droolsjbpm-tools is skiped
                         println "File ${repositoryListPath} and ${env.PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
-                        nightlyStages(SETTINGS_XML_ID, projectCollection, DEFAULT_BRANCH, "rhba/nightly", projectVariableMap)
+                        nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
                     }
-
+                }
+            }
+        }
+        stage('Generate Properties Files') {
+            steps {
+                script {
                     def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
 
                     build job: env.RHBA_PROPERTIES_GENERATOR_PATH, parameters: [
                         [$class: 'BooleanParameterValue', name: 'IS_PROD', value: false],
+                        [$class: 'StringParameterValue', name: 'BRANCH_NAME', value: env.BRANCH_NAME],
+                        [$class: 'StringParameterValue', name: 'KIE_VERSION', value: PME_BUILD_VARIABLES['kieVersion']],
                         [$class: 'StringParameterValue', name: 'PRODUCT_VERSION', value: PME_BUILD_VARIABLES['productVersion']],
                         [$class: 'StringParameterValue', name: 'TIME_STAMP', value: "${PME_BUILD_VARIABLES['datetimeSuffix']}"],
                         [$class: 'StringParameterValue', name: 'MVEL_VERSION', value: PME_BUILD_VARIABLES['mvelVersion']],
@@ -57,16 +66,28 @@ pipeline {
                 }
             }
         }
+        stage('Upload Files to repository') {
+            steps {
+                script {
+                    echo "[INFO] Start uploading ${env.WORKSPACE}/deployDirectory"
+                    dir("${env.WORKSPACE}/deployDirectory") {
+                        withCredentials([usernameColonPassword(credentialsId: "${env.NIGHTLY_DEPLOYMENT_CREDENTIAL}", variable: 'deploymentCredentials')]) {
+                            sh "zip -r kiegroup ."
+                            sh "curl --upload-file kiegroup.zip -u $deploymentCredentials -v ${KIE_GROUP_DEPLOYMENT_REPO_URL}"
+                        }
+                    }
+                }
+            }
+        }
         stage ("Send RHPAM UMB Message to QE.") {
             steps {
                 script {
                     echo "[INFO] Sending RHPAM UMB message to QE."
                     def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
                     
-                    def versionIdentifier = (PME_BUILD_VARIABLES['productVersion'] =~ /\d+\.\d+/)[0].replace(".", "")
                     def propertiesFileUrl = "${env.STAGING_SERVER_URL}/rhpam/RHPAM-${PME_BUILD_VARIABLES['productVersion']}.${PME_BUILD_VARIABLES['milestone']}/rhpam-${PME_BUILD_VARIABLES['datetimeSuffix']}.properties"
-                    def topic = "VirtualTopic.qe.ci.ba.rhpam.${versionIdentifier}.nightly.trigger"
-                    def eventType = "rhpam-${versionIdentifier}-nightly-qe-trigger"
+                    def topic = "VirtualTopic.qe.ci.ba.rhpam.${env.UMB_VERSION}.nightly.trigger"
+                    def eventType = "rhpam-${env.UMB_VERSION}-nightly-qe-trigger"
                     
                     echo "[INFO] Message Body: ${propertiesFileUrl}"
                     echo "[INFO] Topic: ${topic}"
@@ -86,10 +107,9 @@ pipeline {
                     echo "[INFO] Sending RHDM UMB message to QE."
                     def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
                     
-                    def versionIdentifier = (PME_BUILD_VARIABLES['productVersion'] =~ /\d+\.\d+/)[0].replace(".", "")
                     def propertiesFileUrl = "${env.STAGING_SERVER_URL}/rhdm/RHDM-${PME_BUILD_VARIABLES['productVersion']}.${PME_BUILD_VARIABLES['milestone']}/rhdm-${PME_BUILD_VARIABLES['datetimeSuffix']}.properties"
-                    def topic = "VirtualTopic.qe.ci.ba.rhdm.${versionIdentifier}.nightly.trigger"
-                    def eventType = "rhdm-${versionIdentifier}-nightly-qe-trigger"
+                    def topic = "VirtualTopic.qe.ci.ba.rhdm.${env.UMB_VERSION}.nightly.trigger"
+                    def eventType = "rhdm-${env.UMB_VERSION}-nightly-qe-trigger"
                     
                     echo "[INFO] Message Body: ${propertiesFileUrl}"
                     echo "[INFO] Topic: ${topic}"
@@ -105,19 +125,26 @@ pipeline {
         }
     }
     post {
-        unstable {
-            script {
-                echo "[INFO] Sending notification email for result UNSTABLE to"
-                mailer.sendEmailFailure()
-            }
-        }
         failure {
-            script {
-                echo "[INFO] Sending notification email for result FAILURE to"
-                mailer.sendEmailFailure()
-            }
+            emailext body: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
+                    'Please look here: ${BUILD_URL} \n' +
+                    ' \n' +
+                    '${BUILD_LOG, maxLines=750}', subject: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
+        }
+        unstable {
+            emailext body: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
+                    'Please look here: ${BUILD_URL} \n' +
+                    ' \n' +
+                    'Failed tests: ${BUILD_URL}/testReport \n' +
+                    ' \n' +
+                    '${BUILD_LOG, maxLines=750}', subject: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
+        }
+        fixed {
+            emailext body: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER} was: ' + "${currentBuild.currentResult}" +  '\n' +
+                    'Please look here: ${BUILD_URL}', subject: '${PRODUCT_VERSION}:nightly-build #${BUILD_NUMBER}: ' + "${currentBuild.currentResult}", to: 'kie-jenkins-builds@redhat.com'
         }
         always {
+            archiveArtifacts artifacts: '**/*.maven.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
             cleanWs()
         }
     }
