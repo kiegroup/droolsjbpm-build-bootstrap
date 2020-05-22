@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.35.0-SNAPSHOT</version>
+    <version>7.38.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -574,6 +574,74 @@
         <groupId>org.kie.server</groupId>
         <artifactId>kie-server-integ-tests-common</artifactId>
         <version>${version.org.kie}</version>
+      </dependency>
+
+      <!-- KIE Server OptaPlanner & jBPM task assigning -->
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-core</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-planning</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-planning</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-runtime</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-runtime</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-user-system-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-user-system-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-user-system-simple</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-services-task-assigning-user-system-simple</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-rest-task-assigning-runtime</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie.server</groupId>
+        <artifactId>kie-server-rest-task-assigning-runtime</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
       </dependency>
 
       <!-- Other droolsjbpm-integration -->
@@ -2879,7 +2947,7 @@
         <groupId>org.kie</groupId>
         <artifactId>kie-wb</artifactId>
         <version>${version.org.kie}</version>
-        <classifier>wildfly14</classifier>
+        <classifier>wildfly18</classifier>
         <type>war</type>
       </dependency>
       <dependency>
@@ -2893,7 +2961,7 @@
         <groupId>org.kie</groupId>
         <artifactId>business-monitoring</artifactId>
         <version>${version.org.kie}</version>
-        <classifier>wildfly14</classifier>
+        <classifier>wildfly18</classifier>
         <type>war</type>
       </dependency>
       <dependency>

@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.35.0-SNAPSHOT</version>
+    <version>7.38.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -565,17 +565,6 @@
       <!-- droolsjbpm-integration -->
       <dependency>
         <groupId>org.drools</groupId>
-        <artifactId>drools-simulator</artifactId>
-        <version>${version.org.kie}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-simulator</artifactId>
-        <version>${version.org.kie}</version>
-        <classifier>sources</classifier>
-      </dependency>
-      <dependency>
-        <groupId>org.drools</groupId>
         <artifactId>droolsjbpm-integration-examples</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
@@ -615,13 +604,13 @@
       </dependency>
 
       <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-android</artifactId>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-memory-compiler</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-android</artifactId>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-memory-compiler</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -735,6 +724,63 @@
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-wb-scenario-simulation-editor-businesscentral-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-marshaller</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-marshaller</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-client</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-client</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-webapp-common</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-webapp-common</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-runtime</artifactId>
+        <type>war</type>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-runtime</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-testing</artifactId>
+        <type>war</type>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.drools</groupId>
+        <artifactId>drools-wb-scenario-simulation-editor-kogito-testing</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
