@@ -91,6 +91,7 @@
     <version.com.miglayout>3.7.4</version.com.miglayout>
     <!-- Only used by optaweb-vehicle-routing, but is required -->
     <version.com.neovisionaries>1.27</version.com.neovisionaries>
+    <version.com.sun.activation>1.2.0</version.com.sun.activation>
     <version.com.sun.xml.bind>2.3.0</version.com.sun.xml.bind>
     <version.com.thoughtworks.xstream>1.4.11.1</version.com.thoughtworks.xstream>
     <version.de.benediktmeurer.gwt-slf4j>0.0.2</version.de.benediktmeurer.gwt-slf4j>
@@ -2249,7 +2250,7 @@
         <version>${version.com.ahome-it.lienzo.tooling.common}</version>
       </dependency>
       <!-- end of KIE Lienzo modules -->
-     
+
       <dependency>
         <groupId>com.allen-sauer.gwt.dnd</groupId>
         <artifactId>gwt-dnd</artifactId>
@@ -2409,6 +2410,11 @@
         <version>${version.com.neovisionaries}</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.sun.activation</groupId>
+        <artifactId>javax.activation</artifactId>
+        <version>${version.com.sun.activation}</version>
+      </dependency>
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-core</artifactId>
