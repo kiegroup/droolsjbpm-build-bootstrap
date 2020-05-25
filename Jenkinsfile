@@ -4,6 +4,9 @@ agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && 
 additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
 additionalTimeout = "${env.ADDITIONAL_TIMEOUT?.trim() ?: 1200}"
 additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''}"
+checkstyleFile = env.CHECKSTYLE_FILE?.trim() ?: null
+findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
+pr_type = env.PR_TYPE?.trim() ?: null
 
 pipeline {
     agent {
@@ -62,26 +65,49 @@ pipeline {
         }
     }
     post {
-        always {
-            sh '$WORKSPACE/trace.sh'
-            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
-            findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', pattern: '**/spotbugsXml.xml', unHealthy: ''
-            checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: '**/checkstyle-result.xml', unHealthy: ''
-            archiveArtifacts allowEmptyArchive: true, artifacts: '**/*.maven.log, **/target/*.log,**/target/testStatusListener*' + additionalArtifactsToArchive, excludes: '**/target/checkstyle.log' + additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
+        fixed {
+            script {
+                mailer.sendEmail_fixedPR(pr_type)
+            }
+        }
+        aborted {
+            script {
+                mailer.sendEmail_abortedPR(pr_type)
+            }
         }
         failure {
+            sh '$WORKSPACE/trace.sh'
             script {
-                mailer.sendEmail_failedPR()
+                mailer.sendEmail_failedPR(pr_type)
             }
         }
         unstable {
             script {
-                mailer.sendEmail_unstablePR()
+                mailer.sendEmail_unstablePR(pr_type)
             }
         }
-        fixed {
+        always {
+            echo 'JUnit reports ...'
+            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
+
+            echo 'Archiving logs...'
+            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log, **/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+
+            echo'Archive artifacts'
+            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*' + additionalArtifactsToArchive, excludes: '**/target/checkstyle.log' + additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
+
             script {
-                mailer.sendEmail_fixedPR()
+                if(findbugsFile) {
+                    echo 'Findbugs reports ...'
+                    findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', pattern: findbugsFile, unHealthy: ''
+                }
+            }
+
+            script {
+                if(checkstyleFile) {
+                    echo 'Checkstyle reports ...'
+                    checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: checkstyleFile, unHealthy: ''
+                }
             }
         }
         cleanup {
