@@ -4,6 +4,9 @@ agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && 
 additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
 additionalTimeout = "${env.ADDITIONAL_TIMEOUT?.trim() ?: 1200}"
 additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''}"
+checkstyleFile = env.CHECKSTYLE_FILE?.trim() ?: null
+findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
+pr_type = env.PR_TYPE?.trim() ?: null
 
 pipeline {
     agent {
@@ -62,39 +65,50 @@ pipeline {
         }
     }
     post {
-        failure {
+        fixed {
             script {
-                mailer.sendEmail_failedPR()
+                mailer.sendEmail_fixedPR(pr_type)
+            }
+        }
+        aborted {
+            script {
+                mailer.sendEmail_abortedPR(pr_type)
+            }
+        }
+        failure {
+            sh '$WORKSPACE/trace.sh'
+            script {
+                mailer.sendEmail_failedPR(pr_type)
             }
         }
         unstable {
             script {
-                mailer.sendEmail_unstablePR()
-            }
-        }
-        fixed {
-            script {
-                mailer.sendEmail_fixedPR()
+                mailer.sendEmail_unstablePR(pr_type)
             }
         }
         always {
-            script {
-                util.printGitInformationReport()
-            }
-            echo 'Generating JUnit report...'
+            echo 'JUnit reports ...'
             junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
 
             echo 'Archiving logs...'
-            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log, **/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
 
-            echo 'Archiving testStatusListener and screenshots artifacts...'
-            archiveArtifacts artifacts: '**/target/testStatusListener*,**/target/screenshots/**', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+            echo'Archive artifacts'
+            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*' + additionalArtifactsToArchive, excludes: '**/target/checkstyle.log' + additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
 
-            echo 'Archiving wars...'
-            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+            script {
+                if(findbugsFile) {
+                    echo 'Findbugs reports ...'
+                    findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', pattern: findbugsFile, unHealthy: ''
+                }
+            }
 
-            echo 'Archiving zips...'
-            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+            script {
+                if(checkstyleFile) {
+                    echo 'Checkstyle reports ...'
+                    checkstyle canComputeNew: false, defaultEncoding: '', healthy: '', pattern: checkstyleFile, unHealthy: ''
+                }
+            }
         }
         cleanup {
             cleanWs()
