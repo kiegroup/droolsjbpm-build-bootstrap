@@ -5,6 +5,6 @@ stage('Downstream Build') {
         println "Reading file ${REPOSITORY_LIST_FILE}"
         def file = readFile REPOSITORY_LIST_FILE
         def projectCollection = ['lienzo-core', 'lienzo-tests', 'droolsjbpm-build-bootstrap', 'kie-soup', 'appformer', 'droolsjbpm-knowledge', 'drools', 'optaplanner', 'jbpm', 'kie-jpmml-integration', 'droolsjbpm-integration', 'openshift-drools-hacep', 'droolsjbpm-tools', 'kie-uberfire-extensions', 'kie-wb-playground', 'kie-wb-common', 'drools-wb']
-        treebuild.downstreamBuild(projectCollection, "${SETTINGS_XML_ID}", 'mvn clean install -B -Dfull=true -Drevapi.skip=true -Denforcer.skip=true -Dgwt.compiler.localWorkers=1 -Dproductized=true -Dfindbugs.skip=true -Dcheckstyle.skip=true')
+        treebuild.downstreamBuild(projectCollection, "${SETTINGS_XML_ID}", 'clean install -B -Dfull=true -Drevapi.skip=true -Denforcer.skip=true -Dgwt.compiler.localWorkers=1 -Dproductized=true -Dfindbugs.skip=true -Dcheckstyle.skip=true')
     }
 }
