@@ -24,6 +24,7 @@ pipeline {
                 script {
                     def file =  (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream\.production/).find() ? 'downstream.production.stages' :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream/).find() ? 'downstream.stages' :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-]*\.nightly/).find() ? 'nightly.stages' :
                                 'upstream.stages'
                     if(fileExists("$WORKSPACE/${file}")) {
                         println "File ${file} exists, loading it."
@@ -45,32 +46,6 @@ pipeline {
         }
     }
     post {
-        unstable {
-            script {
-                mailer.sendEmailFailure()
-            }
-        }
-        failure {
-            script {
-                mailer.sendEmailFailure()
-            }
-        }
-        always {
-            echo 'Generating JUnit report...'
-            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
-
-            echo 'Archiving logs...'
-            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving testStatusListener and screenshots artifacts...'
-            archiveArtifacts artifacts: '**/target/testStatusListener*,**/target/screenshots/**', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving wars...'
-            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving zips...'
-            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-        }
         cleanup {
             cleanWs()
         }
