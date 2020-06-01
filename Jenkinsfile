@@ -2,7 +2,7 @@
 
 pipeline {
     agent {
-        label 'kie-rhel7 && kie-mem24g && !master'
+        label 'kie-rhel7-priority'
     }
     tools {
         maven 'kie-maven-3.5.4'
@@ -19,60 +19,19 @@ pipeline {
 
             }
         }
-        stage('Build projects') {
-            steps {
-                script {
-                    def file =  (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream\.production/).find() ? 'downstream.production.stages' :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream/).find() ? 'downstream.stages' :
-                                'upstream.stages'
-                    if(fileExists("$WORKSPACE/${file}")) {
-                        println "File ${file} exists, loading it."
-                        load("$WORKSPACE/${file}")
-                    } else {
-                        dir("droolsjbpm-build-bootstrap") {
-                            def changeAuthor = env.CHANGE_AUTHOR ?: env.ghprbPullAuthorLogin
-                            def changeBranch = env.CHANGE_BRANCH ?: env.ghprbSourceBranch
-                            def changeTarget = env.CHANGE_TARGET ?: env.ghprbTargetBranch
-
-                            println "File ${file} does not exist. Loading the one from droolsjbpm-build-bootstrap project. Author [${changeAuthor}], branch [${changeBranch}]..."
-                            githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "${changeAuthor}", "${changeBranch}", 'kiegroup', "${changeTarget}")
-                            println "Loading ${file} file..."
-                            load("${file}")
-                        }
-                    }
-                }
+        stage('Downstream Build') {
+            final REPOSITORY_LIST_FILE = "./script/repository-list.txt"
+            final SETTINGS_XML_ID = "771ff52a-a8b4-40e6-9b22-d54c7314aa1e"
+            configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_XML_DOWNSTREAM')]) {
+                treebuild.downstreamBuild(['kiegroup/lienzo-core', 'kiegroup/lienzo-tests', 'kiegroup/droolsjbpm-build-bootstrap'], "${SETTINGS_XML_ID}", 'clean', true)
             }
         }
     }
     post {
-        unstable {
-            script {
-                mailer.sendEmailFailure()
-            }
-        }
-        failure {
-            script {
-                mailer.sendEmailFailure()
-            }
-        }
         always {
             script {
                 util.printGitInformationReport()
             }
-            echo 'Generating JUnit report...'
-            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
-
-            echo 'Archiving logs...'
-            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving testStatusListener and screenshots artifacts...'
-            archiveArtifacts artifacts: '**/target/testStatusListener*,**/target/screenshots/**', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving wars...'
-            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving zips...'
-            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
         }
         cleanup {
             cleanWs()
