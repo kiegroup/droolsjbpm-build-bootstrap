@@ -1,4 +1,4 @@
-@Library('jenkins-pipeline-shared-libraries-ginxo')_
+@Library('jenkins-pipeline-shared-libraries')_
 
 agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && kie-mem24g'} && !master"
 additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
@@ -17,7 +17,7 @@ pipeline {
         jdk 'kie-jdk1.8'
     }
     options {
-        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '7', numToKeepStr: '')
         timestamps ()
         timeout(time: additionalTimeout, unit: 'MINUTES')
     }
