@@ -47,7 +47,7 @@ pipeline {
                             println "File ${repositoryListPath} and ${env.PRODUCTION_PROJECT_LIST} jenkins file merged in ${projectCollection}"
                             nightlyStages(SETTINGS_XML_ID, projectCollection, "rhba/nightly", projectVariableMap)
                         }
-                    }, 2, 720*60)
+                    }, 2, 480*60)
                 }
             }
         }
