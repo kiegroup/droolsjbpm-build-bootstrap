@@ -86,14 +86,23 @@ pipeline {
             }
         }
         always {
-            echo 'JUnit reports ...'
+            script {
+                util.printGitInformationReport()
+            }
+            echo 'Generating JUnit report...'
             junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
 
             echo 'Archiving logs...'
-            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log, **/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
 
-            echo'Archive artifacts'
-            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*' + additionalArtifactsToArchive, excludes: '**/target/checkstyle.log' + additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
+            echo 'Archiving testStatusListener and screenshots artifacts...'
+            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*' + additionalArtifactsToArchive, excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
+
+            echo 'Archiving wars...'
+            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+
+            echo 'Archiving zips...'
+            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
 
             script {
                 if(findbugsFile) {
@@ -101,7 +110,6 @@ pipeline {
                     findbugs canComputeNew: false, defaultEncoding: '', excludePattern: '', healthy: '', includePattern: '', pattern: findbugsFile, unHealthy: ''
                 }
             }
-
             script {
                 if(checkstyleFile) {
                     echo 'Checkstyle reports ...'
