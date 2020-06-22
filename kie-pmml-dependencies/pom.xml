@@ -75,7 +75,6 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-pmml-commons</artifactId>
-     
     </dependency>
     <!-- Compiler -->
     <dependency>
@@ -85,7 +84,6 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-pmml-compiler-core</artifactId>
-     
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
@@ -147,77 +145,6 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-pmml-models-drools-scorecard-evaluator</artifactId>
-    </dependency>
-    <!-- EXTERNAL -->
-    <!-- TEST -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-commons</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <!-- Compiler -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-compiler-api</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-compiler-commons</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <!-- Regression -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-models-regression-compiler</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-models-regression-evaluator</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <!-- Drools -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-models-drools-common</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <!-- Tree -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-pmml-models-drools-tree-compiler</artifactId>
-      <classifier>tests</classifier>
-    </dependency>
-    <!-- EXTERNAL -->
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-test-util</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>ch.qos.logback</groupId>
-          <artifactId>logback-classic</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>ch.qos.logback</groupId>
-          <artifactId>logback-core</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-test-util</artifactId>
-      <classifier>tests</classifier>
-      <exclusions>
-        <exclusion>
-          <groupId>ch.qos.logback</groupId>
-          <artifactId>logback-classic</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>ch.qos.logback</groupId>
-          <artifactId>logback-core</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
 
