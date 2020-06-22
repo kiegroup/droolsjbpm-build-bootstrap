@@ -11,11 +11,12 @@ pipeline {
     parameters {
         string(description: 'The deployment URL', name: 'KIE_GROUP_DEPLOYMENT_REPO_URL')
         booleanParam(description: 'Skip Tests? True as default', name: 'SKIP_TESTS', defaultValue: true)
-        string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'master')
+        string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: '7.39.x')
         string(description: 'The product version', name: 'PRODUCT_VERSION')
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        timeout(time: 720, unit: 'MINUTES')
     }
     stages {
         stage('Initialize') {
