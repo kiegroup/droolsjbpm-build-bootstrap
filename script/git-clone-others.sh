@@ -55,6 +55,8 @@ additionalGitOptions=()
 
 # default repository list is stored in the repository-list.txt file
 REPOSITORY_LIST=`cat "${scriptDir}/repository-list.txt"`
+# Repositories that need to use the branch 7.x instead of master
+BRANCHED_7_REPOSITORY_LIST=`cat "${scriptDir}/branched-7-repository-list.txt"`
 
 for arg in "$@"
 do
@@ -105,6 +107,11 @@ for repository in $REPOSITORY_LIST ; do
         fi
         git clone ${additionalGitOptions[@]} ${gitUrlPrefix}${repository}.git ${repository}
 
+        returnCode=$?
+        if [ $returnCode != 0 ] ; then
+            exit $returnCode
+        fi
+
         if [ "$UPSTREAM" = true ]; then
             upstreamGitUrlPrefix=`echo ${gitUrlPrefix} | sed 's|\(.*github\.com[:/]\).*|\1kiegroup/|'`
             echo -- adding upstream remote "${upstreamGitUrlPrefix}${repository}.git"
@@ -113,9 +120,10 @@ for repository in $REPOSITORY_LIST ; do
             cd ..
         fi
 
-        returnCode=$?
-        if [ $returnCode != 0 ] ; then
-            exit $returnCode
+        if [ `echo "$BRANCHED_7_REPOSITORY_LIST" | grep "^$repository$"` ] ; then
+            cd ${repository}
+            git checkout 7.x
+            cd ..
         fi
     fi
 done
