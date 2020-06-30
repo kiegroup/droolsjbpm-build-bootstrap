@@ -105,6 +105,18 @@ for repository in $REPOSITORY_LIST ; do
         if [ "x${additionalGitOptions}" != "x" ]; then
             echo -- additional Git options: ${additionalGitOptions[@]} --
         fi
+
+        if [ $(echo "$BRANCHED_7_REPOSITORY_LIST" | grep "^$repository$") ] ; then
+            if [[ ${additionalGitOptions[0]} == "-b" ]]; then
+                if [[ ${additionalGitOptions[1]} == "master" ]]; then
+                    echo "ERROR"
+                    echo "    The script argument (-b master) is not supported because you might want 7.x instead on some repo's."
+                    exit 1
+                fi
+            else
+                additionalGitOptions="-b 7.x ${additionalGitOptions}"
+            fi
+        fi
         git clone ${additionalGitOptions[@]} ${gitUrlPrefix}${repository}.git ${repository}
 
         returnCode=$?
@@ -117,12 +129,6 @@ for repository in $REPOSITORY_LIST ; do
             echo -- adding upstream remote "${upstreamGitUrlPrefix}${repository}.git"
             cd ${repository}
             git remote add upstream ${upstreamGitUrlPrefix}${repository}.git
-            cd ..
-        fi
-
-        if [ `echo "$BRANCHED_7_REPOSITORY_LIST" | grep "^$repository$"` ] ; then
-            cd ${repository}
-            git checkout 7.x
             cd ..
         fi
     fi
