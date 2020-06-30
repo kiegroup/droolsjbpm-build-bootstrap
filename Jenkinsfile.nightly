@@ -13,7 +13,6 @@ pipeline {
         booleanParam(description: 'Skip Tests? True as default', name: 'SKIP_TESTS', defaultValue: true)
         string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'master')
         string(description: 'The product version', name: 'PRODUCT_VERSION')
-        string(description: 'The optaplanner specific branch', name: 'OPTAPLANNER_BRANCH')
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
@@ -35,6 +34,7 @@ pipeline {
 
                         // This is the map project, variable to store the version from this project
                         def repositoryListPath = "./script/repository-list.txt"
+                        def branched7RepositoryListPath = "./script/branched-7-repository-list.txt"
                         def projectVariableMap = ['kiegroup_droolsjbpm-build-bootstrap': "kieVersion", 'jboss-integration_izpack': "izpackVersion", 'jboss-integration_installer-commons': "installerCommonsVersion"]
 
                         configFileProvider([configFile(fileId: "49737697-ebd6-4396-9c22-11f7714808eb", variable: 'PRODUCTION_PROJECT_LIST')]) {
@@ -49,7 +49,14 @@ pipeline {
                             println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
                             sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
 
-                            pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", projectVariableMap, ['optaplannerBranch': OPTAPLANNER_BRANCH], [:])
+                            def currentBranch = env.BRANCH_NAME ?: env.GIT_BRANCH
+                            def additionalVariables = [:]
+                            if ('master' == currentBranch) {
+                                def branched7RepositoryListFile = readFile branched7RepositoryListPath
+                                branched7RepositoryListFile.readLines().each { it -> additionalVariables["${it}-scmRevision"] = '7.x' }
+                            }
+
+                            pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", projectVariableMap, additionalVariables, [:])
                         }
                     }, 2, 480*60)
                 }
