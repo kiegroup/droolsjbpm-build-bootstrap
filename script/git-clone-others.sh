@@ -107,7 +107,7 @@ for repository in $REPOSITORY_LIST ; do
         fi
 
         if [ $(echo "$BRANCHED_7_REPOSITORY_LIST" | grep "^$repository$") ] ; then
-            if [[ ${additionalGitOptions[0]} == "-b" ]]; then
+            if [[ ${additionalGitOptions[0]} == "-b" ]] || [[ ${additionalGitOptions[0]} == "--branch" ]]; then
                 if [[ ${additionalGitOptions[1]} == "master" ]]; then
                     echo "ERROR"
                     echo "    The script argument (-b master) is not supported because you might want 7.x instead on some repo's."
