@@ -116,7 +116,7 @@ for repository in $REPOSITORY_LIST ; do
                 repoAdditionalGitOptions=( "-b" "7.x" "${repoAdditionalGitOptions[@]}" )
             fi
         fi
-        git clone ${repoAdditionalGitOptions[@]} ${gitUrlPrefix}${repository}.git ${repository}
+        git clone "${repoAdditionalGitOptions[@]}" ${gitUrlPrefix}${repository}.git ${repository}
 
         returnCode=$?
         if [ $returnCode != 0 ] ; then
