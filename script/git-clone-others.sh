@@ -106,16 +106,17 @@ for repository in $REPOSITORY_LIST ; do
             echo -- additional Git options: ${additionalGitOptions[@]} --
         fi
 
+        repoAdditionalGitOptions=( "${additionalGitOptions[@]}" )
         if [ $(echo "$BRANCHED_7_REPOSITORY_LIST" | grep "^$repository$") ] ; then
             if [[ ${additionalGitOptions[0]} == "-b" ]] || [[ ${additionalGitOptions[0]} == "--branch" ]]; then
                 if [[ ${additionalGitOptions[1]} == "master" ]]; then
-                  additionalGitOptions[1]="7.x"
+                  repoAdditionalGitOptions[1]="7.x"
                 fi
             else
-                additionalGitOptions=("-b" "7.x" "${additionalGitOptions[@]}")
+                repoAdditionalGitOptions=( "-b" "7.x" "${repoAdditionalGitOptions[@]}" )
             fi
         fi
-        git clone ${additionalGitOptions[@]} ${gitUrlPrefix}${repository}.git ${repository}
+        git clone ${repoAdditionalGitOptions[@]} ${gitUrlPrefix}${repository}.git ${repository}
 
         returnCode=$?
         if [ $returnCode != 0 ] ; then
