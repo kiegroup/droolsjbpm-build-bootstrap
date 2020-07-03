@@ -98,12 +98,6 @@ pipeline {
             echo 'Archiving testStatusListener and screenshots artifacts...'
             archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*' + additionalArtifactsToArchive, excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
 
-            echo 'Archiving wars...'
-            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving zips...'
-            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
             script {
                 if(findbugsFile) {
                     echo 'Findbugs reports ...'
