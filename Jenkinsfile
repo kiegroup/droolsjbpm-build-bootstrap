@@ -39,7 +39,6 @@ pipeline {
             steps {
                 script {
                     def file =  (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream\.production/).find() ? 'downstream.production.stages' :
-                                (JOB_NAME =~ /\/new-[a-z,A-Z\-]*\.downstream/).find() ? 'new.downstream.stages' :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-]*\.downstream/).find() ? 'downstream.stages' :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-]*\.pullrequest/).find() ? 'pullrequest.stages' :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-]*\.compile/).find() ? 'compilation.stages' :
