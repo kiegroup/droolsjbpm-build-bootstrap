@@ -24,12 +24,23 @@ pipeline {
 
             }
         }
-        stage('Build Nightly projects') {
+        stage('Clone build configuration repo') {
             steps {
                 script {
                     println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL} into build_config folder"
                     sh "git clone ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
-
+                    def currentBranch = env.BRANCH_NAME ?: env.GIT_BRANCH
+                    if(!fileExists("$WORKSPACE/build_config/rhba/nightly/${currentBranch}")) {
+                        def errorMsg = "[ERROR] the folder $WORKSPACE/build_config/rhba/nightly/${currentBranch} does not exist. Please contact with the administrator to create it"
+                        println errorMsg
+                        throw new Exception(errorMsg)
+                    }
+                }
+            }
+        }
+        stage('Build Nightly projects') {
+            steps {
+                script {
                     def pipelineHelper = new PipelineHelper(this)
                     pipelineHelper.retry(
                     {
@@ -56,7 +67,7 @@ pipeline {
                                 branched7RepositoryListFile.readLines().each { additionalVariables["${it}-scmRevision"] = '7.x' }
                             }
 
-                            pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", projectVariableMap, additionalVariables, [:])
+                            pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly/${currentBranch}", "${env.PME_CLI_PATH}", projectVariableMap, additionalVariables, [:])
                         }
                     }, 2, 480*60)
                 }
