@@ -179,7 +179,6 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             mvnVersionsSet
             # update version that are not automatically updated
             sed -i "s/<version>$kieOldVersion<\/version>/<version>$newVersion<\/version>/" pom.xml
-            sed -i "s/<version.org.kie>$kieOldVersion<\/version.org.kie>/<version.org.kie>$newVersion<\/version.org.kie>/" pom.xml
             returnCode=$?
 
         elif [ "$repository" == "optaplanner" ]; then
