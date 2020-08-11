@@ -161,6 +161,8 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             cd kie-user-bom-parent
             mvnVersionsSet
             cd ..
+            # the child poms (all boms/pom.xml) have to be updated
+            mvnVersionsUpdateChildModules
             # update version that are not automatically updated
             sed -i "s/<version.org.kie>$kieOldVersion<\/version.org.kie>/<version.org.kie>$newVersion<\/version.org.kie>/" pom.xml
             # workaround for http://jira.codehaus.org/browse/MVERSIONS-161
