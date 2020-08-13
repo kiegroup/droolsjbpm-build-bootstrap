@@ -21,5 +21,5 @@ How to retest a PR or trigger a specific build:
 
 * <b>a full production downstream build</b> please add comment: <b>Jenkins execute product fdb</b>
 
-* <b>an upstream build</b> please add comment: <b>Jenkins run upstream.*]</b>
+* <b>an upstream build</b> please add comment: <b>Jenkins run upstream</b>
 </pre>
