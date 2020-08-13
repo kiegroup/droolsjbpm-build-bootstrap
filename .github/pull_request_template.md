@@ -6,18 +6,11 @@
 
 **referenced Pull Requests**: _(please edit the URLs of referenced pullrequests if they exist)_
 
-paste the link(s) from GitHub here
+* paste the link(s) from GitHub here
+* link 2
+* link 3
 
-**How to retest or run**:
-
-* a pull request please add comment: regex **[.\*[j|J]enkins,?.\*(retest|test) this.\*]**
-  
-* a full downstream build please add comment: regex **[.*\[j|J]enkins,?.\*(execute|run|trigger|start|do) fdb.\*]**
-  
-* a compile downstream build please  add comment: regex **[.\*[j|J]enkins,?.\*(execute|run|trigger|start|do) cdb.\*]**
-
-* a full production downstream please add comment: regex **[.\*[j|J]enkins,?.\*(execute|run|trigger|start|do) product fdb.\*]**
-
-* an upstream build please add comment: regex **[.\*[j|J]enkins,?.\*(execute|run|trigger|start|do) upstream.\*]**
-
-i.e for running a full downstream build =  **Jenkins do fdb**
+To see how a PR can be re-tested, how to trigger another usefull build, how to customize your template or how to configure your GitHub  
+to use saved replies please see  
+* [trigger-phrases](https://mojo.redhat.com/docs/DOC-1230335-pull-request-full-downstream-builds-compile-downstream-builds) or  
+* [saved replies](https://docs.github.com/en/enterprise/2.20/user/github/writing-on-github/creating-a-saved-reply)
