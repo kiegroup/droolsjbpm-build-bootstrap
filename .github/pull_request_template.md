@@ -8,9 +8,20 @@
 
 * paste the link(s) from GitHub here
 * link 2
-* link 3
+* link 3 etc.
 
-To see how a PR can be re-tested, how to trigger another usefull build, how to customize your template or how to configure your GitHub  
-to use saved replies please see  
-* [trigger-phrases](https://mojo.redhat.com/docs/DOC-1230335-pull-request-full-downstream-builds-compile-downstream-builds) or  
-* [saved replies](https://docs.github.com/en/enterprise/2.20/user/github/writing-on-github/creating-a-saved-reply)
+<pre>
+How to retest a PR or trigger a specific build:
+
+* <b>a pull request</b> please add comment: regex <b>[.*[j|J]enkins,?.*(retest|test) this.*]</b>
+ 
+* <b>a full downstream build</b> please add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) fdb.*]</b>
+  
+* <b>a compile downstream build</b> please  add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) cdb.*]</b>
+
+* <b>a full production downstream build</b> please add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) product fdb.*]</b>
+
+* <b>an upstream build</b> please add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) upstream.*]</b>
+
+i.e for running a full downstream build =  <b>Jenkins do fdb</b>
+</pre>
