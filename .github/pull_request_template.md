@@ -13,15 +13,13 @@
 <pre>
 How to retest a PR or trigger a specific build:
 
-* <b>a pull request</b> please add comment: regex <b>[.*[j|J]enkins,?.*(retest|test) this.*]</b>
+* <b>a pull request</b> please add comment: <b>Jenkins retest this</b>
  
-* <b>a full downstream build</b> please add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) fdb.*]</b>
+* <b>a full downstream build</b> please add comment: <b>Jenkins run fdb.</b>
   
-* <b>a compile downstream build</b> please  add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) cdb.*]</b>
+* <b>a compile downstream build</b> please  add comment: <b>Jenkins run cdb</b>
 
-* <b>a full production downstream build</b> please add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) product fdb.*]</b>
+* <b>a full production downstream build</b> please add comment: <b>Jenkins execute product fdb</b>
 
-* <b>an upstream build</b> please add comment: regex <b>[.*[j|J]enkins,?.*(execute|run|trigger|start|do) upstream.*]</b>
-
-i.e for running a full downstream build =  <b>Jenkins do fdb</b>
+* <b>an upstream build</b> please add comment: <b>Jenkins run upstream.*]</b>
 </pre>
