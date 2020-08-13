@@ -15,7 +15,7 @@ How to retest a PR or trigger a specific build:
 
 * <b>a pull request</b> please add comment: <b>Jenkins retest this</b>
  
-* <b>a full downstream build</b> please add comment: <b>Jenkins run fdb.</b>
+* <b>a full downstream build</b> please add comment: <b>Jenkins run fdb</b>
   
 * <b>a compile downstream build</b> please  add comment: <b>Jenkins run cdb</b>
 
