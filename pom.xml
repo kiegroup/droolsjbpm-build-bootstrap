@@ -54,7 +54,6 @@
       - Version properties must be sorted alphabetically (other form of sorting were found to be unclear and ambiguous).
     -->
     <version.aopalliance>1.0</version.aopalliance>
-    <version.asm>7.1</version.asm>
     <version.ch.qos.cal10n>0.8.1</version.ch.qos.cal10n>
     <version.ch.qos.logback>1.2.3</version.ch.qos.logback>
     <version.commons-beanutils>1.9.4</version.commons-beanutils>
@@ -316,7 +315,7 @@
     <version.com.google.elemental2>1.1.0</version.com.google.elemental2>
     <version.org.jboss.errai>4.9.0.Final</version.org.jboss.errai>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
-    <version.org.jboss.errai.wildfly>19.1.0.Final</version.org.jboss.errai.wildfly>
+    <version.org.jboss.errai.wildfly>19.1.0.SP1</version.org.jboss.errai.wildfly>
     <!-- Required by jboss-remoting version above -->
     <version.org.ow2.asm>7.1</version.org.ow2.asm>
     <version.org.wildfly.security>1.10.4.Final</version.org.wildfly.security>
@@ -2140,13 +2139,6 @@
         <groupId>aopalliance</groupId>
         <artifactId>aopalliance</artifactId>
         <version>${version.aopalliance}</version>
-      </dependency>
-
-      <!-- Starting from asm 4.0 the groupId will need change to org.ow2.asm -->
-      <dependency>
-        <groupId>asm</groupId>
-        <artifactId>asm</artifactId>
-        <version>${version.asm}</version>
       </dependency>
 
       <!-- Required by Thorntail -->
