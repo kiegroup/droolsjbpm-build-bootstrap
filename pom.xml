@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.44.0-SNAPSHOT</version>
+  <version>7.45.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -185,7 +185,7 @@
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
     <version.org.hibernate>5.3.17.Final</version.org.hibernate>
-    <version.org.hibernate.validator>6.0.18.Final</version.org.hibernate.validator>
+    <version.org.hibernate.validator>6.0.20.Final</version.org.hibernate.validator>
     <version.org.hibernate.commons.annotations>5.0.5.Final</version.org.hibernate.commons.annotations>
     <version.org.hornetq>2.4.7.Final</version.org.hornetq>
     <version.org.infinispan>9.4.19.Final</version.org.infinispan>
@@ -237,7 +237,6 @@
     <version.org.jsoup>1.8.3</version.org.jsoup>
     <version.org.junit>5.5.2</version.org.junit>
     <version.org.keycloak>9.0.3</version.org.keycloak>
-    <version.log4j>1.2.17</version.log4j>
     <version.org.apache.logging.log4j>2.13.2</version.org.apache.logging.log4j>
     <version.org.mvel>2.4.10.Final</version.org.mvel>
     <version.org.ocpsoft.prettytime>3.0.2.Final</version.org.ocpsoft.prettytime>
@@ -284,7 +283,7 @@
     <version.xpp3>${version.xmlpull}</version.xpp3>
 
     <!-- Internal dependencies -->
-    <version.org.kie>7.44.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.45.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
@@ -372,7 +371,7 @@
     <!-- Make OSGi happy -->
     <osgi.snapshot.qualifier>${maven.build.timestamp}</osgi.snapshot.qualifier>
 
-    <version.io.netty>4.1.46.Final</version.io.netty>
+    <version.io.netty>4.1.51.Final</version.io.netty>
     <!-- IMPORTANT: Don't use this dependency. The right dependency version is the one named as "version.io.netty".
          This is just needed by Elasticsearch Transport Plugin because it has a compatibility mode with netty 3 and
          it can't be removed -->
@@ -2656,30 +2655,6 @@
         <groupId>org.junit.vintage</groupId>
         <artifactId>junit-vintage-engine</artifactId>
         <version>${version.org.junit}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${version.log4j}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>ant</groupId>
-            <artifactId>ant-nodeps</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>ant-contrib</groupId>
-            <artifactId>ant-contrib</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>ant</groupId>
-            <artifactId>ant-junit</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>sun.jdk</groupId>
-            <artifactId>tools</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
 
       <dependency>
