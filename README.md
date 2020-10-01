@@ -795,3 +795,4 @@ FAQ
         * with [Open Hub](https://www.openhub.net/p/jboss-drools/contributors) which also has statistics
 
         * in [the GitHub web interface](https://github.com/kiegroup).
+.
