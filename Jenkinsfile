@@ -38,9 +38,9 @@ pipeline {
         stage('Build projects') {
             steps {
                 script {
-                    def file =  (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.downstream\.production/).find() ? 'downstream.production.stages' :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.downstream/).find() ? 'fullDownstream.stages' :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.pullrequest/).find() ? 'pullrequest.stages' :
+                    def file =  (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.fdbp/).find() ? 'downstream.production.stages' :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.fdb/).find() ? 'fullDownstream.stages' :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.pr/).find() ? 'pullrequest.stages' :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.compile/).find() ? 'compilation.stages' :
                                 'upstream.stages'
                     if(fileExists("$WORKSPACE/.ci/${file}")) {
@@ -59,6 +59,29 @@ pipeline {
                             def stage = load("${file}")
                             stage("$WORKSPACE/droolsjbpm-build-bootstrap/.ci")
                         }
+                    }
+                }
+            }
+        }
+        stage('Sonar analysis') {
+            tools {
+              jdk "kie-jdk11"
+            }
+            steps {
+                script {
+                    def file =  (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.pr/).find() ? 'sonarAnalysis.stages' : null
+                    if(file) {
+                      if(fileExists("$WORKSPACE/.ci/${file}")) {
+                        println "File ${file} exists, loading it."
+                        def stage = load("$WORKSPACE/.ci/${file}")
+                        stage("$WORKSPACE/.ci")
+                      } else {
+                          dir("droolsjbpm-build-bootstrap") {
+                              println "Loading ${file} file..."
+                              def stage = load("${file}")
+                              stage("$WORKSPACE/droolsjbpm-build-bootstrap/.ci")
+                          }
+                      }
                     }
                 }
             }
