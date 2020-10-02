@@ -1461,7 +1461,7 @@
             <links>
               <link>http://docs.oracle.com/javase/8/docs/api</link>
             </links>
-            <source>${maven.compiler.source}</source>
+            <source>${maven.compiler.source.jdk8}</source>
             <minmemory>128m</minmemory>
             <maxmemory>512m</maxmemory>
             <author>false</author>
@@ -1878,6 +1878,11 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+              <links>
+                <link>http://docs.oracle.com/javase/8/docs/api</link>
+              </links>
+            </configuration>
             <executions>
               <execution>
                 <phase>package</phase>
@@ -1885,7 +1890,7 @@
                   <goal>jar</goal>
                 </goals>
                 <configuration>
-                  <source>${maven.compiler.source}</source>
+                  <source>${maven.compiler.source.jdk8}</source>
                 </configuration>
               </execution>
             </executions>
@@ -1963,7 +1968,10 @@
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-javadoc-plugin</artifactId>
               <configuration>
-                <source>${maven.compiler.source}</source>
+                <source>${maven.compiler.source.jdk8}</source>
+                <links>
+                  <link>http://docs.oracle.com/javase/8/docs/api</link>
+                </links>
                 <additionalDependencies>
                   <additionalDependency>
                     <groupId>org.jboss.spec.javax.transaction</groupId>
@@ -1994,7 +2002,10 @@
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-javadoc-plugin</artifactId>
               <configuration>
-                <source>${maven.compiler.source}</source>
+                <source>${maven.compiler.source.jdk8}</source>
+                <links>
+                  <link>http://docs.oracle.com/javase/8/docs/api</link>
+                </links>
               </configuration>
             </plugin>
           </plugins>
