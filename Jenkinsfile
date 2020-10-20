@@ -56,9 +56,38 @@ pipeline {
                             println "File ${file} does not exist. Loading the one from droolsjbpm-build-bootstrap project. Author [${changeAuthor}], branch [${changeBranch}]..."
                             githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "${changeAuthor}", "${changeBranch}", 'kiegroup', "${changeTarget}")
                             println "Loading ${file} file..."
-                            def stage = load("${file}")
+                            def stage = load(".ci/${file}")
                             stage("$WORKSPACE/droolsjbpm-build-bootstrap/.ci")
                         }
+                    }
+                }
+            }
+        }
+        stage('Sonar analysis') {
+            tools {
+              jdk "kie-jdk11"
+            }
+            steps {
+                script {
+                    def file =  (JOB_NAME =~ /\/[a-z,A-Z\-0-9\.]*\.pr/).find() ? 'sonarAnalysis.stages' : null
+                    if(file) {
+                      if(fileExists("$WORKSPACE/.ci/${file}")) {
+                        println "File ${file} exists, loading it."
+                        def stage = load("$WORKSPACE/.ci/${file}")
+                        stage("$WORKSPACE/.ci")
+                      } else {
+                        dir("droolsjbpm-build-bootstrap") {
+                            def changeAuthor = env.CHANGE_AUTHOR ?: env.ghprbPullAuthorLogin
+                            def changeBranch = env.CHANGE_BRANCH ?: env.ghprbSourceBranch
+                            def changeTarget = env.CHANGE_TARGET ?: env.ghprbTargetBranch
+
+                            println "File ${file} does not exist. Loading the one from droolsjbpm-build-bootstrap project. Author [${changeAuthor}], branch [${changeBranch}]..."
+                            githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "${changeAuthor}", "${changeBranch}", 'kiegroup', "${changeTarget}")
+                            println "Loading ${file} file..."
+                            def stage = load(".ci/${file}")
+                            stage("$WORKSPACE/droolsjbpm-build-bootstrap/.ci")
+                        }
+                      }
                     }
                 }
             }

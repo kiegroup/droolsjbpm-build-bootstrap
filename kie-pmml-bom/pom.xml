@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.45.0-SNAPSHOT</version>
+    <version>7.46.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
@@ -65,6 +65,21 @@
   <dependencyManagement>
     <dependencies>
       <!-- PMML -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-api</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-commons</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-commons</artifactId>
@@ -172,8 +187,156 @@
         <artifactId>kie-pmml-models-mining-evaluator</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
+      <!-- SOURCES -->
+      <!-- PMML -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-commons</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-commons</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Compiler -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-compiler-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-compiler-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-compiler-commons</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Evaluator -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-evaluator-api</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-evaluator-core</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-evaluator-assembler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Drools -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-common</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Regression -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-regression-model</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-regression-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-regression-evaluator</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Tree -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-tree-model</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-tree-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-tree-evaluator</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Scorecard -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-scorecard-model</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-scorecard-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-drools-scorecard-evaluator</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Mining -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-mining-model</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-mining-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-mining-evaluator</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
       <!-- EXTERNAL -->
       <!-- TEST -->
+      <!-- Commons -->
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-commons</artifactId>
@@ -191,6 +354,19 @@
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-compiler-commons</artifactId>
         <classifier>tests</classifier>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <!-- Evaluator -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-evaluator-core</artifactId>
+        <classifier>tests</classifier>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <!-- Tests -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tests</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <!-- Regression -->
