@@ -24,7 +24,7 @@ pipeline {
         stage('Initialize') {
             steps {
                 sh 'printenv'
-
+                sh 'npm install -g @kie/build-chain-action'
             }
         }
         // executes a script that compresses the consoleText and attaches it to the mail
@@ -37,30 +37,7 @@ pipeline {
         }
         stage('Build projects') {
             steps {
-                script {
-                    def file =  (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdbp/).find() ? 'downstream.production.stages' :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdb/).find() ? 'fullDownstream.stages' :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.pr/).find() ? 'pullrequest.stages' :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.compile/).find() ? 'compilation.stages' :
-                                'upstream.stages'
-                    if(fileExists("$WORKSPACE/.ci/${file}")) {
-                        println "File ${file} exists, loading it."
-                            def stage = load("$WORKSPACE/.ci/${file}")
-                            stage("$WORKSPACE/.ci")
-                    } else {
-                        dir("droolsjbpm-build-bootstrap") {
-                            def changeAuthor = env.CHANGE_AUTHOR ?: env.ghprbPullAuthorLogin
-                            def changeBranch = env.CHANGE_BRANCH ?: env.ghprbSourceBranch
-                            def changeTarget = env.CHANGE_TARGET ?: env.ghprbTargetBranch
-
-                            println "File ${file} does not exist. Loading the one from droolsjbpm-build-bootstrap project. Author [${changeAuthor}], branch [${changeBranch}]..."
-                            githubscm.checkoutIfExists('droolsjbpm-build-bootstrap', "${changeAuthor}", "${changeBranch}", 'kiegroup', "${changeTarget}")
-                            println "Loading ${file} file..."
-                            def stage = load(".ci/${file}")
-                            stage("$WORKSPACE/droolsjbpm-build-bootstrap/.ci")
-                        }
-                    }
-                }
+                sh "build-chain-action -df=https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/pull-request-config.yaml -url=${env.ghprbPullLink}"
             }
         }
         stage('Sonar analysis') {
