@@ -10,6 +10,13 @@ default:
       upstream: rm -rf ./*
 
 build:
+  - project: kiegroup/lienzo-core
+    build-command:
+      current: ls
+    archive-artifacts:
+      path: |
+        **/myfile.txt
+
   - project: kiegroup/appformer
     build-command:
       upstream: mvn -e clean install -DskipTests -Dgwt.compiler.skip=true -Dgwt.skipCompilation=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dspotbugs.skip=true -Drevapi.skip=true
