@@ -37,7 +37,9 @@ pipeline {
         }
         stage('Build projects') {
             steps {
-                sh "build-chain-action -df=https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/pull-request-config.yaml -url=${env.ghprbPullLink}"
+                withCredentials([string(credentialsId: 'kie-ci3-token', variable: 'GITHUB_TOKEN')]) {
+                    sh "env GITHUB_TOKEN=${GITHUB_TOKEN} build-chain-action -df='https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/pull-request-config.yaml' -url=${env.ghprbPullLink}"
+                }
             }
         }
         stage('Sonar analysis') {
