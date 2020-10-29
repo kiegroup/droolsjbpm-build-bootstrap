@@ -15,7 +15,8 @@ dependencies:
       - project: kiegroup/droolsjbpm-build-bootstrap
 
   - project: kiegroup/appformer
-    dependencies:
+    dependencies:    
+      - project: kiegroup/lienzo-core
       - project: kiegroup/droolsjbpm-build-bootstrap
       - project: kiegroup/lienzo-tests
       - project: kiegroup/kie-soup
@@ -79,11 +80,13 @@ dependencies:
 
   - project: kiegroup/kie-wb-common
     dependencies:
+      - project: kiegroup/lienzo-core
       - project: kiegroup/kie-wb-playground
       - project: kiegroup/droolsjbpm-integration
 
   - project: kiegroup/drools-wb
     dependencies:
+      - project: kiegroup/lienzo-core
       - project: kiegroup/kie-wb-common
 
   - project: kiegroup/optaplanner-wb
