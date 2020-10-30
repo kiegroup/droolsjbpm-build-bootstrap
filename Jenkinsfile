@@ -37,8 +37,17 @@ pipeline {
         }
         stage('Build projects') {
             steps {
-                withCredentials([string(credentialsId: 'kie-ci3-token', variable: 'GITHUB_TOKEN')]) {
-                    sh "env GITHUB_TOKEN=${GITHUB_TOKEN} build-chain-action -df='https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/pull-request-config.yaml' -url=${env.ghprbPullLink}"
+                script {
+                    def buildChainActionInfo =  
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdbp/).find() ? [action: 'fdb', file: 'downstream-production-config.yaml'] :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdb/).find() ? [action: 'fdb', file: 'full-downstream-config.yaml'] :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.pr/).find() ? [action: 'pr', file: 'pull-request-config.yaml'] :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.compile/).find() ? [action: 'compilation', file: 'compilation-config.yaml'] :
+                                [action: 'pr', file: 'upstream-config.yaml']
+
+                    withCredentials([string(credentialsId: 'kie-ci3-token', variable: 'GITHUB_TOKEN')]) {
+                        sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/${buildChainActionInfo.file}' build ${buildChainActionInfo.action} -url=${env.ghprbPullLink}"
+                    }
                 }
             }
         }
