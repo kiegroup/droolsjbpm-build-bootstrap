@@ -127,15 +127,15 @@ dependencies:
     dependencies:
       - project: kiegroup/optaplanner
 
-  - project: kiegroup/kie-wb-distributions
+  - project: kiegroup/kie-wb-distributions  
     dependencies:
-      - project: kiegroup/appformer
       - project: kiegroup/kie-soup
       - project: kiegroup/drools
+      - project: kiegroup/jbpm
       - project: kiegroup/optaplanner
         mapping:
           source: master
           target: 7.x
-      - project: kiegroup/jbpm
-      - project: kiegroup/kie-uberfire-extensions
       - project: kiegroup/jbpm-wb
+      - project: kiegroup/appformer
+      - project: kiegroup/kie-uberfire-extensions      
