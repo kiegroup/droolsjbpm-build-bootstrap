@@ -39,10 +39,10 @@ pipeline {
             steps {
                 script {
                     def buildChainActionInfo =  
-                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdbp/).find() ? [action: 'fdb', file: 'downstream-production-config.yaml'] :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdb/).find() ? [action: 'fdb', file: 'full-downstream-config.yaml'] :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdbp/).find() ? [action: 'fd', file: 'downstream-production-config.yaml'] :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.fdb/).find() ? [action: 'fd', file: 'full-downstream-config.yaml'] :
                                 (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.pr/).find() ? [action: 'pr', file: 'pull-request-config.yaml'] :
-                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.compile/).find() ? [action: 'single', file: 'compilation-config.yaml'] :
+                                (JOB_NAME =~ /\/[a-z,A-Z\-\_0-9\.]*\.compile/).find() ? [action: 'fd', file: 'compilation-config.yaml'] :
                                 [action: 'pr', file: 'upstream-config.yaml']
 
                     withCredentials([string(credentialsId: 'kie-ci3-token', variable: 'GITHUB_TOKEN')]) {
