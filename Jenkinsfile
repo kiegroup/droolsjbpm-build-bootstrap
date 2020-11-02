@@ -24,7 +24,6 @@ pipeline {
         stage('Initialize') {
             steps {
                 sh 'printenv'
-                sh 'npm install -g @kie/build-chain-action'
             }
         }
         // executes a script that compresses the consoleText and attaches it to the mail
