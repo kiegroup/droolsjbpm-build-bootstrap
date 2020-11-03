@@ -73,10 +73,8 @@ pipeline {
                     def project = util.getProjectGroupName(util.getProject(gitURL))[1]
                     if(["optaplanner", "drools", "appformer", "jbpm", "drools-wb", "kie-soup", "droolsjbpm-integration", "kie-wb-common", "openshift-drools-hacep", "optaweb-employee-rostering", "optaweb-vehicle-routing"].contains(project))
                     {
-                        configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_XML_UPSTREAM')]) {
-                            dir("${env.WORKSPACE}") {
-                                maven.runMavenWithSettingsSonar("771ff52a-a8b4-40e6-9b22-d54c7314aa1e", "-nsu generate-resources -Psonarcloud-analysis", "SONARCLOUD_TOKEN", "sonar_analysis.maven.log")
-                            }
+                        dir("${env.WORKSPACE}") {
+                            maven.runMavenWithSettingsSonar("771ff52a-a8b4-40e6-9b22-d54c7314aa1e", "-nsu generate-resources -Psonarcloud-analysis", "SONARCLOUD_TOKEN", "sonar_analysis.maven.log")
                         }
                     } else {
                         println "Project ${project} shouldn't be analyzed"
