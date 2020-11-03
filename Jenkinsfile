@@ -77,7 +77,7 @@ pipeline {
                             maven.runMavenWithSettingsSonar("771ff52a-a8b4-40e6-9b22-d54c7314aa1e", "-nsu generate-resources -Psonarcloud-analysis", "SONARCLOUD_TOKEN", "sonar_analysis.maven.log")
                         }
                     } else {
-                        println "Project ${project} shouldn't be analyzed"
+                        println "Project ${project} shouldn't be analyzed by sonarcloud"
                     }
                 }
             }
