@@ -4467,6 +4467,15 @@
         <groupId>xerces</groupId>
         <artifactId>xercesImpl</artifactId>
         <version>${version.xerces}</version>
+        <!-- to align as of 2.12.0.SP2 from jboss https://github.com/jboss/xerces/commit/c712551a021a96bda4b08a547efdc41822c7ebc4#diff-9c5fb3d1b7e3b0f54bc5c4182965c4fe1f9023d449017cece3005d3f90e8e4d8R93-R108
+             we exclude from Maven central available 2.12.0 the xml-apis dependencies (or duplicates would be found in package javax/xml/stream for xml-apis:xml-apis:jar:1.4.01 imported by xercesImpl and stax:stax-api:jar or other Stax dependencies
+          -->
+        <exclusions> 
+          <exclusion>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
