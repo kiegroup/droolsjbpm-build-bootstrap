@@ -27,7 +27,7 @@ jobs:
           file-type: repository-list
           output-file-path: ./script/repository-list.txt
           exclude: "@master:7.x"
-      - name: Repository List Generation
+      - name: Optaplanner Repository List Generation
         uses: kiegroup/build-chain-files-generator@main
         with:
           definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/master/.ci/pull-request-config.yaml
