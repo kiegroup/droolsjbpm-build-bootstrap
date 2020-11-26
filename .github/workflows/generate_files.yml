@@ -1,0 +1,51 @@
+name: Build Chain Generate Files
+
+on:
+  pull_request:
+    paths:
+      - '.ci/**'
+
+jobs:
+  build-chain:
+    runs-on: ubuntu-latest
+    name: File Generation
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Image Generation
+        uses: kiegroup/build-chain-files-generator@main
+        with:
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/master/.ci/pull-request-config.yaml
+          file-type: image
+          output-file-path: ./docs/project-dependencies-hierarchy.png
+      - name: Repository List Generation
+        uses: kiegroup/build-chain-files-generator@main
+        with:
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/master/.ci/pull-request-config.yaml
+          file-type: repository-list
+          output-file-path: ./script/repository-list.txt
+          exclude: "@master:7.x"
+      - name: Repository List Generation
+        uses: kiegroup/build-chain-files-generator@main
+        with:
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/master/.ci/pull-request-config.yaml
+          file-type: repository-list
+          output-file-path: ./script/branched-7-repository-list.txt
+          include: "@master:7.x"
+      - name: Push Changes
+        run: |
+          git config user.name "kiegroup"
+          git config user.email "kiegroup@redhat.com"
+          git add ./doc/project-dependencies-hierarchy.png ./script/repository-list.txt
+          git commit -m "[Build Chain Generate Files] project hierarchy files updated"
+          git push
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: generated-files
+          path: |
+            **/project-dependencies-hierarchy.png
+            **/repository-list.txt          
+            **/branched-7-repository-list.txt          
