@@ -44,8 +44,14 @@ pipeline {
                                 isCompile() ? [action: 'fd', file: 'compilation-config.yaml'] :
                                 [action: 'pr', file: 'upstream-config.yaml']
 
-                    withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
-                        sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/${buildChainActionInfo.file}' build ${buildChainActionInfo.action} -url=${env.ghprbPullLink}"
+                    def SETTINGS_XML_ID =  
+                                isFDBP() ? '5d9884a1-178a-4d67-a3ac-9735d2df2cef' :
+                                '771ff52a-a8b4-40e6-9b22-d54c7314aa1e'
+
+                    configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
+                        withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
+                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/${buildChainActionInfo.file}' build ${buildChainActionInfo.action} -url=${env.ghprbPullLink} -cc='-s ${MAVEN_SETTINGS_FILE}'"
+                        }
                     }
                 }
             }
