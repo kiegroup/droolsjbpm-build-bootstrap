@@ -1,7 +1,9 @@
 name: Build Chain Generate Files
 
 on:
-  pull_request:
+  push:
+    branches:
+      - master
     paths:
       - '.ci/**'
 
@@ -11,11 +13,6 @@ jobs:
     name: File Generation
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.event.pull_request.head.ref }}
-          token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Image Generation
         uses: kiegroup/build-chain-files-generator@main
         with:
@@ -35,13 +32,8 @@ jobs:
           file-type: repository-list
           output-file-path: ./script/branched-7-repository-list.txt
           include: "@master:7.x"
-      - name: Push Changes
-        run: |
-          git config user.name "kiegroup"
-          git config user.email "kiegroup@redhat.com"
-          git add ./docs/project-dependencies-hierarchy.png ./script/repository-list.txt
-          git commit -m "[Build Chain Generate Files] project hierarchy files updated"
-          git push
+      - name: Add Changes
+        run: git add ./docs/project-dependencies-hierarchy.png ./script/repository-list.txt ./script/branched-7-repository-list.txt
       - name: Archive artifacts
         uses: actions/upload-artifact@v2
         with:
@@ -49,4 +41,29 @@ jobs:
           path: |
             **/project-dependencies-hierarchy.png
             **/repository-list.txt          
-            **/branched-7-repository-list.txt          
+            **/branched-7-repository-list.txt           
+      - name: Set branch name
+        run: echo "BRANCH_NAME_FLOW=generate_files_$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV          
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update build chain files
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: ${{ env.BRANCH_NAME_FLOW }}
+          delete-branch: true
+          title: '[Build Chain] Update build chain and repository-list files.'
+          body: |
+            Update report
+            - ./docs/project-dependencies-hierarchy.png
+            - ./script/repository-list.txt
+            - ./script/branched-7-repository-list.txt
+          reviewers: mbiarnes,ginxo,mareknovotny
+          draft: false
+      - name: Check outputs
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
