@@ -28,7 +28,6 @@ jobs:
           definition-file: .ci/pull-request-config.yaml
           file-type: repository-list
           output-file-path: ./script/repository-list.txt
-          exclude: "@master:7.x"
       - name: Optaplanner Repository List Generation
         uses: kiegroup/build-chain-files-generator@main
         with:
