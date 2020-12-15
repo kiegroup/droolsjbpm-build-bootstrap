@@ -75,6 +75,11 @@
         <artifactId>kie-pmml-commons</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-dependencies</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
       <!-- Compiler -->
       <dependency>
         <groupId>org.kie</groupId>
@@ -110,7 +115,7 @@
       <!-- Kie dep -->
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-kie-dependencies</artifactId>
+        <artifactId>kie-pmml-kie-internal</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <!-- Drools -->
@@ -238,7 +243,7 @@
       <!-- Kie dep -->
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-kie-dependencies</artifactId>
+        <artifactId>kie-pmml-kie-internal</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
