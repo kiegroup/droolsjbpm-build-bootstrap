@@ -4063,6 +4063,12 @@
 
       <dependency>
         <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-admin-client</artifactId>
+        <version>${version.org.keycloak}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
         <artifactId>keycloak-core</artifactId>
         <version>${version.org.keycloak}</version>
       </dependency>
@@ -4396,6 +4402,12 @@
       <dependency>
         <groupId>org.testcontainers</groupId>
         <artifactId>kafka</artifactId>
+        <version>${version.org.testcontainers}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>testcontainers</artifactId>
         <version>${version.org.testcontainers}</version>
         <scope>test</scope>
       </dependency>
