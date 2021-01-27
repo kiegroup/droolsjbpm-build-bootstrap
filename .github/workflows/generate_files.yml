@@ -12,6 +12,24 @@ jobs:
     runs-on: ubuntu-latest
     name: File Generation
     steps:
+      - id: files_changes
+        uses: jitterbit/get-changed-files@v1
+      - id: build_chain_info
+        run: |
+          files_string=""
+          for changed_file in ${{ steps.files_changes.outputs.all }}; do
+            files_string="${files_string}
+            - ${changed_file}"
+            echo "Changed file ${changed_file}."
+          done
+
+          files_string="${files_string//'%'/'%25'}"
+          files_string="${files_string//$'\n'/'%0A'}"
+          files_string="${files_string//$'\r'/'%0D'}"
+          echo "::set-output name=files_string::${files_string}"
+          echo "::set-output name=commitURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
+          echo "::set-output name=jobURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
       - uses: actions/checkout@v2
       - name: Image Generation
         uses: kiegroup/build-chain-files-generator@main
@@ -57,10 +75,10 @@ jobs:
           delete-branch: true
           title: '[Build Chain] Update build chain and repository-list files.'
           body: |
-            Update report
-            - ./docs/project-dependencies-hierarchy.png
-            - ./script/repository-list.txt
-            - ./script/branched-7-repository-list.txt
+            # Update Report
+            **Pull Request created by:** ${{ steps.build_chain_info.outputs.jobURL }}
+            These files where changed by ${{ steps.build_chain_info.outputs.commitURL }}
+            ${{ steps.build_chain_info.outputs.files_string }}
           reviewers: mbiarnes,ginxo,mareknovotny
           draft: false
       - name: Check outputs
