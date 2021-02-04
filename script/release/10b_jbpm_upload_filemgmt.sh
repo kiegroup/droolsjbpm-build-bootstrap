@@ -66,6 +66,7 @@ if [[ "${kieVersion}" == *Final* ]]; then
     rsync -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $jbpmHtdocs
 fi
 
-# remove files and directories for uploading drools
+# remove files and directories for uploading jbpm
+cd ..
 rm -rf upload_*
 rm -rf filemgmt_links
