@@ -34,24 +34,9 @@ scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir
 scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-$kieVersion-examples.zip $jbpmHtdocs/$kieVersion
 scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-server-$kieVersion-dist.zip $jbpmHtdocs/$kieVersion
 
-# uploads jbpm -installers them to filemgt.jboss.org
-uploadInstaller(){
-        # upload installers to filemgmt.jboss.org
-        scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-$kieVersion.zip $jbpmHtdocs/$kieVersion
-}
-
-uploadAllInstaller(){
-        # upload installers to filemgmt.jboss.org
-        scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-$kieVersion.zip $jbpmHtdocs/$kieVersion
-        # upload installers to filemgmt.jboss.org
-        scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-full-$kieVersion.zip $jbpmHtdocs/$kieVersion
-}
-
-if [[ $kieVersion == *"Final"* ]] ;then
-        uploadAllInstaller
-else
-        uploadInstaller
-fi
+# uploads jbpm -installers to filemgt.jboss.org
+scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-$kieVersion.zip $jbpmHtdocs/$kieVersion
+scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-full-$kieVersion.zip $jbpmHtdocs/$kieVersion
 
 # docs
 scp -r -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-docs/* $jbpmDocs/$kieVersion/jbpm-docs
