@@ -4890,6 +4890,16 @@
         <artifactId>swagger-parser</artifactId>
         <version>${version.io.swagger.parser.v3}</version>
         <scope>test</scope>
+        <exclusions><!-- banned for kie-server tests: -->
+          <exclusion> 
+            <groupId>javax.mail</groupId>
+            <artifactId>mailapi</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       
       <!-- swagger parser -->
@@ -4904,10 +4914,18 @@
         <artifactId>rest-assured</artifactId>
         <version>${version.io.rest-assured}</version>
         <scope>test</scope>
-        <exclusions>
-          <exclusion> <!-- banned for kie-server tests: -->
+        <exclusions><!-- banned for kie-server tests: -->
+          <exclusion> 
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
