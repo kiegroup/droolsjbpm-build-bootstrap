@@ -19,6 +19,7 @@ build:
       after:
         current: echo "specific after current"
         upstream: echo "specific after upstream"
+      merge: ["current", "after"]
 
   - project: kiegroup/appformer
     build-command:
