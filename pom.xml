@@ -453,6 +453,7 @@
 
     <version.ch.obermuhlner>2.0.1</version.ch.obermuhlner>
     <version.org.jboss.jandex>2.2.3.Final</version.org.jboss.jandex>
+    <version.ch.obermuhlner.js>2.3.0</version.ch.obermuhlner.js>
     <version.jandex.plugin>1.0.6</version.jandex.plugin>
     <version.org.eclipse.yasson>1.0.6</version.org.eclipse.yasson>
     <version.com.sun.xml.messaging.saaj>1.5.0</version.com.sun.xml.messaging.saaj>
@@ -6340,6 +6341,19 @@
         <groupId>ch.obermuhlner</groupId>
         <artifactId>big-math</artifactId>
         <version>${version.ch.obermuhlner}</version>
+      </dependency>
+
+      <!-- used by DMN JS version for BigDecimal arithmetics -->
+      <dependency>
+        <groupId>org.treblereel.gwt</groupId>
+        <artifactId>gwt-bigmath</artifactId>
+        <version>${version.ch.obermuhlner.js}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.treblereel.gwt</groupId>
+        <artifactId>gwt-bigmath</artifactId>
+        <classifier>sources</classifier>
+        <version>${version.ch.obermuhlner.js}</version>
       </dependency>
 
       <!-- used by DMN for general (runtime-agnostic) inspection of PMML model -->
