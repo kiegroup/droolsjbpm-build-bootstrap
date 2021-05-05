@@ -183,10 +183,26 @@
         <artifactId>kie-pmml-models-mining-evaluator</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
-      <!-- Clustering -->
+      <!-- Tree NO - CODEGEN -->
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-models-clustering-model</artifactId>
+        <artifactId>kie-pmml-models-tree-model</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tree-compiler</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tree-evaluator</artifactId>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <!-- Clustering -->
+      <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-pmml-models-clustering-model</artifactId>
         <version>${version.org.kie}</version>
       </dependency>
       <dependency>
@@ -341,10 +357,29 @@
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
-      <!-- Clustering -->
+      <!-- Tree - CODEGEN -->
       <dependency>
         <groupId>org.kie</groupId>
-        <artifactId>kie-pmml-models-clustering-model</artifactId>
+        <artifactId>kie-pmml-models-tree-model</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tree-compiler</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tree-evaluator</artifactId>
+        <version>${version.org.kie}</version>
+        <classifier>sources</classifier>
+      </dependency>
+      <!-- Clustering -->
+      <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-pmml-models-clustering-model</artifactId>
         <version>${version.org.kie}</version>
         <classifier>sources</classifier>
       </dependency>
@@ -405,6 +440,19 @@
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>kie-pmml-models-regression-evaluator</artifactId>
+        <classifier>tests</classifier>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <!-- Tree No codegen -->
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tree-compiler</artifactId>
+        <classifier>tests</classifier>
+        <version>${version.org.kie}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-pmml-models-tree-evaluator</artifactId>
         <classifier>tests</classifier>
         <version>${version.org.kie}</version>
       </dependency>
