@@ -17,6 +17,7 @@ build:
     archive-artifacts:
       path: |
         **/dashbuilder-runtime.war
+
   - project: kiegroup/drools
     build-command:
       upstream: mvn -e clean install -DskipTests -Dgwt.compiler.skip=true -Dgwt.skipCompilation=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dspotbugs.skip=true -Drevapi.skip=true -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
@@ -34,6 +35,7 @@ build:
     archive-artifacts:
       path: |
         **/target/screenshots/**
+
   - project: kiegroup/droolsjbpm-integration
     build-command:
       current: mvn -e -nsu -B --builder smart -T1C clean install -Dfull -Pjenkins-pr-builder -DskipTests -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
