@@ -29,5 +29,8 @@ jobs:
           definition-file: https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH}/.ci/pull-request-config.yaml
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Publish Test Report
+        if: ${{ always() }}
+        uses: ginxo/action-surefire-report@BXMSPROD-1311
         
           
