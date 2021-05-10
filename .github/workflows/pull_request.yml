@@ -33,5 +33,6 @@ jobs:
         if: ${{ always() }}
         uses: ginxo/action-surefire-report@BXMSPROD-1311
         with:
+          fail_on_test_failures: true
           skip_check_run: true
           
