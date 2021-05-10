@@ -32,5 +32,6 @@ jobs:
       - name: Publish Test Report
         if: ${{ always() }}
         uses: ginxo/action-surefire-report@BXMSPROD-1311
-        
+        with:
+          skip_check_run: true
           
