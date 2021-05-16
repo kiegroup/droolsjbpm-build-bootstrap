@@ -2410,6 +2410,12 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${version.com.google.guava}</version>
+	<exclusions>
+	  <exclusion>
+	    <groupId>org.checkerframework</groupId>
+	    <artifactId>checker-compat-qual</artifactId>
+	  </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
