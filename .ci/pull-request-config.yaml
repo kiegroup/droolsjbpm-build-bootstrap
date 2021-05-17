@@ -2,10 +2,19 @@ version: "2.0"
 
 dependencies: ./project-dependencies.yaml
 
-env:
-  VAR1: echo 'KIKE' 
-  VAR2: echo 'KIKE2' 
-  VAR3: echo 'KIKE3' 
+pre: |
+  echo "PRE 1"
+  echo "PRE 2"
+post:
+  failure: |
+    echo "POST FAILURE 1"
+    echo "POST FAILURE 2"
+  success: |
+    echo "POST SUCCESS 1"
+    echo "POST SUCCESS 2"
+  always: |
+    echo "POST ALWAYS 1"
+    echo "POST ALWAYS 2"
 
 default:
   build-command:
