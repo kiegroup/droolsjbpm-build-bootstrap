@@ -4,6 +4,9 @@ on: [workflow_dispatch]
 
 jobs:
   build-chain:
+    concurrency:
+      group: upstream-${{ github.head_ref }}
+      cancel-in-progress: true
     strategy:
       matrix:
         java-version: [8, 11]
@@ -17,7 +20,7 @@ jobs:
           java-version: ${{ matrix.java-version }}
       - name: Build Chain ${{ matrix.java-version }}
         id: build-chain
-        uses: kiegroup/github-action-build-chain@v2.6.2
+        uses: kiegroup/github-action-build-chain@v2.6.3
         with:
           definition-file: https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH}/.ci/upstream-config.yaml
         env:
