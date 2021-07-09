@@ -7,6 +7,8 @@ additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''
 checkstyleFile = env.CHECKSTYLE_FILE?.trim() ?: null
 findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
 pr_type = env.PR_TYPE?.trim() ?: null
+build_jdk_tool = env.BUILD_JDK_TOOL?.trim() ?: 'kie-jdk1.8'
+build_maven_tool = env.BUILD_MAVEN_TOOL?.trim() ?: 'kie-maven-3.8.1'
 
 pipeline {
     agent {
@@ -18,6 +20,9 @@ pipeline {
     options {
         timestamps ()
         timeout(time: additionalTimeout, unit: 'MINUTES')
+    }
+    environment {
+        FIREFOX_FOLDER = '/opt/tools/firefox-60esr'
     }
     stages {
         stage('Initialize') {
@@ -41,6 +46,10 @@ pipeline {
             }
         }
         stage('Build projects') {
+            tools {
+              jdk build_jdk_tool
+              maven build_maven_tool
+            }
             steps {
                 script {
                     def buildChainActionInfo =
@@ -64,7 +73,7 @@ pipeline {
         stage('Sonar analysis') {
             tools {
               jdk "kie-jdk11"
-              maven 'kie-maven-3.6.3'
+              maven 'kie-maven-3.8.1'
             }
             steps {
                 script {
