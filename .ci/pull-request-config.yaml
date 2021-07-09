@@ -1,4 +1,4 @@
-version: "2.0"
+version: "2.1"
 
 dependencies: ./project-dependencies.yaml
 
@@ -54,23 +54,23 @@ build:
 
   - project: kiegroup/kie-docs
     build-command:
-      current: mvn clean install
+      current: mvn -e clean install -Dmaven.test.failure.ignore=true -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.http.retryHandler.class=standard -Dmaven.wagon.http.retryHandler.count=3
 
   - project: kiegroup/optaweb-employee-rostering
     archive-artifacts:
       path: |
-        **/cypress/screenshots/**
-        **/cypress/videos/**
+        **/cypress/screenshots/**@always
+        **/cypress/videos/**@always
 
   - project: kiegroup/optaweb-vehicle-routing
     archive-artifacts:
       path: |
-        **/cypress/screenshots/**
-        **/cypress/videos/**
+        **/cypress/screenshots/**@always
+        **/cypress/videos/**@always
 
   - project: kiegroup/kie-wb-distributions
     build-command:
-      current: mvn -e -nsu clean install -Dfull -Prun-code-coverage -Pwildfly -Dcontainer=wildfly -Dcontainer.profile=wildfly -Dintegration-tests=true -Dmaven.test.failure.ignore=true -Pbusiness-central -Dgwt.compiler.localWorkers=1 -Dwebdriver.firefox.bin=/opt/tools/firefox-60esr/firefox-bin -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
+      current: mvn -e -nsu clean install -Dfull -Prun-code-coverage -Pwildfly -Dcontainer=wildfly -Dcontainer.profile=wildfly -Dintegration-tests=true -Dmaven.test.failure.ignore=true -Pbusiness-central -Dgwt.compiler.localWorkers=1 -Dwebdriver.firefox.bin=${{ env.FIREFOX_FOLDER }}/firefox-bin -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
     archive-artifacts:
       path: |
         **/target/screenshots/**
