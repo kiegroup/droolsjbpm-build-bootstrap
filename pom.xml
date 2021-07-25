@@ -210,24 +210,24 @@
     <version.org.jboss.shrinkwrap.resolver>2.2.0</version.org.jboss.shrinkwrap.resolver>
     <version.org.jboss.weld.weld>3.1.5.SP1</version.org.jboss.weld.weld>
     <version.org.jboss.weld.weld-api>3.1.SP1</version.org.jboss.weld.weld-api>
-    <version.jakarta.enterprise.jakarta.enterprise.cdi-api>2.0.2</version.jakarta.enterprise.jakarta.enterprise.cdi-api>
-    <version.jakarta.activation.jakarta.activation-api>1.2.2</version.jakarta.activation.jakarta.activation-api>
-    <version.jakarta.inject.jakarta.inject-api>1.0.3</version.jakarta.inject.jakarta.inject-api>
-    <version.jakarta.annotation.jakarta.annotation-api>1.3.5</version.jakarta.annotation.jakarta.annotation-api>
-    <version.jakarta.ejb.jakarta.ejb-api>3.2.6</version.jakarta.ejb.jakarta.ejb-api>
-    <version.jakarta.el.jakarta.el-api>3.0.3</version.jakarta.el.jakarta.el-api>
-    <version.jakarta.enterprise.concurrent.jakarta.enterprise.concurrent-api_spec>1.1.2</version.jakarta.enterprise.concurrent.jakarta.enterprise.concurrent-api_spec>
-    <version.jakarta.interceptor.jakarta.interceptor-api>1.2.5</version.jakarta.interceptor.jakarta.interceptor-api>
-    <version.jakarta.jms.jakarta.jms-api>2.0.3</version.jakarta.jms.jakarta.jms-api>
-    <version.jakarta.resource.jakarta.resource-api>1.7.4</version.jakarta.resource.jakarta.resource-api>
-    <version.jakarta.security.jacc.jakarta.security.jacc-api>1.6.1</version.jakarta.security.jacc.jakarta.security.jacc-api>
-    <version.jakarta.servlet.jsp.jakarta.servlet.jsp-api>2.3.6</version.jakarta.servlet.jsp.jakarta.servlet.jsp-api>
-    <version.jakarta.servlet.jsp.jstl.jakarta.servlet.jsp.jstl-api>2.0.0</version.jakarta.servlet.jsp.jstl.jakarta.servlet.jsp.jstl-api>
-    <version.jakarta.transaction.jakarta.transaction-api>1.3.3</version.jakarta.transaction.jakarta.transaction-api>
+    <version.jakarta.enterprise.cdi-api>2.0.2</version.jakarta.enterprise.cdi-api>
+    <version.jakarta.activation-api>1.2.2</version.jakarta.activation-api>
+    <version.jakarta.inject-api>1.0.3</version.jakarta.inject-api>
+    <version.jakarta.annotation-api>1.3.5</version.jakarta.annotation-api>
+    <version.jakarta.ejb-api>3.2.6</version.jakarta.ejb-api>
+    <version.jakarta.el-api>3.0.3</version.jakarta.el-api>
+    <version.jakarta.enterprise.concurrent-api>1.1.2</version.jakarta.enterprise.concurrent-api>
+    <version.jakarta.interceptor-api>1.2.5</version.jakarta.interceptor-api>
+    <version.jakarta.jms-api>2.0.3</version.jakarta.jms-api>
+    <version.jakarta.resource-api>1.7.4</version.jakarta.resource-api>
+    <version.jakarta.security.jacc-api>1.6.1</version.jakarta.security.jacc-api>
+    <version.jakarta.servlet.jsp-api>2.3.6</version.jakarta.servlet.jsp-api>
+    <version.jakarta.servlet.jsp.jstl-api>2.0.0</version.jakarta.servlet.jsp.jstl-api>
+    <version.jakarta.transaction-api>1.3.3</version.jakarta.transaction-api>
     <version.jakarta.ws.rs.jakarta.ws.rs-api>2.1.6</version.jakarta.ws.rs.jakarta.ws.rs-api>
     <version.jakarta.xml.ws.jakarta.xml.ws-api>2.3.3</version.jakarta.xml.ws.jakarta.xml.ws-api>
-    <version.jakarta.websocket.jakarta.websocket-api>1.1.2</version.jakarta.websocket.jakarta.websocket-api>
-    <version.jakarta.persistence.jakarta.persistence-api_spec>2.2.3</version.jakarta.persistence.jakarta.persistence-api_spec>
+    <version.jakarta.websocket-api>1.1.2</version.jakarta.websocket-api>
+    <version.jakarta.persistence-api_spec>2.2.3</version.jakarta.persistence-api_spec>
     <version.jakarta.servlet-api>4.0.3</version.jakarta.servlet-api>
     <version.jakarta.xml.bind-api>2.3.3</version.jakarta.xml.bind-api>
     <version.org.jboss.xnio>3.8.4.Final</version.org.jboss.xnio>
@@ -720,16 +720,13 @@
                       <!-- Ban blacklisted logging deps (we only use SLF4J + Logback) -->
                       <!-- In case of transitive dependency, exclude it and use 'org.slf4j:jcl-over-slf4j' instead -->
                       <exclude>commons-logging:commons-log*</exclude>
-                      <!-- In case of transitive dependency, exclude it and use 'org.slf4j:log4j-over-slf4j' instead -->
-                      <exclude>log4j:log4j</exclude>
-                      <!-- In case of transitive dependency, exclude it and use 'org.javassist:javassist' instead -->
-                      <exclude>javassist:javassist</exclude>
+
+                      <exclude>log4j:log4j</exclude> <!-- In case of transitive dependency, exclude it and use 'org.slf4j:log4j-over-slf4j' instead -->
+                      <exclude>javassist:javassist</exclude>  <!-- In case of transitive dependency, exclude it and use 'org.javassist:javassist' instead -->
                       <exclude>org.apache.cxf:cxf-bundle-jaxrs</exclude>
-                      <exclude>org.jboss.weld.se:weld-se
-                      </exclude><!-- Use weld-se-core instead -->
-                      <exclude>org.jboss.weld.servlet:weld-servlet
-                      </exclude><!-- Use weld-servlet-core instead -->
-                      <exclude>org.mockito:mockito-all</exclude><!-- Use mockito-core instead -->
+                      <exclude>org.jboss.weld.se:weld-se</exclude> <!-- Use weld-se-core instead -->
+                      <exclude>org.jboss.weld.servlet:weld-servlet</exclude> <!-- Use weld-servlet-core instead -->
+                      <exclude>org.mockito:mockito-all</exclude> <!-- Use mockito-core instead -->
                     </excludes>
                   </bannedDependencies>
                 </rules>
@@ -781,16 +778,6 @@
                       <ignoreClass>javax.inject.Qualifier</ignoreClass>
                       <ignoreClass>javax.inject.Singleton</ignoreClass>
                       <ignoreClass>javax.enterprise.*</ignoreClass>
-                      <!-- Servlet API is bundled in way too many different dependencies, causing nightmares trying to
-                           properly exclude everything. There were no real issues with this so far as mostly the APIs
-                           are just duplicates of the exactly same sources. In ideal world, this get eventually fixed,
-                           but it may very well not be worth the effort. -->
-                      <ignoreClass>javax.servlet.*</ignoreClass>
-                      <!-- Classes in javax.annotation package are just marker annotations used to aid the programmers.
-                           These annotations do not influence the actual behavior of the code, so it's reasonable to
-                           ignore them. Following dependencies contain these classes: 'com.google.code.findbugs:jsr305'
-                           and 'com.google.code.findbugs:annotations'. -->
-                      <ignoreClass>javax.annotation.*</ignoreClass>
                       <!-- Exactly the same case as for above 'javax.annotation.*' classes. Following dependencies contain
                            these classes: 'net.jcip:jcip-annotations' and 'com.google.code.findbugs:annotations'. -->
                       <ignoreClass>net.jcip.annotations.*</ignoreClass>
@@ -2003,7 +1990,7 @@
                     <groupId>jakarta.transaction</groupId>
                     <artifactId>jakarta.transaction-api</artifactId>
                     <version>
-                      ${version.jakarta.transaction.jakarta.transaction-api}
+                      ${version.jakarta.transaction-api}
                     </version>
                   </additionalDependency>
                 </additionalDependencies>
@@ -2244,6 +2231,12 @@
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
         <version>${version.commons-beanutils}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-cli</groupId>
@@ -2283,6 +2276,12 @@
         <groupId>commons-digester</groupId>
         <artifactId>commons-digester</artifactId>
         <version>${version.commons-digester}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-dbcp</groupId>
@@ -2298,11 +2297,6 @@
         <groupId>commons-jxpath</groupId>
         <artifactId>commons-jxpath</artifactId>
         <version>${version.commons-jxpath}</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>${version.commons-logging}</version>
       </dependency>
       <dependency>
         <groupId>commons-net</groupId>
@@ -2445,6 +2439,12 @@
         <groupId>com.google.gwt</groupId>
         <artifactId>gwt-user</artifactId>
         <version>${version.com.google.gwt}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -2604,6 +2604,12 @@
         <artifactId>takari-plugin-integration-testing</artifactId>
         <version>${version.io.takari.maven.plugins.testing}</version>
         <type>pom</type>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -2615,6 +2621,16 @@
         <groupId>io.undertow</groupId>
         <artifactId>undertow-servlet</artifactId>
         <version>${version.io.undertow}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.servlet</groupId>
+            <artifactId>jboss-servlet-api_4.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.undertow</groupId>
@@ -2656,67 +2672,73 @@
         <groupId>javax.mail</groupId>
         <artifactId>mail</artifactId>
         <version>${version.javax.mail}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
         <groupId>jakarta.activation</groupId>
         <artifactId>jakarta.activation-api</artifactId>
-        <version>${version.jakarta.activation.jakarta.activation-api}</version>
+        <version>${version.jakarta.activation-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.annotation</groupId>
         <artifactId>jakarta.annotation-api</artifactId>
-        <version>${version.jakarta.annotation.jakarta.annotation-api}</version>
+        <version>${version.jakarta.annotation-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.ejb</groupId>
         <artifactId>jakarta.ejb-api</artifactId>
-        <version>${version.jakarta.ejb.jakarta.ejb-api}</version>
+        <version>${version.jakarta.ejb-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.enterprise.concurrent</groupId>
         <artifactId>jakarta.enterprise.concurrent-api</artifactId>
-        <version>${version.jakarta.enterprise.concurrent.jakarta.enterprise.concurrent-api_spec}</version>
+        <version>${version.jakarta.enterprise.concurrent-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.el</groupId>
         <artifactId>jakarta.el-api</artifactId>
-        <version>${version.jakarta.el.jakarta.el-api}</version>
+        <version>${version.jakarta.el-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.interceptor</groupId>
         <artifactId>jakarta.interceptor-api</artifactId>
-        <version>${version.jakarta.interceptor.jakarta.interceptor-api}</version>
+        <version>${version.jakarta.interceptor-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.jms</groupId>
         <artifactId>jakarta.jms-api</artifactId>
-        <version>${version.jakarta.jms.jakarta.jms-api}</version>
+        <version>${version.jakarta.jms-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.resource</groupId>
         <artifactId>jakarta.resource-api</artifactId>
-        <version>${version.jakarta.resource.jakarta.resource-api}</version>
+        <version>${version.jakarta.resource-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.security.jacc</groupId>
         <artifactId>jakarta.security.jacc-api</artifactId>
-        <version>${version.jakarta.security.jacc.jakarta.security.jacc-api}</version>
+        <version>${version.jakarta.security.jacc-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet.jsp</groupId>
         <artifactId>jakarta.servlet.jsp-api</artifactId>
-        <version>${version.jakarta.servlet.jsp.jakarta.servlet.jsp-api}</version>
+        <version>${version.jakarta.servlet.jsp-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet.jsp.jstl</groupId>
         <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-        <version>${version.jakarta.servlet.jsp.jstl.jakarta.servlet.jsp.jstl-api}</version>
+        <version>${version.jakarta.servlet.jsp.jstl-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.transaction</groupId>
         <artifactId>jakarta.transaction-api</artifactId>
-        <version>${version.jakarta.transaction.jakarta.transaction-api}</version>
+        <version>${version.jakarta.transaction-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.ws.rs</groupId>
@@ -2731,12 +2753,12 @@
       <dependency>
         <groupId>jakarta.websocket</groupId>
         <artifactId>jakarta.websocket-api</artifactId>
-        <version>${version.jakarta.websocket.jakarta.websocket-api}</version>
+        <version>${version.jakarta.websocket-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.persistence</groupId>
         <artifactId>jakarta.persistence-api</artifactId>
-        <version>${version.jakarta.persistence.jakarta.persistence-api_spec}</version>
+        <version>${version.jakarta.persistence-api_spec}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet</groupId>
@@ -2751,7 +2773,7 @@
       <dependency>
         <groupId>jakarta.inject</groupId>
         <artifactId>jakarta.inject-api</artifactId>
-        <version>${version.jakarta.inject.jakarta.inject-api}</version>
+        <version>${version.jakarta.inject-api}</version>
       </dependency>
 
       <dependency>
@@ -2985,6 +3007,16 @@
         <groupId>org.apache.chemistry.opencmis</groupId>
         <artifactId>chemistry-opencmis-commons-impl</artifactId>
         <version>${version.org.apache.chemistry.opencmis}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!-- Used by Test Scenario to read/write CSV -->
@@ -2999,6 +3031,12 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-dbcp2</artifactId>
         <version>${version.org.apache.commons.dbcp2}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -3032,6 +3070,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
@@ -3063,6 +3105,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
@@ -3073,6 +3119,10 @@
           <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>saaj-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -3104,6 +3154,10 @@
           <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>saaj-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
           </exclusion>
           <exclusion>
             <groupId>com.sun.xml.messaging.saaj</groupId>
@@ -3169,6 +3223,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
@@ -3187,6 +3245,14 @@
         <artifactId>cxf-rt-frontend-jaxrs</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
@@ -3223,6 +3289,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
           </exclusion>
@@ -3244,6 +3314,10 @@
           <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -3297,6 +3371,14 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
@@ -3311,6 +3393,14 @@
         <artifactId>cxf-rt-ws-policy</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
@@ -3363,6 +3453,14 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
@@ -3374,6 +3472,14 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
@@ -3384,6 +3490,14 @@
         <artifactId>cxf-rt-rs-client</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>javax.activation</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.ws</groupId>
+            <artifactId>jaxws-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
@@ -3412,11 +3526,23 @@
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
         <version>${version.org.apache.httpcomponents.httpclient}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>fluent-hc</artifactId>
         <version>${version.org.apache.httpcomponents.httpclient}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
@@ -3627,6 +3753,12 @@
         <groupId>org.apache.xmlgraphics</groupId>
         <artifactId>xmlgraphics-commons</artifactId>
         <version>${version.org.apache.xmlgraphics.commons}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -3715,6 +3847,12 @@
         <groupId>org.asciidoctor</groupId>
         <artifactId>asciidoctorj</artifactId>
         <version>${version.org.asciidoctor.asciidoctorj}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -3851,6 +3989,12 @@
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
         <version>${version.org.eclipse.jetty}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency><!-- This must be placed above com.google.gwt:gwt-dev to override the Jetty that is present there -->
         <groupId>org.eclipse.jetty</groupId>
@@ -4016,6 +4160,24 @@
         <groupId>org.hornetq</groupId>
         <artifactId>hornetq-jms-server</artifactId>
         <version>${version.org.hornetq}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_2.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+            <artifactId>jboss-transaction-api_1.2_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+            <artifactId>jboss-transaction-api_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.resource</groupId>
+            <artifactId>jboss-connector-api_1.7_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hornetq</groupId>
@@ -4026,6 +4188,16 @@
         <groupId>org.hornetq</groupId>
         <artifactId>hornetq-jms-client</artifactId>
         <version>${version.org.hornetq}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_2.0_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -4059,6 +4231,12 @@
         <groupId>org.infinispan</groupId>
         <artifactId>infinispan-client-hotrod</artifactId>
         <version>${version.org.infinispan}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.transaction</groupId>
+            <artifactId>jboss-transaction-api_1.2_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!--Hamcrest should be versioned with JUnit, as they are related-->
@@ -4087,6 +4265,12 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-jpamodelgen</artifactId>
         <version>${version.org.hibernate}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -4130,6 +4314,12 @@
         <groupId>org.jboss.arquillian.container</groupId>
         <artifactId>arquillian-glassfish-managed-3.1</artifactId>
         <version>${version.org.jboss.arquillian.container.glassfish}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <!-- There is no official Selenium BOM, so we are using one maintained by Arquillian.
            (contains only pure Selenium deps, no ARQ deps are leaking from this BOM) -->
@@ -4330,6 +4520,12 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>tjws</artifactId>
         <version>${version.org.jboss.resteasy}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
@@ -4360,12 +4556,30 @@
         <groupId>org.jboss.weld</groupId>
         <artifactId>weld-api</artifactId>
         <version>${version.org.jboss.weld.weld-api}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.weld</groupId>
         <artifactId>weld-core-impl</artifactId>
         <version>${version.org.jboss.weld.weld}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.3_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.interceptor</groupId>
+            <artifactId>jboss-interceptors-api_1.2_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.el</groupId>
+            <artifactId>jboss-el-api_3.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>jsr250-api</artifactId>
@@ -4418,6 +4632,12 @@
         <groupId>org.jboss.weld.servlet</groupId>
         <artifactId>weld-servlet-core</artifactId>
         <version>${version.org.jboss.weld.weld}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.el</groupId>
+            <artifactId>jboss-el-api_3.0_spec</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -4470,6 +4690,12 @@
         <groupId>org.keycloak</groupId>
         <artifactId>keycloak-common</artifactId>
         <version>${version.org.keycloak}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-common</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!-- Do not add mockito-all as it is uberjar! -->
@@ -4510,6 +4736,16 @@
         <groupId>org.picketlink</groupId>
         <artifactId>picketlink-tomcat7-single</artifactId>
         <version>${version.org.picketlink}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -4589,6 +4825,12 @@
         <groupId>org.scannotation</groupId>
         <artifactId>scannotation</artifactId>
         <version>${version.org.scannotation}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!-- Keep in sync with groupId ch.qos.logback -->
@@ -4626,6 +4868,12 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
         <version>${version.org.slf4j}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.sonatype.aether</groupId>
@@ -4786,11 +5034,23 @@
         <groupId>org.subethamail</groupId>
         <artifactId>subethasmtp-wiser</artifactId>
         <version>${version.org.subethamail}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.subethamail</groupId>
         <artifactId>subethasmtp</artifactId>
         <version>${version.org.subethamail.subethasmtp}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -4940,6 +5200,12 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-cxf</artifactId>
         <version>${version.org.apache.camel}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -4955,6 +5221,12 @@
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-cxf-transport</artifactId>
         <version>${version.org.apache.camel}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.camel</groupId>
@@ -4999,6 +5271,12 @@
         <groupId>com.google.android</groupId>
         <artifactId>android</artifactId>
         <version>${version.com.google.android}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>com.google.android</groupId>
@@ -5016,6 +5294,12 @@
         <groupId>com.google.testing.compile</groupId>
         <artifactId>compile-testing</artifactId>
         <version>${version.com.google.testing.compile}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -5141,6 +5425,10 @@
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
 
@@ -5174,6 +5462,24 @@
         <groupId>org.springframework.osgi</groupId>
         <artifactId>spring-osgi-core</artifactId>
         <version>${version.org.springframework.osgi}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.aop</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.beans</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.context</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.core</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -5252,6 +5558,12 @@
         <groupId>io.swagger</groupId>
         <artifactId>swagger-jaxrs</artifactId>
         <version>${version.io.swagger}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>io.swagger</groupId>
@@ -5385,15 +5697,17 @@
         <version>${version.org.hibernate}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.jboss.spec.javax.transaction</groupId>
             <artifactId>jboss-transaction-api_1.2_spec</artifactId>
           </exclusion>
-          <!-- collides with jakarta.activation:jakarta.activation-api:jar:1.2.2:compile  -->
           <exclusion>
             <groupId>javax.activation</groupId>
             <artifactId>javax.activation-api</artifactId>
           </exclusion>
-          <!-- collides with  org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:jar:1.0.1.Final:compile -->
           <exclusion>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
@@ -5405,6 +5719,10 @@
         <artifactId>hibernate-entitymanager</artifactId>
         <version>${version.org.hibernate}</version>
         <exclusions>
+          <exclusion>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>org.jboss.spec.javax.transaction</groupId>
             <artifactId>jboss-transaction-api_1.2_spec</artifactId>
@@ -5447,6 +5765,10 @@
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_2.0_spec</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
 
@@ -5482,6 +5804,18 @@
         <version>${version.docker-client}</version>
         <exclusions>
           <exclusion>
+            <groupId>org.glassfish.hk2.external</groupId>
+            <artifactId>javax.inject</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -5502,6 +5836,10 @@
           <exclusion>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-jaxb-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
           </exclusion>
           <exclusion>
             <groupId>javax.validation</groupId>
@@ -5582,6 +5920,12 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <version>${version.org.apache.maven.plugins.dependency}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -5633,7 +5977,7 @@
       <dependency>
         <groupId>jakarta.enterprise</groupId>
         <artifactId>jakarta.enterprise.cdi-api</artifactId>
-        <version>${version.jakarta.enterprise.jakarta.enterprise.cdi-api}</version>
+        <version>${version.jakarta.enterprise.cdi-api}</version>
       </dependency>
 
       <dependency>
@@ -5755,6 +6099,10 @@
           <exclusion>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
           </exclusion>
         </exclusions>
         <scope>test</scope>
