@@ -224,12 +224,15 @@
     <version.jakarta.servlet.jsp-api>2.3.6</version.jakarta.servlet.jsp-api>
     <version.jakarta.servlet.jsp.jstl-api>2.0.0</version.jakarta.servlet.jsp.jstl-api>
     <version.jakarta.transaction-api>1.3.3</version.jakarta.transaction-api>
-    <version.jakarta.ws.rs.jakarta.ws.rs-api>2.1.6</version.jakarta.ws.rs.jakarta.ws.rs-api>
-    <version.jakarta.xml.ws.jakarta.xml.ws-api>2.3.3</version.jakarta.xml.ws.jakarta.xml.ws-api>
+    <version.jakarta.ws.rs-api>2.1.6</version.jakarta.ws.rs-api>
+    <version.jakarta.xml.ws-api>2.3.3</version.jakarta.xml.ws-api>
     <version.jakarta.websocket-api>1.1.2</version.jakarta.websocket-api>
-    <version.jakarta.persistence-api_spec>2.2.3</version.jakarta.persistence-api_spec>
+    <version.jakarta.persistence-api>2.2.3</version.jakarta.persistence-api>
     <version.jakarta.servlet-api>4.0.3</version.jakarta.servlet-api>
     <version.jakarta.xml.bind-api>2.3.3</version.jakarta.xml.bind-api>
+    <version.jakarta-regexp>1.4</version.jakarta-regexp>
+    <version.jakarta.json.bind-api>1.0.2</version.jakarta.json.bind-api>
+    <version.jakarta.json-api>1.1.6</version.jakarta.json-api>
     <version.org.jboss.xnio>3.8.4.Final</version.org.jboss.xnio>
     <version.org.jdom>1.1.3</version.org.jdom>
     <version.org.jfree.jfreechart>1.5.0</version.org.jfree.jfreechart>
@@ -305,8 +308,6 @@
     <version.com.github.tomakehurst.wiremock>1.53</version.com.github.tomakehurst.wiremock>
     <version.com.google.android>4.1.1.4</version.com.google.android>
     <version.com.google.testing.compile>0.11</version.com.google.testing.compile>
-    <version.jakarta-regexp>1.4</version.jakarta-regexp>
-    <version.jakarta.json.bind>1.0.2</version.jakarta.json.bind>
     <version.org.antlr4>4.8</version.org.antlr4>
     <version.org.apache.cxf>3.3.9</version.org.apache.cxf>
     <version.org.apache.camel>2.24.0</version.org.apache.camel>
@@ -802,6 +803,8 @@
                       <!-- This package contains auto generated code and is available both in kafka-clients
                       and in kafka-clients-test -->
                       <ignoreClass>org.apache.kafka.common.message.*</ignoreClass>
+                      <regexIgnoredClass>org.apache.sshd.common.io.*</regexIgnoredClass>
+                      <regexIgnoredClass>org.apache.sshd.common.auth.*</regexIgnoredClass>
                     </ignoreClasses>
                     <dependencies>
                       <dependency>
@@ -2665,7 +2668,12 @@
       <dependency>
         <groupId>jakarta.json.bind</groupId>
         <artifactId>jakarta.json.bind-api</artifactId>
-        <version>${version.jakarta.json.bind}</version>
+        <version>${version.jakarta.json.bind-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.json</groupId>
+        <artifactId>jakarta.json-api</artifactId>
+        <version>${version.jakarta.json-api}</version>
       </dependency>
 
       <dependency>
@@ -2743,12 +2751,12 @@
       <dependency>
         <groupId>jakarta.ws.rs</groupId>
         <artifactId>jakarta.ws.rs-api</artifactId>
-        <version>${version.jakarta.ws.rs.jakarta.ws.rs-api}</version>
+        <version>${version.jakarta.ws.rs-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.xml.ws</groupId>
         <artifactId>jakarta.xml.ws-api</artifactId>
-        <version>${version.jakarta.xml.ws.jakarta.xml.ws-api}</version>
+        <version>${version.jakarta.xml.ws-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.websocket</groupId>
@@ -2758,7 +2766,7 @@
       <dependency>
         <groupId>jakarta.persistence</groupId>
         <artifactId>jakarta.persistence-api</artifactId>
-        <version>${version.jakarta.persistence-api_spec}</version>
+        <version>${version.jakarta.persistence-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.servlet</groupId>
@@ -2940,6 +2948,12 @@
         <groupId>org.rikkola.gwt</groupId>
         <artifactId>antlr4-c3-gwt</artifactId>
         <version>${version.org.antlr4c3gwt}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -2947,6 +2961,12 @@
         <artifactId>antlr4-c3-gwt</artifactId>
         <version>${version.org.antlr4c3gwt}</version>
         <classifier>sources</classifier>
+        <exclusions>
+          <exclusion>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -3074,8 +3094,16 @@
             <artifactId>jaxws-api</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -3104,6 +3132,18 @@
         <artifactId>cxf-rt-bindings-soap</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
@@ -3144,6 +3184,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
           </exclusion>
@@ -3162,6 +3206,10 @@
           <exclusion>
             <groupId>com.sun.xml.messaging.saaj</groupId>
             <artifactId>saaj-impl</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -3223,6 +3271,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.ws</groupId>
             <artifactId>jaxws-api</artifactId>
           </exclusion>
@@ -3238,6 +3290,10 @@
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -3245,6 +3301,18 @@
         <artifactId>cxf-rt-frontend-jaxrs</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.xml.ws</groupId>
             <artifactId>jaxws-api</artifactId>
@@ -3289,6 +3357,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.ws</groupId>
             <artifactId>jaxws-api</artifactId>
           </exclusion>
@@ -3303,6 +3375,10 @@
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3312,6 +3388,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
           </exclusion>
@@ -3326,6 +3406,10 @@
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -3371,6 +3455,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
           </exclusion>
@@ -3383,8 +3471,20 @@
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
           <exclusion>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-servlet_3.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3393,6 +3493,10 @@
         <artifactId>cxf-rt-ws-policy</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
@@ -3412,6 +3516,14 @@
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-jaxws_2.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
@@ -3453,6 +3565,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
           </exclusion>
@@ -3463,6 +3579,14 @@
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3483,6 +3607,14 @@
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -3490,6 +3622,18 @@
         <artifactId>cxf-rt-rs-client</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
@@ -3729,6 +3873,12 @@
         <groupId>org.apache.tomcat</groupId>
         <artifactId>catalina</artifactId>
         <version>${version.org.apache.tomcat}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -5265,6 +5415,32 @@
         <artifactId>wiremock</artifactId>
         <classifier>standalone</classifier>
         <version>${version.com.github.tomakehurst.wiremock}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>com.github.tomakehurst</groupId>
+        <artifactId>wiremock</artifactId>
+        <version>${version.com.github.tomakehurst.wiremock}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.mortbay.jetty</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -5288,6 +5464,12 @@
         <groupId>com.google.gwt.gwtmockito</groupId>
         <artifactId>gwtmockito</artifactId>
         <version>${version.com.google.gwt.gwtmockito}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.mortbay.jasper</groupId>
+            <artifactId>apache-el</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -5428,6 +5610,10 @@
           <exclusion>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.mortbay.jasper</groupId>
+            <artifactId>apache-el</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6015,6 +6201,16 @@
         <groupId>com.sun.xml.messaging.saaj</groupId>
         <artifactId>saaj-impl</artifactId>
         <version>${version.com.sun.xml.messaging.saaj}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <!-- used by DMN for BigDecimal arithmetics -->
