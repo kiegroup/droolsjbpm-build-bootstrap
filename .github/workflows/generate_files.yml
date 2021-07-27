@@ -3,7 +3,7 @@ name: Build Chain Generate Files
 on:
   push:
     branches:
-      - master
+      - main
       - 7.48.x
     paths:
       - '.ci/**'
@@ -50,7 +50,7 @@ jobs:
           definition-file: .ci/pull-request-config.yaml
           file-type: repository-list
           output-file-path: ./script/branched-7-repository-list.txt
-          include: "@master:7.x"
+          include: "@main:7.x"
       - name: Add Changes
         run: git add ./docs/project-dependencies-hierarchy.png ./script/repository-list.txt ./script/branched-7-repository-list.txt
       - name: Archive artifacts
