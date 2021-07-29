@@ -107,7 +107,6 @@
     <version.io.strimzi.strimzi-test-container>0.23.0</version.io.strimzi.strimzi-test-container>
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
     <version.io.undertow>2.2.5.Final</version.io.undertow>
-    <version.javax.mail>1.4.5</version.javax.mail>
     <version.jaxen>1.1.6</version.jaxen>
     <version.jivesoftware.smack>3.1.0</version.jivesoftware.smack>
     <version.joda-time>2.9.7</version.joda-time>
@@ -207,6 +206,7 @@
     <version.org.jboss.shrinkwrap.resolver>2.2.0</version.org.jboss.shrinkwrap.resolver>
     <version.org.jboss.weld.weld>3.1.5.SP1</version.org.jboss.weld.weld>
     <version.org.jboss.weld.weld-api>3.1.SP1</version.org.jboss.weld.weld-api>
+    <version.jakarta.mail-api>1.6.5</version.jakarta.mail-api>
     <version.jakarta.enterprise.cdi-api>2.0.2</version.jakarta.enterprise.cdi-api>
     <version.jakarta.activation-api>1.2.2</version.jakarta.activation-api>
     <version.jakarta.inject-api>1.0.3</version.jakarta.inject-api>
@@ -348,7 +348,6 @@
     <!-- The version greater than 1.0.0.GA is not compatible with GWT 2.8.x -->
     <!-- therefore the property is rewritten in that repository parent -->
     <version.javax.validation>2.0.1.Final</version.javax.validation>
-    <version.javax.xml.stream.stax>1.0-2</version.javax.xml.stream.stax>
     <version.org.ops4j.pax.url>2.2.0</version.org.ops4j.pax.url>
     <version.org.geronimo.atinject>1.0</version.org.geronimo.atinject>
     <!-- simple-jndi is a small library that helps us avoid JNDI error messages during testing -->
@@ -740,6 +739,9 @@
                       <exclude>javax.el:javax.el-api</exclude>
                       <exclude>javax.ws.rs:jsr311-api</exclude>
                       <exclude>javax.ws.rs:javax.ws.rs-api</exclude>
+                      <exclude>javax.mail:mail</exclude>
+                      <exclude>javax.xml.stream:stax-api</exclude>
+                      <exclude>org.jboss.spec.javax.*:*</exclude>
                       <exclude>org.apache.geronimo.specs:geronimo-activation_1.1_spec</exclude>
                       <exclude>org.apache.geronimo.specs:geronimo-annotation_1.0_spec</exclude>
                       <exclude>org.apache.geronimo.specs:geronimo-javamail_1.4_spec</exclude>
@@ -747,20 +749,6 @@
                       <exclude>org.apache.geronimo.specs:geronimo-jta_1.1_spec</exclude>
                       <exclude>org.apache.geronimo.specs:geronimo-servlet_3.0_spec</exclude>
                       <exclude>org.apache.geronimo.specs:geronimo-ws-metadata_2.0_spec</exclude>
-                      <exclude>org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec</exclude>
-                      <exclude>org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec</exclude>
-                      <exclude>org.jboss.spec.javax.el:jboss-el-api_3.0_spec</exclude>
-                      <exclude>org.jboss.spec.javax.enterprise.concurrent:jboss-concurrency-api_1.0_spec</exclude>
-                      <exclude>org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.2_spec</exclude>
-                      <exclude>org.jboss.spec.javax.jms:jboss-jms-api_2.0_spec</exclude>
-                      <exclude>org.jboss.spec.javax.security.jacc:jboss-jacc-api_1.5_spec</exclude>
-                      <exclude>org.jboss.spec.javax.servlet:jboss-servlet-api_3.1_spec</exclude>
-                      <exclude>org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.3_spec</exclude>
-                      <exclude>org.jboss.spec.javax.servlet.jstl:jboss-jstl-api_1.2_spec</exclude>
-                      <exclude>org.jboss.spec.javax.websocket:jboss-websocket-api_1.1_spec</exclude>
-                      <exclude>org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec</exclude>
-                      <exclude>org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec</exclude>
-                      <exclude>org.jboss.spec.javax.xml.ws:jboss-jaxws-api_2.3_spec</exclude>
                       <!-- End  -->
                     </excludes>
                   </bannedDependencies>
@@ -2720,15 +2708,9 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>mail</artifactId>
-        <version>${version.javax.mail}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javax.activation</groupId>
-            <artifactId>activation</artifactId>
-          </exclusion>
-        </exclusions>
+        <groupId>jakarta.mail</groupId>
+        <artifactId>jakarta.mail-api</artifactId>
+        <version>${version.jakarta.mail-api}</version>
       </dependency>
 
       <dependency>
@@ -3138,6 +3120,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.ws</groupId>
             <artifactId>jaxws-api</artifactId>
           </exclusion>
@@ -3180,6 +3166,10 @@
         <artifactId>cxf-rt-bindings-soap</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
@@ -3231,6 +3221,10 @@
         <artifactId>cxf-rt-frontend-jaxws</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
@@ -3319,6 +3313,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
           </exclusion>
@@ -3349,6 +3347,10 @@
         <artifactId>cxf-rt-frontend-jaxrs</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-jta_1.1_spec</artifactId>
@@ -3405,6 +3407,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
           </exclusion>
@@ -3435,6 +3441,10 @@
         <artifactId>cxf-rt-transports-http</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
@@ -3503,6 +3513,14 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
           </exclusion>
@@ -3541,6 +3559,10 @@
         <artifactId>cxf-rt-ws-policy</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
@@ -3613,6 +3635,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>javax.xml.soap</groupId>
             <artifactId>javax.xml.soap-api</artifactId>
           </exclusion>
@@ -3644,6 +3670,10 @@
         <version>${version.org.apache.cxf}</version>
         <exclusions>
           <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>com.sun.activation</groupId>
             <artifactId>javax.activation</artifactId>
           </exclusion>
@@ -3670,6 +3700,10 @@
         <artifactId>cxf-rt-rs-client</artifactId>
         <version>${version.org.apache.cxf}</version>
         <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.rmi</groupId>
+            <artifactId>jboss-rmi-api_1.0_spec</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>org.apache.geronimo.specs</groupId>
             <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
@@ -5240,6 +5274,10 @@
         <version>${version.org.subethamail}</version>
         <exclusions>
           <exclusion>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+          </exclusion>
+          <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
@@ -5250,6 +5288,10 @@
         <artifactId>subethasmtp</artifactId>
         <version>${version.org.subethamail.subethasmtp}</version>
         <exclusions>
+          <exclusion>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+          </exclusion>
           <exclusion>
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
@@ -5546,13 +5588,6 @@
         <groupId>com.unboundid</groupId>
         <artifactId>unboundid-ldapsdk</artifactId>
         <version>${version.com.unboundid}</version>
-      </dependency>
-
-      <!-- temporary because it was removed/rename in jboss-ip-bom and it is needed by droolsjbpm-knowledge/kie-api/pom.xml -->
-      <dependency>
-        <groupId>javax.xml.stream</groupId>
-        <artifactId>stax-api</artifactId>
-        <version>${version.javax.xml.stream.stax}</version>
       </dependency>
 
       <!-- dependency of org.apache.lucene:lucene-sandbox -->
