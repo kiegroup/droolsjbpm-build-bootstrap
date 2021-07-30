@@ -61,7 +61,7 @@ pipeline {
                                 branched7RepositoryListFile.readLines().each { additionalVariables["${it}-scmRevision"] = '7.x' }
                             }
 
-			    retry(10) {
+			    retry(3) {
                                 pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", projectVariableMap, additionalVariables, [:])
                             }
                         }
