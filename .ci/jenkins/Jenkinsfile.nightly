@@ -13,9 +13,11 @@ pipeline {
         booleanParam(description: 'Skip Tests? True as default', name: 'SKIP_TESTS', defaultValue: true)
         string(description: 'The UMB message version', name: 'UMB_VERSION', defaultValue: 'main')
         string(description: 'The product version', name: 'PRODUCT_VERSION')
+        string(description: 'The config repository branch', name: 'DEFAULT_CONFIG_BRANCH', defaultValue: 'main')
     }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
+        timestamps()
     }
     stages {
         stage('Initialize') {
@@ -27,7 +29,7 @@ pipeline {
         stage('Clone build configuration repo') {
             steps {
                 script {
-                    def currentBranch = env.BRANCH_NAME ?: env.GIT_BRANCH
+                    def currentBranch = env.DEFAULT_CONFIG_BRANCH ?: env.BRANCH_NAME ?: env.GIT_BRANCH
                     println "Checking out ${env.BUILD_CONFIGURATION_REPO_URL}:${currentBranch} into build_config folder"
                     sh "git clone -b ${currentBranch} --single-branch ${env.BUILD_CONFIGURATION_REPO_URL} build_config"
                 }
@@ -36,9 +38,7 @@ pipeline {
         stage('Build Nightly projects') {
             steps {
                 script {
-                    def pipelineHelper = new PipelineHelper(this)
-                    pipelineHelper.retry(
-                    {
+                    timeout(time: 12, unit: 'HOURS') {
                         def SETTINGS_XML_ID = "rhba-prod-main"
 
                         // This is the map project, variable to store the version from this project
@@ -62,9 +62,11 @@ pipeline {
                                 branched7RepositoryListFile.readLines().each { additionalVariables["${it}-scmRevision"] = '7.x' }
                             }
 
-                            pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", projectVariableMap, additionalVariables, [:])
+			    retry(3) {
+                                pmebuild.buildProjects(projectCollection, "${SETTINGS_XML_ID}", "$WORKSPACE/build_config/rhba/nightly", "${env.PME_CLI_PATH}", projectVariableMap, additionalVariables, [:])
+                            }
                         }
-                    }, 2, 480*60)
+                    }
                 }
             }
         }
