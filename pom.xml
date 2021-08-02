@@ -318,7 +318,7 @@
     <version.org.jboss.arquillian.extension.drone>2.5.1</version.org.jboss.arquillian.extension.drone>
     <version.org.jboss.arquillian.graphene>2.3.2</version.org.jboss.arquillian.graphene>
     <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
-    <version.org.jboss.errai>4.11.4.Final</version.org.jboss.errai>
+    <version.org.jboss.errai>4.11.5.Final</version.org.jboss.errai>
     <version.com.google.elemental2>1.1.0</version.com.google.elemental2>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.jboss.errai.wildfly>23.0.2.Final</version.org.jboss.errai.wildfly>
@@ -793,15 +793,6 @@
                            from HornetQ to ActiveMQ (https://issues.jboss.org/browse/JBPM-5503) -->
                       <ignoreClass>org.hornetq.utils.HornetQUtilBundle_$bundle</ignoreClass>
                       <ignoreClass>org.hornetq.utils.HornetQUtilLogger_$logger</ignoreClass>
-                      <!-- Classes bundled in errai-javax-enterprise which are GWT friendly.
-                           See https://github.com/errai/errai/blob/main/errai-javax-enterprise/README -->
-                      <ignoreClass>javax.interceptor.InvocationContext</ignoreClass>
-                      <ignoreClass>javax.inject.Provider</ignoreClass>
-                      <ignoreClass>javax.inject.Named</ignoreClass>
-                      <ignoreClass>javax.inject.Scope</ignoreClass>
-                      <ignoreClass>javax.inject.Qualifier</ignoreClass>
-                      <ignoreClass>javax.inject.Singleton</ignoreClass>
-                      <ignoreClass>javax.enterprise.*</ignoreClass>
                       <!-- Exactly the same case as for above 'javax.annotation.*' classes. Following dependencies contain
                            these classes: 'net.jcip:jcip-annotations' and 'com.google.code.findbugs:annotations'. -->
                       <ignoreClass>net.jcip.annotations.*</ignoreClass>
@@ -830,6 +821,22 @@
                       <regexIgnoredClass>org.apache.sshd.common.auth.*</regexIgnoredClass>
                     </ignoreClasses>
                     <dependencies>
+                      <dependency>
+                        <!-- This JAR contains classes that override classes coming from jakarta.* -->
+                        <groupId>org.jboss.errai</groupId>
+                        <artifactId>errai-ioc</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>javax.inject.Provider</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
+                      <dependency>
+                        <!-- This JAR contains classes that override classes coming from jakarta.* -->
+                        <groupId>org.jboss.errai</groupId>
+                        <artifactId>errai-javax-enterprise</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>*</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
                       <dependency>
                         <!-- quarkus-ide-launcher is a dependency of quarkus-core that they auto exclude during the build -->
                         <groupId>io.quarkus</groupId>
