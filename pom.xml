@@ -208,7 +208,7 @@
     <version.org.jboss.shrinkwrap.resolver>2.2.0</version.org.jboss.shrinkwrap.resolver>
     <version.org.jboss.weld.weld>3.1.5.SP1</version.org.jboss.weld.weld>
     <version.org.jboss.weld.weld-api>3.1.SP1</version.org.jboss.weld.weld-api>
-    <version.jakarta.mail-api>1.6.5</version.jakarta.mail-api>
+    <version.jakarta.mail>1.6.5</version.jakarta.mail>
     <version.jakarta.enterprise.cdi-api>2.0.2</version.jakarta.enterprise.cdi-api>
     <version.jakarta.activation-api>1.2.2</version.jakarta.activation-api>
     <version.jakarta.inject-api>1.0.3</version.jakarta.inject-api>
@@ -822,6 +822,22 @@
                       <regexIgnoredClass>org.apache.sshd.common.auth.*</regexIgnoredClass>
                     </ignoreClasses>
                     <dependencies>
+                      <dependency>
+                        <!-- This JAR contains reference impl and is only used on tests -->
+                        <groupId>com.sun.activation</groupId>
+                        <artifactId>jakarta.activation</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>javax.activation.*</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
+                      <dependency>
+                        <!-- This JAR contains reference impl and is only used on tests -->
+                        <groupId>com.sun.mail</groupId>
+                        <artifactId>jakarta.mail</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>javax.mail.*</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
                       <dependency>
                         <!-- This JAR contains classes that override classes coming from jakarta.* -->
                         <groupId>org.jboss.errai</groupId>
@@ -2726,9 +2742,14 @@
       </dependency>
 
       <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>jakarta.mail</artifactId>
+        <version>${version.jakarta.mail}</version>
+      </dependency>
+      <dependency>
         <groupId>jakarta.mail</groupId>
         <artifactId>jakarta.mail-api</artifactId>
-        <version>${version.jakarta.mail-api}</version>
+        <version>${version.jakarta.mail}</version>
       </dependency>
 
       <dependency>
