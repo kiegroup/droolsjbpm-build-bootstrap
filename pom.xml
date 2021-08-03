@@ -182,6 +182,7 @@
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
     <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
     <version.org.glassfish>3.1.2</version.org.glassfish>
+    <version.org.glassfish.jakarta>1.1.6</version.org.glassfish.jakarta>
     <version.org.glassfish.jaxb>2.3.2</version.org.glassfish.jaxb>
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
@@ -2688,7 +2689,11 @@
           </exclusion>
         </exclusions>
       </dependency>
-
+      <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>jakarta.json</artifactId>
+        <version>${version.org.glassfish.jakarta}</version>
+      </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
