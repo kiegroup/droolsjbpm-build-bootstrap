@@ -954,10 +954,16 @@
                         <type>jar</type>
                         <ignoreClasses>
                           <ignoreClass>io.fabric8.kubernetes.client.ConfigFluent</ignoreClass>
-                          <ignoreClass>io.fabric8.kubernetes.client.ConfigBuilder
-                          </ignoreClass>
-                          <ignoreClass>io.fabric8.kubernetes.client.ConfigFluentImpl
-                          </ignoreClass>
+                          <ignoreClass>io.fabric8.kubernetes.client.ConfigBuilder</ignoreClass>
+                          <ignoreClass>io.fabric8.kubernetes.client.ConfigFluentImpl</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
+                      <!-- sundr-codegen is required to compile test classes. -->
+                      <dependency>
+                        <groupId>io.sundr</groupId>
+                        <artifactId>sundr-codegen</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>*</ignoreClass>
                         </ignoreClasses>
                       </dependency>
                     </dependencies>
@@ -1725,30 +1731,6 @@
     <plugins>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>ban-duplicated-classes</id>
-            <goals>
-              <goal>enforce</goal>
-            </goals>
-            <configuration>
-              <rules>
-                <banDuplicateClasses>
-                  <dependencies combine.children="append">
-                    <!-- sundr-codegen is required to compile test classes. -->
-                    <dependency>
-                      <groupId>io.sundr</groupId>
-                      <artifactId>sundr-codegen</artifactId>
-                      <ignoreClasses>
-                        <ignoreClass>*</ignoreClass>
-                      </ignoreClasses>
-                    </dependency>
-                  </dependencies>
-                </banDuplicateClasses>
-              </rules>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-checkstyle-plugin</artifactId>
