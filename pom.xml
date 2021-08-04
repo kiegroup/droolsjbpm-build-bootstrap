@@ -183,7 +183,6 @@
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
     <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
     <version.org.glassfish>3.1.2</version.org.glassfish>
-    <version.org.glassfish.jakarta>1.1.6</version.org.glassfish.jakarta>
     <version.org.glassfish.jaxb>2.3.2</version.org.glassfish.jaxb>
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
@@ -209,7 +208,7 @@
     <version.org.jboss.shrinkwrap.resolver>2.2.0</version.org.jboss.shrinkwrap.resolver>
     <version.org.jboss.weld.weld>3.1.5.SP1</version.org.jboss.weld.weld>
     <version.org.jboss.weld.weld-api>3.1.SP1</version.org.jboss.weld.weld-api>
-    <version.jakarta.mail>1.6.5</version.jakarta.mail>
+    <version.jakarta.mail-api>1.6.5</version.jakarta.mail-api>
     <version.jakarta.enterprise.cdi-api>2.0.2</version.jakarta.enterprise.cdi-api>
     <version.jakarta.activation-api>1.2.2</version.jakarta.activation-api>
     <version.jakarta.inject-api>1.0.3</version.jakarta.inject-api>
@@ -824,16 +823,32 @@
                       <regexIgnoredClass>org.apache.sshd.common.auth.*</regexIgnoredClass>
                     </ignoreClasses>
                     <dependencies>
+                      <!-- This JAR contains impl and is aligned with Jakarta spec JARs -->
                       <dependency>
-                        <!-- This JAR contains reference impl and is only used on tests -->
+                        <groupId>org.glassfish</groupId>
+                        <artifactId>jakarta.json</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>javax.json.*</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
+                      <!-- This JAR contains impl and is aligned with Jakarta spec JARs -->
+                      <dependency>
+                        <groupId>org.glassfish</groupId>
+                        <artifactId>jakarta.el</artifactId>
+                        <ignoreClasses>
+                          <ignoreClass>javax.el.*</ignoreClass>
+                        </ignoreClasses>
+                      </dependency>
+                      <!-- This JAR contains reference impl and is only used on tests -->
+                      <dependency>
                         <groupId>com.sun.activation</groupId>
                         <artifactId>jakarta.activation</artifactId>
                         <ignoreClasses>
                           <ignoreClass>javax.activation.*</ignoreClass>
                         </ignoreClasses>
                       </dependency>
+                      <!-- This JAR contains reference impl and is only used on tests -->
                       <dependency>
-                        <!-- This JAR contains reference impl and is only used on tests -->
                         <groupId>com.sun.mail</groupId>
                         <artifactId>jakarta.mail</artifactId>
                         <ignoreClasses>
@@ -2691,8 +2706,13 @@
       </dependency>
       <dependency>
         <groupId>org.glassfish</groupId>
+        <artifactId>jakarta.el</artifactId>
+        <version>${version.jakarta.el-api}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish</groupId>
         <artifactId>jakarta.json</artifactId>
-        <version>${version.org.glassfish.jakarta}</version>
+        <version>${version.jakarta.json-api}</version>
       </dependency>
       <dependency>
         <groupId>org.glassfish.jaxb</groupId>
@@ -2728,14 +2748,19 @@
       <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>jakarta.mail</artifactId>
-        <version>${version.jakarta.mail}</version>
+        <version>${version.jakarta.mail-api}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.mail</groupId>
         <artifactId>jakarta.mail-api</artifactId>
-        <version>${version.jakarta.mail}</version>
+        <version>${version.jakarta.mail-api}</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.sun.activation</groupId>
+        <artifactId>jakarta.activation</artifactId>
+        <version>${version.jakarta.activation-api}</version>
+      </dependency>
       <dependency>
         <groupId>jakarta.activation</groupId>
         <artifactId>jakarta.activation-api</artifactId>
@@ -4703,10 +4728,6 @@
         <version>${version.org.jboss.resteasy}</version>
         <exclusions>
           <exclusion>
-            <groupId>com.sun.activation</groupId>
-            <artifactId>jakarta.activation</artifactId>
-          </exclusion>
-          <exclusion>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
           </exclusion>
@@ -4770,12 +4791,6 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-multipart-provider</artifactId>
         <version>${version.org.jboss.resteasy}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>com.sun.activation</groupId>
-            <artifactId>jakarta.activation</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.resteasy</groupId>
