@@ -4731,7 +4731,7 @@
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
           </exclusion>
-          <!-- Collides with jboss-annotations-api_1.2_spec -->
+          <!-- Collides with jakarta.annotation-api -->
           <exclusion>
             <groupId>org.jboss.spec.javax.annotation</groupId>
             <artifactId>jboss-annotations-api_1.3_spec</artifactId>
@@ -4745,7 +4745,7 @@
             <groupId>javassist</groupId>
             <artifactId>javassist</artifactId>
           </exclusion>
-          <!-- Collides with org.jboss.spec.javax.annotation:jboss-annotations-api_1.2_spec -->
+          <!-- Collides with jakarta.annotation-api -->
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>jsr250-api</artifactId>
@@ -4912,6 +4912,10 @@
           <exclusion>
             <groupId>org.jboss.spec.javax.el</groupId>
             <artifactId>jboss-el-api_3.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.enterprise</groupId>
+            <artifactId>cdi-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -5927,10 +5931,6 @@
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>jakarta.xml.bind</groupId>
-            <artifactId>jakarta.xml.bind-api</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.hamcrest</groupId>
