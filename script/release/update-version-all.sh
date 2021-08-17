@@ -6,7 +6,7 @@ set -e
 #
 # export SETTINGS_XML_FILE="<full path>/settings.xml"
 #
-# and run the script > sh update-version-all.sh newVersion newAppformerVersion custom.
+# and run the script > sh update-version-all.sh new_kieVersion custom.
 
 
 # Updates the version for all kiegroup repositories
@@ -56,7 +56,6 @@ if [ $# != 1 ] && [ $# != 2 ]; then
     echo "  $0 newVersion releaseType"
     echo "For example:"
     echo "  $0 7.5.0.Final community"
-    echo "  $0 7.5.0.20171120-prod productized"
     echo
     exit 1
 fi
@@ -64,7 +63,7 @@ fi
 newVersion=$1
 echo "New version is $newVersion"
 
-releaseType=$3
+releaseType=$2
 # check if the release type was set, if not default to "community"
 if [ "x$releaseType" == "x" ]; then
     releaseType="community"
@@ -90,15 +89,15 @@ startDateTime=`date +%s`
 cd $droolsjbpmOrganizationDir
 
 # --- --- ---
-# Checks if repos in branched-7-repository-list.txt are on the right 7.x branch if all other repos are checked out to master.
-# For example, optaplanner 7.x branch has the same version as master on other kiegroup/reps.
+# Checks if repos in branched-7-repository-list.txt are on the right 7.x branch if all other repos are checked out to main.
+# For example, optaplanner 7.x branch has the same version as main on other kiegroup/reps.
 for branch7xRepo in $(cat "${scriptDir}/../branched-7-repository-list.txt"); do
   cd $branch7xRepo
   currentBranch=$(git rev-parse --abbrev-ref HEAD)
-  if [ $currentBranch == "master" ]; then
+  if [ $currentBranch == "main" ]; then
       echo ""
       echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-    echo " Can't update versions for master branches because $branch7xRepo is still on master and should be checked out to 7.x"
+    echo " Can't update versions for main branches because $branch7xRepo is still on main and should be checked out to 7.x"
     echo ""
       while true; do
           echo "a abort"
@@ -196,6 +195,13 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             mvnVersionsUpdateParentAndChildModules
             returnCode=$?
             sed -i "s/release.version=.*$/release.version=$newVersion/" jbpm-installer/src/main/resources/build.properties
+
+        elif [ "$repository" == "process-migration-service" ]; then
+            # extract old kie version
+            kieOldVersion=$(grep -oP -m 1 '(?<=<version>).*(?=</version)' pom.xml)
+          # update version since no mvn command works
+            sed -i "s/<version>$kieOldVersion<\/version>/<version>$newVersion<\/version>/" pom.xml
+            returnCode=$?
 
         else
             mvnVersionsUpdateParentAndChildModules

@@ -22,7 +22,7 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.58.0-SNAPSHOT</version>
+  <version>7.59.0-SNAPSHOT</version>
 
   <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
   <description>
@@ -69,6 +69,7 @@
     <version.commons-net>2.2</version.commons-net>
     <version.commons-pool>1.6</version.commons-pool>
     <version.commons-io>2.7</version.commons-io>
+    <version.common-text>1.9</version.common-text>
     <version.com.ahome-it.lienzo.tooling.nativetools>1.0.195-RELEASE
     </version.com.ahome-it.lienzo.tooling.nativetools>
     <version.com.ahome-it.lienzo.tooling.common>1.0.190-RELEASE</version.com.ahome-it.lienzo.tooling.common>
@@ -284,7 +285,7 @@
     <version.tomcat>9.0.22</version.tomcat>
     <version.wsdl4j>1.6.3</version.wsdl4j>
     <version.xalan>2.7.1</version.xalan>
-    <version.xerces>2.12.1</version.xerces>
+    <version.xerces>2.12.0.SP03</version.xerces>
     <version.xml-apis>1.4.01</version.xml-apis>
     <version.xml-apis-ext>1.3.04</version.xml-apis-ext>
     <version.xml-resolver>1.2</version.xml-resolver>
@@ -293,7 +294,7 @@
     <version.xpp3>${version.xmlpull}</version.xpp3>
 
     <!-- Internal dependencies -->
-    <version.org.kie>7.58.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.59.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
     <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
@@ -325,7 +326,7 @@
     <version.org.jboss.arquillian.extension.drone>2.5.1</version.org.jboss.arquillian.extension.drone>
     <version.org.jboss.arquillian.graphene>2.3.2</version.org.jboss.arquillian.graphene>
     <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
-    <version.org.jboss.errai>4.11.0.Final</version.org.jboss.errai>
+    <version.org.jboss.errai>4.14.2.Final</version.org.jboss.errai>
     <version.com.google.elemental2>1.1.0</version.com.google.elemental2>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.jboss.errai.wildfly>19.1.0.SP1</version.org.jboss.errai.wildfly>
@@ -812,7 +813,7 @@
                       <ignoreClass>org.hornetq.utils.HornetQUtilBundle_$bundle</ignoreClass>
                       <ignoreClass>org.hornetq.utils.HornetQUtilLogger_$logger</ignoreClass>
                       <!-- Classes bundled in errai-javax-enterprise which are GWT friendly.
-                           See https://github.com/errai/errai/blob/master/errai-javax-enterprise/README -->
+                           See https://github.com/errai/errai/blob/main/errai-javax-enterprise/README -->
                       <ignoreClass>javax.interceptor.InvocationContext</ignoreClass>
                       <ignoreClass>javax.inject.Provider</ignoreClass>
                       <ignoreClass>javax.inject.Named</ignoreClass>
@@ -2357,6 +2358,11 @@
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
         <version>${version.commons-io}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-text</artifactId>
+        <version>${version.common-text}</version>
       </dependency>
 
       <!-- KIE Lienzo modules -->
