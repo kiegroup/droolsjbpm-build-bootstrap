@@ -28,6 +28,15 @@ dependencies:
     dependencies:
       - project: kiegroup/kie-soup
       - project: kiegroup/droolsjbpm-knowledge
+    mapping:
+      dependencies:
+        default:
+          - source: 7.x
+            target: main
+        dependant:
+          default:
+            - source: main
+              target: 7.x
 
   - project: kiegroup/jbpm
     dependencies:
