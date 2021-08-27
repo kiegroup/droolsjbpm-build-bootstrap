@@ -36,24 +36,26 @@ dependencies:
         - kiegroup/optaweb-employee-rostering
         - kiegroup/optaweb-vehicle-routing
         - kiegroup/optaplanner
+        - kiegroup/drools
 
   - project: kiegroup/drools
     dependencies:
       - project: kiegroup/kie-soup
-      - project: kiegroup/droolsjbpm-knowledge
+      - project: kiegroup/droolsjbpm-knowledge        
     mapping:
       dependencies:
         default:
           - source: 7.x
             target: main
-        dependant:
-          default:
-            - source: main
-              target: 7.x
-        exclude:
-          - kiegroup/optaweb-employee-rostering
-          - kiegroup/optaweb-vehicle-routing
-          - kiegroup/optaplanner
+      dependant:
+        default:
+          - source: main
+            target: 7.x
+      exclude:
+        - kiegroup/optaweb-employee-rostering
+        - kiegroup/optaweb-vehicle-routing
+        - kiegroup/optaplanner          
+        - kiegroup/droolsjbpm-knowledge          
 
   - project: kiegroup/jbpm
     dependencies:
