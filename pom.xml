@@ -274,6 +274,7 @@
     <version.org.webjars.npm.monaco-editor>0.20.0</version.org.webjars.npm.monaco-editor>
     <version.org.wildfly>23.0.2.Final</version.org.wildfly>
     <version.org.wildfly.arquillian>3.0.1.Final</version.org.wildfly.arquillian>
+    <version.org.wildfly.client>1.0.1.Final</version.org.wildfly.client>
     <version.org.wildfly.core>15.0.1.Final</version.org.wildfly.core>
     <version.org.wildfly.common>1.5.4.Final</version.org.wildfly.common>
     <version.org.yaml.snakeyaml>1.26</version.org.yaml.snakeyaml>
@@ -5387,6 +5388,13 @@
         <groupId>org.wildfly.arquillian</groupId>
         <artifactId>wildfly-arquillian-container-remote</artifactId>
         <version>${version.org.wildfly.arquillian}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.wildfly.client</groupId>
+        <artifactId>wildfly-client-config</artifactId>
+        <version>${version.org.wildfly.client}</version>
+        <scope>test</scope>
       </dependency>
 
       <dependency>
