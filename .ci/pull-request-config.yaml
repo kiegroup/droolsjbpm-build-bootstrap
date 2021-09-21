@@ -27,6 +27,8 @@ build:
       upstream: mvn -e clean install -DskipTests -Dgwt.compiler.skip=true -Dgwt.skipCompilation=true -Denforcer.skip=true -Dcheckstyle.skip=true -Dspotbugs.skip=true -Drevapi.skip=true -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
 
   - project: kiegroup/jbpm
+    build-command:
+      current: mvn -e -nsu -Dfull -Ptomcat9 -Pjenkins-pr-builder clean install -Dcontainer.profile=tomcat9 -Dintegration-tests=true -Dmaven.test.failure.ignore=true -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
     archive-artifacts:
       path: |
         **/jbpm-container-test/**/*.log
