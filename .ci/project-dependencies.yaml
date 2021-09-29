@@ -33,9 +33,6 @@ dependencies:
           - source: main
             target: 7.x
       exclude:
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaweb-vehicle-routing
-        - kiegroup/optaplanner
         - kiegroup/drools
 
   - project: kiegroup/drools
@@ -52,10 +49,7 @@ dependencies:
           - source: main
             target: 7.x
       exclude:
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaweb-vehicle-routing
-        - kiegroup/optaplanner          
-        - kiegroup/droolsjbpm-knowledge          
+        - kiegroup/droolsjbpm-knowledge
 
   - project: kiegroup/jbpm
     dependencies:
