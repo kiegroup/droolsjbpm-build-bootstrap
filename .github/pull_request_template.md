@@ -13,7 +13,7 @@
 
 <details>
 <summary>
-How to run this/these pull request check/s locally?
+How to replicate CI configuration locally?
 </summary>
 
 We do "simple" maven builds, they are just basically maven commands, but just because we have multiple repositories related between them and one change could affect several of those projects by multiple pull requests, we use [build-chain tool](https://github.com/kiegroup/github-action-build-chain) to handle cross repository builds and be sure that we always use latest version of the code for each repository.
