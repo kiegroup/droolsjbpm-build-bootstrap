@@ -18,18 +18,7 @@ How to replicate CI configuration locally?
 
 We do "simple" maven builds, they are just basically maven commands, but just because we have multiple repositories related between them and one change could affect several of those projects by multiple pull requests, we use [build-chain tool](https://github.com/kiegroup/github-action-build-chain) to handle cross repository builds and be sure that we always use latest version of the code for each repository.
  
-[build-chain tool](https://github.com/kiegroup/github-action-build-chain) is not only a github-action tool but a CLI one, so you can reproduce almost the same build by executing it locally.
-If you want to do so(for example to reproduce a CI error hard to reproduce) you can go either to the Github Actions job or to the Jenkins job and to copy/paste the details under `Printing local execution command`. You will see something like:
- 
-```
-  [INFO]  You can copy paste the following commands to locally execute build chain tool.
-  [INFO]  npm i @kie/build-chain-action@2.3.19 -g
-  [INFO]  build-chain-action -df "https://raw.githubusercontent.com/${GROUP}/droolsjbpm-build-bootstrap/${BRANCH:main}/.ci/pull-request-config.yaml" build pr -url https://github.com/kiegroup/appformer/pull/1208
-  [WARN]  Remember you need Node installed in the environment.
-  [WARN]  The `GITHUB_TOKEN` has to be set in the environment.
-```
- 
- just copy the `build-chain-action` command execution (and npm installation command if needed) and paste it in your terminal/console.
+[build-chain tool](https://github.com/kiegroup/github-action-build-chain) is not only a github-action tool but a CLI one, so in case you posted multiple pull requests related with this change you can easily reproduce the same build by executing it locally. See [local execution](https://github.com/kiegroup/github-action-build-chain#local-execution) details to get more information about it.
 </details>
 
 <details>
