@@ -10,6 +10,25 @@
 * link 2
 * link 3 etc.
 
+
+<details>
+<summary>
+How to run this/these pull request check/s locally?
+</summary>
+ 
+You can go either to the Github Actions job or to the Jenkins job and to copy/paste the details under `Printing local execution command`. You will see something like:
+ 
+```
+  [INFO]  You can copy paste the following commands to locally execute build chain tool.
+  [INFO]  npm i @kie/build-chain-action@2.3.19 -g
+  [INFO]  build-chain-action -df "https://raw.githubusercontent.com/${GROUP}/droolsjbpm-build-bootstrap/${BRANCH:main}/.ci/pull-request-config.yaml" build pr -url https://github.com/kiegroup/appformer/pull/1208
+  [WARN]  Remember you need Node installed in the environment.
+  [WARN]  The `GITHUB_TOKEN` has to be set in the environment.
+```
+ 
+ just copy the `build-chain-action` command execution (and npm installation command if needed) and paste it in your terminal/console.
+</details>
+
 <details>
 <summary>
 How to retest this PR or trigger a specific build:
