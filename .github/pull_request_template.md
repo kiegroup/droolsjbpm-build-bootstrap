@@ -10,7 +10,6 @@
 * link 2
 * link 3 etc.
 
-
 <details>
 <summary>
 How to replicate CI configuration locally?
