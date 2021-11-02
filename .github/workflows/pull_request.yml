@@ -27,6 +27,6 @@ jobs:
     steps:
       - uses: ./.github/workflows/composite/build-chain
         with:
-          java-version: ${{ matrix.java-version }}
-          maven-version: ${{ matrix.maven-version }}
+          java_version: ${{ matrix.java-version }}
+          maven_version: ${{ matrix.maven-version }}
           github_token: "${{ secrets.GITHUB_TOKEN }}"

@@ -4,26 +4,26 @@ inputs:
   github_token:
     description: "the github token"
     required: true
-  definition-file:
+  definition_file:
     description: 'The `definition-file` input for the build-chain'
     required: false
     default: 'https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH:main}/.ci/pull-request-config.yaml'
-  flow-type:
+  flow_type:
     description: "the flow to execute, it can be 'pull-request', 'full-downstream', 'single' or 'branch'"
     default: "pull-request"
     required: false
-  starting-project:
+  starting_project:
     description: "the project to start flow from. By default is the project triggering the job"
     required: false
-  logger-level:
+  logger_level:
     description: "the log level. 'info' (default) | 'trace' | 'debug'"
     default: "info"
     required: false
-  java-version:
+  java_version:
     description: "the java version"
     default: 8
     required: false
-  maven-version:
+  maven_version:
     description: "the maven version"
     default: "3.8.1"
     required: false
@@ -34,16 +34,15 @@ runs:
     - name: Setup Maven And Java Version
       uses: s4u/setup-maven-action@v1.2.1
       with:
-        java-version: ${{ inputs.java-version }}
-        maven-version: ${{ inputs.maven-version }}
+        java-version: ${{ inputs.java_version }}
+        maven-version: ${{ inputs.maven_version }}
     - name: Build Chain Tool Execution
       id: build-chain
       uses: kiegroup/github-action-build-chain@v2.6.13
       with:
-        definition-file: ${{ inputs.definition-file }}
-        flow-type: ${{ inputs.flow-type }}
-        starting-project: ${{ inputs.starting-project }}
-        logger-level: ${{ inputs.logger-level }}
-        token: ${{ inputs.logger-level }}
+        definition-file: ${{ inputs.definition_file }}
+        flow-type: ${{ inputs.flow_type }}
+        starting-project: ${{ inputs.starting_project }}
+        logger-level: ${{ inputs.logger_level }}
       env:
         GITHUB_TOKEN: ${{ inputs.github_token }}
