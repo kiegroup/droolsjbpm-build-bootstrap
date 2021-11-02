@@ -14,4 +14,4 @@ runs:
       with:
         path:  ~/.m2
         key: ${{ inputs.key-prefix }}-m2-${{ hashFiles('**/pom.xml') }}
-        restore-keys:  ${{ inputs.key-prefix }}-m2             
+        restore-keys:  ${{ inputs.key-prefix }}-m2

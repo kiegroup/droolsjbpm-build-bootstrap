@@ -19,10 +19,23 @@ inputs:
     description: "the log level. 'info' (default) | 'trace' | 'debug'"
     default: "info"
     required: false
+  java-version:
+    description: "the java version"
+    default: 8
+    required: false
+  maven-version:
+    description: "the maven version"
+    default: "3.8.1"
+    required: false
 
 runs:
   using: "composite"
-  steps: 
+  steps:
+    - name: Setup Maven And Java Version
+      uses: s4u/setup-maven-action@v1.2.1
+      with:
+        java-version: ${{ inputs.java-version }}
+        maven-version: ${{ inputs.maven-version }}
     - name: Build Chain Tool Execution
       id: build-chain
       uses: kiegroup/github-action-build-chain@v2.6.13
