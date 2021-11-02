@@ -25,14 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Maven Build
     steps:
-      - uses: ./.github/workflows/composite/cache-maven
-        with:
-          key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
       - uses: ./.github/workflows/composite/build-chain
         with:
           java-version: ${{ matrix.java-version }}
           maven-version: ${{ matrix.maven-version }}
           github_token: "${{ secrets.GITHUB_TOKEN }}"
-      - uses: ./.github/workflows/composite/surefire-report
-        if: ${{ always() }}
-
