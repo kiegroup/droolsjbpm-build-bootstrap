@@ -17,12 +17,14 @@ jobs:
       - name: Checkout actions repository
         uses: actions/checkout@v2
         with:
+          ref: ${{ github.ref }}
           path: composite-actions
       - uses: ./composite-actions/.github/workflows/composite/cache-maven
         with:
           key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
       - uses: ./composite-actions/.github/workflows/composite/build-chain
         with:
+          definition-file: https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH}/.ci/upstream-config.yaml
           java-version: ${{ matrix.java-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - uses: ./composite-actions/.github/workflows/composite/surefire-report
