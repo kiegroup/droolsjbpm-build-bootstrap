@@ -31,11 +31,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Setup Maven And Java Version
-      uses: s4u/setup-maven-action@v1.2.1
-      with:
-        java-version: ${{ inputs.java-version }}
-        maven-version: ${{ inputs.maven-version }}
     - name: Build Chain Tool Execution
       id: build-chain
       uses: kiegroup/github-action-build-chain@v2.6.13
