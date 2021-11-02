@@ -1,0 +1,17 @@
+name: 'Build Chain'
+description: 'Pretends to copy some files and return the number of files copied'
+inputs:
+  definition_file:
+    description: 'The `definition-file` input for the build-chain'
+    required: false
+    default: 'https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH:main}/.ci/pull-request-config.yaml'
+runs:
+  using: "composite"
+  steps: 
+    - name: Build Chain Tool Execution
+      id: build-chain
+      uses: kiegroup/github-action-build-chain@v2.6.13
+      with:
+        definition-file: ${{ inputs.definition_file }}
+      env:
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"      
