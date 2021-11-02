@@ -35,8 +35,8 @@ jobs:
         shell: bash
         run: |
           pwd
-          ls -R
-      - uses: ./composite-actions/..github/workflows/composite/cache-maven
+          ls -Ra
+      - uses: ./composite-actions/.github/workflows/composite/cache-maven
         with:
           key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
       - uses: ./composite-actions/.github/workflows/composite/build-chain
