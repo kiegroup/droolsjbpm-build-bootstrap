@@ -39,6 +39,11 @@ jobs:
         with:
           java-version: ${{ matrix.java-version }}
           maven-version: ${{ matrix.maven-version }}
+      - name: LS and PWD
+        shell: bash
+        run: |
+          pwd
+          ls -Ra
       - uses: ./composite-actions/.github/workflows/composite/cache-maven
         with:
           key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
