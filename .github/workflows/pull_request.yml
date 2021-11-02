@@ -28,21 +28,21 @@ jobs:
       - name: Checkout actions repository
         uses: actions/checkout@v2
         with:
-          repository: ginxo/droolsjbpm-build-bootstrap
           path: composite-actions
-          ref: tests/composite-actions
       - name: LS and PWD
         shell: bash
         run: |
           pwd
           ls -Ra
+      - uses: ./composite-actions/.github/workflows/composite/java
+        with:
+          java-version: ${{ matrix.java-version }}
+          maven-version: ${{ matrix.maven-version }}
       - uses: ./composite-actions/.github/workflows/composite/cache-maven
         with:
           key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
       - uses: ./composite-actions/.github/workflows/composite/build-chain
         with:
-          java-version: ${{ matrix.java-version }}
-          maven-version: ${{ matrix.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - uses: ./composite-actions/.github/workflows/composite/surefire-report
         if: ${{ always() }}
