@@ -25,8 +25,23 @@ jobs:
     runs-on: ubuntu-latest
     name: Maven Build
     steps:
+      - name: LS and PWD
+        shell: bash
+        run: |
+          pwd
+          ls ./
+          ls ./.github
+          ls ./.github/workflows
+          ls ./.github/workflows/composite
+          ls ./.github/workflows/composite/build-chain
+      - uses: ./.github/workflows/composite/cache-maven
+        with:
+          key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
       - uses: ./.github/workflows/composite/build-chain
         with:
-          java_version: ${{ matrix.java-version }}
-          maven_version: ${{ matrix.maven-version }}
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          java-version: ${{ matrix.java-version }}
+          maven-version: ${{ matrix.maven-version }}
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - uses: ./.github/workflows/composite/surefire-report
+        if: ${{ always() }}
+
