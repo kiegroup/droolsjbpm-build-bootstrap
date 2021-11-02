@@ -25,31 +25,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Maven Build
     steps:
-      - name: Checkout actions repository
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
-          path: composite-actions
-      - name: LS and PWD
-        shell: bash
-        run: |
-          pwd
-          ls -Ra
-      - uses: ./composite-actions/.github/workflows/composite/java
+      - uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/java@tests/composite-actions
         with:
           java-version: ${{ matrix.java-version }}
           maven-version: ${{ matrix.maven-version }}
-      - name: LS and PWD
-        shell: bash
-        run: |
-          pwd
-          ls -Ra
-      - uses: ./composite-actions/.github/workflows/composite/cache-maven
+      - uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/cache-maven@tests/composite-actions
         with:
           key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
-      - uses: ./composite-actions/.github/workflows/composite/build-chain
+      - uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@tests/composite-actions
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - uses: ./composite-actions/.github/workflows/composite/surefire-report
+      - uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/surefire-report@tests/composite-actions
         if: ${{ always() }}
 
