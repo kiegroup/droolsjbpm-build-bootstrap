@@ -29,11 +29,7 @@ jobs:
         shell: bash
         run: |
           pwd
-          ls ./
-          ls ./.github
-          ls ./.github/workflows
-          ls ./.github/workflows/composite
-          ls ./.github/workflows/composite/build-chain
+          ls -R
       - uses: ./.github/workflows/composite/cache-maven
         with:
           key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
