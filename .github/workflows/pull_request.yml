@@ -28,9 +28,8 @@ jobs:
       - name: Checkout actions repository
         uses: actions/checkout@v2
         with:
-          repository: ginxo/droolsjbpm-build-bootstrap
+          ref: ${{ github.ref }}
           path: composite-actions
-          ref: tests/composite-actions
       - name: LS and PWD
         shell: bash
         run: |
