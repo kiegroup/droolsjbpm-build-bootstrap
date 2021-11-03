@@ -42,7 +42,7 @@ jobs:
         uses: kiegroup/github-action-build-chain@issues/106
         with:
           definition-file: https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH}/.ci/pull-request-config.yaml
-	  annotations-prefix: "${{ matrix.java-version }}/${{ matrix.maven-version }}"
+          annotations-prefix: "${{ matrix.java-version }}/${{ matrix.maven-version }}"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: Check Surefire Report
