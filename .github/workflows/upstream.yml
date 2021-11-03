@@ -10,27 +10,28 @@ jobs:
     strategy:
       matrix:
         java-version: [8, 11]
+        maven-version: ['3.8.1']
       fail-fast: true
     runs-on: ubuntu-latest
     name: Maven Build
     steps:
-      - name: Set up JDK
-        uses: actions/setup-java@v1
+      - name: Java and Maven Setup
+        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/java@BXMSPROD-1539
         with:
           java-version: ${{ matrix.java-version }}
-      - name: Build Chain ${{ matrix.java-version }}
-        id: build-chain
-        uses: kiegroup/github-action-build-chain@v2.6.11
+          maven-version: ${{ matrix.maven-version }}
+      - name: Cache Maven
+        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/cache-maven@BXMSPROD-1539
         with:
-          definition-file: https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH}/.ci/upstream-config.yaml
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Check Surefire Report
+          key-prefix: ${{ runner.os }}-${{ matrix.java-version }}-maven${{ matrix.maven-version }}
+      - name: Build Chain
+        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@BXMSPROD-1539
+        with:
+          definition-file: https://raw.githubusercontent.com/${GROUP}/${PROJECT_NAME}/${BRANCH:main}/.ci/upstream-config.yaml
+          annotations-prefix: ${{ runner.os }}-${{ matrix.java-version }}/${{ matrix.maven-version }}
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Surefire Report
+        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/surefire-report@BXMSPROD-1539
         if: ${{ always() }}
-        uses: ScaCap/action-surefire-report@v1.0.10
-        with:
-          fail_on_test_failures: true
-          fail_if_no_tests: false
-          skip_publishing: true
         
           
