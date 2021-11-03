@@ -1,5 +1,10 @@
 name: 'Surefire Report'
 description: 'Generates a test report'
+inputs:
+  report_paths:
+    description: "Glob expression to surefire or failsafe report paths."
+    required: false
+    default: "**/surefire-reports/TEST-*.xml"
 
 runs:
   using: "composite"
@@ -9,4 +14,5 @@ runs:
       with:
         fail_on_test_failures: true
         fail_if_no_tests: false
-        skip_publishing: true             
+        skip_publishing: true
+        report_paths: ${{ inputs.report_paths }}
