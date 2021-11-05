@@ -57,7 +57,7 @@ pipeline {
         stage('Install build-chain tool') {
             steps {
                 script {
-                    println "[INFO] Recovering build-chain version from composite action file"
+                    println "[INFO] Getting build-chain version from composite action file"
                     def buildChainVersion = buildChain.getBuildChainVersionFromCompositeActionFile()
                     if([null, 'null'].contains(buildChainVersion)) {
                         def errorMessage = "[ERROR] The build-chain version can't be recovered. Please contact administrator"
