@@ -9,7 +9,6 @@ findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
 pr_type = env.PR_TYPE?.trim() ?: null
 build_jdk_tool = env.BUILD_JDK_TOOL?.trim() ?: 'kie-jdk11'
 build_maven_tool = env.BUILD_MAVEN_TOOL?.trim() ?: 'kie-maven-3.8.1'
-buildChainVersion = '2.3.23'
 buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: '\${GROUP}'
 buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: '\${BRANCH:main}'
 
@@ -58,6 +57,14 @@ pipeline {
         stage('Install build-chain tool') {
             steps {
                 script {
+                    println "[INFO] Recovering build-chain version from composite action file"
+                    def buildChainVersion = buildChain.getBuildChainVersionFromCompositeActionFile()
+                    if([null, 'null'].contains(buildChainVersion)) {
+                        def errorMessage = "[ERROR] The build-chain version can't be recovered. Please contact administrator"
+                        println errorMessage
+                        error(errorMessage)
+                    }
+                    println "[INFO] build-chain version recovered '${buildChainVersion}'"
                     sh "npm install -g @kie/build-chain-action@${buildChainVersion} -registry=${NPM_REGISTRY_URL}"
                 }
             }
@@ -81,7 +88,7 @@ pipeline {
 
                     configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
                         withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
-                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/\${GROUP}/droolsjbpm-build-bootstrap/\${BRANCH}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -url=${env.ghprbPullLink} --skipParallelCheckout -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true'"
+                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -url=${env.ghprbPullLink} --skipParallelCheckout -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true'"
                         }
                     }
                 }
