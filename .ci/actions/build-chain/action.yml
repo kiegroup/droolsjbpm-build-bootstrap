@@ -1,6 +1,10 @@
 name: 'Build Chain'
 description: 'Executes build-chain tool'
 inputs:
+  scm-revision:
+    description: 'The github-action-build-chain scm revision'
+    required: false
+    default: 'v2.6.17'
   github-token:
     description: "the github token"
     required: true
@@ -30,7 +34,7 @@ runs:
   steps:
     - name: Build Chain Tool Execution
       id: build-chain
-      uses: kiegroup/github-action-build-chain@v2.6.17
+      uses: kiegroup/github-action-build-chain@${{ inputs.scm-revision }}
       with:
         definition-file: ${{ inputs.definition-file }}
         flow-type: ${{ inputs.flow-type }}
