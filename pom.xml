@@ -318,6 +318,7 @@
     <version.org.apache.camel>2.24.0</version.org.apache.camel>
     <version.org.codehaus.cargo>1.9.3</version.org.codehaus.cargo>
     <version.org.freemarker>2.3.30</version.org.freemarker>
+    <version.no.api.freemarker>2.0.0</version.no.api.freemarker>
     <!-- Dependencies for selenium tests -->
     <version.org.jboss.arquillian.selenium>3.13.0</version.org.jboss.arquillian.selenium>
     <version.org.jboss.arquillian.extension.drone>2.5.1</version.org.jboss.arquillian.extension.drone>
@@ -4422,6 +4423,12 @@
         <groupId>org.freemarker</groupId>
         <artifactId>freemarker</artifactId>
         <version>${version.org.freemarker}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>no.api.freemarker</groupId>
+        <artifactId>freemarker-java8</artifactId>
+        <version>${version.no.api.freemarker}</version>
       </dependency>
 
       <dependency>
