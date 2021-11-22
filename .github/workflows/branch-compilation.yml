@@ -1,0 +1,45 @@
+name: Branch Compilation
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'branch to compile'
+        required: true
+        default: 'main'
+      java-version:
+        description: 'the java version to compile with'
+        required: true
+        default: '11'
+      maven-version:
+        description: 'the maven version to compile with'
+        required: true
+        default: '3.8.1'
+      starting-project:
+        description: 'the project to start the job with (it is normally the latest leaf from the tree)'
+        required: true
+        default: 'kie-wb-distributions'
+
+jobs:
+  build-chain:
+    concurrency:
+      group: pull_request-${{ github.head_ref }}
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    name: Maven Build
+    steps:
+      - name: Clean Disk Space
+        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/ubuntu-disk-space@main
+      - name: Java and Maven Setup
+        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/maven@main
+        with:
+          java-version: ${{ github.event.inputs.java-version }}
+          maven-version: ${{ github.event.inputs.maven-version }}
+          cache-key-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}-maven${{ github.event.inputs.maven-version }}
+      - name: Build Chain
+        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
+        with:
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/${{ github.event.inputs.branch }}/.ci/compilation-config.yaml
+          starting-project: ${{ github.event.inputs.starting-project }}
+          annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
