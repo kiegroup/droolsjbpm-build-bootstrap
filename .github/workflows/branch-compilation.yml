@@ -3,10 +3,6 @@ name: Branch Compilation
 on:
   workflow_dispatch:
     inputs:
-      branch:
-        description: 'branch to compile'
-        required: true
-        default: 'main'
       java-version:
         description: 'the java version to compile with'
         required: true
@@ -18,7 +14,7 @@ on:
       starting-project:
         description: 'the project to start the job with (it is normally the latest leaf from the tree)'
         required: true
-        default: 'kie-wb-distributions'
+        default: 'kiegroup/kie-wb-distributions'
 
 jobs:
   build-chain:
@@ -39,7 +35,8 @@ jobs:
       - name: Build Chain
         uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
         with:
-          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/${{ github.event.inputs.branch }}/.ci/compilation-config.yaml
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml
           starting-project: ${{ github.event.inputs.starting-project }}
           annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+          flow-type: branch 
