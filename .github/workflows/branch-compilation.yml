@@ -24,14 +24,19 @@ jobs:
     runs-on: ubuntu-latest
     name: Maven Build
     steps:
-      - name: script
-        shell: bash
-        run: printenv
+      - name: Clean Disk Space
+        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/ubuntu-disk-space@main
+      - name: Java and Maven Setup
+        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/maven@main
+        with:
+          java-version: ${{ github.event.inputs.java-version }}
+          maven-version: ${{ github.event.inputs.maven-version }}
+          cache-key-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}-maven${{ github.event.inputs.maven-version }}
       - name: Build Chain
-        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
+        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
         with:
           definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml
           starting-project: ${{ github.event.inputs.starting-project }}
           annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-          flow-type: branch
+          flow-type: branch 
