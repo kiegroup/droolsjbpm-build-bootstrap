@@ -28,7 +28,7 @@ jobs:
         shell: bash
         run: printenv
       - name: Build Chain
-        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
+        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
         with:
           definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml
           starting-project: ${{ github.event.inputs.starting-project }}
