@@ -3,10 +3,6 @@ name: Branch Compilation
 on:
   workflow_dispatch:
     inputs:
-      branch:
-        description: 'branch to compile'
-        required: true
-        default: 'main'
       java-version:
         description: 'the java version to compile with'
         required: true
@@ -28,6 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Maven Build
     steps:
+      - name: script
+        shell: bash
+        run: printenv
       - name: Clean Disk Space
         uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/ubuntu-disk-space@main
       - name: Java and Maven Setup
@@ -43,3 +42,4 @@ jobs:
           starting-project: ${{ github.event.inputs.starting-project }}
           annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+          logger-level: 'debug'
