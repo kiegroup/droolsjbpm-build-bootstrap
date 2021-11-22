@@ -35,3 +35,4 @@ jobs:
           annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           flow-type: branch
+          logger-level: debug
