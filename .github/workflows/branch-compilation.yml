@@ -30,7 +30,7 @@ jobs:
       - name: Build Chain
         uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
         with:
-          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/${{ github.event.inputs.branch }}/.ci/compilation-config.yaml
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml
           starting-project: ${{ github.event.inputs.starting-project }}
           annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
