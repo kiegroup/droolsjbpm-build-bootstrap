@@ -7,16 +7,20 @@ dependencies:
     dependencies:
       - project: kiegroup/lienzo-core
 
+  - project: Ginxo/droolsjbpm-build-bootstrap
+
   - project: kiegroup/droolsjbpm-build-bootstrap
 
   - project: kiegroup/kie-soup
     dependencies:
       - project: kiegroup/droolsjbpm-build-bootstrap
+      - project: Ginxo/droolsjbpm-build-bootstrap
 
   - project: kiegroup/appformer
     dependencies:    
       - project: kiegroup/lienzo-core
       - project: kiegroup/droolsjbpm-build-bootstrap
+      - project: Ginxo/droolsjbpm-build-bootstrap
       - project: kiegroup/lienzo-tests
       - project: kiegroup/kie-soup
 
