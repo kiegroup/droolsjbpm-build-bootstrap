@@ -15,6 +15,14 @@ on:
         description: 'the project to start the job with (it is normally the latest leaf from the tree)'
         required: true
         default: 'kiegroup/kie-wb-distributions'
+      additional-flags:
+        description: 'the additional-flags input. For example "-b main; --fullProjectDependencyTree"'
+        required: true
+        default: ''
+      logger-level:
+        description: 'the logger-level. info by default'
+        required: true
+        default: 'info'
 
 jobs:
   build-chain:
@@ -33,10 +41,12 @@ jobs:
           maven-version: ${{ github.event.inputs.maven-version }}
           cache-key-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}-maven${{ github.event.inputs.maven-version }}
       - name: Build Chain
-        uses: ginxo/droolsjbpm-build-bootstrap/.ci/actions/build-chain@compilation
+        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/build-chain@main
         with:
           definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml
           starting-project: ${{ github.event.inputs.starting-project }}
           annotations-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}/${{ github.event.inputs.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-          flow-type: branch 
+          flow-type: branch
+          additional-flags: ${{ github.event.inputs.additional-flags }}
+          logger-level:  ${{ github.event.inputs.logger-level }}
