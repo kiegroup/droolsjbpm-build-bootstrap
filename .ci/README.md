@@ -11,7 +11,7 @@ Table of content
 
 * **[Where can I find the commands which are going to be executed?](#where-can-i-find-the-commands-which-are-going-to-be-executed)**
 
-* **[How are the projects related between them?](#how-are-the-projects-related-between-them)**
+* **[How are the project dependencies defined?](#how-are-the-project-dependencies-defined)**
 
 * **[Productization Nightly Job](#productization-nightly-job)**
 
@@ -68,7 +68,7 @@ More information about this at [github-action-build-chain#usage-example](https:/
 
 > **_Note:_** You can always check the "Execution Summary" from any Jenkins or Github Actions job.
 
-## How are the projects related between them?
+## How are the project dependencies defined?
 
 As mentioned above, the project dependencies is delegated to build-chain tool and the project dependency information is externalized in one single yaml file. See [project-dependencies.yaml file](https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/main/.ci/project-dependencies.yaml).
 
