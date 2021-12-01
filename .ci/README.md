@@ -40,7 +40,7 @@ kiegroup Github Actions use [composite actions](https://docs.github.com/en/actio
 
 See [our composite actions definitions](actions).
 
-Thanks to this composite actions strategy most of the Github Action jobs are basically the same and build-chain tool is in charge of making "the magic":
+Thanks to this composite actions strategy most of the Github Action jobs are basically the same and build-chain tool is in charge of making "the magic" in background:
 
 * [droolsjbpm-build-boostrap](../.github/workflows/pull_request.yml)
 * [appformer](https://github.com/kiegroup/appformer/blob/main/.github/workflows/pull_request.yml)
