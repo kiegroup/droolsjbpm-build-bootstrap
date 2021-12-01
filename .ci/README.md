@@ -36,7 +36,7 @@ The jobs are basically [pipeline jobs type](https://www.jenkins.io/doc/book/pipe
 
 They are stored on `.github/workflows` folder as it is required by Github Actions to be executed for each repository. The difference with Jenkins' one is the pipeline and the job definition are both mixed in the same yaml file.
 
-We use [composite actions](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) to point to the most common steps centralized in on single repository (droolsjbpm-build-bootstrap), this way it is easier to maintain, adapt, update versions and so on for all the repositories and branches involved on the RHBA CI process.
+kiegroup Github Actions use [composite actions](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) to point to the most common steps centralized in single repository (droolsjbpm-build-bootstrap), this way reduces maintaining in multiple repositories or adapting, updating versions and similar changes for all the repositories and branches involved in the kiegroup organization CI processes.
 
 See [our composite actions definitions](actions).
 
