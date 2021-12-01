@@ -113,7 +113,7 @@ You will be able to see more complex definitions for projects like `drools` or `
         - kiegroup/droolsjbpm-knowledge  
 ```
 
-It is more or less the same thing we mentioned above but with additional `mapping` information which complicates the things a bit but not much... `mapping` is about "branch mapping" and we require to take different branches per project depending on the project triggering the job (the project that launches opens the PR) and the target branch for a particular PR. In this case we want to get `drools:7.x` for every pull request targeting `main` branch, except for `kiegroup/opta*` and `kiegroup/droolsjbpm-knowledge`.
+`mapping` is about "branch mapping" and we require to take different branches per project depending on the project triggering the job (the project that launches opens the PR) and the target branch for a particular PR. In this case we want to get `drools:7.x` for every pull request targeting `main` branch, except for `kiegroup/opta*` and `kiegroup/droolsjbpm-knowledge`.
 We also want the opposite, to get `drools:main` for every pull request targeting `7.x`, the rest of branches will be a basic flat mapping from A to A always.
 
 ## Productization nightly job
