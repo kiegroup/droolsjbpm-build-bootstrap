@@ -1,6 +1,6 @@
 # CI documentation
 
-This document pretends to clarify the CI status and configuration for the RHBA set of projects. [See projects dependency tree](https://github.com/kiegroup/droolsjbpm-build-bootstrap#kiegroup-project-structure).
+This document tries to clarify the CI status and configuration for the RHBA set of projects. [See projects dependency tree](https://github.com/kiegroup/droolsjbpm-build-bootstrap#kiegroup-project-structure).
 
 Table of content
 ----------------
