@@ -84,7 +84,7 @@ There you will find a list of projects (all the projects involved on the differe
 
 defines `kiegroup/lienzo-tests` repository project as part of the workflow set and depends on `kiegroup/lienzo-core` repository project (with no additional dependencies) which is also defined on top of the definition.
 
-> **_Note:_** So in case `lienzo-tests` pull request is open a job checking out `lienzo-core` and `lienzo-tests` will be launched, building `lienzo-core` first and then `lienzo-tests`.
+> **_Note:_** So in case `lienzo-tests` pull request is opened the new PR job checks out `lienzo-core` and `lienzo-tests` PR CI job will be launched, where it is built `lienzo-core` repository project first and then `lienzo-tests` repository project.
 
 This way you can easily understand the rest of document.
 
