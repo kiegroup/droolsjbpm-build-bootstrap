@@ -34,7 +34,7 @@ The jobs are basically [pipeline jobs type](https://www.jenkins.io/doc/book/pipe
 
 ### Github Actions jobs
 
-They are obviously stored on `.github/workflows` for each repository (because this is the way Github handles them). The difference with Jenkins' one is the pipeline and the job definition are both mixed in the same yaml file.
+They are stored on `.github/workflows` folder as it is required by Github Actions to be executed for each repository. The difference with Jenkins' one is the pipeline and the job definition are both mixed in the same yaml file.
 
 We use [composite actions](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action) to point to the most common steps centralized in on single repository (droolsjbpm-build-bootstrap), this way it is easier to maintain, adapt, update versions and so on for all the repositories and branches involved on the RHBA CI process.
 
