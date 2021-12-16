@@ -4,4 +4,4 @@ dependencies: ./project-dependencies.yaml
 
 default:
   build-command:
-    current: mvn -e -nsu -Dfull -Pwildfly clean install -Dcontainer.profile=wildfly -Dcontainer=wildfly -Dintegration-tests=false -DskipTests dependency:tree -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
+    current: mvn -e -nsu -Dfull -Pwildfly clean install -Dcontainer.profile=wildfly -Dcontainer=wildfly -Dintegration-tests=false -DskipTests -Dgwt.compiler.skip=true dependency:tree -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
