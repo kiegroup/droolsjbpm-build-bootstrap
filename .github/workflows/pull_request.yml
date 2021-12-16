@@ -39,6 +39,7 @@ jobs:
         with:
           annotations-prefix: ${{ runner.os }}-${{ matrix.java-version }}/${{ matrix.maven-version }}
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+          starting-project: kiegroup/kie-wb-distributions
       - name: Surefire Report
         uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/surefire-report@main
         if: ${{ always() }}
