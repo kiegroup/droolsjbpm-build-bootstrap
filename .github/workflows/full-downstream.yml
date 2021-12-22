@@ -9,10 +9,11 @@ on:
     paths-ignore:
       - 'LICENSE*'
       - '.gitignore'
-      - '**.md'
-      - '**.adoc'
+      - '*.md'
       - '*.txt'
-      - '.ci/**'
+      - 'docs/**'
+      - 'ide-configuration/**'
+      - 'script/**'
 
 jobs:
   build-chain:
