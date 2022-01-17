@@ -11,10 +11,10 @@ default:
     current: ${{ env.MAVEN_COMMAND }}
 
 build:
-  - project: kiegroup/droolsjbpm-build-bootstrap
+  - project: mbiarnes/droolsjbpm-build-bootstrap
     build-command:
       before:
         current: |
-          ./script/release/03_upgradeVersions.sh $kieVersion
+          ./script/release/03_upgradeVersions.sh $JDK_VERSION
           ./script/release/eraseM2.sh $m2Dir
       current: ${{ env.MAVEN_COMMAND }} 

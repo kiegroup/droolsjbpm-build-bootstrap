@@ -1,29 +1,34 @@
 @Library('jenkins-pipeline-shared-libraries')_
+import org.jenkinsci.plugins.workflow.libs.Library
+import org.kie.jenkins.MavenCommand
+import org.kie.jenkins.MavenStagingHelper
 
-agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && kie-mem24g'} && !master"
-additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
-additionalTimeout = "${env.ADDITIONAL_TIMEOUT?.trim() ?: 1200}"
-additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''}"
+startRepo= "${env.JENKINSFILE_REPO}"
 additionalMavenFlag = "${env.ADDITIONAL_MAVEN_FLAG?.trim() ?: ''}"
-checkstyleFile = env.CHECKSTYLE_FILE?.trim() ?: null
-findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
-pr_type = env.PR_TYPE?.trim() ?: null
-build_jdk_tool = env.BUILD_JDK_TOOL?.trim() ?: 'kie-jdk11'
-build_maven_tool = env.BUILD_MAVEN_TOOL?.trim() ?: 'kie-maven-3.8.1'
-buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: '\${GROUP}'
-buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: '\${BRANCH:main}'
-baseBranch=Constants.BRANCH
+baseBranch= "${env.BASE_BRANCH}"
+agentLabel= "${env.AGENT_LABEL}"
+kieVersion = "${env.KIE_VERSION}"
+mavenTool = "${env.MVN_TOOL}"
+jdkVersion = "${env.JDK_VERSION}"
+gitAutor = "${env.GH_ORG_UNIT}"
+targetBranch = "${env.MAIN_BRANCH}"
+buildName = "${env.BUILD_NAME}"
 
+// buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: '\${GROUP}'
+buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: 'mbiarnes'
+// buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: '\${BRANCH:main}'
+buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: 'daily_to_buildchain'
 pipeline {
     agent {
         label agentLabel
     }
     tools {
         nodejs 'nodejs-12.16.3'
+        maven mavenTool
+        jdk jdkVersion
     }
     options {
         timestamps ()
-        timeout(time: additionalTimeout, unit: 'MINUTES')
     }
     environment {
         FIREFOX_FOLDER = '/opt/tools/firefox-60esr'
@@ -32,14 +37,6 @@ pipeline {
         stage('Initialize') {
             steps {
                 sh 'printenv'
-            }
-        }
-        // executes a script that compresses the consoleText and attaches it to the mail
-        stage('build sh script') {
-            steps {
-                script {
-                    mailer.buildLogScriptPR()
-                }
             }
         }
         stage('check space before build') {
@@ -58,12 +55,22 @@ pipeline {
         }
         stage('Create clean up script') {
             steps {
-                sh 'cat > "$WORKSPACE/clean-up.sh" << EOT \\n' +
-                        'cd \\\\$1 \\n' +
-                        '# Add test reports to the index to prevent their removal in the following step \\n' +
-                        'git add --force **target/*-reports/TEST-*.xml \\n' +
-                        'git clean -ffdx \\n' +
-                        'EOT'
+                    sh 'touch trace.sh'
+                    sh 'chmod 755 trace.sh'
+                    sh 'echo "wget --no-check-certificate ${BUILD_URL}consoleText" >> trace.sh'
+                    sh 'echo "tail -n 1000 consoleText >> error.log" >> trace.sh'
+                    sh 'echo "gzip error.log" >> trace.sh'
+                    sh 'cat trace.sh'
+            }
+        }
+        stage('Calculate versions') {
+            steps {
+                script {
+                    data = new Date().format('yyMMdd-hh')
+                    kieVersion = "${kieVersion}.${data}"
+                    echo "data: ${data}"
+                    echo "kieVersion: ${kieVersion}"
+                }
             }
         }
         stage('Install build-chain tool') {
@@ -88,17 +95,13 @@ pipeline {
             }
         }
         stage('Build projects') {
-            tools {
-              jdk build_jdk_tool
-              maven build_maven_tool
-            }
             steps {
                 script {
                     def buildChainActionInfo = [action: 'branch', file: 'daily-config.yaml']
                     def SETTINGS_XML_ID = '771ff52a-a8b4-40e6-9b22-d54c7314aa1e'
                     configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
                         withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
-                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -p='kiegroup/droolsjbpm-build-bootstrap' -b=${baseBranch} --fullProjectDependencyTree --skipParallelCheckout -spc 'kiegroup/optaweb-vehicle-routing=./' 'kiegroup/optaweb-employee-rostering=./' -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true ${additionalMavenFlag}'"
+                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -p='${buildChainGroup}/droolsjbpm-build-bootstrap' -sp='${buildChainGroup}/droolsjbpm-build-bootstrap' -b=${baseBranch} --fullProjectDependencyTree --skipParallelCheckout -spc 'kiegroup/optaweb-vehicle-routing=./' 'kiegroup/optaweb-employee-rostering=./' -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true ${additionalMavenFlag}'"
                         }
                     }
                 }
@@ -112,17 +115,20 @@ pipeline {
             }
         }         
         stage('Unpack zip of artifacts to QA Nexus') {
+            when {
+                expression { ['kie-jdk11', 'kie-jdk8'].contains(build_jdk_tool) && !['-Dprod', '-D prod'].contains(additionalMavenFlag) }
+            }
             steps {
                 withCredentials([usernameColonPassword(credentialsId: 'unpacks-zip-on-qa-nexus', variable: 'kieUnpack')]) {
                     // unpack zip to QA Nexus
-                    sh 'cd $deployDir\\n' +
+                    sh 'cd $WORKSPACE/deploy-dir\\n' +
                             'zip -r kiegroup .\\n' +
                             'curl --silent --upload-file kiegroup.zip -u $kieUnpack -v http://\${LOCAL_NEXUS_IP}:8081/nexus/service/local/repositories/kieAllBuild-$baseBranch/content-compressed\\n' +
                             'cd ..'
                 }
             }
         }
-        stage('Additional tests for JDK11') {
+        stage('Additional tests for jdk11 and jdk8') {
             when {
                 expression { ['kie-jdk11', 'kie-jdk8'].contains(build_jdk_tool) && !['-Dprod', '-D prod'].contains(additionalMavenFlag) }
             }
@@ -145,72 +151,30 @@ pipeline {
         } 
     }
     post {
-        fixed {
-            script {
-                mailer.sendEmail_fixedPR(pr_type)
-            }
-        }
-        aborted {
-            script {
-                mailer.sendEmail_abortedPR(pr_type)
-            }
-        }
-        failure {
-            sh '$WORKSPACE/trace.sh'
-            script {
-                mailer.sendEmail_failedPR(pr_type)
-            }
-        }
-        unstable {
-            script {
-                mailer.sendEmail_unstablePR(pr_type)
-            }
-        }
         always {
             script {
-                util.printGitInformationReport()
+                sh './trace.sh'
             }
-            echo 'Generating JUnit report...'
-            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
-
-            echo 'Archiving logs...'
-            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving testStatusListener and screenshots artifacts...'
-            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*,**/target/screenshots/**', excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
-
-            echo 'Archiving wars...'
-            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war,**/target/dashbuilder-runtime.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving zips...'
-            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            script {
-                if(additionalArtifactsToArchive) {
-                    echo 'Archiving additional Artifacts ...'
-                    archiveArtifacts allowEmptyArchive: true, artifacts: additionalArtifactsToArchive, excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
-                }
-            }
-            
-            script {
-                if(findbugsFile) {
-                    echo 'Findbugs reports ...'
-                    recordIssues( enabledForFailure: true, aggregatingResults: true, tool: spotBugs(pattern: findbugsFile) )
-                }
-            }
-            
-            script {
-                if(checkstyleFile) {
-                    echo 'Checkstyle reports ...'
-                    recordIssues( enabledForFailure: true, aggregatingResults: true, tool: checkStyle(pattern: checkstyleFile) )
-                }
-            }
-
-        }
-        cleanup {
-            script {
-                util.cleanNode()
+            junit '**/target/surefire-reports/**/*.xml'
+            withCredentials([string(credentialsId: 'KIE_CI_EMAIL_TO', variable: 'KIE_TO')]) {
+                sendNotification()
             }
         }
+        success {
+            cleanWs()
+        }                    
+    }      
+}
+
+void sendNotification() {
+    if (currentBuild.result != "SUCCESS") {
+        mailer.sendMarkdownTestSummaryNotification("daily build ${buildName} of ${baseBranch} TEST RUN", "daily build ${buildName} of ${baseBranch}", ["${KIE_TO}"])
+    } else {
+        echo 'No notification sent per configuration'
+    }
+}
+void checkoutStartRepo() {
+    dir(startRepo) {
+        checkout(githubscm.resolveRepository(startRepo, gitAutor, targetBranch, false))
     }
 }
