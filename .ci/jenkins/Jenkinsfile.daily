@@ -1,0 +1,216 @@
+@Library('jenkins-pipeline-shared-libraries')_
+
+agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7 && kie-mem24g'} && !master"
+additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
+additionalTimeout = "${env.ADDITIONAL_TIMEOUT?.trim() ?: 1200}"
+additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''}"
+additionalMavenFlag = "${env.ADDITIONAL_MAVEN_FLAG?.trim() ?: ''}"
+checkstyleFile = env.CHECKSTYLE_FILE?.trim() ?: null
+findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
+pr_type = env.PR_TYPE?.trim() ?: null
+build_jdk_tool = env.BUILD_JDK_TOOL?.trim() ?: 'kie-jdk11'
+build_maven_tool = env.BUILD_MAVEN_TOOL?.trim() ?: 'kie-maven-3.8.1'
+buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: '\${GROUP}'
+buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: '\${BRANCH:main}'
+baseBranch=Constants.BRANCH
+
+pipeline {
+    agent {
+        label agentLabel
+    }
+    tools {
+        nodejs 'nodejs-12.16.3'
+    }
+    options {
+        timestamps ()
+        timeout(time: additionalTimeout, unit: 'MINUTES')
+    }
+    environment {
+        FIREFOX_FOLDER = '/opt/tools/firefox-60esr'
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'printenv'
+            }
+        }
+        // executes a script that compresses the consoleText and attaches it to the mail
+        stage('build sh script') {
+            steps {
+                script {
+                    mailer.buildLogScriptPR()
+                }
+            }
+        }
+        stage('check space before build') {
+            steps {
+                script{
+                    util.spaceLeft()
+                }
+            }
+        }
+        stage('Remove partially downloaded deps') {
+            steps {
+                script{
+                    util.rmPartialDeps()
+                }
+            }
+        }
+        stage('Create clean up script') {
+            steps {
+                sh 'cat > "$WORKSPACE/clean-up.sh" << EOT \\n' +
+                        'cd \\\\$1 \\n' +
+                        '# Add test reports to the index to prevent their removal in the following step \\n' +
+                        'git add --force **target/*-reports/TEST-*.xml \\n' +
+                        'git clean -ffdx \\n' +
+                        'EOT'
+            }
+        }
+        stage('Install build-chain tool') {
+            steps {
+                script {
+                    println "[INFO] Getting build-chain version from composite action file"
+                    def buildChainVersion = buildChain.getBuildChainVersionFromCompositeActionFile()
+                    if([null, 'null'].contains(buildChainVersion)) {
+                        def errorMessage = "[ERROR] The build-chain version can't be recovered. Please contact administrator"
+                        println errorMessage
+                        error(errorMessage)
+                    }
+                    println "[INFO] build-chain version recovered '${buildChainVersion}'"
+
+                    try {
+                        sh "npm install -g @kie/build-chain-action@${buildChainVersion} -registry=${NPM_REGISTRY_URL}"
+                    } catch(e) {
+                        println "[WARNING] Error installing @kie/build-chain-action@${buildChainVersion}. Did you check the version is already published at https://www.npmjs.com/package/@kie/build-chain-action ? In case it is you should wait few minutes for ${NPM_REGISTRY_URL} to be synched up. Otherwise check latest 'Publish' action at https://github.com/kiegroup/github-action-build-chain/actions or contact kiegroup/github-action-build-chain responsible."
+                        println "[INFO] Final @kie/build-chain-action version to be used: ${sh(returnStdout: true, script: 'npm @kie/build-chain-action -v').trim()}"
+                    }
+                }
+            }
+        }
+        stage('Build projects') {
+            tools {
+              jdk build_jdk_tool
+              maven build_maven_tool
+            }
+            steps {
+                script {
+                    def buildChainActionInfo = [action: 'branch', file: 'daily-config.yaml']
+                    def SETTINGS_XML_ID = '771ff52a-a8b4-40e6-9b22-d54c7314aa1e'
+                    configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
+                        withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
+                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -p='kiegroup/droolsjbpm-build-bootstrap' -b=${baseBranch} --fullProjectDependencyTree --skipParallelCheckout -spc 'kiegroup/optaweb-vehicle-routing=./' 'kiegroup/optaweb-employee-rostering=./' -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true ${additionalMavenFlag}'"
+                        }
+                    }
+                }
+            }
+        }
+        stage('check space after build') {
+            steps {
+                script{
+                    util.spaceLeft()
+                }
+            }
+        }         
+        stage('Unpack zip of artifacts to QA Nexus') {
+            steps {
+                withCredentials([usernameColonPassword(credentialsId: 'unpacks-zip-on-qa-nexus', variable: 'kieUnpack')]) {
+                    // unpack zip to QA Nexus
+                    sh 'cd $deployDir\\n' +
+                            'zip -r kiegroup .\\n' +
+                            'curl --silent --upload-file kiegroup.zip -u $kieUnpack -v http://\${LOCAL_NEXUS_IP}:8081/nexus/service/local/repositories/kieAllBuild-$baseBranch/content-compressed\\n' +
+                            'cd ..'
+                }
+            }
+        }
+        stage('Additional tests for JDK11') {
+            when {
+                expression { ['kie-jdk11', 'kie-jdk8'].contains(build_jdk_tool) && !['-Dprod', '-D prod'].contains(additionalMavenFlag) }
+            }
+            steps {
+                parallel (
+                    "jbpmTestCoverageMatrix" : {
+                        build job: "daily-build-jdk11-${baseBranch}-jbpmTestCoverageMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion], [$class: 'StringParameterValue', name: 'baseBranch', value: baseBranch]]
+                    },
+                    "jbpmTestContainerMatrix" : {
+                        build job: "daily-build-jdk11-${baseBranch}-jbpmTestContainerMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion], [$class: 'StringParameterValue', name: 'baseBranch', value: baseBranch]]
+                    },
+                    "kieWbTestsMatrix" : {
+                            build job: "daily-build-jdk11-${baseBranch}-kieWbTestsMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion], [$class: 'StringParameterValue', name: 'baseBranch', value: baseBranch]]
+                     },
+                    "kieServerMatrix" : {
+                            build job: "daily-build-jdk11-${baseBranch}-kieServerMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion], [$class: 'StringParameterValue', name: 'baseBranch', value: baseBranch]]
+                    }
+                )    
+            } 
+        } 
+    }
+    post {
+        fixed {
+            script {
+                mailer.sendEmail_fixedPR(pr_type)
+            }
+        }
+        aborted {
+            script {
+                mailer.sendEmail_abortedPR(pr_type)
+            }
+        }
+        failure {
+            sh '$WORKSPACE/trace.sh'
+            script {
+                mailer.sendEmail_failedPR(pr_type)
+            }
+        }
+        unstable {
+            script {
+                mailer.sendEmail_unstablePR(pr_type)
+            }
+        }
+        always {
+            script {
+                util.printGitInformationReport()
+            }
+            echo 'Generating JUnit report...'
+            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
+
+            echo 'Archiving logs...'
+            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+
+            echo 'Archiving testStatusListener and screenshots artifacts...'
+            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*,**/target/screenshots/**', excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
+
+            echo 'Archiving wars...'
+            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war,**/target/dashbuilder-runtime.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+
+            echo 'Archiving zips...'
+            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
+
+            script {
+                if(additionalArtifactsToArchive) {
+                    echo 'Archiving additional Artifacts ...'
+                    archiveArtifacts allowEmptyArchive: true, artifacts: additionalArtifactsToArchive, excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
+                }
+            }
+            
+            script {
+                if(findbugsFile) {
+                    echo 'Findbugs reports ...'
+                    recordIssues( enabledForFailure: true, aggregatingResults: true, tool: spotBugs(pattern: findbugsFile) )
+                }
+            }
+            
+            script {
+                if(checkstyleFile) {
+                    echo 'Checkstyle reports ...'
+                    recordIssues( enabledForFailure: true, aggregatingResults: true, tool: checkStyle(pattern: checkstyleFile) )
+                }
+            }
+
+        }
+        cleanup {
+            script {
+                util.cleanNode()
+            }
+        }
+    }
+}
