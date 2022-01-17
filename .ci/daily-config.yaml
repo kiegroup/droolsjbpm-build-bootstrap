@@ -14,5 +14,7 @@ build:
   - project: kiegroup/droolsjbpm-build-bootstrap
     build-command:
       before:
-        current: ./script/release/eraseM2.sh $m2Dir
+        current: |
+          ./script/release/03_upgradeVersions.sh $kieVersion
+          ./script/release/eraseM2.sh $m2Dir
       current: ${{ env.MAVEN_COMMAND }} 
