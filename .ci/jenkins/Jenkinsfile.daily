@@ -145,72 +145,48 @@ pipeline {
         } 
     }
     post {
-        fixed {
-            script {
-                mailer.sendEmail_fixedPR(pr_type)
-            }
-        }
-        aborted {
-            script {
-                mailer.sendEmail_abortedPR(pr_type)
-            }
-        }
-        failure {
-            sh '$WORKSPACE/trace.sh'
-            script {
-                mailer.sendEmail_failedPR(pr_type)
-            }
-        }
-        unstable {
-            script {
-                mailer.sendEmail_unstablePR(pr_type)
-            }
-        }
         always {
             script {
-                util.printGitInformationReport()
+                sh './trace.sh'
             }
-            echo 'Generating JUnit report...'
-            junit allowEmptyResults: true, healthScaleFactor: 1.0, testResults: '**/target/*-reports/TEST-*.xml'
-
-            echo 'Archiving logs...'
-            archiveArtifacts excludes: '**/target/checkstyle.log', artifacts: '**/*.maven.log,**/target/*.log', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving testStatusListener and screenshots artifacts...'
-            archiveArtifacts allowEmptyArchive: true, artifacts: '**/target/testStatusListener*,**/target/screenshots/**', excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
-
-            echo 'Archiving wars...'
-            archiveArtifacts artifacts: '**/target/business-monitoring-webapp.war,**/target/business-central*wildfly*.war,**/target/business-central*eap*.war,**/target/kie-server-*ee7.war,**/target/kie-server-*webc.war,**/target/dashbuilder-runtime.war', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            echo 'Archiving zips...'
-            archiveArtifacts artifacts: '**/target/jbpm-server*dist*.zip', fingerprint: false, defaultExcludes: true, caseSensitive: true, allowEmptyArchive: true
-
-            script {
-                if(additionalArtifactsToArchive) {
-                    echo 'Archiving additional Artifacts ...'
-                    archiveArtifacts allowEmptyArchive: true, artifacts: additionalArtifactsToArchive, excludes: additionalExcludedArtifacts, fingerprint: false, defaultExcludes: true, caseSensitive: true
-                }
-            }
-            
-            script {
-                if(findbugsFile) {
-                    echo 'Findbugs reports ...'
-                    recordIssues( enabledForFailure: true, aggregatingResults: true, tool: spotBugs(pattern: findbugsFile) )
-                }
-            }
-            
-            script {
-                if(checkstyleFile) {
-                    echo 'Checkstyle reports ...'
-                    recordIssues( enabledForFailure: true, aggregatingResults: true, tool: checkStyle(pattern: checkstyleFile) )
-                }
-            }
-
-        }
-        cleanup {
-            script {
-                util.cleanNode()
+            junit '**/target/surefire-reports/**/*.xml'
+            withCredentials([string(credentialsId: 'KIE_CI_EMAIL_TO', variable: 'KIE_TO')]) {
+                sendNotification()
             }
         }
+        failure{
+            emailext body: 'Build log: ${BUILD_URL}consoleText\\n' +
+                           'Failed tests (${TEST_COUNTS,var="fail"}): ${BUILD_URL}testReport\\n' +
+                           '(IMPORTANT: For visiting the links you need to have access to Red Hat VPN. In case you do not have access to RedHat VPN please download and decompress attached file.)',
+                     subject: 'daily-build-jdk11-${baseBranch} #${BUILD_NUMBER} FAILED',
+                     to: 'kie-jenkins-builds@redhat.com',
+                     attachmentsPattern: 'error.log.gz'
+            cleanWs()                     
+        }
+        unstable{
+            emailext body: 'Build log: ${BUILD_URL}consoleText\\n' +
+                           'Failed tests (${TEST_COUNTS,var="fail"}): ${BUILD_URL}testReport\\n' +
+                           '***********************************************************************************************************************************************************\\n' +
+                           '${FAILED_TESTS}',
+                     subject: 'daily-build-jdk11-${baseBranch} #${BUILD_NUMBER} was UNSTABLE',
+                     to: 'kie-jenkins-builds@redhat.com'
+            cleanWs()         
+        }
+        fixed {
+            emailext body: '',
+                 subject: 'daily-build-jdk11-${baseBranch} #${BUILD_NUMBER} was SUCCESSFUL',
+                 to: 'kie-jenkins-builds@redhat.com'
+        }
+        success {
+            cleanWs()
+        }                    
+    }      
+}
+
+void sendNotification() {
+    if (currentBuild.result != "SUCCESS") {
+        mailer.sendMarkdownTestSummaryNotification("daily build ${build_jdk_tool} of main branch", "daily build ${build_jdk_tool} of main branch", ["${KIE_TO}"])
+    } else {
+        echo 'No notification sent per configuration'
     }
 }
