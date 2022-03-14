@@ -1,0 +1,133 @@
+@Library('jenkins-pipeline-shared-libraries')_
+import org.jenkinsci.plugins.workflow.libs.Library
+import org.kie.jenkins.MavenCommand
+import org.kie.jenkins.MavenStagingHelper
+
+
+agentLabel = "kie-releases"
+kieVersion = "7.67.0.Final"
+mvnTool = "kie-maven-3.8.1"
+jdkVersion = "kie-jdk11"
+zipDir = "\$WORKSPACE/community-deploy-dir"
+nexusUrl = "https://repository.jboss.org/nexus"
+buildNr = "${env.BUILD_NR}"
+
+
+pipeline {
+    agent {
+        label agentLabel
+    }
+    options{
+        timestamps()
+    }
+    tools {
+        nodejs 'nodejs-12.16.3'
+        maven mvnTool
+        jdk jdkVersion
+    }
+    environment {
+        FIREFOX_FOLDER = '/opt/tools/firefox-60esr'
+    }
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'printenv'
+            }
+        }
+        // if the pipeline job was executed again but without building, the binaries uploaded to filemgmt.jboss.org are needed
+        stage('grab binaries binaries') {
+            steps {
+                dir("${zipDir}"){
+                    script {
+                        copyArtifacts(projectName: 'KIE/main/release/kie-release', selector: specific("2"));
+                        ls -al
+                    }
+                }
+            }
+        }
+        // binaries will be compressed and uploaded to Nexus
+        stage('Upload binaries to staging repository on Nexus') {
+            steps {
+                script {
+                        withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
+                            sh """
+                                cd $zipDir
+                                zip -qr kiegroup .
+                                repoID=\$(curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v $nexusUrl/service/local/staging/profiles/15c58a1abc895b/start | grep -oP '(?<=stagedRepositoryId)[^<]+' | sed 's/>//' | tr -d '\n')
+                                curl --silent --upload-file kiegroup.zip -u \$CREDS -v $nexusUrl/service/local/repositories/\$repoID/content-compressed
+                                curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>\${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v $nexusUrl/service/local/staging/profiles/15c58a1abc895b/finish
+                                """
+                        }
+                }
+            }
+        }
+        stage('CURLS for sanity checks and additional kie tests'){
+            steps{
+            sleep(time:5,unit:"MINUTES")
+                script{
+                    def repositories='kie-group'
+                    def suffixList=['kie-wb-distributions', 'business-central', 'business-central-webapp', 'business-monitoring-webapp', 'jbpm-server-distribution']
+                    suffixList.each{ suffix ->
+                        def artefacts=sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a><\\/td>//p'| uniq").split("\\r?\\n")
+                        artefacts.each { println it }
+                        artefacts.each { artefact ->
+                            sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/$artefact"
+                            sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/$artefact"
+                        }
+                    }
+                }
+            }
+        }
+        stage('Curls for additional drools tests'){
+            steps{
+                script{
+                    def repositories='kie-group'
+                    def suffixList=['droolsjbpm-integration']
+                    suffixList.each{ suffix ->
+                        def artefacts=sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a>.*//p' | uniq").split("\\r?\\n")
+                        artefacts.each { println it }
+                        artefacts.each { artefact ->
+                            sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/$artefact"
+                            sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/$artefact"
+                        }
+                    }
+                }
+            }
+        }
+         stage('Curls for additional jbpm tests'){
+             steps{
+                 script{
+                    def repositories='kie-group'
+                    def suffixList=['jbpm']
+                    suffixList.each{ suffix ->
+                        def artefacts=sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a>.*//p' | uniq").split("\\r?\\n")
+                        artefacts.each { println it }
+                        artefacts.each { artefact ->
+                            sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/jbpm/$suffix/$kieVersion/$artefact"
+                            sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/jbpm/$suffix/$kieVersion/$artefact"
+                        }
+                    }
+                 }
+             }
+         }
+         stage('Additional tests for community') {
+             parallel{
+                stage('jbpmTestCoverageMatrix'){
+                    steps{
+                        build job: "jbpmTestCoverageMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
+                    }
+                }
+                stage('kieWbTestMatrix'){
+                    steps{
+                        build job: "kieWbTestMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
+                    }
+                }
+                stage('kieServerMatrix'){
+                    steps{
+                        build job: "kieServerMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
+                    }
+                }
+             }
+         }
+    }
+}
