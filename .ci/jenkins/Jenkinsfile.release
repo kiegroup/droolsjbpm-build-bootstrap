@@ -138,6 +138,9 @@ pipeline {
         }
         // email send automatically when release starts and the release branches are not created
         stage('send email when release starts'){
+            when{
+                expression { env.R_BRANCH_EXIST == '0' }
+            }
             steps {
                 emailext body: """
                 The build for community release ${kieVersion} started.
