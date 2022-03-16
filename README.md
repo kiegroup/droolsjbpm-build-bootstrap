@@ -49,6 +49,12 @@ If you don't want to contribute to this project and you know git and maven, thes
     $ droolsjbpm-build-bootstrap/script/git-clone-others.sh
     $ droolsjbpm-build-bootstrap/script/mvn-all.sh clean install -DskipTests
     ```
+* To build all repositories with our build-chain-action tool:
+
+    ```shell
+    $ npm i -g @kie/build-chain-action
+    $ build-chain-action -df https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/full-downstream-config.yaml -folder=myfolder build branch -sp=kiegroup/kie-wb-distributions -b=main
+    ```
 
 **If you want to contribute to this project, read the rest of this file!**
 
