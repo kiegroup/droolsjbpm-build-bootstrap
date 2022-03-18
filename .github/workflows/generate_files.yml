@@ -6,7 +6,8 @@ on:
       - main
       - 7.48.x
     paths:
-      - '.ci/**'
+      - '.ci/pull-request-config.yaml'
+      - '.ci/project-dependencies.yaml'
 
 jobs:
   build-chain:
