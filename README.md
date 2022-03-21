@@ -648,6 +648,7 @@ CI Information
 ==================
 
 See [CI Information document](.ci)
+You can check RHBA CI status from [Chain Status webpage](https://kiegroup.github.io/droolsjbpm-build-bootstrap/)
 
 Team communication
 ==================
