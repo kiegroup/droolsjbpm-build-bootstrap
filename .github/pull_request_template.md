@@ -10,7 +10,7 @@
 * link 2
 * link 3 etc.
 
-You can check RHBA CI status from [Chain Status webpage](https://kiegroup.github.io/droolsjbpm-build-bootstrap/)
+You can check Kiegroup organization repositories CI status from [Chain Status webpage](https://kiegroup.github.io/droolsjbpm-build-bootstrap/)
 
 <details>
 <summary>

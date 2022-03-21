@@ -17,5 +17,6 @@ jobs:
       - name: Generate status page
         uses: kiegroup/chain-status/.ci/actions/generate-app@main
         with:
+          info-md-url: "https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/chain-status-info.md"
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
