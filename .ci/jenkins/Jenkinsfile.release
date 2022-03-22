@@ -181,6 +181,32 @@ pipeline {
                 LOG: attached""", subject: "community-release ${kieVersion} failed", to: "bsig@redhat.com", attachLog:true
             }
         }
+         // create a local directory for archiving artifacts
+         stage('Create upload dir') {
+             when{
+                 expression { repBuild == 'YES'}
+             }
+             steps {
+                 script {
+                     execute {
+                         // creates a directory ${kieVersion}"_uploadBinaries with binaries for the web-pages
+                         sh './droolsjbpm-build-bootstrap/script/release/prepareUploadDir.sh'
+                     }
+                 }
+             }
+         }
+         // the directory of ${kieVersion}"_uploadBinaries will be compressed
+         stage('tar.gz uploadDir & archive artifacts'){
+             when{
+                 expression { repBuild == 'YES'}
+             }
+             steps {
+                 sh 'tar -czvf "${kieVersion}"_uploadBinaries.tar.gz "${kieVersion}"_uploadBinaries'
+                 archiveArtifacts '*.tar.gz'
+                 // removal of *.tar.gz file to save disk space
+                 sh "rm -rf ${kieVersion}_binaries.tar.gz"
+             }
+         }
         stage('Publish JUnit test results reports') {
             when{
                 expression { reBuild == 'YES'}
@@ -189,17 +215,6 @@ pipeline {
                 execute {
                     junit '**/target/*-reports/TEST-*.xml'
                 }
-            }
-        }
-        stage('tar.gz deployed binaries'){
-            when{
-                expression { reBuild == 'YES'}
-            }
-            steps {
-                sh "tar -czvf ${kieVersion}_binaries.tar.gz community-deploy-dir"
-                archiveArtifacts '*.tar.gz'
-                // remove file to save disk space
-                sh "rm -rf ${kieVersion}_binaries.tar.gz"
             }
         }
         // binaries will be compressed and uploaded to Nexus
