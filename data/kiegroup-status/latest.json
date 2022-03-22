@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-03-22T15:11:33.811Z",
+    "date": "2022-03-22T17:16:12.513Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2023194491"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2023734668"
   },
   "projects": [
     {
@@ -21,7 +21,7 @@
       "pullRequests": [
         {
           "number": 1918,
-          "title": "[Do not merge] Testing Wildfly update",
+          "title": "DROOLS-6879 : Update to Wildfly 17",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1918",
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1918",
           "state": "open",
@@ -29,9 +29,15 @@
             "do_not_merge"
           ],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
           "created_at": "2022-03-18T07:43:49Z",
-          "updated_at": "2022-03-21T11:45:44Z",
+          "updated_at": "2022-03-22T16:20:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2147,15 +2153,21 @@
       "pullRequests": [
         {
           "number": 1249,
-          "title": "test",
+          "title": "DROOLS-6879 : Update to Wildfly 17",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1249",
           "html_url": "https://github.com/kiegroup/appformer/pull/1249",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
           "created_at": "2022-03-21T11:45:03Z",
-          "updated_at": "2022-03-21T12:47:45Z",
+          "updated_at": "2022-03-22T16:31:33Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4175,69 +4187,6 @@
           ]
         },
         {
-          "number": 2121,
-          "title": "[JBPM-10037] Forcing creation of new transaction for partial delete",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2121",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2121",
-          "state": "open",
-          "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2022-03-11T16:33:38Z",
-          "updated_at": "2022-03-14T07:50:12Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "cd7881bcf82f2cb06398e034400024c597aec48b",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10037",
-            "sha": "bc08ff736c622778f34f3449f817f9a75d2d8ce9",
-            "label": "fjtirado:JBPM-10037"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 5513949073,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/5513949073?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-03-11T16:33:54Z",
-              "completed_at": "2022-03-11T16:34:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5513948991,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/5513948991?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-03-11T16:33:53Z",
-              "completed_at": "2022-03-11T16:34:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16627556673,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/616/",
-              "conclusion": "failure",
-              "started_at": "2022-03-11T16:37:03Z",
-              "completed_at": "2022-03-11T16:37:03Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2109,
           "title": "[JBPM-10016] Drools/jBPM integration: high number of instances waiting for signal adversely impacts execution time (POC)",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2109",
@@ -5259,7 +5208,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-03-22T14:45:40Z",
-          "updated_at": "2022-03-22T15:00:11Z",
+          "updated_at": "2022-03-22T16:18:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5269,7 +5218,7 @@
           },
           "head": {
             "ref": "JBPM-10046",
-            "sha": "bd8d8d33ebe730e3a10a095014a3403dea69f583",
+            "sha": "825f508ea16c8bb15b7500cc8a15f7702a97ca0d",
             "label": "elguardian:JBPM-10046"
           },
           "user": {
@@ -5279,34 +5228,34 @@
           },
           "checks": [
             {
-              "id": 5646162770,
+              "id": 5646658391,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/5646162770?check_suite_focus=true",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/5646658391?check_suite_focus=true",
               "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-03-22T14:51:11Z",
+              "started_at": "2022-03-22T15:20:10Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 5646162619,
+              "id": 5646658233,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/5646162619?check_suite_focus=true",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/5646658233?check_suite_focus=true",
               "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-03-22T14:51:11Z",
+              "started_at": "2022-03-22T15:20:12Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16761742519,
+              "id": 16762269094,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/661/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/662/",
               "conclusion": "pending",
-              "started_at": "2022-03-22T14:50:44Z",
-              "completed_at": "2022-03-22T14:50:44Z",
+              "started_at": "2022-03-22T15:19:34Z",
+              "completed_at": "2022-03-22T15:19:34Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -5364,12 +5313,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16761581161,
+              "id": 16763852473,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/659/",
-              "conclusion": "pending",
-              "started_at": "2022-03-22T14:41:59Z",
-              "completed_at": "2022-03-22T14:41:59Z",
+              "conclusion": "failure",
+              "started_at": "2022-03-22T17:08:14Z",
+              "completed_at": "2022-03-22T17:08:14Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -5388,15 +5337,10 @@
               "login": "elguardian",
               "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
               "html_url": "https://github.com/elguardian"
-            },
-            {
-              "login": "afalhambra",
-              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-              "html_url": "https://github.com/afalhambra"
             }
           ],
           "created_at": "2022-03-21T10:33:42Z",
-          "updated_at": "2022-03-22T12:44:09Z",
+          "updated_at": "2022-03-22T16:59:15Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5436,6 +5380,16 @@
               "completed_at": "2022-03-22T10:43:51Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16763932257,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/663/",
+              "conclusion": "pending",
+              "started_at": "2022-03-22T17:12:30Z",
+              "completed_at": "2022-03-22T17:12:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -8756,6 +8710,52 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1157,
+          "title": "RHDM-1889: added missing literals",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1157",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1157",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "AntStephenson",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1628676?v=4",
+              "html_url": "https://github.com/AntStephenson"
+            },
+            {
+              "login": "barboras7",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11525583?v=4",
+              "html_url": "https://github.com/barboras7"
+            }
+          ],
+          "created_at": "2022-03-22T17:16:12Z",
+          "updated_at": "2022-03-22T17:16:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.59.x",
+            "sha": "d58dc13cc977e58a3978925a3e551cdd7437d18d",
+            "label": "kiegroup:7.59.x"
+          },
+          "head": {
+            "ref": "RHDM_translations",
+            "sha": "50b898b2e140b98e38e548eaf168d9b58c518997",
+            "label": "mbiarnes:RHDM_translations"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": []
+        },
         {
           "number": 1156,
           "title": "Update bootable jar ",
