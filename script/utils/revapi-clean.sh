@@ -1,9 +1,9 @@
 #!/bin/sh
 # How to clean ignores in revapi-config.json files:
 #
-# export MAIN_REVAPI_REPOSITORIES=droolsjbpm-build-bootstrap,appformer,droolsjbpm-knowledge,drools,jbpm,droolsjbpm-integration
-# export BRANCHED_7_REVAPI_REPOSITORIES=optaplanner
-# export REVAPI_REPOSITORIES=$MAIN_REVAPI_REPOSITORIES,$BRANCHED_7_REVAPI_REPOSITORIES
+# export MAIN_REVAPI_REPOSITORIES=droolsjbpm-build-bootstrap,appformer,jbpm,droolsjbpm-integration
+# export BRANCHED_7_REVAPI_REPOSITORIES=droolsjbpm-knowledge,drools,optaplanner
+# export REVAPI_REPOSITORIES=droolsjbpm-build-bootstrap,appformer,droolsjbpm-knowledge,drools,jbpm,droolsjbpm-integration,optaplanner
 #
 # ./git-clone-others.sh --repo-list=$REVAPI_REPOSITORIES --add-upstream-remote
 # ./git-all.sh --repo-list=$MAIN_REVAPI_REPOSITORIES checkout main
