@@ -10,6 +10,8 @@
 * link 2
 * link 3 etc.
 
+You can check Kiegroup organization repositories CI status from [Chain Status webpage](https://kiegroup.github.io/droolsjbpm-build-bootstrap/)
+
 <details>
 <summary>
 How to replicate CI configuration locally?
