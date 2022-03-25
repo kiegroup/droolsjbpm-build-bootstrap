@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-03-25T14:11:39.436Z",
+    "date": "2022-03-25T15:11:35.346Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2040385128"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2040675643"
   },
   "projects": [
     {
@@ -168,6 +168,7 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1898",
           "state": "open",
           "labels": [
+            "do_not_merge",
             "dependencies"
           ],
           "draft": false,
@@ -179,7 +180,7 @@
             }
           ],
           "created_at": "2022-03-01T11:00:40Z",
-          "updated_at": "2022-03-23T10:36:14Z",
+          "updated_at": "2022-03-25T14:33:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -198,6 +199,17 @@
             "html_url": "https://github.com/mareknovotny"
           },
           "checks": [
+            {
+              "id": 5693380522,
+              "name": "Full downstream build",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/5693380522?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-03-25T14:33:09Z",
+              "completed_at": "2022-03-25T14:33:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 5478705981,
               "name": "ubuntu-latest - Java 8 - Maven",
@@ -1475,9 +1487,9 @@
               "id": 5692835879,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/5692835879?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-03-25T13:53:47Z",
+              "started_at": "2022-03-25T14:54:09Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -1486,9 +1498,9 @@
               "id": 5692835724,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/5692835724?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-03-25T13:53:47Z",
+              "started_at": "2022-03-25T14:57:40Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -1497,10 +1509,10 @@
               "id": 5692835616,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/5692835616?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-03-25T13:53:57Z",
-              "completed_at": null,
+              "completed_at": "2022-03-25T14:47:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1508,22 +1520,12 @@
               "id": 5692835514,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/5692835514?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-03-25T13:53:55Z",
-              "completed_at": null,
+              "completed_at": "2022-03-25T14:56:26Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16815984269,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/240/",
-              "conclusion": "pending",
-              "started_at": "2022-03-25T13:53:46Z",
-              "completed_at": "2022-03-25T13:53:46Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
               "id": 16816083163,
@@ -1532,6 +1534,16 @@
               "conclusion": "failure",
               "started_at": "2022-03-25T14:00:07Z",
               "completed_at": "2022-03-25T14:00:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 16817133325,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/240/",
+              "conclusion": "success",
+              "started_at": "2022-03-25T15:03:49Z",
+              "completed_at": "2022-03-25T15:03:49Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2231,7 +2243,9 @@
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1244",
           "html_url": "https://github.com/kiegroup/appformer/pull/1244",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "do_not_merge"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
@@ -2241,7 +2255,7 @@
             }
           ],
           "created_at": "2022-03-07T14:02:24Z",
-          "updated_at": "2022-03-25T10:11:53Z",
+          "updated_at": "2022-03-25T14:48:54Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
