@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-04T18:08:50.015Z",
+    "date": "2022-04-04T19:05:22.316Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2091677360"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2091953448"
   },
   "projects": [
     {
@@ -120,7 +120,7 @@
             }
           ],
           "created_at": "2022-04-01T09:32:01Z",
-          "updated_at": "2022-04-04T16:39:28Z",
+          "updated_at": "2022-04-04T18:41:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4456,6 +4456,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2136,
+          "title": "[JBPM-10037] LogCleanupCommnand and records per transation",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2136",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2136",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            },
+            {
+              "login": "afalhambra",
+              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+              "html_url": "https://github.com/afalhambra"
+            }
+          ],
+          "created_at": "2022-04-04T18:42:16Z",
+          "updated_at": "2022-04-04T18:48:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "e1e4ebf5cf58ce83adc021c984dccf49177d302b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10037",
+            "sha": "5d57faaedb8d4564503f6e7d35de9d28012bed42",
+            "label": "fjtirado:JBPM-10037"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 5822138474,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/5822138474?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-04T18:49:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 5822138362,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/5822138362?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-04-04T18:48:49Z",
+              "completed_at": "2022-04-04T18:48:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16942297452,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/649/",
+              "conclusion": "pending",
+              "started_at": "2022-04-04T18:48:46Z",
+              "completed_at": "2022-04-04T18:48:46Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2135,
           "title": "[JBPM-10053]-UserTaskInstanceWithCustomVarsQueryMapper not returning \"COLUMN_TASK_SLA_DUE_DATE\"",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2135",
@@ -6026,7 +6105,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-04-04T08:30:03Z",
-          "updated_at": "2022-04-04T16:07:07Z",
+          "updated_at": "2022-04-04T18:26:04Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6045,6 +6124,28 @@
             "html_url": "https://github.com/rgdoliveira"
           },
           "checks": [
+            {
+              "id": 5821829414,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/5821829414",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-04T18:26:06Z",
+              "completed_at": "2022-04-04T18:26:06Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 5821828870,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/5821828870",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-04T18:22:56Z",
+              "completed_at": "2022-04-04T18:26:02Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
+            },
             {
               "id": 5819833093,
               "name": "Maven Build (8, 3.8.1)",
@@ -6068,12 +6169,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 16939563748,
+              "id": 16941958816,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.59.x/job/pullrequest/job/droolsjbpm-integration-7.59.x.pr/101/",
-              "conclusion": "pending",
-              "started_at": "2022-04-04T16:07:12Z",
-              "completed_at": "2022-04-04T16:07:12Z",
+              "conclusion": "failure",
+              "started_at": "2022-04-04T18:27:51Z",
+              "completed_at": "2022-04-04T18:27:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
