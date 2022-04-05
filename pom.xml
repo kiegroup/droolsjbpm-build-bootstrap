@@ -184,7 +184,7 @@
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
     <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
     <version.org.glassfish>3.1.2</version.org.glassfish>
-    <version.org.glassfish.jaxb>2.3.2</version.org.glassfish.jaxb>
+    <version.org.glassfish.jaxb>2.3.6</version.org.glassfish.jaxb>
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
     <version.org.hibernate>5.3.20.Final</version.org.hibernate>
@@ -2726,6 +2726,11 @@
             <artifactId>javax.activation-api</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-xjc</artifactId>
+        <version>${version.org.glassfish.jaxb}</version>
       </dependency>
       <dependency>
         <groupId>jakarta.jws</groupId>
