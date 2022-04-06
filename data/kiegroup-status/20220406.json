@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-06T19:03:43.183Z",
+    "date": "2022-04-06T20:11:20.407Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2104514400"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2104819594"
   },
   "projects": [
     {
@@ -8866,7 +8866,77 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/optaweb-vehicle-routing",
       "pulls_url": "https://api.github.com/repos/kiegroup/optaweb-vehicle-routing/pulls{/number}",
-      "pullRequests": []
+      "pullRequests": [
+        {
+          "number": 679,
+          "title": "Keep JUnit and Mockito versions aligned with Spring Boot 2.6.6",
+          "url": "https://api.github.com/repos/kiegroup/optaweb-vehicle-routing/pulls/679",
+          "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/pull/679",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2022-04-06T19:22:33Z",
+          "updated_at": "2022-04-06T19:22:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "2dfde0cb0611be364d65e364258aa863aab650da",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "deps-spring-boot-2.6.6",
+            "sha": "7af37d5ff39114293bd4ab84e1f0d232d4c7d57c",
+            "label": "yurloc:deps-spring-boot-2.6.6"
+          },
+          "user": {
+            "login": "yurloc",
+            "avatar_url": "https://avatars.githubusercontent.com/u/673386?v=4",
+            "html_url": "https://github.com/yurloc"
+          },
+          "checks": [
+            {
+              "id": 5857150339,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/runs/5857150339?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-06T19:22:47Z",
+              "completed_at": "2022-04-06T19:37:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 5857150216,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/runs/5857150216?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-06T19:22:48Z",
+              "completed_at": "2022-04-06T19:37:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16977121944,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/optaweb-vehicle-routing-7.x.pr/49/",
+              "conclusion": "success",
+              "started_at": "2022-04-06T19:36:40Z",
+              "completed_at": "2022-04-06T19:36:40Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ]
     },
     {
       "key": "kiegroup/kie-jpmml-integration",
