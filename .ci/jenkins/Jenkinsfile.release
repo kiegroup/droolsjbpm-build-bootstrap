@@ -451,8 +451,8 @@ pipeline {
             steps{
                 script {
                     execute {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'drools-filemgmt', keyFileVariable: 'DROOLS_FILEMGMT_KEY')]) {
-                            sh './script/release/10a_drools_upload_filemgmt.sh $DROOLS_FILEMGMT_KEY'
+                        sshagent(['drools-filemgmt']) {
+                            sh './script/release/10a_drools_upload_filemgmt.sh'
                         }
                     }
                 }
@@ -462,8 +462,8 @@ pipeline {
             steps{
                 script {
                     execute {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'jbpm-filemgmt', keyFileVariable: 'JBPM_FILEMGMT_KEY')]) {
-                            sh './script/release/10b_jbpm_upload_filemgmt.sh $JBPM_FILEMGMT_KEY'
+                        sshagent(['jbpm-filemgmt']) {
+                            sh './script/release/10b_jbpm_upload_filemgmt.sh'
                         }
                     }
                 }
@@ -473,8 +473,8 @@ pipeline {
             steps{
                 script {
                     execute {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'optaplanner-filemgmt', keyFileVariable: 'OPTAPLANNER_FILEMGMT_KEY')]) {
-                            sh './script/release/10c_optaplanner_upload_filemgmt.sh $OPTAPLANNER_FILEMGMT_KEY'
+                        sshagent(['optaplanner-filemgmt']) {
+                            sh './script/release/10c_optaplanner_upload_filemgmt.sh'
                         }
                     }
                 }
