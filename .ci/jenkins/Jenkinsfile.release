@@ -184,7 +184,7 @@ pipeline {
          // create a local directory for archiving artifacts
          stage('Create upload dir') {
              when{
-                 expression { repBuild == 'YES'}
+                 expression { reBuild == 'YES'}
              }
              steps {
                  script {
@@ -198,7 +198,7 @@ pipeline {
          // the directory of ${kieVersion}"_uploadBinaries will be compressed
          stage('tar.gz uploadDir & archive artifacts'){
              when{
-                 expression { repBuild == 'YES'}
+                 expression { reBuild == 'YES'}
              }
              steps {
                  sh 'tar -czvf "${kieVersion}"_uploadBinaries.tar.gz "${kieVersion}"_uploadBinaries'
@@ -479,11 +479,6 @@ pipeline {
                     }
                 }
             }
-        }
-    }
-    post{
-        always{
-            cleanWs()
         }
     }
 }
