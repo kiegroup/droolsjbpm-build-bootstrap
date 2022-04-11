@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-11T12:13:05.919Z",
+    "date": "2022-04-11T13:52:46.549Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2148384314"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2148747100"
   },
   "projects": [
     {
@@ -1693,6 +1693,107 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 4305,
+          "title": "Revert \"[7.x] Fixed potential XXE vulnerabilities\"",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4305",
+          "html_url": "https://github.com/kiegroup/drools/pull/4305",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            }
+          ],
+          "created_at": "2022-04-11T12:16:02Z",
+          "updated_at": "2022-04-11T13:04:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "45497294be5d5274b29918befb3ea96aeb4a475f",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "revert-4283-DROOLS-6810-7.x",
+            "sha": "891fb78f788f9a6adbade98fe227464f4f1fc1a4",
+            "label": "yesamer:revert-4283-DROOLS-6810-7.x"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 5971915884,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/5971915884?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-11T13:30:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 5971915784,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/5971915784?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-11T12:16:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 5971915654,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/5971915654?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-11T12:16:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 5971915557,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/5971915557?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-11T12:16:18Z",
+              "completed_at": "2022-04-11T13:29:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17024013115,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/247/",
+              "conclusion": "success",
+              "started_at": "2022-04-11T13:17:35Z",
+              "completed_at": "2022-04-11T13:17:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17024334521,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/249/",
+              "conclusion": "failure",
+              "started_at": "2022-04-11T13:37:50Z",
+              "completed_at": "2022-04-11T13:37:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 4304,
           "title": "[DROOLS-6892] Wrapper class unwrapped value is not indexed in exec-model",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4304",
@@ -1725,10 +1826,10 @@
               "id": 5970398547,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/5970398547?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-04-11T11:22:47Z",
-              "completed_at": null,
+              "completed_at": "2022-04-11T12:52:32Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1736,10 +1837,10 @@
               "id": 5970398433,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/5970398433?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-04-11T11:23:21Z",
-              "completed_at": null,
+              "completed_at": "2022-04-11T13:10:14Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1782,196 +1883,6 @@
               "conclusion": "success",
               "started_at": "2022-04-11T11:53:24Z",
               "completed_at": "2022-04-11T11:53:24Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4303,
-          "title": "DROOLS-6897 DMN FEEL list contains() precise semantic for number (#4298)",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4303",
-          "html_url": "https://github.com/kiegroup/drools/pull/4303",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-04-11T09:46:35Z",
-          "updated_at": "2022-04-11T09:46:35Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.x",
-            "sha": "45497294be5d5274b29918befb3ea96aeb4a475f",
-            "label": "kiegroup:7.x"
-          },
-          "head": {
-            "ref": "tarilabs-20220407-DROOLS-6897-7x",
-            "sha": "62664555bc1e51d2ba8fd6623ab6446ae3e4b69b",
-            "label": "tarilabs:tarilabs-20220407-DROOLS-6897-7x"
-          },
-          "user": {
-            "login": "tarilabs",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
-            "html_url": "https://github.com/tarilabs"
-          },
-          "checks": [
-            {
-              "id": 5969909767,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969909767?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T10:47:01Z",
-              "completed_at": "2022-04-11T12:05:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5969909684,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969909684?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-04-11T11:37:00Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5969909577,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969909577?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-04-11T09:46:51Z",
-              "completed_at": "2022-04-11T11:36:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5969909465,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969909465?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T09:46:51Z",
-              "completed_at": "2022-04-11T10:42:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17022164132,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/245/",
-              "conclusion": "success",
-              "started_at": "2022-04-11T10:51:51Z",
-              "completed_at": "2022-04-11T10:51:51Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17022376650,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/247/",
-              "conclusion": "success",
-              "started_at": "2022-04-11T11:09:44Z",
-              "completed_at": "2022-04-11T11:09:44Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4302,
-          "title": "DROOLS-6882 DMN FEEL Range extended builtin conversion function (#4279)",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4302",
-          "html_url": "https://github.com/kiegroup/drools/pull/4302",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-04-11T09:42:12Z",
-          "updated_at": "2022-04-11T11:30:30Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.x",
-            "sha": "45497294be5d5274b29918befb3ea96aeb4a475f",
-            "label": "kiegroup:7.x"
-          },
-          "head": {
-            "ref": "tarilabs-20220322-rangeExtendedBuiltinConversion-7x",
-            "sha": "1095eb486806815870b2669f68100bf17c2ce523",
-            "label": "tarilabs:tarilabs-20220322-rangeExtendedBuiltinConversion-7x"
-          },
-          "user": {
-            "login": "tarilabs",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
-            "html_url": "https://github.com/tarilabs"
-          },
-          "checks": [
-            {
-              "id": 5969845137,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969845137?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T10:42:37Z",
-              "completed_at": "2022-04-11T11:50:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5969845050,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969845050?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-04-11T11:09:52Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5969844957,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969844957?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T09:42:27Z",
-              "completed_at": "2022-04-11T11:09:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5969844864,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/5969844864?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T09:42:27Z",
-              "completed_at": "2022-04-11T10:34:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17022120009,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/244/",
-              "conclusion": "success",
-              "started_at": "2022-04-11T10:47:45Z",
-              "completed_at": "2022-04-11T10:47:45Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17022250355,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/246/",
-              "conclusion": "failure",
-              "started_at": "2022-04-11T10:59:16Z",
-              "completed_at": "2022-04-11T10:59:16Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2364,107 +2275,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
-          "number": 1258,
-          "title": "RHPAM-4271 minimist npm library to 1.2.6",
-          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1258",
-          "html_url": "https://github.com/kiegroup/appformer/pull/1258",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
-          "created_at": "2022-04-11T07:18:26Z",
-          "updated_at": "2022-04-11T11:41:46Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b25d0fc136ceb9b28292e3e267b4216076111e84",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "RHPAM-4271",
-            "sha": "1017e297fae747e941dc9ae8814571636b5da4e2",
-            "label": "Ginxo:RHPAM-4271"
-          },
-          "user": {
-            "login": "Ginxo",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-            "html_url": "https://github.com/Ginxo"
-          },
-          "checks": [
-            {
-              "id": 5968626595,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5968626595",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T08:17:15Z",
-              "completed_at": "2022-04-11T08:17:15Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5968626046,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5968626046",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T08:08:15Z",
-              "completed_at": "2022-04-11T08:17:11Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
-            },
-            {
-              "id": 5967875205,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5967875205?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-11T07:18:40Z",
-              "completed_at": "2022-04-11T08:11:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5967875015,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5967875015?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-04-11T07:18:40Z",
-              "completed_at": "2022-04-11T08:10:19Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17020234167,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/151/",
-              "conclusion": "success",
-              "started_at": "2022-04-11T08:18:49Z",
-              "completed_at": "2022-04-11T08:18:49Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17020366521,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/146/",
-              "conclusion": "failure",
-              "started_at": "2022-04-11T08:29:21Z",
-              "completed_at": "2022-04-11T08:29:21Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 1257,
           "title": "Bump logback-core from 1.1.3 to 1.2.9",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1257",
@@ -2515,118 +2325,6 @@
               "conclusion": "failure",
               "started_at": "2022-04-06T12:17:01Z",
               "completed_at": "2022-04-06T13:16:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 1256,
-          "title": "Bump minimist from 1.2.5 to 1.2.6 in /dashbuilder/dashbuilder-shared/dashbuilder-js",
-          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1256",
-          "html_url": "https://github.com/kiegroup/appformer/pull/1256",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "javascript"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-04-06T12:06:24Z",
-          "updated_at": "2022-04-06T12:06:25Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b25d0fc136ceb9b28292e3e267b4216076111e84",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/npm_and_yarn/dashbuilder/dashbuilder-shared/dashbuilder-js/minimist-1.2.6",
-            "sha": "f02fe92a598dabacc6e85489a409c61398f364ab",
-            "label": "kiegroup:dependabot/npm_and_yarn/dashbuilder/dashbuilder-shared/dashbuilder-js/minimist-1.2.6"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 5850444236,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5850444236?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-06T12:15:08Z",
-              "completed_at": "2022-04-06T13:03:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5850444158,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5850444158?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-04-06T12:15:52Z",
-              "completed_at": "2022-04-06T13:05:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 1255,
-          "title": "Bump minimist from 1.2.5 to 1.2.6 in /appformer-js-monaco",
-          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1255",
-          "html_url": "https://github.com/kiegroup/appformer/pull/1255",
-          "state": "open",
-          "labels": [
-            "dependencies",
-            "javascript"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-04-06T12:06:12Z",
-          "updated_at": "2022-04-06T12:06:15Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b25d0fc136ceb9b28292e3e267b4216076111e84",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/npm_and_yarn/appformer-js-monaco/minimist-1.2.6",
-            "sha": "2f0ebd95070f5d967e8276a1c15c7ae4b2b9f305",
-            "label": "kiegroup:dependabot/npm_and_yarn/appformer-js-monaco/minimist-1.2.6"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 5850441985,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5850441985?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-04-06T12:07:13Z",
-              "completed_at": "2022-04-06T13:07:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 5850441753,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5850441753?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-04-06T12:10:00Z",
-              "completed_at": "2022-04-06T13:03:46Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -2916,17 +2614,17 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-02-21T11:28:08Z",
-          "updated_at": "2022-02-21T11:28:10Z",
+          "updated_at": "2022-04-11T12:51:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "03c3ea19e784275be41acc131259c1bea77adcf9",
+            "sha": "556410c4ccb17b95bfb97f73f874a0cc893bcbf7",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "dependabot/npm_and_yarn/dashbuilder/dashbuilder-shared/dashbuilder-js/node-sass-7.0.0",
-            "sha": "7daaee47f61435a22131e136a439462c0b5ef849",
+            "sha": "49a278f34690a8cf12e5a9f354e47864ed3278a6",
             "label": "kiegroup:dependabot/npm_and_yarn/dashbuilder/dashbuilder-shared/dashbuilder-js/node-sass-7.0.0"
           },
           "user": {
@@ -2936,24 +2634,24 @@
           },
           "checks": [
             {
-              "id": 5273331048,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5273331048?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-02-21T11:28:50Z",
-              "completed_at": "2022-02-21T12:19:45Z",
+              "id": 5972434075,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/5972434075?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-11T12:51:11Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 5273330968,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/5273330968?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-02-21T11:28:37Z",
-              "completed_at": "2022-02-21T12:25:42Z",
+              "id": 5972433812,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/5972433812?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-11T13:34:22Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -3663,17 +3361,17 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2021-07-25T08:16:41Z",
-          "updated_at": "2021-07-25T08:16:43Z",
+          "updated_at": "2022-04-11T12:51:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "69ebb1f52d03e18926d418cedf32228d16515365",
+            "sha": "556410c4ccb17b95bfb97f73f874a0cc893bcbf7",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "dependabot/npm_and_yarn/appformer-js/handlebars-4.7.7",
-            "sha": "3960f82d6f5629b5fc1aaca05461bff22acd3e3c",
+            "sha": "2291e067be4729f263621e42d4b45a7be7d70151",
             "label": "kiegroup:dependabot/npm_and_yarn/appformer-js/handlebars-4.7.7"
           },
           "user": {
@@ -3683,24 +3381,24 @@
           },
           "checks": [
             {
-              "id": 3153941753,
-              "name": "Maven Build (8)",
-              "html_url": "https://github.com/kiegroup/appformer/runs/3153941753?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2021-07-25T08:16:54Z",
-              "completed_at": "2021-07-25T09:10:39Z",
+              "id": 5972431995,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/5972431995?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-11T12:51:03Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 3153941721,
-              "name": "Maven Build (11)",
-              "html_url": "https://github.com/kiegroup/appformer/runs/3153941721?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-07-25T08:16:53Z",
-              "completed_at": "2021-07-25T09:05:16Z",
+              "id": 5972431850,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/5972431850?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-11T13:32:20Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -3775,17 +3473,17 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2021-07-25T08:16:40Z",
-          "updated_at": "2021-07-25T08:16:42Z",
+          "updated_at": "2022-04-11T12:51:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "69ebb1f52d03e18926d418cedf32228d16515365",
+            "sha": "556410c4ccb17b95bfb97f73f874a0cc893bcbf7",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "dependabot/npm_and_yarn/appformer-js/lodash-4.17.21",
-            "sha": "b6b8424c03b14245c867185a9bbc127a4be4d0b6",
+            "sha": "92228ffe0183c82b538f8d56ca1204427b693e30",
             "label": "kiegroup:dependabot/npm_and_yarn/appformer-js/lodash-4.17.21"
           },
           "user": {
@@ -3795,24 +3493,24 @@
           },
           "checks": [
             {
-              "id": 3153941757,
-              "name": "Maven Build (8)",
-              "html_url": "https://github.com/kiegroup/appformer/runs/3153941757?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-07-25T08:16:53Z",
-              "completed_at": "2021-07-25T09:04:56Z",
+              "id": 5972431760,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/5972431760?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-11T13:06:24Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 3153941719,
-              "name": "Maven Build (11)",
-              "html_url": "https://github.com/kiegroup/appformer/runs/3153941719?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-07-25T08:16:52Z",
-              "completed_at": "2021-07-25T09:05:22Z",
+              "id": 5972431653,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/5972431653?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-11T13:26:15Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -7697,15 +7395,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-04-11T07:32:26Z",
-          "updated_at": "2022-04-11T11:58:54Z",
+          "updated_at": "2022-04-11T12:32:07Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
