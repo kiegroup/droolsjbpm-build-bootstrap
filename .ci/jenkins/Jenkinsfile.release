@@ -184,13 +184,13 @@ pipeline {
          // create a local directory for archiving artifacts
          stage('Create upload dir') {
              when{
-                 expression { repBuild == 'YES'}
+                 expression { reBuild == 'YES'}
              }
              steps {
                  script {
                      execute {
                          // creates a directory ${kieVersion}"_uploadBinaries with binaries for the web-pages
-                         sh './droolsjbpm-build-bootstrap/script/release/prepareUploadDir.sh'
+                         sh './script/release/prepareUploadDir.sh'
                      }
                  }
              }
@@ -198,13 +198,13 @@ pipeline {
          // the directory of ${kieVersion}"_uploadBinaries will be compressed
          stage('tar.gz uploadDir & archive artifacts'){
              when{
-                 expression { repBuild == 'YES'}
+                 expression { reBuild == 'YES'}
              }
              steps {
                  sh 'tar -czvf "${kieVersion}"_uploadBinaries.tar.gz "${kieVersion}"_uploadBinaries'
                  archiveArtifacts '*.tar.gz'
                  // removal of *.tar.gz file to save disk space
-                 sh "rm -rf ${kieVersion}_binaries.tar.gz"
+                 sh "rm -rf *_binaries.tar.gz"
              }
          }
         stage('Publish JUnit test results reports') {
@@ -331,7 +331,7 @@ pipeline {
         stage('send email with build result'){
             steps{
                 emailext body: """
-                The satus of community release ${kieVersion} was ${currentBuild.currentResult}
+                The status of community release ${kieVersion} was ${currentBuild.currentResult}
 
                 Failed tests: ${BUILD_URL}testReport
 
@@ -451,8 +451,8 @@ pipeline {
             steps{
                 script {
                     execute {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'drools-filemgmt', keyFileVariable: 'DROOLS_FILEMGMT_KEY')]) {
-                            sh './script/release/10a_drools_upload_filemgmt.sh $DROOLS_FILEMGMT_KEY'
+                        sshagent(['drools-filemgmt']) {
+                            sh './script/release/10a_drools_upload_filemgmt.sh'
                         }
                     }
                 }
@@ -462,8 +462,8 @@ pipeline {
             steps{
                 script {
                     execute {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'jbpm-filemgmt', keyFileVariable: 'JBPM_FILEMGMT_KEY')]) {
-                            sh './script/release/10b_jbpm_upload_filemgmt.sh $JBPM_FILEMGMT_KEY'
+                        sshagent(['jbpm-filemgmt']) {
+                            sh './script/release/10b_jbpm_upload_filemgmt.sh'
                         }
                     }
                 }
@@ -473,17 +473,12 @@ pipeline {
             steps{
                 script {
                     execute {
-                        withCredentials([sshUserPrivateKey(credentialsId: 'optaplanner-filemgmt', keyFileVariable: 'OPTAPLANNER_FILEMGMT_KEY')]) {
-                            sh './script/release/10c_optaplanner_upload_filemgmt.sh $OPTAPLANNER_FILEMGMT_KEY'
+                        sshagent(['optaplanner-filemgmt']) {
+                            sh './script/release/10c_optaplanner_upload_filemgmt.sh'
                         }
                     }
                 }
             }
-        }
-    }
-    post{
-        always{
-            cleanWs()
         }
     }
 }
@@ -491,9 +486,12 @@ void execute(Closure closure) {
     try {
         closure()
     } catch(error) {
-        input "Retry step?"
-        retry++
-        echo "This is retry number ${retry}"
-        execute(closure)
+        repeat = new ChoiceParameterDefinition('ACTION', ['repeat', 'skip'] as String[], 'This step failed and waits for user interaction')
+        def result = input message: 'What do you want to do?', parameters: [repeat]
+        if ( "${result}" == 'repeat') {
+            retry++
+            echo "This is retry number ${retry}"
+            execute(closure)
+        }
     }
 }
