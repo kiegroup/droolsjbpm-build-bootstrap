@@ -96,9 +96,6 @@ pipeline {
             }
         }
         stage('Install build-chain tool') {
-            when{
-                expression { reBuild == 'YES'}
-            }
             steps {
                 script {
                     println "[INFO] Getting build-chain version from composite action file"
@@ -204,7 +201,7 @@ pipeline {
                  sh 'tar -czvf "${kieVersion}"_uploadBinaries.tar.gz "${kieVersion}"_uploadBinaries'
                  archiveArtifacts '*.tar.gz'
                  // removal of *.tar.gz file to save disk space
-                 sh "rm -rf *_binaries.tar.gz"
+                 sh "rm -rf *_uploadBinaries.tar.gz"
              }
          }
         stage('Publish JUnit test results reports') {
@@ -434,7 +431,7 @@ pipeline {
                     projectName: '${JOB_NAME}',
                     selector: [$class: 'SpecificBuildSelector', buildNumber: "$buildNr"]
                 ])
-                sh 'tar -xzvf "${kieVersion}"_binaries.tar.gz \n' +
+                sh 'tar -xzvf *_uploadBinaries.tar.gz \n' +
                    'ls -al'
             }
         }
