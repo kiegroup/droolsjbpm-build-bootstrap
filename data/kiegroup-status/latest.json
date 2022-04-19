@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-19T05:15:38.679Z",
+    "date": "2022-04-19T06:09:31.084Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2187650059"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2187835502"
   },
   "projects": [
     {
@@ -1645,6 +1645,117 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4317,
+          "title": "[DROOLS-6908] Arithmetic operation with String coercion in constraint…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4317",
+          "html_url": "https://github.com/kiegroup/drools/pull/4317",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            },
+            {
+              "login": "hellowdan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/22012223?v=4",
+              "html_url": "https://github.com/hellowdan"
+            }
+          ],
+          "created_at": "2022-04-19T05:37:05Z",
+          "updated_at": "2022-04-19T05:37:25Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "f2fb385e61c52ad24310199c7a1469c967bd7413",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-6908",
+            "sha": "070feef8d10378a5c5989cabf914fac9f11c7a88",
+            "label": "tkobayas:DROOLS-6908"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 6072737296,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6072737296?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-19T05:37:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6072737231,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6072737231?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-04-19T05:37:12Z",
+              "completed_at": "2022-04-19T05:37:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6072737164,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6072737164?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-19T05:37:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6072737069,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6072737069?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-19T05:37:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17109332386,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/255/",
+              "conclusion": "pending",
+              "started_at": "2022-04-19T05:37:11Z",
+              "completed_at": "2022-04-19T05:37:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17109332500,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/256/",
+              "conclusion": "pending",
+              "started_at": "2022-04-19T05:37:12Z",
+              "completed_at": "2022-04-19T05:37:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4313,
           "title": "[7.x~DROOLS-6810 Correct fix for potential XXE vulnerabilities",
@@ -5466,7 +5577,7 @@
             }
           ],
           "created_at": "2022-04-07T06:53:11Z",
-          "updated_at": "2022-04-18T13:08:47Z",
+          "updated_at": "2022-04-19T06:05:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
