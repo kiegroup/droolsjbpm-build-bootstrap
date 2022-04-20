@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-20T12:16:25.498Z",
+    "date": "2022-04-20T13:32:24.288Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2195597508"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2195987946"
   },
   "projects": [
     {
@@ -1645,6 +1645,107 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4320,
+          "title": "[7.x][Drools 6875] Removed use of deprecated methods in assertions",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4320",
+          "html_url": "https://github.com/kiegroup/drools/pull/4320",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            }
+          ],
+          "created_at": "2022-04-20T12:42:51Z",
+          "updated_at": "2022-04-20T12:43:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "dc0c474c51a3be315fcc0db54a003aeb17122e7d",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-6875-7.x",
+            "sha": "b81e67422de7eb3d5673502f0fdde3ef8b7a6700",
+            "label": "pibizza:DROOLS-6875-7.x"
+          },
+          "user": {
+            "login": "pibizza",
+            "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+            "html_url": "https://github.com/pibizza"
+          },
+          "checks": [
+            {
+              "id": 6095094363,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6095094363?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-20T12:42:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6095094233,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6095094233?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-20T12:42:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6095094112,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6095094112?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-20T12:43:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6095094002,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6095094002?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-20T12:43:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17130471248,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/262/",
+              "conclusion": "pending",
+              "started_at": "2022-04-20T12:42:55Z",
+              "completed_at": "2022-04-20T12:42:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17130471253,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/261/",
+              "conclusion": "pending",
+              "started_at": "2022-04-20T12:42:55Z",
+              "completed_at": "2022-04-20T12:42:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4318,
           "title": "[DROOLS-6892] Wrapper class unwrapped value is not indexed in exec-model",
