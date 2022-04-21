@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-21T00:34:08.239Z",
+    "date": "2022-04-21T02:53:12.853Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2199077425"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2199452411"
   },
   "projects": [
     {
@@ -1638,7 +1638,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-04-20T07:41:51Z",
+      "updated_at": "2022-04-21T01:57:09Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -1754,9 +1754,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "hellowdan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/22012223?v=4",
+              "html_url": "https://github.com/hellowdan"
+            }
+          ],
           "created_at": "2022-04-20T07:00:34Z",
-          "updated_at": "2022-04-20T13:50:58Z",
+          "updated_at": "2022-04-21T02:38:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1766,7 +1772,7 @@
           },
           "head": {
             "ref": "DROOLS-6892-non-getter-for-index",
-            "sha": "3bae31afb8b13ec5ed7ace8d421af581524c9c0f",
+            "sha": "2aab532c39e91a1a8c48ea16851b003bba79ce93",
             "label": "tkobayas:DROOLS-6892-non-getter-for-index"
           },
           "user": {
@@ -1776,78 +1782,48 @@
           },
           "checks": [
             {
-              "id": 6090496401,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6090496401?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-20T08:01:03Z",
-              "completed_at": "2022-04-20T09:36:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6090496323,
+              "id": 6105270215,
               "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6090496323?check_suite_focus=true",
+              "html_url": "https://github.com/kiegroup/drools/runs/6105270215?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-04-21T02:06:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6105270161,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6105270161?check_suite_focus=true",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2022-04-20T07:07:31Z",
-              "completed_at": "2022-04-20T07:07:31Z",
+              "started_at": "2022-04-21T02:06:57Z",
+              "completed_at": "2022-04-21T02:06:57Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 6090496239,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6090496239?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-04-20T08:56:06Z",
-              "completed_at": "2022-04-20T10:16:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6090496145,
+              "id": 6105270124,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6090496145?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-04-20T07:07:31Z",
-              "completed_at": "2022-04-20T07:07:31Z",
+              "html_url": "https://github.com/kiegroup/drools/runs/6105270124?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-21T02:07:04Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17127042032,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/260/",
-              "conclusion": "success",
-              "started_at": "2022-04-20T08:14:03Z",
-              "completed_at": "2022-04-20T08:14:03Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17127297543,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/261/",
-              "conclusion": "success",
-              "started_at": "2022-04-20T08:34:47Z",
-              "completed_at": "2022-04-20T08:34:47Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17134274580,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/drools-7.x.fdb/39/",
-              "conclusion": "failure",
-              "started_at": "2022-04-20T16:28:37Z",
-              "completed_at": "2022-04-20T16:28:37Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "id": 6105270082,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6105270082?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-21T02:07:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
           ]
         },
