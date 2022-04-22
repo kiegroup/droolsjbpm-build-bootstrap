@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-22T06:09:12.482Z",
+    "date": "2022-04-22T07:06:56.073Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2206033349"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2206256262"
   },
   "projects": [
     {
@@ -19,6 +19,85 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1952,
+          "title": "Execute GHA generate status only on kiegroup",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1952",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1952",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mbiarnes",
+              "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+              "html_url": "https://github.com/mbiarnes"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-04-22T06:25:09Z",
+          "updated_at": "2022-04-22T06:26:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9086e41f6524d1a9f11b6597f400741e6bff34e0",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "status_page/owner",
+            "sha": "78c85d3f0ef4e876e246e4ca2aff00530d0eccfa",
+            "label": "Ginxo:status_page/owner"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 6124089643,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6124089643?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-22T06:25:26Z",
+              "completed_at": "2022-04-22T06:26:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6124089517,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6124089517?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-22T06:25:26Z",
+              "completed_at": "2022-04-22T06:26:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17158432608,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/460/",
+              "conclusion": "success",
+              "started_at": "2022-04-22T06:28:34Z",
+              "completed_at": "2022-04-22T06:28:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1950,
           "title": "RHPAM-4257 jackson version upgraded to 2.12.6",
@@ -1669,7 +1748,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-04-21T20:02:51Z",
+      "updated_at": "2022-04-22T06:34:46Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -4519,7 +4598,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-01-26T19:13:53Z",
-          "updated_at": "2022-04-21T12:54:41Z",
+          "updated_at": "2022-04-22T06:13:53Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4583,12 +4662,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17147050281,
+              "id": 17158323713,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/665/",
-              "conclusion": "failure",
-              "started_at": "2022-04-21T12:55:13Z",
-              "completed_at": "2022-04-21T12:55:13Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/668/",
+              "conclusion": "pending",
+              "started_at": "2022-04-22T06:13:55Z",
+              "completed_at": "2022-04-22T06:13:55Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -5685,7 +5764,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-03-22T10:32:17Z",
-          "updated_at": "2022-04-21T16:22:14Z",
+          "updated_at": "2022-04-22T06:48:05Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5749,12 +5828,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17129402002,
+              "id": 17158577808,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/719/",
-              "conclusion": "failure",
-              "started_at": "2022-04-20T11:17:51Z",
-              "completed_at": "2022-04-20T11:17:51Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/723/",
+              "conclusion": "pending",
+              "started_at": "2022-04-22T06:48:07Z",
+              "completed_at": "2022-04-22T06:48:07Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
