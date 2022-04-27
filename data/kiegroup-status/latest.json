@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-27T11:07:19.320Z",
+    "date": "2022-04-27T12:16:22.505Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2232641995"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2232964597"
   },
   "projects": [
     {
@@ -1413,10 +1413,10 @@
               "id": 6191109300,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6191109300?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-04-27T10:41:38Z",
-              "completed_at": null,
+              "completed_at": "2022-04-27T11:55:20Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1424,10 +1424,10 @@
               "id": 6191109180,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6191109180?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-04-27T09:41:41Z",
-              "completed_at": null,
+              "completed_at": "2022-04-27T11:31:36Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1435,9 +1435,9 @@
               "id": 6191109063,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6191109063?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-04-27T09:41:09Z",
+              "started_at": "2022-04-27T11:31:48Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -4049,7 +4049,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-04-01T18:40:38Z",
-          "updated_at": "2022-04-27T10:00:02Z",
+          "updated_at": "2022-04-27T11:41:14Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4068,6 +4068,28 @@
             "html_url": "https://github.com/VaniHaripriya"
           },
           "checks": [
+            {
+              "id": 6192766687,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6192766687",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-27T11:41:15Z",
+              "completed_at": "2022-04-27T11:41:16Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6192766185,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6192766185",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-27T11:38:01Z",
+              "completed_at": "2022-04-27T11:41:11Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
+            },
             {
               "id": 6181894570,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -4091,12 +4113,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17212348455,
+              "id": 17213598972,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/672/",
-              "conclusion": "pending",
-              "started_at": "2022-04-27T10:00:12Z",
-              "completed_at": "2022-04-27T10:00:12Z",
+              "conclusion": "success",
+              "started_at": "2022-04-27T11:41:35Z",
+              "completed_at": "2022-04-27T11:41:35Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7383,6 +7405,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3733,
+          "title": "AF-2467 : Commit history in metrics does not get refreshed when using other than master branch.",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3733",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3733",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-04-27T11:08:58Z",
+          "updated_at": "2022-04-27T11:08:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "eebb4995aef07c1139d1898f44b91e352501d339",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "AF-2467-branches",
+            "sha": "4a5636260f9856cb1fbbd84961d312f9b12e08c0",
+            "label": "Rikkola:AF-2467-branches"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 6192330735,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/6192330735?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-27T11:09:14Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6192330556,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/6192330556?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-04-27T11:09:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17213222909,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/201/",
+              "conclusion": "pending",
+              "started_at": "2022-04-27T11:09:06Z",
+              "completed_at": "2022-04-27T11:09:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3712,
           "title": "KOGITO-4647 : [DMN] FEEL client-side - Remove mirror classes",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3712",
@@ -8433,7 +8518,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-04-27T08:43:54Z",
-          "updated_at": "2022-04-27T09:21:31Z",
+          "updated_at": "2022-04-27T11:38:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8456,10 +8541,10 @@
               "id": 6190273903,
               "name": "ubuntu-18.04 - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/6190273903?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-04-27T08:44:10Z",
-              "completed_at": null,
+              "completed_at": "2022-04-27T11:22:47Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -8491,6 +8576,16 @@
               "conclusion": "success",
               "started_at": "2022-04-27T10:01:30Z",
               "completed_at": "2022-04-27T10:01:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17213563630,
+              "name": "Linux - Full Downstream Production Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdbp/job/kie-wb-distributions-main.fdbp/3/",
+              "conclusion": "pending",
+              "started_at": "2022-04-27T11:38:24Z",
+              "completed_at": "2022-04-27T11:38:24Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
