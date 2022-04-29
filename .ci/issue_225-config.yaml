@@ -1,0 +1,8 @@
+version: "2.1"
+
+dependencies:
+  - project: Ginxo/droolsjbpm-build-bootstrap
+
+default:
+  build-command:
+    current: mvn ${{ env.MVN_GOAL }}
