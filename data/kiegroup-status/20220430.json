@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-04-30T16:07:49.795Z",
+    "date": "2022-04-30T17:09:41.414Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2250520785"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2250654064"
   },
   "projects": [
     {
@@ -19,6 +19,85 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1956,
+          "title": "build-chain to 2.6.23",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1956",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1956",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mbiarnes",
+              "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+              "html_url": "https://github.com/mbiarnes"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-04-30T16:51:08Z",
+          "updated_at": "2022-04-30T16:52:02Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "954a7f3a0779bc7b378b97d33d861fd433301339",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "build-chain/2.6.23",
+            "sha": "5e079f4b093ad6ff0f680e86ef79d71f60b4d3c3",
+            "label": "Ginxo:build-chain/2.6.23"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 6241220628,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6241220628?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-30T16:51:19Z",
+              "completed_at": "2022-04-30T16:52:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6241220606,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6241220606?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-04-30T16:51:51Z",
+              "completed_at": "2022-04-30T16:52:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17256829884,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/464/",
+              "conclusion": "pending",
+              "started_at": "2022-04-30T16:51:38Z",
+              "completed_at": "2022-04-30T16:51:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1955,
           "title": "Bump keycloak-core from 13.0.0 to 17.0.1",
