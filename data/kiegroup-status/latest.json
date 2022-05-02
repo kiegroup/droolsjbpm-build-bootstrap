@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-05-02T15:12:23.296Z",
+    "date": "2022-05-02T16:14:22.633Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2258710760"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2259025976"
   },
   "projects": [
     {
@@ -19,6 +19,80 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1957,
+          "title": "fixed scripts and Jenkinsfile",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1957",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1957",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "winklerm",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1124558?v=4",
+              "html_url": "https://github.com/winklerm"
+            }
+          ],
+          "created_at": "2022-05-02T15:40:56Z",
+          "updated_at": "2022-05-02T15:40:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c68769c38ce96a881409eba5fee1acb1d21fc527",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "community-release",
+            "sha": "7d6586dccace88df787e6250eff83c98472a8b51",
+            "label": "mbiarnes:community-release"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 6259977835,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6259977835?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-05-02T15:41:13Z",
+              "completed_at": "2022-05-02T15:42:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6259977674,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6259977674?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-05-02T15:41:12Z",
+              "completed_at": "2022-05-02T15:42:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17266917722,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/466/",
+              "conclusion": "success",
+              "started_at": "2022-05-02T15:44:33Z",
+              "completed_at": "2022-05-02T15:44:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1955,
           "title": "Bump keycloak-core from 13.0.0 to 17.0.1",
