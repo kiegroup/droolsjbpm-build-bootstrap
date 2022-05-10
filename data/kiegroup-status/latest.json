@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-05-10T09:12:25.459Z",
+    "date": "2022-05-10T10:12:20.622Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2299607899"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2299928404"
   },
   "projects": [
     {
@@ -1334,6 +1334,101 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 4372,
+          "title": "[DROOLS-6950] Unary negation fails with TemporalPredicate in executab…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4372",
+          "html_url": "https://github.com/kiegroup/drools/pull/4372",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-05-10T09:29:58Z",
+          "updated_at": "2022-05-10T09:44:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "bc2921bf3de108268d04f6cd6149eef1d8e73f37",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-6950",
+            "sha": "2c139bab85b1bd861bf6755a00f1862c3740e0c9",
+            "label": "tkobayas:DROOLS-6950"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 6367318197,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6367318197?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-05-10T09:30:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6367318052,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6367318052?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-05-10T09:30:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6367317919,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6367317919?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-05-10T09:30:06Z",
+              "completed_at": "2022-05-10T09:30:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6367317734,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6367317734?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-05-10T09:30:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17358982668,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/289/",
+              "conclusion": "pending",
+              "started_at": "2022-05-10T09:30:03Z",
+              "completed_at": "2022-05-10T09:30:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17358982793,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/292/",
+              "conclusion": "pending",
+              "started_at": "2022-05-10T09:30:04Z",
+              "completed_at": "2022-05-10T09:30:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 4371,
           "title": "[7.x][DROOLS-6917] Remove use of hamcrest in drools tests (#4336)",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4371",
@@ -1341,9 +1436,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            }
+          ],
           "created_at": "2022-05-09T14:07:47Z",
-          "updated_at": "2022-05-09T14:27:15Z",
+          "updated_at": "2022-05-10T09:28:14Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1423,107 +1524,6 @@
               "conclusion": "failure",
               "started_at": "2022-05-09T15:30:54Z",
               "completed_at": "2022-05-09T15:30:54Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4352,
-          "title": "[DROOLS-6936] BigDecimalLiteral with binding in mvel dialect causes C…",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4352",
-          "html_url": "https://github.com/kiegroup/drools/pull/4352",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "pibizza",
-              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
-              "html_url": "https://github.com/pibizza"
-            }
-          ],
-          "created_at": "2022-05-02T09:11:09Z",
-          "updated_at": "2022-05-10T08:04:28Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.x",
-            "sha": "cf7a042b8052ab62a06056b520eb112c9ad3910d",
-            "label": "kiegroup:7.x"
-          },
-          "head": {
-            "ref": "DROOLS-6936",
-            "sha": "0918a06e62a2359ded5e1a2ced8f9a77e119ef09",
-            "label": "tkobayas:DROOLS-6936"
-          },
-          "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
-          },
-          "checks": [
-            {
-              "id": 6346175999,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6346175999?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-05-09T05:01:51Z",
-              "completed_at": "2022-05-09T06:04:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6346175940,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6346175940?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2022-05-09T05:02:00Z",
-              "completed_at": "2022-05-09T05:01:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6346175860,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6346175860?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-05-09T06:02:08Z",
-              "completed_at": "2022-05-09T07:57:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6346175722,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/runs/6346175722?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-05-09T05:01:51Z",
-              "completed_at": "2022-05-09T05:56:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17339976125,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/286/",
-              "conclusion": "success",
-              "started_at": "2022-05-09T06:03:58Z",
-              "completed_at": "2022-05-09T06:03:58Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17343834471,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/289/",
-              "conclusion": "failure",
-              "started_at": "2022-05-09T11:42:19Z",
-              "completed_at": "2022-05-09T11:42:19Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1916,7 +1916,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-05-10T05:02:21Z",
+      "updated_at": "2022-05-10T09:34:20Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -4985,7 +4985,7 @@
             }
           ],
           "created_at": "2022-04-07T06:53:11Z",
-          "updated_at": "2022-05-10T08:52:12Z",
+          "updated_at": "2022-05-10T09:35:55Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8282,15 +8282,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "MarianMacik",
-              "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
-              "html_url": "https://github.com/MarianMacik"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-05-06T10:36:20Z",
-          "updated_at": "2022-05-06T15:22:10Z",
+          "updated_at": "2022-05-10T09:45:46Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8544,6 +8538,75 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4211,
+          "title": "DROOLS-6943 DMN doc update built-in function DMNv1.4",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4211",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4211",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "kaldesai",
+              "avatar_url": "https://avatars.githubusercontent.com/u/43639538?v=4",
+              "html_url": "https://github.com/kaldesai"
+            }
+          ],
+          "created_at": "2022-05-10T09:14:59Z",
+          "updated_at": "2022-05-10T09:21:57Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "446e5e987dd7e7678a72f65841aa05f97a964faf",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "tarilabs-20220510-DROOLS-6943-main",
+            "sha": "885d5fed16602d76f56e0df239bb190117750380",
+            "label": "tarilabs:tarilabs-20220510-DROOLS-6943-main"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 6367093933,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/runs/6367093933?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-05-10T09:15:17Z",
+              "completed_at": "2022-05-10T09:16:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6367093519,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/runs/6367093519?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-05-10T09:15:17Z",
+              "completed_at": "2022-05-10T09:16:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17359145669,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/528/",
+              "conclusion": "success",
+              "started_at": "2022-05-10T09:41:28Z",
+              "completed_at": "2022-05-10T09:41:28Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4210,
           "title": "BXMSDOC-8490-main: Add step about ImageRegistry and image usage for KieApp CR",
