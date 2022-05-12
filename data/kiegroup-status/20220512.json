@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-05-12T06:10:29.487Z",
+    "date": "2022-05-12T07:07:43.126Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2311529658"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2311765538"
   },
   "projects": [
     {
@@ -1257,6 +1257,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4381,
+          "title": "[DROOLS-6952] Unary negation failure with TemporalPredicate and decla…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4381",
+          "html_url": "https://github.com/kiegroup/drools/pull/4381",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-05-12T06:59:55Z",
+          "updated_at": "2022-05-12T06:59:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "0f97c709f137ff51057505c41e5507e11129280d",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-6952",
+            "sha": "eb02aa774608e72273c6f4c06a19179c80fc3af5",
+            "label": "tkobayas:DROOLS-6952"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 6401178667,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6401178667?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-05-12T07:00:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6401178495,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6401178495?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-05-12T07:00:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6401178382,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6401178382?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-05-12T07:00:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6401178028,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6401178028?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-05-12T07:00:10Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17391477314,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/293/",
+              "conclusion": "pending",
+              "started_at": "2022-05-12T06:59:58Z",
+              "completed_at": "2022-05-12T06:59:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17391477325,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/296/",
+              "conclusion": "pending",
+              "started_at": "2022-05-12T06:59:58Z",
+              "completed_at": "2022-05-12T06:59:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4376,
           "title": "[RHPAM-4304] Unable to reimport kjar in OSGI using kie scanner and IB…",
@@ -4480,7 +4575,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2021-10-28T13:29:44Z",
-          "updated_at": "2022-05-11T09:00:56Z",
+          "updated_at": "2022-05-12T07:02:51Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4490,7 +4585,7 @@
           },
           "head": {
             "ref": "JBPM-9933",
-            "sha": "99a7a8e80ec04fd62f5823c84438c564379184f3",
+            "sha": "5809506cf3089910ecc3c5408c2058fab4ab2762",
             "label": "elguardian:JBPM-9933"
           },
           "user": {
@@ -4500,34 +4595,34 @@
           },
           "checks": [
             {
-              "id": 6384930565,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6384930565?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-05-11T09:01:14Z",
-              "completed_at": "2022-05-11T12:17:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6384930397,
+              "id": 6401216318,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6384930397?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-05-11T09:01:13Z",
-              "completed_at": "2022-05-11T12:16:21Z",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6401216318?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-05-12T07:03:08Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17378001265,
+              "id": 6401216152,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6401216152?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-05-12T07:03:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17391509838,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/749/",
-              "conclusion": "failure",
-              "started_at": "2022-05-11T11:52:39Z",
-              "completed_at": "2022-05-11T11:52:39Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/754/",
+              "conclusion": "pending",
+              "started_at": "2022-05-12T07:02:56Z",
+              "completed_at": "2022-05-12T07:02:56Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
