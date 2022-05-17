@@ -192,13 +192,13 @@ pipeline {
                  }
              }
          }
-         // the directory of ${kieVersion}"_uploadBinaries will be compressed
+         // the directory of ${kieVersion}_uploadBinaries will be compressed
          stage('tar.gz uploadDir & archive artifacts'){
              when{
                  expression { runBuild == 'YES'}
              }
              steps {
-                 sh 'tar -czvf "${kieVersion}"_uploadBinaries.tar.gz "${kieVersion}"_uploadBinaries'
+                 sh "tar -czvf ${kieVersion}_uploadBinaries.tar.gz ${kieVersion}_uploadBinaries"
                  archiveArtifacts '*.tar.gz'
                  // removal of *.tar.gz file to save disk space
                  sh "rm -rf *_uploadBinaries.tar.gz"
