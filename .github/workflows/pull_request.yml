@@ -12,8 +12,6 @@ on:
       - 'ide-configuration/**'
       - 'script/**'
   issue_comment:
-    types: [created]
-
 
 jobs:
   build-chain:
@@ -26,10 +24,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Echo comment body
-        if: github.event.comment
+        if: ${{ !github.event.issue.pull_request }}
         run: echo ${{ github.event.comment.body }}
       - name: Echo comment pull_request
-        if: github.event.pull_request
+        if: ${{ github.event.issue.pull_request }}
         run: echo ${{ github.event.pull_request.id }}
-        
-          
