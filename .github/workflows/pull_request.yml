@@ -11,9 +11,12 @@ on:
       - 'docs/**'
       - 'ide-configuration/**'
       - 'script/**'
+  issue_comment:
+    types: [created]
 
 jobs:
   build-chain:
+    if: github.event.issue.pull_request != '' && contains(github.event.comment.body, '/retesttemp')
     concurrency:
       group: pull_request-${{ github.head_ref }}
       cancel-in-progress: true
