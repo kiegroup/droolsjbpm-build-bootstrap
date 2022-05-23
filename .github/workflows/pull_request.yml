@@ -1,4 +1,4 @@
-name: Build Chain
+name: Build Chain (Test)
 
 on:
   pull_request:
@@ -13,6 +13,7 @@ on:
       - 'script/**'
   issue_comment:
     types: [created]
+
 
 jobs:
   build-chain:
