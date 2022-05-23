@@ -11,7 +11,7 @@ kieVersion = "${env.KIE_VERSION}"
 mvnTool = "${env.MVN_TOOL}"
 jdkVersion = "${env.JAVADK}"
 ghOrgUnit = "${env.GH_ORG_UNIT}"
-reBuild = "${env.RE_BUILD}"
+runBuild = "${env.RUN_BUILD}"
 commitMsg = "${env.COMMIT_MSG}"
 zipDir = "${env.ZIP_DIR}"
 buildNr = "${env.BUILD_NR}"
@@ -119,7 +119,7 @@ pipeline {
         stage('Update versions and push release branches to github'){
             when{
                   allOf{
-                      expression { reBuild == 'YES' }
+                      expression { runBuild == 'YES' }
                       expression { env.R_BRANCH_EXIST == '0' }
                   }
             }
@@ -150,7 +150,7 @@ pipeline {
         }
         stage('Build projects') {
             when{
-                expression { reBuild == 'YES'}
+                expression { runBuild == 'YES'}
             }          
             steps {
                 script {
@@ -161,6 +161,16 @@ pipeline {
                             sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -sp='${buildChainGroup}/droolsjbpm-build-bootstrap' -b='${env.CHECKOUT_BRANCH}' --fullProjectDependencyTree --skipParallelCheckout -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true'"
                         }
                     }
+                }
+            }
+        }
+        stage('Publish JUnit test results reports') {
+            when{
+                expression { runBuild == 'YES'}
+            }
+            steps {
+                execute {
+                    junit '**/target/*-reports/TEST-*.xml'
                 }
             }
         }
@@ -181,7 +191,7 @@ pipeline {
          // create a local directory for archiving artifacts
          stage('Create upload dir') {
              when{
-                 expression { reBuild == 'YES'}
+                 expression { runBuild == 'YES'}
              }
              steps {
                  script {
@@ -192,32 +202,25 @@ pipeline {
                  }
              }
          }
-         // the directory of ${kieVersion}"_uploadBinaries will be compressed
+         // the directory of ${kieVersion}_uploadBinaries will be compressed
          stage('tar.gz uploadDir & archive artifacts'){
              when{
-                 expression { reBuild == 'YES'}
+                 expression { runBuild == 'YES'}
              }
              steps {
-                 sh 'tar -czvf "${kieVersion}"_uploadBinaries.tar.gz "${kieVersion}"_uploadBinaries'
-                 archiveArtifacts '*.tar.gz'
-                 // removal of *.tar.gz file to save disk space
-                 sh "rm -rf *_uploadBinaries.tar.gz"
+                script {
+                    execute {
+                        sh "tar -czvf ${kieVersion}_uploadBinaries.tar.gz ${kieVersion}_uploadBinaries"
+                        archiveArtifacts '*.tar.gz'
+                        sh "rm -rf ${kieVersion}_uploadBinaries.tar.gz"
+                    }
+                }
              }
          }
-        stage('Publish JUnit test results reports') {
-            when{
-                expression { reBuild == 'YES'}
-            }
-            steps {
-                execute {
-                    junit '**/target/*-reports/TEST-*.xml'
-                }
-            }
-        }
         // binaries will be compressed and uploaded to Nexus
         stage('Upload binaries to staging repository on Nexus') {
             when{
-                expression { reBuild == 'YES'}
+                expression { runBuild == 'YES'}
             }
             steps {
                 script {
@@ -226,85 +229,18 @@ pipeline {
                             sh """
                                 cd $zipDir
                                 zip -qr kiegroup .
-                                // a new staging-repository will be created on Nexus and the staging-rep ID will be written to repoID
-                                repoID=\$(curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start | grep -oP '(?<=stagedRepositoryId)[^<]+' | sed 's/>//' | tr -d '\n')
-                                // zipped artifacts will be uploaded to Nexus staging-repository
-                                curl --silent --upload-file kiegroup.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed
-                                // staging-repository will be closed
-                                curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>\${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish
+                                repoID=\$(curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]')
+                                curl --silent --upload-file kiegroup.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: close"
+                                curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>\${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish -H "Connection: close"
                                 """
                         }
                     }
                 }
             }
         }
-        stage('CURLS for sanity checks and additional kie tests'){
-            when{
-                expression { reBuild == 'YES'}
-            }
-            steps{
-            sleep(time:10,unit:"MINUTES")
-                script{
-                    execute {
-                        def repositories='kie-group'
-                        def suffixList=['kie-wb-distributions', 'business-central', 'business-central-webapp', 'business-monitoring-webapp', 'jbpm-server-distribution']
-                        suffixList.each{ suffix ->
-                            def artefacts=sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a><\\/td>//p'| uniq").split("\\r?\\n")
-                            artefacts.each { println it }
-                            artefacts.each { artefact ->
-                                sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/$artefact"
-                                sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/$artefact"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        stage('Curls for additional drools tests'){
-            when{
-                expression { reBuild == 'YES'}
-            }
-            steps{
-                script{
-                    execute {
-                        def repositories='kie-group'
-                        def suffixList=['droolsjbpm-integration']
-                        suffixList.each{ suffix ->
-                            def artefacts=sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a>.*//p' | uniq").split("\\r?\\n")
-                            artefacts.each { println it }
-                            artefacts.each { artefact ->
-                                sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/$artefact"
-                                sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/drools/$suffix/$kieVersion/$artefact"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-         stage('Curls for additional jbpm tests'){
-            when{
-                expression { reBuild == 'YES'}
-            }
-             steps{
-                 script{
-                    execute {
-                        def repositories='kie-group'
-                        def suffixList=['jbpm']
-                        suffixList.each{ suffix ->
-                            def artefacts=sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/jbpm/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a>.*//p' | uniq").split("\\r?\\n")
-                            artefacts.each { println it }
-                            artefacts.each { artefact ->
-                                sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/jbpm/$suffix/$kieVersion/$artefact"
-                                sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/jbpm/$suffix/$kieVersion/$artefact"
-                            }
-                        }
-                    }
-                 }
-             }
-         }
          stage('Additional tests for community') {
              when{
-                 expression { reBuild == 'YES'}
+                 expression { runBuild == 'YES'}
              }
              parallel{
                 stage('jbpmTestCoverageMatrix'){
@@ -326,6 +262,9 @@ pipeline {
          }
         // send email for Sanity Checks
         stage('send email with build result'){
+            when{
+                 expression { runBuild == 'YES'}
+            }
             steps{
                 emailext body: """
                 The status of community release ${kieVersion} was ${currentBuild.currentResult}
@@ -364,29 +303,6 @@ pipeline {
                 }
             }
         }
-        // load URL for repositories.jboss.org to prevent using origin-repositories.jboss.org
-        stage('CURLS for released binaries'){
-            when{
-                expression { reBuild == 'YES'}
-            }
-            steps{
-            sleep(time:3,unit:"MINUTES")
-                script{
-                    excute {
-                        def repositories = 'public-jboss'
-                        def suffixList=['kie-wb-distributions', 'business-central', 'business-central-webapp', 'business-monitoring-webapp', 'jbpm-server-distribution']
-                        suffixList.each{ suffix ->
-                            def artefacts = sh(returnStdout: true, script:"curl https://origin-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/ | grep href=.*$suffix | sed 's/^.*$suffix.*\">//p' | sed 's/<\\/a>.*//p' | uniq").split("\\r?\\n")
-                            artefacts.each { println it }
-                            artefacts.each { artefact ->
-                                sh "curl --head https://proxy01-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/$artefact"
-                                sh "curl --head https://proxy02-repository.jboss.org/nexus/content/groups/$repositories/org/kie/$suffix/$kieVersion/$artefact"
-                            }
-                        }
-                    }
-                }
-            }
-        }
         stage ('Send email to BSIG') {
             steps {
                 emailext body: """
@@ -406,7 +322,7 @@ pipeline {
         // if the pipeline job was executed again but without building, the binaries uploaded to filemgmt.jboss.org are needed
         stage('BUILD NUMBER of desired binaries') {
             when{
-                expression { reBuild == 'NO'}
+                expression { runBuild == 'NO'}
             }
             //interactive step: user should select the BUILD Nr of the artifacts to restore
             steps {
@@ -421,7 +337,7 @@ pipeline {
         // fetch binaries to upload to filemgmt.jbosss.org
         stage('Pull binaries of previous build') {
             when{
-                expression { reBuild == 'NO'}
+                expression { runBuild == 'NO'}
             }
             steps {
                 echo 'BUILD NUMBER= ' + "$buildNr"
@@ -431,15 +347,15 @@ pipeline {
                     projectName: '${JOB_NAME}',
                     selector: [$class: 'SpecificBuildSelector', buildNumber: "$buildNr"]
                 ])
-                sh 'tar -xzvf *_uploadBinaries.tar.gz \n' +
-                   'ls -al'
+                sh "tar -xzvf ${kieVersion}_uploadBinaries.tar.gz"
+                sh 'ls -al'
             }
         }
         stage('Create jbpm installers') {
             steps {
                 script {
                     execute {
-                        sh './script/release/09_createjBPM_installers.sh $toolsVer'
+                        sh "./script/release/09_createjBPM_installers.sh ${toolsVer}"
                     }
                 }
             }
