@@ -1,27 +1,12 @@
 name: Build Chain (Test)
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths-ignore:
-      - 'LICENSE*'
-      - '.gitignore'
-      - '*.md'
-      - '*.txt'
-      - 'docs/**'
-      - 'ide-configuration/**'
-      - 'script/**'
   issue_comment:
+    types: [created]
 
 jobs:
   build-chain:
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        java-version: [8]
-        maven-version: ['3.8.1']
-      fail-fast: true  
-    runs-on: ${{ matrix.os }}
+    runs-on: 'ubuntu-latest'
     steps:
       - name: Echo comment body
         if: ${{ !github.event.issue.pull_request }}
