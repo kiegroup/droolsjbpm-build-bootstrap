@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-05-24T09:07:49.946Z",
+    "date": "2022-05-24T10:07:37.296Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2376724137"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2377061785"
   },
   "projects": [
     {
@@ -19,6 +19,85 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1964,
+          "title": "remove opta* in all scripts and files",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1964",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1964",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "ge0ffrey",
+              "avatar_url": "https://avatars.githubusercontent.com/u/176880?v=4",
+              "html_url": "https://github.com/ge0ffrey"
+            },
+            {
+              "login": "yurloc",
+              "avatar_url": "https://avatars.githubusercontent.com/u/673386?v=4",
+              "html_url": "https://github.com/yurloc"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-05-24T09:17:05Z",
+          "updated_at": "2022-05-24T09:51:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "806873d7fe8f7d1639d67a6b2805e6ef55bcd59f",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "remove_opta",
+            "sha": "82fd65085799584ff2ad2eccecf1df39f169ea52",
+            "label": "mbiarnes:remove_opta"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 6570446784,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6570446784?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-05-24T09:17:21Z",
+              "completed_at": "2022-05-24T09:17:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6570446557,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6570446557?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-05-24T09:17:23Z",
+              "completed_at": "2022-05-24T09:17:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17535717875,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/496/",
+              "conclusion": "success",
+              "started_at": "2022-05-24T09:20:49Z",
+              "completed_at": "2022-05-24T09:20:49Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1961,
           "title": "Update pull_request.yml",
@@ -2371,6 +2450,75 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2151,
+          "title": "[JBPM-10080] DDLScripts errors after JBPM-10072",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2151",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2151",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "afalhambra",
+              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+              "html_url": "https://github.com/afalhambra"
+            }
+          ],
+          "created_at": "2022-05-24T09:09:36Z",
+          "updated_at": "2022-05-24T09:10:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7bfc348c9bab7260a7257269814b7f676156120b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10080",
+            "sha": "a1deb8fa2454fdff674c8938e116089d4bdb8098",
+            "label": "gmunozfe:JBPM-10080"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 6570324124,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6570324124?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-05-24T09:09:51Z",
+              "completed_at": "2022-05-24T09:10:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6570323891,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6570323891?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-05-24T09:10:53Z",
+              "completed_at": "2022-05-24T09:11:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17535552945,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/694/",
+              "conclusion": "pending",
+              "started_at": "2022-05-24T09:09:45Z",
+              "completed_at": "2022-05-24T09:09:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2144,
           "title": "RHPAM-4296: Test case",
