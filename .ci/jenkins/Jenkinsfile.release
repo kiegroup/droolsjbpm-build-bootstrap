@@ -382,17 +382,6 @@ pipeline {
                 }
             }
         }
-        stage('Optaplanner binaries upload'){
-            steps{
-                script {
-                    execute {
-                        sshagent(['optaplanner-filemgmt']) {
-                            sh './script/release/10c_optaplanner_upload_filemgmt.sh'
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 void execute(Closure closure) {

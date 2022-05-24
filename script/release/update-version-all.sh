@@ -90,7 +90,7 @@ cd $droolsjbpmOrganizationDir
 
 # --- --- ---
 # Checks if repos in branched-7-repository-list.txt are on the right 7.x branch if all other repos are checked out to main.
-# For example, optaplanner 7.x branch has the same version as main on other kiegroup/reps.
+# For example, drools 7.x branch has the same version as main on other kiegroup/reps.
 for branch7xRepo in $(cat "${scriptDir}/../branched-7-repository-list.txt"); do
   cd $branch7xRepo
   currentBranch=$(git rev-parse --abbrev-ref HEAD)
@@ -180,15 +180,6 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             mvnVersionsSet
             # update version that are not automatically updated
             sed -i "s/<version>$kieOldVersion<\/version>/<version>$newVersion<\/version>/" pom.xml
-            returnCode=$?
-
-        elif [ "$repository" == "optaplanner" ]; then
-            mvnVersionsUpdateParentAndChildModules
-            returnCode=$?
-            if [ $returnCode != 0 ] ; then
-                exit $returnCode
-            fi
-            optaplanner-quickstarts/update-version.sh $newVersion $releaseType
             returnCode=$?
 
         elif [ "$repository" == "jbpm" ]; then
