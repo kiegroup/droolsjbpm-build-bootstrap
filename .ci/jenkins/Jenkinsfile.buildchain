@@ -22,6 +22,7 @@ pipeline {
     options {
         timestamps ()
         timeout(time: additionalTimeout, unit: 'MINUTES')
+        disableConcurrentBuilds(abortPrevious: true)
     }
     environment {
         FIREFOX_FOLDER = '/opt/tools/firefox-60esr'
