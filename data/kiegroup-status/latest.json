@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-02T06:09:14.897Z",
+    "date": "2022-06-02T07:10:15.328Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2426373742"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2426621689"
   },
   "projects": [
     {
@@ -3338,9 +3338,9 @@
               "id": 6700329783,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/runs/6700329783?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-06-02T00:30:07Z",
+              "started_at": "2022-06-02T06:43:28Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -3349,10 +3349,10 @@
               "id": 6700329684,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/runs/6700329684?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-06-02T00:38:16Z",
-              "completed_at": null,
+              "completed_at": "2022-06-02T06:43:16Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -4448,6 +4448,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2784,
+          "title": "[DROOLS-7000] class retention by JSONMashaller ObjectMapper._typeFact…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2784",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2784",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-06-02T07:05:44Z",
+          "updated_at": "2022-06-02T07:05:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "8be4b0ad3afefe6961d50471fc95487d5556e2d3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "DROOLS-7000",
+            "sha": "3730b9d7cd570fa3055b968c83af9390192c6f63",
+            "label": "tkobayas:DROOLS-7000"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 6703780291,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6703780291?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-02T07:05:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6703780108,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6703780108?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-02T07:10:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17649816517,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/935/",
+              "conclusion": "failure",
+              "started_at": "2022-06-02T07:10:03Z",
+              "completed_at": "2022-06-02T07:10:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2783,
           "title": "DROOLS-6997 Move printStackTrace() to SLF4J logging",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2783",
@@ -4707,7 +4770,7 @@
             }
           ],
           "created_at": "2022-04-11T09:43:43Z",
-          "updated_at": "2022-06-01T06:41:51Z",
+          "updated_at": "2022-06-02T07:09:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4749,12 +4812,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17631734189,
+              "id": 17649812480,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/933/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/936/",
               "conclusion": "pending",
-              "started_at": "2022-06-01T06:41:56Z",
-              "completed_at": "2022-06-01T06:41:56Z",
+              "started_at": "2022-06-02T07:09:42Z",
+              "completed_at": "2022-06-02T07:09:42Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
