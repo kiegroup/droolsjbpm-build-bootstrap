@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-03T10:06:55.747Z",
+    "date": "2022-06-03T11:04:39.051Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2433936306"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2434195785"
   },
   "projects": [
     {
@@ -1581,6 +1581,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4438,
+          "title": "DROOLS-6993 DMN DT Analysis report when symbol in DT (#4423)",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4438",
+          "html_url": "https://github.com/kiegroup/drools/pull/4438",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-03T10:13:15Z",
+          "updated_at": "2022-06-03T10:13:15Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "1ae08041280bd17e9c3e67eccb6347b4cfd7035a",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20220530-DROOLS-6993-7x",
+            "sha": "b2dbe67b1fe81a9bed7609ae509564ea0a12e788",
+            "label": "tarilabs:tarilabs-20220530-DROOLS-6993-7x"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 6724035356,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6724035356?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-03T10:16:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6724035226,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6724035226?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-03T10:13:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6724035099,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6724035099?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-03T10:13:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6724034937,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6724034937?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-03T10:13:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17668072651,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/312/",
+              "conclusion": "pending",
+              "started_at": "2022-06-03T10:13:24Z",
+              "completed_at": "2022-06-03T10:13:24Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17668072767,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/317/",
+              "conclusion": "pending",
+              "started_at": "2022-06-03T10:13:25Z",
+              "completed_at": "2022-06-03T10:13:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4435,
           "title": "[7.x][DROOLS-6932] Migrate assertions in kie-dmn tests to assertj ",
@@ -4541,7 +4636,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-04-13T12:14:31Z",
-          "updated_at": "2022-06-03T08:12:32Z",
+          "updated_at": "2022-06-03T10:40:05Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4560,6 +4655,28 @@
             "html_url": "https://github.com/afalhambra"
           },
           "checks": [
+            {
+              "id": 6724356581,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6724356581",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-06-03T10:40:06Z",
+              "completed_at": "2022-06-03T10:40:07Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6724356034,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6724356034",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-06-03T10:37:53Z",
+              "completed_at": "2022-06-03T10:40:01Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
+            },
             {
               "id": 6722458261,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -4583,12 +4700,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17666794320,
+              "id": 17668504951,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/945/",
-              "conclusion": "pending",
-              "started_at": "2022-06-03T08:12:37Z",
-              "completed_at": "2022-06-03T08:12:37Z",
+              "conclusion": "success",
+              "started_at": "2022-06-03T11:00:22Z",
+              "completed_at": "2022-06-03T11:00:22Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7772,7 +7889,60 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/process-migration-service",
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
-      "pullRequests": []
+      "pullRequests": [
+        {
+          "number": 64,
+          "title": "RHPAM-4347 axios upgraded to 0.21.4",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/64",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/64",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-06-03T10:55:34Z",
+          "updated_at": "2022-06-03T10:59:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "637ba3c3d091a7a0acdb4e6e1f8d33a055c53aef",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4347_main",
+            "sha": "cabbefc72f5234497a3c5b5e926cfc2e5e4b1fe0",
+            "label": "Ginxo:RHPAM-4347_main"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 17668462079,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/process-migration-service-main.pr/155/",
+              "conclusion": "pending",
+              "started_at": "2022-06-03T10:55:41Z",
+              "completed_at": "2022-06-03T10:55:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ]
     },
     {
       "key": "kiegroup/optaweb-employee-rostering",
