@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-06T11:04:26.522Z",
+    "date": "2022-06-06T12:13:00.194Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2447319064"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2447644890"
   },
   "projects": [
     {
@@ -1663,32 +1663,32 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17685081463,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/39/",
-              "conclusion": "pending",
-              "started_at": "2022-06-06T08:02:45Z",
-              "completed_at": "2022-06-06T08:02:45Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 17685119480,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/droolsjbpm-knowledge-7.x.fdb/5/",
-              "conclusion": "pending",
-              "started_at": "2022-06-06T08:06:27Z",
-              "completed_at": "2022-06-06T08:06:27Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 17685357132,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/38/",
               "conclusion": "success",
               "started_at": "2022-06-06T08:29:23Z",
               "completed_at": "2022-06-06T08:29:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17687496177,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/39/",
+              "conclusion": "failure",
+              "started_at": "2022-06-06T11:53:45Z",
+              "completed_at": "2022-06-06T11:53:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17687505583,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/droolsjbpm-knowledge-7.x.fdb/5/",
+              "conclusion": "failure",
+              "started_at": "2022-06-06T11:54:41Z",
+              "completed_at": "2022-06-06T11:54:41Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -3329,7 +3329,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-06-06T10:06:34Z",
-          "updated_at": "2022-06-06T10:06:34Z",
+          "updated_at": "2022-06-06T11:58:04Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3349,6 +3349,28 @@
           },
           "checks": [
             {
+              "id": 6754952863,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6754952863",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-06-06T11:58:06Z",
+              "completed_at": "2022-06-06T11:58:13Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6754952398,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6754952398",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-06-06T11:55:10Z",
+              "completed_at": "2022-06-06T11:58:02Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
+            },
+            {
               "id": 6753606321,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/runs/6753606321?check_suite_focus=true",
@@ -3363,20 +3385,20 @@
               "id": 6753606205,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/runs/6753606205?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-06-06T10:18:31Z",
-              "completed_at": null,
+              "completed_at": "2022-06-06T12:03:44Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17686421153,
+              "id": 17687682943,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/712/",
-              "conclusion": "pending",
-              "started_at": "2022-06-06T10:07:22Z",
-              "completed_at": "2022-06-06T10:07:22Z",
+              "conclusion": "success",
+              "started_at": "2022-06-06T12:11:36Z",
+              "completed_at": "2022-06-06T12:11:36Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
