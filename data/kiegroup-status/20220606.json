@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-06T07:06:57.780Z",
+    "date": "2022-06-06T08:08:38.422Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2446213081"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2446489316"
   },
   "projects": [
     {
@@ -1568,6 +1568,132 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-knowledge",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 601,
+          "title": "DROOLS-6997 Move printStackTrace() to SLF4J logging",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls/601",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/pull/601",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "danielezonca",
+              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
+              "html_url": "https://github.com/danielezonca"
+            },
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            },
+            {
+              "login": "hellowdan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/22012223?v=4",
+              "html_url": "https://github.com/hellowdan"
+            }
+          ],
+          "created_at": "2022-06-06T08:02:34Z",
+          "updated_at": "2022-06-06T08:06:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "71f0feabf303238ce1fc739fdf0185e59fae53a0",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20220606-DROOLS-6997",
+            "sha": "7fa9fe4a466d0176831ee0d00ddd6d49ae4dbfec",
+            "label": "tarilabs:tarilabs-20220606-DROOLS-6997"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 6752072519,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/runs/6752072519?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-06T08:05:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6752072368,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/runs/6752072368?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-06-06T08:02:42Z",
+              "completed_at": "2022-06-06T08:02:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6752072249,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/runs/6752072249?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-06-06T08:02:51Z",
+              "completed_at": "2022-06-06T08:05:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6752072058,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/runs/6752072058?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-06-06T08:02:51Z",
+              "completed_at": "2022-06-06T08:05:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17685081425,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/38/",
+              "conclusion": "pending",
+              "started_at": "2022-06-06T08:02:45Z",
+              "completed_at": "2022-06-06T08:02:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17685081463,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/39/",
+              "conclusion": "pending",
+              "started_at": "2022-06-06T08:02:45Z",
+              "completed_at": "2022-06-06T08:02:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17685119480,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/droolsjbpm-knowledge-7.x.fdb/5/",
+              "conclusion": "pending",
+              "started_at": "2022-06-06T08:06:27Z",
+              "completed_at": "2022-06-06T08:06:27Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 600,
           "title": "[DROOLS-6990] Add dispose in archetypes example codes",
@@ -4489,7 +4615,7 @@
             }
           ],
           "created_at": "2022-06-01T13:11:36Z",
-          "updated_at": "2022-06-02T15:36:11Z",
+          "updated_at": "2022-06-06T07:46:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4531,12 +4657,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17657134531,
+              "id": 17684915905,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/939/",
-              "conclusion": "failure",
-              "started_at": "2022-06-02T16:06:13Z",
-              "completed_at": "2022-06-02T16:06:13Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/946/",
+              "conclusion": "pending",
+              "started_at": "2022-06-06T07:45:42Z",
+              "completed_at": "2022-06-06T07:45:42Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
