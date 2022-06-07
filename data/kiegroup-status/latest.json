@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-07T11:11:23.773Z",
+    "date": "2022-06-07T12:13:08.165Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2454070771"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2454430213"
   },
   "projects": [
     {
@@ -3404,7 +3404,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-06-06T10:06:34Z",
-          "updated_at": "2022-06-07T09:52:06Z",
+          "updated_at": "2022-06-07T11:25:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8053,7 +8053,82 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
-      "pullRequests": []
+      "pullRequests": [
+        {
+          "number": 1166,
+          "title": "JBPM-10090 curl access to business central ends in HTTP Status 405 - …",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1166",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1166",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "nmirasch",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2443754?v=4",
+              "html_url": "https://github.com/nmirasch"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2022-06-07T11:27:04Z",
+          "updated_at": "2022-06-07T11:27:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9376ece5fb1c5a24aeb50f9c6f7e47266129dcac",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10090",
+            "sha": "13fc66ada31fcfae3064a2044ba1a7c4beb86d4a",
+            "label": "Cory-jbpm:JBPM-10090"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 6773072407,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/6773072407?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-07T11:27:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6773072295,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/6773072295?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-07T11:27:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17703900999,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/138/",
+              "conclusion": "pending",
+              "started_at": "2022-06-07T11:27:41Z",
+              "completed_at": "2022-06-07T11:27:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ]
     },
     {
       "key": "kiegroup/openshift-drools-hacep",
