@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-09T07:08:08.484Z",
+    "date": "2022-06-09T08:12:26.048Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2466578666"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2466909441"
   },
   "projects": [
     {
@@ -1559,7 +1559,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-06-09T02:58:52Z",
+      "updated_at": "2022-06-09T07:22:27Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -1575,11 +1575,6 @@
           "labels": [],
           "draft": false,
           "requested_reviewers": [
-            {
-              "login": "mariofusco",
-              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
-              "html_url": "https://github.com/mariofusco"
-            },
             {
               "login": "lucamolteni",
               "avatar_url": "https://avatars.githubusercontent.com/u/454752?v=4",
@@ -1597,7 +1592,7 @@
             }
           ],
           "created_at": "2022-06-08T08:12:52Z",
-          "updated_at": "2022-06-09T01:18:31Z",
+          "updated_at": "2022-06-09T08:05:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3103,6 +3098,132 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2157,
+          "title": "[JBPM-10088] Subprocess rollbacked transaction makes getTimerMappingInfo query fail",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2157",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2157",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-09T07:39:12Z",
+          "updated_at": "2022-06-09T07:39:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "36a6c9b75a4f3f7b2d34e61e37fe28ddac0ae8c1",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10088",
+            "sha": "25fdf657ede945d9d8312fed00f578ed42d6e796",
+            "label": "elguardian:JBPM-10088"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 6808070335,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6808070335?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-09T07:39:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6808070215,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6808070215?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-09T07:39:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17913825478,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/720/",
+              "conclusion": "pending",
+              "started_at": "2022-06-09T07:39:16Z",
+              "completed_at": "2022-06-09T07:39:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2156,
+          "title": "[RHPAM-4251] \"kcontext.getProcessInstance()).setDescription\" is not updating the description immediately",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2156",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2156",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-09T07:31:38Z",
+          "updated_at": "2022-06-09T07:47:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "36a6c9b75a4f3f7b2d34e61e37fe28ddac0ae8c1",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4251",
+            "sha": "d28bbfcb73eb19e03bc4c244ec726b0204b05ab7",
+            "label": "elguardian:RHPAM-4251"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 6808176503,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6808176503?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-09T07:53:15Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6808176389,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6808176389?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-09T07:54:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17913923586,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/721/",
+              "conclusion": "pending",
+              "started_at": "2022-06-09T07:47:20Z",
+              "completed_at": "2022-06-09T07:47:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2155,
           "title": "[JBPM-10089] Orphan sessions in memory due to an exception on PerRequestRuntimeManager",
