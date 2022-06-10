@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-10T08:11:46.302Z",
+    "date": "2022-06-10T09:06:43.454Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2473652098"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2473953957"
   },
   "projects": [
     {
@@ -19,6 +19,85 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1979,
+          "title": "upgraded nodejs version",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1979",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1979",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-06-10T08:56:29Z",
+          "updated_at": "2022-06-10T09:01:46Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "44de33503f12f2bd97171930763f3241dc7ffb2a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "nodejs",
+            "sha": "7034c3bc4afee22b3b8d205a8507fc3f111ce064",
+            "label": "mbiarnes:nodejs"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 6827940493,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6827940493?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-06-10T08:56:42Z",
+              "completed_at": "2022-06-10T08:57:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6827940348,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/6827940348?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-06-10T08:56:43Z",
+              "completed_at": "2022-06-10T08:57:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17932152962,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/510/",
+              "conclusion": "pending",
+              "started_at": "2022-06-10T09:04:29Z",
+              "completed_at": "2022-06-10T09:04:29Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1978,
           "title": "prevent double label expression",
@@ -4824,7 +4903,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-06-09T00:02:00Z",
-          "updated_at": "2022-06-09T10:12:52Z",
+          "updated_at": "2022-06-10T08:35:34Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4834,7 +4913,7 @@
           },
           "head": {
             "ref": "JBPM-10043_test",
-            "sha": "322704669313cfb247f99301956711c85efe17ac",
+            "sha": "7030fe692118ed836a19b1cd0dabebadaafbc53a",
             "label": "gmunozfe:JBPM-10043_test"
           },
           "user": {
@@ -4844,58 +4923,26 @@
           },
           "checks": [
             {
-              "id": 6805099272,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6805099272",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-06-09T02:32:51Z",
-              "completed_at": "2022-06-09T02:32:53Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6805098987,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6805098987",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-06-09T02:30:08Z",
-              "completed_at": "2022-06-09T02:32:47Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
-            },
-            {
-              "id": 6803865272,
+              "id": 6827642784,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6803865272?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-06-09T00:02:17Z",
-              "completed_at": "2022-06-09T03:12:18Z",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6827642784?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-10T08:35:40Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 6803865134,
+              "id": 6827642604,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6803865134?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-06-09T00:02:16Z",
-              "completed_at": "2022-06-09T03:11:11Z",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/6827642604?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-10T08:35:39Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17911561378,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/952/",
-              "conclusion": "success",
-              "started_at": "2022-06-09T02:34:47Z",
-              "completed_at": "2022-06-09T02:34:47Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
