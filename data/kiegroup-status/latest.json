@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-10T00:38:28.284Z",
+    "date": "2022-06-10T02:50:55.028Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2472002531"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2472413300"
   },
   "projects": [
     {
@@ -7451,6 +7451,61 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
         {
+          "number": 233,
+          "title": "Bump google-oauth-client from 1.23.0 to 1.33.3",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/233",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/233",
+          "state": "open",
+          "labels": [
+            "dependencies"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-10T00:42:35Z",
+          "updated_at": "2022-06-10T00:42:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "de7f31c74504ff04f51f73c95f3151788a215145",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/com.google.oauth-client-google-oauth-client-1.33.3",
+            "sha": "50263ac6093d2d6bc48e1f5cc4f324127b59964f",
+            "label": "kiegroup:dependabot/maven/com.google.oauth-client-google-oauth-client-1.33.3"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 6823165343,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/runs/6823165343?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-06-10T00:42:48Z",
+              "completed_at": "2022-06-10T00:59:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6823165261,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/runs/6823165261?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-06-10T00:42:50Z",
+              "completed_at": "2022-06-10T00:59:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 231,
           "title": "Spring workitem",
           "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/231",
@@ -7479,61 +7534,6 @@
             "html_url": "https://github.com/driesdeproost"
           },
           "checks": []
-        },
-        {
-          "number": 220,
-          "title": "Bump google-oauth-client from 1.23.0 to 1.32.1",
-          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/220",
-          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/220",
-          "state": "open",
-          "labels": [
-            "dependencies"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2021-09-28T16:24:20Z",
-          "updated_at": "2021-09-28T16:24:22Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "7cd0c74a4dc6443b64e88d1ec0df506599a028a7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "dependabot/maven/com.google.oauth-client-google-oauth-client-1.32.1",
-            "sha": "0a409ed701fa2a3a6a68ce31a6213ad800343951",
-            "label": "kiegroup:dependabot/maven/com.google.oauth-client-google-oauth-client-1.32.1"
-          },
-          "user": {
-            "login": "dependabot[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
-            "html_url": "https://github.com/apps/dependabot"
-          },
-          "checks": [
-            {
-              "id": 3735041033,
-              "name": "Maven Build (8, 3.8.1)",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/runs/3735041033?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-09-28T16:24:35Z",
-              "completed_at": "2021-09-28T16:41:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 3735040943,
-              "name": "Maven Build (11, 3.8.1)",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/runs/3735040943?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2021-09-28T16:24:34Z",
-              "completed_at": "2021-09-28T16:42:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
         },
         {
           "number": 219,
@@ -8277,12 +8277,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17928352001,
+              "id": 17928533281,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/559/",
-              "conclusion": "pending",
-              "started_at": "2022-06-10T00:27:28Z",
-              "completed_at": "2022-06-10T00:27:28Z",
+              "conclusion": "success",
+              "started_at": "2022-06-10T00:51:58Z",
+              "completed_at": "2022-06-10T00:51:58Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
