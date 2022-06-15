@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-15T15:07:12.778Z",
+    "date": "2022-06-15T16:08:12.907Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2503205895"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2503587127"
   },
   "projects": [
     {
@@ -1326,6 +1326,207 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 4464,
+          "title": "KOGITO-7154 DMN algo for OAS/Swagger naming (#4450)",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4464",
+          "html_url": "https://github.com/kiegroup/drools/pull/4464",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-15T15:55:16Z",
+          "updated_at": "2022-06-15T15:55:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "92a49bf66b6efcb064c26d92ef861f8a4d55f966",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20220607-KOGITO-7154-7x",
+            "sha": "f634543304fcdc2f81573cface91036cf8f20310",
+            "label": "tarilabs:tarilabs-20220607-KOGITO-7154-7x"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 6903510183,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903510183?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:55:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6903509953,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903509953?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-06-15T15:55:25Z",
+              "completed_at": "2022-06-15T15:55:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6903509672,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903509672?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:55:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6903509380,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903509380?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:55:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17993234498,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/320/",
+              "conclusion": "pending",
+              "started_at": "2022-06-15T15:55:19Z",
+              "completed_at": "2022-06-15T15:55:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17993234504,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/325/",
+              "conclusion": "pending",
+              "started_at": "2022-06-15T15:55:19Z",
+              "completed_at": "2022-06-15T15:55:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4463,
+          "title": "DROOLS-7018 DMN FEEL at-literal parsing containing @ character",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4463",
+          "html_url": "https://github.com/kiegroup/drools/pull/4463",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            },
+            {
+              "login": "hellowdan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/22012223?v=4",
+              "html_url": "https://github.com/hellowdan"
+            }
+          ],
+          "created_at": "2022-06-15T15:50:57Z",
+          "updated_at": "2022-06-15T15:50:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "92a49bf66b6efcb064c26d92ef861f8a4d55f966",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20220615-DROOLS-7018-7x",
+            "sha": "e06f2de3be671282a7b6f0ef64d163ff7b9e2b2e",
+            "label": "tarilabs:tarilabs-20220615-DROOLS-7018-7x"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 6903432567,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903432567?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:51:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6903432341,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903432341?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:51:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6903432089,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903432089?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:51:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 6903431893,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/runs/6903431893?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-15T15:51:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17993152429,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/324/",
+              "conclusion": "pending",
+              "started_at": "2022-06-15T15:51:02Z",
+              "completed_at": "2022-06-15T15:51:02Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17993152436,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/319/",
+              "conclusion": "pending",
+              "started_at": "2022-06-15T15:51:02Z",
+              "completed_at": "2022-06-15T15:51:02Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 4461,
           "title": "[DROOLS-7017] \"_this cannot be resolved\" in LambdaExtractor when invo…",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4461",
@@ -1960,7 +2161,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-06-15T05:05:26Z",
+      "updated_at": "2022-06-15T15:21:50Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
