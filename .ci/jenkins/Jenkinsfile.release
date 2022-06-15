@@ -188,78 +188,82 @@ pipeline {
                 LOG: attached""", subject: "community-release ${kieVersion} failed", to: "bsig@redhat.com", attachLog:true
             }
         }
-         // create a local directory for archiving artifacts
-         stage('Create upload dir') {
-             when{
-                 expression { runBuild == 'YES'}
-             }
-             steps {
-                 script {
-                     execute {
-                         // creates a directory ${kieVersion}"_uploadBinaries with binaries for the web-pages
-                         sh './script/release/prepareUploadDir.sh'
-                     }
-                 }
-             }
-         }
-         // the directory of ${kieVersion}_uploadBinaries will be compressed
-         stage('tar.gz uploadDir & archive artifacts'){
-             when{
-                 expression { runBuild == 'YES'}
-             }
-             steps {
-                script {
-                    execute {
-                        sh "tar -czvf ${kieVersion}_uploadBinaries.tar.gz ${kieVersion}_uploadBinaries"
-                        archiveArtifacts '*.tar.gz'
-                        sh "rm -rf ${kieVersion}_uploadBinaries.tar.gz"
-                    }
-                }
-             }
-         }
-        // binaries will be compressed and uploaded to Nexus
-        stage('Upload binaries to staging repository on Nexus') {
+        // create a local directory for archiving artifacts
+        stage('Create upload dir') {
             when{
                 expression { runBuild == 'YES'}
             }
             steps {
                 script {
                     execute {
-                        withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
-                            sh """
-                                cd $zipDir
-                                zip -qr kiegroup .
-                                repoID=\$(curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]')
-                                curl --silent --upload-file kiegroup.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: close"
-                                curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>\${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish -H "Connection: close"
-                                """
+                        // creates a directory ${kieVersion}"_uploadBinaries with binaries for the web-pages
+                        sh './script/release/prepareUploadDir.sh'
+                    }
+                }
+            }
+        }
+        // the directory of ${kieVersion}_uploadBinaries will be compressed
+        stage('tar.gz uploadDir & archive artifacts'){
+            when{
+                expression { runBuild == 'YES'}
+            }
+            steps {
+               script {
+                   execute {
+                       sh "tar -czvf ${kieVersion}_uploadBinaries.tar.gz ${kieVersion}_uploadBinaries"
+                       archiveArtifacts '*.tar.gz'
+                       sh "rm -rf ${kieVersion}_uploadBinaries.tar.gz"
+                   }
+               }
+            }
+        }
+        // binaries will be compressed and uploaded to Nexus
+        stage('Upload binaries to staging repository on Nexus') {
+            when{
+                expression { runBuild == 'YES'}
+            }
+            steps {
+                execute {
+                    withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
+                        dir("$WORKSPACE/${zipDir}"){
+                            script {
+                                env.repoID = sh(script: """curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]' """, returnStdout: true).trim()
+                                echo "repoID: ${repoID}"
+                                def repositories=['dashbuilder', 'drools', 'jbpm', 'uberfire', 'optaplanner']
+                                repositories.each{ repo ->
+                                    sh "zip -qr ${repo}.zip org/${repo}"
+                                    sh """curl --silent --upload-file ${repo}.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0" """
+                                }
+                                sh "sh $WORKSPACE/script/release/12_splitOrgKie.sh"
+                                sh """curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish -H "Connection: close" """
+                            }
                         }
                     }
                 }
             }
         }
-         stage('Additional tests for community') {
-             when{
-                 expression { runBuild == 'YES'}
-             }
-             parallel{
-                stage('jbpmTestCoverageMatrix'){
-                    steps{
-                        build job: "jbpmTestCoverageMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
-                    }
-                }
-                stage('kieWbTestMatrix'){
-                    steps{
-                        build job: "kieWbTestMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
-                    }
-                }
-                stage('kieServerMatrix'){
-                    steps{
-                        build job: "kieServerMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
-                    }
-                }
-             }
-         }
+        stage('Additional tests for community') {
+            when{
+                expression { runBuild == 'YES'}
+            }
+            parallel{
+               stage('jbpmTestCoverageMatrix'){
+                   steps{
+                       build job: "jbpmTestCoverageMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
+                   }
+               }
+               stage('kieWbTestMatrix'){
+                   steps{
+                       build job: "kieWbTestMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
+                   }
+               }
+               stage('kieServerMatrix'){
+                   steps{
+                       build job: "kieServerMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion]]
+                   }
+               }
+            }
+        }
         // send email for Sanity Checks
         stage('send email with build result'){
             when{
