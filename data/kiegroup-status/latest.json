@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-15T10:06:57.127Z",
+    "date": "2022-06-15T11:06:37.841Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2501427443"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2501748284"
   },
   "projects": [
     {
@@ -1443,9 +1443,9 @@
               "id": 6897231375,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6897231375?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-06-15T09:48:15Z",
+              "started_at": "2022-06-15T10:58:47Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -1476,22 +1476,12 @@
               "id": 6897230881,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6897230881?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-06-15T09:48:25Z",
-              "completed_at": null,
+              "completed_at": "2022-06-15T10:58:23Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17987271787,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/318/",
-              "conclusion": "pending",
-              "started_at": "2022-06-15T09:48:14Z",
-              "completed_at": "2022-06-15T09:48:14Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
               "id": 17987271789,
@@ -1500,6 +1490,16 @@
               "conclusion": "pending",
               "started_at": "2022-06-15T09:48:14Z",
               "completed_at": "2022-06-15T09:48:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 17987688639,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/318/",
+              "conclusion": "failure",
+              "started_at": "2022-06-15T10:16:37Z",
+              "completed_at": "2022-06-15T10:16:37Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2947,6 +2947,36 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2159,
+          "title": "[RHPAM-4395] Fix order in Servicesorm.xml to pass validation",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2159",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2159",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-15T10:54:18Z",
+          "updated_at": "2022-06-15T10:54:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "36a6c9b75a4f3f7b2d34e61e37fe28ddac0ae8c1",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "orm-validation",
+            "sha": "dd4a9cdfe75eb77e40b8926346f736027a278da0",
+            "label": "albfan:orm-validation"
+          },
+          "user": {
+            "login": "albfan",
+            "avatar_url": "https://avatars.githubusercontent.com/u/220968?v=4",
+            "html_url": "https://github.com/albfan"
+          },
+          "checks": []
+        },
+        {
           "number": 2157,
           "title": "[JBPM-10088] Subprocess rollbacked transaction makes getTimerMappingInfo query fail",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2157",
@@ -3108,9 +3138,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
           "created_at": "2022-06-07T10:28:04Z",
-          "updated_at": "2022-06-14T06:45:35Z",
+          "updated_at": "2022-06-15T10:38:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3120,7 +3156,7 @@
           },
           "head": {
             "ref": "JBPM-10089",
-            "sha": "049af7e59fb4ca7c5cfd1ef1a9fdca04174d918a",
+            "sha": "a8e8e3641f3238a10ff3c874983c7eb41f3bae0e",
             "label": "elguardian:JBPM-10089"
           },
           "user": {
@@ -3130,34 +3166,34 @@
           },
           "checks": [
             {
-              "id": 6875100733,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/6875100733?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-06-14T06:45:50Z",
-              "completed_at": "2022-06-14T08:27:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 6875100554,
+              "id": 6898001239,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/6875100554?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-06-14T06:45:50Z",
-              "completed_at": "2022-06-14T08:36:02Z",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6898001239?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-15T10:38:53Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17967894845,
+              "id": 6898001100,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/6898001100?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-15T10:38:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17987977186,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/724/",
-              "conclusion": "failure",
-              "started_at": "2022-06-14T08:17:31Z",
-              "completed_at": "2022-06-14T08:17:31Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/727/",
+              "conclusion": "pending",
+              "started_at": "2022-06-15T10:38:43Z",
+              "completed_at": "2022-06-15T10:38:43Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
