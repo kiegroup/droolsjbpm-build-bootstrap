@@ -101,7 +101,7 @@ pipeline {
                     echo "[INFO] Start uploading ${env.WORKSPACE}/deployDirectory"
                     dir("${env.WORKSPACE}/deployDirectory") {
                         withCredentials([usernameColonPassword(credentialsId: "${env.NIGHTLY_DEPLOYMENT_CREDENTIAL}", variable: 'deploymentCredentials')]) {
-                            sh "zip -r kiegroup ."
+                            sh "zip -qr kiegroup ."
                             sh "curl --fail --upload-file kiegroup.zip -u $deploymentCredentials -v ${KIE_GROUP_DEPLOYMENT_REPO_URL}"
                         }
                     }
