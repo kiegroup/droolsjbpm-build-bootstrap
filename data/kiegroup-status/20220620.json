@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-20T11:04:49.726Z",
+    "date": "2022-06-20T12:12:14.699Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2528487418"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2528851574"
   },
   "projects": [
     {
@@ -1395,6 +1395,57 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 4477,
+          "title": "DROOLS-7024 cleanup /file.txt (#4468)",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4477",
+          "html_url": "https://github.com/kiegroup/drools/pull/4477",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-20T11:09:32Z",
+          "updated_at": "2022-06-20T11:09:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "72d25bfea8a87cb6b60caf6d49cd747d49f7947f",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20220617-DROOLS-7024-7x",
+            "sha": "1710a67936db58876fa81471bd5ac07210761cbc",
+            "label": "tarilabs:tarilabs-20220617-DROOLS-7024-7x"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 18040873256,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/333/",
+              "conclusion": "pending",
+              "started_at": "2022-06-20T11:09:35Z",
+              "completed_at": "2022-06-20T11:09:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18040873259,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/327/",
+              "conclusion": "pending",
+              "started_at": "2022-06-20T11:09:35Z",
+              "completed_at": "2022-06-20T11:09:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 4475,
           "title": "KOGITO-7236 DMN DT Analysis report diseq suggestions (#4457)",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4475",
@@ -1427,9 +1478,9 @@
               "id": 6965496063,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6965496063?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-06-20T10:58:30Z",
+              "started_at": "2022-06-20T11:58:54Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -1438,10 +1489,10 @@
               "id": 6965495965,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6965495965?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-06-20T10:58:37Z",
-              "completed_at": null,
+              "completed_at": "2022-06-20T11:49:07Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1460,10 +1511,10 @@
               "id": 6965495713,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/6965495713?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-06-20T10:58:36Z",
-              "completed_at": null,
+              "completed_at": "2022-06-20T11:59:39Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1478,12 +1529,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18040734933,
+              "id": 18041524342,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/326/",
-              "conclusion": "pending",
-              "started_at": "2022-06-20T10:58:28Z",
-              "completed_at": "2022-06-20T10:58:28Z",
+              "conclusion": "success",
+              "started_at": "2022-06-20T12:02:55Z",
+              "completed_at": "2022-06-20T12:02:55Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1918,7 +1969,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-06-20T08:36:08Z",
+      "updated_at": "2022-06-20T11:57:11Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
