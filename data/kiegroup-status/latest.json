@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-06-22T20:06:58.109Z",
+    "date": "2022-06-22T21:06:01.203Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2544840443"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2545143824"
   },
   "projects": [
     {
@@ -4028,6 +4028,61 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2792,
+          "title": "Bump kubernetes-client from 4.6.0 to 4.7.2 in /drools-ha",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2792",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2792",
+          "state": "open",
+          "labels": [
+            "dependencies"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-06-22T20:09:45Z",
+          "updated_at": "2022-06-22T20:09:46Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "89a75dbb687c92ebd72365ce736fb3b43aef9b0d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/drools-ha/io.fabric8-kubernetes-client-4.7.2",
+            "sha": "ccaa32bfb5a0364796f6e850372566b4b806aa85",
+            "label": "kiegroup:dependabot/maven/drools-ha/io.fabric8-kubernetes-client-4.7.2"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 7011838571,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7011838571?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-06-22T20:09:50Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7011838396,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7011838396?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-06-22T20:09:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2791,
           "title": "[JBPM-10092] added alias to kie-ctrl:create-container and kie-ctrl:de…",
