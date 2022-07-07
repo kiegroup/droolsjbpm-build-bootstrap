@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-07-07T22:07:42.401Z",
+    "date": "2022-07-07T23:07:12.981Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2632608284"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2632846564"
   },
   "projects": [
     {
@@ -19,6 +19,72 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1992,
+          "title": "Bump jetty-server from 9.4.41.v20210516 to 10.0.10",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/1992",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/1992",
+          "state": "open",
+          "labels": [
+            "dependencies"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-07-07T22:10:57Z",
+          "updated_at": "2022-07-07T22:10:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "74fbe99d98c291809bdb26802a8d466938fe54fd",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/org.eclipse.jetty-jetty-server-10.0.10",
+            "sha": "6937e51203f55487b98af58daa9a63cbb95bd949",
+            "label": "kiegroup:dependabot/maven/org.eclipse.jetty-jetty-server-10.0.10"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 7242377343,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7242377343?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-07T22:12:34Z",
+              "completed_at": "2022-07-07T22:13:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7242377175,
+              "name": "Full downstream build",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7242377175?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-07-07T22:11:01Z",
+              "completed_at": "2022-07-07T22:11:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7242377173,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7242377173?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-07T22:11:42Z",
+              "completed_at": "2022-07-07T22:12:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 1991,
           "title": "Bump jetty-http from 9.4.41.v20210516 to 9.4.48.v20220622",
