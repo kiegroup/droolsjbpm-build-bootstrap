@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-07-08T18:07:52.517Z",
+    "date": "2022-07-08T19:05:47.483Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2637796151"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2638060221"
   },
   "projects": [
     {
@@ -6909,6 +6909,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3743,
+          "title": "JBPM-10083: Legacy (jBPM) Process Designer Removal",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3743",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3743",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-07-08T18:47:03Z",
+          "updated_at": "2022-07-08T19:02:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "40882db7d86e80135c84602ad8c5541629f3cc75",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10083",
+            "sha": "a6419c9b6cecfdd6babc97cf984614c2df5f4e40",
+            "label": "inodeman:JBPM-10083"
+          },
+          "user": {
+            "login": "inodeman",
+            "avatar_url": "https://avatars.githubusercontent.com/u/39567766?v=4",
+            "html_url": "https://github.com/inodeman"
+          },
+          "checks": [
+            {
+              "id": 7256845900,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7256845900?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-07-08T18:50:41Z",
+              "completed_at": "2022-07-08T18:53:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7256845823,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7256845823?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-07-08T18:50:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18287343222,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/210/",
+              "conclusion": "pending",
+              "started_at": "2022-07-08T18:50:14Z",
+              "completed_at": "2022-07-08T18:50:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3742,
           "title": "RHPAM-4387 xml-apis:xml-apis excluded",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3742",
@@ -7457,7 +7520,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-07-08T14:13:45Z",
-          "updated_at": "2022-07-08T14:13:56Z",
+          "updated_at": "2022-07-08T18:15:55Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7476,6 +7539,28 @@
             "html_url": "https://github.com/Ginxo"
           },
           "checks": [
+            {
+              "id": 7256413603,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/7256413603",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-08T18:15:57Z",
+              "completed_at": "2022-07-08T18:15:57Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7256413134,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/7256413134",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-08T18:14:24Z",
+              "completed_at": "2022-07-08T18:15:53Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39168408?v=4"
+            },
             {
               "id": 7252985415,
               "name": "ubuntu-latest - Java 8 - Maven",
@@ -7499,12 +7584,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18283336973,
+              "id": 18286923890,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/drools-wb-main.pr/86/",
-              "conclusion": "pending",
-              "started_at": "2022-07-08T14:13:50Z",
-              "completed_at": "2022-07-08T14:13:50Z",
+              "conclusion": "success",
+              "started_at": "2022-07-08T18:17:02Z",
+              "completed_at": "2022-07-08T18:17:02Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8280,7 +8365,71 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
-      "pullRequests": []
+      "pullRequests": [
+        {
+          "number": 1168,
+          "title": "JBPM-10083 : Legacy (jBPM) Process Designer Removal",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1168",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1168",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-07-08T18:46:02Z",
+          "updated_at": "2022-07-08T19:02:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7aa1a8826f92cfa283482bdb2a908eaca254c7be",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10083",
+            "sha": "800f105690319c12c3c6c0687bf07f3465374552",
+            "label": "inodeman:JBPM-10083"
+          },
+          "user": {
+            "login": "inodeman",
+            "avatar_url": "https://avatars.githubusercontent.com/u/39567766?v=4",
+            "html_url": "https://github.com/inodeman"
+          },
+          "checks": [
+            {
+              "id": 7256792191,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/7256792191?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-07-08T18:46:16Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7256792087,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/7256792087?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-07-08T18:46:14Z",
+              "completed_at": "2022-07-08T18:48:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18287291917,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/143/",
+              "conclusion": "pending",
+              "started_at": "2022-07-08T18:46:06Z",
+              "completed_at": "2022-07-08T18:46:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ]
     },
     {
       "key": "kiegroup/openshift-drools-hacep",
