@@ -19,5 +19,5 @@ for i in `seq 0 $imax $ndirs`; do
         echo "****** $(($ii+1)). element:  ${array_list[$ii]} ******";
         zip -qr kie-$i.zip $input_dir/${array_list[$ii]}
     done
-    curl --silent --upload-file kie-$i.zip -u $CREDS -v https://repository.dev.jboss.org/nexus/service/local/repositories/$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0"
+    curl --silent --upload-file kie-$i.zip -u $CREDS -v https://repository.jboss.org/nexus/service/local/repositories/$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0"
 done
