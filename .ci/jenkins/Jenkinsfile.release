@@ -224,18 +224,18 @@ pipeline {
             }
             steps {
                 execute {
-                    withCredentials([usernameColonPassword(credentialsId: 'kie-ci1-upload', variable: 'CREDS')]) {
+                    withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
                         dir("$WORKSPACE/${zipDir}"){
                             script {
-                                env.repoID = sh(script: """curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.dev.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]' """, returnStdout: true).trim()
+                                env.repoID = sh(script: """curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]' """, returnStdout: true).trim()
                                 echo "repoID: ${repoID}"
                                 def repositories=['dashbuilder', 'drools', 'jbpm', 'uberfire', 'optaplanner']
                                 repositories.each{ repo ->
                                     sh "zip -qr ${repo}.zip org/${repo}"
-                                    sh """curl --silent --upload-file ${repo}.zip -u \$CREDS -v https://repository.dev.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0" """
+                                    sh """curl --silent --upload-file ${repo}.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0" """
                                 }
                                 sh "sh $WORKSPACE/script/release/12_splitOrgKie.sh"
-                                sh """curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.dev.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish -H "Connection: close" """
+                                sh """curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish -H "Connection: close" """
                             }
                         }
                     }
