@@ -242,6 +242,27 @@ pipeline {
                 }
             }
         }
+        stage('status of staging-repository'){
+            when{
+                expression { runBuild == 'YES'}
+            }
+            steps {
+		        withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
+    		        script{
+				        env.STAGING_STATUS = ""
+				        counter=0
+				        while( "${env.STAGING_STATUS}" != "closed" ){
+    				        env.STAGING_STATUS = sh(script: """ curl -u $CREDS -H 'Accept: application/json' -H 'Content-Type: application/json' https://repository.jboss.org/nexus/service/local/staging/profile_repositories/15c58a1abc895b | grep -oP '$repoID\",\"type\":\"\\K[^\"]+(?=\")' """, returnStdout: true).trim()
+    				        echo "staging-repository is still ${STAGING_STATUS}"
+    				        sleep(60*15)
+    				        counter=counter+1
+    				        echo "counter: $counter"
+				        }
+				        echo "staging-repository is ${STAGING_STATUS} now"
+		            }
+	            }
+            }
+        }
         stage('Additional tests for community') {
             when{
                 expression { runBuild == 'YES'}
