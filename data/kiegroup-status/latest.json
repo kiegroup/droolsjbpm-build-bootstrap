@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-07-21T05:21:33.082Z",
+    "date": "2022-07-21T06:09:11.789Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2709499931"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2709701575"
   },
   "projects": [
     {
@@ -26,7 +26,7 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2008",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [
             {
               "login": "rgdoliveira",
@@ -35,7 +35,7 @@
             }
           ],
           "created_at": "2022-07-20T08:31:23Z",
-          "updated_at": "2022-07-20T22:49:04Z",
+          "updated_at": "2022-07-21T05:33:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -54,6 +54,28 @@
             "html_url": "https://github.com/Ginxo"
           },
           "checks": [
+            {
+              "id": 7443116944,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7443116944?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:42:13Z",
+              "completed_at": "2022-07-21T05:43:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443116842,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7443116842?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:30:59Z",
+              "completed_at": "2022-07-21T05:31:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 7425249094,
               "name": "ubuntu-latest - Java 8 - Maven",
@@ -360,7 +382,7 @@
             }
           ],
           "created_at": "2022-07-05T09:20:45Z",
-          "updated_at": "2022-07-20T08:14:09Z",
+          "updated_at": "2022-07-21T05:51:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -412,12 +434,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18428761306,
+              "id": 18438813592,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/452/",
-              "conclusion": "success",
-              "started_at": "2022-07-20T15:12:11Z",
-              "completed_at": "2022-07-20T15:12:11Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/454/",
+              "conclusion": "pending",
+              "started_at": "2022-07-21T05:51:28Z",
+              "completed_at": "2022-07-21T05:51:28Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1656,7 +1678,147 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/optaplanner",
       "pulls_url": "https://api.github.com/repos/kiegroup/optaplanner/pulls{/number}",
-      "pullRequests": []
+      "pullRequests": [
+        {
+          "number": 2089,
+          "title": "[RHPAM-4449] spring-boot downgraded to 2.5.12",
+          "url": "https://api.github.com/repos/kiegroup/optaplanner/pulls/2089",
+          "html_url": "https://github.com/kiegroup/optaplanner/pull/2089",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "triceo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/247403?v=4",
+              "html_url": "https://github.com/triceo"
+            },
+            {
+              "login": "rsynek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1422582?v=4",
+              "html_url": "https://github.com/rsynek"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-07-21T05:25:36Z",
+          "updated_at": "2022-07-21T05:43:57Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "f7b2f2aa1e8f8f15373db207e48ac1fa42a6e7d2",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "RHPAM-4449",
+            "sha": "25eda45f8256dc53a94a61c7badbbac744ecaf98",
+            "label": "Ginxo:RHPAM-4449"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 7443255778,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443255778",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:43:58Z",
+              "completed_at": "2022-07-21T05:44:59Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443255439,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443255439",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:42:08Z",
+              "completed_at": "2022-07-21T05:43:55Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 7443071945,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443071945?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-07-21T05:47:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443071866,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443071866?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-07-21T05:25:43Z",
+              "completed_at": "2022-07-21T05:25:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443071791,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443071791?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:26:10Z",
+              "completed_at": "2022-07-21T05:48:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443071707,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443071707?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:26:13Z",
+              "completed_at": "2022-07-21T05:47:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443071604,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/7443071604?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:26:03Z",
+              "completed_at": "2022-07-21T05:28:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18438765166,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/optaplanner-7.x.pr/36/",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:44:45Z",
+              "completed_at": "2022-07-21T05:44:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ]
     },
     {
       "key": "kiegroup/lienzo-core",
@@ -1683,6 +1845,80 @@
       "repo_url": "https://github.com/kiegroup/lienzo-tests",
       "pulls_url": "https://api.github.com/repos/kiegroup/lienzo-tests/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 136,
+          "title": "RHPAM-4387 xercesImpl to 2.12.2",
+          "url": "https://api.github.com/repos/kiegroup/lienzo-tests/pulls/136",
+          "html_url": "https://github.com/kiegroup/lienzo-tests/pull/136",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "AntStephenson",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1628676?v=4",
+              "html_url": "https://github.com/AntStephenson"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-07-21T05:50:05Z",
+          "updated_at": "2022-07-21T05:51:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a1d936007b1ad8216fc97f684f9d8bfb58103633",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4387",
+            "sha": "3c0a1e9d8cc3193de2cebb10bc08df2e400f71b6",
+            "label": "Ginxo:RHPAM-4387"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 7443320356,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/lienzo-tests/runs/7443320356?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:50:21Z",
+              "completed_at": "2022-07-21T05:51:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7443320296,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/lienzo-tests/runs/7443320296?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:50:19Z",
+              "completed_at": "2022-07-21T05:51:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18438812357,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/lienzo-tests-main.pr/38/",
+              "conclusion": "success",
+              "started_at": "2022-07-21T05:51:18Z",
+              "completed_at": "2022-07-21T05:51:18Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 77,
           "title": "JBPM-8858 [Stunner] Lienzo - Unit Testing for the core migration to n…",
