@@ -175,7 +175,7 @@ pipeline {
 
 void sendNotification() {
     if (currentBuild.result != "SUCCESS") {
-        mailer.sendMarkdownTestSummaryNotification("","[${baseBranch}] daily build ${buildName}",["${KIE_TO}"]))
+        mailer.sendMarkdownTestSummaryNotification("","[${baseBranch}] daily build ${buildName}",["${KIE_TO}"])
     } else {
         echo 'No notification sent per configuration'
     }
