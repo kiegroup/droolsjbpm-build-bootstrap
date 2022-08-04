@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-04T06:09:44.559Z",
+    "date": "2022-08-04T07:07:42.034Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2794534986"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2794800849"
   },
   "projects": [
     {
@@ -1047,22 +1047,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18617780437,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/360/",
-              "conclusion": "pending",
-              "started_at": "2022-08-04T03:29:23Z",
-              "completed_at": "2022-08-04T03:29:23Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 18618290351,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/352/",
               "conclusion": "success",
               "started_at": "2022-08-04T04:50:56Z",
               "completed_at": "2022-08-04T04:50:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18619335164,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/360/",
+              "conclusion": "failure",
+              "started_at": "2022-08-04T07:03:17Z",
+              "completed_at": "2022-08-04T07:03:17Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2476,7 +2476,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-03T08:40:40Z",
-          "updated_at": "2022-08-03T08:40:40Z",
+          "updated_at": "2022-08-04T06:38:39Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2516,6 +2516,16 @@
               "completed_at": "2022-08-03T10:49:26Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18619100824,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/763/",
+              "conclusion": "pending",
+              "started_at": "2022-08-04T06:38:48Z",
+              "completed_at": "2022-08-04T06:38:48Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -6530,6 +6540,69 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4337,
+          "title": "New upstream main PR BXMSDOC-8474: Release notes docs for RHPAM/RHDM version 7.13",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4337",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4337",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-04T06:49:49Z",
+          "updated_at": "2022-08-04T06:49:49Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f353ff5f2e2ddd24a0efbc4ac5f2b9fe7b722034",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSDOC-8474new-main-final",
+            "sha": "022cf1d1738f851f5788172e682cec851f1a85f2",
+            "label": "kaldesai:BXMSDOC-8474new-main-final"
+          },
+          "user": {
+            "login": "kaldesai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/43639538?v=4",
+            "html_url": "https://github.com/kaldesai"
+          },
+          "checks": [
+            {
+              "id": 7666739797,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/runs/7666739797?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-04T06:51:52Z",
+              "completed_at": "2022-08-04T06:53:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7666739704,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/runs/7666739704?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-04T06:50:02Z",
+              "completed_at": "2022-08-04T06:51:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18619201685,
+              "name": "Linux - Pull Request",
+              "html_url": "",
+              "conclusion": "pending",
+              "started_at": "2022-08-04T06:49:51Z",
+              "completed_at": "2022-08-04T06:49:51Z",
+              "slug": "unknown",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4335,
           "title": "BXMSDOC-8591-main: Sanity check for 7.13.0",
