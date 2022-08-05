@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-05T12:12:45.594Z",
+    "date": "2022-08-05T13:37:59.975Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2803494764"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2803921801"
   },
   "projects": [
     {
@@ -1084,7 +1084,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-04-29T07:35:25Z",
-          "updated_at": "2022-08-04T07:41:19Z",
+          "updated_at": "2022-08-05T12:45:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5393,7 +5393,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-07-08T18:47:03Z",
-          "updated_at": "2022-08-05T10:53:05Z",
+          "updated_at": "2022-08-05T12:24:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6640,6 +6640,69 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1175,
+          "title": "KOGITO-7179 : Business Central usage of resource.getContextPath() is insecure",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1175",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1175",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-08-05T13:31:39Z",
+          "updated_at": "2022-08-05T13:31:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "51b8309aaf5b349457c99b3ccb489eb01c97c16c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-7179-context-path",
+            "sha": "3e2fa7bd08a4bc52df69ea8966685168084a69f9",
+            "label": "Rikkola:KOGITO-7179-context-path"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 7692288321,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/7692288321?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-05T13:34:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7692288141,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/7692288141?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-08-05T13:31:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18641363084,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/156/",
+              "conclusion": "pending",
+              "started_at": "2022-08-05T13:31:43Z",
+              "completed_at": "2022-08-05T13:31:43Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1173,
           "title": "RHPAM-4455 org.w3c:dom dependency to business-central",
