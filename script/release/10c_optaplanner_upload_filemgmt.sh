@@ -11,8 +11,8 @@ uploadDir=${kieVersion}_uploadBinaries
 
 # create directory on filemgmt-prod.jboss.org for new release
 touch create_version
-echo "mkdir ${optaplannerDocs}/${$kieVersion}" > create_version
-echo "mkdir ${optaplannerHtdocs}/${$kieVersion}" >> create_version
+echo "mkdir ${optaplannerDocs}/${kieVersion}" > create_version
+echo "mkdir ${optaplannerHtdocs}/${kieVersion}" >> create_version
 chmod +x create_version
 sftp -b create_version $filemgmtServer
 

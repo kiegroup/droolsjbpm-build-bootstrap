@@ -41,7 +41,7 @@ sftp -b upload_binaries $filemgmtServer
 
 # upload docs to filemgmt-prod.jboss.org
 rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/drools-docs/* ${rsync_filemgmt}:${droolsDocs}/${kieVersion}/drools-docs
-rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/kie-api-javadoc/* ${rsync_filemgmt}:${droolsDocs}/${kieVersion}kie-api-javadoc
+rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/kie-api-javadoc/* ${rsync_filemgmt}:${droolsDocs}/${kieVersion}/kie-api-javadoc
 
 
 # make filemgmt symbolic links for drools
