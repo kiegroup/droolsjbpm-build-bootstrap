@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-11T17:11:22.060Z",
+    "date": "2022-08-11T18:08:29.967Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2841549478"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2841867032"
   },
   "projects": [
     {
@@ -2671,7 +2671,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-09T23:10:20Z",
-          "updated_at": "2022-08-11T16:49:20Z",
+          "updated_at": "2022-08-11T18:03:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2690,6 +2690,28 @@
             "html_url": "https://github.com/martinweiler"
           },
           "checks": [
+            {
+              "id": 7792990169,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/7792990169",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-11T18:03:01Z",
+              "completed_at": "2022-08-11T18:03:02Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7792989598,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/7792989598",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-08-11T18:00:17Z",
+              "completed_at": "2022-08-11T18:02:58Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 7791288889,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -2713,12 +2735,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18722485773,
+              "id": 18724364361,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/767/",
-              "conclusion": "pending",
-              "started_at": "2022-08-11T16:19:25Z",
-              "completed_at": "2022-08-11T16:19:25Z",
+              "conclusion": "success",
+              "started_at": "2022-08-11T18:03:18Z",
+              "completed_at": "2022-08-11T18:03:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6415,10 +6437,10 @@
               "id": 7791564625,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7791564625?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-08-11T16:35:39Z",
-              "completed_at": null,
+              "completed_at": "2022-08-11T17:53:44Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -8806,6 +8828,69 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4341,
+          "title": "BXMSDOC-8590: Partially revert PR 4320 as the additional module does not fix RHPAM-4223",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4341",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4341",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-11T17:12:18Z",
+          "updated_at": "2022-08-11T17:12:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "51d8d7621cd414d9ab76426d5e1efa54572b9d84",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSDOC-8590",
+            "sha": "c9293a03d81c2b82f557047a24a1bec97ad899ff",
+            "label": "martinweiler:BXMSDOC-8590"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 7792177275,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/runs/7792177275?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-11T17:12:33Z",
+              "completed_at": "2022-08-11T17:14:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7792177128,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/runs/7792177128?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-11T17:12:38Z",
+              "completed_at": "2022-08-11T17:14:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18723998516,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/614/",
+              "conclusion": "success",
+              "started_at": "2022-08-11T17:42:09Z",
+              "completed_at": "2022-08-11T17:42:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
