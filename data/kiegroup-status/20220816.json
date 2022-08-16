@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-16T14:07:47.236Z",
+    "date": "2022-08-16T15:07:48.548Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2868587351"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2869026270"
   },
   "projects": [
     {
@@ -2463,6 +2463,132 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2203,
+          "title": "[7.67.x-blue][JBPM-10112] Fix org.xmlpull.v1.XmlPullParserException in VariableScope.validateVariable (#2200)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2203",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2203",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-16T14:16:16Z",
+          "updated_at": "2022-08-16T14:16:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9b4942624006f08771c2666ce9a5453df478b097",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10112-7.67.x-blue",
+            "sha": "0d5ff655092db81cd487fb73c907159bfcc3e6dd",
+            "label": "martinweiler:JBPM-10112-7.67.x-blue"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 7859989134,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/7859989134?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:16:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7859988955,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/7859988955?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:16:35Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18777571820,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/26/",
+              "conclusion": "pending",
+              "started_at": "2022-08-16T14:16:21Z",
+              "completed_at": "2022-08-16T14:16:21Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2202,
+          "title": "[7.67.x][JBPM-10112] Fix org.xmlpull.v1.XmlPullParserException in VariableScope.validateVariable (#2200)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2202",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2202",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-16T14:12:18Z",
+          "updated_at": "2022-08-16T14:12:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "7a9a45fd434ea07596fbd20d58c19241843a154f",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10112-7.67.x",
+            "sha": "eaadbbdd06cf2cb91c760e6de8b900ce3e172011",
+            "label": "martinweiler:JBPM-10112-7.67.x"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 7859907085,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/7859907085?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:12:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7859906881,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/7859906881?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:12:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18777482866,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/83/",
+              "conclusion": "pending",
+              "started_at": "2022-08-16T14:12:23Z",
+              "completed_at": "2022-08-16T14:12:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2201,
           "title": "[RHPAM-4445] Unable to update the task description with long string(m…",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2201",
@@ -3806,6 +3932,132 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2839,
+          "title": "[7.67.x-blue][JBPM-10109] Add support for container alias in user task claim operation (#2818)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2839",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2839",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-16T14:29:50Z",
+          "updated_at": "2022-08-16T14:29:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "039f6923baf6e2ed387b7d5a2479e8951b2a030c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10109-7.67.x-blue",
+            "sha": "e29253b0ba9065c386834cc0a44a46fce188b7e7",
+            "label": "martinweiler:JBPM-10109-7.67.x-blue"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 7860277691,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7860277691?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:30:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7860277446,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7860277446?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:30:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18777868562,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/31/",
+              "conclusion": "pending",
+              "started_at": "2022-08-16T14:29:54Z",
+              "completed_at": "2022-08-16T14:29:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2838,
+          "title": "[7.67.x][JBPM-10109] Add support for container alias in user task claim operation (#2818)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2838",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2838",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-16T14:26:51Z",
+          "updated_at": "2022-08-16T14:26:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "ce94b26ceda379cd5a91388d8dc7218c00053e3a",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10109-7.67.x",
+            "sha": "cffd359301470682d6df2851cec3520970628e1b",
+            "label": "martinweiler:JBPM-10109-7.67.x"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 7860214798,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7860214798?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:27:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7860214600,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7860214600?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-16T14:27:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18777799155,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/58/",
+              "conclusion": "pending",
+              "started_at": "2022-08-16T14:26:55Z",
+              "completed_at": "2022-08-16T14:26:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2833,
           "title": "[7.67.x-blue][JBPM-10071] test for WIH's abortWorkItem method should be called",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2833",
@@ -3813,15 +4065,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "afalhambra",
-              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-              "html_url": "https://github.com/afalhambra"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-08-05T16:56:26Z",
-          "updated_at": "2022-08-05T19:20:38Z",
+          "updated_at": "2022-08-16T14:53:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3904,15 +4150,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "afalhambra",
-              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-              "html_url": "https://github.com/afalhambra"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-08-05T16:52:39Z",
-          "updated_at": "2022-08-05T19:28:30Z",
+          "updated_at": "2022-08-16T14:53:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4165,15 +4405,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "afalhambra",
-              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-              "html_url": "https://github.com/afalhambra"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-08-05T08:03:07Z",
-          "updated_at": "2022-08-08T06:44:37Z",
+          "updated_at": "2022-08-16T14:52:33Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8457,12 +8691,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18777322424,
+              "id": 18777984723,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-docs-7.67.x-blue.pr/92/",
-              "conclusion": "pending",
-              "started_at": "2022-08-16T14:05:11Z",
-              "completed_at": "2022-08-16T14:05:11Z",
+              "conclusion": "success",
+              "started_at": "2022-08-16T14:35:08Z",
+              "completed_at": "2022-08-16T14:35:08Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
