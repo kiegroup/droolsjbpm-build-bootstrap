@@ -362,6 +362,10 @@ Installing Maven
 Running the build
 -----------------
 
+Running the RHBA community projects build could differ in according to your purpose, which can be summarized in either *single project build* or *set of RHBA projects build*.
+
+### **Single project:**
+
 * Go into a project's base directory, for example `drools`:
 
     ```shell
@@ -408,20 +412,6 @@ Running the build
 
     * `productized`: activates branding changes for productized version
 
-* To run a maven build over all repositories (only works if you cloned all repositories):
-
-    ```shell
-    $ cd ~/projects/kiegroup
-    $ droolsjbpm-build-bootstrap/script/mvn-all.sh -DskipTests clean install
-    ```
-
-    * Note: the `mvn-all.sh` script is working directory independent.
-
-* You can use `mvn-all.sh` to compile a specific repository and all repositories that your target repository depends on.
-  This is done using the `--target-repo` option which will invoke `repo-dep-tree.pl` script to discover cross-repository
-  project dependencies. Use `--repo-list` to specify custom list of repositories. These options work for `git-all.sh`
-  too.
-
 * Warning: The first `mvn` build of a day will download the latest SNAPSHOT dependencies of other kiegroup projects,
 unless you build all those kiegroup projects from source.
 Those SNAPSHOTS were built and deployed last night by Jenkins jobs.
@@ -440,14 +430,76 @@ Those SNAPSHOTS were built and deployed last night by Jenkins jobs.
 
         Note that using `-nsu` will also make the build faster.
 
+### **Set of projects:**
+
+If you want, instead, to build a set of projects that are dependent on each other, we suggest using the [build-chain action](https://github.com/kiegroup/github-action-build-chain) tool. This tool allows you to build multiple projects from different repositories in one single command.
+
+* Install **build-chain-action** npm tool (you must have node/npm installed):
+    
+    ```shell
+    $ npm i @kie/build-chain-action
+    ```
+
+Now in according to what you need you only have to run the *build-chain-action* tool with proper arguments. Here we will provide the most common use cases you might face into. Check [build-chain](https://github.com/kiegroup/github-action-build-chain#github-action-build-chain) documentation if you need further details on commands and arguments.
+
+* **Branch Flow**, this allows you to build the *whole set of projects* from RHBA community stream, either following upstream or downstream flow:
+
+    ``` shell
+    $ build-chain-action -df <definition-file> build branch -b <br> --fullProjectDependencyTree -sp <starting-project> [--skipExecution]
+    ```
+
+    Using this command you can clone all repositories starting from specific project (see [project structure](#kiegroup-project-structure)), checkout one by one all projects and build them in according to their specific build instructions that are defined in the definition file you provided.
+    
+    - `-df <definition-file>`, url or path to the build-chain definition file (more details [here](https://github.com/kiegroup/build-chain-configuration-reader)).
+    - `build`, build functionality.
+    - `branch -b <br>`, checkout projects in according to their branch starting from `<br>` branch in `<starting-project>` project.
+    - `--fullProjectDependencyTree`, checks out and execute the whole tree instead of the upstream build, if omitted the upstream flow is used.
+    - `-sp <starting-project>`, from which project (in the tree structure) start from.
+    - `--skipExecution`, add this if you only want to clone all repositories without building them.
+    
+    A real example could be this one, where you checkout and build the whole set of projects starting from the root one (i.e., `kiegroup/droolsjbpm-build-bootstrap`):
+
+    ```shell
+    $ build-chain-action -df 'https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/pull-request-config.yaml' build branch -b main --fullProjectDependencyTree -sp kiegroup/droolsjbpm-build-bootstrap
+    ```
+
+* **Pull Request Flow**, build projects related to a specific Pull Request you are performing:
+
+    ``` shell
+    $ build-chain-action -df <definition-file> build pr -url <pull-request-url> [-sp <starting-project>] [--skipExecution]
+    ```
+
+    Consider the scenario where you have multiple PRs, related to the same topic, on different RHBA projects. With this command you are able to checkout all of them in the correct PR branch and build all of them. This will allow you to build and test the overall scenario having multiple PR-related projects.
+    
+    - `-df <definition-file>`, url or path to the build-chain definition file (more details [here](https://github.com/kiegroup/build-chain-configuration-reader)).
+    - `build`, build functionality.
+    - `pr -url <pull-request-url>`, for every projects checks if a Pull Request exists (having the same name of the provided one) and if yes it check outs in that branch.
+    - `-sp <starting-project>`, from which project (in the tree structure) start from, if not provided it starts from the PR one.
+    - `--skipExecution`, add this if you only want to clone all repositories without building them.
+
+    A real example could be this one, taken from `kie-wb-distribution` project:
+
+    ```shell
+    $ build-chain-action -df 'https://raw.githubusercontent.com/${GROUP:kiegroup}/droolsjbpm-build-bootstrap/${BRANCH:main}/.ci/pull-request-config.yaml' build pr -url https://github.com/kiegroup/kie-wb-distributions/pull/1166 
+    ```
+
 Running tests
 -------------
 
-* All modules
+* Single project
 
     ```shell
     $ cd ~/projects/kiegroup/drools
     $ mvn test [-Dtest=ATestClassName]
+    ```
+
+
+* Set of projects
+    
+    This can be reached using the `build-chain-action` tool, introduced in [Running the Build](#running-the-build) section. Omitting the `--skipExecution` flag you will check out all projects and build them (also executing all tests).
+
+    ```shell
+    $ build-chain-action -df <definition-file> build branch -b <br> --fullProjectDependencyTree -sp <starting-project>
     ```
 
 Running code-coverage checks
