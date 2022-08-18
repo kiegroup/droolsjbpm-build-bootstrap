@@ -440,15 +440,17 @@ If the purpose, instead, is to build the RHBA set of projects that are dependent
     $ npm i @kie/build-chain-action
     ```
 
-Now in according to what you need you only have to run the *build-chain-action* tool with proper arguments. Here we will provide the most common use cases you might face into. Check [build-chain](https://github.com/kiegroup/github-action-build-chain#github-action-build-chain) documentation if you need further details on commands and arguments.
+Now in according to then need, the *build-chain-action* command line tool should be run with proper arguments. Check [build-chain](https://github.com/kiegroup/github-action-build-chain#github-action-build-chain) documentation for further details on commands and arguments. Below one of the most common use cases you might face into. 
 
-* **Branch Flow**, this allows you to build the *whole set of projects* from RHBA community stream, either following upstream or downstream flow:
+* **Branch Flow**, this allows to build the *whole set of projects* from RHBA community stream, either following upstream or downstream flow:
 
     ``` shell
-    $ build-chain-action -df <definition-file> build branch -b <br> --fullProjectDependencyTree -sp <starting-project> [--skipExecution]
+    $ build-chain-action -df https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml build branch -b main --fullProjectDependencyTree -sp kiegroup/droolsjbpm-build-bootstrap [--skipExecution]
     ```
 
-    Using this command you can clone all repositories starting from specific project (see [project structure](#kiegroup-project-structure)), checkout one by one all projects and build them in according to their specific build instructions that are defined in the definition file you provided.
+    > Consider to change `main` by the branch/tag to build
+
+    This command clones all repositories starting from specific project (in this case *kiegroup/droolsjbpm-build-bootstrap*, see [project structure](#kiegroup-project-structure)), checkouts one by one all projects and build them in according to their specific build instructions that are defined in the definition file you provided.
     
     - `-df <definition-file>`, url or path to the build-chain definition file (more details [here](https://github.com/kiegroup/build-chain-configuration-reader)).
     - `build`, build functionality.
@@ -457,31 +459,7 @@ Now in according to what you need you only have to run the *build-chain-action* 
     - `-sp <starting-project>`, from which project (in the tree structure) start from.
     - `--skipExecution`, add this if you only want to clone all repositories without building them.
     
-    A real example could be this one, where you checkout and build the whole set of projects starting from the root one (i.e., `kiegroup/droolsjbpm-build-bootstrap`):
-
-    ```shell
-    $ build-chain-action -df https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/main/.ci/compilation-config.yaml build branch -b main --fullProjectDependencyTree -sp kiegroup/droolsjbpm-build-bootstrap
-    ```
-
-* **Pull Request Flow**, build projects related to a specific Pull Request you are performing:
-
-    ``` shell
-    $ build-chain-action -df <definition-file> build pr -url <pull-request-url> [-sp <starting-project>] [--skipExecution]
-    ```
-
-    Consider the scenario where you have multiple PRs, related to the same topic, on different RHBA projects. With this command you are able to checkout all of them in the correct PR branch and build all of them. This will allow you to build and test the overall scenario having multiple PR-related projects.
-    
-    - `-df <definition-file>`, url or path to the build-chain definition file (more details [here](https://github.com/kiegroup/build-chain-configuration-reader)).
-    - `build`, build functionality.
-    - `pr -url <pull-request-url>`, for every projects checks if a Pull Request exists (having the same name of the provided one) and if yes it check outs in that branch.
-    - `-sp <starting-project>`, from which project (in the tree structure) start from, if not provided it starts from the PR one.
-    - `--skipExecution`, add this if you only want to clone all repositories without building them.
-
-    A real example could be this one, taken from `kie-wb-distribution` project:
-
-    ```shell
-    $ build-chain-action -df 'https://raw.githubusercontent.com/${GROUP:kiegroup}/droolsjbpm-build-bootstrap/${BRANCH:main}/.ci/pull-request-config.yaml' build pr -url https://github.com/kiegroup/kie-wb-distributions/pull/1166 
-    ```
+    More info on *branch flow* arguments usage in [Execution Build Action - Branch flow arguments](https://github.com/kiegroup/github-action-build-chain#execution-build-action---branch-flow-arguments)
 
 Running tests
 -------------
