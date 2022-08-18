@@ -362,7 +362,7 @@ Installing Maven
 Running the build
 -----------------
 
-Running the RHBA community projects build could differ in according to your purpose, which can be summarized in either *single project build* or *set of RHBA projects build*.
+Running the RHBA community stream build could differ in according to the purpose, which can be summarized in either *single project build* or *RHBA stream build*.
 
 ### **Single project:**
 
@@ -430,11 +430,11 @@ Those SNAPSHOTS were built and deployed last night by Jenkins jobs.
 
         Note that using `-nsu` will also make the build faster.
 
-### **Set of projects:**
+### **RHBA Stream**
 
-If you want, instead, to build a set of projects that are dependent on each other, we suggest using the [build-chain action](https://github.com/kiegroup/github-action-build-chain) tool. This tool allows you to build multiple projects from different repositories in one single command.
+If the purpose, instead, is to build the RHBA set of projects that are dependent on each other, the recommendation is to use the [build-chain](https://github.com/kiegroup/github-action-build-chain) tool. This tool allows to build multiple projects from different repositories in one single command.
 
-* Install **build-chain-action** npm tool (you must have node/npm installed):
+* Install **build-chain-action** npm tool (node/npm must be installed):
     
     ```shell
     $ npm i @kie/build-chain-action
@@ -460,7 +460,7 @@ Now in according to what you need you only have to run the *build-chain-action* 
     A real example could be this one, where you checkout and build the whole set of projects starting from the root one (i.e., `kiegroup/droolsjbpm-build-bootstrap`):
 
     ```shell
-    $ build-chain-action -df 'https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/pull-request-config.yaml' build branch -b main --fullProjectDependencyTree -sp kiegroup/droolsjbpm-build-bootstrap
+    $ build-chain-action -df https://github.com/kiegroup/droolsjbpm-build-bootstrap/blob/main/.ci/compilation-config.yaml build branch -b main --fullProjectDependencyTree -sp kiegroup/droolsjbpm-build-bootstrap
     ```
 
 * **Pull Request Flow**, build projects related to a specific Pull Request you are performing:
@@ -494,9 +494,9 @@ Running tests
     ```
 
 
-* Set of projects
+* RHBA stream
     
-    This can be reached using the `build-chain-action` tool, introduced in [Running the Build](#running-the-build) section. Omitting the `--skipExecution` flag you will check out all projects and build them (also executing all tests).
+    This can be reached using the `build-chain` tool, introduced in [Running the Build](#running-the-build) section. Omitting the `--skipExecution` flag it will check out and build the whole set of RHBA projects (also executing all tests).
 
     ```shell
     $ build-chain-action -df <definition-file> build branch -b <br> --fullProjectDependencyTree -sp <starting-project>
