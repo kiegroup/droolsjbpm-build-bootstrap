@@ -430,9 +430,9 @@ Those SNAPSHOTS were built and deployed last night by Jenkins jobs.
 
         Note that using `-nsu` will also make the build faster.
 
-### **RHBA Stream**
+### **Full build from sources**
 
-If the purpose, instead, is to build the RHBA set of projects that are dependent on each other, the recommendation is to use the [build-chain](https://github.com/kiegroup/github-action-build-chain) tool. This tool allows to build multiple projects from different repositories in one single command.
+If the purpose, instead, is to build the full set of projects that are dependent on each other, the recommendation is to use the [build-chain](https://github.com/kiegroup/github-action-build-chain) tool. This tool allows to build multiple projects from different repositories in one single command.
 
 * Install **build-chain-action** npm tool (node/npm must be installed):
     
@@ -472,7 +472,7 @@ Running tests
     ```
 
 
-* RHBA stream
+* Full build with tests
     
     This can be reached using the `build-chain` tool, introduced in [Running the Build](#running-the-build) section. Omitting the `--skipExecution` flag it will check out and build the whole set of RHBA projects (also executing all tests).
 
