@@ -10,6 +10,7 @@ runs:
         repository: kiegroup/droolsjbpm-build-bootstrap
         path: matrix_preparation
     - id: set-os
+      working-directory: .ci/actions/os-preparation
       env:
         repo_name: ${{ github.event.repository.name }}
         event: ${{ github.event_name }}
