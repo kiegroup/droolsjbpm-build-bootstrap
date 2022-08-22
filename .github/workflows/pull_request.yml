@@ -16,7 +16,7 @@ jobs:
   os-prep:
     runs-on: ubuntu-latest
     outputs:
-      os: ${{ steps.set-os.outputs.operation_systems }}
+      os: ${{ steps.set-os.outputs.operating_systems }}
     steps:
     - name: Check out local droolsjbpm-build-bootstrap
       uses: actions/checkout@v3
