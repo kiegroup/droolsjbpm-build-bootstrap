@@ -16,11 +16,12 @@ jobs:
   os-prep:
     runs-on: ubuntu-latest
     outputs:
-      os: ${{ steps.set-os.outputs.operating_systems }}
+      os: ${{ steps.set-os.outputs.operating-systems }}
     steps:
     - name: Checkout droolsjbpm-build-bootstrap
       uses: actions/checkout@v3
     - name: OS Preparation
+      id: set-os
       uses: ./.ci/actions/os-preparation
   build-chain:
     needs: os-prep
@@ -29,7 +30,7 @@ jobs:
       cancel-in-progress: true
     strategy:
       matrix:
-        os: ${{ operation_systems }}
+        os: ${{ fromJSON(needs.os-prep.outputs.os) }}
         java-version: [8, 11]
         maven-version: ['3.8.1']
       fail-fast: true
