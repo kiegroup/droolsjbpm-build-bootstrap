@@ -18,8 +18,10 @@ jobs:
     outputs:
       os: ${{ steps.set-os.outputs.operation_systems }}
     steps:
+    - name: Check out local droolsjbpm-build-bootstrap
+      uses: actions/checkout@v3
     - name: OS Preparation
-      uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/os-preparation@main
+      uses: ./.ci/actions/os-preparation
   build-chain:
     needs: os-prep
     if: needs.os-prep.outputs.os
