@@ -21,6 +21,7 @@ jobs:
     - name: Check out local droolsjbpm-build-bootstrap
       uses: actions/checkout@v3
     - name: OS Preparation
+      id: set-os
       uses: ./.ci/actions/os-preparation
     - name: Check os matrix output
       run: echo "Configured operating systems ${{ steps.set-os.outputs.operating_systems }}"
