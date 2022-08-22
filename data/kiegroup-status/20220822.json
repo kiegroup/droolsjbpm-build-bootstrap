@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-22T15:07:32.603Z",
+    "date": "2022-08-22T16:08:47.264Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2904975475"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2905386366"
   },
   "projects": [
     {
@@ -19,6 +19,58 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2039,
+          "title": "[BXMSPROD-1770] Centralize GHA Operating Systems Configuration",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2039",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2039",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-08-22T15:25:19Z",
+          "updated_at": "2022-08-22T16:07:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "359bcfcf5fd0757d3409a7d63076c4ef9fb7431d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1770_windows_gha",
+            "sha": "ff311f2a6625cecb1e829729cdfb84218a6b73ff",
+            "label": "lampajr:BXMSPROD-1770_windows_gha"
+          },
+          "user": {
+            "login": "lampajr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+            "html_url": "https://github.com/lampajr"
+          },
+          "checks": [
+            {
+              "id": 7956175196,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7956175196?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-22T16:07:49Z",
+              "completed_at": "2022-08-22T16:07:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18862856470,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/571/",
+              "conclusion": "success",
+              "started_at": "2022-08-22T16:08:15Z",
+              "completed_at": "2022-08-22T16:08:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2038,
           "title": "[JBPM-10101] kafka-clients misalignment with any supported AMQ Streams version",
@@ -4525,7 +4577,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-04T07:17:19Z",
-          "updated_at": "2022-08-22T12:35:47Z",
+          "updated_at": "2022-08-22T15:13:24Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4545,6 +4597,17 @@
           },
           "checks": [
             {
+              "id": 7955073879,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7955073879",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-22T15:10:56Z",
+              "completed_at": "2022-08-22T15:13:22Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
               "id": 7884860709,
               "name": "SonarCloud",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7884860709",
@@ -4554,17 +4617,6 @@
               "completed_at": "2022-08-17T18:04:54Z",
               "slug": "github-code-scanning",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7884860153,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7884860153",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-17T18:02:21Z",
-              "completed_at": "2022-08-17T18:04:50Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
             },
             {
               "id": 7877612482,
@@ -4589,12 +4641,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18858506378,
+              "id": 18861725736,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1020/",
-              "conclusion": "pending",
-              "started_at": "2022-08-22T12:35:52Z",
-              "completed_at": "2022-08-22T12:35:52Z",
+              "conclusion": "success",
+              "started_at": "2022-08-22T15:15:13Z",
+              "completed_at": "2022-08-22T15:15:13Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
