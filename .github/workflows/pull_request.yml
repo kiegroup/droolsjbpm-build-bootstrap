@@ -22,6 +22,8 @@ jobs:
       uses: actions/checkout@v3
     - name: OS Preparation
       uses: ./.ci/actions/os-preparation
+    - name: Check os matrix output
+      run: echo "Configured operating systems ${{ steps.set-os.outputs.operating_systems }}"
   build-chain:
     needs: os-prep
     concurrency:
