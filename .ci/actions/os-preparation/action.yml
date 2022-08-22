@@ -1,0 +1,20 @@
+name: 'OS Preparation'
+description: 'Prepares the Operating Systems array'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Check out droolsjbpm-build-bootstrap
+      uses: actions/checkout@v3
+      with:
+        repository: kiegroup/droolsjbpm-build-bootstrap
+        path: matrix_preparation
+    - id: set-os
+      env:
+        repo_name: ${{ github.event.repository.name }}
+        event: ${{ github.event_name }}
+        label_name: ${{ github.event.label.name }}
+      shell: bash
+      run: |
+        os=$(jq --arg repo "$repo_name" --arg event "$event" --arg event_value "$label_name" 'map(.| select(.event==$event and ((.value==null and ((.repository | index( $repo))) or (.repository==null)) or .value==$event_value)))' .ci/actions/os-preparation/matrix.json | jq "if (length > 1) then (.[] | select(.repository!=null)) else (.[] | select(.repository==null)) end | .os")
+        echo ::set-output name=operating_systems::$os
