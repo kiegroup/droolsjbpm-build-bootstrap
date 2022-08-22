@@ -10,8 +10,10 @@ runs:
         repository: kiegroup/droolsjbpm-build-bootstrap
         path: matrix_preparation
     - id: set-os
+      env:
+        repo_name: ${{ github.event.repository.name }}
+        event: ${{ github.event_name }}
+        label_name: ${{ github.event.label.name }}
       run: |
-        event=$(echo '${{ github.event_name }}')  
-        label_name=$(echo '${{ github.event.label.name }}')
-        operation_systems=$(jq --arg event "$event" --arg event_value "$label_name" 'map(. | select((.event==$event) and (.value==null or .value==$event_value)) )'  matrix.json | jq '.[] | .os' | jq -s 'flatten(1)')                
+        operating_systems=$(jq --arg repo "$repo_name" --arg event "$event" --arg event_value "$label_name" 'map(.| select(.event==$event and ((.value==null and ((.repository | index( $repo))) or (.repository==null)) or .value==$event_value)))' matrix.json | jq "if (length > 1) then (.[] | select(.repository!=null)) else (.[] | select(.repository==null)) end | .os")
         echo ::set-output name=operation_systems::$(echo $operation_systems)

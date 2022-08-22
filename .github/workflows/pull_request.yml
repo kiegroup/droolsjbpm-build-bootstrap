@@ -22,6 +22,7 @@ jobs:
       uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/os-preparation@main
   build-chain:
     needs: os-prep
+    if: needs.os-prep.outputs.os
     concurrency:
       group: pull_request-${{ github.head_ref }}
       cancel-in-progress: true
