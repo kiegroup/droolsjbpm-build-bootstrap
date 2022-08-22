@@ -24,7 +24,7 @@ jobs:
       uses: ./.ci/actions/os-preparation
   build-chain:
     needs: os-prep
-    if: needs.os-prep.outputs.os
+    # if: needs.os-prep.outputs.os
     concurrency:
       group: pull_request-${{ github.head_ref }}
       cancel-in-progress: true
