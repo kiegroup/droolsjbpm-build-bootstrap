@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-23T05:12:44.681Z",
+    "date": "2022-08-23T06:21:05.753Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2909013659"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2909292359"
   },
   "projects": [
     {
@@ -1215,7 +1215,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-08-23T02:12:38Z",
+      "updated_at": "2022-08-23T06:07:14Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -1354,7 +1354,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-08-22T05:22:29Z",
+      "updated_at": "2022-08-23T05:28:51Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -1448,6 +1448,89 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1299,
+          "title": "[7.67.x] KOGITO-7181 : Remove default password on Uberfire's CredentialsClientFactory.java",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1299",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1299",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-08-23T05:54:39Z",
+          "updated_at": "2022-08-23T05:55:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "38feb1c5692b1dde7d34ece9ea10bc70a280bead",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "KOGITO-7181-pw-7.67.x",
+            "sha": "613d518f25fe408543066874f674cbbdb2a0a7dd",
+            "label": "Rikkola:KOGITO-7181-pw-7.67.x"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 7966685186,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/7966685186?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T05:54:51Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7966685031,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/7966685031?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T05:54:48Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18873272940,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/appformer-7.67.x.pr/15/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T05:54:42Z",
+              "completed_at": "2022-08-23T05:54:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18873272947,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/appformer-7.67.x.compile/16/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T05:54:42Z",
+              "completed_at": "2022-08-23T05:54:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18873277784,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/appformer-7.67.x.fdb/11/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T05:55:12Z",
+              "completed_at": "2022-08-23T05:55:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1298,
           "title": "RHPAM-4315: EventSource yarn.lock update (#1277)",
@@ -1571,20 +1654,26 @@
           "html_url": "https://github.com/kiegroup/appformer/pull/1297",
           "state": "open",
           "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
           "created_at": "2022-08-08T12:44:26Z",
-          "updated_at": "2022-08-22T14:52:34Z",
+          "updated_at": "2022-08-23T05:53:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "9ffd43e9c826218b79ff0614bd3627be2165e7b0",
+            "sha": "63913074280fc772e1836a721128c27278f82dd5",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "KOGITO-7181-pw",
-            "sha": "a2735471c82f7f97e5aa323bb14a79fc69195587",
+            "sha": "dd33617d41243479b148ad6490275e13f24700a2",
             "label": "Rikkola:KOGITO-7181-pw"
           },
           "user": {
@@ -1594,76 +1683,44 @@
           },
           "checks": [
             {
-              "id": 7726938670,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/appformer/runs/7726938670",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-08T13:49:29Z",
-              "completed_at": "2022-08-08T13:49:30Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7726938464,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/appformer/runs/7726938464",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-08T13:45:32Z",
-              "completed_at": "2022-08-08T13:49:25Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 7725740026,
+              "id": 7966669706,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/7725740026?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-08T12:46:21Z",
-              "completed_at": "2022-08-08T13:39:20Z",
+              "html_url": "https://github.com/kiegroup/appformer/runs/7966669706?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T05:53:27Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 7725739884,
+              "id": 7966669588,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/7725739884?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-08T12:51:56Z",
-              "completed_at": "2022-08-08T14:00:15Z",
+              "html_url": "https://github.com/kiegroup/appformer/runs/7966669588?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T05:53:28Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18661601556,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/195/",
-              "conclusion": "success",
-              "started_at": "2022-08-08T13:51:06Z",
-              "completed_at": "2022-08-08T13:51:06Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 18661887682,
+              "id": 18873261363,
               "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/191/",
-              "conclusion": "success",
-              "started_at": "2022-08-08T14:07:26Z",
-              "completed_at": "2022-08-08T14:07:26Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/193/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T05:53:11Z",
+              "completed_at": "2022-08-23T05:53:11Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18863200067,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/appformer-main.fdb/153/",
-              "conclusion": "success",
-              "started_at": "2022-08-22T16:24:47Z",
-              "completed_at": "2022-08-22T16:24:47Z",
+              "id": 18873261364,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/197/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T05:53:11Z",
+              "completed_at": "2022-08-23T05:53:11Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -3683,15 +3740,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "jstastny-cz",
-              "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
-              "html_url": "https://github.com/jstastny-cz"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2021-09-07T01:44:42Z",
-          "updated_at": "2022-03-11T17:12:38Z",
+          "updated_at": "2022-08-23T05:57:07Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6326,7 +6377,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-04T07:49:07Z",
-          "updated_at": "2022-08-22T09:55:53Z",
+          "updated_at": "2022-08-23T06:09:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
