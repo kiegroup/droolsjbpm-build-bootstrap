@@ -12,7 +12,8 @@ runs:
     - name: Check out droolsjbpm-build-bootstrap
       uses: actions/checkout@v3
       with:
-        repository: kiegroup/droolsjbpm-build-bootstrap
+        repository: lampajr/droolsjbpm-build-bootstrap
+        ref: BXMSPROD-1770_os_preparation
         path: matrix_preparation
     - id: set-os
       env:
