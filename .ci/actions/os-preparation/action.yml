@@ -21,5 +21,8 @@ runs:
         label_name: ${{ github.event.label.name }}
       shell: bash
       run: |
-        os=$(jq --arg repo "$repo_name" --arg event "$event" --arg event_value "$label_name" 'map(.| select(.event==$event and ((.value==null and ((.repository | index( $repo))) or (.repository==null)) or .value==$event_value)))' .ci/actions/os-preparation/matrix.json | jq "if (length > 1) then (.[] | select(.repository!=null)) else (.[] | select(.repository==null)) end | .os")
+        os=$(jq --arg repo "$repo_name" --arg event "$event" --arg event_value "$label_name" 'map(.| select(.event==$event and ((.value==null and ((.repository | index( $repo))) or (.repository==null)) or .value==$event_value)))' $GITHUB_WORKSPACE/matrix_preparation/.ci/actions/os-preparation/matrix.json | jq "if (length > 1) then (.[] | select(.repository!=null)) else (.[] | select(.repository==null)) end | .os")
         echo "::set-output name=operating_systems::$(echo $os)"
+    - name: Printing configured operating systems
+      shell: bash
+      run: echo "Configured os array ${{ steps.set-os.outputs.operating_systems }}"
