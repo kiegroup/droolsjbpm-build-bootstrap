@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-23T07:11:02.600Z",
+    "date": "2022-08-23T08:10:03.552Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2909546883"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2909894341"
   },
   "projects": [
     {
@@ -26,10 +26,31 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2040",
           "state": "open",
           "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
           "created_at": "2022-08-22T20:21:28Z",
-          "updated_at": "2022-08-23T06:48:44Z",
+          "updated_at": "2022-08-23T08:06:05Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -39,7 +60,7 @@
           },
           "head": {
             "ref": "BXMSPROD-1770_os_preparation",
-            "sha": "8dd7abc1b4c700a25f1cb4453394b812ce4cc80c",
+            "sha": "85271135e47e521f335af2ff6e51855951b1199e",
             "label": "lampajr:BXMSPROD-1770_os_preparation"
           },
           "user": {
@@ -49,34 +70,78 @@
           },
           "checks": [
             {
-              "id": 7967372075,
-              "name": "${{ matrix.os }} - Java ${{ matrix.java-version }} - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7967372075?check_suite_focus=true",
+              "id": 7968510739,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7968510739?check_suite_focus=true",
               "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2022-08-23T06:48:59Z",
-              "completed_at": "2022-08-23T06:48:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7967369999,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7967369999?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-08-23T06:48:57Z",
-              "completed_at": "2022-08-23T06:48:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18873864394,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/577/",
               "conclusion": "success",
-              "started_at": "2022-08-23T06:54:59Z",
-              "completed_at": "2022-08-23T06:54:59Z",
+              "started_at": "2022-08-23T08:04:09Z",
+              "completed_at": "2022-08-23T08:04:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968510353,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7968510353?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-23T08:03:24Z",
+              "completed_at": "2022-08-23T08:03:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968504650,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7968504650?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-23T08:03:06Z",
+              "completed_at": "2022-08-23T08:03:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968458660,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7968458660?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-23T08:00:37Z",
+              "completed_at": "2022-08-23T08:01:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968458463,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7968458463?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-23T08:00:39Z",
+              "completed_at": "2022-08-23T08:01:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968453566,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7968453566?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-23T08:00:24Z",
+              "completed_at": "2022-08-23T08:00:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18874769819,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/580/",
+              "conclusion": "success",
+              "started_at": "2022-08-23T08:01:01Z",
+              "completed_at": "2022-08-23T08:01:01Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -103,7 +168,7 @@
             }
           ],
           "created_at": "2022-08-22T07:19:59Z",
-          "updated_at": "2022-08-23T07:07:01Z",
+          "updated_at": "2022-08-23T07:20:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1732,22 +1797,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18873261363,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/193/",
-              "conclusion": "pending",
-              "started_at": "2022-08-23T05:53:11Z",
-              "completed_at": "2022-08-23T05:53:11Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 18873895724,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/197/",
               "conclusion": "success",
               "started_at": "2022-08-23T06:57:53Z",
               "completed_at": "2022-08-23T06:57:53Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18874090829,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/193/",
+              "conclusion": "success",
+              "started_at": "2022-08-23T07:13:18Z",
+              "completed_at": "2022-08-23T07:13:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2660,6 +2725,36 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2206,
+          "title": "[RHPAM-4445] Unable to update the task description with long string(m…",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2206",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2206",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-23T07:50:05Z",
+          "updated_at": "2022-08-23T07:50:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c2831c39c3253ef220851f078c1dd3c21f1745fb",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHPAM-4445_7.67.x",
+            "sha": "e1934b4fbe2b59613ca2629092fce94a6f034787",
+            "label": "abhijithumbe:RHPAM-4445_7.67.x"
+          },
+          "user": {
+            "login": "abhijithumbe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3941203?v=4",
+            "html_url": "https://github.com/abhijithumbe"
+          },
+          "checks": []
+        },
         {
           "number": 2205,
           "title": "[JBPM-10081] Task Description field is set with the same value of Tas…",
@@ -4097,6 +4192,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2845,
+          "title": "[JBPM-10114] ISPN000474 error thrown with java.lang.ClassNotFoundException when container is created",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2845",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2845",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-23T07:45:40Z",
+          "updated_at": "2022-08-23T07:45:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a5b5418da9609ae9f675f1499ba4c3754a327fa5",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10114",
+            "sha": "00d87dce2f91d74af77b1bbdfaa7c4f2ecc9d799",
+            "label": "elguardian:JBPM-10114"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 7968220184,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7968220184?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T07:45:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968220052,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7968220052?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T07:45:51Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18874541565,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1024/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T07:45:44Z",
+              "completed_at": "2022-08-23T07:45:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2844,
           "title": "[JBPM-10101] kafka-clients misalignment with any supported AMQ Streams version",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2844",
@@ -4104,9 +4262,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "jiripetrlik",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11760511?v=4",
+              "html_url": "https://github.com/jiripetrlik"
+            }
+          ],
           "created_at": "2022-08-23T07:06:46Z",
-          "updated_at": "2022-08-23T07:06:46Z",
+          "updated_at": "2022-08-23T07:38:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6146,7 +6310,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-22T18:27:49Z",
-          "updated_at": "2022-08-23T02:22:52Z",
+          "updated_at": "2022-08-23T07:45:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6166,9 +6330,20 @@
           },
           "checks": [
             {
-              "id": 7958652033,
+              "id": 7968138707,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7968138707?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T07:41:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968138488,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7958652033?check_suite_focus=true",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7968138488?check_suite_focus=true",
               "status": "completed",
               "conclusion": "failure",
               "started_at": "2022-08-22T18:28:25Z",
@@ -6177,33 +6352,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 7958651863,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/7958651863?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-08-22T18:31:34Z",
-              "completed_at": "2022-08-22T18:33:51Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18871672053,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/228/",
-              "conclusion": "failure",
-              "started_at": "2022-08-23T02:26:28Z",
-              "completed_at": "2022-08-23T02:26:28Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 18871673985,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-common-main.fdb/92/",
               "conclusion": "failure",
               "started_at": "2022-08-23T02:26:45Z",
               "completed_at": "2022-08-23T02:26:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18874537982,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/229/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T07:45:28Z",
+              "completed_at": "2022-08-23T07:45:28Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6321,7 +6485,7 @@
             }
           ],
           "created_at": "2022-08-08T14:38:10Z",
-          "updated_at": "2022-08-22T22:00:10Z",
+          "updated_at": "2022-08-23T08:04:43Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7232,7 +7396,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-22T18:27:29Z",
-          "updated_at": "2022-08-23T03:04:49Z",
+          "updated_at": "2022-08-23T07:39:50Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7251,6 +7415,28 @@
             "html_url": "https://github.com/inodeman"
           },
           "checks": [
+            {
+              "id": 7968151470,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/7968151470?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-23T07:41:50Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7968151326,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/7968151326?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-08-23T07:41:40Z",
+              "completed_at": "2022-08-23T07:41:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 7965145427,
               "name": "SonarCloud Code Analysis",
@@ -7274,44 +7460,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 7958646340,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools-wb/runs/7958646340?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-08-22T18:27:44Z",
-              "completed_at": "2022-08-22T18:28:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7958646161,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools-wb/runs/7958646161?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-08-22T18:28:36Z",
-              "completed_at": "2022-08-22T18:28:36Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18871670082,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/drools-wb-main.fdb/16/",
-              "conclusion": "failure",
-              "started_at": "2022-08-23T02:26:12Z",
-              "completed_at": "2022-08-23T02:26:12Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 18871973883,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/drools-wb-main.pr/90/",
               "conclusion": "success",
               "started_at": "2022-08-23T03:05:56Z",
               "completed_at": "2022-08-23T03:05:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18874460015,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/drools-wb-main.fdb/17/",
+              "conclusion": "pending",
+              "started_at": "2022-08-23T07:39:51Z",
+              "completed_at": "2022-08-23T07:39:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7885,7 +8049,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-05T02:56:54Z",
-          "updated_at": "2022-08-22T10:47:08Z",
+          "updated_at": "2022-08-23T07:24:17Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
