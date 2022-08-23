@@ -18,9 +18,10 @@ jobs:
     outputs:
       os: ${{ steps.set-os.outputs.operating-systems }}
     steps:
+    - uses: actions/checkout@v3
     - name: OS Preparation
       id: set-os
-      uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/os-preparation@main
+      uses: ./.ci/actions/os-preparation
   build-chain:
     needs: os-prep
     concurrency:
