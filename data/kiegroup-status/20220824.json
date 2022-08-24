@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-24T16:20:09.250Z",
+    "date": "2022-08-24T17:10:24.195Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2920619366"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2920978948"
   },
   "projects": [
     {
@@ -331,18 +331,13 @@
               "html_url": "https://github.com/danielezonca"
             },
             {
-              "login": "Rikkola",
-              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
-              "html_url": "https://github.com/Rikkola"
-            },
-            {
               "login": "pibizza",
               "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
               "html_url": "https://github.com/pibizza"
             }
           ],
           "created_at": "2022-08-16T17:07:57Z",
-          "updated_at": "2022-08-24T14:39:25Z",
+          "updated_at": "2022-08-24T16:37:46Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1372,12 +1367,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18904882995,
+              "id": 18905001483,
               "name": "Linux - Compile Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/369/",
-              "conclusion": "pending",
-              "started_at": "2022-08-24T16:15:57Z",
-              "completed_at": "2022-08-24T16:15:57Z",
+              "conclusion": "failure",
+              "started_at": "2022-08-24T16:21:33Z",
+              "completed_at": "2022-08-24T16:21:33Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1630,6 +1625,79 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1300,
+          "title": "KOGITO-7181 : Remove default password on Uberfire's CredentialsClientFactory.java",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1300",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1300",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-08-24T16:43:10Z",
+          "updated_at": "2022-08-24T16:43:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "b85443251a17449617fd97ac6cd0d0ca5f341a77",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "KOGITO-7181-pw-7.67.x-blue",
+            "sha": "26df07bd0531ca80d023bf1c11016768123d76a1",
+            "label": "Rikkola:KOGITO-7181-pw-7.67.x-blue"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 7999961852,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/7999961852?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T16:47:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7999961690,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/7999961690?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T16:57:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18905449379,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/11/",
+              "conclusion": "pending",
+              "started_at": "2022-08-24T16:43:14Z",
+              "completed_at": "2022-08-24T16:43:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18905449435,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/9/",
+              "conclusion": "pending",
+              "started_at": "2022-08-24T16:43:14Z",
+              "completed_at": "2022-08-24T16:43:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1299,
           "title": "[7.67.x] KOGITO-7181 : Remove default password on Uberfire's CredentialsClientFactory.java",
@@ -2041,12 +2109,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18897550437,
+              "id": 18905833902,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/appformer-7.67.x.fdb/13/",
-              "conclusion": "pending",
-              "started_at": "2022-08-24T09:50:34Z",
-              "completed_at": "2022-08-24T09:50:34Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/appformer-7.67.x.fdb/12/",
+              "conclusion": "success",
+              "started_at": "2022-08-24T17:03:14Z",
+              "completed_at": "2022-08-24T17:03:14Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4240,10 +4308,10 @@
               "id": 7995412331,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7995412331?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-08-24T13:06:56Z",
-              "completed_at": null,
+              "completed_at": "2022-08-24T16:24:14Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -4251,10 +4319,10 @@
               "id": 7995412134,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7995412134?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-08-24T13:05:46Z",
-              "completed_at": null,
+              "completed_at": "2022-08-24T16:25:10Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7946,12 +8014,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18903507699,
+              "id": 18905337168,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-wb-7.67.x-blue.fdb/3/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-wb-7.67.x-blue.fdb/2/",
               "conclusion": "failure",
-              "started_at": "2022-08-24T15:15:04Z",
-              "completed_at": "2022-08-24T15:15:04Z",
+              "started_at": "2022-08-24T16:37:39Z",
+              "completed_at": "2022-08-24T16:37:39Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8009,22 +8077,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18902833970,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-wb-7.67.x.fdb/4/",
-              "conclusion": "pending",
-              "started_at": "2022-08-24T14:45:45Z",
-              "completed_at": "2022-08-24T14:45:45Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 18903301423,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-wb-7.67.x.pr/19/",
               "conclusion": "success",
               "started_at": "2022-08-24T15:06:04Z",
               "completed_at": "2022-08-24T15:06:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18905653221,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-wb-7.67.x.fdb/3/",
+              "conclusion": "success",
+              "started_at": "2022-08-24T16:53:47Z",
+              "completed_at": "2022-08-24T16:53:47Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8260,10 +8328,10 @@
               "id": 7997460164,
               "name": "ubuntu-18.04 - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/runs/7997460164?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-08-24T14:38:08Z",
-              "completed_at": null,
+              "completed_at": "2022-08-24T16:23:38Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
