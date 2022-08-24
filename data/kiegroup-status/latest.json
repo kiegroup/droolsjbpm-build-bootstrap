@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-24T18:19:38.336Z",
+    "date": "2022-08-24T19:07:48.731Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2921351072"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2921636440"
   },
   "projects": [
     {
@@ -1915,22 +1915,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18899945866,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/12/",
-              "conclusion": "pending",
-              "started_at": "2022-08-24T12:26:53Z",
-              "completed_at": "2022-08-24T12:26:53Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 18900378370,
               "name": "Linux - Compile Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/9/",
               "conclusion": "success",
               "started_at": "2022-08-24T12:51:51Z",
               "completed_at": "2022-08-24T12:51:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18908045408,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/11/",
+              "conclusion": "failure",
+              "started_at": "2022-08-24T19:04:58Z",
+              "completed_at": "2022-08-24T19:04:58Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2939,6 +2939,138 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2211,
+          "title": "[7.67.x-blue][JBPM-10039] Incorrect groups are returned when \"org.kie.server.bypass.auth.user\" is set and JAASUserGroupCallbackImpl is used",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2211",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2211",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2022-08-24T18:25:22Z",
+          "updated_at": "2022-08-24T18:25:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "c109b13988950b18579edad28d07c28545847422",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10039_7.67.x-blue",
+            "sha": "56a93cc3c7eb1edfbae97f0fea80caa02ad77e51",
+            "label": "afalhambra:JBPM-10039_7.67.x-blue"
+          },
+          "user": {
+            "login": "afalhambra",
+            "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+            "html_url": "https://github.com/afalhambra"
+          },
+          "checks": [
+            {
+              "id": 8001647126,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/8001647126?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T18:25:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8001645628,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/8001645628?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T18:25:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18907354110,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/29/",
+              "conclusion": "pending",
+              "started_at": "2022-08-24T18:25:26Z",
+              "completed_at": "2022-08-24T18:25:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2210,
+          "title": "[7.67.x][JBPM-10039] Incorrect groups are returned when \"org.kie.server.bypass.auth.user\" is set and JAASUserGroupCallbackImpl is used",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2210",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2210",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-24T18:23:20Z",
+          "updated_at": "2022-08-24T18:25:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "deb68a37c97925dba582b1113cd24dc65ce98b29",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10039_7.67.x",
+            "sha": "32ca78de980e7a275058d3df2cafd468d31602ad",
+            "label": "afalhambra:JBPM-10039_7.67.x"
+          },
+          "user": {
+            "login": "afalhambra",
+            "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+            "html_url": "https://github.com/afalhambra"
+          },
+          "checks": [
+            {
+              "id": 8001609761,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/8001609761?check_suite_focus=true",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-08-24T18:23:26Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8001609583,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/8001609583?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T18:23:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18907317573,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/86/",
+              "conclusion": "pending",
+              "started_at": "2022-08-24T18:23:25Z",
+              "completed_at": "2022-08-24T18:23:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2209,
           "title": "[JBPM-10116] Persisting WorkItemNodeInstance#triggerCount when the process instance is persisted",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2209",
@@ -2978,7 +3110,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-23T09:09:14Z",
-          "updated_at": "2022-08-23T09:10:13Z",
+          "updated_at": "2022-08-24T18:39:37Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3008,7 +3140,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-23T08:59:25Z",
-          "updated_at": "2022-08-23T09:00:37Z",
+          "updated_at": "2022-08-24T18:39:42Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4275,6 +4407,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2849,
+          "title": "[7.67.x-blue][RHPAM-4389] Add client certificate regardless of the hostname",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2849",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2849",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "ruromero",
+              "avatar_url": "https://avatars.githubusercontent.com/u/637557?v=4",
+              "html_url": "https://github.com/ruromero"
+            }
+          ],
+          "created_at": "2022-08-24T18:51:41Z",
+          "updated_at": "2022-08-24T18:51:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "6201ff8e500d1adc9c866084ee171931c7b5c20b",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-4389_7.67.x-blue",
+            "sha": "e127993d4e224a6855c4b505d53c0584a77fafbd",
+            "label": "afalhambra:RHPAM-4389_7.67.x-blue"
+          },
+          "user": {
+            "login": "afalhambra",
+            "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+            "html_url": "https://github.com/afalhambra"
+          },
+          "checks": [
+            {
+              "id": 8002080940,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8002080940?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T18:51:53Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8002080806,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8002080806?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T18:51:55Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18907813268,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/43/",
+              "conclusion": "pending",
+              "started_at": "2022-08-24T18:51:45Z",
+              "completed_at": "2022-08-24T18:51:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2848,
           "title": "RHPAM-4416: removed drools-ha module",
@@ -8648,7 +8849,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-17T12:48:07Z",
-          "updated_at": "2022-08-23T13:14:29Z",
+          "updated_at": "2022-08-24T18:45:42Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8668,12 +8869,12 @@
           },
           "checks": [
             {
-              "id": 18880330485,
+              "id": 18907949539,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/process-migration-service-7.67.x.pr/18/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/process-migration-service-7.67.x.pr/22/",
               "conclusion": "failure",
-              "started_at": "2022-08-23T13:33:32Z",
-              "completed_at": "2022-08-23T13:33:32Z",
+              "started_at": "2022-08-24T18:59:30Z",
+              "completed_at": "2022-08-24T18:59:30Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
