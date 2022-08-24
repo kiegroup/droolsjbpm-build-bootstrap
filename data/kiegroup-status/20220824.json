@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-24T12:16:16.776Z",
+    "date": "2022-08-24T13:28:01.207Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2919000388"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2919479476"
   },
   "projects": [
     {
@@ -20,222 +20,63 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2043,
-          "title": "[7.67.x-blue][BXMSPROD-1796] setup nexus repository group",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2043",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2043",
+          "number": 2044,
+          "title": "removing openshift-drools-hacep from dependencies",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2044",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2044",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "Ginxo",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-              "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2022-08-24T11:42:50Z",
-          "updated_at": "2022-08-24T12:03:45Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "be962e4cc966613659511f1bdcd326f49dc2d493",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "BXMSPROD-1796_7.67.x-blue",
-            "sha": "776774f2bb3c86cf28776607dbeabbe5e54fd378",
-            "label": "rgdoliveira:BXMSPROD-1796_7.67.x-blue"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 7993911697,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7993911697?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T12:08:14Z",
-              "completed_at": "2022-08-24T12:08:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7993911539,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7993911539?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T12:09:12Z",
-              "completed_at": "2022-08-24T12:09:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18899281225,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/19/",
-              "conclusion": "success",
-              "started_at": "2022-08-24T11:44:19Z",
-              "completed_at": "2022-08-24T11:44:19Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2042,
-          "title": "[7.67.x][BXMSPROD-1796] setup nexus repository group",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2042",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2042",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "Ginxo",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-              "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2022-08-24T11:42:27Z",
-          "updated_at": "2022-08-24T12:03:35Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "99e5c358355e40328325c3e51ce74083e4773b60",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "BXMSPROD-1796_7.67.x",
-            "sha": "2ca93e1a4b134dd21e26bc18bb87c8916df72e87",
-            "label": "rgdoliveira:BXMSPROD-1796_7.67.x"
-          },
-          "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
-          },
-          "checks": [
-            {
-              "id": 7993905104,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7993905104?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T12:06:59Z",
-              "completed_at": "2022-08-24T12:08:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7993904960,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7993904960?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T12:01:59Z",
-              "completed_at": "2022-08-24T12:03:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18899270909,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/27/",
-              "conclusion": "success",
-              "started_at": "2022-08-24T11:43:37Z",
-              "completed_at": "2022-08-24T11:43:37Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2041,
-          "title": "[BXMSPROD-1796] setup nexus repository group",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2041",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2041",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "Ginxo",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-              "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2022-08-24T11:42:02Z",
-          "updated_at": "2022-08-24T12:03:25Z",
+          "requested_reviewers": [],
+          "created_at": "2022-08-24T12:27:56Z",
+          "updated_at": "2022-08-24T13:03:49Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "359bcfcf5fd0757d3409a7d63076c4ef9fb7431d",
+            "sha": "94c4b02813cda1e062b04fb569d764b8d932a934",
             "label": "kiegroup:main"
           },
           "head": {
-            "ref": "BXMSPROD-1796_main",
-            "sha": "e037ad01a66ba08debc4995e718065c0bd5d5ba5",
-            "label": "rgdoliveira:BXMSPROD-1796_main"
+            "ref": "RHPAM-4416",
+            "sha": "bc2125696bd87b0dd5736c99bd6a069b9543afd5",
+            "label": "kiegroup:RHPAM-4416"
           },
           "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
           },
           "checks": [
             {
-              "id": 7993899564,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7993899564?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T11:44:32Z",
-              "completed_at": "2022-08-24T11:45:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7993899410,
+              "id": 7994727311,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7993899410?check_suite_focus=true",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7994727311?check_suite_focus=true",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2022-08-24T11:54:15Z",
-              "completed_at": "2022-08-24T11:55:23Z",
+              "started_at": "2022-08-24T12:28:07Z",
+              "completed_at": "2022-08-24T12:28:55Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18899258621,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/585/",
+              "id": 7994727109,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7994727109?check_suite_focus=true",
+              "status": "completed",
               "conclusion": "success",
-              "started_at": "2022-08-24T11:42:50Z",
-              "completed_at": "2022-08-24T11:42:50Z",
+              "started_at": "2022-08-24T12:28:10Z",
+              "completed_at": "2022-08-24T12:29:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18900033350,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/586/",
+              "conclusion": "success",
+              "started_at": "2022-08-24T12:32:06Z",
+              "completed_at": "2022-08-24T12:32:06Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1832,7 +1673,7 @@
             }
           ],
           "created_at": "2022-08-19T05:47:32Z",
-          "updated_at": "2022-08-24T11:21:42Z",
+          "updated_at": "2022-08-24T12:26:51Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1855,10 +1696,10 @@
               "id": 7993518083,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/runs/7993518083?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-08-24T11:23:10Z",
-              "completed_at": null,
+              "completed_at": "2022-08-24T12:13:42Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1906,22 +1747,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18898951138,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/10/",
+              "id": 18899945866,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/12/",
               "conclusion": "pending",
-              "started_at": "2022-08-24T11:21:44Z",
-              "completed_at": "2022-08-24T11:21:44Z",
+              "started_at": "2022-08-24T12:26:53Z",
+              "completed_at": "2022-08-24T12:26:53Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18899161578,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/9/",
-              "conclusion": "failure",
-              "started_at": "2022-08-24T11:36:13Z",
-              "completed_at": "2022-08-24T11:36:13Z",
+              "id": 18900378370,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/9/",
+              "conclusion": "success",
+              "started_at": "2022-08-24T12:51:51Z",
+              "completed_at": "2022-08-24T12:51:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2061,10 +1902,10 @@
               "id": 7993568858,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/runs/7993568858?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-08-24T11:32:45Z",
-              "completed_at": null,
+              "completed_at": "2022-08-24T12:20:42Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -4267,6 +4108,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2848,
+          "title": "RHPAM-4416: removed drools-ha module",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2848",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2848",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-24T13:03:33Z",
+          "updated_at": "2022-08-24T13:03:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c53c7e9630bcefb7bfd5c1b90a6515a065327400",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4416",
+            "sha": "baeaae0ea888eae55b76990e7a82350e1333fd98",
+            "label": "kiegroup:RHPAM-4416"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 7995412331,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7995412331?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T13:06:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 7995412134,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/7995412134?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-24T13:05:46Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18900601378,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1031/",
+              "conclusion": "pending",
+              "started_at": "2022-08-24T13:03:37Z",
+              "completed_at": "2022-08-24T13:03:37Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2845,
           "title": "[JBPM-10114] ISPN000474 error thrown with java.lang.ClassNotFoundException when container is created",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2845",
@@ -4339,7 +4243,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-23T07:06:46Z",
-          "updated_at": "2022-08-24T09:45:00Z",
+          "updated_at": "2022-08-24T12:33:12Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6253,7 +6157,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-04T07:49:07Z",
-          "updated_at": "2022-08-24T11:26:42Z",
+          "updated_at": "2022-08-24T12:56:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7748,12 +7652,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18899531717,
+              "id": 18900524468,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/136/",
-              "conclusion": "pending",
-              "started_at": "2022-08-24T12:01:17Z",
-              "completed_at": "2022-08-24T12:01:17Z",
+              "conclusion": "success",
+              "started_at": "2022-08-24T12:59:46Z",
+              "completed_at": "2022-08-24T12:59:46Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
