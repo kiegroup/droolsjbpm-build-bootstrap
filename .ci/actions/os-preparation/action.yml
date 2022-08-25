@@ -35,7 +35,12 @@ runs:
       shell: bash
       run: |
         os=$(jq --arg config_file "$config_file" --arg repo "$repo_name" --arg event "$event" --arg event_value "$label_name" 'map(.| select(.event==$event and ((.value==null and ((.repository | index( $repo))) or (.repository==null)) or .value==$event_value)))' $GITHUB_WORKSPACE/$config_file | jq "if (length > 1) then (.[] | select(.repository!=null)) else (.[] | select(.repository==null)) end | .os")
-        [[! -z "os"]] && echo "No configuration found for [repo=$repo_name, event=$event, value=$label_name] at $GITHUB_WORKSPACE/$config_file" && exit 1 || echo "::set-output name=operating_systems::$(echo $os)"
+        if [ -z "$os"]; then 
+          echo "No configuration found for [repo=$repo_name, event=$event, value=$label_name] at $GITHUB_WORKSPACE/$config_file"
+          exit 1
+        else 
+          echo "::set-output name=operating_systems::$(echo $os)" 
+        fi
     - name: Printing configured operating systems
       shell: bash
       run: echo "Configured os array ${{ steps.set-os.outputs.operating_systems }}"
