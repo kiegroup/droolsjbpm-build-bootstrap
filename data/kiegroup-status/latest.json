@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-26T09:07:10.523Z",
+    "date": "2022-08-26T10:07:53.360Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2932567771"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2932920866"
   },
   "projects": [
     {
@@ -20,27 +20,33 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2044,
-          "title": "removing openshift-drools-hacep from dependencies",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2044",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2044",
+          "number": 2049,
+          "title": "[7.67.x-blue] RHPAM-4416 removal openshift-drools-hacep repository from build dependencies",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2049",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2049",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-08-24T12:27:56Z",
-          "updated_at": "2022-08-26T09:06:14Z",
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-08-26T09:29:15Z",
+          "updated_at": "2022-08-26T09:35:55Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "94c4b02813cda1e062b04fb569d764b8d932a934",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "07fb7b07f956e5725ce16fa7ecc96bd8d9ead753",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "RHPAM-4416",
-            "sha": "bc2125696bd87b0dd5736c99bd6a069b9543afd5",
-            "label": "kiegroup:RHPAM-4416"
+            "ref": "7.67.x-blue-RHPAM-4416",
+            "sha": "afca8239b07fc74de1b4008b8cc75c1893a8bbcb",
+            "label": "mareknovotny:7.67.x-blue-RHPAM-4416"
           },
           "user": {
             "login": "mareknovotny",
@@ -49,34 +55,127 @@
           },
           "checks": [
             {
-              "id": 7994727311,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7994727311?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T12:28:07Z",
-              "completed_at": "2022-08-24T12:28:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 7994727109,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/7994727109?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-24T12:28:10Z",
-              "completed_at": "2022-08-24T12:29:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18900033350,
+              "id": 18937994677,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/586/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/21/",
               "conclusion": "success",
-              "started_at": "2022-08-24T12:32:06Z",
-              "completed_at": "2022-08-24T12:32:06Z",
+              "started_at": "2022-08-26T09:31:06Z",
+              "completed_at": "2022-08-26T09:31:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2048,
+          "title": "[Build Chain] Update build chain and repository-list files.",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2048",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2048",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mbiarnes",
+              "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+              "html_url": "https://github.com/mbiarnes"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-08-26T09:22:12Z",
+          "updated_at": "2022-08-26T09:22:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "4009ca663fd12945dce088892dee31a9c693110e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "generate_files_20220826T092210",
+            "sha": "e107aa3b565cf6a4ffeadf847fa691a7cae52528",
+            "label": "kiegroup:generate_files_20220826T092210"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2047,
+          "title": "[7.67.x] RHPAM-4416 removing openshift-drools-hacep from dependencies",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2047",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2047",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-08-26T09:13:54Z",
+          "updated_at": "2022-08-26T09:35:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c1661ec1f443ae68b9d9177220dc20534bab6eb3",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x-RHPAM-4416",
+            "sha": "80a290613f2d43df6f21bb094c7f2461c6d765da",
+            "label": "mareknovotny:7.67.x-RHPAM-4416"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 8033345096,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8033345096?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-26T09:14:05Z",
+              "completed_at": "2022-08-26T09:15:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8033344916,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8033344916?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-26T09:14:08Z",
+              "completed_at": "2022-08-26T09:15:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18937770415,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/29/",
+              "conclusion": "success",
+              "started_at": "2022-08-26T09:15:39Z",
+              "completed_at": "2022-08-26T09:15:39Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1552,7 +1651,7 @@
             }
           ],
           "created_at": "2022-08-19T05:47:32Z",
-          "updated_at": "2022-08-25T11:48:22Z",
+          "updated_at": "2022-08-26T09:34:02Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3475,27 +3574,33 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2850,
-          "title": "RHPAM-4416: removed drools-ha module",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2850",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2850",
+          "number": 2854,
+          "title": "[7.67.x-blue] RHPAM-4416: removal of Drools-ha IT module",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2854",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2854",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-08-25T07:58:10Z",
-          "updated_at": "2022-08-25T15:24:09Z",
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-08-26T09:29:40Z",
+          "updated_at": "2022-08-26T09:38:35Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "20a519cbe83102f7f96e07b728c59ec22c3ffb43",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "c30879d23afc5779f992c3e10894042dede7334b",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "RHPAM-4416",
-            "sha": "4916c68b013e90861641827296a852a0fafc46ee",
-            "label": "mareknovotny:RHPAM-4416"
+            "ref": "7.67.x-blue-RHPAM-4416",
+            "sha": "5bf8190a83916a0e26c21371c1660b04fb7802ff",
+            "label": "mareknovotny:7.67.x-blue-RHPAM-4416"
           },
           "user": {
             "login": "mareknovotny",
@@ -3504,56 +3609,81 @@
           },
           "checks": [
             {
-              "id": 8014549818,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8014549818",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-25T11:13:36Z",
-              "completed_at": "2022-08-25T11:13:37Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8014548974,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8014548974",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-25T11:10:43Z",
-              "completed_at": "2022-08-25T11:13:32Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 8011170206,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8011170206?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-08-25T08:00:09Z",
-              "completed_at": "2022-08-25T11:10:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8011170048,
+              "id": 8033599205,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8011170048?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-08-25T07:58:24Z",
-              "completed_at": "2022-08-25T11:09:51Z",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8033599205?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-26T09:29:53Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18919684724,
+              "id": 8033599039,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8033599039?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-26T09:29:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18937975076,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1032/",
-              "conclusion": "success",
-              "started_at": "2022-08-25T11:15:34Z",
-              "completed_at": "2022-08-25T11:15:34Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/51/",
+              "conclusion": "pending",
+              "started_at": "2022-08-26T09:29:44Z",
+              "completed_at": "2022-08-26T09:29:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2853,
+          "title": "[7.67.x] RHPAM-4416 removal of hacep IT module",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2853",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2853",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2022-08-26T09:18:18Z",
+          "updated_at": "2022-08-26T09:38:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "db546b2df366d7d128c4313633d91887159da093",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x-RHPAM-4416",
+            "sha": "f4cbe7ddb9561831a8fdae1f39cbd31c21d1a2f4",
+            "label": "mareknovotny:7.67.x-RHPAM-4416"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 18937811503,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/76/",
+              "conclusion": "pending",
+              "started_at": "2022-08-26T09:18:33Z",
+              "completed_at": "2022-08-26T09:18:33Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6154,53 +6284,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
-        },
-        {
-          "number": 1432,
-          "title": "Use containsOnly instead of containsExactly in ProcessInstanceListBasicFiltersPresenterTest",
-          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1432",
-          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1432",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "bxf12315",
-              "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
-              "html_url": "https://github.com/bxf12315"
-            }
-          ],
-          "created_at": "2020-05-11T15:23:23Z",
-          "updated_at": "2022-08-26T06:14:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0901fbeb3a987669e6a462b15e314aaf93068bea",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "use-containsOnly",
-            "sha": "e2e32c77d7e5c5651cbf7652b9bda9765d1ca14d",
-            "label": "cpugputpu:use-containsOnly"
-          },
-          "user": {
-            "login": "cpugputpu",
-            "avatar_url": "https://avatars.githubusercontent.com/u/61071746?v=4",
-            "html_url": "https://github.com/cpugputpu"
-          },
-          "checks": [
-            {
-              "id": 18921416750,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/140/",
-              "conclusion": "success",
-              "started_at": "2022-08-25T13:03:49Z",
-              "completed_at": "2022-08-25T13:03:49Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
         }
       ]
     },
@@ -6594,19 +6677,6 @@
           ]
         }
       ]
-    },
-    {
-      "key": "kiegroup/openshift-drools-hacep",
-      "name": "openshift-drools-hacep",
-      "description": "openshift-drools-hacep",
-      "html_url": "https://github.com/kiegroup/openshift-drools-hacep",
-      "updated_at": "2022-03-16T18:14:09Z",
-      "homepage": "",
-      "language": "Shell",
-      "default_branch": "main",
-      "repo_url": "https://github.com/kiegroup/openshift-drools-hacep",
-      "pulls_url": "https://api.github.com/repos/kiegroup/openshift-drools-hacep/pulls{/number}",
-      "pullRequests": []
     },
     {
       "key": "kiegroup/process-migration-service",
