@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
-      - 7.48.x
+      - 7.67.x
+      - 7.67.x-blue
     paths:
-      - '.ci/**'
+      - '.ci/pull-request-config.yaml'
+      - '.ci/project-dependencies.yaml'
 
 jobs:
   build-chain:
@@ -74,7 +76,7 @@ jobs:
           signoff: false
           branch: ${{ env.BRANCH_NAME_FLOW }}
           delete-branch: true
-          title: '[Build Chain] Update build chain and repository-list files.'
+          title: "[${{ env.GITHUB_REF_NAME }}][Build Chain] Update build chain and repository-list files."
           body: |
             # Update Report
             **Pull Request created by:** ${{ steps.build_chain_info.outputs.jobURL }}
