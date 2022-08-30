@@ -1,4 +1,4 @@
-Developing Drools and jBPM
+Developing Drools and jBPM 
 ==========================
 
 **If you want to build or contribute to a kiegroup project, read this document.**
