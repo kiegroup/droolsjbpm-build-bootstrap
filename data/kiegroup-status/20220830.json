@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-30T05:22:31.220Z",
+    "date": "2022-08-30T06:42:45.342Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2953725507"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2954064909"
   },
   "projects": [
     {
@@ -19,6 +19,115 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2058,
+          "title": "[7.67.x] jbpm-designer dependecie management removal",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2058",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2058",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "romartin",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4602417?v=4",
+              "html_url": "https://github.com/romartin"
+            },
+            {
+              "login": "LuboTerifaj",
+              "avatar_url": "https://avatars.githubusercontent.com/u/12122769?v=4",
+              "html_url": "https://github.com/LuboTerifaj"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            },
+            {
+              "login": "inodeman",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39567766?v=4",
+              "html_url": "https://github.com/inodeman"
+            }
+          ],
+          "created_at": "2022-08-30T06:14:34Z",
+          "updated_at": "2022-08-30T06:20:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2e730d6f682eb0cb9358aff4d682feb94e9d2027",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "jbpm-designer_removal",
+            "sha": "0ca5c0c9c87ccf860c5d756f1e93a6dc8a1049b9",
+            "label": "Ginxo:jbpm-designer_removal"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8085658982,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8085658982?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-30T06:14:47Z",
+              "completed_at": "2022-08-30T06:15:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8085658882,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8085658882?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-30T06:14:46Z",
+              "completed_at": "2022-08-30T06:15:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18978014897,
+              "name": "Linux - Full Downstream Production Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdbp/job/droolsjbpm-build-bootstrap-7.67.x.fdbp/1/",
+              "conclusion": "pending",
+              "started_at": "2022-08-30T06:20:28Z",
+              "completed_at": "2022-08-30T06:20:28Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18978014924,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/25/",
+              "conclusion": "pending",
+              "started_at": "2022-08-30T06:20:28Z",
+              "completed_at": "2022-08-30T06:20:28Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 18978055025,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/31/",
+              "conclusion": "success",
+              "started_at": "2022-08-30T06:24:24Z",
+              "completed_at": "2022-08-30T06:24:24Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2051,
           "title": "[BXMSPROD-1798] Own property for lienzo version",
@@ -1589,7 +1698,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-08-29T12:07:32Z",
+      "updated_at": "2022-08-30T05:29:34Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -6180,6 +6289,95 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1562,
+          "title": "jbpm-designer dependecies removal",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1562",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1562",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "romartin",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4602417?v=4",
+              "html_url": "https://github.com/romartin"
+            },
+            {
+              "login": "LuboTerifaj",
+              "avatar_url": "https://avatars.githubusercontent.com/u/12122769?v=4",
+              "html_url": "https://github.com/LuboTerifaj"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            },
+            {
+              "login": "inodeman",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39567766?v=4",
+              "html_url": "https://github.com/inodeman"
+            }
+          ],
+          "created_at": "2022-08-30T06:16:02Z",
+          "updated_at": "2022-08-30T06:20:42Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "138ac39a9f05ed9f585d862f2c0dc29d54fa44c3",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "jbpm-designer_removal",
+            "sha": "3a7f4b6a8a5c413c04f25abab322255c6d61643e",
+            "label": "Ginxo:jbpm-designer_removal"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8085675440,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8085675440?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-30T06:16:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8085675196,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8085675196?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-30T06:16:16Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18978017722,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-wb-7.67.x.pr/20/",
+              "conclusion": "pending",
+              "started_at": "2022-08-30T06:20:44Z",
+              "completed_at": "2022-08-30T06:20:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1561,
           "title": "RHPAM-4455 org.w3c:dom dependency to jbpm-wb",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1561",
@@ -6449,7 +6647,7 @@
       "name": "optaweb-vehicle-routing",
       "description": "Web application for solving the Vehicle Routing Problem using OptaPlanner",
       "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing",
-      "updated_at": "2022-08-28T10:08:42Z",
+      "updated_at": "2022-08-30T05:47:31Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
