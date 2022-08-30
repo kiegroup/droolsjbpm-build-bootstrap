@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-30T18:09:09.487Z",
+    "date": "2022-08-30T19:05:36.521Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2958511456"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2958843910"
   },
   "projects": [
     {
@@ -19,6 +19,47 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2059,
+          "title": "test PR",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2059",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2059",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-30T18:40:01Z",
+          "updated_at": "2022-08-30T18:40:01Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c1f40316119a5e65e80728f19ac0df92d95d42a2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_test_pr",
+            "sha": "1a3c6f6d7db29cd0562b139c6d0827ef4b2ad0ab",
+            "label": "rgdoliveira:main_test_pr"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 18991333613,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/602/",
+              "conclusion": "failure",
+              "started_at": "2022-08-30T18:43:05Z",
+              "completed_at": "2022-08-30T18:43:05Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2058,
           "title": "[7.67.x] jbpm-designer dependecie management removal",
@@ -6327,10 +6368,10 @@
               "id": 8091774132,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8091774132?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-08-30T12:19:39Z",
-              "completed_at": null,
+              "completed_at": "2022-08-30T18:20:23Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -6338,9 +6379,9 @@
               "id": 8091773938,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8091773938?check_suite_focus=true",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-08-30T12:18:59Z",
+              "started_at": "2022-08-30T18:20:32Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
