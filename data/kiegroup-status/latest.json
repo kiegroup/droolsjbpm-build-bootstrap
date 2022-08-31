@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-31T05:24:22.379Z",
+    "date": "2022-08-31T06:53:56.042Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2961489080"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2961818971"
   },
   "projects": [
     {
@@ -20,6 +20,59 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2061,
+          "title": "[7.67.x-blue] jbpm-designer dependecie management removal (#2058)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2061",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2061",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-31T05:24:52Z",
+          "updated_at": "2022-08-31T06:05:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "114aeecdd2f699eeaef3bd08db5d4d586e98fbb1",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "jbpm-designer_removal-blue",
+            "sha": "9b5f4c4519764d46f3788ee6db08f41ce277b181",
+            "label": "Ginxo:jbpm-designer_removal-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8106916087,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8106916087?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-31T05:25:04Z",
+              "completed_at": "2022-08-31T05:26:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8106916010,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8106916010?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-31T05:25:03Z",
+              "completed_at": "2022-08-31T05:25:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2060,
           "title": "jbpm-designer dependecie management removal",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2060",
@@ -29,7 +82,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-31T05:21:43Z",
-          "updated_at": "2022-08-31T05:23:04Z",
+          "updated_at": "2022-08-31T06:06:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -82,7 +135,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-30T18:40:01Z",
-          "updated_at": "2022-08-30T21:29:47Z",
+          "updated_at": "2022-08-31T06:20:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -112,12 +165,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18994331324,
+              "id": 18999193994,
               "name": "Linux - Full Downstream Production Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdbp/job/droolsjbpm-build-bootstrap-main.fdbp/22/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdbp/job/droolsjbpm-build-bootstrap-main.fdbp/23/",
               "conclusion": "failure",
-              "started_at": "2022-08-30T21:34:01Z",
-              "completed_at": "2022-08-30T21:34:01Z",
+              "started_at": "2022-08-31T06:24:51Z",
+              "completed_at": "2022-08-31T06:24:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -130,10 +183,26 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2051",
           "state": "open",
           "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
           "created_at": "2022-08-26T14:42:45Z",
-          "updated_at": "2022-08-29T14:53:01Z",
+          "updated_at": "2022-08-31T06:36:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -152,6 +221,28 @@
             "html_url": "https://github.com/lampajr"
           },
           "checks": [
+            {
+              "id": 8107600308,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8107600308?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-31T06:41:47Z",
+              "completed_at": "2022-08-31T06:42:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8107600217,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8107600217?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-31T06:46:17Z",
+              "completed_at": "2022-08-31T06:47:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 8073402747,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -1693,7 +1784,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-08-31T03:30:39Z",
+      "updated_at": "2022-08-31T06:44:07Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -1794,10 +1885,26 @@
           "html_url": "https://github.com/kiegroup/appformer/pull/1301",
           "state": "open",
           "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
           "created_at": "2022-08-26T14:40:25Z",
-          "updated_at": "2022-08-26T16:37:49Z",
+          "updated_at": "2022-08-31T06:36:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1807,7 +1914,7 @@
           },
           "head": {
             "ref": "BXMSPROD-1798_lienzo_version",
-            "sha": "4538d25f6acf97d28b4f3ba9d22e36f6df808685",
+            "sha": "1b1cdd2166d35f0f182e7742e958dd193be5a4d0",
             "label": "lampajr:BXMSPROD-1798_lienzo_version"
           },
           "user": {
@@ -1817,66 +1924,66 @@
           },
           "checks": [
             {
-              "id": 8040757474,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/appformer/runs/8040757474",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-26T16:37:52Z",
-              "completed_at": "2022-08-26T16:37:52Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8040756856,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/appformer/runs/8040756856",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-26T16:34:27Z",
-              "completed_at": "2022-08-26T16:37:48Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 8039838672,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/8039838672?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-08-26T15:43:01Z",
-              "completed_at": "2022-08-26T16:43:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8039838489,
+              "id": 8107635241,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/runs/8039838489?check_suite_focus=true",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-08-26T15:43:00Z",
-              "completed_at": "2022-08-26T16:29:22Z",
+              "html_url": "https://github.com/kiegroup/appformer/runs/8107635241?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-31T06:42:57Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18944712574,
+              "id": 8107635173,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/8107635173?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-31T06:39:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8107631817,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/8107631817?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-08-31T06:36:41Z",
+              "completed_at": "2022-08-31T06:36:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8107631742,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/runs/8107631742?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-08-31T06:36:42Z",
+              "completed_at": "2022-08-31T06:36:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18999334188,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/199/",
-              "conclusion": "success",
-              "started_at": "2022-08-26T16:39:14Z",
-              "completed_at": "2022-08-26T16:39:14Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/200/",
+              "conclusion": "failure",
+              "started_at": "2022-08-31T06:38:54Z",
+              "completed_at": "2022-08-31T06:38:54Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 18945393437,
+              "id": 18999345483,
               "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/195/",
-              "conclusion": "success",
-              "started_at": "2022-08-26T17:22:59Z",
-              "completed_at": "2022-08-26T17:22:59Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/196/",
+              "conclusion": "failure",
+              "started_at": "2022-08-31T06:39:57Z",
+              "completed_at": "2022-08-31T06:39:57Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6284,6 +6391,59 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1564,
+          "title": "[7.67.x-blue] jbpm-designer dependecies removal (#1562)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1564",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1564",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-31T05:24:24Z",
+          "updated_at": "2022-08-31T06:07:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "7d3470e40b4fab7638547439c455bb1b48869ea8",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "jbpm-designer_removal-blue",
+            "sha": "294169b270d3d47ecd3db933225f52d3e982bc4a",
+            "label": "Ginxo:jbpm-designer_removal-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8106912065,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8106912065?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-31T05:24:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8106912011,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8106912011?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-31T05:24:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 1563,
           "title": "jbpm-designer dependecies removal",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1563",
@@ -6293,7 +6453,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-31T05:22:08Z",
-          "updated_at": "2022-08-31T05:22:50Z",
+          "updated_at": "2022-08-31T06:06:51Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
