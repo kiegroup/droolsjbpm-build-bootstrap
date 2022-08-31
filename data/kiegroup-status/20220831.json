@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-08-31T03:49:50.399Z",
+    "date": "2022-08-31T05:24:22.379Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2961164029"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2961489080"
   },
   "projects": [
     {
@@ -19,6 +19,59 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2060,
+          "title": "jbpm-designer dependecie management removal",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2060",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2060",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-31T05:21:43Z",
+          "updated_at": "2022-08-31T05:23:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c1f40316119a5e65e80728f19ac0df92d95d42a2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "jbpm-designer_removal-main",
+            "sha": "548b1334cf4f63612802bdc250c8ad1cf4c639b0",
+            "label": "Ginxo:jbpm-designer_removal-main"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8106890569,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8106890569?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-31T05:21:55Z",
+              "completed_at": "2022-08-31T05:23:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8106890514,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/runs/8106890514?check_suite_focus=true",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-08-31T05:21:53Z",
+              "completed_at": "2022-08-31T05:23:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2059,
           "title": "test PR",
@@ -6230,6 +6283,59 @@
       "repo_url": "https://github.com/kiegroup/jbpm-wb",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1563,
+          "title": "jbpm-designer dependecies removal",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1563",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1563",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-08-31T05:22:08Z",
+          "updated_at": "2022-08-31T05:22:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3a745375b1a1094183b67aa03fceaf1a7616a405",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "jbpm-designer_removal-main",
+            "sha": "b817e32d2a89ac760f30774cf004b24b063414b7",
+            "label": "Ginxo:jbpm-designer_removal-main"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8106894272,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8106894272?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-31T05:22:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8106894202,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8106894202?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-08-31T05:22:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 1561,
           "title": "RHPAM-4455 org.w3c:dom dependency to jbpm-wb",
