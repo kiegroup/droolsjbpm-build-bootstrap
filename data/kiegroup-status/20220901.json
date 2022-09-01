@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-09-01T18:10:05.393Z",
+    "date": "2022-09-01T19:05:16.801Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2973927431"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2974253370"
   },
   "projects": [
     {
@@ -1534,10 +1534,10 @@
               "id": 8140780796,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/runs/8140780796?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-09-01T16:55:55Z",
-              "completed_at": null,
+              "completed_at": "2022-09-01T18:34:34Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1575,16 +1575,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19031112086,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/378/",
-              "conclusion": "pending",
-              "started_at": "2022-09-01T16:55:35Z",
-              "completed_at": "2022-09-01T16:55:35Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 19031129273,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/drools-7.x.fdb/52/",
@@ -1601,6 +1591,16 @@
               "conclusion": "success",
               "started_at": "2022-09-01T17:59:09Z",
               "completed_at": "2022-09-01T17:59:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19032707085,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/378/",
+              "conclusion": "success",
+              "started_at": "2022-09-01T18:21:32Z",
+              "completed_at": "2022-09-01T18:21:32Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -3198,7 +3198,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-08-31T15:29:26Z",
-          "updated_at": "2022-09-01T16:34:21Z",
+          "updated_at": "2022-09-01T18:53:56Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3254,10 +3254,10 @@
               "id": 8135392594,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/runs/8135392594?check_suite_focus=true",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-09-01T12:43:19Z",
-              "completed_at": null,
+              "completed_at": "2022-09-01T18:43:29Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -4304,6 +4304,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2858,
+          "title": "[JBPM-10118] Test Wrap into CDATA to avoid escape chars in SOAP headers",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2858",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2858",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2022-09-01T18:52:19Z",
+          "updated_at": "2022-09-01T18:52:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "74f13380afc8a8a2b92cb30e95aa4843344175b2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10118",
+            "sha": "dd6b6f98500e44c6faeedc29d3df9cf63e7ddaaf",
+            "label": "gmunozfe:JBPM-10118"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 8142838682,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8142838682?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T18:52:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8142838539,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/8142838539?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T18:52:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19033244257,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1041/",
+              "conclusion": "pending",
+              "started_at": "2022-09-01T18:52:26Z",
+              "completed_at": "2022-09-01T18:52:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2845,
           "title": "[JBPM-10114] ISPN000474 error thrown with java.lang.ClassNotFoundException when container is created",
