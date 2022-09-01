@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-09-01T05:06:30.804Z",
+    "date": "2022-09-01T06:19:05.382Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2969032778"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/2969338629"
   },
   "projects": [
     {
@@ -1890,7 +1890,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-08-31T06:44:07Z",
+      "updated_at": "2022-09-01T05:24:15Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -5459,6 +5459,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3772,
+          "title": "Revert \"RHPAM-4387 xml-apis:xml-apis excluded (#3742)\"",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3772",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3772",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-09-01T05:35:27Z",
+          "updated_at": "2022-09-01T05:36:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b80973707c6a01197d6744ea70240441eb0423f9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "remove_xml-apis/main",
+            "sha": "3528308dbd3f436ce05ad284cf819f640f0b10d5",
+            "label": "Ginxo:remove_xml-apis/main"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8128367563,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/8128367563?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T05:35:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8128367492,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/8128367492?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T05:35:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19019514714,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/238/",
+              "conclusion": "pending",
+              "started_at": "2022-09-01T05:35:32Z",
+              "completed_at": "2022-09-01T05:35:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3769,
           "title": "DROOLS-7105 DMN upgrade to Antlr 4.10",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3769",
@@ -6117,6 +6180,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1553,
+          "title": "Revert \"RHPAM-4387 xml-apis:xml-apis excluded (#1543)\"",
+          "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1553",
+          "html_url": "https://github.com/kiegroup/drools-wb/pull/1553",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-09-01T05:36:04Z",
+          "updated_at": "2022-09-01T05:36:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b2ce3c94873bf672298370aeed646c7844dbc5dc",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "remove_xml-apis/main",
+            "sha": "c05c711c7a1728a42bf7c0bd98b279abeacdeeb5",
+            "label": "Ginxo:remove_xml-apis/main"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8128372932,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/8128372932?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T05:36:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8128372811,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/8128372811?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T05:36:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19019542495,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/drools-wb-main.pr/94/",
+              "conclusion": "failure",
+              "started_at": "2022-09-01T05:39:34Z",
+              "completed_at": "2022-09-01T05:39:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1552,
           "title": "DROOLS-7105 DMN upgrade to Antlr 4.10",
           "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1552",
@@ -6768,6 +6894,79 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1568,
+          "title": "Revert \"RHPAM-4387 xml-apis:xml-apis excluded (#1550)\"",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1568",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1568",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-09-01T05:35:38Z",
+          "updated_at": "2022-09-01T05:38:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "85bc96e24c71f2c6aa3357f3d0e05b7c88fde413",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "remove_xml-apis/main",
+            "sha": "c7aa2a37ea4040f4cfc5a935f230f8ba8f6fe355",
+            "label": "Ginxo:remove_xml-apis/main"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8128368926,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8128368926?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T05:35:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8128368849,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/runs/8128368849?check_suite_focus=true",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-01T05:35:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19019515845,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/147/",
+              "conclusion": "pending",
+              "started_at": "2022-09-01T05:35:42Z",
+              "completed_at": "2022-09-01T05:35:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19019522873,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/jbpm-wb-main.fdb/45/",
+              "conclusion": "pending",
+              "started_at": "2022-09-01T05:36:47Z",
+              "completed_at": "2022-09-01T05:36:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1567,
           "title": "[RHPAM-4455] xml-api exclusion removed. JDK8 compatible",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1567",
@@ -6785,15 +6984,10 @@
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2022-09-01T04:55:05Z",
-          "updated_at": "2022-09-01T05:01:55Z",
+          "updated_at": "2022-09-01T06:11:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6835,12 +7029,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19019204508,
+              "id": 19019577004,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/146/",
-              "conclusion": "pending",
-              "started_at": "2022-09-01T04:55:09Z",
-              "completed_at": "2022-09-01T04:55:09Z",
+              "conclusion": "success",
+              "started_at": "2022-09-01T05:43:52Z",
+              "completed_at": "2022-09-01T05:43:52Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6864,15 +7058,10 @@
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2022-09-01T04:55:03Z",
-          "updated_at": "2022-09-01T05:02:06Z",
+          "updated_at": "2022-09-01T06:09:44Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6892,12 +7081,12 @@
           },
           "checks": [
             {
-              "id": 19019205704,
+              "id": 19019557009,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-wb-7.67.x-blue.pr/13/",
-              "conclusion": "pending",
-              "started_at": "2022-09-01T04:55:22Z",
-              "completed_at": "2022-09-01T04:55:22Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/145/",
+              "conclusion": "success",
+              "started_at": "2022-09-01T05:41:25Z",
+              "completed_at": "2022-09-01T05:41:25Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6921,15 +7110,10 @@
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2022-08-31T20:59:00Z",
-          "updated_at": "2022-09-01T05:00:53Z",
+          "updated_at": "2022-09-01T06:09:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7013,7 +7197,7 @@
             }
           ],
           "created_at": "2022-08-29T13:37:19Z",
-          "updated_at": "2022-08-31T14:09:01Z",
+          "updated_at": "2022-09-01T06:08:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
