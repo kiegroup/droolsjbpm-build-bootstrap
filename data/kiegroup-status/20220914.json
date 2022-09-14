@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-09-14T05:16:44.943Z",
+    "date": "2022-09-14T06:42:22.158Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050321155"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050664628"
   },
   "projects": [
     {
@@ -19,6 +19,243 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2073,
+          "title": "[7.67.x-blue] [RHPAM-4505] ClassNotFoundException when creating container in Kie se…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2073",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2073",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2022-09-14T06:14:44Z",
+          "updated_at": "2022-09-14T06:33:24Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "bb6bedd79ba97549c5d794be1ae6bba0470283c4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-4505-redhat-build-7.67.x-blue",
+            "sha": "6879076aeb1cb324fe3b5667f89d1a98f85c6d7b",
+            "label": "tkobayas:RHPAM-4505-redhat-build-7.67.x-blue"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 8343799682,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050539330/jobs/4917735472",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:14:56Z",
+              "completed_at": "2022-09-14T06:15:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8343799590,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050539330/jobs/4917735401",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:14:59Z",
+              "completed_at": "2022-09-14T06:16:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19203060386,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/42/",
+              "conclusion": "pending",
+              "started_at": "2022-09-14T06:15:15Z",
+              "completed_at": "2022-09-14T06:15:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19203062611,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/27/",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:15:29Z",
+              "completed_at": "2022-09-14T06:15:29Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2072,
+          "title": "[7.67.x] [RHPAM-4505] ClassNotFoundException when creating container in Kie se…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2072",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2072",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2022-09-14T06:08:38Z",
+          "updated_at": "2022-09-14T06:33:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "d1bc54edd241dfd9630d3d9405caef9490cc56da",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHPAM-4505-redhat-build-7.67.x",
+            "sha": "5b401048a57ffafc6678f6acad2f76b8b8f53f47",
+            "label": "tkobayas:RHPAM-4505-redhat-build-7.67.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 8343734714,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050514300/jobs/4917685564",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:08:51Z",
+              "completed_at": "2022-09-14T06:09:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8343734567,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050514300/jobs/4917685439",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:08:49Z",
+              "completed_at": "2022-09-14T06:09:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19203001996,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/47/",
+              "conclusion": "pending",
+              "started_at": "2022-09-14T06:08:59Z",
+              "completed_at": "2022-09-14T06:08:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19203006811,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/34/",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:09:26Z",
+              "completed_at": "2022-09-14T06:09:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2071,
+          "title": "[RHPAM-4505] ClassNotFoundException when creating container in Kie se…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2071",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2071",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2022-09-14T06:01:02Z",
+          "updated_at": "2022-09-14T06:33:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0d99ebb60ca689d2b6d82482b979f730ed3d7ea4",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4505-redhat-build-7.x",
+            "sha": "c226add7aaebe21d64a276cc5e960c9b5e09d897",
+            "label": "tkobayas:RHPAM-4505-redhat-build-7.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 8343654245,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050481982/jobs/4917624614",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:01:16Z",
+              "completed_at": "2022-09-14T06:02:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8343654165,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3050481982/jobs/4917624553",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:01:15Z",
+              "completed_at": "2022-09-14T06:02:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19202931718,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/538/",
+              "conclusion": "pending",
+              "started_at": "2022-09-14T06:01:22Z",
+              "completed_at": "2022-09-14T06:01:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19202944180,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/616/",
+              "conclusion": "success",
+              "started_at": "2022-09-14T06:02:44Z",
+              "completed_at": "2022-09-14T06:02:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2070,
           "title": "[DO-NOT-MERGE] test redhat build",
@@ -583,7 +820,7 @@
             }
           ],
           "created_at": "2022-08-16T17:07:57Z",
-          "updated_at": "2022-09-13T12:00:33Z",
+          "updated_at": "2022-09-14T06:40:12Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2046,7 +2283,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-09-14T03:55:28Z",
+      "updated_at": "2022-09-14T05:29:03Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -3790,6 +4027,39 @@
             "html_url": "https://github.com/martinweiler"
           },
           "checks": [
+            {
+              "id": 3765087589,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/3765087589",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2021-10-01T08:29:10Z",
+              "completed_at": "2021-10-01T08:34:06Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 3624536516,
+              "name": "Maven Build (8, 3.8.1)",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/1242669315/jobs/1499578611",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2021-09-16T18:04:42Z",
+              "completed_at": "2021-09-17T00:04:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 3624536444,
+              "name": "Maven Build (11, 3.8.1)",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/1242669315/jobs/1499578571",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2021-09-16T18:04:42Z",
+              "completed_at": "2021-09-16T19:52:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 14672097123,
               "name": "Linux - Pull Request",
