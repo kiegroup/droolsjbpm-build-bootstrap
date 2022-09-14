@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-09-14T11:06:51.942Z",
+    "date": "2022-09-14T12:16:22.099Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3052290167"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3052713962"
   },
   "projects": [
     {
@@ -6961,6 +6961,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 236,
+          "title": "[JBPM-10122] UnknownKafkaVersionException when productized",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/236",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/236",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-09-14T11:10:35Z",
+          "updated_at": "2022-09-14T11:11:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ad03d018e05cc493ec06b685a8d4acd0ef367869",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10122",
+            "sha": "b5a49ee84a972ed4899f867de9cbad2d42c0d593",
+            "label": "gmunozfe:JBPM-10122"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 8348816434,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/3052314221/jobs/4921558085",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-09-14T11:10:52Z",
+              "completed_at": "2022-09-14T11:55:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8348816226,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/3052314221/jobs/4921557922",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-09-14T11:10:53Z",
+              "completed_at": "2022-09-14T11:55:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19207933425,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-work-items-main.pr/51/",
+              "conclusion": "success",
+              "started_at": "2022-09-14T11:41:42Z",
+              "completed_at": "2022-09-14T11:41:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 233,
           "title": "Bump google-oauth-client from 1.23.0 to 1.33.3",
