@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-09-15T08:20:24.721Z",
+    "date": "2022-09-15T09:23:23.450Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3058820679"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3059203885"
   },
   "projects": [
     {
@@ -4229,6 +4229,144 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2865,
+          "title": "[7.67.x-blue][JBPM-10043] Test for EventEmitter status after delegate",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2865",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2865",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "afalhambra",
+              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+              "html_url": "https://github.com/afalhambra"
+            }
+          ],
+          "created_at": "2022-09-15T08:28:48Z",
+          "updated_at": "2022-09-15T08:28:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "8dbc002d7b652ccfa550e0dad88a3f4626ae0d07",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10043_7.67.x-blue",
+            "sha": "cf69aae3c39876f6a3c523d7ccef824d489188ff",
+            "label": "gmunozfe:JBPM-10043_7.67.x-blue"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 8367951418,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058930344/jobs/4935708329",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-15T08:59:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8367951255,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058930344/jobs/4935708201",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-09-15T08:28:53Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19226150664,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/55/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T08:28:53Z",
+              "completed_at": "2022-09-15T08:28:53Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2864,
+          "title": "[7.67.x][JBPM-10043] Test for EventEmitter status after delegate",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2864",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2864",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "afalhambra",
+              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
+              "html_url": "https://github.com/afalhambra"
+            }
+          ],
+          "created_at": "2022-09-15T08:26:26Z",
+          "updated_at": "2022-09-15T08:26:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "36cfaf2edf40052796b599df895b918d0f4075f7",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10043_7.67.x",
+            "sha": "7ef6eb5d1b19567ec6135d0bb13e55a285f767b0",
+            "label": "gmunozfe:JBPM-10043_7.67.x"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 8367909333,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058915259/jobs/4935675901",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-15T08:53:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8367909105,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058915259/jobs/4935675720",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-15T08:54:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19226109693,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/89/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T08:26:30Z",
+              "completed_at": "2022-09-15T08:26:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2863,
           "title": "[7.67.x-blue][JBPM-10118] Test Wrap into CDATA to avoid escape chars in SOAP headers",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2863",
@@ -4267,9 +4405,9 @@
               "id": 8367729571,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058854998/jobs/4935541394",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-09-15T08:16:22Z",
+              "started_at": "2022-09-15T08:41:18Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -4278,9 +4416,9 @@
               "id": 8367729400,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058854998/jobs/4935541266",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-09-15T08:16:22Z",
+              "started_at": "2022-09-15T08:27:31Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -4347,9 +4485,9 @@
               "id": 8367572731,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3058801634/jobs/4935422873",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-09-15T08:07:48Z",
+              "started_at": "2022-09-15T08:22:59Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -7463,6 +7601,238 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1195,
+          "title": "[7.67.x-blue] [RHDM-1934] [RHPAM-4387] update EAP XP to version 4.0.0.GA-redhat-00007",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1195",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1195",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
+            }
+          ],
+          "created_at": "2022-09-15T09:13:55Z",
+          "updated_at": "2022-09-15T09:20:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "6ef82a5600703ba4263e07f3ff1eef17ffdb2804",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_eap-xp-746",
+            "sha": "ff37d71c9b47232123de14ee43b44d84ceea5d72",
+            "label": "rgdoliveira:7.67.x-blue_eap-xp-746"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 8368785635,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3059219830/jobs/4936343065",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-09-15T09:14:00Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8368785478,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3059219830/jobs/4936342938",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-09-15T09:14:00Z",
+              "completed_at": "2022-09-15T09:14:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19226931789,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/30/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T09:13:58Z",
+              "completed_at": "2022-09-15T09:13:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1194,
+          "title": "[7.67.x] [RHDM-1934] [RHPAM-4387] update EAP XP to version 4.0.0.GA-redhat-00007",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1194",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1194",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
+            }
+          ],
+          "created_at": "2022-09-15T09:03:45Z",
+          "updated_at": "2022-09-15T09:19:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c91f8dd3a50ba3f0dc1eb685d0af56ab304c20ad",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_eap-xp-746",
+            "sha": "48eb6303973e42e6e7587129769c74e9d61c19dd",
+            "label": "rgdoliveira:7.67.x_eap-xp-746"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 8368587063,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3059150119/jobs/4936190532",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-09-15T09:03:51Z",
+              "completed_at": "2022-09-15T09:03:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8368586833,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3059150119/jobs/4936190348",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-09-15T09:03:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19226751130,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-distributions-7.67.x.pr/23/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T09:03:48Z",
+              "completed_at": "2022-09-15T09:03:48Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19226770626,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/kie-wb-distributions-7.67.x.fdb/6/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T09:04:53Z",
+              "completed_at": "2022-09-15T09:04:53Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1193,
+          "title": "[RHDM-1934] [RHPAM-4387] update EAP XP to version 4.0.0.GA-redhat-00007",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1193",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1193",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
+            }
+          ],
+          "created_at": "2022-09-15T09:00:42Z",
+          "updated_at": "2022-09-15T09:19:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a48dba0f6e3ed7b433256b0dd42f89d01fde6e29",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "main_eap-xp-746",
+            "sha": "51d4ee9d9e7a8ec121423319b7e1cad1b7a8a3ff",
+            "label": "rgdoliveira:main_eap-xp-746"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 8368526381,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3059129402/jobs/4936145261",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-09-15T09:00:48Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8368526170,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3059129402/jobs/4936145118",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-15T09:01:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19226698625,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/203/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T09:00:48Z",
+              "completed_at": "2022-09-15T09:00:48Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19226721847,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-distributions-main.fdb/25/",
+              "conclusion": "pending",
+              "started_at": "2022-09-15T09:02:09Z",
+              "completed_at": "2022-09-15T09:02:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1190,
           "title": "[7.67.x-blue] Revert \"RHPAM-4387 xml-apis:xml-apis excluded\"",
