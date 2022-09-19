@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-09-19T13:40:45.509Z",
+    "date": "2022-09-19T14:18:45.384Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3082866222"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3083136959"
   },
   "projects": [
     {
@@ -2247,7 +2247,7 @@
             }
           ],
           "created_at": "2022-09-16T08:05:11Z",
-          "updated_at": "2022-09-19T13:25:54Z",
+          "updated_at": "2022-09-19T13:56:01Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2311,22 +2311,32 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19273361455,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/appformer-7.67.x.compile/20/",
-              "conclusion": "pending",
-              "started_at": "2022-09-19T12:39:05Z",
-              "completed_at": "2022-09-19T12:39:05Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 19274172383,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/appformer-7.67.x.pr/20/",
               "conclusion": "success",
               "started_at": "2022-09-19T13:27:16Z",
               "completed_at": "2022-09-19T13:27:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19274516734,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/appformer-7.67.x.compile/20/",
+              "conclusion": "success",
+              "started_at": "2022-09-19T13:45:40Z",
+              "completed_at": "2022-09-19T13:45:40Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19274723865,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/appformer-7.67.x.fdb/14/",
+              "conclusion": "pending",
+              "started_at": "2022-09-19T13:56:04Z",
+              "completed_at": "2022-09-19T13:56:04Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -3489,6 +3499,154 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2217,
+          "title": "JBPM-10123 - Stabilize ETransactionTest#testTimer() test",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2217",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2217",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2022-09-19T14:15:15Z",
+          "updated_at": "2022-09-19T14:15:15Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c6a619d80f9deb667dbcf9701d809b2f93012836",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10123-7.67.x",
+            "sha": "23e287efdc2bb810a432b8455efa690acf11a0c4",
+            "label": "MarianMacik:JBPM-10123-7.67.x"
+          },
+          "user": {
+            "login": "MarianMacik",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+            "html_url": "https://github.com/MarianMacik"
+          },
+          "checks": [
+            {
+              "id": 8429949446,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3083113325/jobs/4983643610",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-19T14:15:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8429949093,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3083113325/jobs/4983643344",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-19T14:15:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19275120662,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/88/",
+              "conclusion": "pending",
+              "started_at": "2022-09-19T14:15:17Z",
+              "completed_at": "2022-09-19T14:15:17Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2216,
+          "title": "JBPM-10123 - Stabilize ETransactionTest#testTimer() test",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2216",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2216",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2022-09-19T14:14:34Z",
+          "updated_at": "2022-09-19T14:14:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "816e9b5089e4d5b9e7aa9a02a5f4d66023b5ba75",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10123",
+            "sha": "0ae08705d192ac12b5682d009a7d5d121bf3db00",
+            "label": "MarianMacik:JBPM-10123"
+          },
+          "user": {
+            "login": "MarianMacik",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+            "html_url": "https://github.com/MarianMacik"
+          },
+          "checks": [
+            {
+              "id": 8429934468,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3083108432/jobs/4983632461",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-19T14:14:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8429934204,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3083108432/jobs/4983632257",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-09-19T14:14:48Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19275107188,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/787/",
+              "conclusion": "pending",
+              "started_at": "2022-09-19T14:14:38Z",
+              "completed_at": "2022-09-19T14:14:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2215,
           "title": "[JBPM-10117] - Could not commit session during retry of the parent process",
@@ -6198,10 +6356,10 @@
               "id": 8423106689,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3080716478/jobs/4978395821",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-09-19T07:45:14Z",
-              "completed_at": null,
+              "completed_at": "2022-09-19T13:46:45Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
