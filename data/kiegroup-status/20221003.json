@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-03T11:07:48.189Z",
+    "date": "2022-10-03T12:18:49.854Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3173653411"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3174078577"
   },
   "projects": [
     {
@@ -19,6 +19,130 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2085,
+          "title": "[7.67.x-blue] [RHPAM-4536] backport of Snakeyaml upgrade to 1.31",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2085",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2085",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-10-03T11:42:33Z",
+          "updated_at": "2022-10-03T11:42:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "c67c1a5844b77106c7101ec2c44f609336831ca3",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue-RHPAM-4536",
+            "sha": "1b231fef2d32df20e67f3707e516a72012d8292f",
+            "label": "mareknovotny:7.67.x-blue-RHPAM-4536"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 8675788062,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3173861532/jobs/5169953036",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-03T11:42:44Z",
+              "completed_at": "2022-10-03T11:43:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8675787864,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3173861532/jobs/5169952892",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-03T11:42:46Z",
+              "completed_at": "2022-10-03T11:43:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19487964278,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/48/",
+              "conclusion": "pending",
+              "started_at": "2022-10-03T11:42:46Z",
+              "completed_at": "2022-10-03T11:42:46Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19487985303,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/34/",
+              "conclusion": "success",
+              "started_at": "2022-10-03T11:44:14Z",
+              "completed_at": "2022-10-03T11:44:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2084,
+          "title": "[7.67.x] [RHPAM-4536] backport of Snakeyaml upgrade to 1.31",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2084",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2084",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-10-03T11:17:40Z",
+          "updated_at": "2022-10-03T11:22:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "9bc3ee4e8b8a585c1861bbac7d098e19e8c257e8",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHPAM-4536",
+            "sha": "21d04bb3af84d438bfa5ae918598376668925ec0",
+            "label": "mareknovotny:RHPAM-4536"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 19487682210,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/52/",
+              "conclusion": "pending",
+              "started_at": "2022-10-03T11:22:51Z",
+              "completed_at": "2022-10-03T11:22:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19487687969,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/39/",
+              "conclusion": "success",
+              "started_at": "2022-10-03T11:23:16Z",
+              "completed_at": "2022-10-03T11:23:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2083,
           "title": "[7.67.x-blue] RHPAM-4525 lucene updraded to 6.6.6",
@@ -2237,7 +2361,7 @@
             }
           ],
           "created_at": "2022-09-29T13:13:40Z",
-          "updated_at": "2022-09-30T13:22:45Z",
+          "updated_at": "2022-10-03T11:55:12Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2301,22 +2425,32 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19466481797,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/40/",
-              "conclusion": "success",
-              "started_at": "2022-09-30T14:08:10Z",
-              "completed_at": "2022-09-30T14:08:10Z",
+              "id": 19488135882,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/droolsjbpm-knowledge-7.x.fdb/11/",
+              "conclusion": "pending",
+              "started_at": "2022-10-03T11:54:47Z",
+              "completed_at": "2022-10-03T11:54:47Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 19468066988,
+              "id": 19488142457,
               "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/45/",
-              "conclusion": "failure",
-              "started_at": "2022-09-30T15:27:11Z",
-              "completed_at": "2022-09-30T15:27:11Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/46/",
+              "conclusion": "pending",
+              "started_at": "2022-10-03T11:55:13Z",
+              "completed_at": "2022-10-03T11:55:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19488164254,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/41/",
+              "conclusion": "success",
+              "started_at": "2022-10-03T11:56:48Z",
+              "completed_at": "2022-10-03T11:56:48Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2338,7 +2472,7 @@
             }
           ],
           "created_at": "2022-09-01T21:01:22Z",
-          "updated_at": "2022-09-30T13:24:26Z",
+          "updated_at": "2022-10-03T11:58:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2402,16 +2536,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19035530161,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/39/",
-              "conclusion": "success",
-              "started_at": "2022-09-01T21:07:36Z",
-              "completed_at": "2022-09-01T21:07:36Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 19044728076,
               "name": "Linux - Compile Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/44/",
@@ -2428,6 +2552,16 @@
               "conclusion": "failure",
               "started_at": "2022-09-30T21:25:15Z",
               "completed_at": "2022-09-30T21:25:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19488212313,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/42/",
+              "conclusion": "success",
+              "started_at": "2022-10-03T12:00:05Z",
+              "completed_at": "2022-10-03T12:00:05Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
