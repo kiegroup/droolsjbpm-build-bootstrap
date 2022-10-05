@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-05T14:04:41.635Z",
+    "date": "2022-10-05T15:21:56.596Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190359383"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190780040"
   },
   "projects": [
     {
@@ -19,6 +19,225 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2092,
+          "title": "[7.67.x-blue] upgraded nodejs version to v16.2.0",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2092",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2092",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-10-05T14:43:25Z",
+          "updated_at": "2022-10-05T14:50:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "c67c1a5844b77106c7101ec2c44f609336831ca3",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "nodejs-7.67.x-blue",
+            "sha": "6b800c1a69eba11ed7c72902a159f11f1aad366f",
+            "label": "mbiarnes:nodejs-7.67.x-blue"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 8724154138,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190658885/jobs/5206059046",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-05T15:21:31Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8724153920,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190658885/jobs/5206058911",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-05T15:21:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19533124878,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/36/",
+              "conclusion": "success",
+              "started_at": "2022-10-05T14:54:56Z",
+              "completed_at": "2022-10-05T14:54:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19533198053,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/51/",
+              "conclusion": "pending",
+              "started_at": "2022-10-05T14:57:47Z",
+              "completed_at": "2022-10-05T14:57:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2091,
+          "title": "[7.67.x] upgraded nodejs version to v16.2.0",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2091",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2091",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-10-05T14:36:16Z",
+          "updated_at": "2022-10-05T14:50:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "9bc3ee4e8b8a585c1861bbac7d098e19e8c257e8",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "nodejs-7.67.x",
+            "sha": "f0653fee5437aaa246ed2b2f0fd07a771d48263d",
+            "label": "mbiarnes:nodejs-7.67.x"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 8723872113,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190589964/jobs/5205899385",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-05T15:04:50Z",
+              "completed_at": "2022-10-05T15:05:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8723871859,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190589964/jobs/5205899234",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-05T15:00:23Z",
+              "completed_at": "2022-10-05T15:01:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19532772188,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/41/",
+              "conclusion": "success",
+              "started_at": "2022-10-05T14:45:01Z",
+              "completed_at": "2022-10-05T14:45:01Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19532944874,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/54/",
+              "conclusion": "pending",
+              "started_at": "2022-10-05T14:49:30Z",
+              "completed_at": "2022-10-05T14:49:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2090,
+          "title": "[main] upgraded nodejs version to v16.2.0",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2090",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2090",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2022-10-05T14:08:04Z",
+          "updated_at": "2022-10-05T14:49:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "bbbbbf159c240fcc5311e1c25a39dd7362b7784a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "nodejs-main",
+            "sha": "7533ed3efbf76ab0c1ff8b76d1d912c27f526d76",
+            "label": "mbiarnes:nodejs-main"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 8723167468,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190386235/jobs/5205419989",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-05T14:09:10Z",
+              "completed_at": "2022-10-05T14:10:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8723167270,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3190386235/jobs/5205419841",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-05T14:09:00Z",
+              "completed_at": "2022-10-05T14:10:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19532915814,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/556/",
+              "conclusion": "pending",
+              "started_at": "2022-10-05T14:48:46Z",
+              "completed_at": "2022-10-05T14:48:46Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19533058031,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/635/",
+              "conclusion": "success",
+              "started_at": "2022-10-05T14:52:38Z",
+              "completed_at": "2022-10-05T14:52:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2086,
           "title": "Bump protobuf-java from 3.19.4 to 3.19.6",
@@ -94,12 +313,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 19526092615,
+              "id": 19532861140,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/552/",
-              "conclusion": "pending",
-              "started_at": "2022-10-05T07:11:42Z",
-              "completed_at": "2022-10-05T07:11:42Z",
+              "conclusion": "success",
+              "started_at": "2022-10-05T14:47:21Z",
+              "completed_at": "2022-10-05T14:47:21Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2296,7 +2515,7 @@
       "pullRequests": [
         {
           "number": 4734,
-          "title": "[JBPM-10117] assume a workiteminfo with id null is not deattached (#4…",
+          "title": "[7.67.x][JBPM-10117] assume a workiteminfo with id null is not deattached (#4…",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4734",
           "html_url": "https://github.com/kiegroup/drools/pull/4734",
           "state": "open",
@@ -2304,7 +2523,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-10-05T10:43:46Z",
-          "updated_at": "2022-10-05T13:32:51Z",
+          "updated_at": "2022-10-05T14:23:56Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2391,7 +2610,7 @@
         },
         {
           "number": 4733,
-          "title": "[JBPM-10117] assume a workiteminfo with id null is not deattached (#4…",
+          "title": "[7.67.x-blue][JBPM-10117] assume a workiteminfo with id null is not deattached (#4…",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4733",
           "html_url": "https://github.com/kiegroup/drools/pull/4733",
           "state": "open",
@@ -2399,7 +2618,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-10-05T10:00:54Z",
-          "updated_at": "2022-10-05T13:32:40Z",
+          "updated_at": "2022-10-05T14:25:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4440,140 +4659,16 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2225,
-          "title": "[JBPM-10117] - Could not commit session during retry of the parent process",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2225",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2225",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2022-10-05T14:03:02Z",
-          "updated_at": "2022-10-05T14:03:08Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "2ed94179df381ab27c8b4390389951f3544e3279",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "JBPM-10117_7.67.x-blue",
-            "sha": "06e492d660c53b1b9aff7d2dcd07aae9b094ac3c",
-            "label": "afalhambra:JBPM-10117_7.67.x-blue"
-          },
-          "user": {
-            "login": "afalhambra",
-            "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-            "html_url": "https://github.com/afalhambra"
-          },
-          "checks": [
-            {
-              "id": 8723054853,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3190351233/jobs/5205335984",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-10-05T14:03:17Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8723054664,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3190351233/jobs/5205335834",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-10-05T14:03:19Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2224,
-          "title": "[7.67.x][JBPM-10117] - Could not commit session during retry of the parent process",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2224",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2224",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2022-10-05T13:59:25Z",
-          "updated_at": "2022-10-05T13:59:32Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "78289edfc81fd385c714ab4ecd50019051bbf81c",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "JBPM-10117_7.67.x",
-            "sha": "b4673964e100b6f389a8a341784e7e5adb822577",
-            "label": "afalhambra:JBPM-10117_7.67.x"
-          },
-          "user": {
-            "login": "afalhambra",
-            "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-            "html_url": "https://github.com/afalhambra"
-          },
-          "checks": [
-            {
-              "id": 8722988924,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3190328826/jobs/5205282623",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-10-05T13:59:55Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8722988768,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3190328826/jobs/5205282487",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-10-05T13:59:51Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 2223,
-          "title": "[JBPM-10117] - Could not commit session during retry of the parent pr…",
+          "title": "[7.67.x][JBPM-10117] - Could not commit session during retry of the parent pr…",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2223",
           "html_url": "https://github.com/kiegroup/jbpm/pull/2223",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "afalhambra",
-              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-              "html_url": "https://github.com/afalhambra"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-10-05T13:15:03Z",
-          "updated_at": "2022-10-05T13:15:08Z",
+          "updated_at": "2022-10-05T14:22:15Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4607,20 +4702,20 @@
               "id": 8722238169,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3190055360/jobs/5204642717",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-10-05T13:15:21Z",
-              "completed_at": null,
+              "completed_at": "2022-10-05T15:04:41Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19531441799,
+              "id": 19533323750,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/90/",
-              "conclusion": "pending",
-              "started_at": "2022-10-05T13:28:44Z",
-              "completed_at": "2022-10-05T13:28:44Z",
+              "conclusion": "failure",
+              "started_at": "2022-10-05T15:02:58Z",
+              "completed_at": "2022-10-05T15:02:58Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4628,21 +4723,15 @@
         },
         {
           "number": 2222,
-          "title": "[JBPM-10117] - Could not commit session during retry of the parent pr…",
+          "title": "[7.67.x-blue][JBPM-10117] - Could not commit session during retry of the parent pr…",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2222",
           "html_url": "https://github.com/kiegroup/jbpm/pull/2222",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "afalhambra",
-              "avatar_url": "https://avatars.githubusercontent.com/u/33941520?v=4",
-              "html_url": "https://github.com/afalhambra"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-10-05T10:09:02Z",
-          "updated_at": "2022-10-05T11:48:03Z",
+          "updated_at": "2022-10-05T14:24:33Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
