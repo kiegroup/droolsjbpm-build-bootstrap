@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-06T06:16:29.558Z",
+    "date": "2022-10-06T07:15:08.816Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194951328"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3195241726"
   },
   "projects": [
     {
@@ -20,10 +20,10 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2093,
-          "title": "[RHPAM-4535] CVE-2018-1000134 unboundid-ldapsdk upgraded to 4.0.",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2093",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2093",
+          "number": 2095,
+          "title": "[RHPAM-4535] CVE-2018-1000134 unboundid-ldapsdk upgraded to 4.0.5",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2095",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2095",
           "state": "open",
           "labels": [],
           "draft": false,
@@ -44,8 +44,166 @@
               "html_url": "https://github.com/lampajr"
             }
           ],
+          "created_at": "2022-10-06T06:18:28Z",
+          "updated_at": "2022-10-06T06:19:46Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "bbbbbf159c240fcc5311e1c25a39dd7362b7784a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4535",
+            "sha": "947e1b09601534b8fd060b241fb58c8e8b4eea61",
+            "label": "Ginxo:RHPAM-4535"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8736588652,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194961726/jobs/5215081693",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:18:42Z",
+              "completed_at": "2022-10-06T06:20:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8736588560,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194961726/jobs/5215081622",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:18:40Z",
+              "completed_at": "2022-10-06T06:19:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19545845612,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/636/",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:19:13Z",
+              "completed_at": "2022-10-06T06:19:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19545852026,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/557/",
+              "conclusion": "pending",
+              "started_at": "2022-10-06T06:19:50Z",
+              "completed_at": "2022-10-06T06:19:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2094,
+          "title": "[7.67.x-blue][RHPAM-4535] CVE-2018-1000134 unboundid-ldapsdk upgraded to 4.0.",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2094",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2094",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-10-06T06:17:14Z",
+          "updated_at": "2022-10-06T07:09:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "c67c1a5844b77106c7101ec2c44f609336831ca3",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-4535-7.67.x-blue",
+            "sha": "27c4854f9951cd23bbf36c62f3377492d33f102b",
+            "label": "Ginxo:RHPAM-4535-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8736671987,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194955951/jobs/5215147851",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:25:22Z",
+              "completed_at": "2022-10-06T06:25:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8736671836,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194955951/jobs/5215147765",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:17:28Z",
+              "completed_at": "2022-10-06T06:18:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19545837504,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/37/",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:18:24Z",
+              "completed_at": "2022-10-06T06:18:24Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2093,
+          "title": "[7.67.x][RHPAM-4535] CVE-2018-1000134 unboundid-ldapsdk upgraded to 4.0.",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2093",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2093",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
           "created_at": "2022-10-06T06:16:17Z",
-          "updated_at": "2022-10-06T06:16:19Z",
+          "updated_at": "2022-10-06T07:09:26Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -68,10 +226,10 @@
               "id": 8736562506,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194951900/jobs/5215060916",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2022-10-06T06:16:21Z",
-              "completed_at": null,
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:16:35Z",
+              "completed_at": "2022-10-06T06:17:44Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -79,20 +237,20 @@
               "id": 8736562379,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3194951900/jobs/5215060808",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-10-06T06:16:29Z",
-              "completed_at": null,
+              "completed_at": "2022-10-06T06:17:57Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19545817598,
+              "id": 19545831217,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/42/",
-              "conclusion": "pending",
-              "started_at": "2022-10-06T06:16:20Z",
-              "completed_at": "2022-10-06T06:16:20Z",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:17:48Z",
+              "completed_at": "2022-10-06T06:17:48Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9528,15 +9686,10 @@
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2022-10-05T10:51:52Z",
-          "updated_at": "2022-10-05T10:52:46Z",
+          "updated_at": "2022-10-06T07:08:49Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9546,7 +9699,7 @@
           },
           "head": {
             "ref": "RHPAM-4530-7.67.x-blue",
-            "sha": "92d49be481a167d3c4459b2597362c48ab91390a",
+            "sha": "9f0eee500552e27eb55859e8bdb7f5fb20ed320f",
             "label": "Ginxo:RHPAM-4530-7.67.x-blue"
           },
           "user": {
@@ -9556,24 +9709,24 @@
           },
           "checks": [
             {
-              "id": 8719802356,
+              "id": 8736685589,
               "name": "ubuntu-18.04 - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3189220223/jobs/5202781043",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3194998813/jobs/5215158444",
               "status": "completed",
               "conclusion": "failure",
-              "started_at": "2022-10-05T11:33:06Z",
-              "completed_at": "2022-10-05T11:34:43Z",
+              "started_at": "2022-10-06T06:26:30Z",
+              "completed_at": "2022-10-06T06:27:00Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 8719802237,
+              "id": 8736685477,
               "name": "ubuntu-18.04 - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3189220223/jobs/5202780950",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3194998813/jobs/5215158354",
               "status": "completed",
               "conclusion": "failure",
-              "started_at": "2022-10-05T11:29:55Z",
-              "completed_at": "2022-10-05T11:31:31Z",
+              "started_at": "2022-10-06T06:26:31Z",
+              "completed_at": "2022-10-06T06:27:14Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             }
@@ -9600,7 +9753,7 @@
             }
           ],
           "created_at": "2022-10-05T10:51:27Z",
-          "updated_at": "2022-10-05T12:28:22Z",
+          "updated_at": "2022-10-06T07:06:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9610,7 +9763,7 @@
           },
           "head": {
             "ref": "RHPAM-4530-7.67.x",
-            "sha": "ceddadef632195cdeddbe22efbce69522be59e42",
+            "sha": "8e0489d4b5609caa1f04780651c612402311a98f",
             "label": "Ginxo:RHPAM-4530-7.67.x"
           },
           "user": {
@@ -9620,34 +9773,34 @@
           },
           "checks": [
             {
-              "id": 8719796170,
-              "name": "ubuntu-18.04 - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3189218072/jobs/5202776367",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-10-05T11:18:47Z",
-              "completed_at": "2022-10-05T11:29:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8719796057,
+              "id": 8736915718,
               "name": "ubuntu-18.04 - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3189218072/jobs/5202776280",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3195085275/jobs/5215339119",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-10-05T11:12:17Z",
-              "completed_at": "2022-10-05T11:27:19Z",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:44:31Z",
+              "completed_at": "2022-10-06T06:56:47Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19529342557,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/optaweb-vehicle-routing-7.67.x.pr/3/",
+              "id": 8736915615,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3195085275/jobs/5215339026",
+              "status": "completed",
               "conclusion": "success",
-              "started_at": "2022-10-05T11:02:49Z",
-              "completed_at": "2022-10-05T11:02:49Z",
+              "started_at": "2022-10-06T06:44:32Z",
+              "completed_at": "2022-10-06T07:01:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19546198984,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/optaweb-vehicle-routing-7.67.x.pr/4/",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:53:45Z",
+              "completed_at": "2022-10-06T06:53:45Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9671,15 +9824,10 @@
               "login": "rgdoliveira",
               "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
               "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2022-10-05T10:50:51Z",
-          "updated_at": "2022-10-05T10:55:10Z",
+          "updated_at": "2022-10-06T07:07:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9689,7 +9837,7 @@
           },
           "head": {
             "ref": "RHPAM-4530",
-            "sha": "d8e615914a00e7321c91dae68921ae9436d109f2",
+            "sha": "68177a10e0561eff276d2363fbc00d91bc290159",
             "label": "Ginxo:RHPAM-4530"
           },
           "user": {
@@ -9699,34 +9847,34 @@
           },
           "checks": [
             {
-              "id": 8719787323,
+              "id": 8736727911,
               "name": "ubuntu-18.04 - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3189214783/jobs/5202769622",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3195014491/jobs/5215192273",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-10-05T10:56:42Z",
-              "completed_at": "2022-10-05T11:12:09Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8719787218,
-              "name": "ubuntu-18.04 - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3189214783/jobs/5202769538",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-10-05T10:52:19Z",
-              "completed_at": "2022-10-05T11:04:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19529311547,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/optaweb-vehicle-routing-7.x.pr/50/",
               "conclusion": "success",
-              "started_at": "2022-10-05T11:00:43Z",
-              "completed_at": "2022-10-05T11:00:43Z",
+              "started_at": "2022-10-06T06:29:48Z",
+              "completed_at": "2022-10-06T06:43:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8736727791,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaweb-vehicle-routing/actions/runs/3195014491/jobs/5215192170",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:29:47Z",
+              "completed_at": "2022-10-06T06:42:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19546054547,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/optaweb-vehicle-routing-7.x.pr/51/",
+              "conclusion": "success",
+              "started_at": "2022-10-06T06:39:23Z",
+              "completed_at": "2022-10-06T06:39:23Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
