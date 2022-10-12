@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-12T08:10:59.038Z",
+    "date": "2022-10-12T09:14:37.023Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3233068209"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3233468541"
   },
   "projects": [
     {
@@ -40,7 +40,7 @@
             }
           ],
           "created_at": "2022-10-07T09:49:37Z",
-          "updated_at": "2022-10-11T07:32:35Z",
+          "updated_at": "2022-10-12T08:54:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -88,6 +88,16 @@
               "conclusion": "success",
               "started_at": "2022-10-11T06:04:47Z",
               "completed_at": "2022-10-11T06:04:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19631119782,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/565/",
+              "conclusion": "pending",
+              "started_at": "2022-10-12T08:42:18Z",
+              "completed_at": "2022-10-12T08:42:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2109,7 +2119,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-10-12T07:47:01Z",
+      "updated_at": "2022-10-12T08:18:39Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -4928,6 +4938,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2869,
+          "title": "RHPAM-4545 - Remove optaplanner from OSGI feature files",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2869",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2869",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2022-10-12T09:12:32Z",
+          "updated_at": "2022-10-12T09:12:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "8dbc002d7b652ccfa550e0dad88a3f4626ae0d07",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-4545",
+            "sha": "60fb7f1672b785ba54b83d16876bf6ea581f258b",
+            "label": "jiripetrlik:RHPAM-4545"
+          },
+          "user": {
+            "login": "jiripetrlik",
+            "avatar_url": "https://avatars.githubusercontent.com/u/11760511?v=4",
+            "html_url": "https://github.com/jiripetrlik"
+          },
+          "checks": [
+            {
+              "id": 8842175499,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3233457658/jobs/5295337059",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-12T09:12:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8842175310,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3233457658/jobs/5295336902",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-12T09:12:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19631637279,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/56/",
+              "conclusion": "pending",
+              "started_at": "2022-10-12T09:12:36Z",
+              "completed_at": "2022-10-12T09:12:36Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2868,
           "title": "[JBPM-10127] Performance downgrade in cluster extension",
@@ -8911,110 +8990,6 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 4361,
-          "title": "Upstream 7.67.x PR for BXMSDOC-8610: Release notes docs for RHPAM/RHDM 7.13.1",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4361",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4361",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-10-12T08:10:55Z",
-          "updated_at": "2022-10-12T08:10:55Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "3e13f5f35e1832c7aec486c4be04e45c39cfc33a",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "BXMSDOC-8610-7.67.x-final",
-            "sha": "91680be1ac8bda93d243aaf3bf4748d3e766ab9b",
-            "label": "kaldesai:BXMSDOC-8610-7.67.x-final"
-          },
-          "user": {
-            "login": "kaldesai",
-            "avatar_url": "https://avatars.githubusercontent.com/u/43639538?v=4",
-            "html_url": "https://github.com/kaldesai"
-          },
-          "checks": [
-            {
-              "id": 19630621358,
-              "name": "Linux - Pull Request",
-              "html_url": "",
-              "conclusion": "pending",
-              "started_at": "2022-10-12T08:10:58Z",
-              "completed_at": "2022-10-12T08:10:58Z",
-              "slug": "unknown",
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4360,
-          "title": "Upstream main PR for BXMSDOC-8610: Release notes docs for RHPAM/RHDM 7.13.1",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4360",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4360",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-10-12T08:09:52Z",
-          "updated_at": "2022-10-12T08:09:52Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "e049557a2059c9b73369df304e72a245cf706167",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "BXMSDOC-8610-main-final",
-            "sha": "5e71bfb83a9273e74dcdd57f196a80453c5eb04d",
-            "label": "kaldesai:BXMSDOC-8610-main-final"
-          },
-          "user": {
-            "login": "kaldesai",
-            "avatar_url": "https://avatars.githubusercontent.com/u/43639538?v=4",
-            "html_url": "https://github.com/kaldesai"
-          },
-          "checks": [
-            {
-              "id": 8840979144,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3233063231/jobs/5294431676",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-10-12T08:10:05Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8840978930,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3233063231/jobs/5294431523",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-10-12T08:10:06Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19630605548,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/628/",
-              "conclusion": "pending",
-              "started_at": "2022-10-12T08:09:56Z",
-              "completed_at": "2022-10-12T08:09:56Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 4356,
           "title": "BXMSDOC-8564-7.67.x: Add mutual TLS optional step",
