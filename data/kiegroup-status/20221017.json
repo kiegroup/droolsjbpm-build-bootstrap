@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-17T07:36:41.521Z",
+    "date": "2022-10-17T08:22:45.521Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3263228785"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3263512486"
   },
   "projects": [
     {
@@ -19,6 +19,95 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2102,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2102",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2102",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:43:00Z",
+          "updated_at": "2022-10-17T07:46:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "385e64c4a70686aaf462c3055b83c6743d4b6c44",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "a2e4566fbcc5a8a9f4d0238e2aee3389d491543e",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927601566,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3263266554/jobs/5361901428",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-17T07:47:15Z",
+              "completed_at": "2022-10-17T07:48:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927601274,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3263266554/jobs/5361901270",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-17T07:43:10Z",
+              "completed_at": "2022-10-17T07:44:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696226250,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/39/",
+              "conclusion": "success",
+              "started_at": "2022-10-17T07:46:55Z",
+              "completed_at": "2022-10-17T07:46:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19696303921,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/59/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:52:55Z",
+              "completed_at": "2022-10-17T07:52:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2101,
           "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
@@ -45,7 +134,7 @@
             }
           ],
           "created_at": "2022-10-17T07:29:27Z",
-          "updated_at": "2022-10-17T07:29:29Z",
+          "updated_at": "2022-10-17T07:46:51Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -85,6 +174,26 @@
               "completed_at": "2022-10-17T07:30:34Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696217908,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/45/",
+              "conclusion": "success",
+              "started_at": "2022-10-17T07:46:16Z",
+              "completed_at": "2022-10-17T07:46:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19696225454,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/66/",
+              "conclusion": "pending",
+              "started_at": "2022-10-17T07:46:52Z",
+              "completed_at": "2022-10-17T07:46:52Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -498,7 +607,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2022-10-05T14:08:04Z",
-          "updated_at": "2022-10-17T07:32:29Z",
+          "updated_at": "2022-10-17T07:38:51Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -538,6 +647,26 @@
               "completed_at": "2022-10-17T07:33:25Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696160373,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/646/",
+              "conclusion": "success",
+              "started_at": "2022-10-17T07:41:55Z",
+              "completed_at": "2022-10-17T07:41:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19696201347,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/568/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:45:00Z",
+              "completed_at": "2022-10-17T07:45:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -2022,7 +2151,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-10-16T08:00:42Z",
+      "updated_at": "2022-10-17T08:19:30Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -2475,6 +2604,73 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1317,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1317",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1317",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:45:08Z",
+          "updated_at": "2022-10-17T07:46:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9ba9e199841514ee4d6870171328f098d9f8d743",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "be44776163141084c2993bab446c5694821e0f98",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 19696231157,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/15/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:47:19Z",
+              "completed_at": "2022-10-17T07:47:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19696246736,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/18/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:48:34Z",
+              "completed_at": "2022-10-17T07:48:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1316,
           "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1316",
@@ -2500,7 +2696,7 @@
             }
           ],
           "created_at": "2022-10-17T07:34:49Z",
-          "updated_at": "2022-10-17T07:35:10Z",
+          "updated_at": "2022-10-17T07:42:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2510,7 +2706,7 @@
           },
           "head": {
             "ref": "BXMSPROD-1845-7.67.x",
-            "sha": "e624b3f70b9b4131606b08e422311da79520471e",
+            "sha": "6314214ac3d1b82adb05a049b5319f59f5ce3812",
             "label": "Ginxo:BXMSPROD-1845-7.67.x"
           },
           "user": {
@@ -2518,7 +2714,50 @@
             "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
             "html_url": "https://github.com/Ginxo"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 8927407056,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/3263234452/jobs/5361742101",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-10-17T07:37:23Z",
+              "completed_at": "2022-10-17T07:37:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927406751,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/3263234452/jobs/5361741865",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-17T07:37:32Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696168734,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/appformer-7.67.x.compile/25/",
+              "conclusion": "pending",
+              "started_at": "2022-10-17T07:42:33Z",
+              "completed_at": "2022-10-17T07:42:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19696168810,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/appformer-7.67.x.pr/25/",
+              "conclusion": "pending",
+              "started_at": "2022-10-17T07:42:33Z",
+              "completed_at": "2022-10-17T07:42:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 1315,
@@ -4875,7 +5114,7 @@
             }
           ],
           "created_at": "2022-10-14T07:34:30Z",
-          "updated_at": "2022-10-17T00:17:17Z",
+          "updated_at": "2022-10-17T08:07:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4915,6 +5154,16 @@
               "completed_at": "2022-10-16T14:10:58Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696498147,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1051/",
+              "conclusion": "pending",
+              "started_at": "2022-10-17T08:06:52Z",
+              "completed_at": "2022-10-17T08:06:52Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -6562,6 +6811,164 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3783,
+          "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3783",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3783",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:40:35Z",
+          "updated_at": "2022-10-17T07:42:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c70ab917adf9e6fab2bdf175dd350832afd575ec",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x",
+            "sha": "29a86358b62e692f6c8979cf8949673e840ace14",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927471049,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3263253248/jobs/5361794974",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:40:46Z",
+              "completed_at": "2022-10-17T08:12:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927470891,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3263253248/jobs/5361794857",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:40:45Z",
+              "completed_at": "2022-10-17T08:12:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696391757,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-common-7.67.x.pr/21/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:59:33Z",
+              "completed_at": "2022-10-17T07:59:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 3782,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3782",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3782",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:40:08Z",
+          "updated_at": "2022-10-17T07:46:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "d01d067eef1eeba2f433bf74cb4d03c0054a0baa",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "8cfdc30037e5ae27fb9e712d084bafa17cd75821",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927463411,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3263250727/jobs/5361789347",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-10-17T07:40:13Z",
+              "completed_at": "2022-10-17T07:40:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927463171,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3263250727/jobs/5361789144",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-17T07:40:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696139549,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/26/",
+              "conclusion": "pending",
+              "started_at": "2022-10-17T07:40:11Z",
+              "completed_at": "2022-10-17T07:40:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3769,
           "title": "DROOLS-7105 DMN upgrade to Antlr 4.10",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3769",
@@ -7198,6 +7605,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1560,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1560",
+          "html_url": "https://github.com/kiegroup/drools-wb/pull/1560",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:43:08Z",
+          "updated_at": "2022-10-17T07:46:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "eaec4d44fcab663db2abcff6620d9ea9dde5847f",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "a76ccc6dd89fc082e68d70e0f26e44b7a7342f88",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927524409,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/actions/runs/3263267109/jobs/5361839174",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-10-17T07:43:19Z",
+              "completed_at": "2022-10-17T07:46:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927524175,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/actions/runs/3263267109/jobs/5361838988",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:43:19Z",
+              "completed_at": "2022-10-17T07:46:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696218020,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-wb-7.67.x-blue.pr/7/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:46:17Z",
+              "completed_at": "2022-10-17T07:46:17Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1559,
           "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1559",
@@ -7223,7 +7709,7 @@
             }
           ],
           "created_at": "2022-10-17T07:29:35Z",
-          "updated_at": "2022-10-17T07:29:36Z",
+          "updated_at": "2022-10-17T07:42:15Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7263,6 +7749,16 @@
               "completed_at": "2022-10-17T07:32:10Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696396308,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-wb-7.67.x.pr/6/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:59:55Z",
+              "completed_at": "2022-10-17T07:59:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -7981,6 +8477,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1574,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1574",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1574",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:43:16Z",
+          "updated_at": "2022-10-17T07:46:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "dda307b3dd7b63d3327ce04f8ee24c62b83e6a13",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "f93e5570d282c1fef3e5d7af320e6ba37f190218",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927527570,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/3263268115/jobs/5361841752",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:43:30Z",
+              "completed_at": "2022-10-17T07:48:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927527325,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/3263268115/jobs/5361841555",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:43:26Z",
+              "completed_at": "2022-10-17T07:47:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696225904,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-wb-7.67.x-blue.pr/15/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:46:54Z",
+              "completed_at": "2022-10-17T07:46:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1573,
           "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1573",
@@ -8006,7 +8581,7 @@
             }
           ],
           "created_at": "2022-10-17T07:29:46Z",
-          "updated_at": "2022-10-17T07:30:14Z",
+          "updated_at": "2022-10-17T07:42:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8046,6 +8621,16 @@
               "completed_at": "2022-10-17T07:34:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696403158,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-wb-7.67.x.pr/29/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T08:00:25Z",
+              "completed_at": "2022-10-17T08:00:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -8116,6 +8701,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 415,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls/415",
+          "html_url": "https://github.com/kiegroup/optaplanner-wb/pull/415",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:43:35Z",
+          "updated_at": "2022-10-17T07:46:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "2e81f68417fd5115da5247e85069aa521b85e625",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "7bb190598c3423fb9551aa85fa95c5796aaf4013",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927533433,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/3263270093/jobs/5361846455",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:43:46Z",
+              "completed_at": "2022-10-17T07:44:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927533267,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/3263270093/jobs/5361846315",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-10-17T07:43:47Z",
+              "completed_at": "2022-10-17T07:44:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696230066,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/optaplanner-wb-7.67.x-blue.pr/1/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:47:14Z",
+              "completed_at": "2022-10-17T07:47:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 414,
           "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls/414",
@@ -8141,7 +8805,7 @@
             }
           ],
           "created_at": "2022-10-17T07:31:27Z",
-          "updated_at": "2022-10-17T07:31:29Z",
+          "updated_at": "2022-10-17T07:42:26Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8181,6 +8845,16 @@
               "completed_at": "2022-10-17T07:34:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696432048,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/optaplanner-wb-7.67.x.pr/1/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T08:02:25Z",
+              "completed_at": "2022-10-17T08:02:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         }
@@ -8198,6 +8872,85 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1198,
+          "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1198",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1198",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-10-17T07:43:25Z",
+          "updated_at": "2022-10-17T07:46:24Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "09457d57b282433931c170497fdb0b4742c22936",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845-7.67.x-blue",
+            "sha": "7c7186453b430e38a18cdcf7dd7cdec348639f6e",
+            "label": "Ginxo:BXMSPROD-1845-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 8927530605,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3263269159/jobs/5361844226",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:43:46Z",
+              "completed_at": "2022-10-17T07:45:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8927530414,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3263269159/jobs/5361844083",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:43:35Z",
+              "completed_at": "2022-10-17T07:47:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696215646,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/31/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:46:04Z",
+              "completed_at": "2022-10-17T07:46:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1197,
           "title": "[7.67.x] [BXMSPROD-1845] elasticsearch removed from appformer",
@@ -8224,7 +8977,7 @@
             }
           ],
           "created_at": "2022-10-17T07:31:18Z",
-          "updated_at": "2022-10-17T07:31:20Z",
+          "updated_at": "2022-10-17T07:42:22Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8247,10 +9000,10 @@
               "id": 8927265209,
               "name": "ubuntu-18.04 - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3263196762/jobs/5361620647",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-10-17T07:31:29Z",
-              "completed_at": null,
+              "completed_at": "2022-10-17T07:39:31Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -8258,12 +9011,22 @@
               "id": 8927265037,
               "name": "ubuntu-18.04 - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3263196762/jobs/5361620514",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-10-17T07:31:30Z",
-              "completed_at": null,
+              "completed_at": "2022-10-17T07:41:43Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19696390009,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-distributions-7.67.x.pr/24/",
+              "conclusion": "failure",
+              "started_at": "2022-10-17T07:59:26Z",
+              "completed_at": "2022-10-17T07:59:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
