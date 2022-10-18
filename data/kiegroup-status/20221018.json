@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-18T15:11:26.649Z",
+    "date": "2022-10-18T16:18:47.367Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3274658693"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3275147268"
   },
   "projects": [
     {
@@ -2466,7 +2466,7 @@
             }
           ],
           "created_at": "2022-10-18T12:38:47Z",
-          "updated_at": "2022-10-18T15:01:15Z",
+          "updated_at": "2022-10-18T15:55:15Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2486,13 +2486,35 @@
           },
           "checks": [
             {
+              "id": 8963639784,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/appformer/runs/8963639784",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-10-18T15:55:17Z",
+              "completed_at": "2022-10-18T15:55:18Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 8963638493,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/appformer/runs/8963638493",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-10-18T15:51:38Z",
+              "completed_at": "2022-10-18T15:55:13Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
               "id": 8962352187,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/3274581229/jobs/5388296238",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-10-18T15:05:47Z",
-              "completed_at": null,
+              "completed_at": "2022-10-18T16:09:22Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2500,30 +2522,30 @@
               "id": 8962351911,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/3274581229/jobs/5388296024",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-10-18T15:06:33Z",
-              "completed_at": null,
+              "completed_at": "2022-10-18T16:00:34Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 19726117862,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/216/",
-              "conclusion": "pending",
-              "started_at": "2022-10-18T15:01:20Z",
-              "completed_at": "2022-10-18T15:01:20Z",
+              "id": 19727447782,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/210/",
+              "conclusion": "failure",
+              "started_at": "2022-10-18T15:55:08Z",
+              "completed_at": "2022-10-18T15:55:08Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 19726117865,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/210/",
-              "conclusion": "pending",
-              "started_at": "2022-10-18T15:01:20Z",
-              "completed_at": "2022-10-18T15:01:20Z",
+              "id": 19727483037,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/216/",
+              "conclusion": "success",
+              "started_at": "2022-10-18T15:56:38Z",
+              "completed_at": "2022-10-18T15:56:38Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8865,217 +8887,6 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 4364,
-          "title": "BXMSDOC-8626",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4364",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4364",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-10-18T14:43:33Z",
-          "updated_at": "2022-10-18T14:43:33Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "2e7be7c54dcc02786fd0ca732d6a93ee0123c6a7",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "BXMSDOC-8626",
-            "sha": "70c703009cd3e80352485be9a7959948a565e3a1",
-            "label": "kiegroup:BXMSDOC-8626"
-          },
-          "user": {
-            "login": "emmurphy1",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
-            "html_url": "https://github.com/emmurphy1"
-          },
-          "checks": [
-            {
-              "id": 8961902520,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3274438749/jobs/5387963752",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:54:30Z",
-              "completed_at": "2022-10-18T14:56:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8961902224,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3274438749/jobs/5387963531",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-10-18T14:43:39Z",
-              "completed_at": "2022-10-18T14:43:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8875095003,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3244186210/jobs/5320003232",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-13T16:49:56Z",
-              "completed_at": "2022-10-13T16:51:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8875094781,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3244186210/jobs/5320003055",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-13T16:49:56Z",
-              "completed_at": "2022-10-13T16:52:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19726101580,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-docs-7.67.x-blue.pr/105/",
-              "conclusion": "success",
-              "started_at": "2022-10-18T15:00:41Z",
-              "completed_at": "2022-10-18T15:00:41Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4356,
-          "title": "BXMSDOC-8564-7.67.x: Add mutual TLS optional step",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4356",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4356",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-10-03T22:54:56Z",
-          "updated_at": "2022-10-18T14:31:25Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "3e13f5f35e1832c7aec486c4be04e45c39cfc33a",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "BXMSDOC-8564-7.67.x",
-            "sha": "343903a23f50c0a047f75b996bc2cac7d586875e",
-            "label": "csherrar:BXMSDOC-8564-7.67.x"
-          },
-          "user": {
-            "login": "csherrar",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25010141?v=4",
-            "html_url": "https://github.com/csherrar"
-          },
-          "checks": [
-            {
-              "id": 8961599625,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3274343539/jobs/5387740202",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:34:53Z",
-              "completed_at": "2022-10-18T14:36:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8961599263,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3274343539/jobs/5387739934",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:37:33Z",
-              "completed_at": "2022-10-18T14:39:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19726000178,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-docs-7.67.x.pr/121/",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:56:39Z",
-              "completed_at": "2022-10-18T14:56:39Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4355,
-          "title": "BXMSDOC-8564-main: Add mutual TLS optional step",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4355",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4355",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-10-03T22:51:01Z",
-          "updated_at": "2022-10-18T14:32:31Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "111f644408a7f5f3d10ebeca2bfa5a9f77bd73b5",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "BXMSDOC-8564-main-final",
-            "sha": "613a421229eff2d325e18557e08ece5c6a301ff8",
-            "label": "csherrar:BXMSDOC-8564-main-final"
-          },
-          "user": {
-            "login": "csherrar",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25010141?v=4",
-            "html_url": "https://github.com/csherrar"
-          },
-          "checks": [
-            {
-              "id": 8961626399,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3274352020/jobs/5387759577",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:49:43Z",
-              "completed_at": "2022-10-18T14:51:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 8961626137,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3274352020/jobs/5387759392",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:54:05Z",
-              "completed_at": "2022-10-18T14:55:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19726074274,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/629/",
-              "conclusion": "success",
-              "started_at": "2022-10-18T14:59:37Z",
-              "completed_at": "2022-10-18T14:59:37Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
