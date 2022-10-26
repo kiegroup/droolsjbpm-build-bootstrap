@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-10-26T12:16:50.892Z",
+    "date": "2022-10-26T13:41:08.111Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3328904951"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3329509755"
   },
   "projects": [
     {
@@ -1717,6 +1717,117 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4773,
+          "title": "DROOLS-7215 Inconsistent list projection on context following DMNv1.3",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4773",
+          "html_url": "https://github.com/kiegroup/drools/pull/4773",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            },
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            },
+            {
+              "login": "hellowdan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/22012223?v=4",
+              "html_url": "https://github.com/hellowdan"
+            }
+          ],
+          "created_at": "2022-10-26T12:54:54Z",
+          "updated_at": "2022-10-26T13:06:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "3a90cea0147e1e8b168d9b67fc53b341dcca5e8f",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20221026-DROOLS-7215-7x",
+            "sha": "e39d24dac09cb27d74660b16c829db8d71c26f89",
+            "label": "tarilabs:tarilabs-20221026-DROOLS-7215-7x"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 9117230396,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3329168311/jobs/5506043312",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-26T12:55:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9117230170,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3329168311/jobs/5506043152",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-10-26T12:55:03Z",
+              "completed_at": "2022-10-26T12:55:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9117229684,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3329168311/jobs/5506042818",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-10-26T12:55:03Z",
+              "completed_at": "2022-10-26T12:55:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9117229389,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3329168311/jobs/5506042598",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-10-26T12:55:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19857709180,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/386/",
+              "conclusion": "pending",
+              "started_at": "2022-10-26T12:55:42Z",
+              "completed_at": "2022-10-26T12:55:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 19857709245,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/380/",
+              "conclusion": "pending",
+              "started_at": "2022-10-26T12:55:42Z",
+              "completed_at": "2022-10-26T12:55:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4771,
           "title": "[DROOLS-7214] non-executable-model doesn't react to bind-only Map pro…",
@@ -4756,13 +4867,23 @@
           "draft": false,
           "requested_reviewers": [
             {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
               "login": "jakubschwan",
               "avatar_url": "https://avatars.githubusercontent.com/u/13150556?v=4",
               "html_url": "https://github.com/jakubschwan"
             }
           ],
           "created_at": "2022-10-19T16:58:46Z",
-          "updated_at": "2022-10-20T04:08:26Z",
+          "updated_at": "2022-10-26T12:56:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
