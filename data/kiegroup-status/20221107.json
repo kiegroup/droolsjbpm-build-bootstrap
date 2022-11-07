@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-07T07:07:44.528Z",
+    "date": "2022-11-07T08:11:26.162Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3408254393"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3408597981"
   },
   "projects": [
     {
@@ -2894,6 +2894,270 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2232,
+          "title": "[7.67.x] [JBPM-10129] Signals inside a multinode process are not captured correctly by same process (#2228)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2232",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2232",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-07T08:03:52Z",
+          "updated_at": "2022-11-07T08:03:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "234550da185c64fc954c1f6e269893bd4a6db2fe",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10129-7.67.x",
+            "sha": "d49f50dfaca37189f758756ced53633df5a98df1",
+            "label": "elguardian:JBPM-10129-7.67.x"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9329978989,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408548686/jobs/5669267451",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:04:02Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9329978807,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408548686/jobs/5669267314",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:04:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20029983761,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/95/",
+              "conclusion": "pending",
+              "started_at": "2022-11-07T08:03:56Z",
+              "completed_at": "2022-11-07T08:03:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2231,
+          "title": "[7.67.x-blue] [JBPM-10129] Signals inside a multinode process are not captured correctly by same process (#2228)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2231",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2231",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-07T08:03:45Z",
+          "updated_at": "2022-11-07T08:03:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "b2d62a369e387bef89f598d423b15e4f8a6843f0",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10129-7.67.x-blue",
+            "sha": "bac05079d322ff1ced3611b30398b6499c83e235",
+            "label": "elguardian:JBPM-10129-7.67.x-blue"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9329977243,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408548011/jobs/5669266087",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:03:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9329977093,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408548011/jobs/5669265973",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-07T08:03:51Z",
+              "completed_at": "2022-11-07T08:03:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20029982315,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/38/",
+              "conclusion": "pending",
+              "started_at": "2022-11-07T08:03:49Z",
+              "completed_at": "2022-11-07T08:03:49Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2230,
+          "title": "[7.67.x-blue] [JBPM-10106] Orphaned records in the sessionInfo table (#2213)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2230",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2230",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2022-11-07T08:00:04Z",
+          "updated_at": "2022-11-07T08:00:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "b2d62a369e387bef89f598d423b15e4f8a6843f0",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10106-7.67.x-blue",
+            "sha": "77e636f1eacdb1c0829ec0d9b29856f0d0fd1f92",
+            "label": "elguardian:JBPM-10106-7.67.x-blue"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9329907977,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408522591/jobs/5669211425",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:00:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9329907760,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408522591/jobs/5669211294",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:00:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20029933333,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/37/",
+              "conclusion": "pending",
+              "started_at": "2022-11-07T08:00:09Z",
+              "completed_at": "2022-11-07T08:00:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2229,
+          "title": "[7.67.x] [JBPM-10106] Orphaned records in the sessionInfo table (#2213)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2229",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2229",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2022-11-07T07:59:17Z",
+          "updated_at": "2022-11-07T08:00:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "234550da185c64fc954c1f6e269893bd4a6db2fe",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10106-7.67.x",
+            "sha": "1391da859956ef4de86e02f6cfd396d84b3331f2",
+            "label": "elguardian:JBPM-10106-7.67.x"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9329897516,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408518468/jobs/5669203618",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T07:59:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9329897352,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3408518468/jobs/5669203504",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T07:59:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20029924408,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/94/",
+              "conclusion": "pending",
+              "started_at": "2022-11-07T07:59:22Z",
+              "completed_at": "2022-11-07T07:59:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2227,
           "title": "[7.67.x-blue][JBPM-10125] Write raw content to avoid escape chars in SOAP headers",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2227",
@@ -3969,6 +4233,138 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2879,
+          "title": "[7.67.x-blue] [JBPM-10127] Performance downgrade in cluster extension",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2879",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2879",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-07T08:10:44Z",
+          "updated_at": "2022-11-07T08:10:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "487764d66810bfa95300aa8204ec095a3cda1a81",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10127-7.67.x-blue",
+            "sha": "fb4fadf0f7eff167f82c39bac36034b8d6bb679c",
+            "label": "elguardian:JBPM-10127-7.67.x-blue"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9330106539,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3408595811/jobs/5669368517",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:10:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9330106358,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3408595811/jobs/5669368371",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:10:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20030074205,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/60/",
+              "conclusion": "pending",
+              "started_at": "2022-11-07T08:10:47Z",
+              "completed_at": "2022-11-07T08:10:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2878,
+          "title": "[7.,67.x] [JBPM-10127] Performance downgrade in cluster extension",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2878",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2878",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2022-11-07T08:09:57Z",
+          "updated_at": "2022-11-07T08:10:02Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2bf57de8a5616c6f462c86bcb1350b9ed2db26e1",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10127-7.67.x",
+            "sha": "8b4365b3197bf2f8d928dab0fd78cc8e37016e6b",
+            "label": "elguardian:JBPM-10127-7.67.x"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9330093864,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3408591153/jobs/5669358813",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:10:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9330093706,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3408591153/jobs/5669358705",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-07T08:10:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20030064196,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/94/",
+              "conclusion": "pending",
+              "started_at": "2022-11-07T08:10:01Z",
+              "completed_at": "2022-11-07T08:10:01Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2877,
           "title": "[7.67.x-blue][JBPM-10125] Test for write raw to avoid escape chars in SOAP headers",
