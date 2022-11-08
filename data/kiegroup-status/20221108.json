@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-08T08:11:03.794Z",
+    "date": "2022-11-08T09:07:44.606Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3417523192"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3417918149"
   },
   "projects": [
     {
@@ -1382,16 +1382,484 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 4802,
+          "title": "[7.67.x-blue] [DROOLS-7203] Even after modify, non-matching rule is fired again whe…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4802",
+          "html_url": "https://github.com/kiegroup/drools/pull/4802",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-08T09:06:07Z",
+          "updated_at": "2022-11-08T09:06:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "46afb5e5bebf1dd543f7a0efa1c4780a60fc8e94",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHDM-1951-7.67.x-blue",
+            "sha": "833c60bed57bb9e69aa7e013b45f301ae4bd7dc3",
+            "label": "tkobayas:RHDM-1951-7.67.x-blue"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 9356826076,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417907509/jobs/5689578209",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T09:06:15Z",
+              "completed_at": "2022-11-08T09:06:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9356825743,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417907509/jobs/5689577977",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T09:06:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9356825394,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417907509/jobs/5689577675",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T09:06:16Z",
+              "completed_at": "2022-11-08T09:06:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9356825102,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417907509/jobs/5689577439",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-11-08T09:06:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20053830675,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/7/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T09:06:11Z",
+              "completed_at": "2022-11-08T09:06:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20053830693,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/6/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T09:06:11Z",
+              "completed_at": "2022-11-08T09:06:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4801,
+          "title": "[7.67.x] [DROOLS-7203] Even after modify, non-matching rule is fired again whe…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4801",
+          "html_url": "https://github.com/kiegroup/drools/pull/4801",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-08T08:57:31Z",
+          "updated_at": "2022-11-08T08:57:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2c932b2ce901193b6c2275bc882018437be5040a",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHDM-1951-7.67.x",
+            "sha": "02e3f13605c72dfe634ea4c55b42c7b94921cc78",
+            "label": "tkobayas:RHDM-1951-7.67.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 9356640924,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417840653/jobs/5689433940",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:57:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9356640741,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417840653/jobs/5689433801",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:57:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9356640540,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417840653/jobs/5689433635",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:57:40Z",
+              "completed_at": "2022-11-08T08:57:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9356640294,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417840653/jobs/5689433437",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:57:39Z",
+              "completed_at": "2022-11-08T08:57:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20053674597,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/8/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T08:57:35Z",
+              "completed_at": "2022-11-08T08:57:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20053674600,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/8/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T08:57:35Z",
+              "completed_at": "2022-11-08T08:57:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4800,
+          "title": "[7.67.x-blue] [DROOLS-7088] Property reactivity discrepancy between executable mode…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4800",
+          "html_url": "https://github.com/kiegroup/drools/pull/4800",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-08T08:20:02Z",
+          "updated_at": "2022-11-08T08:21:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "46afb5e5bebf1dd543f7a0efa1c4780a60fc8e94",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHDM-1945-7.67.x-blue",
+            "sha": "3c1f54cd23e345f1f22448267051483fe2795b3c",
+            "label": "tkobayas:RHDM-1945-7.67.x-blue"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 9355971101,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417596174/jobs/5688912373",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:21Z",
+              "completed_at": "2022-11-08T08:21:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355970949,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417596174/jobs/5688912262",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:21:38Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355970793,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417596174/jobs/5688912148",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:21Z",
+              "completed_at": "2022-11-08T08:21:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355970648,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417596174/jobs/5688912041",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:21:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355946822,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417587032/jobs/5688892978",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:20Z",
+              "completed_at": "2022-11-08T08:21:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355946617,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417587032/jobs/5688892814",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:20:25Z",
+              "completed_at": "2022-11-08T08:21:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355946410,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417587032/jobs/5688892650",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:20:09Z",
+              "completed_at": "2022-11-08T08:20:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355946186,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417587032/jobs/5688892496",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:20:14Z",
+              "completed_at": "2022-11-08T08:20:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20053077717,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/6/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T08:20:05Z",
+              "completed_at": "2022-11-08T08:20:05Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20053077786,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/5/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T08:20:05Z",
+              "completed_at": "2022-11-08T08:20:05Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4799,
+          "title": "[7.67.x] [DROOLS-7088] Property reactivity discrepancy between executable mode…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4799",
+          "html_url": "https://github.com/kiegroup/drools/pull/4799",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-08T08:11:16Z",
+          "updated_at": "2022-11-08T08:21:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2c932b2ce901193b6c2275bc882018437be5040a",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHDM-1945-7.67.x",
+            "sha": "f5a7180eab7f3d9776d8431bf69e8012d0ff41ff",
+            "label": "tkobayas:RHDM-1945-7.67.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 9355970061,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595776/jobs/5688911578",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:21:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355969908,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595776/jobs/5688911454",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:18Z",
+              "completed_at": "2022-11-08T08:21:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355969734,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595776/jobs/5688911308",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:18Z",
+              "completed_at": "2022-11-08T08:21:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355969541,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595776/jobs/5688911152",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:18Z",
+              "completed_at": "2022-11-08T08:21:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355782573,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417527314/jobs/5688765537",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:11:23Z",
+              "completed_at": "2022-11-08T08:11:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355782464,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417527314/jobs/5688765451",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:16Z",
+              "completed_at": "2022-11-08T08:21:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355782339,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417527314/jobs/5688765354",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:11:29Z",
+              "completed_at": "2022-11-08T08:21:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355782173,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417527314/jobs/5688765225",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:11:23Z",
+              "completed_at": "2022-11-08T08:11:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20052958545,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/7/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T08:11:19Z",
+              "completed_at": "2022-11-08T08:11:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20052958549,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/7/",
+              "conclusion": "pending",
+              "started_at": "2022-11-08T08:11:19Z",
+              "completed_at": "2022-11-08T08:11:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 4798,
           "title": "[7.67.x-blue] [DROOLS-7085] Rule doesn't match with more than 3 rules of BigDecimal…",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4798",
           "html_url": "https://github.com/kiegroup/drools/pull/4798",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-08T07:56:42Z",
-          "updated_at": "2022-11-08T07:56:42Z",
+          "updated_at": "2022-11-08T08:21:09Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1411,6 +1879,50 @@
           },
           "checks": [
             {
+              "id": 9355969079,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595351/jobs/5688910758",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:21:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355968877,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595351/jobs/5688910584",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:15Z",
+              "completed_at": "2022-11-08T08:21:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355968712,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595351/jobs/5688910465",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:15Z",
+              "completed_at": "2022-11-08T08:21:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355968460,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417595351/jobs/5688910245",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:15Z",
+              "completed_at": "2022-11-08T08:21:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
               "id": 9355521364,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/3417431266/jobs/5688560181",
@@ -1425,10 +1937,10 @@
               "id": 9355521242,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/3417431266/jobs/5688560085",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-11-08T07:57:08Z",
-              "completed_at": null,
+              "completed_at": "2022-11-08T08:21:45Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1436,10 +1948,10 @@
               "id": 9355521095,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/3417431266/jobs/5688559964",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-11-08T07:56:55Z",
-              "completed_at": null,
+              "completed_at": "2022-11-08T08:21:24Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1455,22 +1967,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20052767784,
+              "id": 20053381288,
               "name": "Linux - Compile Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/4/",
-              "conclusion": "pending",
-              "started_at": "2022-11-08T07:56:45Z",
-              "completed_at": "2022-11-08T07:56:45Z",
+              "conclusion": "failure",
+              "started_at": "2022-11-08T08:39:36Z",
+              "completed_at": "2022-11-08T08:39:36Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 20052767794,
+              "id": 20053756008,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/5/",
-              "conclusion": "pending",
-              "started_at": "2022-11-08T07:56:45Z",
-              "completed_at": "2022-11-08T07:56:45Z",
+              "conclusion": "success",
+              "started_at": "2022-11-08T09:02:09Z",
+              "completed_at": "2022-11-08T09:02:09Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1483,10 +1995,10 @@
           "html_url": "https://github.com/kiegroup/drools/pull/4797",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-08T06:40:47Z",
-          "updated_at": "2022-11-08T06:40:47Z",
+          "updated_at": "2022-11-08T08:21:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1505,6 +2017,50 @@
             "html_url": "https://github.com/tkobayas"
           },
           "checks": [
+            {
+              "id": 9355968206,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417594901/jobs/5688910039",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:13Z",
+              "completed_at": "2022-11-08T08:21:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355967981,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417594901/jobs/5688909871",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:21:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355967770,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417594901/jobs/5688909699",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-08T08:21:12Z",
+              "completed_at": "2022-11-08T08:21:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9355967436,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3417594901/jobs/5688909443",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-08T08:21:32Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 9354443918,
               "name": "windows-latest - Java 8 - Maven",
@@ -1531,10 +2087,10 @@
               "id": 9354443679,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/3417010462/jobs/5687709149",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-11-08T08:04:27Z",
-              "completed_at": null,
+              "completed_at": "2022-11-08T08:21:23Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1922,7 +2478,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-11-08T07:54:16Z",
+      "updated_at": "2022-11-08T08:11:21Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
