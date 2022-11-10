@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-10T08:10:05.139Z",
+    "date": "2022-11-10T09:09:17.390Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3435055375"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3435423385"
   },
   "projects": [
     {
@@ -1374,7 +1374,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-11-10T06:42:33Z",
+      "updated_at": "2022-11-10T09:04:00Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -3146,6 +3146,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2233,
+          "title": "[JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2233",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2233",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-10T08:18:37Z",
+          "updated_at": "2022-11-10T08:18:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5ff4a6f0bfb3b98661e819487099c539848752aa",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10132",
+            "sha": "40e72f8d795320787afa1c69e7d1b2d6d6d2e646",
+            "label": "elguardian:JBPM-10132"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9406937462,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3435105970/jobs/5727088499",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-10T08:18:51Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9406937276,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3435105970/jobs/5727088356",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-10T08:18:53Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20100248270,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/795/",
+              "conclusion": "pending",
+              "started_at": "2022-11-10T08:18:44Z",
+              "completed_at": "2022-11-10T08:18:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2227,
           "title": "[7.67.x-blue][JBPM-10125] Write raw content to avoid escape chars in SOAP headers",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2227",
@@ -4386,97 +4449,6 @@
               "conclusion": "success",
               "started_at": "2022-10-31T20:11:09Z",
               "completed_at": "2022-10-31T20:11:09Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2872,
-          "title": "[7.67.x][RHPAM-4519] - Set KubernetesClientException in Kie Server's",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2872",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2872",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
-          "created_at": "2022-10-19T17:01:20Z",
-          "updated_at": "2022-11-09T17:12:40Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "2bf57de8a5616c6f462c86bcb1350b9ed2db26e1",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "RHPAM-4519-7.67.x",
-            "sha": "1cd2f364dbdfe54baace741caee72c40c6402524",
-            "label": "spolti:RHPAM-4519-7.67.x"
-          },
-          "user": {
-            "login": "spolti",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1863987?v=4",
-            "html_url": "https://github.com/spolti"
-          },
-          "checks": [
-            {
-              "id": 9396128211,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3422278968/jobs/5719018077",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-09T19:23:37Z",
-              "completed_at": "2022-11-09T22:26:02Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9396127835,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3422278968/jobs/5719017846",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-09T14:26:17Z",
-              "completed_at": "2022-11-09T17:44:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9393423730,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/9393423730",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-09T17:10:15Z",
-              "completed_at": "2022-11-09T17:12:38Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 9373054115,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/9373054115",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-08T21:20:55Z",
-              "completed_at": "2022-11-08T21:20:56Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20087787575,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/97/",
-              "conclusion": "success",
-              "started_at": "2022-11-09T17:17:17Z",
-              "completed_at": "2022-11-09T17:17:17Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
