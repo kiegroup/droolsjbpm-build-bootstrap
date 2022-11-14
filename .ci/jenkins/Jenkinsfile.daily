@@ -108,7 +108,7 @@ pipeline {
         }
         stage('Deploy process-migration-service locally with jdk11'){
             tools {
-              jdk 'kie-jdk11'
+              jdk 'kie-jdk11.0.15'
             }
             steps {
                 dir("${WORKSPACE}/bc/kiegroup_process_migration_service") {
@@ -127,7 +127,7 @@ pipeline {
         }         
         stage('Unpack zip of artifacts to QA Nexus') {
             when {
-                expression { (jdkVersion == 'kie-jdk11' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
+                expression { (jdkVersion == 'kie-jdk11.0.15' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
             }
             steps {
                 withCredentials([usernameColonPassword(credentialsId: 'unpacks-zip-on-qa-nexus', variable: 'kieUnpack')]) {
@@ -142,7 +142,7 @@ pipeline {
         }
         stage('Additional tests for jdk11 and jdk8') {
             when {
-                expression { (jdkVersion == 'kie-jdk11' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
+                expression { (jdkVersion == 'kie-jdk11.0.15' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
             }
             steps {
                 parallel (
