@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-14T09:08:18.602Z",
+    "date": "2022-11-14T10:08:42.393Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3459990253"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3460436946"
   },
   "projects": [
     {
@@ -1480,10 +1480,10 @@
               "id": 9468047052,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/3440370574/jobs/5775019995",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-11-14T07:59:50Z",
-              "completed_at": null,
+              "completed_at": "2022-11-14T09:36:34Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -4327,6 +4327,69 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2880,
+          "title": "[JBPM-9450] Jbpm7 spring boot business application: No active transaction after arjuna transaction timeout",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2880",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2880",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-14T10:02:42Z",
+          "updated_at": "2022-11-14T10:02:42Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "fa6388d9da00aed37636b1d4fe1b640ae1e97b2c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-9450",
+            "sha": "4eb0fe53dc8954e3371945aa7cda99b3cf0178ed",
+            "label": "elguardian:JBPM-9450"
+          },
+          "user": {
+            "login": "elguardian",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+            "html_url": "https://github.com/elguardian"
+          },
+          "checks": [
+            {
+              "id": 9470408316,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3460383982/jobs/5776865946",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-14T10:02:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9470408002,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3460383982/jobs/5776865701",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-14T10:02:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20146669930,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1062/",
+              "conclusion": "pending",
+              "started_at": "2022-11-14T10:02:47Z",
+              "completed_at": "2022-11-14T10:02:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2877,
           "title": "[7.67.x-blue][JBPM-10125] Test for write raw to avoid escape chars in SOAP headers",
