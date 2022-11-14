@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-14T12:15:04.746Z",
+    "date": "2022-11-14T13:46:38.576Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3461381396"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3461958429"
   },
   "projects": [
     {
@@ -19,154 +19,6 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 2115,
-          "title": "[7.67.x] replaced jdk11 by jdk11.0.15",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2115",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2115",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2022-11-14T12:14:02Z",
-          "updated_at": "2022-11-14T12:14:02Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "2069da07a75de5ac0744afb62782526ae2833d3f",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x-kie-jdk-version",
-            "sha": "4ddb875dea4973396647328fe4975f4b472e6416",
-            "label": "mbiarnes:7.67.x-kie-jdk-version"
-          },
-          "user": {
-            "login": "mbiarnes",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
-            "html_url": "https://github.com/mbiarnes"
-          },
-          "checks": [
-            {
-              "id": 9473064963,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3461376028/jobs/5778905171",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-14T12:14:13Z",
-              "completed_at": "2022-11-14T12:14:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9473064692,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3461376028/jobs/5778904978",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-11-14T12:14:07Z",
-              "completed_at": "2022-11-14T12:14:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20148971127,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/50/",
-              "conclusion": "pending",
-              "started_at": "2022-11-14T12:14:05Z",
-              "completed_at": "2022-11-14T12:14:05Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2114,
-          "title": "[main] replaced jdk11 by jdk11.0.15",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2114",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2114",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2022-11-14T12:13:02Z",
-          "updated_at": "2022-11-14T12:13:02Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5801c460bf964afbc6abaac4d75b0eabee8f1f69",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "main-kie-jdk-version",
-            "sha": "154bf440d2294b38c299e554e72ad9680545b113",
-            "label": "mbiarnes:main-kie-jdk-version"
-          },
-          "user": {
-            "login": "mbiarnes",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
-            "html_url": "https://github.com/mbiarnes"
-          },
-          "checks": [
-            {
-              "id": 9473041254,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3461368037/jobs/5778887372",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-14T12:13:12Z",
-              "completed_at": "2022-11-14T12:13:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9473040956,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3461368037/jobs/5778887157",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-14T12:13:18Z",
-              "completed_at": "2022-11-14T12:14:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20148955140,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/653/",
-              "conclusion": "pending",
-              "started_at": "2022-11-14T12:13:07Z",
-              "completed_at": "2022-11-14T12:13:07Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 2113,
           "title": "Bump hsqldb from 2.3.0 to 2.7.1",
@@ -4485,7 +4337,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-14T10:02:42Z",
-          "updated_at": "2022-11-14T10:02:42Z",
+          "updated_at": "2022-11-14T12:32:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4495,7 +4347,7 @@
           },
           "head": {
             "ref": "JBPM-9450",
-            "sha": "4eb0fe53dc8954e3371945aa7cda99b3cf0178ed",
+            "sha": "8cea1a52e7f154ff388577688b3fc0b9898ab286",
             "label": "elguardian:JBPM-9450"
           },
           "user": {
@@ -4505,34 +4357,34 @@
           },
           "checks": [
             {
-              "id": 9470408316,
+              "id": 9473362212,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3460383982/jobs/5776865946",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3461475525/jobs/5779129777",
               "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-11-14T10:02:56Z",
+              "started_at": "2022-11-14T12:30:09Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 9470408002,
+              "id": 9473361954,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3460383982/jobs/5776865701",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3461475525/jobs/5779129563",
               "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-11-14T10:02:56Z",
+              "started_at": "2022-11-14T12:30:00Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20146669930,
+              "id": 20149219856,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1062/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1063/",
               "conclusion": "pending",
-              "started_at": "2022-11-14T10:02:47Z",
-              "completed_at": "2022-11-14T10:02:47Z",
+              "started_at": "2022-11-14T12:29:13Z",
+              "completed_at": "2022-11-14T12:29:13Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
