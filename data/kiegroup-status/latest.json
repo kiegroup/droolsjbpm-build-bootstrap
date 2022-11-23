@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-23T08:09:16.789Z",
+    "date": "2022-11-23T09:10:43.530Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3530269829"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3530635639"
   },
   "projects": [
     {
@@ -19,6 +19,36 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2121,
+          "title": "[BXMSPROD-1881] dependabot prefix lenght <15",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2121",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2121",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-23T09:03:19Z",
+          "updated_at": "2022-11-23T09:06:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c674a151bad66fbd9ec6c22de6650c004c7c9d0b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "741aa9a5e8f442517374d71cac7ad73d60ff258d",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": []
+        },
         {
           "number": 2119,
           "title": "Bump hibernate-validator from 4.1.0.Final to 4.3.2.Final",
@@ -1238,6 +1268,85 @@
       "repo_url": "https://github.com/kiegroup/kie-soup",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-soup/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 258,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-soup/pulls/258",
+          "html_url": "https://github.com/kiegroup/kie-soup/pull/258",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:30Z",
+          "updated_at": "2022-11-23T09:09:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5ecac47a45f4687dd31cc5f7c6ab451bd223245a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "9f351bcfb70317dbb7a3456b39ed6e970e9dff5b",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660829040,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3530636464/jobs/5922851340",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:08:15Z",
+              "completed_at": "2022-11-23T09:08:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660828838,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3530636464/jobs/5922851170",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:45Z",
+              "completed_at": "2022-11-23T09:06:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308453042,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-soup-main.pr/88/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:05Z",
+              "completed_at": "2022-11-23T09:10:05Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 248,
           "title": "[JBPM-10028] Use sensible default for fetching rows",
@@ -2925,7 +3034,87 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/lienzo-core",
       "pulls_url": "https://api.github.com/repos/kiegroup/lienzo-core/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 162,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/lienzo-core/pulls/162",
+          "html_url": "https://github.com/kiegroup/lienzo-core/pull/162",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:47Z",
+          "updated_at": "2022-11-23T09:06:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f6984c49a82b588f872904ed1ad984e96cd8843e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "4ad5fa29042cc95b75ae75877ebc30c56ad04bee",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660833063,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/lienzo-core/actions/runs/3530637943/jobs/5922854627",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T09:08:23Z",
+              "completed_at": "2022-11-23T09:09:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660832878,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/lienzo-core/actions/runs/3530637943/jobs/5922854471",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:56Z",
+              "completed_at": "2022-11-23T09:06:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308452360,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/lienzo-core-main.pr/31/",
+              "conclusion": "success",
+              "started_at": "2022-11-23T09:10:03Z",
+              "completed_at": "2022-11-23T09:10:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -2954,6 +3143,85 @@
       "repo_url": "https://github.com/kiegroup/lienzo-tests",
       "pulls_url": "https://api.github.com/repos/kiegroup/lienzo-tests/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 143,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/lienzo-tests/pulls/143",
+          "html_url": "https://github.com/kiegroup/lienzo-tests/pull/143",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:51Z",
+          "updated_at": "2022-11-23T09:06:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "876e3780047df3f22521f4d74a0dfeb3065b9217",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "a1105d231639c170191d20c466d5ec33d8bfc778",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660834059,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/lienzo-tests/actions/runs/3530638219/jobs/5922855404",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-23T09:10:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660833828,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/lienzo-tests/actions/runs/3530638219/jobs/5922855229",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T09:08:24Z",
+              "completed_at": "2022-11-23T09:09:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308399520,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/lienzo-tests-main.pr/44/",
+              "conclusion": "pending",
+              "started_at": "2022-11-23T09:06:57Z",
+              "completed_at": "2022-11-23T09:06:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 77,
           "title": "JBPM-8858 [Stunner] Lienzo - Unit Testing for the core migration to n…",
@@ -3030,6 +3298,95 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1328,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1328",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1328",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:26Z",
+          "updated_at": "2022-11-23T09:07:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "72b14bd5e5c5b35804c3ba4a3efd8dabe3c0ae23",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "8cb47a0906181cf20725a20525087cae7a7ea5d6",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660852127,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/3530645196/jobs/5922869293",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:09:07Z",
+              "completed_at": "2022-11-23T09:09:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660851946,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/3530645196/jobs/5922869154",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:07:57Z",
+              "completed_at": "2022-11-23T09:07:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308416812,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/227/",
+              "conclusion": "pending",
+              "started_at": "2022-11-23T09:07:55Z",
+              "completed_at": "2022-11-23T09:07:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20308437916,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/230/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:09:11Z",
+              "completed_at": "2022-11-23T09:09:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1327,
           "title": "Bump loader-utils from 1.2.3 to 1.4.2 in /appformer-js",
@@ -3266,7 +3623,7 @@
             }
           ],
           "created_at": "2022-10-18T12:38:47Z",
-          "updated_at": "2022-11-23T07:46:37Z",
+          "updated_at": "2022-11-23T08:44:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3286,13 +3643,35 @@
           },
           "checks": [
             {
+              "id": 9660411434,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/appformer/runs/9660411434",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T08:44:10Z",
+              "completed_at": "2022-11-23T08:44:11Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660410530,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/appformer/runs/9660410530",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T08:40:45Z",
+              "completed_at": "2022-11-23T08:44:06Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
               "id": 9659504994,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/3530144809/jobs/5921820499",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-11-23T07:46:49Z",
-              "completed_at": null,
+              "completed_at": "2022-11-23T08:33:24Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -3300,30 +3679,30 @@
               "id": 9659504880,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/3530144809/jobs/5921820416",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2022-11-23T07:46:51Z",
-              "completed_at": null,
+              "completed_at": "2022-11-23T08:48:47Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20307362528,
+              "id": 20307965294,
               "name": "Linux - Compile Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/223/",
-              "conclusion": "pending",
-              "started_at": "2022-11-23T07:46:42Z",
-              "completed_at": "2022-11-23T07:46:42Z",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T08:37:03Z",
+              "completed_at": "2022-11-23T08:37:03Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 20307362532,
+              "id": 20308100259,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/226/",
-              "conclusion": "pending",
-              "started_at": "2022-11-23T07:46:42Z",
-              "completed_at": "2022-11-23T07:46:42Z",
+              "conclusion": "success",
+              "started_at": "2022-11-23T08:46:53Z",
+              "completed_at": "2022-11-23T08:46:53Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4899,7 +5278,87 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-uberfire-extensions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-uberfire-extensions/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 132,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-uberfire-extensions/pulls/132",
+          "html_url": "https://github.com/kiegroup/kie-uberfire-extensions/pull/132",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:33Z",
+          "updated_at": "2022-11-23T09:06:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b4d67489f7ddfa143cf1dc8dd7fc568e56dd8157",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "3e2c99ee5b58f34d7ac0859b79a835eee428b00a",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660829965,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-uberfire-extensions/actions/runs/3530636772/jobs/5922852102",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:08:25Z",
+              "completed_at": "2022-11-23T09:09:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660829713,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-uberfire-extensions/actions/runs/3530636772/jobs/5922851900",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:09:12Z",
+              "completed_at": "2022-11-23T09:09:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308453330,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-uberfire-extensions-main.pr/28/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:06Z",
+              "completed_at": "2022-11-23T09:10:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -4928,6 +5387,85 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2234,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2234",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2234",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:48Z",
+          "updated_at": "2022-11-23T09:06:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5ff4a6f0bfb3b98661e819487099c539848752aa",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "09fb8115a17165979d150c8b54de14b25e1fdc00",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660824318,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3530634687/jobs/5922847558",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:07:10Z",
+              "completed_at": "2022-11-23T09:08:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660824161,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3530634687/jobs/5922847441",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:32Z",
+              "completed_at": "2022-11-23T09:06:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308452786,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/798/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:04Z",
+              "completed_at": "2022-11-23T09:10:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2233,
           "title": "[JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
@@ -6603,6 +7141,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2881,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2881",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2881",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:38Z",
+          "updated_at": "2022-11-23T09:06:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9ff5ab7f8ece4bf3ffd421b17ae71c583204c0a7",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "a02741fcfe383765430ab148aebc725a35af35d0",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660822691,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3530634152/jobs/5922846339",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:07:20Z",
+              "completed_at": "2022-11-23T09:07:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660822491,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3530634152/jobs/5922846185",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:06:44Z",
+              "completed_at": "2022-11-23T09:07:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308438263,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1067/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:09:13Z",
+              "completed_at": "2022-11-23T09:09:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2870,
           "title": "JBPM-10128 Form in KIE server with java.util.Date field does not allo…",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2870",
@@ -6618,7 +7235,7 @@
             }
           ],
           "created_at": "2022-10-14T07:34:30Z",
-          "updated_at": "2022-11-22T14:54:35Z",
+          "updated_at": "2022-11-23T08:40:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6688,6 +7305,16 @@
               "conclusion": "success",
               "started_at": "2022-11-22T14:52:36Z",
               "completed_at": "2022-11-22T14:52:36Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20308013631,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-integration-main.fdb/114/",
+              "conclusion": "pending",
+              "started_at": "2022-11-23T08:40:34Z",
+              "completed_at": "2022-11-23T08:40:34Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9527,6 +10154,107 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-playground/pulls{/number}",
       "pullRequests": [
         {
+          "number": 130,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-playground/pulls/130",
+          "html_url": "https://github.com/kiegroup/kie-wb-playground/pull/130",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:43Z",
+          "updated_at": "2022-11-23T09:06:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "81d3db959a218e7a0d54bea0e5b6bb40a7d9aa12",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "51a1e79ac1c6a1c94985f4e3762028aa39914dfb",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660833193,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/3530637754/jobs/5922854729",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:08:25Z",
+              "completed_at": "2022-11-23T09:08:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660833018,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/3530637754/jobs/5922854590",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:57Z",
+              "completed_at": "2022-11-23T09:06:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660832828,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/3530637754/jobs/5922854434",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:57Z",
+              "completed_at": "2022-11-23T09:06:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660832599,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/3530637754/jobs/5922854271",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-23T09:09:31Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308453211,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-playground-main.pr/37/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:06Z",
+              "completed_at": "2022-11-23T09:10:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 44,
           "title": "PLANNER-878: kie-wb-playground: Projects need to be buildable outside the workbench",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-playground/pulls/44",
@@ -10158,6 +10886,85 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-common",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3789,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3789",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3789",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:37Z",
+          "updated_at": "2022-11-23T09:06:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7a6623af413fb2f775db9035e618ef23e951f24c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "9efbf530ce6add706652ad9b14d6128480a28f9c",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660831263,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3530637200/jobs/5922853189",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-23T09:09:50Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660830907,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3530637200/jobs/5922852888",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:08:33Z",
+              "completed_at": "2022-11-23T09:10:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308449093,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/265/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:09:51Z",
+              "completed_at": "2022-11-23T09:09:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3788,
           "title": "Rename package after hibernate-validator upgrade",
@@ -12101,6 +12908,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1561,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1561",
+          "html_url": "https://github.com/kiegroup/drools-wb/pull/1561",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:45Z",
+          "updated_at": "2022-11-23T09:06:24Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5e885b68cc074f030d4a36300e0798cac23ca460",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "9c3c5e0cc793d7b5f3fa2de222d383ae9b39edf3",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660824057,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/actions/runs/3530634598/jobs/5922847365",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:08:24Z",
+              "completed_at": "2022-11-23T09:08:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660823829,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/actions/runs/3530634598/jobs/5922847193",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:06:57Z",
+              "completed_at": "2022-11-23T09:08:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308406601,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/drools-wb-main.pr/102/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:07:21Z",
+              "completed_at": "2022-11-23T09:07:21Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1560,
           "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1560",
@@ -12702,6 +13588,85 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 237,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/237",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/237",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:55Z",
+          "updated_at": "2022-11-23T09:06:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ad03d018e05cc493ec06b685a8d4acd0ef367869",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "112acc2b1d716ff52de638cf18812dee698fd0a6",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660826563,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/3530635456/jobs/5922849329",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:06:58Z",
+              "completed_at": "2022-11-23T09:08:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660826335,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/3530635456/jobs/5922849152",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:38Z",
+              "completed_at": "2022-11-23T09:06:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308452882,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-work-items-main.pr/54/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:05Z",
+              "completed_at": "2022-11-23T09:10:05Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 236,
           "title": "[JBPM-10122] UnknownKafkaVersionException when productized",
@@ -13375,6 +14340,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1578,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1578",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1578",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:52Z",
+          "updated_at": "2022-11-23T09:06:29Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "88c119ff293adddeaadcb28421384f47b957d720",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "a4dcbdd55238650c2ebdb742f957b43c2c961213",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660825123,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/3530634922/jobs/5922848185",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:06:58Z",
+              "completed_at": "2022-11-23T09:09:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660824877,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/3530634922/jobs/5922847987",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:34Z",
+              "completed_at": "2022-11-23T09:06:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308411659,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/156/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:07:38Z",
+              "completed_at": "2022-11-23T09:07:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1574,
           "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1574",
@@ -13796,6 +14840,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 416,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls/416",
+          "html_url": "https://github.com/kiegroup/optaplanner-wb/pull/416",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:58Z",
+          "updated_at": "2022-11-23T09:06:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "25c72f2b861f7f91ff66bea998b1940e332ca2e3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "504cccfc8b5728f9e0d0a9cf26776cd24b56b102",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660835037,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/3530638510/jobs/5922856126",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:07:11Z",
+              "completed_at": "2022-11-23T09:08:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660834829,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/3530638510/jobs/5922855982",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:08:38Z",
+              "completed_at": "2022-11-23T09:08:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308462987,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/optaplanner-wb-main.pr/40/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:44Z",
+              "completed_at": "2022-11-23T09:10:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 415,
           "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
           "url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls/415",
@@ -14019,6 +15142,85 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1202,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1202",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1202",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:40Z",
+          "updated_at": "2022-11-23T09:06:46Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6a0a11f737db1aa6cc9ba53c8a5358fd2f59be60",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "1c201b267ad0ebc7f59c597bdd6c740ea35456d0",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660831714,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3530637384/jobs/5922853576",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:08:27Z",
+              "completed_at": "2022-11-23T09:09:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660831437,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3530637384/jobs/5922853333",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:09:47Z",
+              "completed_at": "2022-11-23T09:10:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308436482,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/210/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:09:06Z",
+              "completed_at": "2022-11-23T09:09:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1198,
           "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
@@ -14456,7 +15658,65 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/process-migration-service",
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 85,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/85",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/85",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:33:40Z",
+          "updated_at": "2022-11-23T09:07:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "90200dd2388d00c3b0902df11d7fd510cbd69c6e",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "442995100e1017a32af9b2b6a4f7b914959e9859",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 20308417493,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/process-migration-service-main.pr/170/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:07:57Z",
+              "completed_at": "2022-11-23T09:07:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -14587,6 +15847,107 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 74,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/74",
+          "html_url": "https://github.com/kiegroup/kie-jpmml-integration/pull/74",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:32:26Z",
+          "updated_at": "2022-11-23T09:06:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "10edb70ad18961654db934bbe048c20108d4fe11",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "cc3640f1cd2f6cda9147dec3bcd755569018b564",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660829102,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/3530636225/jobs/5922851374",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-23T09:09:46Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660828891,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/3530636225/jobs/5922851215",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:45Z",
+              "completed_at": "2022-11-23T09:06:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660828646,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/3530636225/jobs/5922851020",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:07:25Z",
+              "completed_at": "2022-11-23T09:08:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660828337,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/3530636225/jobs/5922850779",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-11-23T09:06:45Z",
+              "completed_at": "2022-11-23T09:06:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308452489,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-jpmml-integration-main.pr/31/",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T09:10:03Z",
+              "completed_at": "2022-11-23T09:10:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 23,
           "title": "[JBPM-9032] PMML backend for the prediction service does not work with Java 11",
           "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/23",
@@ -14651,6 +16012,85 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4373,
+          "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4373",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4373",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2022-11-23T08:27:59Z",
+          "updated_at": "2022-11-23T09:06:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "98f4042e9eb2c78878085f698b639a7f2e452f33",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1881",
+            "sha": "22791cf96e0c91de3fa5af913c329ffb8d3fb093",
+            "label": "Ginxo:BXMSPROD-1881"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 9660826779,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3530635489/jobs/5922849506",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T09:07:01Z",
+              "completed_at": "2022-11-23T09:08:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9660826559,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3530635489/jobs/5922849326",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T09:09:17Z",
+              "completed_at": "2022-11-23T09:10:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20308426551,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/637/",
+              "conclusion": "pending",
+              "started_at": "2022-11-23T09:08:33Z",
+              "completed_at": "2022-11-23T09:08:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
