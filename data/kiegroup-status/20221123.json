@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-23T22:06:26.608Z",
+    "date": "2022-11-23T23:06:33.963Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3536001222"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3536311657"
   },
   "projects": [
     {
@@ -19,6 +19,72 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2122,
+          "title": "Bump postgresql from 42.4.1 to 42.4.3",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2122",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2122",
+          "state": "open",
+          "labels": [
+            "dependencies"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-23T22:24:43Z",
+          "updated_at": "2022-11-23T22:24:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c674a151bad66fbd9ec6c22de6650c004c7c9d0b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/org.postgresql-postgresql-42.4.3",
+            "sha": "19a19eb4fa59ce261a43018298f0ab6c8ec00734",
+            "label": "kiegroup:dependabot/maven/org.postgresql-postgresql-42.4.3"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 9676581418,
+              "name": "Full downstream build",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3536108209/jobs/5934837995",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-11-23T22:24:48Z",
+              "completed_at": "2022-11-23T22:24:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9676581282,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3536108144/jobs/5934837890",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T22:28:39Z",
+              "completed_at": "2022-11-23T22:29:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9676581110,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3536108144/jobs/5934837750",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T22:30:03Z",
+              "completed_at": "2022-11-23T22:31:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2121,
           "title": "[BXMSPROD-1881] dependabot prefix lenght <15",
@@ -5462,7 +5528,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-23T21:20:21Z",
-          "updated_at": "2022-11-23T21:20:21Z",
+          "updated_at": "2022-11-23T22:58:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5481,6 +5547,28 @@
             "html_url": "https://github.com/martinweiler"
           },
           "checks": [
+            {
+              "id": 9676990848,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9676990848",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T22:58:39Z",
+              "completed_at": "2022-11-23T22:58:45Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9676990502,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9676990502",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-11-23T22:56:02Z",
+              "completed_at": "2022-11-23T22:58:36Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 9675636644,
               "name": "ubuntu-latest - Java 8 - Maven",
@@ -5504,12 +5592,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20321537168,
+              "id": 20322675108,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/800/",
-              "conclusion": "pending",
-              "started_at": "2022-11-23T21:20:25Z",
-              "completed_at": "2022-11-23T21:20:25Z",
+              "conclusion": "failure",
+              "started_at": "2022-11-23T22:59:00Z",
+              "completed_at": "2022-11-23T22:59:00Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
