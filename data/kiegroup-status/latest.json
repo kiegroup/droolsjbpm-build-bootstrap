@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-11-23T21:06:03.872Z",
+    "date": "2022-11-23T22:06:26.608Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3535668516"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3536001222"
   },
   "projects": [
     {
@@ -5452,6 +5452,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2235,
+          "title": "JBPM-10139: Avoid duplicate entries in PerCaseRuntimeManager.local map to avoid multiple signals being sent",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2235",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2235",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-11-23T21:20:21Z",
+          "updated_at": "2022-11-23T21:20:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5ff4a6f0bfb3b98661e819487099c539848752aa",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10139",
+            "sha": "a3d3021d6e76d9de92a530176a02eb355243906f",
+            "label": "martinweiler:JBPM-10139"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 9675636644,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3535758278/jobs/5934121336",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-23T21:20:32Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9675636479,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3535758278/jobs/5934121206",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-11-23T21:20:35Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20321537168,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/800/",
+              "conclusion": "pending",
+              "started_at": "2022-11-23T21:20:25Z",
+              "completed_at": "2022-11-23T21:20:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2234,
           "title": "[BXMSPROD-1881] dependabot for main, 7.67.x and blue branches",
