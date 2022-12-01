@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-01T09:11:28.203Z",
+    "date": "2022-12-01T11:06:21.243Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3591088750"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3591984555"
   },
   "projects": [
     {
@@ -10888,6 +10888,75 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2240,
+          "title": "Adjust GHA concurrency",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2240",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2240",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            }
+          ],
+          "created_at": "2022-12-01T10:12:11Z",
+          "updated_at": "2022-12-01T10:12:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b60725fe79cfa599f0170a0de664719c3c5caf32",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "gha",
+            "sha": "7cd7111d67d2fbe12addcb4d2ab571436f38e12e",
+            "label": "cristianonicolai:gha"
+          },
+          "user": {
+            "login": "cristianonicolai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/570894?v=4",
+            "html_url": "https://github.com/cristianonicolai"
+          },
+          "checks": [
+            {
+              "id": 9818612045,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3591584233/jobs/6046287562",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T10:12:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9818611786,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3591584233/jobs/6046287357",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T10:12:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20430734649,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/808/",
+              "conclusion": "pending",
+              "started_at": "2022-12-01T10:12:15Z",
+              "completed_at": "2022-12-01T10:12:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2239,
           "title": "RHPAM-4583 - Review JPA mapper for consistently close entity manager …",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2239",
@@ -10895,15 +10964,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-12-01T02:07:52Z",
-          "updated_at": "2022-12-01T03:46:42Z",
+          "updated_at": "2022-12-01T09:49:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10926,9 +10989,9 @@
               "id": 9813511364,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6042190420",
-              "status": "queued",
+              "status": "in_progress",
               "conclusion": null,
-              "started_at": "2022-12-01T04:51:06Z",
+              "started_at": "2022-12-01T10:54:55Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
@@ -10937,10 +11000,10 @@
               "id": 9813511261,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6042190334",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-12-01T04:51:24Z",
-              "completed_at": null,
+              "completed_at": "2022-12-01T10:51:48Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -10988,7 +11051,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-30T16:28:42Z",
-          "updated_at": "2022-12-01T03:32:03Z",
+          "updated_at": "2022-12-01T09:50:12Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -12917,7 +12980,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-30T12:50:31Z",
-          "updated_at": "2022-11-30T14:59:14Z",
+          "updated_at": "2022-12-01T09:54:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13002,7 +13065,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-30T12:40:01Z",
-          "updated_at": "2022-11-30T15:03:53Z",
+          "updated_at": "2022-12-01T09:53:46Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13087,7 +13150,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-30T10:35:15Z",
-          "updated_at": "2022-11-30T12:59:42Z",
+          "updated_at": "2022-12-01T09:53:27Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18295,6 +18358,75 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-common",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3790,
+          "title": "[7.67.x] AF-2467 : Commit history in metrics does not get refreshed when using other than master branch.",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3790",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3790",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2022-12-01T10:38:41Z",
+          "updated_at": "2022-12-01T11:00:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "3654c49a87801dbd62bfd8070299cb067c8fa9b2",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "AF-2467-branches-7.67.x",
+            "sha": "a5c519fcca5cc2c55ec0aea03a40bd44bd20e69f",
+            "label": "Rikkola:AF-2467-branches-7.67.x"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 9819172190,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3591784015/jobs/6046728175",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T10:40:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9819172026,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3591784015/jobs/6046728039",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T10:39:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20431225408,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-common-7.67.x.pr/26/",
+              "conclusion": "pending",
+              "started_at": "2022-12-01T10:38:45Z",
+              "completed_at": "2022-12-01T10:38:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3788,
           "title": "Rename package after hibernate-validator upgrade",
@@ -23937,10 +24069,10 @@
               "id": 9815038133,
               "name": "ubuntu-18.04 - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590241533/jobs/6043434125",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-12-01T06:55:29Z",
-              "completed_at": null,
+              "completed_at": "2022-12-01T09:45:56Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -24006,10 +24138,10 @@
               "id": 9815011534,
               "name": "ubuntu-18.04 - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590230937/jobs/6043412950",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-12-01T06:53:01Z",
-              "completed_at": null,
+              "completed_at": "2022-12-01T10:04:33Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -24064,10 +24196,10 @@
               "id": 9814862194,
               "name": "ubuntu-18.04 - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590166077/jobs/6043290906",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2022-12-01T06:41:11Z",
-              "completed_at": null,
+              "completed_at": "2022-12-01T10:40:13Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -24540,15 +24672,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-11-28T15:36:04Z",
-          "updated_at": "2022-11-30T16:30:49Z",
+          "updated_at": "2022-12-01T10:46:56Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
