@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-01T00:41:15.183Z",
+    "date": "2022-12-01T02:40:36.821Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3588340502"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3588948470"
   },
   "projects": [
     {
@@ -10731,6 +10731,75 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2239,
+          "title": "RHPAM-4583 - Review JPA mapper for consistently close entity manager …",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2239",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2239",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2022-12-01T02:07:52Z",
+          "updated_at": "2022-12-01T02:07:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b60725fe79cfa599f0170a0de664719c3c5caf32",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4583",
+            "sha": "c481b6d25e9fe801985a1d3f748d8b9e4c65eb23",
+            "label": "cristianonicolai:RHPAM-4583"
+          },
+          "user": {
+            "login": "cristianonicolai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/570894?v=4",
+            "html_url": "https://github.com/cristianonicolai"
+          },
+          "checks": [
+            {
+              "id": 9811490555,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6040558554",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T02:08:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9811490419,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6040558437",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T02:08:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20425451407,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/807/",
+              "conclusion": "pending",
+              "started_at": "2022-12-01T02:07:56Z",
+              "completed_at": "2022-12-01T02:07:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2238,
           "title": "[RHPAM-4583] Improving clean up",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2238",
@@ -10740,7 +10809,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-30T16:28:42Z",
-          "updated_at": "2022-11-30T20:28:57Z",
+          "updated_at": "2022-12-01T01:56:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10763,10 +10832,10 @@
               "id": 9804425824,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3586265221/jobs/6035251950",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-11-30T18:59:22Z",
-              "completed_at": null,
+              "completed_at": "2022-12-01T00:59:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -10774,20 +10843,20 @@
               "id": 9804425481,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3586265221/jobs/6035251754",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-11-30T18:59:17Z",
-              "completed_at": null,
+              "completed_at": "2022-12-01T00:59:30Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20420412972,
+              "id": 20425336543,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/805/",
-              "conclusion": "failure",
-              "started_at": "2022-11-30T20:32:45Z",
-              "completed_at": "2022-11-30T20:32:45Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/806/",
+              "conclusion": "pending",
+              "started_at": "2022-12-01T01:56:08Z",
+              "completed_at": "2022-12-01T01:56:08Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
