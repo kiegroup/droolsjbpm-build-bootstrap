@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-01T02:40:36.821Z",
+    "date": "2022-12-01T06:09:28.238Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3588948470"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3589993925"
   },
   "projects": [
     {
@@ -19,6 +19,62 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2162,
+          "title": "[bot][blue]: Bump httpcore from 4.4.14 to 4.4.16",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2162",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2162",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-01T05:16:51Z",
+          "updated_at": "2022-12-01T05:29:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "3365d8bdd0d8b3ab465d2de21f377c394d33b45e",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "dependabot/maven/7.67.x-blue/org.apache.httpcomponents-httpcore-4.4.16",
+            "sha": "ca65df96c218872d0e9aa05ab5586817b089b87f",
+            "label": "kiegroup:dependabot/maven/7.67.x-blue/org.apache.httpcomponents-httpcore-4.4.16"
+          },
+          "user": {
+            "login": "dependabot[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
+            "html_url": "https://github.com/apps/dependabot"
+          },
+          "checks": [
+            {
+              "id": 9813837930,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3589736685/jobs/6042457661",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-01T05:20:10Z",
+              "completed_at": "2022-12-01T05:20:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9813837774,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3589736685/jobs/6042457542",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-01T05:18:50Z",
+              "completed_at": "2022-12-01T05:20:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2161,
           "title": "[bot][blue]: Bump chronicle-bytes from 1.16.16 to 2.24ea2",
@@ -5867,7 +5923,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-11-30T05:01:42Z",
+      "updated_at": "2022-12-01T05:01:50Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -10746,7 +10802,7 @@
             }
           ],
           "created_at": "2022-12-01T02:07:52Z",
-          "updated_at": "2022-12-01T02:07:52Z",
+          "updated_at": "2022-12-01T03:46:42Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10766,34 +10822,56 @@
           },
           "checks": [
             {
-              "id": 9811490555,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6040558554",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2022-12-01T02:08:07Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9811490419,
+              "id": 9813511364,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6040558437",
-              "status": "in_progress",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6042190420",
+              "status": "queued",
               "conclusion": null,
-              "started_at": "2022-12-01T02:08:09Z",
+              "started_at": "2022-12-01T04:51:06Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20425451407,
+              "id": 9813511261,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3588793885/jobs/6042190334",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T04:51:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9812729956,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9812729956",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-01T03:46:43Z",
+              "completed_at": "2022-12-01T03:46:45Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9812729700,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9812729700",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-01T03:44:08Z",
+              "completed_at": "2022-12-01T03:46:41Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 20426293653,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/807/",
-              "conclusion": "pending",
-              "started_at": "2022-12-01T02:07:56Z",
-              "completed_at": "2022-12-01T02:07:56Z",
+              "conclusion": "success",
+              "started_at": "2022-12-01T03:46:59Z",
+              "completed_at": "2022-12-01T03:46:59Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -10809,7 +10887,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-11-30T16:28:42Z",
-          "updated_at": "2022-12-01T01:56:06Z",
+          "updated_at": "2022-12-01T03:32:03Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10829,34 +10907,56 @@
           },
           "checks": [
             {
-              "id": 9804425824,
+              "id": 9813391267,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3586265221/jobs/6035251950",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3586265221/jobs/6042092782",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2022-11-30T18:59:22Z",
-              "completed_at": "2022-12-01T00:59:52Z",
+              "started_at": "2022-12-01T04:39:20Z",
+              "completed_at": "2022-12-01T04:51:15Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 9804425481,
+              "id": 9813391177,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3586265221/jobs/6035251754",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3586265221/jobs/6042092715",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2022-11-30T18:59:17Z",
-              "completed_at": "2022-12-01T00:59:30Z",
+              "started_at": "2022-12-01T04:39:15Z",
+              "completed_at": "2022-12-01T04:39:15Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20425336543,
+              "id": 9812566366,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9812566366",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-01T03:32:05Z",
+              "completed_at": "2022-12-01T03:32:06Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9812565695,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9812565695",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-01T03:29:32Z",
+              "completed_at": "2022-12-01T03:32:00Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 20426177451,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/806/",
-              "conclusion": "pending",
-              "started_at": "2022-12-01T01:56:08Z",
-              "completed_at": "2022-12-01T01:56:08Z",
+              "conclusion": "success",
+              "started_at": "2022-12-01T03:32:18Z",
+              "completed_at": "2022-12-01T03:32:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
