@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-01T06:09:28.238Z",
+    "date": "2022-12-01T07:07:02.113Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3589993925"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3590310737"
   },
   "projects": [
     {
@@ -5923,7 +5923,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-12-01T05:01:50Z",
+      "updated_at": "2022-12-01T06:57:40Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -7086,6 +7086,65 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1360,
+          "title": "RHPAM-4509 :Unable to deploy kjar to remote maven repository that requires access via proxy in Business Central",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1360",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1360",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2022-12-01T07:06:27Z",
+          "updated_at": "2022-12-01T07:06:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "514278fe3b36c3e43cdc9a9d4d8fb692b86f8009",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "backport-blue-RHPAM-4509",
+            "sha": "e727d222568a86213555249405ec3414fe25481e",
+            "label": "RishiRajAnand:backport-blue-RHPAM-4509"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 9815210790,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/3590310664/jobs/6043575990",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T07:06:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9815210638,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/3590310664/jobs/6043575860",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T07:06:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 1359,
           "title": "RHPAM-4509 :Unable to deploy kjar to remote maven repository that requires access via proxy in Business Central",
@@ -23786,6 +23845,183 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1205,
+          "title": "RHPAM-4431: Session Cookie Without Secure Attribute Set ",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1205",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1205",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2022-12-01T06:55:18Z",
+          "updated_at": "2022-12-01T06:55:29Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "de0f8e7d9159a24e22f71283778639ea0f3ed043",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "backport-blue-RHPAM-4431",
+            "sha": "a0636f39cf20094ad02b9091be503767b2aae910",
+            "label": "RishiRajAnand:backport-blue-RHPAM-4431"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 9815038243,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590241533/jobs/6043434214",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T06:55:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9815038133,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590241533/jobs/6043434125",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T06:55:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1204,
+          "title": "RHPAM-4431: Session Cookie Without Secure Attribute Set",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1204",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1204",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2022-12-01T06:52:51Z",
+          "updated_at": "2022-12-01T06:52:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2388d426bdbee07b3c7ee380d79a8f826b8955ae",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "backport-RHPAM-4431",
+            "sha": "1cbae0440ee6d43899cd86152eb88803b3988900",
+            "label": "RishiRajAnand:backport-RHPAM-4431"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 9815011662,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590230937/jobs/6043413047",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T06:54:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9815011534,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590230937/jobs/6043412950",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T06:53:01Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1203,
+          "title": "RHPAM-4431: Session Cookie Without Secure Attribute Set",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1203",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1203",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2022-12-01T06:40:45Z",
+          "updated_at": "2022-12-01T06:41:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5fb8dfe701f0773803b972b63ddd28d7dd084936",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4431",
+            "sha": "099a7dc3e76ac37cb1f52f456030ffefc3b69dca",
+            "label": "RishiRajAnand:RHPAM-4431"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 9814862194,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590166077/jobs/6043290906",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-01T06:41:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9814862070,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590166077/jobs/6043290798",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-01T06:40:51Z",
+              "completed_at": "2022-12-01T06:40:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 1198,
           "title": "[7.67.x-blue] [BXMSPROD-1845] elasticsearch removed from appformer",
