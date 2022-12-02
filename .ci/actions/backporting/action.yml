@@ -1,0 +1,46 @@
+name: 'Pull Request Backporting'
+description: 'Creates a backporting pull request'
+
+inputs:
+  target-branch:
+    description: "The branch where the cherry-pick must be applied"
+    required: true
+  title:
+    description: "The cherry-pick pull request title"
+    default: "${{ github.event.pull_request.title }}"
+    required: false
+  original-pr-url:
+    description: "Original pull request url"
+    default: "${{ github.event.pull_request.html_url }}"
+    required: false
+  original-pr-branch:
+    description: "Original pull request branch name"
+    default: "${{ github.event.pull_request.head.ref }}"
+    required: false
+  reviewers:
+    description: "Reviewers to be added in the backported pull request"
+    default: "${{ github.event.pull_request.user.login }}"
+    required: false
+
+runs: 
+  using: 'composite'
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Perform cherry pick
+      id: cherry-pick
+      # TODO: change to original one carloscastrojumo/github-cherry-pick-action@v1.0.3 
+      # when https://github.com/carloscastrojumo/github-cherry-pick-action/pull/26 merged
+      uses: lampajr/github-cherry-pick-action@issue-18_cp_branch_name
+      with:
+        branch: "${{ inputs.target-branch }}"
+        title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
+        body: "cherry-pick: ${{ inputs.original-pr-url }}"
+        labels: |
+          cherry-pick :cherries:
+        inherit_labels: false
+        cherry-pick-branch: "${{ inputs.original-pr-branch }}_${{ inputs.target-branch }}"
+        reviewers: |
+          ${{ inputs.reviewers }}
