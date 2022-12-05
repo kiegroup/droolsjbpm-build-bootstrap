@@ -31,9 +31,7 @@ runs:
         fetch-depth: 0
     - name: Perform cherry pick
       id: cherry-pick
-      # TODO: change to original one carloscastrojumo/github-cherry-pick-action@v1.0.3 
-      # when https://github.com/carloscastrojumo/github-cherry-pick-action/pull/26 merged
-      uses: lampajr/github-cherry-pick-action@issue-18_cp_branch_name
+      uses: carloscastrojumo/github-cherry-pick-action@v1.0.5
       with:
         branch: "${{ inputs.target-branch }}"
         title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
