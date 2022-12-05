@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-05T04:08:01.366Z",
+    "date": "2022-12-05T06:08:52.120Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3616833495"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3617417780"
   },
   "projects": [
     {
@@ -3261,7 +3261,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2022-12-03T06:12:13Z",
+      "updated_at": "2022-12-05T05:01:49Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -8259,6 +8259,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2244,
+          "title": "Use random port for LDAP test server",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2244",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2244",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2022-12-05T05:54:09Z",
+          "updated_at": "2022-12-05T05:54:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6ef93303a35e61a84fc0ce4287fcfd1b97d0167c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "ldap",
+            "sha": "b128349e5efacdadd24c2cc70972bedfd97cadd6",
+            "label": "cristianonicolai:ldap"
+          },
+          "user": {
+            "login": "cristianonicolai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/570894?v=4",
+            "html_url": "https://github.com/cristianonicolai"
+          },
+          "checks": [
+            {
+              "id": 9881334430,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3617338477/jobs/6096086285",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-05T05:54:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9881334334,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3617338477/jobs/6096086211",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-05T05:54:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20474922501,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/811/",
+              "conclusion": "pending",
+              "started_at": "2022-12-05T05:54:14Z",
+              "completed_at": "2022-12-05T05:54:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2243,
           "title": "Add timeout to IT tests",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2243",
@@ -8274,7 +8348,7 @@
             }
           ],
           "created_at": "2022-12-05T02:36:26Z",
-          "updated_at": "2022-12-05T02:36:54Z",
+          "updated_at": "2022-12-05T04:12:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8293,6 +8367,28 @@
             "html_url": "https://github.com/cristianonicolai"
           },
           "checks": [
+            {
+              "id": 9880235780,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9880235780",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-05T04:12:26Z",
+              "completed_at": "2022-12-05T04:12:27Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9880235010,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/9880235010",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-05T04:09:51Z",
+              "completed_at": "2022-12-05T04:12:21Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 9879153365,
               "name": "ubuntu-latest - Java 8 - Maven",
@@ -8316,12 +8412,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 20473588728,
+              "id": 20474223493,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/810/",
-              "conclusion": "pending",
-              "started_at": "2022-12-05T02:36:30Z",
-              "completed_at": "2022-12-05T02:36:30Z",
+              "conclusion": "success",
+              "started_at": "2022-12-05T04:12:32Z",
+              "completed_at": "2022-12-05T04:12:32Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
