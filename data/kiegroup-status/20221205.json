@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-05T08:09:17.821Z",
+    "date": "2022-12-05T10:08:07.801Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3618117470"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3618978377"
   },
   "projects": [
     {
@@ -1782,7 +1782,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2022-12-05T03:19:10Z",
+      "updated_at": "2022-12-05T08:36:12Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -8164,6 +8164,70 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2245,
+          "title": "Use date format for log cleanup command",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2245",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2245",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "radtriste",
+              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
+              "html_url": "https://github.com/radtriste"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2022-12-05T09:46:37Z",
+          "updated_at": "2022-12-05T09:46:47Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6ef93303a35e61a84fc0ce4287fcfd1b97d0167c",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "date",
+            "sha": "c3fd1ed4e3a0606f3a373269502b2f7e7c43de74",
+            "label": "cristianonicolai:date"
+          },
+          "user": {
+            "login": "cristianonicolai",
+            "avatar_url": "https://avatars.githubusercontent.com/u/570894?v=4",
+            "html_url": "https://github.com/cristianonicolai"
+          },
+          "checks": [
+            {
+              "id": 9885139542,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3618823731/jobs/6099137118",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-05T09:51:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9885139337,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3618823731/jobs/6099136968",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-05T09:47:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 2244,
           "title": "Use random port for LDAP test server",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2244",
@@ -8320,10 +8384,10 @@
               "id": 9879153365,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3616398873/jobs/6094309212",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-12-05T02:36:39Z",
-              "completed_at": null,
+              "completed_at": "2022-12-05T08:37:05Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -8331,10 +8395,10 @@
               "id": 9879153249,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3616398873/jobs/6094309121",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2022-12-05T02:36:40Z",
-              "completed_at": null,
+              "completed_at": "2022-12-05T08:36:51Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -8345,176 +8409,6 @@
               "conclusion": "success",
               "started_at": "2022-12-05T04:12:32Z",
               "completed_at": "2022-12-05T04:12:32Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2237,
-          "title": "JBPM-10139: Avoid duplicate entries in PerCaseRuntimeManager.local map to avoid multiple signals being sent (#2235)",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2237",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2237",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-11-29T17:37:17Z",
-          "updated_at": "2022-12-02T22:47:33Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "380ea0512cb5c14853ae15ac012243fe2724390b",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "RHPAM-4603-7.67.x-blue",
-            "sha": "8f0b64c8ea51c118ea3130a0df8b1d3415b61ed0",
-            "label": "martinweiler:RHPAM-4603-7.67.x-blue"
-          },
-          "user": {
-            "login": "martinweiler",
-            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
-            "html_url": "https://github.com/martinweiler"
-          },
-          "checks": [
-            {
-              "id": 9779346089,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/9779346089",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-29T19:14:35Z",
-              "completed_at": "2022-11-29T19:14:37Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9779345226,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/9779345226",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-29T19:11:57Z",
-              "completed_at": "2022-11-29T19:14:31Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 9777314711,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3576588439/jobs/6014575724",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-11-29T17:37:30Z",
-              "completed_at": "2022-11-29T23:37:44Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9777314452,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3576588439/jobs/6014575548",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-11-29T17:37:29Z",
-              "completed_at": "2022-11-29T23:37:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20395865066,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/39/",
-              "conclusion": "success",
-              "started_at": "2022-11-29T19:14:50Z",
-              "completed_at": "2022-11-29T19:14:50Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2236,
-          "title": "JBPM-10139: Avoid duplicate entries in PerCaseRuntimeManager.local map to avoid multiple signals being sent (#2235)",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2236",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2236",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-11-29T17:34:13Z",
-          "updated_at": "2022-12-02T22:46:57Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "4e2c62e301d9a902d77d05496df01f175656d366",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "RHPAM-4603-7.67.x",
-            "sha": "79d94db3234e586a2e416c079b04158d830a6587",
-            "label": "martinweiler:RHPAM-4603-7.67.x"
-          },
-          "user": {
-            "login": "martinweiler",
-            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
-            "html_url": "https://github.com/martinweiler"
-          },
-          "checks": [
-            {
-              "id": 9779323296,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/9779323296",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-29T19:13:28Z",
-              "completed_at": "2022-11-29T19:13:28Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9779321950,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/9779321950",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-11-29T19:10:50Z",
-              "completed_at": "2022-11-29T19:13:22Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 9777245554,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3576563790/jobs/6014525070",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-11-29T17:34:26Z",
-              "completed_at": "2022-11-29T19:25:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9777245255,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/3576563790/jobs/6014524845",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2022-11-29T17:34:28Z",
-              "completed_at": "2022-11-29T19:26:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20395842647,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/96/",
-              "conclusion": "success",
-              "started_at": "2022-11-29T19:13:42Z",
-              "completed_at": "2022-11-29T19:13:42Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9572,6 +9466,9 @@
               "sha": "b58b6f62c160140d11b4cd03b26b5263924d1629"
             },
             {
+              "sha": "0204122d3cef4c3d59ef80c2090d46821687b5c1"
+            },
+            {
               "sha": "7ae3fe44568a991c1f1a728fc00c84e920299f0d"
             },
             {
@@ -9602,7 +9499,13 @@
               "sha": "f61aa9a89396f8820bff4ddf9013cd276440c5f0"
             },
             {
+              "sha": "f47447951165b670165a2b573739bf2bec8dc44e"
+            },
+            {
               "sha": "fa9bfaa4a516a7111d5da9f3b18c536fa0edb04a"
+            },
+            {
+              "sha": "ca19925835f87aadb0775d7c62a8f6bfeede4df2"
             },
             {
               "sha": "7e2a75e933319d375732c5845aef819335438f54"
@@ -10047,6 +9950,9 @@
               "sha": "b58b6f62c160140d11b4cd03b26b5263924d1629"
             },
             {
+              "sha": "0204122d3cef4c3d59ef80c2090d46821687b5c1"
+            },
+            {
               "sha": "7ae3fe44568a991c1f1a728fc00c84e920299f0d"
             },
             {
@@ -10077,7 +9983,13 @@
               "sha": "f61aa9a89396f8820bff4ddf9013cd276440c5f0"
             },
             {
+              "sha": "f47447951165b670165a2b573739bf2bec8dc44e"
+            },
+            {
               "sha": "fa9bfaa4a516a7111d5da9f3b18c536fa0edb04a"
+            },
+            {
+              "sha": "ca19925835f87aadb0775d7c62a8f6bfeede4df2"
             },
             {
               "sha": "2f8c6c972d9b8607730561579520be92552b9301"
@@ -20225,11 +20137,13 @@
           "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/90",
           "html_url": "https://github.com/kiegroup/process-migration-service/pull/90",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "DO_NOT_MERGE"
+          ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-12-01T15:21:08Z",
-          "updated_at": "2022-12-02T18:58:03Z",
+          "updated_at": "2022-12-05T10:02:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
