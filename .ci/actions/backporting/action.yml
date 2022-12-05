@@ -9,17 +9,21 @@ inputs:
     description: "The cherry-pick pull request title"
     default: "${{ github.event.pull_request.title }}"
     required: false
-  original-pr-url:
-    description: "Original pull request url"
-    default: "${{ github.event.pull_request.html_url }}"
+  body:
+    description: "The cherry-pick pull request body"
+    default: "**Backport:** ${{ github.event.pull_request.html_url }}\r\n\r\n${{ github.event.pull_request.body }}"
     required: false
   original-pr-branch:
     description: "Original pull request branch name"
     default: "${{ github.event.pull_request.head.ref }}"
     required: false
-  reviewers:
-    description: "Reviewers to be added in the backported pull request"
+  author:
+    description: "Author of the original pull request"
     default: "${{ github.event.pull_request.user.login }}"
+    required: false
+  additional-reviewers:
+    description: "Additional backported pull request reviewers, e.g., toJSON(github.event.pull_request.requested_reviewers)"
+    default: "[]"
     required: false
 
 runs: 
@@ -29,16 +33,24 @@ runs:
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
+    - name: Prepare reviewers
+      id: prepare-reviewers
+      shell: bash
+      run: |
+        echo "Additional reviewers retrieved below"
+        echo "${{ inputs.additional-reviewers }}"
+        reviewers="$(echo ${{ inputs.additional-reviewers }} | jq -c 'map(.login)' | jq -cr '. |= . + ["${{ inputs.author }}"] | unique | join(",")')"
+        echo "reviewers = ${reviewers}"
+        echo "BACKPORT_REVIEWERS=${reviewers}" >> $GITHUB_ENV
     - name: Perform cherry pick
       id: cherry-pick
       uses: carloscastrojumo/github-cherry-pick-action@v1.0.5
       with:
         branch: "${{ inputs.target-branch }}"
         title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
-        body: "cherry-pick: ${{ inputs.original-pr-url }}"
+        body: "${{ inputs.body }}"
         labels: |
           cherry-pick :cherries:
         inherit_labels: false
         cherry-pick-branch: "${{ inputs.original-pr-branch }}_${{ inputs.target-branch }}"
-        reviewers: |
-          ${{ inputs.reviewers }}
+        reviewers: ${{ env.BACKPORT_REVIEWERS }}

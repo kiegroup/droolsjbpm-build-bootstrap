@@ -24,7 +24,7 @@ runs:
       run: |
         echo "Labels retrieved below"
         echo "${{ inputs.labels }}"
-        filtered_labels="$(echo $LABELS | jq -c 'map(select(.name | startswith("${{ inputs.label-prefix }}")))')"
+        filtered_labels="$(echo ${{ inputs.labels }} | jq -c 'map(select(.name | startswith("${{ inputs.label-prefix }}")))')"
         echo "filtered_labels = ${filtered_labels}"
         echo "FILTERED_LABELS=${filtered_labels}" >> $GITHUB_ENV
 
