@@ -2,7 +2,7 @@ name: Pull Request Backporting
 
 on:
   pull_request_target:
-    types: [closed]
+    types: [closed, labeled]
     branches:
       - main
 
