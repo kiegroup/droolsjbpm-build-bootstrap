@@ -52,5 +52,5 @@ runs:
         labels: |
           cherry-pick :cherries:
         inherit_labels: false
-        cherry-pick-branch: "${{ inputs.original-pr-branch }}_${{ inputs.target-branch }}"
+        cherry-pick-branch: "${{ inputs.target-branch }}_${{ inputs.original-pr-branch }}"
         reviewers: ${{ env.BACKPORT_REVIEWERS }}
