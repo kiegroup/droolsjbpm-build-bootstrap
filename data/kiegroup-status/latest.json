@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-07T13:15:26.682Z",
+    "date": "2022-12-07T15:12:07.073Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3639236606"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3640135047"
   },
   "projects": [
     {
@@ -6325,7 +6325,7 @@
             }
           ],
           "created_at": "2022-10-18T12:38:47Z",
-          "updated_at": "2022-11-30T12:32:47Z",
+          "updated_at": "2022-12-07T15:01:20Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18762,6 +18762,203 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1208,
+          "title": "[RHPAM-4618] update EAP XP to version 4.0.0.GA-redhat-00011",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1208",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1208",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-07T14:49:09Z",
+          "updated_at": "2022-12-07T14:51:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a645393573487c9629556066fcf0e53f8f7f87b9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4618",
+            "sha": "4245f97af8760790161bc4491a9fb088c270091c",
+            "label": "rgdoliveira:RHPAM-4618"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 20529523464,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/214/",
+              "conclusion": "pending",
+              "started_at": "2022-12-07T14:50:02Z",
+              "completed_at": "2022-12-07T14:50:02Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20529550008,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-distributions-main.fdb/29/",
+              "conclusion": "pending",
+              "started_at": "2022-12-07T14:51:08Z",
+              "completed_at": "2022-12-07T14:51:08Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1207,
+          "title": "[7.67.x-blue][RHPAM-4618] update EAP XP to version 4.0.0.GA-redhat-00011",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1207",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1207",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-07T14:47:03Z",
+          "updated_at": "2022-12-07T14:51:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "de0f8e7d9159a24e22f71283778639ea0f3ed043",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_RHPAM-4618",
+            "sha": "7f39689bd5fe12c324b075c4afcd3eaf52780204",
+            "label": "rgdoliveira:7.67.x-blue_RHPAM-4618"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 9944188275,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3639970950/jobs/6144028109",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-07T14:53:01Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9944187918,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3639970950/jobs/6144027831",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-07T14:58:32Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20529454678,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/36/",
+              "conclusion": "pending",
+              "started_at": "2022-12-07T14:47:07Z",
+              "completed_at": "2022-12-07T14:47:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20529561192,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/kie-wb-distributions-7.67.x-blue.fdb/5/",
+              "conclusion": "pending",
+              "started_at": "2022-12-07T14:51:37Z",
+              "completed_at": "2022-12-07T14:51:37Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1206,
+          "title": "[7.67.x][RHPAM-4618] update EAP XP to version 4.0.0.GA-redhat-00011",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1206",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1206",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-07T14:34:24Z",
+          "updated_at": "2022-12-07T14:51:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2388d426bdbee07b3c7ee380d79a8f826b8955ae",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_RHPAM-4618",
+            "sha": "9a6c851c4a8eee49b4730facd5ef6a18437b50b4",
+            "label": "rgdoliveira:7.67.x_RHPAM-4618"
+          },
+          "user": {
+            "login": "rgdoliveira",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+            "html_url": "https://github.com/rgdoliveira"
+          },
+          "checks": [
+            {
+              "id": 9943878709,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3639869461/jobs/6143796682",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-07T14:35:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 9943878421,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3639869461/jobs/6143796445",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-07T14:44:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20529155931,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-distributions-7.67.x.pr/29/",
+              "conclusion": "pending",
+              "started_at": "2022-12-07T14:34:27Z",
+              "completed_at": "2022-12-07T14:34:27Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20529558401,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/kie-wb-distributions-7.67.x.fdb/8/",
+              "conclusion": "pending",
+              "started_at": "2022-12-07T14:51:29Z",
+              "completed_at": "2022-12-07T14:51:29Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1205,
           "title": "RHPAM-4431: Session Cookie Without Secure Attribute Set ",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1205",
@@ -20080,15 +20277,9 @@
           "state": "open",
           "labels": [],
           "draft": true,
-          "requested_reviewers": [
-            {
-              "login": "radtriste",
-              "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
-              "html_url": "https://github.com/radtriste"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2022-12-05T16:34:37Z",
-          "updated_at": "2022-12-06T13:47:58Z",
+          "updated_at": "2022-12-07T14:32:01Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
