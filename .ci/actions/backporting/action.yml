@@ -52,7 +52,7 @@ runs:
       with:
         branch: "${{ inputs.target-branch }}"
         title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
-        body: "**Backport:** ${{ original-pr-url }}\r\n\r\n${{ inputs.body }}"
+        body: "**Backport:** ${{ inputs.original-pr-url }}\r\n\r\n${{ inputs.body }}"
         labels: |
           cherry-pick :cherries:
         inherit_labels: false
