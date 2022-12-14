@@ -1,0 +1,60 @@
+name: 'Pull Request Backporting'
+description: 'Creates a backporting pull request'
+
+inputs:
+  target-branch:
+    description: "The branch where the cherry-pick must be applied"
+    required: true
+  title:
+    description: "The cherry-pick pull request title"
+    default: "${{ github.event.pull_request.title }}"
+    required: false
+  body:
+    description: "The cherry-pick pull request body"
+    default: "${{ github.event.pull_request.body }}"
+    required: false
+  original-pr-url:
+    description: "Original pull request url"
+    default: "${{ github.event.pull_request.html_url }}"
+    required: false
+  original-pr-branch:
+    description: "Original pull request branch name"
+    default: "${{ github.event.pull_request.head.ref }}"
+    required: false
+  author:
+    description: "Author of the original pull request"
+    default: "${{ github.event.pull_request.user.login }}"
+    required: false
+  additional-reviewers:
+    description: "Additional backported pull request reviewers, e.g., toJSON(github.event.pull_request.requested_reviewers)"
+    default: "[]"
+    required: false
+
+runs: 
+  using: 'composite'
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Prepare reviewers
+      id: prepare-reviewers
+      shell: bash
+      run: |
+        echo "Additional reviewers retrieved below"
+        echo "${{ inputs.additional-reviewers }}"
+        reviewers="$(echo ${{ inputs.additional-reviewers }} | jq -c 'map(.login)' | jq -cr '. |= . + ["${{ inputs.author }}"] | unique | join(",")')"
+        echo "reviewers = ${reviewers}"
+        echo "BACKPORT_REVIEWERS=${reviewers}" >> $GITHUB_ENV
+    - name: Perform cherry pick
+      id: cherry-pick
+      uses: carloscastrojumo/github-cherry-pick-action@v1.0.5
+      with:
+        branch: "${{ inputs.target-branch }}"
+        title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
+        body: "**Backport:** ${{ inputs.original-pr-url }}\r\n\r\n${{ inputs.body }}"
+        labels: |
+          cherry-pick :cherries:
+        inherit_labels: false
+        cherry-pick-branch: "${{ inputs.target-branch }}_${{ inputs.original-pr-branch }}"
+        reviewers: ${{ env.BACKPORT_REVIEWERS }}
