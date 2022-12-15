@@ -1,0 +1,40 @@
+name: 'Parse Labels'
+description: 'Extract target branches or refs from labels'
+
+inputs:
+  labels:
+    description: "List of label objects to be parsed, e.g., github.event.pull_request.labels"
+    required: true
+  label-prefix:
+    description: "Extract targets from labels matching this provided prefix"
+    default: "backport-"
+    required: false
+
+outputs:
+  targets:
+    description: "Extracted targets"
+    value: ${{ steps.extract-targets.outputs.targets }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Fetch labels
+      id: fetch-labels
+      shell: bash
+      run: |
+        echo "Labels retrieved below"
+        echo "${{ inputs.labels }}"
+        filtered_labels="$(echo ${{ inputs.labels }} | jq -c 'map(select(.name | startswith("${{ inputs.label-prefix }}")))')"
+        echo "filtered_labels = ${filtered_labels}"
+        echo "FILTERED_LABELS=${filtered_labels}" >> $GITHUB_ENV
+
+    - name: Extract targets
+      id: extract-targets
+      shell: bash
+      run: |
+        targets="$(echo $FILTERED_LABELS | jq -c '[.[] | .name | sub("${{ inputs.label-prefix }}"; "")]')"
+        echo "::set-output name=targets::$(echo $targets)" 
+    
+    - name: Printing extracted targets
+      shell: bash
+      run: echo "Extracted target branches ${{ steps.extract-targets.outputs.targets }}"

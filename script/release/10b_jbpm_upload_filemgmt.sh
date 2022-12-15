@@ -1,46 +1,48 @@
 #!/bin/bash -e
 
-# parameters: FILEMGMT_KEY = $1
 # fetch the <version.org.kie> from kie-parent-metadata pom.xml and set it on parameter KIE_VERSION
-kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' droolsjbpm-build-bootstrap/pom.xml)
+kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' bc/kiegroup_droolsjbpm_build_bootstrap/pom.xml)
 
-jbpmDocs=jbpm@filemgmt.jboss.org:/docs_htdocs/jbpm/release
-jbpmHtdocs=jbpm@filemgmt.jboss.org:/downloads_htdocs/jbpm/release
+filemgmtServer=jbpm@filemgmt-prod.jboss.org
+rsync_filemgmt=jbpm@filemgmt-prod-sync.jboss.org
+jbpmDocs=docs_htdocs/jbpm/release
+jbpmHtdocs=downloads_htdocs/jbpm/release
 uploadDir=${kieVersion}_uploadBinaries
 
-# create directories on filemgmt.jboss.org for new release
-touch upload_version
-echo "mkdir" $kieVersion > upload_version
-chmod +x upload_version
-sftp -i $1 -b upload_version $jbpmDocs
-sftp -i $1 -b upload_version $jbpmHtdocs
+# create directory on filemgmt-prod.jboss.org for new release
+touch create_version
+echo "mkdir ${jbpmDocs}/${kieVersion}" > create_version
+echo "mkdir ${jbpmHtdocs}/${kieVersion}" >> create_version
+chmod +x create_version
+sftp -b create_version $filemgmtServer
 
-# creates a directory service-repository for jbpm on filemgmt.jboss.org
-touch upload_service_repository
-echo "mkdir service-repository" > upload_service_repository
-chmod +x upload_service_repository
-sftp -i $1 -b upload_service_repository $jbpmHtdocs/$kieVersion
+# create directory on filemgmt-prod.jboss.org for service-repository
+touch create_service_repository_dir
+echo "mkdir ${jbpmHtdocs}/${kieVersion}/service-repository" > create_service_repository_dir
+chmod +x create_service_repository_dir
+sftp -b create_service_repository_dir $filemgmtServer
 
-#creates directories docs for jbpm on filemgmt.jboss.org
-touch upload_jbpm_docs
-echo "mkdir jbpm-docs" > upload_jbpm_docs
-chmod +x upload_jbpm_docs
-sftp -i $1 -b upload_jbpm_docs $jbpmDocs/$kieVersion
+# create directory on filemgmt-prod.jboss.org for docs
+touch create_jbpm_docs_dir
+echo "mkdir ${jbpmDocs}/${kieVersion}/jbpm-docs" > create_jbpm_docs_dir
+chmod +x create_jbpm_docs_dir
+sftp -b create_jbpm_docs_dir $filemgmtServer
 
-# *** copies jbpm binaries and docs to filemgmt.jboss.org **********************************
-
-# bins
-scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-$kieVersion-bin.zip $jbpmHtdocs/$kieVersion
-scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-$kieVersion-examples.zip $jbpmHtdocs/$kieVersion
-scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-server-$kieVersion-dist.zip $jbpmHtdocs/$kieVersion
+# upload binaries to filemgmt-prod.jboss.org
+touch upload_binaries
+echo "put ${uploadDir}/jbpm-${kieVersion}-bin.zip ${jbpmHtdocs}/${kieVersion}" > upload_binaries
+echo "put ${uploadDir}/jbpm-${kieVersion}-examples.zip ${jbpmHtdocs}/${kieVersion}" >> upload_binaries
+echo "put ${uploadDir}/jbpm-server-${kieVersion}-dist.zip ${jbpmHtdocs}/${kieVersion}" >> upload_binaries
 
 # uploads jbpm -installers to filemgt.jboss.org
-scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-$kieVersion.zip $jbpmHtdocs/$kieVersion
-scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null jbpm-installer-full-$kieVersion.zip $jbpmHtdocs/$kieVersion
+echo "put jbpm-installer-${kieVersion}.zip ${jbpmHtdocs}/${kieVersion}" >> upload_binaries
+echo "put jbpm-installer-full-${kieVersion}.zip ${jbpmHtdocs}/${kieVersion}" >> upload_binaries
+chmod +x upload_binaries
+sftp -b upload_binaries $filemgmtServer
 
-# docs
-scp -r -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/jbpm-docs/* $jbpmDocs/$kieVersion/jbpm-docs
-scp -r -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/service-repository/* $jbpmHtdocs/$kieVersion/service-repository
+# upload docs to filemgmt-prod.jboss.org
+rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/jbpm-docs/* ${rsync_filemgmt}:${jbpmDocs}/${kieVersion}/jbpm-docs
+rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/service-repository/* ${rsync_filemgmt}:${jbpmDocs}/${kieVersion}/service-repository
 
 # make filemgmt symbolic links for jbpm
 mkdir filemgmt_links
@@ -53,8 +55,8 @@ touch ${kieVersion}
 ln -s ${kieVersion} latest
 
 echo "Uploading normal links..."
-rsync -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latest $jbpmDocs
-rsync -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latest $jbpmHtdocs
+rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latest $rsync_filemgmt:/$jbpmDocs
+rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latest $rsync_filemgmt:/$jbpmHtdocs
 
 ###############################################################################
 # latestFinal jbpm links
@@ -62,11 +64,13 @@ rsync -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 if [[ "${kieVersion}" == *Final* ]]; then
     ln -s ${kieVersion} latestFinal
     echo "Uploading Final links..."
-    rsync -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $jbpmDocs
-    rsync -e "ssh -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $jbpmHtdocs
+    rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $rsync_filemgmt:/$jbpmDocs
+    rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $rsync_filemgmt:/$jbpmHtdocs
 fi
 
 # remove files and directories for uploading jbpm
 cd ..
-rm -rf upload_*
+rm -rf create_version
+rm -rf create_*_dir
+rm -rf upload_binaries
 rm -rf filemgmt_links

@@ -1,0 +1,32 @@
+name: Generate status page data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+jobs:
+  generate-status-page-data:
+    if: github.repository_owner == 'kiegroup'
+    concurrency:
+      group: generate-status-page-data
+      cancel-in-progress: true
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+      fail-fast: true
+    runs-on: ubuntu-latest
+    name: Generate status page data
+    steps:
+      - name: Generate status page data
+        uses: kiegroup/chain-status/.ci/actions/generate-data@main
+        with:
+          definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/pull-request-config.yaml
+          title: Kiegroup Status
+          subtitle: Kiegroup organization repositories CI Status
+          base-branch-filter: main,7.67.x,7.67.x-blue
+          branches: 7.67.x,7.67.x-blue
+          created-by: Github Action
+          created-url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          logger-level: debug
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+

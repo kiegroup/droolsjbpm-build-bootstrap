@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
-      - 7.48.x
+      - 7.67.x
+      - 7.67.x-blue
     paths:
-      - '.ci/**'
+      - '.ci/pull-request-config.yaml'
+      - '.ci/project-dependencies.yaml'
 
 jobs:
   build-chain:
@@ -31,7 +33,7 @@ jobs:
           echo "::set-output name=commitURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
           echo "::set-output name=jobURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Image Generation
         uses: kiegroup/build-chain-files-generator@main
         with:
@@ -54,7 +56,7 @@ jobs:
       - name: Add Changes
         run: git add ./docs/project-dependencies-hierarchy.png ./script/repository-list.txt ./script/branched-7-repository-list.txt
       - name: Archive artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: generated-files
           path: |
@@ -65,7 +67,7 @@ jobs:
         run: echo "BRANCH_NAME_FLOW=generate_files_$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update build chain files
@@ -74,7 +76,7 @@ jobs:
           signoff: false
           branch: ${{ env.BRANCH_NAME_FLOW }}
           delete-branch: true
-          title: '[Build Chain] Update build chain and repository-list files.'
+          title: "[${{ env.GITHUB_REF_NAME }}][Build Chain] Update build chain and repository-list files."
           body: |
             # Update Report
             **Pull Request created by:** ${{ steps.build_chain_info.outputs.jobURL }}

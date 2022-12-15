@@ -1,13 +1,13 @@
 @Library('jenkins-pipeline-shared-libraries')_
 
-agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7-pipeline && kie-mem24g'} && !master"
+agentLabel = "${env.ADDITIONAL_LABEL?.trim() ? ADDITIONAL_LABEL : 'kie-rhel7-pipeline && kie-mem24g && !built-in'}"
 additionalArtifactsToArchive = "${env.ADDITIONAL_ARTIFACTS_TO_ARCHIVE?.trim() ?: ''}"
 additionalTimeout = "${env.ADDITIONAL_TIMEOUT?.trim() ?: 1200}"
 additionalExcludedArtifacts = "${env.ADDITIONAL_EXCLUDED_ARTIFACTS?.trim() ?: ''}"
 checkstyleFile = env.CHECKSTYLE_FILE?.trim() ?: null
 findbugsFile = env.FINDBUGS_FILE?.trim() ?: null
 pr_type = env.PR_TYPE?.trim() ?: null
-build_jdk_tool = env.BUILD_JDK_TOOL?.trim() ?: 'kie-jdk11'
+build_jdk_tool = env.BUILD_JDK_TOOL?.trim() ?: 'kie-jdk11.0.15'
 build_maven_tool = env.BUILD_MAVEN_TOOL?.trim() ?: 'kie-maven-3.8.1'
 buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: '\${GROUP}'
 buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: '\${BRANCH:main}'
@@ -17,7 +17,7 @@ pipeline {
         label agentLabel
     }
     tools {
-        nodejs 'nodejs-12.16.3'
+        nodejs 'nodejs-16.2.0'
     }
     options {
         timestamps ()
@@ -92,7 +92,7 @@ pipeline {
                                 '771ff52a-a8b4-40e6-9b22-d54c7314aa1e'
 
                     configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
-                        withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
+                        withCredentials([string(credentialsId: 'kie-ci2-token', variable: 'GITHUB_TOKEN')]) {
                             sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -url=${env.ghprbPullLink} --skipParallelCheckout -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true'"
                         }
                     }
@@ -108,7 +108,7 @@ pipeline {
                 script {
                     if(isPR()) {
                         def project = util.getProjectTriggeringJob()[1]
-                        if(["optaplanner", "drools", "appformer", "jbpm", "drools-wb", "kie-soup", "droolsjbpm-integration", "kie-wb-common", "openshift-drools-hacep", "optaweb-employee-rostering", "optaweb-vehicle-routing"].contains(project))
+                        if(["optaplanner", "drools", "appformer", "jbpm", "drools-wb", "kie-soup", "droolsjbpm-integration", "kie-wb-common", "optaweb-employee-rostering", "optaweb-vehicle-routing"].contains(project))
                         {
                             dir("bc/kiegroup_${project.replaceAll("-", "_")}") {
                                 maven.runMavenWithSettingsSonar("771ff52a-a8b4-40e6-9b22-d54c7314aa1e", "-nsu generate-resources -Psonarcloud-analysis -Denforcer.skip=true", "SONARCLOUD_TOKEN", "sonar_analysis.maven.log")

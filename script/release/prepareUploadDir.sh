@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # fetch the <version.org.kie> from kie-parent-metadata pom.xml and set it on parameter KIE_VERSION
-kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' droolsjbpm-build-bootstrap/pom.xml)
+kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' bc/kiegroup_droolsjbpm_build_bootstrap/pom.xml)
 echo "kieVersion = "$kieVersion
 deployDir=../community-deploy-dir
 
@@ -45,8 +45,8 @@ cp $deployDir/org/optaplanner/optaplanner-distribution/$kieVersion/optaplanner-d
 
 # copies binaries + docs that are only available in /target directories - they are not deployed
 mkdir service-repository
-cp -r ../jbpm-work-items/repository/target/repository-$kieVersion/* service-repository
+cp -r ../bc/kiegroup_jbpm_work_items/repository/target/repository-$kieVersion/* service-repository
 mkdir optaplanner-javadoc
-cp -r ../optaplanner/optaplanner-distribution/target/optaplanner-distribution-$kieVersion/optaplanner-distribution-$kieVersion/javadocs/* optaplanner-javadoc
+cp -r ../bc/kiegroup_optaplanner/optaplanner-distribution/target/optaplanner-distribution-$kieVersion/optaplanner-distribution-$kieVersion/javadocs/* optaplanner-javadoc
 mkdir optaplanner-wb-es-docs
-cp -r ../kie-docs/doc-content/optaplanner-wb-es-docs/target/generated-docs/* optaplanner-wb-es-docs
+cp -r ../bc/kiegroup_kie_docs/doc-content/optaplanner-wb-es-docs/target/generated-docs/* optaplanner-wb-es-docs

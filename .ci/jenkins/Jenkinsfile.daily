@@ -99,8 +99,8 @@ pipeline {
                     def buildChainActionInfo = [action: 'branch', file: 'daily-config.yaml']
                     def SETTINGS_XML_ID = '771ff52a-a8b4-40e6-9b22-d54c7314aa1e'
                     configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
-                        withCredentials([string(credentialsId: 'kie-ci1-token', variable: 'GITHUB_TOKEN')]) {
-                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -p='${buildChainGroup}/droolsjbpm-build-bootstrap' -sp='${buildChainGroup}/droolsjbpm-build-bootstrap' -b=${baseBranch} --fullProjectDependencyTree --skipParallelCheckout -spc '${buildChainGroup}/optaweb-vehicle-routing=./' '${buildChainGroup}/optaweb-employee-rostering=./' -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true ${additionalMavenFlag}'"
+                        withCredentials([string(credentialsId: 'kie-ci4-token', variable: 'GITHUB_TOKEN')]) {
+                            sh "build-chain-action -token=${GITHUB_TOKEN} -df='https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -folder='bc' build ${buildChainActionInfo.action} -sp='${buildChainGroup}/droolsjbpm-build-bootstrap' -b=${baseBranch} --fullProjectDependencyTree --skipParallelCheckout -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true ${additionalMavenFlag}'"
                         }
                     }
                 }
@@ -108,12 +108,12 @@ pipeline {
         }
         stage('Deploy process-migration-service locally with jdk11'){
             tools {
-              jdk 'kie-jdk11'
+              jdk 'kie-jdk11.0.15'
             }
             steps {
                 dir("${WORKSPACE}/bc/kiegroup_process_migration_service") {
                     configFileProvider([configFile(fileId: '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', targetLocation: 'jenkins-settings.xml', variable: 'SETTINGS_XML_FILE')]) {
-                          sh 'mvn -B -e -U clean deploy -Dfull -Drelease -DaltDeploymentRepository=local::default::file://$WORKSPACE/deploy-dir -s $SETTINGS_XML_FILE -Dkie.maven.settings.custom=$SETTINGS_XML_FILE -Dmaven.test.redirectTestOutputToFile=true -Dmaven.test.failure.ignore=true -Dgwt.memory.settings="-Xmx10g" --clean-up-script="$WORKSPACE/clean-up.sh"'
+                          sh 'mvn -B -e -U clean deploy -Dfull -Drelease -DaltDeploymentRepository=local::default::file://$WORKSPACE/deploy-dir -s $SETTINGS_XML_FILE -Dkie.maven.settings.custom=$SETTINGS_XML_FILE -Dmaven.test.redirectTestOutputToFile=true -Dmaven.test.failure.ignore=true -Dgwt.memory.settings="-Xmx10g" '
                     }
                 }
             }
@@ -127,21 +127,22 @@ pipeline {
         }         
         stage('Unpack zip of artifacts to QA Nexus') {
             when {
-                expression { (jdkVersion == 'kie-jdk11' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
+                expression { (jdkVersion == 'kie-jdk11.0.15' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
             }
             steps {
                 withCredentials([usernameColonPassword(credentialsId: 'unpacks-zip-on-qa-nexus', variable: 'kieUnpack')]) {
                     // unpack zip to QA Nexus
-                    sh 'cd $WORKSPACE/deploy-dir\n' +
-                       'zip -qr kiegroup .\n' +
-                       'curl --silent --upload-file kiegroup.zip -u $kieUnpack -v http://\${LOCAL_NEXUS_IP}:8081/nexus/service/local/repositories/kieAllBuild-$baseBranch/content-compressed \n' +
-                       'cd ..'
+                    sh """
+                    cd $WORKSPACE/deploy-dir
+                    zip -qr kiegroup .
+                    curl --silent --upload-file kiegroup.zip -u $kieUnpack -v http://\${LOCAL_NEXUS_IP}:8081/nexus/service/local/repositories/kieAllBuild-$baseBranch/content-compressed
+                    cd .. """
                 }
             }
         }
         stage('Additional tests for jdk11 and jdk8') {
             when {
-                expression { (jdkVersion == 'kie-jdk11' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
+                expression { (jdkVersion == 'kie-jdk11.0.15' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
             }
             steps {
                 parallel (
@@ -174,7 +175,7 @@ pipeline {
 
 void sendNotification() {
     if (currentBuild.result != "SUCCESS") {
-        mailer.sendMarkdownTestSummaryNotification("daily build ${buildName} of ${baseBranch}", "daily build ${buildName} of ${baseBranch}", ["${KIE_TO}"])
+        mailer.sendMarkdownTestSummaryNotification("","[${baseBranch}] daily build ${buildName}",["${KIE_TO}"])
     } else {
         echo 'No notification sent per configuration'
     }

@@ -1,50 +1,52 @@
 #!/bin/bash -e
 
-# parameters: FILEMGMT_KEY = $1
 # fetch the <version.org.kie> from kie-parent-metadata pom.xml and set it on parameter KIE_VERSION
-kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' droolsjbpm-build-bootstrap/pom.xml)
+kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' bc/kiegroup_droolsjbpm_build_bootstrap/pom.xml)
 
-optaplannerDocs=optaplanner@filemgmt.jboss.org:/docs_htdocs/optaplanner/release
-optaplannerHtdocs=optaplanner@filemgmt.jboss.org:/downloads_htdocs/optaplanner/release
+filemgmtServer=optaplanner@filemgmt-prod.jboss.org
+rsync_filemgmt=optaplanner@filemgmt-prod-sync.jboss.org
+optaplannerDocs=docs_htdocs/optaplanner/release
+optaplannerHtdocs=downloads_htdocs/optaplanner/release
 uploadDir=${kieVersion}_uploadBinaries
 
-# create directories on filemgmt.jboss.org for new release
-touch upload_version
-echo "mkdir" $kieVersion > upload_version
-chmod +x upload_version
-sftp -i $1 -b upload_version $optaplannerDocs
-sftp -i $1 -b upload_version $optaplannerHtdocs
+# create directory on filemgmt-prod.jboss.org for new release
+touch create_version
+echo "mkdir ${optaplannerDocs}/${kieVersion}" > create_version
+echo "mkdir ${optaplannerHtdocs}/${kieVersion}" >> create_version
+chmod +x create_version
+sftp -b create_version $filemgmtServer
 
-# create directory optaplanner-docs for optaplanner on filemgmt.jboss.org
-touch upload_optaplanner_docs
-echo "mkdir optaplanner-docs" > upload_optaplanner_docs
-chmod +x upload_optaplanner_docs
-sftp -i $1 -b upload_optaplanner_docs $optaplannerDocs/$kieVersion
+# create directory on filemgmt-prod.jboss.org for optaplanner-docs
+touch create_optaplanner_docs_dir
+echo "mkdir ${optaplannerDocs}/${kieVersion}/optaplanner-docs" > create_optaplanner_docs_dir
+chmod +x create_optaplanner_docs_dir
+sftp -b create_optaplanner_docs_dir $filemgmtServer
 
-# create directory optaplanner-javadoc for optaplanner on filemgmt.jboss.org
-touch upload_optaplanner_javadoc
-echo "mkdir optaplanner-javadoc" > upload_optaplanner_javadoc
-chmod +x upload_optaplanner_javadoc
-sftp -i $1 -b upload_optaplanner_javadoc $optaplannerDocs/$kieVersion
+# create directory on filemgmt-prod.jboss.org for optaplanner-javadoc
+touch create_optaplanner_javadoc_dir
+echo "mkdir ${optaplannerDocs}/${kieVersion}/optaplanner-javadoc" > create_optaplanner_javadoc_dir
+chmod +x create_optaplanner_javadoc_dir
+sftp -b create_optaplanner_javadoc_dir $filemgmtServer
 
-# create directory optaplanner-wb-es-docs for optaplanner on filemgmt.jboss.org
-touch upload_optaplanner_wb_es_docs
-echo "mkdir optaplanner-wb-es-docs" > upload_optaplanner_wb_es_docs
-chmod +x upload_optaplanner_wb_es_docs
-sftp -i $1 -b upload_optaplanner_wb_es_docs $optaplannerDocs/$kieVersion
+# create directory on filemgmt.jboss.org for optaplanner-wb-es-docs
+touch create_optaplanner_wb_es_docs_dir
+echo "mkdir ${optaplannerDocs}/${kieVersion}/optaplanner-wb-es-docs" > create_optaplanner_wb_es_docs_dir
+chmod +x create_optaplanner_wb_es_docs_dir
+sftp -b create_optaplanner_wb_es_docs_dir $filemgmtServer
 
-# *** copies optaplanner binaries and docs to filemgmt.jboss.org ***************************
+# upload binaries to filemgmt-prod.jboss.org
+touch upload_binaries
+echo "put ${uploadDir}/optaplanner-distribution-${kieVersion}.zip ${optaplannerHtdocs}/${kieVersion}" > upload_binaries
+chmod +x upload_binaries
+sftp -b upload_binaries $filemgmtServer
 
-# bins
-scp -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/optaplanner-distribution-$kieVersion.zip $optaplannerHtdocs/$kieVersion
+# upload docs to filemgmt-prod.jboss.org
+rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/optaplanner-docs/* ${rsync_filemgmt}:${optaplannerDocs}/${kieVersion}/optaplanner-docs
+rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/optaplanner-javadoc/* ${rsync_filemgmt}:${optaplannerDocs}/${kieVersion}/optaplanner-javadoc
+rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/optaplanner-wb-es-docs/* ${rsync_filemgmt}:${optaplannerDocs}/${kieVersion}/optaplanner-wb-es-docs
 
-# docs
-scp -r -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/optaplanner-docs/* $optaplannerDocs/$kieVersion/optaplanner-docs
-scp -r -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/optaplanner-javadoc/* $optaplannerDocs/$kieVersion/optaplanner-javadoc
-scp -r -i $1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $uploadDir/optaplanner-wb-es-docs/* $optaplannerDocs/$kieVersion/optaplanner-wb-es-docs
-
-
-# remove files and directories for uploading optaplanner
-rm -rf upload_*
-
+# remove files for uploading optaplanner
+rm -rf upload_binaries
+rm -rf create_*_dir
+rm -rf create_version
 
