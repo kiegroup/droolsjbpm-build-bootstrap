@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-16T11:04:16.550Z",
+    "date": "2022-12-16T12:10:51.955Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3712531809"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3712965220"
   },
   "projects": [
     {
@@ -1296,6 +1296,196 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4877,
+          "title": "Revert \"[7.x] [RHPAM-4504] Update KeyStoreHelper signature fails on i…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4877",
+          "html_url": "https://github.com/kiegroup/drools/pull/4877",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-16T12:10:20Z",
+          "updated_at": "2022-12-16T12:10:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "74fa069770dcbaa13527fdea7b7845eff1610e03",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-4504-7.67.x-blue-revert",
+            "sha": "cf72efb086e691750a5576bf7c099d943c5a4c7a",
+            "label": "tkobayas:RHPAM-4504-7.67.x-blue-revert"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 10139377380,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712963897/jobs/6295086617",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-16T12:10:28Z",
+              "completed_at": "2022-12-16T12:10:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10139377168,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712963897/jobs/6295086457",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-16T12:10:28Z",
+              "completed_at": "2022-12-16T12:10:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10139376975,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712963897/jobs/6295086303",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-16T12:10:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10139376721,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712963897/jobs/6295086144",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-16T12:10:28Z",
+              "completed_at": "2022-12-16T12:10:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20686124796,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/13/",
+              "conclusion": "pending",
+              "started_at": "2022-12-16T12:10:24Z",
+              "completed_at": "2022-12-16T12:10:24Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20686124818,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/12/",
+              "conclusion": "pending",
+              "started_at": "2022-12-16T12:10:24Z",
+              "completed_at": "2022-12-16T12:10:24Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4876,
+          "title": "Revert \"[7.x] [RHPAM-4504] Update KeyStoreHelper signature fails on i…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4876",
+          "html_url": "https://github.com/kiegroup/drools/pull/4876",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-16T12:06:53Z",
+          "updated_at": "2022-12-16T12:10:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "0f78d659203e69f55d38441a671359331ee2d36c",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHPAM-4504-7.67.x-revert",
+            "sha": "c211cad48a798b44c841929aca04773a8cf88425",
+            "label": "tkobayas:RHPAM-4504-7.67.x-revert"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 10139307904,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712938139/jobs/6295031497",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-16T12:07:01Z",
+              "completed_at": "2022-12-16T12:07:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10139307664,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712938139/jobs/6295031288",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2022-12-16T12:07:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10139307428,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712938139/jobs/6295031089",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-16T12:07:01Z",
+              "completed_at": "2022-12-16T12:07:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10139307195,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3712938139/jobs/6295030887",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-16T12:07:01Z",
+              "completed_at": "2022-12-16T12:07:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20686072140,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/17/",
+              "conclusion": "pending",
+              "started_at": "2022-12-16T12:06:57Z",
+              "completed_at": "2022-12-16T12:06:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 20686072171,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/17/",
+              "conclusion": "pending",
+              "started_at": "2022-12-16T12:06:58Z",
+              "completed_at": "2022-12-16T12:06:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4831,
           "title": "[DO-NOT-MERGE] [7.x] [DROOLS-7245] Inconsistent behavior of null value with arithmetic and…",
