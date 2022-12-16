@@ -25,10 +25,21 @@ inputs:
     description: "Author of the original pull request"
     default: "${{ github.event.pull_request.user.login }}"
     required: false
-  additional-reviewers:
-    description: "Additional backported pull request reviewers, e.g., toJSON(github.event.pull_request.requested_reviewers)"
-    default: "[]"
+  include-merge-as-reviewer:
+    description: "Whether include or not who merged the pull request as reviewer of the backported one"
+    default: "true"
     required: false
+  include-requested-reviewers:
+    description: "Whether include or not original requested reviewers"
+    default: "true"
+    required: false
+  custom-reviewers:
+    description: "Comma separated list of additional reviewers to be added in backported pull request"
+    required: false
+  additional-reviewers:
+    description: "Additional backported pull request reviewers, default is toJSON(github.event.pull_request.requested_reviewers)"
+    required: false
+    deprecationMessage: "[IGNORED] The previous default is managed by `include-requested-reviewers`. If you want to add more custom reviewers use `custom-reviewers` input instead"
 
 runs: 
   using: 'composite'
@@ -37,18 +48,46 @@ runs:
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
+    - name: Setup default values
+      shell: bash
+      env:
+        REQUESTED_REVIEWERS: ${{ toJSON(github.event.pull_request.requested_reviewers) }}
+        MERGED_BY: ${{ github.event.pull_request.merged_by.login }}
+        CUSTOM_REVIEWERS: ""
+      run: |
+        # -- Additional Reviewers --
+        # trick to save multiline string as env variable
+        echo "REQUESTED_REVIEWERS<<EOF" >> $GITHUB_ENV
+        input_include_requested_revs=${{ inputs.include-requested-reviewers }}
+        [[ "$input_include_requested_revs" == "true" ]] && echo "$REQUESTED_REVIEWERS" >> $GITHUB_ENV || echo "[]" >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+
+        # -- Custom Reviewers --
+        input_custom_revs=${{ inputs.custom-reviewers }}
+        [[ ! -z "$input_custom_revs" ]] \
+          && echo "CUSTOM_REVIEWERS=$(echo "[\"${input_custom_revs/,/\",\"}\"]")" >> $GITHUB_ENV \
+          || echo "CUSTOM_REVIEWERS=[]" >> $GITHUB_ENV
+
+        # -- Merged By Reviewer --
+        input_include_merge=${{ inputs.include-merge-as-reviewer }}
+        [[ "$input_include_merge" == "true" ]] && echo "MERGED_BY=$MERGED_BY" >> $GITHUB_ENV || echo "MERGED_BY=" >> $GITHUB_ENV
     - name: Prepare reviewers
       id: prepare-reviewers
       shell: bash
       run: |
-        echo "Additional reviewers retrieved below"
-        echo "${{ inputs.additional-reviewers }}"
-        reviewers="$(echo ${{ inputs.additional-reviewers }} | jq -c 'map(.login)' | jq -cr '. |= . + ["${{ inputs.author }}"] | unique | join(",")')"
+        env
+
+        # starts from request reviewers or empty array
+        reviewers="$(echo ${REQUESTED_REVIEWERS:-[]} | jq -c 'map(.login)' | jq -cr '[. |= . + ["${{ inputs.author }}", "${{ env.MERGED_BY }}"] | .[] | select(length > 0)] | unique')"
+
+        # add custom reviewers, if any
+        reviewers="$(jq -cr --argjson arr1 "$reviewers" --argjson arr2 "${CUSTOM_REVIEWERS:-[]}" -n '$arr1 + $arr2 | unique | join(",")')"
+
         echo "reviewers = ${reviewers}"
         echo "BACKPORT_REVIEWERS=${reviewers}" >> $GITHUB_ENV
     - name: Perform cherry pick
       id: cherry-pick
-      uses: carloscastrojumo/github-cherry-pick-action@v1.0.5
+      uses: carloscastrojumo/github-cherry-pick-action@v1.0.6
       with:
         branch: "${{ inputs.target-branch }}"
         title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
