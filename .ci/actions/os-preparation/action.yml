@@ -38,8 +38,8 @@ runs:
         if [ -z "$os" ]; then 
           echo "No configuration found for [repo=$repo_name, event=$event, value=$label_name] at $GITHUB_WORKSPACE/$config_file"
           exit 1
-        else 
-          echo "::set-output name=operating_systems::$(echo $os)" 
+        else
+          echo "operating_systems=$(echo $os)" >> $GITHUB_OUTPUT
         fi
     - name: Printing configured operating systems
       shell: bash
