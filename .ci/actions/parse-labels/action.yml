@@ -33,7 +33,7 @@ runs:
       shell: bash
       run: |
         targets="$(echo $FILTERED_LABELS | jq -c '[.[] | .name | sub("${{ inputs.label-prefix }}"; "")]')"
-        echo "::set-output name=targets::$(echo $targets)" 
+        echo "targets=$(echo $targets)" >> $GITHUB_OUTPUT
     
     - name: Printing extracted targets
       shell: bash
