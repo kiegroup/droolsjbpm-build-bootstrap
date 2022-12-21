@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-21T14:05:41.414Z",
+    "date": "2022-12-21T15:06:54.756Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3749973157"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3750439290"
   },
   "projects": [
     {
@@ -38,7 +38,7 @@
             }
           ],
           "created_at": "2022-12-21T13:44:59Z",
-          "updated_at": "2022-12-21T13:51:19Z",
+          "updated_at": "2022-12-21T14:57:53Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1094,6 +1094,122 @@
       "repo_url": "https://github.com/kiegroup/kie-soup",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-soup/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 263,
+          "title": "BXMSPROD-1845 kie-soup-dataset-elasticsearch removed kie-soup",
+          "url": "https://api.github.com/repos/kiegroup/kie-soup/pulls/263",
+          "html_url": "https://github.com/kiegroup/kie-soup/pull/263",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2022-12-21T14:57:35Z",
+          "updated_at": "2022-12-21T14:57:42Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "4f558592c3b5bdd5888380a5386d795ccb70231f",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1845",
+            "sha": "f348b6b52d8af5607ebb116bd8aa580a8234eb7b",
+            "label": "Ginxo:BXMSPROD-1845"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 10233868484,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3750367223/jobs/6369990891",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-12-21T14:57:47Z",
+              "completed_at": "2022-12-21T14:57:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10233868235,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3750367210/jobs/6369990717",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-12-21T14:57:47Z",
+              "completed_at": "2022-12-21T14:57:47Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10233867961,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3750367223/jobs/6369990516",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-12-21T14:57:46Z",
+              "completed_at": "2022-12-21T14:57:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10233867650,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3750367210/jobs/6369990288",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2022-12-21T14:57:45Z",
+              "completed_at": "2022-12-21T14:57:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10233866298,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3750366507/jobs/6369989279",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-21T14:57:42Z",
+              "completed_at": "2022-12-21T14:57:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10233866064,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/3750366507/jobs/6369989104",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-21T14:57:51Z",
+              "completed_at": "2022-12-21T15:03:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 248,
           "title": "[JBPM-10028] Use sensible default for fetching rows",
