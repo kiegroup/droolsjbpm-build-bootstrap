@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2022-12-23T15:06:12.626Z",
+    "date": "2022-12-23T16:07:39.409Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3766528204"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3766857080"
   },
   "projects": [
     {
@@ -6962,7 +6962,7 @@
       "name": "jbpm",
       "description": "a Business Process Management (BPM) Suite",
       "html_url": "https://github.com/kiegroup/jbpm",
-      "updated_at": "2022-12-23T07:05:18Z",
+      "updated_at": "2022-12-23T15:12:04Z",
       "homepage": "http://www.jbpm.org",
       "language": "Java",
       "default_branch": "main",
@@ -18370,6 +18370,69 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4388,
+          "title": "KOGITO-8326: removed obsolte Jenkinsfile",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4388",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4388",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2022-12-23T15:22:49Z",
+          "updated_at": "2022-12-23T15:23:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "568548a4349659ead84eb423cebcb3567c863d42",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "removeJenkinsfile",
+            "sha": "c113b201d221e276e7b8adb9512e8b0380d217bb",
+            "label": "mbiarnes:removeJenkinsfile"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 10276442619,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3766628328/jobs/6403333892",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2022-12-23T15:22:56Z",
+              "completed_at": "2022-12-23T15:22:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10276442513,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/3766628328/jobs/6403333814",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2022-12-23T15:23:03Z",
+              "completed_at": "2022-12-23T15:28:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20785747802,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/674/",
+              "conclusion": "success",
+              "started_at": "2022-12-23T15:42:49Z",
+              "completed_at": "2022-12-23T15:42:49Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
