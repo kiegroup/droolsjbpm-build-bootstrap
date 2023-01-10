@@ -9,7 +9,7 @@ inputs:
     required: false
     default: 'https://raw.githubusercontent.com/${GROUP:kiegroup}/droolsjbpm-build-bootstrap/${BRANCH:main}/.ci/pull-request-config.yaml'
   flow-type:
-    description: "the flow to execute, it can be 'pull-request', 'full-downstream', 'single' or 'branch'"
+    description: "the flow to execute, it can be 'pull-request', 'fdb', 'single' or 'branch'"
     default: "pull-request"
     required: false
   starting-project:
@@ -33,7 +33,7 @@ runs:
   steps:
     - name: Build Chain Tool Execution
       id: build-chain
-      uses: kiegroup/github-action-build-chain@v2.6.25
+      uses: kiegroup/github-action-build-chain@v3.0
       with:
         definition-file: ${{ inputs.definition-file }}
         flow-type: ${{ inputs.flow-type }}
