@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-01-12T11:09:42.260Z",
+    "date": "2023-01-12T12:14:09.945Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3901652248"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3902116124"
   },
   "projects": [
     {
@@ -19,6 +19,111 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2189,
+          "title": "DROOLS-7105 Revert \"DROOLS-7105 DMN upgrade to Antlr 4.10 (#2031)\"",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2189",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2189",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "danielezonca",
+              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
+              "html_url": "https://github.com/danielezonca"
+            }
+          ],
+          "created_at": "2023-01-12T11:25:27Z",
+          "updated_at": "2023-01-12T11:54:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "80ac3ab79fcd46713908af07a063dbb2e32ddc34",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "tarilabs-20230112-DROOLS-7105-revert",
+            "sha": "4cc7df668e3c360acc034b2afe22f8fbc2bd2059",
+            "label": "tarilabs:tarilabs-20230112-DROOLS-7105-revert"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 10603452384,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3901780490/jobs/6664490326",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-12T11:57:48Z",
+              "completed_at": "2023-01-12T11:59:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10603452105,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3901780490/jobs/6664490224",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-12T11:48:38Z",
+              "completed_at": "2023-01-12T11:49:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10603451724,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3901780490/jobs/6664489844",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-12T11:33:36Z",
+              "completed_at": "2023-01-12T11:33:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21000883076,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/598/",
+              "conclusion": "pending",
+              "started_at": "2023-01-12T11:26:38Z",
+              "completed_at": "2023-01-12T11:26:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21000885316,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/droolsjbpm-build-bootstrap-main.compile/64/",
+              "conclusion": "pending",
+              "started_at": "2023-01-12T11:26:45Z",
+              "completed_at": "2023-01-12T11:26:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21000939069,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/694/",
+              "conclusion": "success",
+              "started_at": "2023-01-12T11:29:59Z",
+              "completed_at": "2023-01-12T11:29:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2188,
           "title": "[7.67.x] Bump version.com.thoughtworks.xstream from 1.4.19 to 1.4.20",
@@ -2351,13 +2456,114 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-01-12T07:11:39Z",
+      "updated_at": "2023-01-12T11:12:46Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4911,
+          "title": "DROOLS-7105 Revert \"DROOLS-7105 DMN upgrade to Antlr 4.10 (#4632)\"",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4911",
+          "html_url": "https://github.com/kiegroup/drools/pull/4911",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "danielezonca",
+              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
+              "html_url": "https://github.com/danielezonca"
+            }
+          ],
+          "created_at": "2023-01-12T11:25:30Z",
+          "updated_at": "2023-01-12T11:54:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "f4d5e258d5422b73038f1d519697ffeb06a4f30d",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20230112-DROOLS-7105-revert",
+            "sha": "ddf83ce67165a2399d3c5da0d98c3efae03d8244",
+            "label": "tarilabs:tarilabs-20230112-DROOLS-7105-revert"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 10602869087,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3901780851/jobs/6664043646",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-12T11:25:40Z",
+              "completed_at": "2023-01-12T11:25:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10602868876,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3901780851/jobs/6664043495",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-01-12T11:32:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10602868676,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3901780851/jobs/6664043343",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-12T11:25:39Z",
+              "completed_at": "2023-01-12T11:25:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10602868011,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3901780851/jobs/6664042830",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-12T11:25:40Z",
+              "completed_at": "2023-01-12T11:25:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21000867065,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/394/",
+              "conclusion": "pending",
+              "started_at": "2023-01-12T11:25:42Z",
+              "completed_at": "2023-01-12T11:25:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21000867070,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/403/",
+              "conclusion": "pending",
+              "started_at": "2023-01-12T11:25:42Z",
+              "completed_at": "2023-01-12T11:25:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4885,
           "title": "[7.x] [DO-NOT-MERGE] test cases with \"contains\"",
@@ -12747,6 +12953,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3797,
+          "title": "DROOLS-7105 Revert \"DROOLS-7105 DMN upgrade to Antlr 4.10 (#3769)\"",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3797",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3797",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "danielezonca",
+              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
+              "html_url": "https://github.com/danielezonca"
+            },
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
+            }
+          ],
+          "created_at": "2023-01-12T11:25:33Z",
+          "updated_at": "2023-01-12T11:55:00Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "493252b6c6c63ff39baa368c14d729e84e6800f2",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "tarilabs-20230112-DROOLS-7105-revert",
+            "sha": "5143231851748d9867f12bee6bcdbe441db8027a",
+            "label": "tarilabs:tarilabs-20230112-DROOLS-7105-revert"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 10602869309,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3901781272/jobs/6664043810",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-12T11:25:40Z",
+              "completed_at": "2023-01-12T11:25:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10602869063,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/3901781272/jobs/6664043630",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-01-12T11:28:49Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21000867011,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/273/",
+              "conclusion": "pending",
+              "started_at": "2023-01-12T11:25:42Z",
+              "completed_at": "2023-01-12T11:25:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3737,
           "title": "Fix Whitespace Issue in Migration Tool",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3737",
@@ -14271,6 +14551,102 @@
       "repo_url": "https://github.com/kiegroup/drools-wb",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools-wb/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1566,
+          "title": "DROOLS-7105 Revert \"DROOLS-7105 DMN upgrade to Antlr 4.10 (#1552)\"",
+          "url": "https://api.github.com/repos/kiegroup/drools-wb/pulls/1566",
+          "html_url": "https://github.com/kiegroup/drools-wb/pull/1566",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "danielezonca",
+              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
+              "html_url": "https://github.com/danielezonca"
+            },
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
+            }
+          ],
+          "created_at": "2023-01-12T11:25:36Z",
+          "updated_at": "2023-01-12T12:09:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cfd10f3a5ab762884cb190de5acd246f8c5e85c3",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "tarilabs-20230112-DROOLS-7105-revert",
+            "sha": "d3e259a614e04dbeabe9e0d455cc2d2ef9877cf6",
+            "label": "tarilabs:tarilabs-20230112-DROOLS-7105-revert"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 10603751954,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/10603751954",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-12T12:09:19Z",
+              "completed_at": "2023-01-12T12:09:20Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10603751748,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/drools-wb/runs/10603751748",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-12T12:07:36Z",
+              "completed_at": "2023-01-12T12:09:14Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 10602870386,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/actions/runs/3901781634/jobs/6664044677",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-01-12T11:31:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10602870193,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools-wb/actions/runs/3901781634/jobs/6664044518",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-12T11:25:43Z",
+              "completed_at": "2023-01-12T11:25:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21001596176,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/drools-wb-main.pr/107/",
+              "conclusion": "success",
+              "started_at": "2023-01-12T12:10:10Z",
+              "completed_at": "2023-01-12T12:10:10Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1458,
           "title": "[DROOLS-5964] ",
@@ -17503,6 +17879,80 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1212,
+          "title": "DROOLS-7105 Revert \"DROOLS-7105 DMN upgrade to Antlr 4.10 (#1187)\"",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1212",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1212",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "danielezonca",
+              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
+              "html_url": "https://github.com/danielezonca"
+            },
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
+            }
+          ],
+          "created_at": "2023-01-12T11:25:39Z",
+          "updated_at": "2023-01-12T11:54:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "b5d5c9d387338604995ad886e6b7341cf0094688",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "tarilabs-20230112-DROOLS-7105-revert",
+            "sha": "5d22228488506d964392036b63513d932c96a4fa",
+            "label": "tarilabs:tarilabs-20230112-DROOLS-7105-revert"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 10602871834,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3901782024/jobs/6664045823",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-12T11:25:48Z",
+              "completed_at": "2023-01-12T11:25:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10602871551,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3901782024/jobs/6664045602",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-01-12T11:27:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21000868275,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/218/",
+              "conclusion": "pending",
+              "started_at": "2023-01-12T11:25:46Z",
+              "completed_at": "2023-01-12T11:25:46Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1205,
           "title": "[7.67.x-blue] RHPAM-4431: Session Cookie Without Secure Attribute Set ",
