@@ -445,16 +445,17 @@ Now in according to then need, the *build-chain-action* command line tool should
 * **Branch Flow**, this allows to build the *whole set of projects* from RHBA community stream, either following upstream or downstream flow:
 
     ``` shell
-    $ build-chain -f https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml build branch -b main --fullProjectDependencyTree -p kiegroup/droolsjbpm-build-bootstrap [--skipExecution]
+    $ build-chain build branch -f https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml -b main --fullProjectDependencyTree -p kiegroup/droolsjbpm-build-bootstrap [--skipExecution]
     ```
 
     > Consider to change `main` by the branch/tag to build
 
     This command clones all repositories starting from specific project (in this case *kiegroup/droolsjbpm-build-bootstrap*, see [project structure](#kiegroup-project-structure)), checkouts one by one all projects and build them in according to their specific build instructions that are defined in the definition file you provided.
     
-    - `-f <definition-file>`, url or path to the build-chain definition file (more details [here](https://github.com/kiegroup/build-chain-configuration-reader)).
-    - `build`, build functionality.
-    - `branch -b <br>`, checkout projects in according to their branch starting from `<br>` branch in `<starting-project>` project.
+   
+    - `build branch`, build functionality with flow type as branch.
+    -  - `-f <definition-file>`, url or path to the build-chain definition file (more details [here](https://github.com/kiegroup/build-chain-configuration-reader)).
+    - `-b <br>`, checkout projects in according to their branch starting from `<br>` branch in `<starting-project>` project.
     - `--fullProjectDependencyTree`, checks out and execute the whole tree instead of the upstream build, if omitted the upstream flow is used.
     - `-p <starting-project>`, from which project (in the tree structure) start from.
     - `--skipExecution`, add this if you only want to clone all repositories without building them.
@@ -477,7 +478,7 @@ Running tests
     This can be reached using the `build-chain` tool, introduced in [Running the Build](#running-the-build) section. Omitting the `--skipExecution` flag it will check out and build the whole set of RHBA projects (also executing all tests).
 
     ```shell
-    $ build-chain -f <definition-file> build branch -b <br> --fullProjectDependencyTree -p <starting-project>
+    $ build-chain build branch -f <definition-file> -b <br> --fullProjectDependencyTree -p <starting-project>
     ```
 
 Running code-coverage checks
