@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-01-19T06:08:35.154Z",
+    "date": "2023-01-19T07:06:22.881Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3955829499"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3956132349"
   },
   "projects": [
     {
@@ -19,6 +19,80 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2194,
+          "title": "[TEST] build-chain to typescript version",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2194",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2194",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-01-19T07:03:12Z",
+          "updated_at": "2023-01-19T07:03:30Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ddca45a85e9b91e8f5cb897294d9660896747080",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "Ginxo-patch-25",
+            "sha": "47c9eddb83f2b6dd7b6c2d5b8f3d7dfb7d994ee5",
+            "label": "Ginxo:Ginxo-patch-25"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 10745340262,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3956115749/jobs/6775014619",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-19T07:03:39Z",
+              "completed_at": "2023-01-19T07:04:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10745340027,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3956115749/jobs/6775014422",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-19T07:03:31Z",
+              "completed_at": "2023-01-19T07:03:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10745337136,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3956115749/jobs/6775012191",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-19T07:03:23Z",
+              "completed_at": "2023-01-19T07:03:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21107300382,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/700/",
+              "conclusion": "success",
+              "started_at": "2023-01-19T07:04:10Z",
+              "completed_at": "2023-01-19T07:04:10Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2193,
           "title": "RHDM-1949: Upgrading plexus-utils to 3.0.24",
