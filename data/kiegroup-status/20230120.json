@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-01-20T08:08:54.863Z",
+    "date": "2023-01-20T09:06:55.194Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3965822372"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3966203378"
   },
   "projects": [
     {
@@ -10121,95 +10121,100 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2922,
-          "title": "[DROOLS-7284] Bump apache-karaf from 4.3.6 to 4.3.8 in /kie-osgi/kie-…",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2922",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2922",
+          "number": 2924,
+          "title": "[7.67.x-blue] [DROOLS-7284] Bump apache-karaf from 4.3.6 to 4.3.8 in /kie-osgi/kie-…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2924",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2924",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
           "draft": false,
           "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            },
             {
               "login": "jiripetrlik",
               "avatar_url": "https://avatars.githubusercontent.com/u/11760511?v=4",
               "html_url": "https://github.com/jiripetrlik"
             }
           ],
-          "created_at": "2023-01-19T03:24:21Z",
-          "updated_at": "2023-01-20T06:04:18Z",
+          "created_at": "2023-01-20T08:58:22Z",
+          "updated_at": "2023-01-20T08:58:26Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "16ffc0443438fe52420cfda13a8fe8335c8a3aca",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "de89e791ee78a4fb92916e8ee4787e0067f01879",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "DROOLS-7284-4.3.8",
-            "sha": "d290d7d8cc8bfb89a95dfb02521e6c5148f74a27",
-            "label": "tkobayas:DROOLS-7284-4.3.8"
+            "ref": "7.67.x-blue_DROOLS-7284-4.3.8",
+            "sha": "5e41a88a36373e9e6a46273ea4978efd03394097",
+            "label": "kiegroup:7.67.x-blue_DROOLS-7284-4.3.8"
           },
           "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 2923,
+          "title": "[7.67.x] [DROOLS-7284] Bump apache-karaf from 4.3.6 to 4.3.8 in /kie-osgi/kie-…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2923",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2923",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 10751108328,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/10751108328",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-01-19T12:01:58Z",
-              "completed_at": "2023-01-19T12:02:00Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
             },
             {
-              "id": 10751103139,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/10751103139",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-01-19T12:00:05Z",
-              "completed_at": "2023-01-19T12:01:42Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
             },
             {
-              "id": 10748033684,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3957139077/jobs/6777140736",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-01-19T09:36:32Z",
-              "completed_at": "2023-01-19T12:48:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 10748033451,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/3957139077/jobs/6777140561",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-01-19T09:36:18Z",
-              "completed_at": "2023-01-19T09:36:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21111997987,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1080/",
-              "conclusion": "success",
-              "started_at": "2023-01-19T12:03:16Z",
-              "completed_at": "2023-01-19T12:03:16Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "jiripetrlik",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11760511?v=4",
+              "html_url": "https://github.com/jiripetrlik"
             }
-          ]
+          ],
+          "created_at": "2023-01-20T08:58:21Z",
+          "updated_at": "2023-01-20T08:58:24Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "6e9465dec6ebfc1ae9df5ceed34dfa083e1fe1b1",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_DROOLS-7284-4.3.8",
+            "sha": "e1b2af468c384a78d0c53b5880d8f49ba2c7e3eb",
+            "label": "kiegroup:7.67.x_DROOLS-7284-4.3.8"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2921,
