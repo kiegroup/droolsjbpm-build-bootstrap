@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-01-23T13:15:41.443Z",
+    "date": "2023-01-23T14:10:51.924Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3986743088"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3987162775"
   },
   "projects": [
     {
@@ -2600,6 +2600,107 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4933,
+          "title": "DROOLS-7316 : Exception while using expression with $ in BRL condition in GDST",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4933",
+          "html_url": "https://github.com/kiegroup/drools/pull/4933",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "barboras7",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11525583?v=4",
+              "html_url": "https://github.com/barboras7"
+            }
+          ],
+          "created_at": "2023-01-23T13:55:55Z",
+          "updated_at": "2023-01-23T13:56:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "629672520d99032e693864d502b5de2616f04c53",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "DROOLS-7316-rege-7.67.x",
+            "sha": "f2853f0bde652237327f2bfa67d606a3f5ea76fc",
+            "label": "Rikkola:DROOLS-7316-rege-7.67.x"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 10822983958,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3987078627/jobs/6836422969",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-01-23T13:57:15Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10822983710,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3987078627/jobs/6836422775",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-23T13:56:04Z",
+              "completed_at": "2023-01-23T13:56:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10822983471,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3987078627/jobs/6836422601",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-23T13:56:04Z",
+              "completed_at": "2023-01-23T13:56:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10822983238,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/3987078627/jobs/6836422443",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-01-23T13:56:04Z",
+              "completed_at": "2023-01-23T13:56:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21162379080,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/18/",
+              "conclusion": "pending",
+              "started_at": "2023-01-23T13:56:03Z",
+              "completed_at": "2023-01-23T13:56:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21162379110,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/18/",
+              "conclusion": "pending",
+              "started_at": "2023-01-23T13:56:03Z",
+              "completed_at": "2023-01-23T13:56:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4885,
           "title": "[7.x] [DO-NOT-MERGE] test cases with \"contains\"",
