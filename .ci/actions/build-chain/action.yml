@@ -33,7 +33,7 @@ runs:
   steps:
     - name: Build Chain Tool Execution
       id: build-chain
-      uses: kiegroup/github-action-build-chain@v3.1
+      uses: kiegroup/github-action-build-chain@v3
       with:
         definition-file: ${{ inputs.definition-file }}
         flow-type: ${{ inputs.flow-type }}
