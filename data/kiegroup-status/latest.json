@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-01-25T17:33:05.974Z",
+    "date": "2023-01-25T18:19:02.704Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4008223943"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4008690905"
   },
   "projects": [
     {
@@ -370,10 +370,10 @@
               "id": 10883623217,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/3931901214/jobs/6882445468",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-01-25T17:23:15Z",
-              "completed_at": null,
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-01-25T17:42:10Z",
+              "completed_at": "2023-01-25T17:43:07Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7804,10 +7804,136 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2255,
-          "title": "[7.67.x] [JBPM-10143] Ensure all events are sent to Elasticsearch",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2255",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2255",
+          "number": 2261,
+          "title": "[JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2261",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2261",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-01-25T18:18:36Z",
+          "updated_at": "2023-01-25T18:18:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "f2d6c8197e3cbd55aa4adb11319105d73e1793c1",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue-10132",
+            "sha": "cd56f9944e37d9e5e05c572ec043bd5b726b0a40",
+            "label": "fjtirado:7.67.x-blue-10132"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 10884877481,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4008781075/jobs/6883366670",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-01-25T18:18:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10884877292,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4008781075/jobs/6883366529",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-01-25T18:18:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21214878116,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/46/",
+              "conclusion": "pending",
+              "started_at": "2023-01-25T18:18:45Z",
+              "completed_at": "2023-01-25T18:18:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2260,
+          "title": "[JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2260",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2260",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-01-25T18:16:39Z",
+          "updated_at": "2023-01-25T18:16:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "87e9e4c6712cff966a7002f0380807872b7b883c",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x-10132",
+            "sha": "589c635cdbdf1fff4b715256985238d7c9a1a11a",
+            "label": "fjtirado:7.67.x-10132"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 10884831235,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4008765929/jobs/6883333702",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-01-25T18:16:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10884831033,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4008765929/jobs/6883333548",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-01-25T18:16:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21214836770,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/102/",
+              "conclusion": "pending",
+              "started_at": "2023-01-25T18:16:44Z",
+              "completed_at": "2023-01-25T18:16:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2259,
+          "title": "[7.67.x] [JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2259",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2259",
           "state": "open",
           "labels": [
             "cherry-pick :cherries:"
@@ -7815,24 +7941,29 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
             }
           ],
-          "created_at": "2023-01-17T14:32:22Z",
-          "updated_at": "2023-01-24T11:58:37Z",
+          "created_at": "2023-01-25T18:12:51Z",
+          "updated_at": "2023-01-25T18:12:54Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "7.67.x",
-            "sha": "5a967eaf2f893f2433082760da1adee3b2e7f0d7",
+            "sha": "87e9e4c6712cff966a7002f0380807872b7b883c",
             "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "7.67.x_JBPM-10143",
-            "sha": "576c8e255edc03df06d013f7c10ec9e189bd7fde",
-            "label": "kiegroup:7.67.x_JBPM-10143"
+            "ref": "7.67.x_JBPM-10132",
+            "sha": "ba5e271f4bdffa6a89855454d601762b29356830",
+            "label": "kiegroup:7.67.x_JBPM-10132"
           },
           "user": {
             "login": "github-actions[bot]",
@@ -7840,6 +7971,69 @@
             "html_url": "https://github.com/apps/github-actions"
           },
           "checks": []
+        },
+        {
+          "number": 2258,
+          "title": "[7.67.x] [JBPM-10143] Ensure all events are sent to Elasticsearch (#2247)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2258",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2258",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-01-25T18:11:06Z",
+          "updated_at": "2023-01-25T18:11:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "87e9e4c6712cff966a7002f0380807872b7b883c",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10143",
+            "sha": "b421ece56d0d26165eb1c714f232026a0230d264",
+            "label": "martinweiler:7.67.x_JBPM-10143"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 10884706032,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4008723349/jobs/6883239168",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-01-25T18:11:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 10884705813,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4008723349/jobs/6883239010",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-01-25T18:11:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21214724957,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/101/",
+              "conclusion": "pending",
+              "started_at": "2023-01-25T18:11:15Z",
+              "completed_at": "2023-01-25T18:11:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2254,
@@ -7959,36 +8153,6 @@
             "login": "sudhishmk",
             "avatar_url": "https://avatars.githubusercontent.com/u/38028716?v=4",
             "html_url": "https://github.com/sudhishmk"
-          },
-          "checks": []
-        },
-        {
-          "number": 2233,
-          "title": "[JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2233",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2233",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-11-10T08:18:37Z",
-          "updated_at": "2022-11-17T10:05:11Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5ff4a6f0bfb3b98661e819487099c539848752aa",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10132",
-            "sha": "961407c2b9ba6cd770c270ea43ce0a46f4c694b7",
-            "label": "elguardian:JBPM-10132"
-          },
-          "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
           },
           "checks": []
         },
