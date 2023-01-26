@@ -1,4 +1,4 @@
-@Library('jenkins-pipeline-shared-libraries')_
+@Library('jenkins-pipeline-shared-libraries@build-chain-version')_
 
 localNexusRepositoryId = "${env.LOCAL_NEXUS_REPOSITORY_ID?.trim() ? LOCAL_NEXUS_REPOSITORY_ID : 'rhba-main-nightly'}"
 def tagName = "nightly-${PRODUCT_VERSION}.redhat-${new Date().format('yyyyMMddHHmm')}"
