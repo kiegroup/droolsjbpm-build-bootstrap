@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-01T16:08:23.415Z",
+    "date": "2023-02-01T17:12:15.827Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4066309314"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4066828344"
   },
   "projects": [
     {
@@ -18604,6 +18604,173 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4451,
+          "title": "BXMSDOC-8443 blue PIM docs incorrect",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4451",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4451",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-01T17:10:39Z",
+          "updated_at": "2023-02-01T17:10:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "7a78724f10f1dcf03a76a1b2711b269699d93439",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BXMSDOC-8443-7.67.-blue",
+            "sha": "7c0dc825edcea60e3fbf1dddfb6becada108fe51",
+            "label": "emmurphy1:BXMSDOC-8443-7.67.-blue"
+          },
+          "user": {
+            "login": "emmurphy1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
+            "html_url": "https://github.com/emmurphy1"
+          },
+          "checks": [
+            {
+              "id": 11040061624,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066878231/jobs/7003535005",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-01T17:10:46Z",
+              "completed_at": "2023-02-01T17:10:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11040061295,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066878231/jobs/7003534741",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-02-01T17:10:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333112682,
+              "name": "Linux - Pull Request",
+              "html_url": "",
+              "conclusion": "pending",
+              "started_at": "2023-02-01T17:10:43Z",
+              "completed_at": "2023-02-01T17:10:43Z",
+              "slug": "unknown",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4450,
+          "title": "BXMSDOC-8443 7.67.x  PIM docs incorrect",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4450",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4450",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-01T17:08:01Z",
+          "updated_at": "2023-02-01T17:09:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "ddf2f95ec9f505d3973236b3a94f711f8cf67934",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "BXMSDOC-8443-7.67.xa",
+            "sha": "b371f9dfa7bb0bebd6a01db7b3a1bc8bb51b50e3",
+            "label": "emmurphy1:BXMSDOC-8443-7.67.xa"
+          },
+          "user": {
+            "login": "emmurphy1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
+            "html_url": "https://github.com/emmurphy1"
+          },
+          "checks": [
+            {
+              "id": 11040031059,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066868230/jobs/7003511594",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-01T17:09:38Z",
+              "completed_at": "2023-02-01T17:09:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11040030740,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066868230/jobs/7003511324",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-02-01T17:09:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333148350,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-docs-7.67.x.pr/188/",
+              "conclusion": "pending",
+              "started_at": "2023-02-01T17:12:08Z",
+              "completed_at": "2023-02-01T17:12:08Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 4449,
+          "title": "BXMSDOC-8443 main PIM docs incorrect ",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4449",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4449",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-01T17:05:36Z",
+          "updated_at": "2023-02-01T17:06:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "4b8b4177f3d0ea5070a00283c27e5d7f3193d788",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSDOC-8443-main",
+            "sha": "10c531fe8e504c7e3bc0e6ba4a303167fd5cfaa5",
+            "label": "emmurphy1:BXMSDOC-8443-main"
+          },
+          "user": {
+            "login": "emmurphy1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
+            "html_url": "https://github.com/emmurphy1"
+          },
+          "checks": [
+            {
+              "id": 21333069206,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/712/",
+              "conclusion": "pending",
+              "started_at": "2023-02-01T17:08:58Z",
+              "completed_at": "2023-02-01T17:08:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
