@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-01T17:12:15.827Z",
+    "date": "2023-02-01T18:09:28.575Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4066828344"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4067354470"
   },
   "projects": [
     {
@@ -1656,11 +1656,13 @@
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4933",
           "html_url": "https://github.com/kiegroup/drools/pull/4933",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "backport-7.67.x-blue"
+          ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-01-23T13:55:55Z",
-          "updated_at": "2023-01-30T20:42:04Z",
+          "updated_at": "2023-02-01T17:18:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4420,15 +4422,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "jesuino",
-              "avatar_url": "https://avatars.githubusercontent.com/u/359820?v=4",
-              "html_url": "https://github.com/jesuino"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2023-01-30T14:05:07Z",
-          "updated_at": "2023-02-01T15:14:41Z",
+          "updated_at": "2023-02-01T17:37:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18605,132 +18601,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
         {
-          "number": 4451,
-          "title": "BXMSDOC-8443 blue PIM docs incorrect",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4451",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4451",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-02-01T17:10:39Z",
-          "updated_at": "2023-02-01T17:10:39Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "7a78724f10f1dcf03a76a1b2711b269699d93439",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "BXMSDOC-8443-7.67.-blue",
-            "sha": "7c0dc825edcea60e3fbf1dddfb6becada108fe51",
-            "label": "emmurphy1:BXMSDOC-8443-7.67.-blue"
-          },
-          "user": {
-            "login": "emmurphy1",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
-            "html_url": "https://github.com/emmurphy1"
-          },
-          "checks": [
-            {
-              "id": 11040061624,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066878231/jobs/7003535005",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-02-01T17:10:46Z",
-              "completed_at": "2023-02-01T17:10:46Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 11040061295,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066878231/jobs/7003534741",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-02-01T17:10:45Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21333112682,
-              "name": "Linux - Pull Request",
-              "html_url": "",
-              "conclusion": "pending",
-              "started_at": "2023-02-01T17:10:43Z",
-              "completed_at": "2023-02-01T17:10:43Z",
-              "slug": "unknown",
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 4450,
-          "title": "BXMSDOC-8443 7.67.x  PIM docs incorrect",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4450",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/4450",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-02-01T17:08:01Z",
-          "updated_at": "2023-02-01T17:09:32Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "ddf2f95ec9f505d3973236b3a94f711f8cf67934",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "BXMSDOC-8443-7.67.xa",
-            "sha": "b371f9dfa7bb0bebd6a01db7b3a1bc8bb51b50e3",
-            "label": "emmurphy1:BXMSDOC-8443-7.67.xa"
-          },
-          "user": {
-            "login": "emmurphy1",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
-            "html_url": "https://github.com/emmurphy1"
-          },
-          "checks": [
-            {
-              "id": 11040031059,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066868230/jobs/7003511594",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-02-01T17:09:38Z",
-              "completed_at": "2023-02-01T17:09:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 11040030740,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066868230/jobs/7003511324",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-02-01T17:09:37Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21333148350,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-docs-7.67.x.pr/188/",
-              "conclusion": "pending",
-              "started_at": "2023-02-01T17:12:08Z",
-              "completed_at": "2023-02-01T17:12:08Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 4449,
           "title": "BXMSDOC-8443 main PIM docs incorrect ",
           "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4449",
@@ -18740,7 +18610,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-02-01T17:05:36Z",
-          "updated_at": "2023-02-01T17:06:44Z",
+          "updated_at": "2023-02-01T17:15:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18750,7 +18620,7 @@
           },
           "head": {
             "ref": "BXMSDOC-8443-main",
-            "sha": "10c531fe8e504c7e3bc0e6ba4a303167fd5cfaa5",
+            "sha": "130246d30a8b0e685eb60d3ce2e9f2d339252268",
             "label": "emmurphy1:BXMSDOC-8443-main"
           },
           "user": {
@@ -18760,12 +18630,34 @@
           },
           "checks": [
             {
-              "id": 21333069206,
+              "id": 11041378433,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066921614/jobs/7004511799",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-01T18:07:31Z",
+              "completed_at": "2023-02-01T18:09:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11041378078,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4066921614/jobs/7004511566",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-01T17:24:08Z",
+              "completed_at": "2023-02-01T17:25:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21333743800,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/712/",
-              "conclusion": "pending",
-              "started_at": "2023-02-01T17:08:58Z",
-              "completed_at": "2023-02-01T17:08:58Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/713/",
+              "conclusion": "success",
+              "started_at": "2023-02-01T17:37:34Z",
+              "completed_at": "2023-02-01T17:37:34Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -19030,7 +18922,7 @@
               "sha": "d59ba8c05cde1ea1ffd93c9471f16f4a661edf70"
             },
             {
-              "sha": "5d987ab61e72b9af252b814dc43c8a484f200eb1"
+              "sha": "737f8439db3932341ed41332b888068427db98be"
             },
             {
               "sha": "3c94a8cfc6d3988f366646f8f7a90557a4bd8d0b"
@@ -19922,7 +19814,7 @@
               "sha": "8e84936269d39bb0b26b22bb50050bfed6714088"
             },
             {
-              "sha": "0429e71ff96e733e2c982cc2810a262243e5914c"
+              "sha": "9a8dd3ff42722a6ba8d7dfea9c20b3d6ef6a1e10"
             },
             {
               "sha": "9929d04f8963eb6b704824993c76769a0fd7081a"
@@ -20504,7 +20396,22 @@
               "sha": "fc904dd8392de6c51c893d6ce42b230ce251bfe5"
             },
             {
-              "sha": "819210a74d4ed8e11eb60e93a7a8da0c19315378"
+              "sha": "a0e9f1b6f624ef39256f93113d441eff65e12d47"
+            },
+            {
+              "sha": "5985fcbc1c63df248c303b667eb454a9f4c957c6"
+            },
+            {
+              "sha": "1f70b7ba70cdb092383de45216b8614812d0ae74"
+            },
+            {
+              "sha": "29afadba8b99310d9491ce89d719fca2e88f6239"
+            },
+            {
+              "sha": "f88587b8dda625e0fdc21ec95769bcea204ed4f5"
+            },
+            {
+              "sha": "24acaf5f78419fd1b7efaf84267762f6bceb7fbb"
             },
             {
               "sha": "1bbaf0c280e448912d357fb387157c0bb63be980"
@@ -20802,21 +20709,6 @@
             },
             {
               "sha": "d03991d317ee9c061cbc9198e4c4049e5f685d05"
-            },
-            {
-              "sha": "6cb1ed96957ec76d357c59c72052892e0458f917"
-            },
-            {
-              "sha": "29b5173174f391ae591d931c027c5c48e751965d"
-            },
-            {
-              "sha": "40754a32d7587e1dfcb2e00f59e8687331770057"
-            },
-            {
-              "sha": "54baea13c03070f0f05f8199dcf62ee74f21502c"
-            },
-            {
-              "sha": "d71d5a91a0ccbba7663dcee91e3f33c7f164b4fd"
             }
           ]
         }
