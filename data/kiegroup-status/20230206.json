@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-06T06:09:26.327Z",
+    "date": "2023-02-06T07:09:05.652Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4100880869"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4101202832"
   },
   "projects": [
     {
@@ -19,6 +19,90 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2205,
+          "title": "[DROOLS-7331] ResultSetGeneratorTest fails with JDK8",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2205",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2205",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-06T06:33:49Z",
+          "updated_at": "2023-02-06T06:36:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "cd72d4b3dc23566b9bbc3e666675a7e4f5f1d74a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "DROOLS-7331",
+            "sha": "d3807b063a843ce294db0f15a6ab7b47404ea72f",
+            "label": "tkobayas:DROOLS-7331"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 11128338192,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4101027070/jobs/7072412151",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-06T06:34:13Z",
+              "completed_at": "2023-02-06T06:35:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11128338096,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4101027070/jobs/7072412075",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-06T06:34:06Z",
+              "completed_at": "2023-02-06T06:34:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11128335902,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4101027070/jobs/7072410341",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-06T06:33:59Z",
+              "completed_at": "2023-02-06T06:34:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21396039483,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/713/",
+              "conclusion": "success",
+              "started_at": "2023-02-06T06:36:23Z",
+              "completed_at": "2023-02-06T06:36:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21396040797,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/607/",
+              "conclusion": "pending",
+              "started_at": "2023-02-06T06:36:32Z",
+              "completed_at": "2023-02-06T06:36:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2202,
           "title": "RHDM-1788: changes related to upgrade of sshd-core 2.9.2",
@@ -1505,13 +1589,108 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-02-05T03:56:33Z",
+      "updated_at": "2023-02-06T06:16:10Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4971,
+          "title": "[7.x] [DROOLS-7331] ResultSetGeneratorTest fails with JDK8",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4971",
+          "html_url": "https://github.com/kiegroup/drools/pull/4971",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-06T06:35:49Z",
+          "updated_at": "2023-02-06T06:35:49Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "7edbe5397effeb90c5e919c6b2015780d29fa175",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-7331",
+            "sha": "0879f3ff573159e1b1923a47e9e00aacf5623a47",
+            "label": "tkobayas:DROOLS-7331"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 11128362949,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4101037999/jobs/7072432577",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-06T06:35:57Z",
+              "completed_at": "2023-02-06T06:35:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11128362816,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4101037999/jobs/7072432466",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-02-06T06:36:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11128362686,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4101037999/jobs/7072432357",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-06T06:35:57Z",
+              "completed_at": "2023-02-06T06:35:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11128362578,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4101037999/jobs/7072432262",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-06T06:35:57Z",
+              "completed_at": "2023-02-06T06:35:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21396035607,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/404/",
+              "conclusion": "pending",
+              "started_at": "2023-02-06T06:35:55Z",
+              "completed_at": "2023-02-06T06:35:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21396035618,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/395/",
+              "conclusion": "pending",
+              "started_at": "2023-02-06T06:35:55Z",
+              "completed_at": "2023-02-06T06:35:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4933,
           "title": "DROOLS-7316 : Exception while using expression with $ in BRL condition in GDST",
