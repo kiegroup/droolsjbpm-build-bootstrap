@@ -141,8 +141,8 @@ pipeline {
                     def PME_BUILD_VARIABLES = env.PME_BUILD_VARIABLES.split(";").collect{ it.split("=")}.inject([:]) {map, item -> map << [(item.length == 2 ? item[0] : null): (item.length == 2 ? item[1] : null)]}
 
                     def propertiesFileUrl = "${env.STAGING_SERVER_URL}/bamoe/BAMOE-${PME_BUILD_VARIABLES['productVersion']}.${PME_BUILD_VARIABLES['milestone']}/bamoe-${PME_BUILD_VARIABLES['datetimeSuffix']}.properties"
-                    def topic = "VirtualTopic.qe.ci.ba.rhpam.${env.UMB_VERSION}.nightly.trigger"
-                    def eventType = "rhpam-${env.UMB_VERSION}-nightly-qe-trigger"
+                    def topic = "VirtualTopic.qe.ci.ba.bamoe.${env.UMB_VERSION}.nightly.trigger"
+                    def eventType = "bamoe-${env.UMB_VERSION}-nightly-qe-trigger"
 
                     echo "[INFO] Message Body: ${propertiesFileUrl}"
                     echo "[INFO] Topic: ${topic}"
