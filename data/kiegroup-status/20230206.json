@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-06T13:21:46.448Z",
+    "date": "2023-02-06T14:09:49.737Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4104045103"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4104426323"
   },
   "projects": [
     {
@@ -19,6 +19,38 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2208,
+          "title": "[7.67.x] Upgrade build chain to typescript version - second try",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2208",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2208",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-06T14:03:49Z",
+          "updated_at": "2023-02-06T14:04:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "da9f2929d591eb5f1ca40dc3eea75bb3ee867558",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_revert-2198",
+            "sha": "c2ba2b56f9225a9f73097e1ab3e52780ba92c6b1",
+            "label": "kiegroup:7.67.x_revert-2198"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
         {
           "number": 2206,
           "title": "[BXMSPROD-1962] Changing RHPAM references to BAMOE.",
@@ -40,7 +72,7 @@
             }
           ],
           "created_at": "2023-02-06T10:41:30Z",
-          "updated_at": "2023-02-06T13:06:34Z",
+          "updated_at": "2023-02-06T14:00:56Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -60,20 +92,20 @@
           },
           "checks": [
             {
-              "id": 11134790422,
+              "id": 11137859769,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4103360066/jobs/7077449857",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4103360066/jobs/7079786036",
               "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-02-06T11:56:44Z",
-              "completed_at": "2023-02-06T11:56:44Z",
+              "conclusion": "success",
+              "started_at": "2023-02-06T14:08:11Z",
+              "completed_at": "2023-02-06T14:09:30Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 11134790263,
+              "id": 11137859324,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4103360066/jobs/7077449740",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4103360066/jobs/7079785829",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2023-02-06T11:56:53Z",
@@ -82,12 +114,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 21400899766,
+              "id": 21403150530,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/56/",
-              "conclusion": "failure",
-              "started_at": "2023-02-06T11:59:18Z",
-              "completed_at": "2023-02-06T11:59:18Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/58/",
+              "conclusion": "success",
+              "started_at": "2023-02-06T14:01:56Z",
+              "completed_at": "2023-02-06T14:01:56Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -166,12 +198,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 21396040797,
+              "id": 21403214665,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/607/",
-              "conclusion": "pending",
-              "started_at": "2023-02-06T06:36:32Z",
-              "completed_at": "2023-02-06T06:36:32Z",
+              "conclusion": "failure",
+              "started_at": "2023-02-06T14:04:56Z",
+              "completed_at": "2023-02-06T14:04:56Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -246,96 +278,6 @@
               "conclusion": "success",
               "started_at": "2023-01-27T10:11:18Z",
               "completed_at": "2023-01-27T10:11:18Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2200,
-          "title": "Upgrade build chain to typescript version - second try",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2200",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2200",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2023-01-26T14:28:04Z",
-          "updated_at": "2023-01-30T13:52:31Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "23629de56e61960f938b6a91363eb297fd5bedd3",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "revert-2198",
-            "sha": "469168cefac89d2828c0c73b046c2489af07de1a",
-            "label": "shubhbapna:revert-2198"
-          },
-          "user": {
-            "login": "shubhbapna",
-            "avatar_url": "https://avatars.githubusercontent.com/u/38372682?v=4",
-            "html_url": "https://github.com/shubhbapna"
-          },
-          "checks": [
-            {
-              "id": 10966070460,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4040976891/jobs/6947106020",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-01-30T05:45:12Z",
-              "completed_at": "2023-01-30T05:45:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 10966070374,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4040976891/jobs/6947105963",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-01-30T05:45:03Z",
-              "completed_at": "2023-01-30T05:45:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 10966069000,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4040976891/jobs/6947104926",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-01-30T05:44:58Z",
-              "completed_at": "2023-01-30T05:45:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21272073460,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/711/",
-              "conclusion": "success",
-              "started_at": "2023-01-30T05:47:17Z",
-              "completed_at": "2023-01-30T05:47:17Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1087,6 +1029,9 @@
         "7.67.x": {
           "7.67.x-blue": [
             {
+              "sha": "4f7a649270001aba510d2ad1989a3174389b4931"
+            },
+            {
               "sha": "84bb5debb2861fe170346adef4dad3616439ba39"
             },
             {
@@ -1096,13 +1041,19 @@
               "sha": "a0d3885c262d1fd9e297b3be3be05c021da19c5c"
             },
             {
-              "sha": "f2b4ef81c7114df7d4604c1243fc4756f94459d4"
+              "sha": "fd05a60e91e1b08f5ea8abcc09ec088507f8148c"
             },
             {
               "sha": "e3c2595dbe64be92da4db36a8865495f9ac8f6c2"
             },
             {
+              "sha": "7ba99ab4c4fa4a46a155adcb2311bae9692c988e"
+            },
+            {
               "sha": "246f16a9c7567009f51bf1d987f1dd4cb6cc5e39"
+            },
+            {
+              "sha": "73ffa76d0278921cb5f0f89ae3c30ca7b38b61a4"
             },
             {
               "sha": "fc8aa743eb64244f175209013a2522fb2c01c211"
@@ -1118,6 +1069,9 @@
             },
             {
               "sha": "106abb172f6760e11fe24d5e17593e4b4dfbac51"
+            },
+            {
+              "sha": "65a86756509e6089f7fb302a99f6b61bd4d1eb38"
             },
             {
               "sha": "ca016733982250d323dd088784c98590752daf79"
@@ -1266,7 +1220,7 @@
             }
           ],
           "created_at": "2023-01-26T10:24:09Z",
-          "updated_at": "2023-02-06T12:26:53Z",
+          "updated_at": "2023-02-06T13:50:22Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1340,12 +1294,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 21401625126,
+              "id": 21402907401,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-soup-main.fdb/42/",
-              "conclusion": "failure",
-              "started_at": "2023-02-06T12:41:21Z",
-              "completed_at": "2023-02-06T12:41:21Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-soup-main.fdb/43/",
+              "conclusion": "pending",
+              "started_at": "2023-02-06T13:50:24Z",
+              "completed_at": "2023-02-06T13:50:24Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7384,70 +7338,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2268,
-          "title": "[7.67.x-blue] JBPM-10150: Updated the log statement",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2268",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2268",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-02-06T12:39:59Z",
-          "updated_at": "2023-02-06T12:40:04Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "f2d6c8197e3cbd55aa4adb11319105d73e1793c1",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_JBPM-10150",
-            "sha": "5a31642579ea6d3b2a346e8cbfc9e94f7a13a458",
-            "label": "kiegroup:7.67.x-blue_JBPM-10150"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
-        },
-        {
-          "number": 2267,
-          "title": "[7.67.x] JBPM-10150: Updated the log statement",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2267",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2267",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-02-06T12:39:56Z",
-          "updated_at": "2023-02-06T12:39:59Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "87e9e4c6712cff966a7002f0380807872b7b883c",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x_JBPM-10150",
-            "sha": "196089d49b770302f8d020cd701ce1e7d3d49117",
-            "label": "kiegroup:7.67.x_JBPM-10150"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
-        },
-        {
           "number": 2266,
           "title": "[7.67.x] [JBPM-10156] Test failures after changing log with persist (CK)",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2266",
@@ -7475,7 +7365,7 @@
             }
           ],
           "created_at": "2023-02-06T10:14:56Z",
-          "updated_at": "2023-02-06T12:45:44Z",
+          "updated_at": "2023-02-06T14:02:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7495,12 +7385,12 @@
           },
           "checks": [
             {
-              "id": 21401765976,
+              "id": 21403176769,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/104/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/105/",
               "conclusion": "failure",
-              "started_at": "2023-02-06T12:49:44Z",
-              "completed_at": "2023-02-06T12:49:44Z",
+              "started_at": "2023-02-06T14:03:12Z",
+              "completed_at": "2023-02-06T14:03:12Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8913,6 +8803,9 @@
               "sha": "15cf5f7740379e3318d49a3f9e71866455c23597"
             },
             {
+              "sha": "a9f1b16e4d0bc755f4e31c7ea74d6d617b0b94dc"
+            },
+            {
               "sha": "5c94aaaa497c402e5b56a97f9fb86d00d95eade8"
             },
             {
@@ -9386,6 +9279,9 @@
             },
             {
               "sha": "15cf5f7740379e3318d49a3f9e71866455c23597"
+            },
+            {
+              "sha": "a9f1b16e4d0bc755f4e31c7ea74d6d617b0b94dc"
             },
             {
               "sha": "5c94aaaa497c402e5b56a97f9fb86d00d95eade8"
