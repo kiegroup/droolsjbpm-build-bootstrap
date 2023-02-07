@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-07T11:04:38.563Z",
+    "date": "2023-02-07T12:12:33.915Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4113204748"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4113739580"
   },
   "projects": [
     {
@@ -1507,6 +1507,81 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 4981,
+          "title": "[DO NOT MERGE] test build-chain",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/4981",
+          "html_url": "https://github.com/kiegroup/drools/pull/4981",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-02-07T11:33:03Z",
+          "updated_at": "2023-02-07T11:39:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "70700b96964f3db10d2660ea8cda35acfe7e166a",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "test_build_chain",
+            "sha": "9cfabe0b12fc4e75a0065df0d17cdd44615579ae",
+            "label": "lampajr:test_build_chain"
+          },
+          "user": {
+            "login": "lampajr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+            "html_url": "https://github.com/lampajr"
+          },
+          "checks": [
+            {
+              "id": 11164034462,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4113494310/jobs/7099682847",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-07T11:39:52Z",
+              "completed_at": "2023-02-07T11:39:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11164034313,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4113494310/jobs/7099682746",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-02-07T11:43:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11164034140,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4113494310/jobs/7099682621",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-07T11:39:52Z",
+              "completed_at": "2023-02-07T11:39:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11164033927,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4113494310/jobs/7099682462",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-07T11:39:52Z",
+              "completed_at": "2023-02-07T11:39:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 4980,
           "title": "RHDM-1957 DROOLS-7267 DMN extend rule to catch non-normalized named elements",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4980",
@@ -1516,18 +1591,13 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "danielezonca",
-              "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
-              "html_url": "https://github.com/danielezonca"
-            },
-            {
               "login": "tkobayas",
               "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
               "html_url": "https://github.com/tkobayas"
             }
           ],
           "created_at": "2023-02-07T10:23:39Z",
-          "updated_at": "2023-02-07T10:24:17Z",
+          "updated_at": "2023-02-07T11:06:52Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1572,10 +1642,10 @@
               "id": 11162257972,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/4112878097/jobs/7098330746",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-02-07T10:23:53Z",
-              "completed_at": null,
+              "completed_at": "2023-02-07T11:15:28Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -1651,10 +1721,10 @@
               "id": 11162124474,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/4112830139/jobs/7098226517",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-02-07T10:18:26Z",
-              "completed_at": null,
+              "completed_at": "2023-02-07T11:17:41Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -9475,7 +9545,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-02-07T08:18:14Z",
-          "updated_at": "2023-02-07T10:00:16Z",
+          "updated_at": "2023-02-07T11:51:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9553,10 +9623,10 @@
               "id": 11159346389,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111852921/jobs/7096068098",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-02-07T08:18:29Z",
-              "completed_at": null,
+              "completed_at": "2023-02-07T11:15:20Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
