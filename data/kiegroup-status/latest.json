@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-07T08:08:58.385Z",
+    "date": "2023-02-07T09:06:52.147Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4111780168"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4112221500"
   },
   "projects": [
     {
@@ -27,20 +27,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "winklerm",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1124558?v=4",
-              "html_url": "https://github.com/winklerm"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2023-02-06T10:41:30Z",
-          "updated_at": "2023-02-06T14:00:56Z",
+          "updated_at": "2023-02-07T08:57:03Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9347,6 +9336,122 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2925,
+          "title": "[JBPM-10156] Test failures after changing log with persist (CK)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2925",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2925",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            }
+          ],
+          "created_at": "2023-02-07T08:18:14Z",
+          "updated_at": "2023-02-07T08:18:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6451ea03abec5905dbb27161bbdd7dcec95b1768",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "10156",
+            "sha": "6c4370aa1c6612ca6de0d7373f0652bc656efaf7",
+            "label": "gmunozfe:10156"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 11159353719,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111855312/jobs/7096073902",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-07T08:18:38Z",
+              "completed_at": "2023-02-07T08:18:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11159353343,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111855272/jobs/7096073595",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-07T08:18:37Z",
+              "completed_at": "2023-02-07T08:18:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11159353341,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111855312/jobs/7096073596",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-07T08:18:37Z",
+              "completed_at": "2023-02-07T08:18:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11159352995,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111855272/jobs/7096073314",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-07T08:18:36Z",
+              "completed_at": "2023-02-07T08:18:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11159346632,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111852921/jobs/7096068301",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-07T08:18:21Z",
+              "completed_at": "2023-02-07T08:18:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11159346389,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4111852921/jobs/7096068098",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-02-07T08:18:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21420826501,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1081/",
+              "conclusion": "pending",
+              "started_at": "2023-02-07T08:18:20Z",
+              "completed_at": "2023-02-07T08:18:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2921,
           "title": "JBPM-10152: Corrected the debug log statement",
