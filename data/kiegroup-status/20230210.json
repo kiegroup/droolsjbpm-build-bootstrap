@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-10T14:06:25.296Z",
+    "date": "2023-02-10T15:07:01.816Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4144623072"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4145117898"
   },
   "projects": [
     {
@@ -6723,7 +6723,7 @@
             }
           ],
           "created_at": "2023-02-09T16:49:19Z",
-          "updated_at": "2023-02-10T12:55:52Z",
+          "updated_at": "2023-02-10T14:33:45Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6743,12 +6743,34 @@
           },
           "checks": [
             {
-              "id": 21496929461,
+              "id": 11254840345,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/11254840345",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-10T14:33:49Z",
+              "completed_at": "2023-02-10T14:33:51Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11254838568,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/11254838568",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-10T14:31:11Z",
+              "completed_at": "2023-02-10T14:33:43Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 21498696458,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/109/",
-              "conclusion": "pending",
-              "started_at": "2023-02-10T12:55:57Z",
-              "completed_at": "2023-02-10T12:55:57Z",
+              "conclusion": "failure",
+              "started_at": "2023-02-10T14:33:59Z",
+              "completed_at": "2023-02-10T14:33:59Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6787,82 +6809,6 @@
           "checks": []
         },
         {
-          "number": 2266,
-          "title": "[7.67.x] [JBPM-10156] Test failures after changing log with persist (CK)",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2266",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2266",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2023-02-06T10:14:56Z",
-          "updated_at": "2023-02-10T13:11:05Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "87e9e4c6712cff966a7002f0380807872b7b883c",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x_JBPM-10156",
-            "sha": "879c36c212252861be188e0e6d60d0a7c6f9d365",
-            "label": "kiegroup:7.67.x_JBPM-10156"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 11201099678,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/11201099678",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-02-08T16:16:50Z",
-              "completed_at": "2023-02-08T16:19:22Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 11201089389,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/11201089389",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-02-08T16:19:26Z",
-              "completed_at": "2023-02-08T16:19:29Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21497177251,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/110/",
-              "conclusion": "pending",
-              "started_at": "2023-02-10T13:11:07Z",
-              "completed_at": "2023-02-10T13:11:07Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2265,
           "title": "[7.67.x-blue] [JBPM-10156] Test failures after changing log with persist (CK)",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2265",
@@ -6885,7 +6831,7 @@
             }
           ],
           "created_at": "2023-02-06T10:14:54Z",
-          "updated_at": "2023-02-10T13:11:39Z",
+          "updated_at": "2023-02-10T15:00:12Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6905,12 +6851,12 @@
           },
           "checks": [
             {
-              "id": 21497186567,
+              "id": 21499235040,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/50/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/51/",
               "conclusion": "pending",
-              "started_at": "2023-02-10T13:11:42Z",
-              "completed_at": "2023-02-10T13:11:42Z",
+              "started_at": "2023-02-10T15:00:18Z",
+              "completed_at": "2023-02-10T15:00:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8147,6 +8093,9 @@
             },
             {
               "sha": "e30145bf2306f812c41bda08eca483d586b22173"
+            },
+            {
+              "sha": "d9d74a90ae1ac084bc72d2eb5f6f021657e4c175"
             },
             {
               "sha": "9d8fec3111218420768e703644fc6920956d8c92"
