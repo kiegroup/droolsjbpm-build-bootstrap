@@ -87,7 +87,7 @@ runs:
         echo "BACKPORT_REVIEWERS=${reviewers}" >> $GITHUB_ENV
     - name: Perform cherry pick
       id: cherry-pick
-      uses: carloscastrojumo/github-cherry-pick-action@v1.0.6
+      uses: carloscastrojumo/github-cherry-pick-action@v1.0.9
       with:
         branch: "${{ inputs.target-branch }}"
         title: "[${{ inputs.target-branch }}] ${{ inputs.title }}"
