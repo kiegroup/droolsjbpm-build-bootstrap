@@ -88,13 +88,6 @@ echo "Using following settings.xml: $settingsXmlFile"
 
 startDateTime=`date +%s`
 
-# remove optawebs* from branched-7-repository-list.txt since they are not released any-more
-# change '-' by '_' in repository lists
-cd $scriptDir
-
-sed -i "s/-/_/g" ../repository-list.txt
-sed -i "s/-/_/g" ../branched-7-repository-list.txt
-
 cd $droolsjbpmOrganizationDir
 
 # --- --- ---
@@ -149,15 +142,15 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
         echo "==============================================================================="
         cd ${GROUP_ID}_$repository
 
-        if [ "$repository" == "lienzo_core" ]; then
+        if [ "$repository" == "lienzo-core" ]; then
             mvnVersionsSet
             returnCode=$?
 
-        elif [ "$repository" == "lienzo_tests" ]; then
+        elif [ "$repository" == "lienzo-tests" ]; then
             mvnVersionsSet
             returnCode=$?
 
-        elif [ "$repository" == "droolsjbpm_build_bootstrap" ]; then
+        elif [ "$repository" == "droolsjbpm-build-bootstrap" ]; then
             # first build&install the current version (usually SNAPSHOT) as it is needed later by other repos
             mvn -B -U -Dfull -s $settingsXmlFile clean install
             # extract old kie version
@@ -179,7 +172,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             mvn -B -s $settingsXmlFile clean install -DskipTests
             returnCode=$?
 
-        elif [ "$repository" == "kie_soup" ]; then
+        elif [ "$repository" == "kie-soup" ]; then
             mvnVersionsUpdateParentAndChildModules
             returnCode=$?
 
@@ -205,7 +198,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
             returnCode=$?
             sed -i "s/release.version=.*$/release.version=$newVersion/" jbpm-installer/src/main/resources/build.properties
 
-        elif [ "$repository" == "process_migration_service" ]; then
+        elif [ "$repository" == "process-migration-service" ]; then
             # extract old kie version
             kieOldVersion=$(grep -oP -m 2 '(?<=<version>).*(?=</version)' pom.xml | sed -n 2p)
           # update version since no mvn command works
