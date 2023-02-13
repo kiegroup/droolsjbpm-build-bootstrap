@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-13T13:16:41.211Z",
+    "date": "2023-02-13T14:06:26.929Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4163828003"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164254948"
   },
   "projects": [
     {
@@ -19,86 +19,6 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 2212,
-          "title": "[BXMSPROD-1938] backport PRs already merged",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2212",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2212",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
-          "created_at": "2023-02-13T09:12:11Z",
-          "updated_at": "2023-02-13T09:19:46Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "bca599d10d57d3c279a4249ce2f5242acb5306ee",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "BXMSPROD-1938_upgrade_backporting",
-            "sha": "c706101dd2bece541633f7689058c2847b08035c",
-            "label": "lampajr:BXMSPROD-1938_upgrade_backporting"
-          },
-          "user": {
-            "login": "lampajr",
-            "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-            "html_url": "https://github.com/lampajr"
-          },
-          "checks": [
-            {
-              "id": 11294366949,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4161889624/jobs/7200393140",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-02-13T09:16:01Z",
-              "completed_at": "2023-02-13T09:17:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 11294366724,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4161889624/jobs/7200392967",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-02-13T09:15:52Z",
-              "completed_at": "2023-02-13T09:15:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 11294361104,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4161889624/jobs/7200388456",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-02-13T09:15:44Z",
-              "completed_at": "2023-02-13T09:15:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21520947120,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/716/",
-              "conclusion": "success",
-              "started_at": "2023-02-13T09:17:22Z",
-              "completed_at": "2023-02-13T09:17:22Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 2202,
           "title": "RHDM-1788: changes related to upgrade of sshd-core 2.9.2",
@@ -269,11 +189,14 @@
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2193",
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2193",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-01-18T10:19:42Z",
-          "updated_at": "2023-02-10T08:47:21Z",
+          "updated_at": "2023-02-13T13:44:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -292,6 +215,138 @@
             "html_url": "https://github.com/mareknovotny"
           },
           "checks": [
+            {
+              "id": 11300563084,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024286/jobs/7205125779",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-13T13:39:10Z",
+              "completed_at": "2023-02-13T13:40:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300562809,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024286/jobs/7205125571",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-13T13:39:05Z",
+              "completed_at": "2023-02-13T13:39:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300562429,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024285/jobs/7205125297",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-13T13:39:04Z",
+              "completed_at": "2023-02-13T13:39:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300562207,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024285/jobs/7205125124",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-13T13:39:04Z",
+              "completed_at": "2023-02-13T13:39:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300558411,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024295/jobs/7205122277",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-13T13:38:53Z",
+              "completed_at": "2023-02-13T13:38:53Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300558157,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024286/jobs/7205122093",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-13T13:38:59Z",
+              "completed_at": "2023-02-13T13:39:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300558155,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024277/jobs/7205122097",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-13T13:38:52Z",
+              "completed_at": "2023-02-13T13:38:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300558124,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024295/jobs/7205122069",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-13T13:38:52Z",
+              "completed_at": "2023-02-13T13:38:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300557810,
+              "name": "Full downstream build",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024283/jobs/7205121821",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-13T13:38:51Z",
+              "completed_at": "2023-02-13T13:38:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300557793,
+              "name": "Full downstream build",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024272/jobs/7205121806",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-13T13:38:51Z",
+              "completed_at": "2023-02-13T13:38:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300557784,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024277/jobs/7205121803",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-02-13T13:38:51Z",
+              "completed_at": "2023-02-13T13:38:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11300557777,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4164024285/jobs/7205121802",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-13T13:38:58Z",
+              "completed_at": "2023-02-13T13:39:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 10721889598,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -336,12 +391,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 21501843920,
+              "id": 21525792337,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/611/",
-              "conclusion": "failure",
-              "started_at": "2023-02-10T16:59:32Z",
-              "completed_at": "2023-02-10T16:59:32Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/612/",
+              "conclusion": "pending",
+              "started_at": "2023-02-13T13:44:56Z",
+              "completed_at": "2023-02-13T13:44:56Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1366,7 +1421,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-02-13T08:52:53Z",
+      "updated_at": "2023-02-13T13:25:44Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -4385,7 +4440,7 @@
             }
           ],
           "created_at": "2023-01-27T10:09:10Z",
-          "updated_at": "2023-02-09T09:33:48Z",
+          "updated_at": "2023-02-13T13:45:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4449,22 +4504,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 21450859328,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/244/",
-              "conclusion": "failure",
-              "started_at": "2023-02-08T13:30:40Z",
-              "completed_at": "2023-02-08T13:30:40Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 21450995224,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/244/",
               "conclusion": "success",
               "started_at": "2023-02-08T13:37:17Z",
               "completed_at": "2023-02-08T13:37:17Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21525803133,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/245/",
+              "conclusion": "pending",
+              "started_at": "2023-02-13T13:45:30Z",
+              "completed_at": "2023-02-13T13:45:30Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6786,71 +6841,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2271,
-          "title": "[7.67.x] [JBPM-9946] servicesorm.xml validation failure",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2271",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2271",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-02-09T16:49:19Z",
-          "updated_at": "2023-02-10T21:12:27Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "6e52cecbe69d7bafc4752c17fb96b3dcfd94f8ac",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x_JBPM-9946",
-            "sha": "76a1565962527ffa49282c4ef6780f105484ed81",
-            "label": "kiegroup:7.67.x_JBPM-9946"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 11263549522,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/11263549522",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-02-10T21:09:50Z",
-              "completed_at": "2023-02-10T21:12:24Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 11254840345,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/11254840345",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-02-10T14:33:49Z",
-              "completed_at": "2023-02-10T14:33:51Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21506422416,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/112/",
-              "conclusion": "success",
-              "started_at": "2023-02-10T21:12:52Z",
-              "completed_at": "2023-02-10T21:12:52Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2263,
           "title": "[JBPM-10132] Not able to define AdHoc activation condition in Ad-Hoc …",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2263",
@@ -8673,6 +8663,9 @@
             },
             {
               "sha": "d32aa5a0b68457d725f343653833f07a887dd655"
+            },
+            {
+              "sha": "169d8e08e5576d35cf800eb45a151d1dd6aac5c2"
             },
             {
               "sha": "fc7a40791e695936744abceda2e360ec3d0ed0d7"
