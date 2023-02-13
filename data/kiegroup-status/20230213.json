@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-13T07:06:50.162Z",
+    "date": "2023-02-13T08:09:36.840Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4160978975"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4161375106"
   },
   "projects": [
     {
@@ -18411,6 +18411,75 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4464,
+          "title": "Add 'rule order' and 'output order' hit policies",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4464",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4464",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tarilabs",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+              "html_url": "https://github.com/tarilabs"
+            }
+          ],
+          "created_at": "2023-02-13T07:07:12Z",
+          "updated_at": "2023-02-13T07:59:01Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3b1659f27bb2c5b1b2003b3fd8f93b2d85adb711",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "kie-issue#87-hit-policy",
+            "sha": "3b8c5fe3029ddc51e4cd6c6ed8744413005971b9",
+            "label": "jomarko:kie-issue#87-hit-policy"
+          },
+          "user": {
+            "login": "jomarko",
+            "avatar_url": "https://avatars.githubusercontent.com/u/8044780?v=4",
+            "html_url": "https://github.com/jomarko"
+          },
+          "checks": [
+            {
+              "id": 11291959146,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4160984210/jobs/7198477262",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-13T07:07:27Z",
+              "completed_at": "2023-02-13T07:09:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11291959002,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4160984210/jobs/7198477142",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-13T07:07:18Z",
+              "completed_at": "2023-02-13T07:07:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21519298931,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/718/",
+              "conclusion": "success",
+              "started_at": "2023-02-13T07:10:43Z",
+              "completed_at": "2023-02-13T07:10:43Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
