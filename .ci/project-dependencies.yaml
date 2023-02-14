@@ -33,8 +33,6 @@ dependencies:
           - source: main
             target: 7.x
       exclude:
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaweb-vehicle-routing
         - kiegroup/optaplanner
         - kiegroup/drools
 
@@ -52,8 +50,6 @@ dependencies:
           - source: main
             target: 7.x
       exclude:
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaweb-vehicle-routing
         - kiegroup/optaplanner          
         - kiegroup/droolsjbpm-knowledge          
 
@@ -84,9 +80,6 @@ dependencies:
         default:
           - source: main
             target: 7.x
-      exclude:
-        - kiegroup/optaweb-employee-rostering  
-        - kiegroup/optaweb-vehicle-routing
 
   - project: kiegroup/kie-jpmml-integration
     dependencies:
@@ -144,59 +137,6 @@ dependencies:
       - project: kiegroup/jbpm-work-items
 
   - project: kiegroup/kie-docs
-
-  - project: kiegroup/optaweb-employee-rostering
-    dependencies:
-      - project: kiegroup/optaplanner
-    mapping:
-      dependencies:
-        default:
-          - source: 7.x
-            target: main
-        kiegroup/drools:
-          - source: main
-            target: 7.x
-          - source: 7.x
-            target: 7.x
-        kiegroup/droolsjbpm-knowledge:
-          - source: main
-            target: 7.x
-          - source: 7.x
-            target: 7.x
-      dependant:
-        default:
-          - source: main
-            target: 7.x
-      exclude:
-        - kiegroup/optaweb-vehicle-routing  
-        - kiegroup/optaplanner
-
-  - project: kiegroup/optaweb-vehicle-routing
-    dependencies:
-      - project: kiegroup/optaplanner
-    mapping:
-      dependencies:
-        default:
-          - source: 7.x
-            target: main
-        kiegroup/drools:
-          - source: main
-            target: 7.x
-          - source: 7.x
-            target: 7.x
-        kiegroup/droolsjbpm-knowledge:
-          - source: main
-            target: 7.x
-          - source: 7.x
-            target: 7.x
-      dependant:
-        default:
-          - source: main
-            target: 7.x
-      exclude:
-        - kiegroup/optaweb-employee-rostering  
-        - kiegroup/optaplanner
-
 
   - project: kiegroup/kie-wb-distributions
     dependencies:

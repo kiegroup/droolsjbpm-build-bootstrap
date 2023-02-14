@@ -18,10 +18,6 @@ build:
   - project: kiegroup/optaplanner
     build-command:
       current: ${{ env.MAVEN_COMMAND }}
-  - project: kiegroup/optaweb-employee-rostering
-    skip: true
-  - project: kiegroup/optaweb-vehicle-routing
-    skip: true
   - project: kiegroup/kie-docs
     build-command:
       current: ${{ env.MAVEN_COMMAND }}
