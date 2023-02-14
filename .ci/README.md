@@ -107,8 +107,6 @@ You will be able to see more complex definitions for projects like `drools` or `
           - source: main
             target: 7.x
       exclude:
-        - kiegroup/optaweb-employee-rostering
-        - kiegroup/optaweb-vehicle-routing
         - kiegroup/optaplanner          
         - kiegroup/droolsjbpm-knowledge  
 ```

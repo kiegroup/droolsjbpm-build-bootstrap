@@ -60,23 +60,7 @@ build:
   - project: kiegroup/kie-docs
     build-command:
       current: mvn ${{ env.BUILD_MVN_OPTS }} -e clean install -Dmaven.test.failure.ignore=true -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.http.retryHandler.class=standard -Dmaven.wagon.http.retryHandler.count=3
-
-  - project: kiegroup/optaweb-employee-rostering
-    build-command:
-      current: mvn ${{ env.BUILD_MVN_OPTS }} -e -nsu clean install -Dfull -Prun-code-coverage -Dintegration-tests=true -Dmaven.test.failure.ignore=true
-    archive-artifacts:
-      path: |
-        **/cypress/screenshots/**@always
-        **/cypress/videos/**@always
-
-  - project: kiegroup/optaweb-vehicle-routing
-    build-command:
-      current: mvn ${{ env.BUILD_MVN_OPTS }} -e -nsu clean install -Dfull -Prun-code-coverage -Dintegration-tests=true -Dmaven.test.failure.ignore=true
-    archive-artifacts:
-      path: |
-        **/cypress/screenshots/**@always
-        **/cypress/videos/**@always
-
+  
   - project: kiegroup/kie-wb-distributions
     build-command:
       current: mvn ${{ env.BUILD_MVN_OPTS }} -e -nsu clean install -Dfull -Prun-code-coverage -Pwildfly -Dcontainer=wildfly -Dcontainer.profile=wildfly -Dintegration-tests=true -Dmaven.test.failure.ignore=true -Pbusiness-central -Dgwt.compiler.localWorkers=1 -Dwebdriver.firefox.bin=${{ env.FIREFOX_FOLDER }}/firefox-bin
