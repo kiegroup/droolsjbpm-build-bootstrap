@@ -94,7 +94,7 @@ cd $droolsjbpmOrganizationDir
 # Checks if repos in branched-7-repository-list.txt are on the right 7.x branch if all other repos are checked out to main.
 # For example, optaplanner 7.x branch has the same version as main on other kiegroup/reps.
 for branch7xRepo in $(cat "${scriptDir}/../branched-7-repository-list.txt"); do
-  cd ${GROUP_ID}/$branch7xRepo
+  cd ${GROUP_ID}_$branch7xRepo
   currentBranch=$(git rev-parse --abbrev-ref HEAD)
   if [ $currentBranch == "main" ]; then
       echo ""
@@ -140,7 +140,7 @@ for repository in `cat ${scriptDir}/../repository-list.txt` ; do
         echo "==============================================================================="
         echo "Repository: $repository"
         echo "==============================================================================="
-        cd ${GROUP_ID}/$repository
+        cd ${GROUP_ID}_$repository
 
         if [ "$repository" == "lienzo-core" ]; then
             mvnVersionsSet
