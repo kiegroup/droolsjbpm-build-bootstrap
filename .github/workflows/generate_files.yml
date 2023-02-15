@@ -65,6 +65,8 @@ jobs:
             **/branched-7-repository-list.txt           
       - name: Set branch name
         run: echo "BRANCH_NAME_FLOW=generate_files_$(date +'%Y%m%dT%H%M%S')" >> $GITHUB_ENV
+      - name: Extract target branch name
+        run: echo "BRANCH_NAME_FLOW_TARGET=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v4
@@ -76,7 +78,7 @@ jobs:
           signoff: false
           branch: ${{ env.BRANCH_NAME_FLOW }}
           delete-branch: true
-          title: "[${{ env.GITHUB_REF_NAME }}][Build Chain] Update build chain and repository-list files."
+          title: "[${{ env.BRANCH_NAME_FLOW_TARGET }}][Build Chain] Update build chain and repository-list files."
           body: |
             # Update Report
             **Pull Request created by:** ${{ steps.build_chain_info.outputs.jobURL }}
