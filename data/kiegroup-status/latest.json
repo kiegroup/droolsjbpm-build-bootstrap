@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-16T10:07:24.205Z",
+    "date": "2023-02-16T11:05:51.010Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4192851948"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4193317669"
   },
   "projects": [
     {
@@ -19,6 +19,86 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2225,
+          "title": "[BXMSPROD-1939] remove dependabot[bot] from backporting reviewers list",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2225",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2225",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-02-16T10:21:58Z",
+          "updated_at": "2023-02-16T10:37:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "007b6630ac3318a92248b93aace456930f979d72",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1939_bp_dependabot",
+            "sha": "61c3383cc3806cf6b10eaa7f16834eb071724d22",
+            "label": "lampajr:BXMSPROD-1939_bp_dependabot"
+          },
+          "user": {
+            "login": "lampajr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+            "html_url": "https://github.com/lampajr"
+          },
+          "checks": [
+            {
+              "id": 11385245850,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4192974574/jobs/7269535301",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-16T10:37:10Z",
+              "completed_at": "2023-02-16T10:40:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385245556,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4192974574/jobs/7269535128",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-16T10:22:24Z",
+              "completed_at": "2023-02-16T10:24:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385245042,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4192974574/jobs/7269534676",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-16T10:22:10Z",
+              "completed_at": "2023-02-16T10:22:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21594642175,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/723/",
+              "conclusion": "success",
+              "started_at": "2023-02-16T10:55:44Z",
+              "completed_at": "2023-02-16T10:55:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2218,
           "title": "[7.67.x-blue] RHDM-1949: Upgrading plexus-utils to 3.0.24",
@@ -1330,6 +1410,291 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 5013,
+          "title": "[DROOLS-7324] fix executable model generation when setting negative B…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5013",
+          "html_url": "https://github.com/kiegroup/drools/pull/5013",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-16T11:01:48Z",
+          "updated_at": "2023-02-16T11:01:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "e2cc9e5c201a33e618c49942e27fa169b3f6ea2d",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "d7324_767xblue",
+            "sha": "03d1f40880afbb286d75a74b8b05c0d77dc52a05",
+            "label": "mariofusco:d7324_767xblue"
+          },
+          "user": {
+            "login": "mariofusco",
+            "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+            "html_url": "https://github.com/mariofusco"
+          },
+          "checks": [
+            {
+              "id": 11385814194,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193284694/jobs/7269970199",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-02-16T11:02:31Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385813917,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193284694/jobs/7269969971",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T11:01:57Z",
+              "completed_at": "2023-02-16T11:01:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385813606,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193284694/jobs/7269969734",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T11:01:56Z",
+              "completed_at": "2023-02-16T11:01:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385813155,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193284694/jobs/7269969377",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T11:01:56Z",
+              "completed_at": "2023-02-16T11:01:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21594762240,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/16/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T11:01:57Z",
+              "completed_at": "2023-02-16T11:01:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21594762250,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/17/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T11:01:57Z",
+              "completed_at": "2023-02-16T11:01:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 5012,
+          "title": "[DROOLS-7324] fix executable model generation when setting negative B…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5012",
+          "html_url": "https://github.com/kiegroup/drools/pull/5012",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-16T11:00:14Z",
+          "updated_at": "2023-02-16T11:00:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "7f9ac5c95e72158728aeb226bc167d871f442918",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "d7324_767x",
+            "sha": "812b6150842c9df614c9554727de171ac97c0578",
+            "label": "mariofusco:d7324_767x"
+          },
+          "user": {
+            "login": "mariofusco",
+            "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+            "html_url": "https://github.com/mariofusco"
+          },
+          "checks": [
+            {
+              "id": 11385772023,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193270503/jobs/7269937644",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T11:00:22Z",
+              "completed_at": "2023-02-16T11:00:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385771747,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193270503/jobs/7269937431",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T11:00:21Z",
+              "completed_at": "2023-02-16T11:00:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385771471,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193270503/jobs/7269937225",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-02-16T11:00:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385771163,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193270503/jobs/7269937019",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T11:00:22Z",
+              "completed_at": "2023-02-16T11:00:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21594730478,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/21/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T11:00:22Z",
+              "completed_at": "2023-02-16T11:00:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21594730481,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/22/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T11:00:22Z",
+              "completed_at": "2023-02-16T11:00:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 5011,
+          "title": "[DROOLS-7324] fix executable model generation when setting negative B…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5011",
+          "html_url": "https://github.com/kiegroup/drools/pull/5011",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-16T10:56:25Z",
+          "updated_at": "2023-02-16T10:56:25Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "a6801e401c01b7de2ed86e12fc761aa7ca4180e0",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "d7324_7x",
+            "sha": "a00b1a6eb806996d6ddaed79edac7735e5f2d69a",
+            "label": "mariofusco:d7324_7x"
+          },
+          "user": {
+            "login": "mariofusco",
+            "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+            "html_url": "https://github.com/mariofusco"
+          },
+          "checks": [
+            {
+              "id": 11385684916,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193243860/jobs/7269872664",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-02-16T11:01:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385684740,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193243860/jobs/7269872539",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T10:56:32Z",
+              "completed_at": "2023-02-16T10:56:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385684536,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193243860/jobs/7269872385",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T10:56:32Z",
+              "completed_at": "2023-02-16T10:56:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11385684332,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4193243860/jobs/7269872240",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-16T10:56:32Z",
+              "completed_at": "2023-02-16T10:56:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21594656935,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/403/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T10:56:32Z",
+              "completed_at": "2023-02-16T10:56:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21594656959,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/412/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T10:56:33Z",
+              "completed_at": "2023-02-16T10:56:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4998,
           "title": "[DROOLS-7338] drools.workingMemory is not resolved in executable-mode…",
@@ -8786,12 +9151,12 @@
           },
           "checks": [
             {
-              "id": 21592427129,
+              "id": 21594642511,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/68/",
-              "conclusion": "pending",
-              "started_at": "2023-02-16T08:54:14Z",
-              "completed_at": "2023-02-16T08:54:14Z",
+              "conclusion": "failure",
+              "started_at": "2023-02-16T10:55:45Z",
+              "completed_at": "2023-02-16T10:55:45Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8840,12 +9205,12 @@
           },
           "checks": [
             {
-              "id": 21592421032,
+              "id": 21594498811,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/103/",
-              "conclusion": "pending",
-              "started_at": "2023-02-16T08:53:49Z",
-              "completed_at": "2023-02-16T08:53:49Z",
+              "conclusion": "failure",
+              "started_at": "2023-02-16T10:48:00Z",
+              "completed_at": "2023-02-16T10:48:00Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
