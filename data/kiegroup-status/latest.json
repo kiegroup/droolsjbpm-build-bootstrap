@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-16T09:07:01.972Z",
+    "date": "2023-02-16T10:07:24.205Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4192364739"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4192851948"
   },
   "projects": [
     {
@@ -3151,7 +3151,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2023-02-16T07:56:48Z",
+      "updated_at": "2023-02-16T09:19:02Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -8720,7 +8720,28 @@
             "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
             "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 21593379713,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/69/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T09:49:11Z",
+              "completed_at": "2023-02-16T09:49:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21593379752,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-integration-7.67.x-blue.fdb/4/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T09:49:12Z",
+              "completed_at": "2023-02-16T09:49:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2928,
@@ -8885,12 +8906,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 21586823185,
+              "id": 21593379532,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1092/",
-              "conclusion": "failure",
-              "started_at": "2023-02-16T00:02:45Z",
-              "completed_at": "2023-02-16T00:02:45Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1093/",
+              "conclusion": "pending",
+              "started_at": "2023-02-16T09:49:11Z",
+              "completed_at": "2023-02-16T09:49:11Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9282,102 +9303,6 @@
           ]
         },
         {
-          "number": 2511,
-          "title": "[windows_codegenpath] test output path on windows",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2511",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2511",
-          "state": "open",
-          "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2021-06-14T12:50:16Z",
-          "updated_at": "2023-02-16T09:04:27Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "9614960ed4a8c3f227d1ace1cbdd6f5f112c0b0e",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "windows_codegenpath",
-            "sha": "546154ea49deaedea4aab037bb6315e2ecb83f22",
-            "label": "gitgabrio:windows_codegenpath"
-          },
-          "user": {
-            "login": "gitgabrio",
-            "avatar_url": "https://avatars.githubusercontent.com/u/765578?v=4",
-            "html_url": "https://github.com/gitgabrio"
-          },
-          "checks": [
-            {
-              "id": 2828517473,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/2828517473",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2021-06-15T10:29:57Z",
-              "completed_at": "2021-06-15T10:34:05Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 2826824037,
-              "name": "Maven Build (windows-latest, 11)",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/938346449/jobs/974034468",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-06-15T06:52:58Z",
-              "completed_at": "2021-06-15T07:40:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 2826824019,
-              "name": "Maven Build (windows-latest, 8)",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/938346449/jobs/974034456",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-06-15T06:52:51Z",
-              "completed_at": "2021-06-15T07:31:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 2826823999,
-              "name": "Maven Build (ubuntu-18.04, 11)",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/938346449/jobs/974034444",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2021-06-15T06:52:50Z",
-              "completed_at": "2021-06-15T10:35:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 2826823978,
-              "name": "Maven Build (ubuntu-18.04, 8)",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/938346449/jobs/974034433",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-06-15T06:52:51Z",
-              "completed_at": "2021-06-15T06:56:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13444514999,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp4.prod.psi.redhat.com/job/KIE/job/master/job/pullrequest/job/droolsjbpm-integration-master.pr/177/",
-              "conclusion": "failure",
-              "started_at": "2021-06-15T10:40:38Z",
-              "completed_at": "2021-06-15T10:40:38Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2451,
           "title": "[JBPM-9696] ClusteredRuntimeManagerLockFactory based on infinispan",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2451",
@@ -9498,47 +9423,6 @@
               "conclusion": "failure",
               "started_at": "2021-07-07T15:17:13Z",
               "completed_at": "2021-07-07T15:17:13Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2202,
-          "title": "[draft PR] simple class name json",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2202",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2202",
-          "state": "open",
-          "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2020-08-19T05:28:04Z",
-          "updated_at": "2023-02-16T09:05:01Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "46b13da467272acda0736ce811ab61814eec941f",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "json-simple-class-name",
-            "sha": "cd3dbf3a6fc3db681f1cbb0f6eaa24d47332fd10",
-            "label": "tkobayas:json-simple-class-name"
-          },
-          "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
-          },
-          "checks": [
-            {
-              "id": 10524528826,
-              "name": "Linux - Pull Request",
-              "html_url": "https://rhba-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/KIE/job/master/job/pullrequest/job/new-PR-droolsjbpm-integration-master.pullrequests/205/",
-              "conclusion": "failure",
-              "started_at": "2020-08-19T08:33:25Z",
-              "completed_at": "2020-08-19T08:33:25Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
