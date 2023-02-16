@@ -40,6 +40,11 @@ inputs:
     description: "Additional backported pull request reviewers, default is toJSON(github.event.pull_request.requested_reviewers)"
     required: false
     deprecationMessage: "[IGNORED] The previous default is managed by `include-requested-reviewers`. If you want to add more custom reviewers use `custom-reviewers` input instead"
+  excluded-reviewers:
+    description: "Comma separated list of reviewers to be excluded, e.g., dependabot[bot]"
+    default: dependabot[bot]
+    required: false
+    deprecationMessage: "[IGNORED] The previous default is managed by `include-requested-reviewers`. If you want to add more custom reviewers use `custom-reviewers` input instead"
 
 runs: 
   using: 'composite'
@@ -71,6 +76,12 @@ runs:
         # -- Merged By Reviewer --
         input_include_merge=${{ inputs.include-merge-as-reviewer }}
         [[ "$input_include_merge" == "true" ]] && echo "MERGED_BY=$MERGED_BY" >> $GITHUB_ENV || echo "MERGED_BY=" >> $GITHUB_ENV
+
+        # -- Excluded Reviewers --
+        excluded_revs=${{ inputs.excluded-reviewers }}
+        [[ ! -z "$excluded_revs" ]] \
+          && echo "EXCLUDED_REVIEWERS=$(echo "[\"${excluded_revs/,/\",\"}\"]")" >> $GITHUB_ENV \
+          || echo "EXCLUDED_REVIEWERS=[]" >> $GITHUB_ENV
     - name: Prepare reviewers
       id: prepare-reviewers
       shell: bash
@@ -81,7 +92,10 @@ runs:
         reviewers="$(echo ${REQUESTED_REVIEWERS:-[]} | jq -c 'map(.login)' | jq -cr '[. |= . + ["${{ inputs.author }}", "${{ env.MERGED_BY }}"] | .[] | select(length > 0)] | unique')"
 
         # add custom reviewers, if any
-        reviewers="$(jq -cr --argjson arr1 "$reviewers" --argjson arr2 "${CUSTOM_REVIEWERS:-[]}" -n '$arr1 + $arr2 | unique | join(",")')"
+        reviewers="$(jq -c --argjson arr1 "$reviewers" --argjson arr2 "${CUSTOM_REVIEWERS:-[]}" -n '$arr1 + $arr2 | unique')"
+
+        # filter out not acceptable reviewers
+        reviewers="$(echo $reviewers | jq -cr --argjson exclude "${EXCLUDED_REVIEWERS:-[]}" '. | map(select(. as $current | ($exclude | index($current)) | not)) | unique | join(",")')"
 
         echo "reviewers = ${reviewers}"
         echo "BACKPORT_REVIEWERS=${reviewers}" >> $GITHUB_ENV
