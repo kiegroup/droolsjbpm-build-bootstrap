@@ -44,7 +44,6 @@ inputs:
     description: "Comma separated list of reviewers to be excluded, e.g., dependabot[bot]"
     default: dependabot[bot]
     required: false
-    deprecationMessage: "[IGNORED] The previous default is managed by `include-requested-reviewers`. If you want to add more custom reviewers use `custom-reviewers` input instead"
 
 runs: 
   using: 'composite'
