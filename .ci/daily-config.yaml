@@ -15,12 +15,11 @@ default:
       ${{ env.WORKSPACE }}/clean-up.sh `pwd`
 
 build:
-  - project: kiegroup/droolsjbpm-build-bootstrap
+  - project: kiegroup/lienzo-core
     build-command:
       before:
         current: |
-          ./script/release/eraseM2.sh ${{ env.MAVEN_DIR }}
-          ./script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }} community
+          ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }} community
       current: |
         ${{ env.MAVEN_COMMAND }}
         ${{ env.WORKSPACE }}/clean-up.sh `pwd`
