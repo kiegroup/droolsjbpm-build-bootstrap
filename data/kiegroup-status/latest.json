@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-20T14:06:36.918Z",
+    "date": "2023-02-20T15:06:59.763Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4224171933"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4224691510"
   },
   "projects": [
     {
@@ -20,14 +20,12 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2230,
-          "title": "[7.67.x-blue] fix path of process-migration-service for daily builds",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2230",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2230",
+          "number": 2231,
+          "title": "removed optawebs* from dependant repositories",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2231",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2231",
           "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
+          "labels": [],
           "draft": false,
           "requested_reviewers": [
             {
@@ -39,71 +37,66 @@
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
               "html_url": "https://github.com/Ginxo"
-            }
-          ],
-          "created_at": "2023-02-20T11:20:35Z",
-          "updated_at": "2023-02-20T12:04:39Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "8e74f634e6323306edbfe4e73965a408140a09e1",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_replacement-in-path",
-            "sha": "7bf36bb46b0fde3ce730fded14daeb92426ceafb",
-            "label": "kiegroup:7.67.x-blue_replacement-in-path"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
-        },
-        {
-          "number": 2229,
-          "title": "[7.67.x] fix path of process-migration-service for daily builds",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2229",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2229",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
             },
             {
-              "login": "Ginxo",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-              "html_url": "https://github.com/Ginxo"
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
             }
           ],
-          "created_at": "2023-02-20T11:20:07Z",
-          "updated_at": "2023-02-20T12:14:01Z",
+          "created_at": "2023-02-20T14:34:28Z",
+          "updated_at": "2023-02-20T14:34:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "7.67.x",
-            "sha": "1601a79c0103610d584f864fcb2d011ca463d5d2",
+            "sha": "4dbb31e8df1d1331fcc6cbe15a0dc0db29255eb1",
             "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "7.67.x_replacement-in-path",
-            "sha": "f82de718d1cd4fcf9dda8de293fe34273d7cd4c3",
-            "label": "kiegroup:7.67.x_replacement-in-path"
+            "ref": "7.67.x-optawebs",
+            "sha": "f6a0fa71cbe9ba136b64715e43785667a1ea3ea5",
+            "label": "mbiarnes:7.67.x-optawebs"
           },
           "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 11468321816,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4224426685/jobs/7335367192",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-20T14:34:35Z",
+              "completed_at": "2023-02-20T14:34:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11468321549,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4224426685/jobs/7335366986",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-20T14:34:42Z",
+              "completed_at": "2023-02-20T14:36:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21649185397,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/70/",
+              "conclusion": "success",
+              "started_at": "2023-02-20T14:39:37Z",
+              "completed_at": "2023-02-20T14:39:37Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2218,
@@ -842,7 +835,7 @@
               "sha": "84bb5debb2861fe170346adef4dad3616439ba39"
             },
             {
-              "sha": "88e36e2c85550c91f6e0e4040c2598552e89be31"
+              "sha": "2151ab140cef8b6a9097f4c4e241cb57b426cc27"
             },
             {
               "sha": "a0d3885c262d1fd9e297b3be3be05c021da19c5c"
@@ -854,7 +847,7 @@
               "sha": "e3c2595dbe64be92da4db36a8865495f9ac8f6c2"
             },
             {
-              "sha": "7eb9faeb049e633cc5aa6f577b9b10cbac079704"
+              "sha": "e995507e000ddae908bde7945b93c70021bbe2ff"
             },
             {
               "sha": "bdf9d5f47fdca789d7b755f26690ec1ef91024b0"
@@ -948,7 +941,7 @@
               "sha": "84bb5debb2861fe170346adef4dad3616439ba39"
             },
             {
-              "sha": "71fa3a17206b43583bc10d79c0da221b033d5c3a"
+              "sha": "6b043ac7caec3e2df2eb0d724a361f3cc0ac0028"
             },
             {
               "sha": "a0d3885c262d1fd9e297b3be3be05c021da19c5c"
@@ -957,7 +950,7 @@
               "sha": "95c56850969c64ae0b24cc5a66536ef890b45729"
             },
             {
-              "sha": "d5ce6508795f2e163bf045d7ea4ad7c128664c7a"
+              "sha": "af8fbc75b0decfbeca32f1bdeac300476d3dc3cf"
             },
             {
               "sha": "c25fad62b0ed108a16418fbec58eb7fd8648d38a"
@@ -1335,7 +1328,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-02-20T10:12:13Z",
+      "updated_at": "2023-02-20T14:18:45Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
