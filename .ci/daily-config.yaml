@@ -24,5 +24,6 @@ build:
         ${{ env.MAVEN_COMMAND }}
         ${{ env.WORKSPACE }}/clean-up.sh `pwd`
   - project: kiegroup/process-migration-service
-    skip: true
+    build-command:
+      current: echo 'skip'
 
