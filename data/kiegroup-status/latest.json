@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-02-21T09:07:18.266Z",
+    "date": "2023-02-21T10:07:19.662Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4230971336"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4231484093"
   },
   "projects": [
     {
@@ -19,6 +19,90 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2233,
+          "title": "[RHPAM-4639][CVE-2022-45047] apache sshd upgraded to 2.9.2",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2233",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2233",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-02-21T09:10:21Z",
+          "updated_at": "2023-02-21T09:10:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6765743ed934c46577d60db2a02236c781ce8267",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4639",
+            "sha": "ca21296a76ab15d56a0cbdaa2154f61f19a0de8d",
+            "label": "Ginxo:RHPAM-4639"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 11485481692,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4231003888/jobs/7349000728",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-21T09:10:51Z",
+              "completed_at": "2023-02-21T09:12:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11485481513,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4231003888/jobs/7349000594",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-02-21T09:10:44Z",
+              "completed_at": "2023-02-21T09:10:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11485473704,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4231003888/jobs/7348994517",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-02-21T09:10:32Z",
+              "completed_at": "2023-02-21T09:10:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21660869538,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/617/",
+              "conclusion": "pending",
+              "started_at": "2023-02-21T09:10:43Z",
+              "completed_at": "2023-02-21T09:10:43Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 21660967491,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/730/",
+              "conclusion": "success",
+              "started_at": "2023-02-21T09:15:50Z",
+              "completed_at": "2023-02-21T09:15:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2231,
           "title": "removed optawebs* from dependant repositories",
