@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-06T08:09:54.265Z",
+    "date": "2023-03-06T09:07:45.790Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4341241485"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4341692829"
   },
   "projects": [
     {
@@ -8677,6 +8677,145 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2937,
+          "title": "[7.67.x-blue] [DROOLS-7360] Fix GHA \"Canceling since a higher priority waiting requ…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2937",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2937",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-03-06T08:55:04Z",
+          "updated_at": "2023-03-06T08:56:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "28c88ed358240711081986f5cc328955fa37f2c8",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "DROOLS-7360-7.67.x-blue",
+            "sha": "dc28cf662e506869405c5a157b8220f2e8a06184",
+            "label": "tkobayas:DROOLS-7360-7.67.x-blue"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 11785183649,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4341585682/jobs/7581364191",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-06T08:55:16Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11785183397,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4341585682/jobs/7581363977",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-06T08:55:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21884779280,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/74/",
+              "conclusion": "pending",
+              "started_at": "2023-03-06T08:55:11Z",
+              "completed_at": "2023-03-06T08:55:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2936,
+          "title": "[7.67.x] [DROOLS-7360] Fix GHA \"Canceling since a higher priority waiting requ…",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2936",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2936",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-03-06T08:23:24Z",
+          "updated_at": "2023-03-06T08:35:01Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "b684535ef0b51e4d4ac87922113741b8c25bee2b",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_DROOLS-7360",
+            "sha": "1acd201042cebf0be2c4e93ed58aacbcb5b2ef3c",
+            "label": "kiegroup:7.67.x_DROOLS-7360"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 11784740720,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4341426707/jobs/7581008764",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-06T08:34:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 11784740486,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4341426707/jobs/7581008574",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-06T08:34:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21884451229,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/111/",
+              "conclusion": "pending",
+              "started_at": "2023-03-06T08:34:21Z",
+              "completed_at": "2023-03-06T08:34:21Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2934,
           "title": "[DO-NOT-MERGE] [DROOLS-7071] Fix kie-karaf-itests failures because of poi version (#…",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2934",
@@ -11826,7 +11965,7 @@
       "name": "kie-wb-common",
       "description": "Shared screens, widgets and services for KIE workbenches.",
       "html_url": "https://github.com/kiegroup/kie-wb-common",
-      "updated_at": "2023-01-09T19:27:03Z",
+      "updated_at": "2023-03-06T08:56:11Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -13311,7 +13450,7 @@
       "name": "drools-wb",
       "description": "Drools Workbench is the web application and repository to govern Drools assets.",
       "html_url": "https://github.com/kiegroup/drools-wb",
-      "updated_at": "2023-02-21T01:45:00Z",
+      "updated_at": "2023-03-06T08:56:15Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -16085,7 +16224,7 @@
             }
           ],
           "created_at": "2023-01-05T15:26:07Z",
-          "updated_at": "2023-03-01T14:02:53Z",
+          "updated_at": "2023-03-06T08:53:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
