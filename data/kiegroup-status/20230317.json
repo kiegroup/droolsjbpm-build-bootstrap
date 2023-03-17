@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-17T07:06:43.188Z",
+    "date": "2023-03-17T08:09:10.152Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4445050141"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4445466467"
   },
   "projects": [
     {
@@ -19,6 +19,70 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2246,
+          "title": "[CVE-2023-1108][RHPAM-4661] undertow version to 2.3.4.Final",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2246",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2246",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-03-17T07:15:33Z",
+          "updated_at": "2023-03-17T07:37:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "42f37a11a2164237cb6b7045fe416c571b1c3c18",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4661",
+            "sha": "58b9c732b36ee0f0575782a4386260b538ea2647",
+            "label": "Ginxo:RHPAM-4661"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 12073120744,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4445114795/jobs/7803944803",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-03-17T07:15:56Z",
+              "completed_at": "2023-03-17T07:17:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12073120619,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4445114795/jobs/7803944702",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-17T07:15:50Z",
+              "completed_at": "2023-03-17T07:15:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12073117664,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4445114795/jobs/7803942344",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-03-17T07:15:45Z",
+              "completed_at": "2023-03-17T07:15:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 2243,
           "title": "Bump snakeyaml from 1.32 to 2.0",
@@ -1784,81 +1848,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
-          "number": 5102,
-          "title": "[7.67.x-blue] [DROOLS-7366] str operator with bind variable fails after mv…",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5102",
-          "html_url": "https://github.com/kiegroup/drools/pull/5102",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-03-17T01:28:24Z",
-          "updated_at": "2023-03-17T02:57:00Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "3bb78d8fd18a01508c7df81c1652598915982053",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "RHDM-1965-7.67.x-blue",
-            "sha": "6540b2662a4cac9dbd0fad80332e102bfd1b9a69",
-            "label": "tkobayas:RHDM-1965-7.67.x-blue"
-          },
-          "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
-          },
-          "checks": [
-            {
-              "id": 12068565047,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/4443237539/jobs/7800305177",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-03-17T01:28:32Z",
-              "completed_at": "2023-03-17T01:28:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12068564915,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/4443237539/jobs/7800305061",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-03-17T01:28:33Z",
-              "completed_at": "2023-03-17T01:28:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12068564753,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/4443237539/jobs/7800304917",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-03-17T01:28:43Z",
-              "completed_at": "2023-03-17T02:32:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12068564595,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/4443237539/jobs/7800304793",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-03-17T01:28:33Z",
-              "completed_at": "2023-03-17T01:28:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 4974,
           "title": "[7.67.x-blue ]DROOLS-7316 : Exception while using expression with $ in BRL condition in GDST",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/4974",
@@ -2473,6 +2462,9 @@
             },
             {
               "sha": "a8ced3de2ca5c95ac0db0776d6d8e98f563af7ad"
+            },
+            {
+              "sha": "4a5e630a3255119a56d999d2615d2b208bab4a5e"
             },
             {
               "sha": "a2011bdf6fe9f75ea4f7ef6946ac3b740674ca45"
@@ -3283,9 +3275,6 @@
             },
             {
               "sha": "cc2fff6da0fa30b52c8d25872e764c26a91f7c84"
-            },
-            {
-              "sha": "b8a899b52e115fe36a849b18f6d41f5fdb081648"
             }
           ]
         },
