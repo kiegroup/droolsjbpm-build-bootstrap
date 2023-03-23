@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-23T10:07:07.840Z",
+    "date": "2023-03-23T11:05:15.227Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4499351007"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4499848287"
   },
   "projects": [
     {
@@ -2131,6 +2131,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 5121,
+          "title": "[DROOLS-7372] executable model doesn't resolve bind variable in metho…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5121",
+          "html_url": "https://github.com/kiegroup/drools/pull/5121",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-03-23T10:17:14Z",
+          "updated_at": "2023-03-23T10:17:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "4ff6bd9e63194b08f1e17aaff36ba0bbfdce9ea5",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-7372",
+            "sha": "ad5375e89d952f86345591cc3928fdedd686010b",
+            "label": "tkobayas:DROOLS-7372"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 12218351364,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4499446565/jobs/7917323748",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-23T10:17:25Z",
+              "completed_at": "2023-03-23T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12218351126,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4499446565/jobs/7917323569",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-23T10:17:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12218350841,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4499446565/jobs/7917323343",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-23T10:17:25Z",
+              "completed_at": "2023-03-23T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12218350452,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4499446565/jobs/7917323064",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-23T10:17:25Z",
+              "completed_at": "2023-03-23T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206049828,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/411/",
+              "conclusion": "pending",
+              "started_at": "2023-03-23T10:17:23Z",
+              "completed_at": "2023-03-23T10:17:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 22206049840,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/420/",
+              "conclusion": "pending",
+              "started_at": "2023-03-23T10:17:23Z",
+              "completed_at": "2023-03-23T10:17:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4634,
           "title": "[BXMSPROD-1770] Added OS Preparation",
@@ -7868,6 +7963,158 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2278,
+          "title": "[7.67.x-blue]JBPM-10162 IntermediateThrowingSignal node from subprocess and the su…",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2278",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2278",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-03-23T11:02:34Z",
+          "updated_at": "2023-03-23T11:03:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "14e3b632953a4c784b2375d81f660395dfcfbc57",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10162-7.67-blue",
+            "sha": "7149c08daa6c7f4d4bcde7badd348f0b2ab7d9cc",
+            "label": "Cory-jbpm:JBPM-10162-7.67-blue"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 12219471577,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499831218/jobs/7918191562",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-03-23T11:02:40Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12219471262,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499831218/jobs/7918191308",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-03-23T11:02:39Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206935625,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/53/",
+              "conclusion": "pending",
+              "started_at": "2023-03-23T11:02:38Z",
+              "completed_at": "2023-03-23T11:02:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2277,
+          "title": "[7.67.x]JBPM-10162 IntermediateThrowingSignal node from subprocess and the su…",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2277",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2277",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-03-23T11:01:38Z",
+          "updated_at": "2023-03-23T11:04:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c7a1a6b04ed9cb732630178230fba4045cd43498",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10162-7.67",
+            "sha": "065f35145b77df1752e3ed0f0e42ff1f81d01422",
+            "label": "Cory-jbpm:JBPM-10162-7.67"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 12219445443,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499821889/jobs/7918171229",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-03-23T11:01:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12219445192,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499821889/jobs/7918171044",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-03-23T11:01:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206917730,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/113/",
+              "conclusion": "pending",
+              "started_at": "2023-03-23T11:01:42Z",
+              "completed_at": "2023-03-23T11:01:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2273,
           "title": "JBPM-10162 IntermediateThrowingSignal node from subprocess and the su…",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2273",
@@ -7877,7 +8124,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-03-06T09:51:09Z",
-          "updated_at": "2023-03-23T09:43:53Z",
+          "updated_at": "2023-03-23T10:52:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7887,7 +8134,7 @@
           },
           "head": {
             "ref": "JBPM-10162",
-            "sha": "45b71a71d9bb1243a220f6737bb9b34fe0f7a748",
+            "sha": "5d8255c29bfc757c15c1a6226320a55fcc03709e",
             "label": "Cory-jbpm:JBPM-10162"
           },
           "user": {
@@ -7897,34 +8144,34 @@
           },
           "checks": [
             {
-              "id": 12217492397,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499155837/jobs/7916657660",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-03-23T09:44:04Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12217492108,
+              "id": 12219238216,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499155837/jobs/7916657468",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499754435/jobs/7918013207",
               "status": "in_progress",
               "conclusion": null,
-              "started_at": "2023-03-23T09:44:06Z",
+              "started_at": "2023-03-23T10:53:25Z",
               "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 22205388094,
+              "id": 12219237929,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4499754435/jobs/7918012986",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-23T10:53:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206744513,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/842/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/843/",
               "conclusion": "pending",
-              "started_at": "2023-03-23T09:43:57Z",
-              "completed_at": "2023-03-23T09:43:57Z",
+              "started_at": "2023-03-23T10:53:03Z",
+              "completed_at": "2023-03-23T10:53:03Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9763,6 +10010,158 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2941,
+          "title": "[7.67.x-blue]JBPM-10162 IntermediateThrowingSignal node from subprocess and the subprocess is not getting marked as executed",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2941",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2941",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-03-23T10:44:15Z",
+          "updated_at": "2023-03-23T10:44:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "a3db7d03c8107f3c726b78f81266ca02001c5973",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10162-7.67-blue",
+            "sha": "54fb54f37d2a747bae4d6adeef1f81511d8c2a61",
+            "label": "Cory-jbpm:JBPM-10162-7.67-blue"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 12219032728,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4499685045/jobs/7917854073",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-23T10:44:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12219032406,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4499685045/jobs/7917853825",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-23T10:44:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206896546,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/78/",
+              "conclusion": "failure",
+              "started_at": "2023-03-23T11:00:42Z",
+              "completed_at": "2023-03-23T11:00:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2940,
+          "title": "[7.67.x]JBPM-10162 IntermediateThrowingSignal node from subprocess and the subprocess is not getting marked as executed",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2940",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2940",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-03-23T10:41:05Z",
+          "updated_at": "2023-03-23T10:41:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "a5e34d74af0bd442f92bee04d7ac3bce8ea688a5",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10162-7.67",
+            "sha": "3c9494ae0465c89b2dd63be416a9d8e17cedd771",
+            "label": "Cory-jbpm:JBPM-10162-7.67"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 12218957438,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4499660560/jobs/7917795625",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-03-23T10:41:21Z",
+              "completed_at": "2023-03-23T11:04:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12218957147,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4499660560/jobs/7917795391",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-23T10:41:22Z",
+              "completed_at": "2023-03-23T11:04:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206927409,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/112/",
+              "conclusion": "failure",
+              "started_at": "2023-03-23T11:02:14Z",
+              "completed_at": "2023-03-23T11:02:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2939,
           "title": "JBPM-10162 IntermediateThrowingSignal node from subprocess and the su…",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2939",
@@ -9772,7 +10171,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-03-18T12:34:27Z",
-          "updated_at": "2023-03-23T10:03:43Z",
+          "updated_at": "2023-03-23T10:21:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17047,8 +17446,155 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1584,
+          "title": "[7.67.x-blue][JBPM-10151]Tasks listed twice once completed in Business Central",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1584",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1584",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "nmirasch",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2443754?v=4",
+              "html_url": "https://github.com/nmirasch"
+            },
+            {
+              "login": "barboras7",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11525583?v=4",
+              "html_url": "https://github.com/barboras7"
+            }
+          ],
+          "created_at": "2023-03-23T10:34:48Z",
+          "updated_at": "2023-03-23T10:38:15Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "0ebc8ee6a5ececd0d0eedb88f6a4c27c4ac5fba2",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "JBPM-10151-7.67-blue",
+            "sha": "1cdc43337b337ae69e5a5984cc81c4889d066563",
+            "label": "Cory-jbpm:JBPM-10151-7.67-blue"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 12218803254,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4499604644/jobs/7917676067",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-23T10:35:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12218802909,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4499604644/jobs/7917675813",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-23T10:34:55Z",
+              "completed_at": "2023-03-23T10:34:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206979764,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-wb-7.67.x-blue.pr/18/",
+              "conclusion": "failure",
+              "started_at": "2023-03-23T11:04:51Z",
+              "completed_at": "2023-03-23T11:04:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1583,
+          "title": "[7.67.x][JBPM-10151]Tasks listed twice once completed in Business Central",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1583",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1583",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "nmirasch",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2443754?v=4",
+              "html_url": "https://github.com/nmirasch"
+            }
+          ],
+          "created_at": "2023-03-23T10:31:05Z",
+          "updated_at": "2023-03-23T10:31:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "88bdacd9408523677cd17caa7d6ebc9d030c860d",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "JBPM-10151-7.67",
+            "sha": "50c1d115f9af552afd551ee1aa0d2fac78583fd4",
+            "label": "Cory-jbpm:JBPM-10151-7.67"
+          },
+          "user": {
+            "login": "bxf12315",
+            "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+            "html_url": "https://github.com/bxf12315"
+          },
+          "checks": [
+            {
+              "id": 12218703826,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4499569286/jobs/7917598217",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-23T10:31:12Z",
+              "completed_at": "2023-03-23T10:31:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12218703491,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4499569286/jobs/7917597951",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-23T10:31:21Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22206885316,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-wb-7.67.x.pr/32/",
+              "conclusion": "failure",
+              "started_at": "2023-03-23T11:00:09Z",
+              "completed_at": "2023-03-23T11:00:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1582,
-          "title": "Tasks listed twice once completed in Business Central",
+          "title": "[JBPM-10151]Tasks listed twice once completed in Business Central",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1582",
           "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1582",
           "state": "open",
@@ -17056,7 +17602,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-01-05T15:26:07Z",
-          "updated_at": "2023-03-23T04:37:16Z",
+          "updated_at": "2023-03-23T10:37:37Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
