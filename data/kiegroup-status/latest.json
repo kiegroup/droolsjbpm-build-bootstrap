@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-27T09:09:20.018Z",
+    "date": "2023-03-27T10:07:18.520Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4530664222"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4531198247"
   },
   "projects": [
     {
@@ -2275,6 +2275,208 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 5126,
+          "title": "[7.67.x-blue] Remove powermock-api-mockito2 from compile classpath",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5126",
+          "html_url": "https://github.com/kiegroup/drools/pull/5126",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            }
+          ],
+          "created_at": "2023-03-27T09:46:32Z",
+          "updated_at": "2023-03-27T09:46:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "26e2e11fe9012dfc3727624639194c6281deebab",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHDM-1962-fix-blue",
+            "sha": "98d3fe73d2ca8eff99ef2fb289bc5ca22f45a553",
+            "label": "MarianMacik:RHDM-1962-fix-blue"
+          },
+          "user": {
+            "login": "MarianMacik",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+            "html_url": "https://github.com/MarianMacik"
+          },
+          "checks": [
+            {
+              "id": 12298378627,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531021230/jobs/7980662027",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-27T09:46:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12298378370,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531021230/jobs/7980661804",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-27T09:46:42Z",
+              "completed_at": "2023-03-27T09:46:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12298378097,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531021230/jobs/7980661582",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-27T09:46:42Z",
+              "completed_at": "2023-03-27T09:46:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12298377817,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531021230/jobs/7980661355",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-27T09:46:42Z",
+              "completed_at": "2023-03-27T09:46:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22258767854,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/23/",
+              "conclusion": "pending",
+              "started_at": "2023-03-27T09:46:39Z",
+              "completed_at": "2023-03-27T09:46:39Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 22258767937,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/22/",
+              "conclusion": "pending",
+              "started_at": "2023-03-27T09:46:39Z",
+              "completed_at": "2023-03-27T09:46:39Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 5125,
+          "title": "[7.67.x] Remove powermock-api-mockito2 from compile classpath",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5125",
+          "html_url": "https://github.com/kiegroup/drools/pull/5125",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
+            }
+          ],
+          "created_at": "2023-03-27T09:46:30Z",
+          "updated_at": "2023-03-27T09:46:30Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "b222738198d2d361491b801962027c89e4431a5d",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHDM-1962-fix",
+            "sha": "84cb9bf41dfd99092ad98e680a21c66677f3ae8f",
+            "label": "MarianMacik:RHDM-1962-fix"
+          },
+          "user": {
+            "login": "MarianMacik",
+            "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+            "html_url": "https://github.com/MarianMacik"
+          },
+          "checks": [
+            {
+              "id": 12298377471,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531020852/jobs/7980661079",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-27T09:46:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12298377186,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531020852/jobs/7980660846",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-27T09:46:39Z",
+              "completed_at": "2023-03-27T09:46:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12298376904,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531020852/jobs/7980660634",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-27T09:46:39Z",
+              "completed_at": "2023-03-27T09:46:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12298376645,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4531020852/jobs/7980660430",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-27T09:46:39Z",
+              "completed_at": "2023-03-27T09:46:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22258767766,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/29/",
+              "conclusion": "pending",
+              "started_at": "2023-03-27T09:46:39Z",
+              "completed_at": "2023-03-27T09:46:39Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 22258906259,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/28/",
+              "conclusion": "failure",
+              "started_at": "2023-03-27T09:53:37Z",
+              "completed_at": "2023-03-27T09:53:37Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 5121,
           "title": "[DROOLS-7372] executable model doesn't resolve bind variable in metho…",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/5121",
@@ -2287,15 +2489,10 @@
               "login": "pibizza",
               "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
               "html_url": "https://github.com/pibizza"
-            },
-            {
-              "login": "dupliaka",
-              "avatar_url": "https://avatars.githubusercontent.com/u/21653197?v=4",
-              "html_url": "https://github.com/dupliaka"
             }
           ],
           "created_at": "2023-03-23T10:17:14Z",
-          "updated_at": "2023-03-27T03:26:11Z",
+          "updated_at": "2023-03-27T09:49:35Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13486,7 +13683,7 @@
             }
           ],
           "created_at": "2023-02-22T14:19:27Z",
-          "updated_at": "2023-03-23T14:19:53Z",
+          "updated_at": "2023-03-27T09:36:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
