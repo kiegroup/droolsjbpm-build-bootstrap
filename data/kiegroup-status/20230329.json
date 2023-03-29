@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-29T14:07:14.416Z",
+    "date": "2023-03-29T15:18:56.515Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4554938794"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4555659992"
   },
   "projects": [
     {
@@ -15602,114 +15602,90 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
         {
-          "number": 273,
-          "title": "[JBPM-10166] Allow tests with productized Kakfa version",
-          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/273",
-          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/273",
+          "number": 275,
+          "title": "[7.67.x] [JBPM-10166] Allow tests with productized Kafka version",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/275",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/275",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-03-23T12:25:40Z",
-          "updated_at": "2023-03-29T10:28:37Z",
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2023-03-29T14:29:05Z",
+          "updated_at": "2023-03-29T14:29:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "9f2aa777bead03723ce8fe3d40c53b6004ea3279",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "c29721a659d3bf62597d8281104eb4a01a4fccd8",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "JBPM-10166",
-            "sha": "e10c817c3f063b3932bfc338277f0b99adab6d1c",
-            "label": "gmunozfe:JBPM-10166"
+            "ref": "7.67.x_JBPM-10166",
+            "sha": "140fadf5110c56898abbc20622f2dfe8f2309e06",
+            "label": "kiegroup:7.67.x_JBPM-10166"
           },
           "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 274,
+          "title": "[7.67.x-blue] [JBPM-10166] Allow tests with productized Kafka version",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/274",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/274",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 12361573925,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4552925408/jobs/8028870754",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-03-29T10:25:13Z",
-              "completed_at": "2023-03-29T10:25:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
             },
             {
-              "id": 12361573844,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4552925367/jobs/8028870707",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-03-29T10:25:13Z",
-              "completed_at": "2023-03-29T10:25:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12361573334,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4552925408/jobs/8028870324",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-03-29T10:25:12Z",
-              "completed_at": "2023-03-29T10:25:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12361573311,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4552925367/jobs/8028870310",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-03-29T10:25:12Z",
-              "completed_at": "2023-03-29T10:25:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12300201993,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4531657131/jobs/7982074450",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-03-27T11:01:45Z",
-              "completed_at": "2023-03-27T11:47:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12300201731,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4531657131/jobs/7982074244",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-03-27T11:01:39Z",
-              "completed_at": "2023-03-27T11:01:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22260756567,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-work-items-main.pr/61/",
-              "conclusion": "success",
-              "started_at": "2023-03-27T11:32:59Z",
-              "completed_at": "2023-03-27T11:32:59Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
             }
-          ]
+          ],
+          "created_at": "2023-03-29T14:29:02Z",
+          "updated_at": "2023-03-29T14:29:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9dc7123b3fae0ea36cc967a6a5ef174bd6177b37",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10166",
+            "sha": "ea59e856dc938c0d4c8ca5c4f5d28a62b45f51c2",
+            "label": "kiegroup:7.67.x-blue_JBPM-10166"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 271,
@@ -18155,10 +18131,10 @@
               "id": 12365320472,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4554192517/jobs/8031723925",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-03-29T12:52:07Z",
-              "completed_at": null,
+              "completed_at": "2023-03-29T14:09:25Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -19014,18 +18990,18 @@
               "html_url": "https://github.com/mareknovotny"
             },
             {
+              "login": "ruromero",
+              "avatar_url": "https://avatars.githubusercontent.com/u/637557?v=4",
+              "html_url": "https://github.com/ruromero"
+            },
+            {
               "login": "gmunozfe",
               "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
               "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
             }
           ],
           "created_at": "2023-03-29T13:24:45Z",
-          "updated_at": "2023-03-29T13:24:48Z",
+          "updated_at": "2023-03-29T14:22:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -19070,15 +19046,10 @@
               "login": "gmunozfe",
               "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
               "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
             }
           ],
           "created_at": "2023-03-29T13:24:39Z",
-          "updated_at": "2023-03-29T14:06:34Z",
+          "updated_at": "2023-03-29T14:21:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
