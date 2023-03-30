@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-30T16:08:06.744Z",
+    "date": "2023-03-30T17:05:15.243Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4566558660"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4567051789"
   },
   "projects": [
     {
@@ -19,6 +19,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2251,
+          "title": "[JBPM-10166] Allow tests with productized Kafka version",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2251",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2251",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2023-03-30T16:56:54Z",
+          "updated_at": "2023-03-30T16:57:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "79547d1b74fd92b8176eb4f8808f94e6ab27d0a4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10166",
+            "sha": "b9278f5000f5200f9bb269a69fdd90e587997ae5",
+            "label": "gmunozfe:7.67.x-blue_JBPM-10166"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 12403119310,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4566981481/jobs/8060211956",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-03-30T16:57:09Z",
+              "completed_at": "2023-03-30T16:58:37Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12403118977,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4566981481/jobs/8060211777",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-03-30T16:57:01Z",
+              "completed_at": "2023-03-30T16:57:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22344661458,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/64/",
+              "conclusion": "success",
+              "started_at": "2023-03-30T17:03:07Z",
+              "completed_at": "2023-03-30T17:03:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2250,
           "title": "Bump spring-core from 5.3.20 to 5.3.26",
@@ -10625,21 +10694,24 @@
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2378",
           "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2378",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2021-01-25T11:42:09Z",
-          "updated_at": "2021-07-25T08:22:14Z",
+          "updated_at": "2023-03-30T16:42:05Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "11b5495cd85a8e2fadec08617623983e98e7108b",
+            "sha": "7d3510cfd9324da4f194ceac660e2c598fcd3a01",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "JBPM-9508",
-            "sha": "685d3c4346203b3ca3d3749041c570a459358cff",
+            "sha": "e89e46bff1f580ae7d1763536bbf7821aa503c4f",
             "label": "gmunozfe:JBPM-9508"
           },
           "user": {
@@ -10649,34 +10721,78 @@
           },
           "checks": [
             {
-              "id": 2988834131,
-              "name": "Maven Build (11)",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/1000658123/jobs/1080701827",
+              "id": 12402737338,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4566859232/jobs/8059931419",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-07-05T09:42:45Z",
-              "completed_at": "2021-07-05T13:51:10Z",
+              "conclusion": "skipped",
+              "started_at": "2023-03-30T16:42:11Z",
+              "completed_at": "2023-03-30T16:42:11Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 2988834086,
-              "name": "Maven Build (8)",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/1000658123/jobs/1080701791",
+              "id": 12402737026,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4566859188/jobs/8059931188",
               "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2021-07-05T09:42:45Z",
-              "completed_at": "2021-07-05T13:42:38Z",
+              "conclusion": "skipped",
+              "started_at": "2023-03-30T16:42:10Z",
+              "completed_at": "2023-03-30T16:42:10Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 13688685669,
+              "id": 12402736740,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4566859232/jobs/8059930992",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-03-30T16:42:10Z",
+              "completed_at": "2023-03-30T16:42:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12402736375,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4566859188/jobs/8059930735",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-03-30T16:42:08Z",
+              "completed_at": "2023-03-30T16:42:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12402728384,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4566856357/jobs/8059925017",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-30T16:41:58Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12402728110,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4566856357/jobs/8059924807",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-03-30T16:41:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22344159096,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp4.prod.psi.redhat.com/job/KIE/job/master/job/pullrequest/job/droolsjbpm-integration-master.pr/239/",
-              "conclusion": "failure",
-              "started_at": "2021-07-07T15:17:13Z",
-              "completed_at": "2021-07-07T15:17:13Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1104/",
+              "conclusion": "pending",
+              "started_at": "2023-03-30T16:41:51Z",
+              "completed_at": "2023-03-30T16:41:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -15181,7 +15297,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-03-29T14:29:02Z",
-          "updated_at": "2023-03-30T14:31:46Z",
+          "updated_at": "2023-03-30T17:00:01Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
