@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-03-31T11:04:24.943Z",
+    "date": "2023-03-31T12:39:38.465Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4574366165"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4574879475"
   },
   "projects": [
     {
@@ -586,7 +586,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-03-17T07:15:33Z",
-          "updated_at": "2023-03-31T07:14:46Z",
+          "updated_at": "2023-03-31T11:40:36Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -645,6 +645,16 @@
               "conclusion": "success",
               "started_at": "2023-03-31T07:15:41Z",
               "completed_at": "2023-03-31T07:15:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 22360588786,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/625/",
+              "conclusion": "pending",
+              "started_at": "2023-03-31T11:40:41Z",
+              "completed_at": "2023-03-31T11:40:41Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9904,6 +9914,92 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2945,
+          "title": "[7.67.x-blue] [JBPM-9508] Test creation for duplicated processes with same",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2945",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2945",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-03-31T11:38:56Z",
+          "updated_at": "2023-03-31T12:24:47Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "ac93150ea556d039d35ecc02baaf45722b8b2c4d",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-9508",
+            "sha": "2693071d2306c735d1eac3c4c8b996997be4dc4e",
+            "label": "kiegroup:7.67.x-blue_JBPM-9508"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 22360573907,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/79/",
+              "conclusion": "pending",
+              "started_at": "2023-03-31T11:39:44Z",
+              "completed_at": "2023-03-31T11:39:44Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2944,
+          "title": "[7.67.x] [JBPM-9508] Test creation for duplicated processes with same",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2944",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2944",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-03-31T11:38:54Z",
+          "updated_at": "2023-03-31T12:24:25Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "431f27e30202b8e6607ffdb0224ef9e9182426ef",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-9508",
+            "sha": "51616bc30acb7d7078d45351d336c9932928de94",
+            "label": "kiegroup:7.67.x_JBPM-9508"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 22360580443,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/113/",
+              "conclusion": "pending",
+              "started_at": "2023-03-31T11:40:13Z",
+              "completed_at": "2023-03-31T11:40:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2941,
           "title": "[7.67.x-blue]JBPM-10162 IntermediateThrowingSignal node from subprocess and the subprocess is not getting marked as executed",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2941",
@@ -10490,94 +10586,6 @@
               "conclusion": "failure",
               "started_at": "2021-04-12T11:28:10Z",
               "completed_at": "2021-04-12T11:28:10Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2378,
-          "title": "[JBPM-9508] Test creation for duplicated processes with same",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2378",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2378",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2021-01-25T11:42:09Z",
-          "updated_at": "2023-03-31T08:47:33Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "7d3510cfd9324da4f194ceac660e2c598fcd3a01",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-9508",
-            "sha": "d27c9fb330de40c8d782c47e55c5ca9e87b3b0c4",
-            "label": "gmunozfe:JBPM-9508"
-          },
-          "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
-          },
-          "checks": [
-            {
-              "id": 12412580870,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/12412580870",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-03-31T00:15:25Z",
-              "completed_at": "2023-03-31T00:15:26Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12412579658,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/12412579658",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-03-31T00:13:32Z",
-              "completed_at": "2023-03-31T00:15:20Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 12410125547,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4569316213/jobs/8065422187",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-03-30T21:49:28Z",
-              "completed_at": "2023-03-31T00:51:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12410125345,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/4569316213/jobs/8065422038",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-03-30T21:49:29Z",
-              "completed_at": "2023-03-31T00:50:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22352646381,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1105/",
-              "conclusion": "success",
-              "started_at": "2023-03-31T00:16:55Z",
-              "completed_at": "2023-03-31T00:16:55Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -15071,7 +15079,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-03-30T17:21:54Z",
-          "updated_at": "2023-03-31T08:46:32Z",
+          "updated_at": "2023-03-31T11:39:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
