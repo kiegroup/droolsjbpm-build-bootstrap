@@ -69,7 +69,7 @@ jobs:
         run: echo "BRANCH_NAME_FLOW_TARGET=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update build chain files
