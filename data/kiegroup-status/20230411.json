@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-04-11T11:04:01.305Z",
+    "date": "2023-04-11T12:11:28.865Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4666796660"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4667347778"
   },
   "projects": [
     {
@@ -1216,7 +1216,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-01-27T10:06:11Z",
-          "updated_at": "2023-04-10T21:00:02Z",
+          "updated_at": "2023-04-11T11:55:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17729,6 +17729,154 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1217,
+          "title": "[7.67.x-blue] AF-2948: Update Firefox Gecko driver to version 0.33.0",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1217",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1217",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "barboras7",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11525583?v=4",
+              "html_url": "https://github.com/barboras7"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-04-11T11:28:27Z",
+          "updated_at": "2023-04-11T11:30:25Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "e366b6c403a30f2947602490a15d59624fa13108",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "AF-2948_767x-blue",
+            "sha": "b4fa59ffb5d981c2f8fcce12fb5bf3e56f5dbde7",
+            "label": "tomasdavidorg:AF-2948_767x-blue"
+          },
+          "user": {
+            "login": "tomasdavidorg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+            "html_url": "https://github.com/tomasdavidorg"
+          },
+          "checks": [
+            {
+              "id": 12658405901,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/4667005430/jobs/8262254159",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-11T11:28:34Z",
+              "completed_at": "2023-04-11T11:28:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12658405671,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/4667005430/jobs/8262253971",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-04-11T11:28:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22519458009,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/44/",
+              "conclusion": "pending",
+              "started_at": "2023-04-11T11:28:31Z",
+              "completed_at": "2023-04-11T11:28:31Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1216,
+          "title": "[7.67.x] AF-2948: Update Firefox Gecko driver to version 0.33.0",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1216",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1216",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "barboras7",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11525583?v=4",
+              "html_url": "https://github.com/barboras7"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-04-11T11:27:15Z",
+          "updated_at": "2023-04-11T11:30:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "9dcf46ae12dd80e1a343740e2f9e83d354a85bf5",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "AF-2948_767x",
+            "sha": "ab0be6e142641aae619d74db011afe092406a02a",
+            "label": "tomasdavidorg:AF-2948_767x"
+          },
+          "user": {
+            "login": "tomasdavidorg",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+            "html_url": "https://github.com/tomasdavidorg"
+          },
+          "checks": [
+            {
+              "id": 12658380514,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/4666995616/jobs/8262234398",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-11T11:27:22Z",
+              "completed_at": "2023-04-11T11:27:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12658380312,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/4666995616/jobs/8262234257",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-04-11T11:27:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22519437186,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-distributions-7.67.x.pr/35/",
+              "conclusion": "pending",
+              "started_at": "2023-04-11T11:27:19Z",
+              "completed_at": "2023-04-11T11:27:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1215,
           "title": "AF-2948: Update Firefox Gecko driver to version 0.33.0",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1215",
@@ -17752,7 +17900,7 @@
             }
           ],
           "created_at": "2023-04-11T07:53:18Z",
-          "updated_at": "2023-04-11T10:36:27Z",
+          "updated_at": "2023-04-11T11:31:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17881,7 +18029,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-12-01T06:55:18Z",
-          "updated_at": "2023-04-11T08:35:27Z",
+          "updated_at": "2023-04-11T11:39:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17923,75 +18071,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 22516357895,
+              "id": 22519645807,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/43/",
-              "conclusion": "failure",
-              "started_at": "2023-04-11T08:41:31Z",
-              "completed_at": "2023-04-11T08:41:31Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 1204,
-          "title": "[7.67.x] RHPAM-4431: Session Cookie Without Secure Attribute Set",
-          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1204",
-          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1204",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2022-12-01T06:52:51Z",
-          "updated_at": "2023-04-11T08:35:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "2388d426bdbee07b3c7ee380d79a8f826b8955ae",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "backport-RHPAM-4431",
-            "sha": "1cbae0440ee6d43899cd86152eb88803b3988900",
-            "label": "RishiRajAnand:backport-RHPAM-4431"
-          },
-          "user": {
-            "login": "RishiRajAnand",
-            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
-            "html_url": "https://github.com/RishiRajAnand"
-          },
-          "checks": [
-            {
-              "id": 9815011662,
-              "name": "ubuntu-18.04 - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590230937/jobs/6043413047",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2022-12-01T06:54:08Z",
-              "completed_at": "2022-12-01T09:04:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 9815011534,
-              "name": "ubuntu-18.04 - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/3590230937/jobs/6043412950",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2022-12-01T06:53:01Z",
-              "completed_at": "2022-12-01T10:04:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22517604514,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-distributions-7.67.x.pr/34/",
-              "conclusion": "success",
-              "started_at": "2023-04-11T09:46:29Z",
-              "completed_at": "2023-04-11T09:46:29Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/45/",
+              "conclusion": "pending",
+              "started_at": "2023-04-11T11:39:33Z",
+              "completed_at": "2023-04-11T11:39:33Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -18177,7 +18262,10 @@
               "sha": "851849c98338e2a5e5d29be0c6ce07e22b057984"
             },
             {
-              "sha": "fb3d789b484e352dd93266ff87e88508e836d7ca"
+              "sha": "69c3ef3c6db3525176ce5ed3511462f0b7c29913"
+            },
+            {
+              "sha": "e424de1fc4d54fbcde97c9f400a14dfaf9a54b35"
             },
             {
               "sha": "60ee807f2f468a0fcd92c5e928ad987cde078e76"
