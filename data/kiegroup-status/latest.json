@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-04-12T11:04:10.976Z",
+    "date": "2023-04-12T12:16:30.977Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4677569972"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4678119985"
   },
   "projects": [
     {
@@ -5929,6 +5929,79 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1379,
+          "title": "RHDM-1961: [GSS](7.12.1) Persistent Cross-Site Scripting (XSS)",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1379",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1379",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-04-12T11:48:52Z",
+          "updated_at": "2023-04-12T11:48:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "caff89f6c4446de4346ef1e94a7a92f6478caecb",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHDM-1961",
+            "sha": "41816ecca0ba672d7f1435f0f0580c9f31372c23",
+            "label": "akumar074:RHDM-1961"
+          },
+          "user": {
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
+          },
+          "checks": [
+            {
+              "id": 12689198463,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/4677930514/jobs/8286028901",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-12T11:48:59Z",
+              "completed_at": "2023-04-12T11:48:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12689198191,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/4677930514/jobs/8286028681",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-04-12T11:49:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22543736137,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/247/",
+              "conclusion": "pending",
+              "started_at": "2023-04-12T11:48:57Z",
+              "completed_at": "2023-04-12T11:48:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 22543736157,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/249/",
+              "conclusion": "pending",
+              "started_at": "2023-04-12T11:48:57Z",
+              "completed_at": "2023-04-12T11:48:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1374,
           "title": "RHDM-1788: changes related to upgrade of sshd-core 2.9.2",
@@ -13051,7 +13124,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-02-22T14:19:27Z",
-          "updated_at": "2023-04-12T08:11:28Z",
+          "updated_at": "2023-04-12T11:49:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13061,7 +13134,7 @@
           },
           "head": {
             "ref": "RHDM-1961",
-            "sha": "3f1dd15dc1ec6c71299d4f71e408edee8314ecfe",
+            "sha": "df85ce50d662884dcb9ef334d7e5ce6fae7a1b18",
             "label": "akumar074:RHDM-1961"
           },
           "user": {
@@ -13071,66 +13144,44 @@
           },
           "checks": [
             {
-              "id": 12545614033,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/12545614033",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-04-05T17:14:50Z",
-              "completed_at": "2023-04-05T17:14:52Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12545613353,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/12545613353",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-04-05T17:11:11Z",
-              "completed_at": "2023-04-05T17:14:47Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 12543235288,
+              "id": 12689174114,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/4620320106/jobs/8170249778",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-04-05T16:06:11Z",
-              "completed_at": "2023-04-05T18:16:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 12543234970,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/4620320106/jobs/8170249513",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/4677922373/jobs/8286009893",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2023-04-05T15:43:43Z",
-              "completed_at": "2023-04-05T15:43:43Z",
+              "started_at": "2023-04-12T11:47:52Z",
+              "completed_at": "2023-04-12T11:47:52Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 22446084570,
+              "id": 12689173915,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/4677922373/jobs/8286009733",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-04-12T11:47:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22543716913,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/287/",
-              "conclusion": "success",
-              "started_at": "2023-04-05T17:18:48Z",
-              "completed_at": "2023-04-05T17:18:48Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/288/",
+              "conclusion": "pending",
+              "started_at": "2023-04-12T11:47:51Z",
+              "completed_at": "2023-04-12T11:47:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 22446972434,
+              "id": 22543747520,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-common-main.fdb/115/",
-              "conclusion": "success",
-              "started_at": "2023-04-05T18:00:29Z",
-              "completed_at": "2023-04-05T18:00:29Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-common-main.fdb/116/",
+              "conclusion": "pending",
+              "started_at": "2023-04-12T11:49:33Z",
+              "completed_at": "2023-04-12T11:49:33Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
