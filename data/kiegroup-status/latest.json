@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-04-13T21:04:40.413Z",
+    "date": "2023-04-13T22:04:59.829Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4693792908"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4694205556"
   },
   "projects": [
     {
@@ -8512,6 +8512,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2280,
+          "title": "RHPAM-4442: before and after TaskAssignmentsAddedEvent show same user…",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2280",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2280",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-04-13T21:48:03Z",
+          "updated_at": "2023-04-13T21:48:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3e967fb6e1d360d72d7f2f3602a6f2a36c725e12",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "rhpam-4442",
+            "sha": "035e8ab31fd0562a99f51cc0280d7e8b3a020415",
+            "label": "cimbalek:rhpam-4442"
+          },
+          "user": {
+            "login": "cimbalek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12131154?v=4",
+            "html_url": "https://github.com/cimbalek"
+          },
+          "checks": [
+            {
+              "id": 12735949774,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4694100310/jobs/8321891978",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-13T21:48:15Z",
+              "completed_at": "2023-04-13T22:03:48Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12735949585,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4694100310/jobs/8321891865",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-13T21:48:14Z",
+              "completed_at": "2023-04-13T22:03:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22581609048,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/844/",
+              "conclusion": "failure",
+              "started_at": "2023-04-13T22:01:54Z",
+              "completed_at": "2023-04-13T22:01:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2272,
           "title": "[RHPAM-4648]: Error code: 404 on History button for Process Variable of type: org.jbpm.document.DocumentCollection",
