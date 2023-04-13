@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-04-13T08:08:42.267Z",
+    "date": "2023-04-13T09:06:39.117Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4686956949"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687475170"
   },
   "projects": [
     {
@@ -1055,6 +1055,124 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2263,
+          "title": "[BXMSPROD-1930] Change references from droolsjbpm-build-bootstrap",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2263",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2263",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-13T08:42:40Z",
+          "updated_at": "2023-04-13T08:50:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f74140b1de71e2c20b29d708a219d00dd6bbae3b",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-1930_changing_pointers",
+            "sha": "68725fd3524332ca698be1dd17acb3fd253e2668",
+            "label": "bacciotti:BXMSPROD-1930_changing_pointers"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12715778288,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687332915/jobs/8306503534",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-13T08:51:10Z",
+              "completed_at": "2023-04-13T08:51:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12715778065,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687332915/jobs/8306503379",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-13T08:51:02Z",
+              "completed_at": "2023-04-13T08:51:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12715773065,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687332915/jobs/8306499518",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-04-13T08:50:54Z",
+              "completed_at": "2023-04-13T08:50:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12715579000,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687265926/jobs/8306344884",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-13T08:43:06Z",
+              "completed_at": "2023-04-13T08:43:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12715578704,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687265926/jobs/8306344650",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-13T08:42:59Z",
+              "completed_at": "2023-04-13T08:42:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12715573681,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4687265926/jobs/8306340802",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-04-13T08:42:52Z",
+              "completed_at": "2023-04-13T08:42:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22564632172,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/744/",
+              "conclusion": "success",
+              "started_at": "2023-04-13T08:45:26Z",
+              "completed_at": "2023-04-13T08:45:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2254,
           "title": "Bump peter-evans/create-pull-request from 4 to 5",
@@ -5551,7 +5669,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2023-04-13T07:56:20Z",
+      "updated_at": "2023-04-13T08:50:42Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
