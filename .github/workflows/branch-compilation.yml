@@ -39,15 +39,15 @@ jobs:
     name: ${{ matrix.os }} - Java ${{ matrix.java-version }} - Maven
     steps:
       - name: Clean Disk Space
-        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/ubuntu-disk-space@main
+        uses: kiegroup/kie-ci/.ci/actions/ubuntu-disk-space@main
       - name: Java and Maven Setup
-        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/maven@main
+        uses: kiegroup/kie-ci/.ci/actions/maven@main
         with:
           java-version: ${{ github.event.inputs.java-version }}
           maven-version: ${{ github.event.inputs.maven-version }}
           cache-key-prefix: ${{ runner.os }}-${{ github.event.inputs.java-version }}-maven${{ github.event.inputs.maven-version }}
       - name: Build Chain
-        uses: kiegroup/droolsjbpm-build-bootstrap/.ci/actions/build-chain@main
+        uses: kiegroup/kie-ci/.ci/actions/build-chain@main
         with:
           definition-file: https://raw.githubusercontent.com/kiegroup/droolsjbpm-build-bootstrap/main/.ci/compilation-config.yaml
           starting-project: ${{ github.event.inputs.starting-project }}
