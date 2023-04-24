@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-04-24T09:07:00.739Z",
+    "date": "2023-04-24T10:07:34.005Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4784481396"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4785028123"
   },
   "projects": [
     {
@@ -3519,6 +3519,102 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-soup/pulls{/number}",
       "pullRequests": [
         {
+          "number": 268,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-soup/pulls/268",
+          "html_url": "https://github.com/kiegroup/kie-soup/pull/268",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:19Z",
+          "updated_at": "2023-04-24T09:28:00Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "35bea7a00e51a6f10fcc86d98496a031305bfa85",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "9cce1bb4a28eec9efc932bf30d7c18dd94fc89b7",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969820732,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/kie-soup/runs/12969820732",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:28:03Z",
+              "completed_at": "2023-04-24T09:28:05Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969819652,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/kie-soup/runs/12969819652",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:27:04Z",
+              "completed_at": "2023-04-24T09:27:59Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 12969618457,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/4784623627/jobs/8506336736",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:25:53Z",
+              "completed_at": "2023-04-24T09:26:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969618244,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/4784623627/jobs/8506336565",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:24Z",
+              "completed_at": "2023-04-24T09:20:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22739005033,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-soup-main.pr/102/",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:28:42Z",
+              "completed_at": "2023-04-24T09:28:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 248,
           "title": "[JBPM-10028] Use sensible default for fetching rows",
           "url": "https://api.github.com/repos/kiegroup/kie-soup/pulls/248",
@@ -3860,7 +3956,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-04-24T05:40:05Z",
+      "updated_at": "2023-04-24T09:14:43Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -6155,9 +6251,20 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
           "created_at": "2023-04-21T10:37:19Z",
-          "updated_at": "2023-04-21T11:29:31Z",
+          "updated_at": "2023-04-24T09:42:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8536,7 +8643,82 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-uberfire-extensions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-uberfire-extensions/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 133,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-uberfire-extensions/pulls/133",
+          "html_url": "https://github.com/kiegroup/kie-uberfire-extensions/pull/133",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:22Z",
+          "updated_at": "2023-04-24T09:20:23Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "8c51a49bf86c3ac2c5b341a407ec25ea84d3f698",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "e4e222b0cee8572c8139b383a6c747f873648bd9",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969619549,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-uberfire-extensions/actions/runs/4784623957/jobs/8506337569",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:26:06Z",
+              "completed_at": "2023-04-24T09:26:21Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969619336,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-uberfire-extensions/actions/runs/4784623957/jobs/8506337411",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:27Z",
+              "completed_at": "2023-04-24T09:20:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22739061380,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-uberfire-extensions-main.pr/30/",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:31:22Z",
+              "completed_at": "2023-04-24T09:31:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -8606,24 +8788,35 @@
           },
           "checks": [
             {
-              "id": 12969244567,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4784485510/jobs/8506043037",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-04-24T09:07:02Z",
-              "completed_at": null,
+              "id": 12969244871,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4784485510/jobs/8506043266",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:28:09Z",
+              "completed_at": "2023-04-24T09:28:09Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 22738543681,
+              "id": 12969244567,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4784485510/jobs/8506043037",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:27:57Z",
+              "completed_at": "2023-04-24T09:28:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22738545996,
               "name": "Linux - Pull Request",
-              "html_url": "",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/845/",
               "conclusion": "pending",
-              "started_at": "2023-04-24T09:06:59Z",
-              "completed_at": "2023-04-24T09:06:59Z",
-              "slug": "unknown",
+              "started_at": "2023-04-24T09:07:05Z",
+              "completed_at": "2023-04-24T09:07:05Z",
+              "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
@@ -10470,9 +10663,20 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
           "created_at": "2023-04-21T10:47:50Z",
-          "updated_at": "2023-04-21T13:11:47Z",
+          "updated_at": "2023-04-24T09:42:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -12826,6 +13030,102 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-playground/pulls{/number}",
       "pullRequests": [
         {
+          "number": 132,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-playground/pulls/132",
+          "html_url": "https://github.com/kiegroup/kie-wb-playground/pull/132",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:33Z",
+          "updated_at": "2023-04-24T09:20:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2e7fdf1e18f99d453b88db453a20a602f1276cec",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "56c3b3572b0aafea4960109ddfa8cb1a10d7bdf8",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969625951,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/4784625858/jobs/8506342620",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:42Z",
+              "completed_at": "2023-04-24T09:20:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969625706,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/4784625858/jobs/8506342424",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:41Z",
+              "completed_at": "2023-04-24T09:20:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969625463,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/4784625858/jobs/8506342215",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:42Z",
+              "completed_at": "2023-04-24T09:20:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969625198,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-playground/actions/runs/4784625858/jobs/8506342009",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:26:29Z",
+              "completed_at": "2023-04-24T09:28:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22739290225,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-playground-main.pr/41/",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:42:45Z",
+              "completed_at": "2023-04-24T09:42:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 44,
           "title": "PLANNER-878: kie-wb-playground: Projects need to be buildable outside the workbench",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-playground/pulls/44",
@@ -13457,6 +13757,80 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-common",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3806,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3806",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3806",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:25Z",
+          "updated_at": "2023-04-24T09:20:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "4fed01b469ff95486e95421a2c4536ba5f3fd247",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "9dbc7210a6b68813a32eb4ffa3a1cd039df22f8e",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969621263,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/4784624571/jobs/8506338887",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:31Z",
+              "completed_at": "2023-04-24T09:20:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969620980,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/4784624571/jobs/8506338669",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:26:15Z",
+              "completed_at": "2023-04-24T09:27:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22738834433,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/290/",
+              "conclusion": "pending",
+              "started_at": "2023-04-24T09:20:33Z",
+              "completed_at": "2023-04-24T09:20:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3801,
           "title": "RHDM-1788: disable sshd module in testing wildfly container",
@@ -15018,9 +15392,20 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
           "created_at": "2023-04-21T10:47:48Z",
-          "updated_at": "2023-04-21T11:27:59Z",
+          "updated_at": "2023-04-24T09:42:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -15438,6 +15823,80 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 279,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/279",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/279",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:09Z",
+          "updated_at": "2023-04-24T09:20:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3748cba389697ca2e769b5fcc7b59f4117fcf2cf",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "43b37fff9d2abb1d7c37164822e15328147dcc41",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969614458,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4784622207/jobs/8506333675",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:24:52Z",
+              "completed_at": "2023-04-24T09:25:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969614212,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/4784622207/jobs/8506333493",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:15Z",
+              "completed_at": "2023-04-24T09:20:15Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22739502533,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-work-items-main.pr/63/",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:53:14Z",
+              "completed_at": "2023-04-24T09:53:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 278,
           "title": "Bump json from 20140107 to 20230227",
@@ -17965,6 +18424,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1588,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1588",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1588",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:06Z",
+          "updated_at": "2023-04-24T09:20:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7e6f0a5ab0b2126b8801cb3cf896d689fe232f52",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "72cd7e39fae12aa391d6eec173d7eb49bea08f02",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969613063,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4784621725/jobs/8506332587",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:12Z",
+              "completed_at": "2023-04-24T09:20:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969612796,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/4784621725/jobs/8506332399",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:24:05Z",
+              "completed_at": "2023-04-24T09:25:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22738827396,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/174/",
+              "conclusion": "pending",
+              "started_at": "2023-04-24T09:20:11Z",
+              "completed_at": "2023-04-24T09:20:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1587,
           "title": "RHDM-1788: excluding sshd internal module from testing deployment",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1587",
@@ -18311,6 +18844,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 423,
+          "title": "[BXMSPROD-2016] Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls/423",
+          "html_url": "https://github.com/kiegroup/optaplanner-wb/pull/423",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:50:11Z",
+          "updated_at": "2023-04-24T09:50:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5bc0629b52b84bbfa7e02e65699abb660826e878",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "400f613cbf4772307886a61cf5c7ea81075dda58",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12970363473,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/4784879211/jobs/8506914910",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:55:58Z",
+              "completed_at": "2023-04-24T09:56:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12970363195,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/4784879211/jobs/8506914680",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:50:19Z",
+              "completed_at": "2023-04-24T09:50:19Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22739443373,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/optaplanner-wb-main.pr/46/",
+              "conclusion": "pending",
+              "started_at": "2023-04-24T09:50:16Z",
+              "completed_at": "2023-04-24T09:50:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 417,
           "title": "[bot][7.67.x]: Bump kie-parent from 7.67.1-SNAPSHOT to 7.73.0.Final",
           "url": "https://api.github.com/repos/kiegroup/optaplanner-wb/pulls/417",
@@ -18443,7 +19050,82 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 1221,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1221",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1221",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:28Z",
+          "updated_at": "2023-04-24T09:20:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "955e3068df5dbf2bc742bb48016f4fb2e5571dca",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "813c468125896ce9fa15fa23f575e041677235a3",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969623166,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/4784625233/jobs/8506340411",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-04-24T09:20:35Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969622887,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/4784625233/jobs/8506340179",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:35Z",
+              "completed_at": "2023-04-24T09:20:35Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22738835298,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/231/",
+              "conclusion": "pending",
+              "started_at": "2023-04-24T09:20:35Z",
+              "completed_at": "2023-04-24T09:20:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -18656,6 +19338,58 @@
       "repo_url": "https://github.com/kiegroup/process-migration-service",
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 122,
+          "title": "[BXMSPROD-2016] Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/122",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/122",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:50:53Z",
+          "updated_at": "2023-04-24T09:50:53Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3f7d408ac0ef86048807f79fd6571e945289aa53",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "c51d59f2fdb4bc0f2f6b63cbc0a463b5ff615ff1",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 22739724368,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/process-migration-service-main.pr/197/",
+              "conclusion": "success",
+              "started_at": "2023-04-24T10:04:34Z",
+              "completed_at": "2023-04-24T10:04:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 115,
           "title": "Bump minimist, mkdirp and loader-fs-cache in /frontend",
@@ -19721,6 +20455,102 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 77,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/77",
+          "html_url": "https://github.com/kiegroup/kie-jpmml-integration/pull/77",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:16Z",
+          "updated_at": "2023-04-24T09:20:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ee2fd78bd9763f7e31e8a3d5ebb051d94b6a127d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "e002f8da692b613ff0e10264d240c16b36ce4f5c",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969617706,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/4784623186/jobs/8506336157",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:25:41Z",
+              "completed_at": "2023-04-24T09:25:58Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969617468,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/4784623186/jobs/8506335984",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:23Z",
+              "completed_at": "2023-04-24T09:20:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969617190,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/4784623186/jobs/8506335786",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:23Z",
+              "completed_at": "2023-04-24T09:20:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969616943,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/4784623186/jobs/8506335597",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:23Z",
+              "completed_at": "2023-04-24T09:20:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22739052070,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-jpmml-integration-main.pr/36/",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:30:56Z",
+              "completed_at": "2023-04-24T09:30:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 76,
           "title": "Bump to 8.x + Migrate to Junit5 + Remove jBPM modules",
           "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/76",
@@ -19870,6 +20700,80 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4475,
+          "title": "Updating references to the new kie-ci actions folder.",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4475",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4475",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-04-24T09:20:13Z",
+          "updated_at": "2023-04-24T09:20:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0c8f799d7524b4cbd8a3845c733e95a999b0f742",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2016_update_repos_references",
+            "sha": "e6b9da6e34a8d233083866e20743e690adc68fab",
+            "label": "bacciotti:BXMSPROD-2016_update_repos_references"
+          },
+          "user": {
+            "login": "bacciotti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29627826?v=4",
+            "html_url": "https://github.com/bacciotti"
+          },
+          "checks": [
+            {
+              "id": 12969615634,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4784622590/jobs/8506334602",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-04-24T09:25:15Z",
+              "completed_at": "2023-04-24T09:25:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 12969615362,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/4784622590/jobs/8506334386",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-04-24T09:20:18Z",
+              "completed_at": "2023-04-24T09:20:18Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22738893468,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/731/",
+              "conclusion": "success",
+              "started_at": "2023-04-24T09:23:20Z",
+              "completed_at": "2023-04-24T09:23:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
