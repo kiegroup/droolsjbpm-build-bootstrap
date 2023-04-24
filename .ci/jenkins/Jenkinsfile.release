@@ -30,7 +30,7 @@ pipeline {
         timestamps()
     }
     tools {
-        nodejs 'nodejs-12.16.3'
+        nodejs 'nodejs-16.2.0'
         maven mvnTool
         jdk jdkVersion
     }
@@ -385,34 +385,12 @@ pipeline {
                 }
             }
         }
-        stage('Drools binaries upload'){
-            steps{
-                script {
-                    execute {
-                        sshagent(['drools-filemgmt']) {
-                            sh './script/release/10a_drools_upload_filemgmt.sh'
-                        }
-                    }
-                }
-            }
-        }
         stage('Jbpm binaries upload'){
             steps{
                 script {
                     execute {
                         sshagent(['jbpm-filemgmt']) {
                             sh './script/release/10b_jbpm_upload_filemgmt.sh'
-                        }
-                    }
-                }
-            }
-        }
-        stage('Optaplanner binaries upload'){
-            steps{
-                script {
-                    execute {
-                        sshagent(['optaplanner-filemgmt']) {
-                            sh './script/release/10c_optaplanner_upload_filemgmt.sh'
                         }
                     }
                 }
