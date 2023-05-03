@@ -8,8 +8,6 @@ jobs:
     concurrency:
       group: generate-status-page
       cancel-in-progress: true
-    strategy:
-      fail-fast: true
     runs-on: ubuntu-latest
     name: Generate status page
     steps:
