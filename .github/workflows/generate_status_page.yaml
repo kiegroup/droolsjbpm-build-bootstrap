@@ -9,8 +9,6 @@ jobs:
       group: generate-status-page
       cancel-in-progress: true
     strategy:
-      matrix:
-        os: [ubuntu-latest]
       fail-fast: true
     runs-on: ubuntu-latest
     name: Generate status page
