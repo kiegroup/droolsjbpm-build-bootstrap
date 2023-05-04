@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-04T20:12:00.730Z",
+    "date": "2023-05-04T21:04:15.526Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4886836864"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4887310628"
   },
   "projects": [
     {
@@ -8713,6 +8713,75 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2282,
+          "title": "[kie-roadmap#52] Improve LogCleanupCommand, do not delete RequestInfo and ErrorInfo records of active process instances",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2282",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2282",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2023-05-04T20:56:15Z",
+          "updated_at": "2023-05-04T20:56:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "3e967fb6e1d360d72d7f2f3602a6f2a36c725e12",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "kie-roadmap-52",
+            "sha": "404d8190f91606982db5be3413d233a91ff69c16",
+            "label": "martinweiler:kie-roadmap-52"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 13245944811,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4887240596/jobs/8723589052",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-05-04T20:56:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13245944572,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/4887240596/jobs/8723588873",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-05-04T20:56:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22936570681,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/847/",
+              "conclusion": "pending",
+              "started_at": "2023-05-04T20:56:23Z",
+              "completed_at": "2023-05-04T20:56:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2281,
           "title": "Updating references to the new kie-ci actions folder.",
