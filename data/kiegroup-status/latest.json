@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-05T09:58:12.311Z",
+    "date": "2023-05-05T10:49:19.181Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4891756484"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4892245900"
   },
   "projects": [
     {
@@ -1055,6 +1055,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2284,
+          "title": "Bump version.com.thoughtworks.xstream from 1.4.19 to 1.4.20",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2284",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2284",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2023-05-05T10:10:28Z",
+          "updated_at": "2023-05-05T10:10:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "305fea787b0638f201882be8c43d2e9095befc69",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "maven/version.com.thoughtworks.xstream-1.4.20-7.67.x-blue",
+            "sha": "cbd3ee7d5b1c416dfa315e553530520293e2d741",
+            "label": "Ginxo:maven/version.com.thoughtworks.xstream-1.4.20-7.67.x-blue"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 13258925955,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4892280835/jobs/8733856041",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-05-05T10:10:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13258925795,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4892280835/jobs/8733855910",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-05T10:10:33Z",
+              "completed_at": "2023-05-05T10:10:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22945420008,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/72/",
+              "conclusion": "success",
+              "started_at": "2023-05-05T10:16:10Z",
+              "completed_at": "2023-05-05T10:16:10Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2278,
           "title": "Bump jetty-server from 9.4.48.v20220622 to 11.0.14",
@@ -4054,7 +4123,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-05-05T01:51:12Z",
+      "updated_at": "2023-05-05T09:59:30Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -8743,12 +8812,12 @@
           },
           "checks": [
             {
-              "id": 22942962350,
+              "id": 22945153867,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/848/",
-              "conclusion": "pending",
-              "started_at": "2023-05-05T07:39:07Z",
-              "completed_at": "2023-05-05T07:39:07Z",
+              "conclusion": "failure",
+              "started_at": "2023-05-05T09:59:31Z",
+              "completed_at": "2023-05-05T09:59:31Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
