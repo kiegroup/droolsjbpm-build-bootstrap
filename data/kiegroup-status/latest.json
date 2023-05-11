@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-11T07:05:34.364Z",
+    "date": "2023-05-11T08:26:24.600Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4944961583"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4945499752"
   },
   "projects": [
     {
@@ -5914,7 +5914,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2023-05-11T05:02:49Z",
+      "updated_at": "2023-05-11T07:21:16Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -5923,27 +5923,28 @@
       "pullRequests": [
         {
           "number": 2822,
-          "title": "[CVE-2022-1471][7.67.x]  org.yaml.snakeyaml excluded from optaplanner-spring-boot-school-timetabling-quickstart",
+          "title": "[CVE-2022-1471][7.x]  org.yaml.snakeyaml excluded from optaplanner-spring-boot-school-timetabling-quickstart",
           "url": "https://api.github.com/repos/kiegroup/optaplanner/pulls/2822",
           "html_url": "https://github.com/kiegroup/optaplanner/pull/2822",
           "state": "open",
           "labels": [
+            "backport-7.67.x",
             "backport-7.67.x-blue"
           ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-05-11T06:54:09Z",
-          "updated_at": "2023-05-11T06:55:01Z",
+          "updated_at": "2023-05-11T07:55:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "7.67.x",
-            "sha": "105cfc16415b9a77f6b87cd8577fee1fc058b6a2",
-            "label": "kiegroup:7.67.x"
+            "ref": "7.x",
+            "sha": "1b461c45998d00d69f5b58b875dea84689870674",
+            "label": "kiegroup:7.x"
           },
           "head": {
             "ref": "RHPAM-4700",
-            "sha": "4badc233f564f72fd0479ebf0a13cb9fbeae4957",
+            "sha": "70f7c6d32e2f535e932fe5688c89b0158731b3b4",
             "label": "Ginxo:RHPAM-4700"
           },
           "user": {
@@ -5953,56 +5954,34 @@
           },
           "checks": [
             {
-              "id": 13394473668,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/4944873854/jobs/8840845424",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-05-11T06:56:11Z",
-              "completed_at": null,
-              "slug": "github-actions",
+              "id": 13395930922,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/13395930922",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-11T07:55:20Z",
+              "completed_at": "2023-05-11T07:55:21Z",
+              "slug": "github-code-scanning",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 13394473513,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/4944873854/jobs/8840845293",
+              "id": 13395930251,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/13395930251",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2023-05-11T06:54:17Z",
-              "completed_at": "2023-05-11T06:54:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "started_at": "2023-05-11T07:53:22Z",
+              "completed_at": "2023-05-11T07:55:17Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
             },
             {
-              "id": 13394473351,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/4944873854/jobs/8840845164",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-05-11T06:54:17Z",
-              "completed_at": "2023-05-11T06:54:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13394473181,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/4944873854/jobs/8840845029",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-05-11T06:54:17Z",
-              "completed_at": "2023-05-11T06:54:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23039246498,
+              "id": 23040209838,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/optaplanner-7.67.x.pr/2/",
-              "conclusion": "pending",
-              "started_at": "2023-05-11T06:54:14Z",
-              "completed_at": "2023-05-11T06:54:14Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/optaplanner-7.x.pr/37/",
+              "conclusion": "success",
+              "started_at": "2023-05-11T07:56:01Z",
+              "completed_at": "2023-05-11T07:56:01Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
