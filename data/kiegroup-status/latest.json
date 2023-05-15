@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-15T09:06:40.811Z",
+    "date": "2023-05-15T10:06:41.625Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4978550830"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/4979091007"
   },
   "projects": [
     {
@@ -1068,7 +1068,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-05-10T08:27:46Z",
-          "updated_at": "2023-05-15T08:32:12Z",
+          "updated_at": "2023-05-15T09:32:04Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3889,6 +3889,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 5233,
+          "title": "[DROOLS-7444] join constraints are ignored when BigDecimal equality i…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5233",
+          "html_url": "https://github.com/kiegroup/drools/pull/5233",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-05-15T09:43:58Z",
+          "updated_at": "2023-05-15T09:43:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "bc7bb4fab99fb4f735a01894fe4c80669de2d216",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-7444-BigDecimalBeta",
+            "sha": "10caf9689dff4a61de630ee1ae33e98e25397de3",
+            "label": "tkobayas:DROOLS-7444-BigDecimalBeta"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 13480109583,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4978896649/jobs/8909798433",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-05-15T09:44:16Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13480109334,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4978896649/jobs/8909798250",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-15T09:44:07Z",
+              "completed_at": "2023-05-15T09:44:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13480109097,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4978896649/jobs/8909798091",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-15T09:44:07Z",
+              "completed_at": "2023-05-15T09:44:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13480108821,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/4978896649/jobs/8909797896",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-15T09:44:07Z",
+              "completed_at": "2023-05-15T09:44:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23093661586,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/426/",
+              "conclusion": "pending",
+              "started_at": "2023-05-15T09:44:07Z",
+              "completed_at": "2023-05-15T09:44:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23093661594,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/417/",
+              "conclusion": "pending",
+              "started_at": "2023-05-15T09:44:07Z",
+              "completed_at": "2023-05-15T09:44:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4634,
           "title": "[BXMSPROD-1770] Added OS Preparation",
