@@ -16,7 +16,7 @@ default:
       ${{ env.CREATE_COMMAND }}
       ${{ env.PUSH_COMMAND }}
 build:
-  - project: kiegroup/droolsjbpm-build-bootstrap
+  - project: kiegroup/lienzo-core
     build-command:
       before:
         current: |
@@ -24,8 +24,8 @@ build:
           echo "BASE_BRANCH= " ${{ env.B_BRANCH }}
           echo "R_BRANCH_EXIST= " ${{ env.R_BRANCH_EXIST }}
           echo "CHECKOUT_BRANCH= " ${{ env.CHECKOUT_BRANCH }}
-          ./script/release/eraseM2.sh ${{ env.MAVEN_DIR }}
-          ./script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }} community
+          ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/eraseM2.sh ${{ env.MAVEN_DIR }}
+          ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }} community
       current: |
         ${{ env.COMMIT_COMMAND }}
         ${{ env.CREATE_COMMAND }}
