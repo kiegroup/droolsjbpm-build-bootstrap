@@ -1,6 +1,6 @@
 version: "2.1"
 
-dependencies: ./project-dependencies.yaml
+dependencies: ./release-project-dependencies.yaml
 
 pre: |
   export COMMIT_COMMAND=git commit -am ${{ env.COM_MSG }}
