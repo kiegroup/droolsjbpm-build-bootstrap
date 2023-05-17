@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-17T13:08:58.651Z",
+    "date": "2023-05-17T14:22:19.921Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5003599718"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5004174306"
   },
   "projects": [
     {
@@ -1056,6 +1056,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2292,
+          "title": "leftovers for 7.x releases using build-chain",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2292",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2292",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-05-17T14:14:39Z",
+          "updated_at": "2023-05-17T14:14:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a62c8edb55011c137729f98c90df8fbf2943df94",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "release-tags-push",
+            "sha": "fd6766d0ad89500bca2bf964f753c82edc2f90b3",
+            "label": "mbiarnes:release-tags-push"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 13553113224,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5004285918/jobs/8966659938",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-05-17T14:14:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23149168971,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/772/",
+              "conclusion": "success",
+              "started_at": "2023-05-17T14:15:50Z",
+              "completed_at": "2023-05-17T14:15:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2291,
           "title": "upgraded version.org.wildfly.security property to 1.15.16.Final",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2291",
@@ -1290,7 +1353,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-05-17T12:40:09Z",
-          "updated_at": "2023-05-17T12:40:26Z",
+          "updated_at": "2023-05-17T13:30:26Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1377,7 +1440,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-05-10T08:27:46Z",
-          "updated_at": "2023-05-17T12:57:55Z",
+          "updated_at": "2023-05-17T13:31:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6267,6 +6330,124 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/optaplanner/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2832,
+          "title": "pairing snakeyaml test bump for quickstart",
+          "url": "https://api.github.com/repos/kiegroup/optaplanner/pulls/2832",
+          "html_url": "https://github.com/kiegroup/optaplanner/pull/2832",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-05-17T13:29:18Z",
+          "updated_at": "2023-05-17T13:49:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "1b461c45998d00d69f5b58b875dea84689870674",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "tarilabs-20230517",
+            "sha": "023d293f7859ab0d028b8db7448f5e754226d1b9",
+            "label": "tarilabs:tarilabs-20230517"
+          },
+          "user": {
+            "login": "tarilabs",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1699252?v=4",
+            "html_url": "https://github.com/tarilabs"
+          },
+          "checks": [
+            {
+              "id": 13552278939,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/13552278939",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-17T13:49:33Z",
+              "completed_at": "2023-05-17T13:49:35Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13552277499,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/optaplanner/runs/13552277499",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-17T13:47:33Z",
+              "completed_at": "2023-05-17T13:49:29Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 13551654602,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/5003818743/jobs/8965541568",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-17T13:29:37Z",
+              "completed_at": "2023-05-17T13:58:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13551654385,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/5003818743/jobs/8965541407",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-17T13:29:25Z",
+              "completed_at": "2023-05-17T13:29:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13551654161,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/5003818743/jobs/8965541236",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-17T13:29:25Z",
+              "completed_at": "2023-05-17T13:29:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13551653911,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/5003818743/jobs/8965541073",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-17T13:29:25Z",
+              "completed_at": "2023-05-17T13:29:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13551653862,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/optaplanner/actions/runs/5003818733/jobs/8965541031",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-17T13:29:31Z",
+              "completed_at": "2023-05-17T13:33:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23148474784,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/optaplanner-7.x.pr/38/",
+              "conclusion": "success",
+              "started_at": "2023-05-17T13:50:07Z",
+              "completed_at": "2023-05-17T13:50:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2822,
           "title": "[CVE-2022-1471][7.x]  org.yaml.snakeyaml excluded from optaplanner-spring-boot-school-timetabling-quickstart",
           "url": "https://api.github.com/repos/kiegroup/optaplanner/pulls/2822",
@@ -11042,11 +11223,13 @@
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2955",
           "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2955",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "do not merge"
+          ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-05-17T08:12:39Z",
-          "updated_at": "2023-05-17T12:48:02Z",
+          "updated_at": "2023-05-17T14:05:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
