@@ -57,7 +57,7 @@ if [ $# != 1 ] && [ $# != 2 ]; then
     echo "Usage:"
     echo "  $0 newVersion releaseType"
     echo "For example:"
-    echo "  $0 7.5.0.Final community"
+    echo "  $0 7.74.0.Final community"
     echo
     exit 1
 fi
