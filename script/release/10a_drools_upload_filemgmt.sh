@@ -44,33 +44,8 @@ rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/drools-d
 rsync -Pavqr -e 'ssh -p 2222' --protocol=28 --delete-after ${uploadDir}/kie-api-javadoc/* ${rsync_filemgmt}:${droolsDocs}/${kieVersion}/kie-api-javadoc
 
 
-# make filemgmt symbolic links for drools
-mkdir filemgmt_links
-cd filemgmt_links
-
-###############################################################################
-# latest drools links
-###############################################################################
-touch ${kieVersion}
-ln -s ${kieVersion} latest
-
-echo "Uploading normal links..."
-rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latest $rsync_filemgmt:/$droolsDocs
-rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latest $rsync_filemgmt:/$droolsHtdocs
-
-###############################################################################
-# latestFinal drools links
-###############################################################################
-if [[ "${kieVersion}" == *Final* ]]; then
-    ln -s ${kieVersion} latestFinal
-    echo "Uploading Final links..."
-    rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $rsync_filemgmt:/$droolsDocs
-    rsync -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --protocol=28 -a latestFinal $rsync_filemgmt:/$droolsHtdocs
-fi
-
 # remove files and directories for uploading drools
 cd ..
 rm -rf create_version
 rm -rf create_*_dir
 rm -rf upload_binaries
-rm -rf filemgmt_links

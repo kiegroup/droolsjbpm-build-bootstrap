@@ -229,7 +229,7 @@ pipeline {
                             script {
                                 env.repoID = sh(script: """curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]' """, returnStdout: true).trim()
                                 echo "repoID: ${repoID}"
-                                def repositories=['dashbuilder', 'drools', 'jbpm', 'uberfire', 'optaplanner']
+                                def repositories=['dashbuilder', 'drools', 'jbpm', 'uberfire']
                                 repositories.each{ repo ->
                                     sh "zip -qr ${repo}.zip org/${repo}"
                                     sh """curl --silent --upload-file ${repo}.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0" """
@@ -374,6 +374,17 @@ pipeline {
                 ])
                 sh "tar -xzvf ${kieVersion}_uploadBinaries.tar.gz"
                 sh 'ls -al'
+            }
+        }
+        stage('Drools binaries upload'){
+            steps{
+                script {
+                    execute {
+                        sshagent(['drools-filemgmt']) {
+                            sh './script/release/10a_drools_upload_filemgmt.sh'
+                        }
+                    }
+                }
             }
         }
         stage('Create jbpm installers') {
