@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-19T09:06:18.006Z",
+    "date": "2023-05-19T10:05:58.767Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5022662764"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5023149520"
   },
   "projects": [
     {
@@ -1055,6 +1055,96 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2297,
+          "title": "fixes for build-chain v3",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2297",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2297",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-05-19T09:55:08Z",
+          "updated_at": "2023-05-19T09:55:08Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "7973d3e0544306497ac99d6056ee228ef0fc5fb4",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "buildchain-v3",
+            "sha": "73c54a37165b408e32a61a48de8e31d0e6b6da5d",
+            "label": "mbiarnes:buildchain-v3"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 13605481637,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5023057645/jobs/9007229154",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-05-19T09:55:25Z",
+              "completed_at": "2023-05-19T09:55:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13605481487,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5023057645/jobs/9007229027",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-19T09:55:31Z",
+              "completed_at": "2023-05-19T10:00:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13605478197,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5023057645/jobs/9007226535",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-19T09:55:19Z",
+              "completed_at": "2023-05-19T09:55:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23188954673,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/774/",
+              "conclusion": "success",
+              "started_at": "2023-05-19T09:59:47Z",
+              "completed_at": "2023-05-19T09:59:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2296,
           "title": "[DO-NOT-MERGE] [RHPAM-4700] snakeyaml from 1.32 to 2.0",
