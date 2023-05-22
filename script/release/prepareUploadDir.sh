@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # fetch the <version.org.kie> from kie-parent-metadata pom.xml and set it on parameter KIE_VERSION
-kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' bc/kiegroup_droolsjbpm_build_bootstrap/pom.xml)
+kieVersion=$(sed -e 's/^[ \t]*//' -e 's/[ \t]*$//' -n -e 's/<version.org.kie>\(.*\)<\/version.org.kie>/\1/p' bc/kiegroup_droolsjbpm-build-bootstrap/pom.xml)
 echo "kieVersion = "$kieVersion
 deployDir=../community-deploy-dir
 
@@ -39,4 +39,4 @@ cp $deployDir/org/kie/jbpm-server-distribution/$kieVersion/jbpm-server-distribut
 
 # copies binaries + docs that are only available in /target directories - they are not deployed
 mkdir service-repository
-cp -r ../bc/kiegroup_jbpm_work_items/repository/target/repository-$kieVersion/* service-repository
+cp -r ../bc/kiegroup_jbpm-work-items/repository/target/repository-$kieVersion/* service-repository

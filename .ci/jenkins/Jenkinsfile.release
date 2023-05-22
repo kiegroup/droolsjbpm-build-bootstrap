@@ -151,14 +151,14 @@ pipeline {
         stage('Build projects') {
             when{
                 expression { runBuild == 'YES'}
-            }          
+            }
             steps {
                 script {
                     def buildChainActionInfo = [action: 'branch', file: 'release-config.yaml']
                     def SETTINGS_XML_ID = '771ff52a-a8b4-40e6-9b22-d54c7314aa1e'
                     configFileProvider([configFile(fileId: SETTINGS_XML_ID, variable: 'MAVEN_SETTINGS_FILE')]) {
                         withCredentials([string(credentialsId: 'kie-ci5-token', variable: 'GITHUB_TOKEN')]) {
-                            sh "build-chain build branch ${buildChainActionInfo.action} -token=${GITHUB_TOKEN} -df 'https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -o 'bc' -p '${buildChainGroup}/droolsjbpm-build-bootstrap' -b '${env.CHECKOUT_BRANCH}' --fullProjectDependencyTree --skipParallelCheckout -cct '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true'"
+                            sh "build-chain build ${buildChainActionInfo.action} --token=${GITHUB_TOKEN} -f 'https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -o 'bc' -p '${buildChainGroup}/droolsjbpm-build-bootstrap' -b '${env.CHECKOUT_BRANCH}' --fullProjectDependencyTree --skipParallelCheckout -t '(^mvn .*)||\$1 -s ${MAVEN_SETTINGS_FILE} -Dkie.maven.settings.custom=${MAVEN_SETTINGS_FILE} -Dmaven.wagon.http.ssl.insecure=true'"
                         }
                     }
                 }
@@ -229,7 +229,7 @@ pipeline {
                             script {
                                 env.repoID = sh(script: """curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]' """, returnStdout: true).trim()
                                 echo "repoID: ${repoID}"
-                                def repositories=['dashbuilder', 'drools', 'jbpm', 'uberfire']
+                                def repositories=['dashbuilder', 'drools', 'kie', 'jbpm', 'uberfire']
                                 repositories.each{ repo ->
                                     sh "zip -qr ${repo}.zip org/${repo}"
                                     sh """curl --silent --upload-file ${repo}.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0" """
@@ -322,7 +322,7 @@ pipeline {
                     script {
                         def buildChainActionInfo = [action: 'branch', file: 'create-push-tags.yaml']
                         withCredentials([string(credentialsId: 'kie-ci5-token', variable: 'GITHUB_TOKEN')]) {
-                            sh "build-chain build branch ${buildChainActionInfo.action} -token=${GITHUB_TOKEN} -df 'https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -o 'bc' -p '${buildChainGroup}/droolsjbpm-build-bootstrap' -b '${env.CHECKOUT_BRANCH}' --fullProjectDependencyTree --skipParallelCheckout"
+                            sh "build-chain build ${buildChainActionInfo.action} --token=${GITHUB_TOKEN} -f 'https://raw.githubusercontent.com/${buildChainGroup}/droolsjbpm-build-bootstrap/${buildChainBranch}/.ci/${buildChainActionInfo.file}' -o 'bc' -p '${buildChainGroup}/droolsjbpm-build-bootstrap' -b '${env.CHECKOUT_BRANCH}' --fullProjectDependencyTree --skipParallelCheckout"
                         }
                     }
                 }
