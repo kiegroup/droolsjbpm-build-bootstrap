@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-26T10:06:45.284Z",
+    "date": "2023-05-26T11:04:20.807Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5089644139"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5090112035"
   },
   "projects": [
     {
@@ -8094,14 +8094,13 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2285,
-          "title": "[JBPM-10172] Same id used for timers when using per request",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2285",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2285",
+          "number": 2287,
+          "title": "[7.67.x-blue] [JBPM-10172] Same id used for timers when using per request",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2287",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2287",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
@@ -8109,127 +8108,76 @@
               "login": "krisv",
               "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
               "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
             }
           ],
-          "created_at": "2023-05-23T14:47:14Z",
-          "updated_at": "2023-05-25T15:26:19Z",
+          "created_at": "2023-05-26T10:25:38Z",
+          "updated_at": "2023-05-26T10:25:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "3e967fb6e1d360d72d7f2f3602a6f2a36c725e12",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "570983065b93f4c5ada31c8d7c86ad9a27e99b97",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "JBPM-10172",
-            "sha": "08e026bb9b21e02d09005952caa6c8c647780482",
-            "label": "fjtirado:JBPM-10172"
+            "ref": "7.67.x-blue_JBPM-10172",
+            "sha": "5e91e71dff5c1d12b6944b2d4cdc0727d6bf839a",
+            "label": "kiegroup:7.67.x-blue_JBPM-10172"
           },
           "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 2286,
+          "title": "[7.67.x] [JBPM-10172] Same id used for timers when using per request",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2286",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2286",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 13761317990,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5081757224/jobs/9130562935",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-05-25T15:26:24Z",
-              "completed_at": "2023-05-25T15:26:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
             },
             {
-              "id": 13761317966,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5081757217/jobs/9130562914",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-05-25T15:26:24Z",
-              "completed_at": "2023-05-25T15:26:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13761317573,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5081757217/jobs/9130562605",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-05-25T15:26:23Z",
-              "completed_at": "2023-05-25T15:26:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13761317569,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5081757224/jobs/9130562600",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-05-25T15:26:23Z",
-              "completed_at": "2023-05-25T15:26:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13760498708,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/13760498708",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-05-25T15:01:43Z",
-              "completed_at": "2023-05-25T15:01:45Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13760497651,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/13760497651",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-05-25T15:00:24Z",
-              "completed_at": "2023-05-25T15:01:40Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 13757519355,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5080537268/jobs/9127634048",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-05-25T14:03:56Z",
-              "completed_at": "2023-05-25T15:52:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13757519086,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5080537268/jobs/9127633839",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-05-25T14:09:30Z",
-              "completed_at": "2023-05-25T16:08:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23296422341,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/863/",
-              "conclusion": "success",
-              "started_at": "2023-05-25T15:01:56Z",
-              "completed_at": "2023-05-25T15:01:56Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
             }
-          ]
+          ],
+          "created_at": "2023-05-26T10:25:27Z",
+          "updated_at": "2023-05-26T10:25:29Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "e410a503709bb3f4799031647a0bd7176835c644",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10172",
+            "sha": "b27793359e6087fd087c5b0bb9cb26cd2668cfd4",
+            "label": "kiegroup:7.67.x_JBPM-10172"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2284,
@@ -10406,9 +10354,15 @@
             "backport-7.67.x-blue"
           ],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
           "created_at": "2023-05-24T15:30:33Z",
-          "updated_at": "2023-05-26T01:08:21Z",
+          "updated_at": "2023-05-26T10:57:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10516,12 +10470,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23307329709,
+              "id": 23314077976,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1127/",
-              "conclusion": "failure",
-              "started_at": "2023-05-26T01:09:57Z",
-              "completed_at": "2023-05-26T01:09:57Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1128/",
+              "conclusion": "pending",
+              "started_at": "2023-05-26T10:56:58Z",
+              "completed_at": "2023-05-26T10:56:58Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
