@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-26T13:08:35.933Z",
+    "date": "2023-05-26T14:15:26.101Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5091181951"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5091696211"
   },
   "projects": [
     {
@@ -1055,59 +1055,6 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 2300,
-          "title": "[7.67.x-blue] [RHPAM-4700] snakeyaml from 1.32 to 2.0",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2300",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2300",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-05-23T11:38:39Z",
-          "updated_at": "2023-05-24T07:51:59Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "72318ba1619dc0bad71dcbfc496e9ed3d16e9666",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_RHPAM-4700-tkobayas",
-            "sha": "500628e62eb45d5301be2998516d6fd1b428856f",
-            "label": "kiegroup:7.67.x-blue_RHPAM-4700-tkobayas"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 23246021897,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/74/",
-              "conclusion": "success",
-              "started_at": "2023-05-23T14:34:52Z",
-              "completed_at": "2023-05-23T14:34:52Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 23254895721,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/92/",
-              "conclusion": "success",
-              "started_at": "2023-05-23T21:00:43Z",
-              "completed_at": "2023-05-23T21:00:43Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 2299,
           "title": "[7.67.x] [RHPAM-4700] snakeyaml from 1.32 to 2.0",
@@ -2671,7 +2618,7 @@
               "sha": "c00b8842b4fc4fbd8d7ff5a222d4c8a481f35c1c"
             },
             {
-              "sha": "482694149a1da38d07faa058fe24816184e4f0bb"
+              "sha": "43325d4001efe35e0fd89c1606b72a55bd9d7f13"
             },
             {
               "sha": "5fbae34faad668ea0152c248d8313f7f09463469"
@@ -5659,10 +5606,10 @@
               "id": 13786478901,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/5079268328/jobs/9150288443",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-05-26T12:45:04Z",
-              "completed_at": null,
+              "completed_at": "2023-05-26T13:31:11Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -10362,7 +10309,7 @@
             }
           ],
           "created_at": "2023-05-24T15:30:33Z",
-          "updated_at": "2023-05-26T11:10:03Z",
+          "updated_at": "2023-05-26T13:32:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10382,13 +10329,35 @@
           },
           "checks": [
             {
+              "id": 13787909441,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/13787909441",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-26T13:32:36Z",
+              "completed_at": "2023-05-26T13:32:38Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13787904624,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/13787904624",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-05-26T13:30:29Z",
+              "completed_at": "2023-05-26T13:32:26Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
               "id": 13784388134,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5090166691/jobs/9148655352",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-05-26T11:10:15Z",
-              "completed_at": null,
+              "completed_at": "2023-05-26T14:14:26Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -10396,85 +10365,20 @@
               "id": 13784387935,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5090166691/jobs/9148655194",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2023-05-26T11:10:14Z",
-              "completed_at": null,
+              "completed_at": "2023-05-26T14:15:02Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23314300771,
+              "id": 23316760274,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1129/",
-              "conclusion": "pending",
-              "started_at": "2023-05-26T11:10:08Z",
-              "completed_at": "2023-05-26T11:10:08Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2963,
-          "title": "[7.67.x-blue] [RHPAM-4700] upgrade snakeyaml",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2963",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2963",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-05-23T11:41:21Z",
-          "updated_at": "2023-05-26T11:21:51Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "e696cae1e5503119d474f3740ee394aff44c2d54",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_RHPAM-4700-tkobayas",
-            "sha": "c6ec6132b4f594c7df36c38342d1b042d25c92b2",
-            "label": "kiegroup:7.67.x-blue_RHPAM-4700-tkobayas"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 13784654529,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/13784654529",
-              "status": "completed",
               "conclusion": "success",
-              "started_at": "2023-05-26T11:21:52Z",
-              "completed_at": "2023-05-26T11:21:53Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 13784653806,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/13784653806",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-05-26T11:18:50Z",
-              "completed_at": "2023-05-26T11:21:49Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 23314505082,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/87/",
-              "conclusion": "success",
-              "started_at": "2023-05-26T11:23:20Z",
-              "completed_at": "2023-05-26T11:23:20Z",
+              "started_at": "2023-05-26T13:34:09Z",
+              "completed_at": "2023-05-26T13:34:09Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
