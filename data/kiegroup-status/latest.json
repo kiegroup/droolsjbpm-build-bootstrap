@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-05-31T09:06:50.868Z",
+    "date": "2023-05-31T10:06:39.531Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5130969419"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5131536375"
   },
   "projects": [
     {
@@ -1755,7 +1755,7 @@
             }
           ],
           "created_at": "2023-04-14T17:10:22Z",
-          "updated_at": "2023-05-31T08:26:23Z",
+          "updated_at": "2023-05-31T09:29:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7524,12 +7524,12 @@
           },
           "checks": [
             {
-              "id": 23375690001,
+              "id": 23377646414,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/59/",
-              "conclusion": "pending",
-              "started_at": "2023-05-31T08:25:18Z",
-              "completed_at": "2023-05-31T08:25:18Z",
+              "conclusion": "failure",
+              "started_at": "2023-05-31T10:01:47Z",
+              "completed_at": "2023-05-31T10:01:47Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7578,12 +7578,12 @@
           },
           "checks": [
             {
-              "id": 23375683580,
+              "id": 23377712252,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/115/",
-              "conclusion": "pending",
-              "started_at": "2023-05-31T08:24:57Z",
-              "completed_at": "2023-05-31T08:24:57Z",
+              "conclusion": "failure",
+              "started_at": "2023-05-31T10:04:48Z",
+              "completed_at": "2023-05-31T10:04:48Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9668,6 +9668,69 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2968,
+          "title": "changed test conversion Integer value",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2968",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2968",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-05-31T09:28:19Z",
+          "updated_at": "2023-05-31T09:28:19Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "eab88c42690d7739019fcba7bd463ab09712a283",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "dependabot/maven/org.json-json-20230227",
+            "sha": "25df65c668b409c5de5a0491a9b7884d6fe5428b",
+            "label": "kiegroup:dependabot/maven/org.json-json-20230227"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 13887140009,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5131187126/jobs/9230941595",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-05-31T09:30:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13887139811,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5131187126/jobs/9230941450",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-05-31T09:30:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23376954089,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1136/",
+              "conclusion": "pending",
+              "started_at": "2023-05-31T09:28:23Z",
+              "completed_at": "2023-05-31T09:28:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2967,
           "title": "Ensure elytron is on the classpath before using it",
