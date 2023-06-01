@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-06-01T10:07:18.744Z",
+    "date": "2023-06-01T11:11:22.341Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5143028356"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5143537774"
   },
   "projects": [
     {
@@ -7576,7 +7576,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-06-01T09:07:59Z",
-          "updated_at": "2023-06-01T09:07:59Z",
+          "updated_at": "2023-06-01T10:58:40Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7595,6 +7595,28 @@
             "html_url": "https://github.com/fjtirado"
           },
           "checks": [
+            {
+              "id": 13922249712,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/13922249712",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-01T10:48:00Z",
+              "completed_at": "2023-06-01T10:48:01Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13922249093,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/13922249093",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-01T10:46:29Z",
+              "completed_at": "2023-06-01T10:47:57Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 13919570963,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -7618,66 +7640,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23401299126,
+              "id": 23403258143,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/864/",
-              "conclusion": "pending",
-              "started_at": "2023-06-01T09:08:07Z",
-              "completed_at": "2023-06-01T09:08:07Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2287,
-          "title": "[7.67.x-blue] [JBPM-10172] Same id used for timers when using per request",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2287",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2287",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "krisv",
-              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
-              "html_url": "https://github.com/krisv"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2023-05-26T10:25:38Z",
-          "updated_at": "2023-06-01T08:56:06Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "570983065b93f4c5ada31c8d7c86ad9a27e99b97",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_JBPM-10172",
-            "sha": "5e91e71dff5c1d12b6944b2d4cdc0727d6bf839a",
-            "label": "kiegroup:7.67.x-blue_JBPM-10172"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 23401049825,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/60/",
-              "conclusion": "pending",
-              "started_at": "2023-06-01T08:56:09Z",
-              "completed_at": "2023-06-01T08:56:09Z",
+              "conclusion": "failure",
+              "started_at": "2023-06-01T10:48:19Z",
+              "completed_at": "2023-06-01T10:48:19Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7706,7 +7674,7 @@
             }
           ],
           "created_at": "2023-05-26T10:25:27Z",
-          "updated_at": "2023-06-01T08:56:25Z",
+          "updated_at": "2023-06-01T10:54:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7726,12 +7694,12 @@
           },
           "checks": [
             {
-              "id": 23401055638,
+              "id": 23403363713,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/116/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/117/",
               "conclusion": "pending",
-              "started_at": "2023-06-01T08:56:27Z",
-              "completed_at": "2023-06-01T08:56:27Z",
+              "started_at": "2023-06-01T10:54:20Z",
+              "completed_at": "2023-06-01T10:54:20Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8975,7 +8943,7 @@
               "sha": "a4e850283255dc127ed7878d415f472d3e81694d"
             },
             {
-              "sha": "609c9fb9865766815908e0642c7df4eb7cde77a0"
+              "sha": "0b4f07adb817836076a641858e5c6c1db2ab1a21"
             },
             {
               "sha": "9041f24388a061993d6925a550187d0bf36a3129"
@@ -9231,6 +9199,9 @@
             },
             {
               "sha": "a40f887c803038ba3ab7b0a86fb0220f594647b6"
+            },
+            {
+              "sha": "2616c27c030ba10415dd3b38ee03fa9426d7eb57"
             },
             {
               "sha": "05b73f3239182cf75b0dffcc11412b76d52b7dc9"
@@ -9817,92 +9788,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2970,
-          "title": "[7.67.x-blue] [JBPM-10172] Add test for PER_REQUEST strategy and timers after async",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2970",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2970",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2023-06-01T09:20:43Z",
-          "updated_at": "2023-06-01T09:20:45Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "31b2a042fc6d73451af6027648baf9234fd6cef1",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_JBPM-10172",
-            "sha": "98c4e12b78a2c334b7c8e8b0ddd425e1583a23e6",
-            "label": "kiegroup:7.67.x-blue_JBPM-10172"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
-        },
-        {
-          "number": 2969,
-          "title": "[7.67.x] [JBPM-10172] Add test for PER_REQUEST strategy and timers after async",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2969",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2969",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2023-06-01T09:20:21Z",
-          "updated_at": "2023-06-01T09:20:24Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "facf6e5d72e096903f63ca1c6c8b4af9ba8156ea",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x_JBPM-10172",
-            "sha": "e393f9e020e972592cf788f5a1e683f939a7207e",
-            "label": "kiegroup:7.67.x_JBPM-10172"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
-        },
-        {
           "number": 2967,
           "title": "Ensure elytron is on the classpath before using it",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2967",
@@ -9918,7 +9803,7 @@
             }
           ],
           "created_at": "2023-05-30T07:34:12Z",
-          "updated_at": "2023-06-01T07:43:03Z",
+          "updated_at": "2023-06-01T10:57:32Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9937,6 +9822,28 @@
             "html_url": "https://github.com/lampajr"
           },
           "checks": [
+            {
+              "id": 13921350574,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/13921350574",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-01T10:12:19Z",
+              "completed_at": "2023-06-01T10:12:20Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 13921349387,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/13921349387",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-06-01T10:10:08Z",
+              "completed_at": "2023-06-01T10:12:15Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 13917292297,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -9960,12 +9867,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23399742351,
+              "id": 23402639048,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1140/",
+              "conclusion": "success",
+              "started_at": "2023-06-01T10:13:49Z",
+              "completed_at": "2023-06-01T10:13:49Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23403412738,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-integration-main.fdb/125/",
               "conclusion": "pending",
-              "started_at": "2023-06-01T07:43:11Z",
-              "completed_at": "2023-06-01T07:43:11Z",
+              "started_at": "2023-06-01T10:57:16Z",
+              "completed_at": "2023-06-01T10:57:16Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -12129,6 +12046,21 @@
               "sha": "29f8ab7cec64885ddafcc8da5ce5729528336508"
             },
             {
+              "sha": "c28a242d98b0963632acdcd8835c3ba77678fa08"
+            },
+            {
+              "sha": "1bb8bf6d7fd4c8d09aea89b47de20fb8bbb61626"
+            },
+            {
+              "sha": "fdf907823a1eb884d60bbfd584677c558deb40ac"
+            },
+            {
+              "sha": "2ba4076c168e58126b2cdff5a13f4db5ca25961c"
+            },
+            {
+              "sha": "8e3d7b847304f0c433e4f1c0e5268c75c1216662"
+            },
+            {
               "sha": "c35cafec860b288bc7e002be3000fb07f576e161"
             },
             {
@@ -12136,6 +12068,9 @@
             },
             {
               "sha": "f3308c73ac8374814e42ea8d7eba3d6981cf41f5"
+            },
+            {
+              "sha": "ed06aa70845e2ee5632dd6b8e430492cac558357"
             },
             {
               "sha": "81e7dd42a5934edae571cd49f54fc6b15c5b2343"
@@ -12214,24 +12149,6 @@
             },
             {
               "sha": "36c0bc9762e93a3976c31181f87b76591b78fab1"
-            },
-            {
-              "sha": "56a6f294e18b376908bc84fd9546a5782df76d50"
-            },
-            {
-              "sha": "d28af6ced4137d4010f4e138e69178e37f472966"
-            },
-            {
-              "sha": "9dced683ff47a67ecdcdc98d1140bf149a328627"
-            },
-            {
-              "sha": "a302833d34e456e0ef04a29045291dc30f602b7e"
-            },
-            {
-              "sha": "d568e4a5a1726a079fd4fe8bf7401386d70d4458"
-            },
-            {
-              "sha": "f4d4d8e9b7ef9987984264311f777214e9472a5f"
             }
           ]
         }
