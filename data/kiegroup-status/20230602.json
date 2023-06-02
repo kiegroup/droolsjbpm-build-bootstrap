@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-06-02T14:07:05.502Z",
+    "date": "2023-06-02T15:06:26.581Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5156343045"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5156909844"
   },
   "projects": [
     {
@@ -1056,6 +1056,65 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2309,
+          "title": "[7.67.x] Bump commons-fileupload from 1.4 to 1.5",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2309",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2309",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2023-06-02T14:07:13Z",
+          "updated_at": "2023-06-02T14:22:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "0c3bcb882888f551dbc48939ba3184d00f80946b",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_dependabot/maven/commons-fileupload-commons-fileupload-1.5",
+            "sha": "f682fff5f73468aca21ca96ef5231e535ab7c5e0",
+            "label": "kiegroup:7.67.x_dependabot/maven/commons-fileupload-commons-fileupload-1.5"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 23430546174,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/106/",
+              "conclusion": "pending",
+              "started_at": "2023-06-02T14:22:22Z",
+              "completed_at": "2023-06-02T14:22:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23430564143,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/84/",
+              "conclusion": "success",
+              "started_at": "2023-06-02T14:23:12Z",
+              "completed_at": "2023-06-02T14:23:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2308,
           "title": "[7.67.x-blue] Bump commons-fileupload from 1.4 to 1.5",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2308",
@@ -1067,18 +1126,13 @@
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            },
-            {
               "login": "domhanak",
               "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
               "html_url": "https://github.com/domhanak"
             }
           ],
           "created_at": "2023-06-02T14:06:39Z",
-          "updated_at": "2023-06-02T14:06:41Z",
+          "updated_at": "2023-06-02T14:18:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1096,7 +1150,28 @@
             "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
             "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 23430472996,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/97/",
+              "conclusion": "pending",
+              "started_at": "2023-06-02T14:18:59Z",
+              "completed_at": "2023-06-02T14:18:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23430527811,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/78/",
+              "conclusion": "success",
+              "started_at": "2023-06-02T14:21:30Z",
+              "completed_at": "2023-06-02T14:21:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2307,
@@ -4623,7 +4698,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2023-06-02T05:01:41Z",
+      "updated_at": "2023-06-02T14:16:43Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -7742,7 +7817,7 @@
             }
           ],
           "created_at": "2023-06-01T09:07:59Z",
-          "updated_at": "2023-06-02T12:33:58Z",
+          "updated_at": "2023-06-02T14:51:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7752,7 +7827,7 @@
           },
           "head": {
             "ref": "JBPM-10174",
-            "sha": "0d2883d5638591a9bae5d80eb26cee120f7c645a",
+            "sha": "1c1bf6ed2256056cfd4b8d90e3259cf71f887303",
             "label": "fjtirado:JBPM-10174"
           },
           "user": {
@@ -7762,56 +7837,34 @@
           },
           "checks": [
             {
-              "id": 13956724670,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/13956724670",
+              "id": 13960555853,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5156790699/jobs/9288277845",
               "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-06-02T12:34:03Z",
-              "completed_at": "2023-06-02T12:34:04Z",
-              "slug": "github-code-scanning",
+              "conclusion": "cancelled",
+              "started_at": "2023-06-02T15:04:19Z",
+              "completed_at": "2023-06-02T15:06:00Z",
+              "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 13956721442,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/13956721442",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-06-02T12:32:25Z",
-              "completed_at": "2023-06-02T12:33:55Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 13954440690,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5154729580/jobs/9283527874",
+              "id": 13960555645,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5156790699/jobs/9288277691",
               "status": "completed",
               "conclusion": "failure",
-              "started_at": "2023-06-02T10:55:32Z",
-              "completed_at": "2023-06-02T12:46:18Z",
+              "started_at": "2023-06-02T15:01:20Z",
+              "completed_at": "2023-06-02T15:05:50Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 13954440508,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5154729580/jobs/9283527729",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-06-02T10:55:32Z",
-              "completed_at": "2023-06-02T12:42:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 23428351782,
+              "id": 23431299139,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/868/",
-              "conclusion": "success",
-              "started_at": "2023-06-02T12:34:08Z",
-              "completed_at": "2023-06-02T12:34:08Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/870/",
+              "conclusion": "failure",
+              "started_at": "2023-06-02T14:56:29Z",
+              "completed_at": "2023-06-02T14:56:29Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
