@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-06-06T14:09:28.987Z",
+    "date": "2023-06-06T15:08:51.438Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5189535935"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5190200684"
   },
   "projects": [
     {
@@ -1387,22 +1387,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23473825829,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/672/",
-              "conclusion": "pending",
-              "started_at": "2023-06-06T07:46:14Z",
-              "completed_at": "2023-06-06T07:46:14Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 23473886452,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/780/",
               "conclusion": "success",
               "started_at": "2023-06-06T07:50:00Z",
               "completed_at": "2023-06-06T07:50:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23482628738,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/672/",
+              "conclusion": "success",
+              "started_at": "2023-06-06T14:53:32Z",
+              "completed_at": "2023-06-06T14:53:32Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4981,6 +4981,92 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1389,
+          "title": "[7.67.x-blue] Bump xalan from 2.7.2 to 2.7.3",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1389",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1389",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-06-06T14:11:56Z",
+          "updated_at": "2023-06-06T14:11:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "e55ceaa8e1810a34e63284ed26ccd2577b1c37ea",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_xalan273",
+            "sha": "b516b761510a78e4baadf0dbd42dcb51b6f1c5cc",
+            "label": "kiegroup:7.67.x-blue_xalan273"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 1388,
+          "title": "[7.67.x] Bump xalan from 2.7.2 to 2.7.3",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1388",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1388",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-06-06T14:11:36Z",
+          "updated_at": "2023-06-06T14:11:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "52f7338aae80503228ebfe0f4c267ff57f2c1094",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_xalan273",
+            "sha": "f6d05c40c8dffae3f9ce6ca90a41c0a069f67393",
+            "label": "kiegroup:7.67.x_xalan273"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
         {
           "number": 1386,
           "title": "[BXMSPROD-2057] Updating references to the new kie-ci actions folder",
@@ -9840,15 +9926,10 @@
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
               "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2023-06-02T09:42:27Z",
-          "updated_at": "2023-06-06T10:59:44Z",
+          "updated_at": "2023-06-06T14:51:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -12996,15 +13077,10 @@
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
               "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2023-06-02T09:43:05Z",
-          "updated_at": "2023-06-06T10:59:13Z",
+          "updated_at": "2023-06-06T14:50:24Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13023,6 +13099,28 @@
             "html_url": "https://github.com/bacciotti"
           },
           "checks": [
+            {
+              "id": 14044764126,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5175567008/jobs/9355893174",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-06-06T14:58:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14044763782,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5175567008/jobs/9355892923",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-06-06T14:50:14Z",
+              "completed_at": "2023-06-06T14:50:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 14005600311,
               "name": "SonarCloud",
@@ -13044,28 +13142,6 @@
               "completed_at": "2023-06-05T11:10:30Z",
               "slug": "sonarcloud",
               "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 14003179446,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5175567008/jobs/9323309691",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-06-05T10:06:02Z",
-              "completed_at": "2023-06-05T10:32:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14003179251,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5175567008/jobs/9323309541",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-06-05T09:32:06Z",
-              "completed_at": "2023-06-05T09:32:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
               "id": 23454407995,
@@ -17488,15 +17564,10 @@
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
               "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2023-06-02T09:42:35Z",
-          "updated_at": "2023-06-06T10:59:12Z",
+          "updated_at": "2023-06-06T14:52:29Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17516,24 +17587,24 @@
           },
           "checks": [
             {
-              "id": 14038639593,
+              "id": 14044819313,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5175564745/jobs/9351099822",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-06-06T11:34:50Z",
-              "completed_at": "2023-06-06T11:55:32Z",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5175564745/jobs/9355934942",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-06-06T15:00:47Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 14038639410,
+              "id": 14044818879,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5175564745/jobs/9351099683",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5175564745/jobs/9355934614",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2023-06-06T11:32:33Z",
-              "completed_at": "2023-06-06T11:32:33Z",
+              "started_at": "2023-06-06T14:51:53Z",
+              "completed_at": "2023-06-06T14:51:53Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -17866,15 +17937,10 @@
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
               "html_url": "https://github.com/Ginxo"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
             }
           ],
           "created_at": "2023-06-02T09:43:23Z",
-          "updated_at": "2023-06-06T11:00:08Z",
+          "updated_at": "2023-06-06T14:49:22Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17894,20 +17960,20 @@
           },
           "checks": [
             {
-              "id": 14009282200,
+              "id": 14044717810,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/5175567716/jobs/9328125317",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-06-05T13:46:14Z",
-              "completed_at": "2023-06-05T14:07:12Z",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/5175567716/jobs/9355857960",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-06-06T14:56:13Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 14009281769,
+              "id": 14044717348,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/5175567716/jobs/9328125012",
+              "html_url": "https://github.com/kiegroup/optaplanner-wb/actions/runs/5175567716/jobs/9355857640",
               "status": "completed",
               "conclusion": "success",
               "started_at": "2023-06-05T10:07:48Z",
@@ -18061,6 +18127,92 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1225,
+          "title": "[7.67.x-blue] Bump xalan from 2.7.2 to 2.7.3",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1225",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1225",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-06-06T15:02:20Z",
+          "updated_at": "2023-06-06T15:02:23Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "b51a106aed2acf9578acb28b5d36bbbcc628fc23",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_xalan273",
+            "sha": "be5e3820c650255ed8821b358562c86a473cf3a5",
+            "label": "kiegroup:7.67.x-blue_xalan273"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 1224,
+          "title": "[7.67.x] Bump xalan from 2.7.2 to 2.7.3",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1224",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1224",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-06-06T15:02:00Z",
+          "updated_at": "2023-06-06T15:02:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "3e1677e545a7f5601999d66e85f387c433fa47fc",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_xalan273",
+            "sha": "bfefd31dcc4d87a4b8dc8557f70bbd729b998790",
+            "label": "kiegroup:7.67.x_xalan273"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
         {
           "number": 1222,
           "title": "[BXMSPROD-2057] Updating references to the new kie-ci actions folder",
