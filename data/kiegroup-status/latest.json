@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-06-16T21:08:48.182Z",
+    "date": "2023-06-16T22:06:48.195Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5294183772"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5294549210"
   },
   "projects": [
     {
@@ -1055,6 +1055,91 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2321,
+          "title": "[BXMSPROD-2064] set untrusted input as intermediate env variable",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2321",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2321",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "shubhbapna",
+              "avatar_url": "https://avatars.githubusercontent.com/u/38372682?v=4",
+              "html_url": "https://github.com/shubhbapna"
+            }
+          ],
+          "created_at": "2023-06-16T21:26:40Z",
+          "updated_at": "2023-06-16T21:29:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "9faacd326d192e4e22dc5426d42593a0149a4328",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "BXMSPROD-2064_backporting",
+            "sha": "f6656964f89178e6fa7bda8908f570e6a787e845",
+            "label": "lampajr:BXMSPROD-2064_backporting"
+          },
+          "user": {
+            "login": "lampajr",
+            "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+            "html_url": "https://github.com/lampajr"
+          },
+          "checks": [
+            {
+              "id": 14334578328,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5294332627/jobs/9583736215",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-16T21:41:23Z",
+              "completed_at": "2023-06-16T21:46:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14334578208,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5294332627/jobs/9583736130",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-06-16T21:41:04Z",
+              "completed_at": "2023-06-16T21:41:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14334347285,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5294332627/jobs/9583560235",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-16T21:40:58Z",
+              "completed_at": "2023-06-16T21:41:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23669288242,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/783/",
+              "conclusion": "success",
+              "started_at": "2023-06-16T21:30:18Z",
+              "completed_at": "2023-06-16T21:30:18Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2320,
           "title": "Bump guava from 30.1-jre to 32.0.0-jre",
