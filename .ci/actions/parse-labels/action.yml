@@ -36,5 +36,8 @@ runs:
         echo "targets=$(echo $targets)" >> $GITHUB_OUTPUT
     
     - name: Printing extracted targets
+      env:
+        # set untrusted input to intermediate env variable
+        TARGETS: ${{ steps.extract-targets.outputs.targets }}
       shell: bash
-      run: echo "Extracted target branches ${{ steps.extract-targets.outputs.targets }}"
+      run: echo "Extracted target branches $TARGETS"
