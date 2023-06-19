@@ -65,9 +65,9 @@ pipeline {
                          env.R_BRANCH_EXIST = sh(script: "git ls-remote --heads https://github.com/${ghOrgUnit}/droolsjbpm-build-bootstrap ${releaseBranch} | wc -l", returnStdout: true).trim()
                          echo "R_BRANCH_EXIST: ${env.R_BRANCH_EXIST}"
                          if ( "${env.R_BRANCH_EXIST}" == "1" ) {
-                             echo "release branch exists"
+                            echo "release branch exists"
                          } else {
-                             echo "release branch does not yes exist"
+                            echo "release branch does not yes exist"
                          }
                      }
                  }
@@ -145,7 +145,7 @@ pipeline {
                 and assign tasks to people who should run these checks (if not done yet)
 
 
-                Thank you""", subject: "start of community-release ${kieVersion}", to: "bsig@redhat.com etirelli@redhat.com lazarotti@redhat.com dward@redhat.com dgutierr@redhat.com aparedes@redhat.com doliver@redhat.com"
+                Thank you""", subject: "start of community-release ${kieVersion}", to: "mbiarnes@redhat.com mnovotny@redhat.com lazarotti@redhat.com dgutierr@redhat.com aparedes@redhat.com doliver@redhat.com"
             }
         }
         stage('Build projects') {
@@ -185,7 +185,7 @@ pipeline {
 
                 Please look here: ${BUILD_URL}consoleText
 
-                LOG: attached""", subject: "community-release ${kieVersion} failed", to: "bsig@redhat.com", attachLog:true
+                LOG: attached""", subject: "community-release ${kieVersion} failed", to: "mbiarnes@redhat.com mnovotny@redhat.com", attachLog:true
             }
         }
         // create a local directory for archiving artifacts
@@ -229,11 +229,12 @@ pipeline {
                             script {
                                 env.repoID = sh(script: """curl --header 'Content-Type: application/xml' -X POST -u $CREDS --data "<promoteRequest><data><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/start -H "Connection: close" | grep -oP '(?<=stagedRepositoryId>).*[0-9]' """, returnStdout: true).trim()
                                 echo "repoID: ${repoID}"
-                                def repositories=['dashbuilder', 'drools', 'kie', 'jbpm', 'uberfire']
+                                def repositories=['dashbuilder', 'drools', 'jbpm', 'uberfire']
                                 repositories.each{ repo ->
                                     sh "zip -qr ${repo}.zip org/${repo}"
                                     sh """curl --silent --upload-file ${repo}.zip -u \$CREDS -v https://repository.jboss.org/nexus/service/local/repositories/\$repoID/content-compressed -H "Connection: keep-alive" -H "Keep-Alive: timeout=1800000, max=0" """
                                 }
+                                /* org.kie has to be split */
                                 sh "sh $WORKSPACE/script/release/12_splitOrgKie.sh"
                                 sh """curl --header "Content-Type: application/xml" -X POST -u \$CREDS --data "<promoteRequest><data><stagedRepositoryId>${repoID}</stagedRepositoryId><description>kie-${kieVersion}</description></data></promoteRequest>" -v https://repository.jboss.org/nexus/service/local/staging/profiles/15c58a1abc895b/finish -H "Connection: close" """
                             }
@@ -247,20 +248,20 @@ pipeline {
                 expression { runBuild == 'YES'}
             }
             steps {
-		        withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
-    		        script{
-				        env.STAGING_STATUS = ""
-				        counter=0
-				        while( "${env.STAGING_STATUS}" != "closed" ){
-    				        env.STAGING_STATUS = sh(script: """ curl -u $CREDS -H 'Accept: application/json' -H 'Content-Type: application/json' https://repository.jboss.org/nexus/service/local/staging/profile_repositories/15c58a1abc895b | grep -oP '$repoID\",\"type\":\"\\K[^\"]+(?=\")' """, returnStdout: true).trim()
-    				        echo "staging-repository is still ${STAGING_STATUS}"
-    				        sleep(60*15)
-    				        counter=counter+1
-    				        echo "counter: $counter"
-				        }
-				        echo "staging-repository is ${STAGING_STATUS} now"
-		            }
-	            }
+                withCredentials([usernameColonPassword(credentialsId: 'kie_upload_Nexus', variable: 'CREDS')]) {
+                    script{
+                        env.STAGING_STATUS = ''
+                        counter=0
+                        while( "${env.STAGING_STATUS}" != "closed" ){
+                            env.STAGING_STATUS = sh(script: """ curl -u $CREDS -H 'Accept: application/json' -H 'Content-Type: application/json' https://repository.jboss.org/nexus/service/local/staging/profile_repositories/15c58a1abc895b | grep -oP '$repoID\",\"type\":\"\\K[^\"]+(?=\")' """, returnStdout: true).trim()
+                            echo "staging-repository is still ${STAGING_STATUS}"
+                            sleep(60*15)
+                            counter=counter+1
+                            echo "counter: $counter"
+                        }
+                        echo "staging-repository is ${STAGING_STATUS} now"
+                    }
+                }
             }
         }
         stage('Additional tests for community') {
@@ -306,7 +307,7 @@ pipeline {
                 sanity checks: https://docs.google.com/spreadsheets/d/1jPtRilvcOji__qN0QmVoXw6KSi4Nkq8Nz_coKIVfX6A/edit#gid=167259416
                 In case Sanity Checks were already done and this kind of mail arrives the second time, please verify if the bugs reported in Sanity Checks are fixed now.
 
-                Component version: KIE version =  ${kieVersion}""", subject: "build for community-release ${kieVersion}: ${currentBuild.currentResult}", to: "bsig@redhat.com"
+                Component version: KIE version =  ${kieVersion}""", subject: "build for community-release ${kieVersion}: ${currentBuild.currentResult}", to: "mbiarnes@redhat.com mnovotny@redhat.com"
             }
         }
         // user interaction required: continue or abort
@@ -341,7 +342,7 @@ pipeline {
                 business-monitoring-webapp: https://repository.jboss.org/nexus/content/groups/public-jboss/org/kie/business-monitoring-webapp/${kieVersion}/
                 jbpm-server-distribution (single zip): https://repository.jboss.org/nexus/content/groups/public-jboss/org/kie/jbpm-server-distribution/${kieVersion}/
 
-                Component version: KIE Version = ${kieVersion}""", subject: "community-release ${kieVersion} was released", to: "bsig@redhat.com"
+                Component version: KIE Version = ${kieVersion}""", subject: "community-release ${kieVersion} was released", to: "mbiarnes@redhat.com mnovotny@redhat.com"
             }
         }
         // if the pipeline job was executed again but without building, the binaries uploaded to filemgmt.jboss.org are needed
