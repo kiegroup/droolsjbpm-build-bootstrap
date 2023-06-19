@@ -24,7 +24,7 @@ jobs:
   build-chain:
     needs: os-prep
     concurrency:
-      group: pull_request-${{ github.head_ref }}
+      group: pull_request-${{ github.head_ref }}-${{ matrix.java-version }}
       cancel-in-progress: true
     strategy:
       matrix:
