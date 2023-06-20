@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-06-20T13:10:16.607Z",
+    "date": "2023-06-20T14:20:55.220Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5322977206"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5323563276"
   },
   "projects": [
     {
@@ -1062,10 +1062,21 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2325",
           "state": "open",
           "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
           "created_at": "2023-06-20T06:03:40Z",
-          "updated_at": "2023-06-20T06:03:47Z",
+          "updated_at": "2023-06-20T14:16:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1084,6 +1095,39 @@
             "html_url": "https://github.com/Ginxo"
           },
           "checks": [
+            {
+              "id": 14406949354,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5323681520/jobs/9642055123",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-06-20T14:20:44Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14406949073,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5323681520/jobs/9642054905",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-06-20T14:20:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14406733467,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5323681520/jobs/9641886184",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-20T14:20:39Z",
+              "completed_at": "2023-06-20T14:20:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 14393165802,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -1118,22 +1162,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 23696470933,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/677/",
-              "conclusion": "pending",
-              "started_at": "2023-06-20T06:03:49Z",
-              "completed_at": "2023-06-20T06:03:49Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 23696480727,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/792/",
               "conclusion": "success",
               "started_at": "2023-06-20T06:04:48Z",
               "completed_at": "2023-06-20T06:04:48Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23704767838,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/677/",
+              "conclusion": "failure",
+              "started_at": "2023-06-20T14:03:16Z",
+              "completed_at": "2023-06-20T14:03:16Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1589,7 +1633,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2022-01-13T07:46:40Z",
-          "updated_at": "2023-05-24T08:54:53Z",
+          "updated_at": "2023-06-20T13:15:17Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4591,6 +4635,70 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1396,
+          "title": "[7.67.x-blue] [BXMSPROD-2067] Fix PR workflow concurrency group",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1396",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1396",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-06-20T13:37:33Z",
+          "updated_at": "2023-06-20T13:41:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "313c16be9ea1c165b5231d83e76e92d50021df00",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_pr_concurrency",
+            "sha": "1fe93be4f698228b6b2af3cd8eb8ac9e338718ac",
+            "label": "kiegroup:7.67.x-blue_pr_concurrency"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 1395,
+          "title": "[7.67.x] [BXMSPROD-2067] Fix PR workflow concurrency group",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1395",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1395",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-06-20T13:37:31Z",
+          "updated_at": "2023-06-20T13:40:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "28eb5fd9d2f4bc3a2a12a59c8bf4ee7e0bc3c4f8",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_pr_concurrency",
+            "sha": "ee5a43ccef15d964506f9ee46d0e66089ef10ae2",
+            "label": "kiegroup:7.67.x_pr_concurrency"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
         {
           "number": 1393,
           "title": "RHPAM-4719: Persistent Cross-Site Scripting (XSS)",
