@@ -275,6 +275,7 @@
     <version.org.wildfly.client>1.0.1.Final</version.org.wildfly.client>
     <version.org.wildfly.core>17.0.0.Final</version.org.wildfly.core>
     <version.org.wildfly.common>1.5.4.Final</version.org.wildfly.common>
+    <version.org.xerial.snappy>1.1.10.1</version.org.xerial.snappy>
     <version.org.yaml.snakeyaml>2.0</version.org.yaml.snakeyaml>
     <version.org.mozilla.rhino>1.7.13</version.org.mozilla.rhino>
     <version.rome>1.0</version.rome>
@@ -6491,6 +6492,12 @@
         <groupId>io.micrometer</groupId>
         <artifactId>micrometer-core</artifactId>
         <version>${version.io.micrometer}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.xerial.snappy</groupId>
+        <artifactId>snappy-java</artifactId>
+        <version>${version.org.xerial.snappy}</version>
       </dependency>
 
     </dependencies>
