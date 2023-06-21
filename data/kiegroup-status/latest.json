@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-06-21T08:08:28.186Z",
+    "date": "2023-06-21T09:06:04.471Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5331634145"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5332182286"
   },
   "projects": [
     {
@@ -1056,6 +1056,91 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2326,
+          "title": "release 7.x without optaplanner",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2326",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2326",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-06-21T08:31:45Z",
+          "updated_at": "2023-06-21T08:34:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2ff9ca4728940bec5ac04e9a43f64ae7e303ed50",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "releaseWithoutOptaplanner",
+            "sha": "426ea517781e459294925c3a09f2ca620a31a003",
+            "label": "mbiarnes:releaseWithoutOptaplanner"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14430479750,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5331865161/jobs/9660282083",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-21T08:32:13Z",
+              "completed_at": "2023-06-21T08:36:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14430479472,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5331865161/jobs/9660281854",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-21T08:32:13Z",
+              "completed_at": "2023-06-21T08:36:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14430472259,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5331865161/jobs/9660276054",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-06-21T08:31:59Z",
+              "completed_at": "2023-06-21T08:32:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23720871448,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/793/",
+              "conclusion": "success",
+              "started_at": "2023-06-21T08:36:34Z",
+              "completed_at": "2023-06-21T08:36:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2325,
           "title": "[RHPAM-4733] [TRIAGE-CVE-2023-34455] snappy-java upgraded to 1.1.10.1",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2325",
@@ -1076,7 +1161,7 @@
             }
           ],
           "created_at": "2023-06-20T06:03:40Z",
-          "updated_at": "2023-06-20T14:16:10Z",
+          "updated_at": "2023-06-21T08:22:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5488,7 +5573,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-01-13T07:38:50Z",
-          "updated_at": "2022-01-20T08:18:24Z",
+          "updated_at": "2023-06-21T08:23:04Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5530,22 +5615,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 15899291866,
+              "id": 23720635940,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/131/",
-              "conclusion": "failure",
-              "started_at": "2022-01-17T09:57:31Z",
-              "completed_at": "2022-01-17T09:57:31Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/264/",
+              "conclusion": "pending",
+              "started_at": "2023-06-21T08:23:09Z",
+              "completed_at": "2023-06-21T08:23:09Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 15899511793,
+              "id": 23721072927,
               "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/122/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/269/",
               "conclusion": "failure",
-              "started_at": "2022-01-17T10:13:00Z",
-              "completed_at": "2022-01-17T10:13:00Z",
+              "started_at": "2023-06-21T08:47:49Z",
+              "completed_at": "2023-06-21T08:47:49Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
