@@ -11,7 +11,7 @@ mvnTool = "${env.MVN_TOOL}"
 jdkVersion = "${env.JDK_VERSION}"
 buildName = "${env.BUILD_NAME}"
 
-bbuildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: 'kiegroup'
+buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: 'kiegroup'
 buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: baseBranch
 
 pipeline {
