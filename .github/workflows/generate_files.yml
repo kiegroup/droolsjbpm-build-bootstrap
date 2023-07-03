@@ -34,25 +34,20 @@ jobs:
           echo "::set-output name=jobURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
       - uses: actions/checkout@v3
+      - name: Checkout BC Files Generator repo
+        uses: actions/checkout@v3
+        with:
+          repository: kiegroup/build-chain-files-generator
+          path: build-chain-files-generator
+          lfs: true
+      - name: Build BC Files Generator
+        run: npm install --prefix build-chain-files-generator
       - name: Image Generation
-        uses: kiegroup/build-chain-files-generator@main
-        with:
-          definition-file: .ci/pull-request-config.yaml
-          file-type: image
-          output-file-path: ./docs/project-dependencies-hierarchy.png
+        run: ./build-chain-files-generator/bin/generator-cli.js -df .ci/pull-request-config.yaml -o ./docs/project-dependencies-hierarchy.png image
       - name: Repository List Generation
-        uses: kiegroup/build-chain-files-generator@main
-        with:
-          definition-file: .ci/pull-request-config.yaml
-          file-type: repository-list
-          output-file-path: ./script/repository-list.txt
+        run: ./build-chain-files-generator/bin/generator-cli.js -df .ci/pull-request-config.yaml -o ./script/repository-list.txt repository-list
       - name: Optaplanner Repository List Generation
-        uses: kiegroup/build-chain-files-generator@main
-        with:
-          definition-file: .ci/pull-request-config.yaml
-          file-type: repository-list
-          output-file-path: ./script/branched-7-repository-list.txt
-          include: "@main:7.x"
+        run: ./build-chain-files-generator/bin/generator-cli.js -df .ci/pull-request-config.yaml -o ./script/branched-7-repository-list.txt repository-list -include "@main:7.x"
       - name: Add Changes
         run: git add ./docs/project-dependencies-hierarchy.png ./script/repository-list.txt ./script/branched-7-repository-list.txt
       - name: Archive artifacts
