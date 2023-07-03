@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-03T05:07:21.086Z",
+    "date": "2023-07-03T06:09:49.150Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5440787477"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5441172257"
   },
   "projects": [
     {
@@ -1063,6 +1063,101 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2334,
+          "title": "[RHPAM-4733][CVE-2023-34455 snappy-java] kafka version to 3.5.0",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2334",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2334",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2023-07-03T06:06:21Z",
+          "updated_at": "2023-07-03T06:06:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "04015544802829ab69e732f4f004fcb66b1cf0aa",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4733_2",
+            "sha": "6d6376bfe0c90abe3471b91ce86264d1a56a230e",
+            "label": "Ginxo:RHPAM-4733_2"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 14728185786,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5441151288/jobs/9894785459",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-03T06:06:46Z",
+              "completed_at": "2023-07-03T06:08:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14728185623,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5441151288/jobs/9894785323",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-03T06:06:45Z",
+              "completed_at": "2023-07-03T06:08:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14728181655,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5441151288/jobs/9894782030",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-03T06:06:32Z",
+              "completed_at": "2023-07-03T06:06:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23899085184,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/680/",
+              "conclusion": "pending",
+              "started_at": "2023-07-03T06:06:39Z",
+              "completed_at": "2023-07-03T06:06:39Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23899103711,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/803/",
+              "conclusion": "failure",
+              "started_at": "2023-07-03T06:08:58Z",
+              "completed_at": "2023-07-03T06:08:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2333,
           "title": "Bump keycloak-core from 20.0.3 to 21.1.2",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2333",
@@ -1448,7 +1543,7 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2325",
           "state": "open",
           "labels": [],
-          "draft": false,
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
@@ -1462,7 +1557,7 @@
             }
           ],
           "created_at": "2023-06-20T06:03:40Z",
-          "updated_at": "2023-06-21T08:22:25Z",
+          "updated_at": "2023-07-03T06:06:52Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -4959,7 +5054,7 @@
       "name": "optaplanner",
       "description": "AI constraint solver in Java to optimize the vehicle routing problem, employee rostering, task assignment, maintenance scheduling, conference scheduling and other planning problems.",
       "html_url": "https://github.com/kiegroup/optaplanner",
-      "updated_at": "2023-07-03T05:01:43Z",
+      "updated_at": "2023-07-03T05:52:40Z",
       "homepage": "https://www.optaplanner.org",
       "language": "Java",
       "default_branch": "main",
@@ -9771,7 +9866,7 @@
       "name": "droolsjbpm-integration",
       "description": "Drools and jBPM integration with seam, spring, camel, ...",
       "html_url": "https://github.com/kiegroup/droolsjbpm-integration",
-      "updated_at": "2023-06-05T06:30:29Z",
+      "updated_at": "2023-07-03T05:50:01Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
