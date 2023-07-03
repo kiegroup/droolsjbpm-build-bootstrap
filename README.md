@@ -692,7 +692,7 @@ Team workflows
 * Fixing a community issue in JIRA:
 
     * Find/create the issue in JIRA ([Drools](https://issues.redhat.com/projects/DROOLS/issues/),
-    [OptaPlanner](https://issues.redhat.com/projects/PLANNER/issues), [jBPM](https://issues.redhat.com/projects/JBPM/issues))
+    [jBPM](https://issues.redhat.com/projects/JBPM/issues))
 
     * Fix the issue and push those changes to the appropriate branch(es) on github.
 
@@ -728,8 +728,6 @@ Knowing what's going on
     * Subscribe to jira issue changes:
 
         * [DROOLS](https://issues.jboss.org/plugins/servlet/streams?key=DROOLS&os_authType=basic)
-
-        * [PLANNER](https://issues.jboss.org/plugins/servlet/streams?key=PLANNER&os_authType=basic)
 
         * [JBPM](https://issues.jboss.org/plugins/servlet/streams?key=JBPM&os_authType=basic)
 
@@ -788,10 +786,10 @@ Writing documentation
 
     ```shell
     $ cd kiegroup
-    $ cd optaplanner/optaplanner-docs
+    $ cd kie-docs/doc-content/drools-docs
     $ mvn clean install -Dfull
     ...
-    $ firefox target/docbook/publish/en-US/html_single/index.html
+    $ firefox target/generated-docs/html_single/index.html
     ```
 
 * **[Read and follow the documentation guidelines](documentation-guidelines.txt).**

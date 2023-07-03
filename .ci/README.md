@@ -90,7 +90,7 @@ This way you can easily understand the rest of document.
 
 ### What about this mapping thing?
 
-You will be able to see more complex definitions for projects like `drools` or `optaplanner`. For instance:
+You will be able to see more complex definitions for projects like `drools`. For instance:
 
 ```yaml
  - project: kiegroup/drools
@@ -106,8 +106,7 @@ You will be able to see more complex definitions for projects like `drools` or `
         default:
           - source: main
             target: 7.x
-      exclude:
-        - kiegroup/optaplanner          
+      exclude:         
         - kiegroup/droolsjbpm-knowledge  
 ```
 

@@ -4,15 +4,15 @@ import org.kie.jenkins.MavenCommand
 import org.kie.jenkins.MavenStagingHelper
 
 additionalMavenFlag = "${env.ADDITIONAL_MAVEN_FLAG?.trim() ?: ''}"
-baseBranch= "${env.BASE_BRANCH}"
-agentLabel= "${env.AGENT_LABEL}"
+baseBranch = "${env.BASE_BRANCH}"
+agentLabel = "${env.AGENT_LABEL}"
 kieVersion = "${env.KIE_VERSION}"
 mvnTool = "${env.MVN_TOOL}"
 jdkVersion = "${env.JDK_VERSION}"
 buildName = "${env.BUILD_NAME}"
 
 buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: 'kiegroup'
-buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: 'main'
+buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: baseBranch
 
 pipeline {
     agent {

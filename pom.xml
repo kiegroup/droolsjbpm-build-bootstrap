@@ -24,7 +24,7 @@
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
   <version>7.75.0-SNAPSHOT</version>
 
-  <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
+  <name>KIE (Drools, jBPM) parent</name>
   <description>
     The parent contains all metadata (including plugins) including dependency versions. All modules, except for user
     BOMS,
@@ -292,7 +292,6 @@
     <!-- Internal dependencies -->
     <version.org.kie>7.75.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
-    <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
     <version.org.uberfire>${version.org.kie}</version.org.uberfire>
@@ -2231,7 +2230,6 @@
     <module>kie-soup-bom</module>
     <module>uberfire-bom</module>
     <module>drools-bom</module>
-    <module>optaplanner-bom</module>
     <module>jbpm-bom</module>
     <module>kie-uberfire-extensions-bom</module>
     <module>kie-dmn-bom</module>
