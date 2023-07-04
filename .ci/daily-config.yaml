@@ -3,26 +3,16 @@ version: "2.1"
 dependencies: ./project-dependencies.yaml
 
 pre: |
-  export MAVEN_COMMAND=mvn -B -e -U clean deploy -Dfull -Drelease -DaltDeploymentRepository=local::default::file://${{ env.WORKSPACE }}/deploy-dir -Dmaven.test.redirectTestOutputToFile=true -Dmaven.test.failure.ignore=true -Dgwt.memory.settings="-Xmx10g" -Prun-code-coverage -Dcontainer.profile=wildfly -Dcontainer=wildfly -Dintegration-tests=true -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
-  echo "MAVEN_COMMAND=" ${{ env.MAVEN_COMMAND }}
-  echo "WORKSPACE=" ${{ env.WORKSPACE }}
   java -version
+  export MAVEN_COMMAND=mvn -B -e -U clean deploy -Dfull -Drelease -DaltDeploymentRepository=local::default::file://${{ env.WORKSPACE }}/deploy-dir -Dmaven.test.redirectTestOutputToFile=true -Dmaven.test.failure.ignore=true -Dgwt.memory.settings="-Xmx10g" -Prun-code-coverage -Dcontainer.profile=wildfly -Dcontainer=wildfly -Dintegration-tests=true -Dmaven.wagon.httpconnectionManager.ttlSeconds=25 -Dmaven.wagon.http.retryHandler.count=3
 
 default:
   build-command:
     current: |
+      ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }}
       ${{ env.MAVEN_COMMAND }}
       ${{ env.WORKSPACE }}/clean-up.sh `pwd`
-
 build:
-  - project: kiegroup/lienzo-core
-    build-command:
-      before:
-        current: |
-          ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }} community
-      current: |
-        ${{ env.MAVEN_COMMAND }}
-        ${{ env.WORKSPACE }}/clean-up.sh `pwd`
   - project: kiegroup/process-migration-service
     build-command:
       current: echo 'skip'
