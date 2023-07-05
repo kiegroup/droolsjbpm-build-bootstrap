@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-05T15:07:31.348Z",
+    "date": "2023-07-05T16:08:43.566Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5465912839"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5466521316"
   },
   "projects": [
     {
@@ -9173,6 +9173,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2977,
+          "title": "Optaplanner removal",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2977",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2977",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-05T15:39:54Z",
+          "updated_at": "2023-07-05T16:05:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6ab7ca3c21dc8ffb182203e47f9aa2c135e284a4",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "optaplanner-removal",
+            "sha": "9a93c66b85ec60a4bb2b7e19ffccd737733e228e",
+            "label": "mbiarnes:optaplanner-removal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14799502649,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5466250857/jobs/9950893437",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-05T15:40:10Z",
+              "completed_at": "2023-07-05T16:01:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14799502366,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5466250857/jobs/9950893230",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-07-05T15:40:08Z",
+              "completed_at": "2023-07-05T16:01:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23941381499,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1149/",
+              "conclusion": "failure",
+              "started_at": "2023-07-05T15:54:03Z",
+              "completed_at": "2023-07-05T15:54:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23941507985,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-integration-main.fdb/127/",
+              "conclusion": "failure",
+              "started_at": "2023-07-05T16:00:04Z",
+              "completed_at": "2023-07-05T16:00:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2791,
           "title": "[JBPM-10092] added alias to kie-ctrl:create-container and kie-ctrl:de…",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2791",
@@ -12004,6 +12083,75 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-common",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3814,
+          "title": "[7.67.x-blue] BAPL-2291 Remove all OptaPlanner related features (#3740)",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3814",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3814",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-05T15:25:56Z",
+          "updated_at": "2023-07-05T15:44:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "523956ca4a029da280e0e9f20ab2d7f786d572ee",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "optaplanner-removal",
+            "sha": "9d0b8091cf0efc6ff1a31d3dd270e701a43a5d94",
+            "label": "mbiarnes:optaplanner-removal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14799898276,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5466109819/jobs/9951196123",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-05T15:53:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14799898012,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5466109819/jobs/9951195919",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-05T15:53:11Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23940753552,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/296/",
+              "conclusion": "pending",
+              "started_at": "2023-07-05T15:26:04Z",
+              "completed_at": "2023-07-05T15:26:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3737,
           "title": "Fix Whitespace Issue in Migration Tool",
@@ -16180,6 +16328,75 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1599,
+          "title": "BAPL-2291 Remove PLANNING capability (#1547)",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1599",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1599",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-05T15:40:45Z",
+          "updated_at": "2023-07-05T15:43:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "dde5679b7f7b1dc984c7079105b23e35db87adcb",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "optaplanner-removal",
+            "sha": "b8dbf4b2ab9634aa25594613b2177b5cabe876b1",
+            "label": "mbiarnes:optaplanner-removal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14799529289,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5466259341/jobs/9950913914",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-05T15:40:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14799528942,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5466259341/jobs/9950913637",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-05T15:40:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23941623057,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/181/",
+              "conclusion": "failure",
+              "started_at": "2023-07-05T16:05:29Z",
+              "completed_at": "2023-07-05T16:05:29Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1433,
           "title": "Use containsOnly insead of containsExactly in ProcessInstanceDiagramPresenterTest.java",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1433",
@@ -16488,7 +16705,77 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 1230,
+          "title": "[7.67.x-blue] BAPL-2291 Remove OptaPlanner Workbench (#1163)",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1230",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1230",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-05T15:41:26Z",
+          "updated_at": "2023-07-05T15:43:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "afe2993c18153c9cba86f3cafded85211baa32cd",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "optaplanner-removal",
+            "sha": "347ae2a19a6d843dee771720c3254b11669dd02d",
+            "label": "mbiarnes:optaplanner-removal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14799551619,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5466265997/jobs/9950931046",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-07-05T15:41:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14799551339,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5466265997/jobs/9950930837",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-07-05T15:41:32Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23941107169,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/238/",
+              "conclusion": "pending",
+              "started_at": "2023-07-05T15:41:33Z",
+              "completed_at": "2023-07-05T15:41:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
