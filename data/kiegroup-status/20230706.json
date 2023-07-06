@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-06T11:06:12.151Z",
+    "date": "2023-07-06T12:14:04.062Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5474707828"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5475303629"
   },
   "projects": [
     {
@@ -1062,6 +1062,106 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2344,
+          "title": "BXMSPROD-2081: Removal of Opta* all over all repositories",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2344",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2344",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-06T12:07:20Z",
+          "updated_at": "2023-07-06T12:09:09Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5c3a8fa0455f44df6eff3f1ff5c1577f098e2db8",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "optaplanner-removal",
+            "sha": "633480ace8774f3596a142f4971b40726c08dd2c",
+            "label": "mbiarnes:optaplanner-removal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14825404815,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5475242058/jobs/9971084806",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-06T12:07:48Z",
+              "completed_at": "2023-07-06T12:11:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14825404530,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5475242058/jobs/9971084565",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-06T12:07:49Z",
+              "completed_at": "2023-07-06T12:11:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14825396514,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5475242058/jobs/9971078410",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-06T12:07:33Z",
+              "completed_at": "2023-07-06T12:07:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23957903207,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/686/",
+              "conclusion": "pending",
+              "started_at": "2023-07-06T12:09:15Z",
+              "completed_at": "2023-07-06T12:09:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 23957972098,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/813/",
+              "conclusion": "success",
+              "started_at": "2023-07-06T12:13:00Z",
+              "completed_at": "2023-07-06T12:13:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2341,
           "title": "BXMSPROD-2080: update version adapted to build-chain logic",
@@ -8680,13 +8780,18 @@
       "pullRequests": [
         {
           "number": 2977,
-          "title": "Optaplanner removal",
+          "title": "BXMSPROD-2081: Optaplanner removal",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2977",
           "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2977",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
             {
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
@@ -8699,7 +8804,7 @@
             }
           ],
           "created_at": "2023-07-05T15:39:54Z",
-          "updated_at": "2023-07-06T07:09:55Z",
+          "updated_at": "2023-07-06T12:08:52Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8718,6 +8823,28 @@
             "html_url": "https://github.com/mbiarnes"
           },
           "checks": [
+            {
+              "id": 14823929008,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5474754520/jobs/9969934537",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-06T11:10:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14823928760,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5474754520/jobs/9969934332",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-06T11:10:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 14817250960,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -11697,13 +11824,18 @@
         },
         {
           "number": 3814,
-          "title": "[7.67.x-blue] BAPL-2291 Remove all OptaPlanner related features (#3740)",
+          "title": "BXMSPROD-2081: Remove all OptaPlanner related features (#3740)",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3814",
           "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3814",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
             {
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
@@ -11716,7 +11848,7 @@
             }
           ],
           "created_at": "2023-07-05T15:25:56Z",
-          "updated_at": "2023-07-06T06:59:10Z",
+          "updated_at": "2023-07-06T12:08:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -11735,6 +11867,28 @@
             "html_url": "https://github.com/mbiarnes"
           },
           "checks": [
+            {
+              "id": 14823944037,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5474759698/jobs/9969946129",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-06T11:11:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14823943811,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5474759698/jobs/9969945937",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-06T11:11:31Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 14817257983,
               "name": "ubuntu-latest - Java 8 - Maven",
@@ -15968,13 +16122,18 @@
       "pullRequests": [
         {
           "number": 1599,
-          "title": "BAPL-2291 Remove PLANNING capability (#1547)",
+          "title": "BXMSPROD-2081: Remove PLANNING capability (#1547)",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1599",
           "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1599",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
             {
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
@@ -15987,7 +16146,7 @@
             }
           ],
           "created_at": "2023-07-05T15:40:45Z",
-          "updated_at": "2023-07-06T06:58:56Z",
+          "updated_at": "2023-07-06T12:08:39Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -16007,13 +16166,35 @@
           },
           "checks": [
             {
+              "id": 14823937181,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5474757220/jobs/9969940711",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-06T11:11:33Z",
+              "completed_at": "2023-07-06T11:59:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14823936904,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5474757220/jobs/9969940505",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-06T11:11:23Z",
+              "completed_at": "2023-07-06T11:48:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
               "id": 14823790429,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5466259341/jobs/9969826139",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2023-07-06T11:05:46Z",
-              "completed_at": null,
+              "completed_at": "2023-07-06T11:11:15Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16021,10 +16202,10 @@
               "id": 14823790054,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5466259341/jobs/9969825855",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2023-07-06T11:05:47Z",
-              "completed_at": null,
+              "completed_at": "2023-07-06T11:11:26Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16352,13 +16533,18 @@
       "pullRequests": [
         {
           "number": 1230,
-          "title": "[7.67.x-blue] BAPL-2291 Remove OptaPlanner Workbench (#1163)",
+          "title": "BXMSPROD-2081: Remove OptaPlanner Workbench (#1163)",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1230",
           "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1230",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
             {
               "login": "Ginxo",
               "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
@@ -16371,7 +16557,7 @@
             }
           ],
           "created_at": "2023-07-05T15:41:26Z",
-          "updated_at": "2023-07-06T06:59:32Z",
+          "updated_at": "2023-07-06T12:08:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -16391,13 +16577,35 @@
           },
           "checks": [
             {
+              "id": 14823967208,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5474767618/jobs/9969964157",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-07-06T11:12:14Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14823966900,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5474767618/jobs/9969963910",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-07-06T11:12:14Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
               "id": 14799551619,
               "name": "ubuntu-18.04 - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5466265997/jobs/9950931046",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-07-05T15:41:33Z",
-              "completed_at": null,
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-07-06T11:12:16Z",
+              "completed_at": "2023-07-06T11:12:16Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16405,10 +16613,10 @@
               "id": 14799551339,
               "name": "ubuntu-18.04 - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5466265997/jobs/9950930837",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-07-05T15:41:32Z",
-              "completed_at": null,
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-07-06T11:12:15Z",
+              "completed_at": "2023-07-06T11:12:15Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
