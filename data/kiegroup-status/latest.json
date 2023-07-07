@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-07T20:07:29.203Z",
+    "date": "2023-07-07T21:08:48.725Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5490152959"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5490554951"
   },
   "projects": [
     {
@@ -6303,6 +6303,75 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2299,
+          "title": "[KOGITO-9500] - Remove pmml dependencies from SWF",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2299",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2299",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-07-07T20:34:33Z",
+          "updated_at": "2023-07-07T20:34:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "2890808dc725c6d6d6934a01e5dfe59911a59974",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "KOGITO-9500",
+            "sha": "6868f3ef25a1ec11cead4baf49aee02fc133eca0",
+            "label": "VaniHaripriya:KOGITO-9500"
+          },
+          "user": {
+            "login": "VaniHaripriya",
+            "avatar_url": "https://avatars.githubusercontent.com/u/89943213?v=4",
+            "html_url": "https://github.com/VaniHaripriya"
+          },
+          "checks": [
+            {
+              "id": 14869852354,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5490352734/jobs/10005679748",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-07T20:34:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14869852148,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5490352734/jobs/10005679590",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-07T20:34:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23986967181,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/886/",
+              "conclusion": "pending",
+              "started_at": "2023-07-07T20:34:41Z",
+              "completed_at": "2023-07-07T20:34:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2298,
           "title": "[kie-roadmap#76] Track user aborting a process instance",
