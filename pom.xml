@@ -94,8 +94,6 @@
     <version.com.jcraft>0.1.54</version.com.jcraft>
     <version.com.lowagie.itext>2.1.7</version.com.lowagie.itext>
     <version.com.miglayout>3.7.4</version.com.miglayout>
-    <!-- Only used by optaweb-vehicle-routing, but is required -->
-    <version.com.neovisionaries>1.27</version.com.neovisionaries>
     <version.com.networknt.json-schema-validator>1.0.43</version.com.networknt.json-schema-validator>
     <version.com.sun.xml.bind>2.3.0</version.com.sun.xml.bind>
     <version.com.thoughtworks.xstream>1.4.20</version.com.thoughtworks.xstream>
@@ -247,6 +245,7 @@
     <version.org.apache.logging.log4j>2.17.1</version.org.apache.logging.log4j>
     <version.org.ocpsoft.prettytime>3.0.2.Final</version.org.ocpsoft.prettytime>
     <!--EAP 6.4 use 4.2.0.redhat-8 which is not OSGi compatible, so stay on 4.3.1-->
+    <version.org.optaplanner>7.73.0.Final</version.org.optaplanner>
     <version.org.osgi>4.3.1</version.org.osgi>
     <version.org.ops4j.pax.exam>4.13.4</version.org.ops4j.pax.exam>
     <version.org.owasp.encoder>1.2</version.org.owasp.encoder>
@@ -2556,12 +2555,6 @@
         <groupId>com.miglayout</groupId>
         <artifactId>miglayout</artifactId>
         <version>${version.com.miglayout}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.neovisionaries</groupId>
-        <artifactId>nv-i18n</artifactId>
-        <version>${version.com.neovisionaries}</version>
       </dependency>
 
       <dependency>
