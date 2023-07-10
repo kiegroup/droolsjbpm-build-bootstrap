@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-10T10:07:47.437Z",
+    "date": "2023-07-10T11:05:44.834Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506783433"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5507307419"
   },
   "projects": [
     {
@@ -1063,6 +1063,90 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2347,
+          "title": "BXMSPROD-2083: use of OptaPlanner final version",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2347",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2347",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-07-10T10:47:28Z",
+          "updated_at": "2023-07-10T10:50:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "5c3a8fa0455f44df6eff3f1ff5c1577f098e2db8",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "OptaPlannerFinal",
+            "sha": "41f74cce3c12d9edeb6f13f1b6e1470c6879762e",
+            "label": "mbiarnes:OptaPlannerFinal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14907566463,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5507157304/jobs/10036750795",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-10T10:47:52Z",
+              "completed_at": "2023-07-10T10:52:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14907566261,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5507157304/jobs/10036750633",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-10T10:47:53Z",
+              "completed_at": "2023-07-10T10:51:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14907560622,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5507157304/jobs/10036746345",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-10T10:47:40Z",
+              "completed_at": "2023-07-10T10:47:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24002696875,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/687/",
+              "conclusion": "pending",
+              "started_at": "2023-07-10T10:49:51Z",
+              "completed_at": "2023-07-10T10:49:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 24002702569,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/815/",
+              "conclusion": "success",
+              "started_at": "2023-07-10T10:50:15Z",
+              "completed_at": "2023-07-10T10:50:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2346,
           "title": "Revert \"[RHPAM-4733][CVE-2023-34455 snappy-java] kafka version to 3.5.0 (#2334)",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2346",
@@ -1488,7 +1572,7 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2344",
           "state": "open",
           "labels": [],
-          "draft": false,
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
@@ -1502,7 +1586,7 @@
             }
           ],
           "created_at": "2023-07-06T12:07:20Z",
-          "updated_at": "2023-07-10T07:14:35Z",
+          "updated_at": "2023-07-10T10:53:55Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9143,7 +9227,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2023-07-10T09:42:50Z",
-          "updated_at": "2023-07-10T09:42:50Z",
+          "updated_at": "2023-07-10T10:48:54Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9303,7 +9387,7 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2977",
           "state": "open",
           "labels": [],
-          "draft": false,
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
@@ -9327,7 +9411,7 @@
             }
           ],
           "created_at": "2023-07-05T15:39:54Z",
-          "updated_at": "2023-07-07T09:18:31Z",
+          "updated_at": "2023-07-10T10:54:07Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -12234,6 +12318,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3816,
+          "title": "BXMSPROD-2083: use of OptaPlanner final version",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3816",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3816",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-07-10T10:09:40Z",
+          "updated_at": "2023-07-10T10:49:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "523956ca4a029da280e0e9f20ab2d7f786d572ee",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "OptaPlannerFinal",
+            "sha": "3656b55c4d0ab31857b17e8502188bc0afef6558",
+            "label": "mbiarnes:OptaPlannerFinal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14906556040,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5506806320/jobs/10035962547",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-10T10:09:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14906555687,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5506806320/jobs/10035962270",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-10T10:09:53Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24002042594,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/299/",
+              "conclusion": "pending",
+              "started_at": "2023-07-10T10:09:47Z",
+              "completed_at": "2023-07-10T10:09:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3815,
           "title": "RHPAM-4723: Creating a branch via BC UI can lead to XSS",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3815",
@@ -12329,7 +12476,7 @@
           "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3814",
           "state": "open",
           "labels": [],
-          "draft": false,
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
@@ -12353,7 +12500,7 @@
             }
           ],
           "created_at": "2023-07-05T15:25:56Z",
-          "updated_at": "2023-07-07T09:17:54Z",
+          "updated_at": "2023-07-10T10:54:26Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -16632,7 +16779,7 @@
           "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1599",
           "state": "open",
           "labels": [],
-          "draft": false,
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
@@ -16656,7 +16803,7 @@
             }
           ],
           "created_at": "2023-07-05T15:40:45Z",
-          "updated_at": "2023-07-07T09:40:35Z",
+          "updated_at": "2023-07-10T10:54:17Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17042,13 +17189,76 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1231,
+          "title": "BXMSPROD-2083: use of OptaPlanner final version",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1231",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1231",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-07-10T10:21:08Z",
+          "updated_at": "2023-07-10T10:50:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "afe2993c18153c9cba86f3cafded85211baa32cd",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "OptaPlannerFinal",
+            "sha": "9c50ee17661e50bf07bb8678c767497aaca01703",
+            "label": "mbiarnes:OptaPlannerFinal"
+          },
+          "user": {
+            "login": "mbiarnes",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+            "html_url": "https://github.com/mbiarnes"
+          },
+          "checks": [
+            {
+              "id": 14906870371,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5506918105/jobs/10036211539",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-07-10T10:21:15Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 14906870057,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5506918105/jobs/10036211288",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-07-10T10:21:14Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24002705249,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/241/",
+              "conclusion": "pending",
+              "started_at": "2023-07-10T10:50:25Z",
+              "completed_at": "2023-07-10T10:50:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1230,
           "title": "BXMSPROD-2081: Remove OptaPlanner Workbench (#1163)",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1230",
           "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1230",
           "state": "open",
           "labels": [],
-          "draft": false,
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
@@ -17067,7 +17277,7 @@
             }
           ],
           "created_at": "2023-07-05T15:41:26Z",
-          "updated_at": "2023-07-07T09:28:56Z",
+          "updated_at": "2023-07-10T10:54:32Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
