@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-11T05:06:58.265Z",
+    "date": "2023-07-11T06:09:52.260Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5516019444"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5516432207"
   },
   "projects": [
     {
@@ -1063,6 +1063,102 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2349,
+          "title": "[7.67.x] Revert \"[RHPAM-4733][CVE-2023-34455 snappy-java] kafka version to 3.5.0 (#2334)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2349",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2349",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-11T05:41:13Z",
+          "updated_at": "2023-07-11T05:41:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "3c4545b22192dedff78a7e45586ba7874ee6a60e",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_RHPAM-4733_revert",
+            "sha": "e5e0f345cf7dbf4b550ef4308ae7073fa3a9fa0e",
+            "label": "kiegroup:7.67.x_RHPAM-4733_revert"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2348,
+          "title": "[7.67.x-blue] Revert \"[RHPAM-4733][CVE-2023-34455 snappy-java] kafka version to 3.5.0 (#2334)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2348",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2348",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            },
+            {
+              "login": "lampajr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
+              "html_url": "https://github.com/lampajr"
+            }
+          ],
+          "created_at": "2023-07-11T05:41:12Z",
+          "updated_at": "2023-07-11T05:41:14Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "12ffceb5ca6687771ae2adcdbb5d0c03a3d9d2f4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_RHPAM-4733_revert",
+            "sha": "f3cfdb6648afd34fec506bac24f62936c3d1dce9",
+            "label": "kiegroup:7.67.x-blue_RHPAM-4733_revert"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2347,
           "title": "BXMSPROD-2083: use of OptaPlanner final version",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2347",
@@ -1141,226 +1237,6 @@
               "conclusion": "failure",
               "started_at": "2023-07-10T19:50:37Z",
               "completed_at": "2023-07-10T19:50:37Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2346,
-          "title": "Revert \"[RHPAM-4733][CVE-2023-34455 snappy-java] kafka version to 3.5.0 (#2334)",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2346",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2346",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "rgdoliveira",
-              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-              "html_url": "https://github.com/rgdoliveira"
-            },
-            {
-              "login": "lampajr",
-              "avatar_url": "https://avatars.githubusercontent.com/u/26715795?v=4",
-              "html_url": "https://github.com/lampajr"
-            }
-          ],
-          "created_at": "2023-07-10T09:45:07Z",
-          "updated_at": "2023-07-10T09:56:27Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "5c3a8fa0455f44df6eff3f1ff5c1577f098e2db8",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "RHPAM-4733_revert",
-            "sha": "5cdaac08d2ce6c7808369da8660f3df7a8c88904",
-            "label": "Ginxo:RHPAM-4733_revert"
-          },
-          "user": {
-            "login": "Ginxo",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-            "html_url": "https://github.com/Ginxo"
-          },
-          "checks": [
-            {
-              "id": 14905888140,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577937/jobs/10035434981",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-10T09:45:31Z",
-              "completed_at": "2023-07-10T09:49:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905887919,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577937/jobs/10035434809",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-10T09:45:31Z",
-              "completed_at": "2023-07-10T09:49:50Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905887452,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506578042/jobs/10035434466",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-07-10T09:45:24Z",
-              "completed_at": "2023-07-10T09:45:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905887375,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577925/jobs/10035434409",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-07-10T09:45:23Z",
-              "completed_at": "2023-07-10T09:45:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905887155,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506578042/jobs/10035434242",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-07-10T09:45:24Z",
-              "completed_at": "2023-07-10T09:45:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905887049,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577925/jobs/10035434160",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-07-10T09:45:23Z",
-              "completed_at": "2023-07-10T09:45:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905883036,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506578042/jobs/10035431131",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-10T09:45:19Z",
-              "completed_at": "2023-07-10T09:45:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882900,
-              "name": "Full downstream build",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506578038/jobs/10035431029",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-07-10T09:45:13Z",
-              "completed_at": "2023-07-10T09:45:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882517,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577841/jobs/10035430748",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-07-10T09:45:12Z",
-              "completed_at": "2023-07-10T09:45:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882506,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577844/jobs/10035430739",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-07-10T09:45:12Z",
-              "completed_at": "2023-07-10T09:45:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882485,
-              "name": "Full downstream build",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577926/jobs/10035430723",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-07-10T09:45:12Z",
-              "completed_at": "2023-07-10T09:45:12Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882201,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577925/jobs/10035430513",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-10T09:45:18Z",
-              "completed_at": "2023-07-10T09:45:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882195,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577937/jobs/10035430504",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-10T09:45:19Z",
-              "completed_at": "2023-07-10T09:45:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882090,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577841/jobs/10035430430",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-07-10T09:45:11Z",
-              "completed_at": "2023-07-10T09:45:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14905882079,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5506577844/jobs/10035430426",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-07-10T09:45:11Z",
-              "completed_at": "2023-07-10T09:45:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24001638487,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/814/",
-              "conclusion": "success",
-              "started_at": "2023-07-10T09:46:29Z",
-              "completed_at": "2023-07-10T09:46:29Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -4676,10 +4552,10 @@
               "id": 14932822372,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/5515751190/jobs/10056398972",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-07-11T04:18:21Z",
-              "completed_at": null,
+              "completed_at": "2023-07-11T05:20:56Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -4698,10 +4574,10 @@
               "id": 14932822116,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/appformer/actions/runs/5515751190/jobs/10056398760",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-07-11T04:18:21Z",
-              "completed_at": null,
+              "completed_at": "2023-07-11T05:34:35Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16947,7 +16823,7 @@
             }
           ],
           "created_at": "2023-07-05T15:40:45Z",
-          "updated_at": "2023-07-10T10:54:17Z",
+          "updated_at": "2023-07-11T05:41:36Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
