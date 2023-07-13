@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-13T12:17:01.058Z",
+    "date": "2023-07-13T13:17:44.102Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5542916797"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5543570743"
   },
   "projects": [
     {
@@ -4294,121 +4294,52 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
-          "number": 1400,
-          "title": "[DO NOT MERGE] RHPAM-4723: Creating a branch via BC UI can lead to XSS",
-          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1400",
-          "html_url": "https://github.com/kiegroup/appformer/pull/1400",
+          "number": 1401,
+          "title": "[7.67.x] RHPAM-4719: Persistent Cross-Site Scripting (XSS)",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1401",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1401",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-07-12T19:55:11Z",
-          "updated_at": "2023-07-12T20:48:58Z",
+          "requested_reviewers": [
+            {
+              "login": "adrielparedes",
+              "avatar_url": "https://avatars.githubusercontent.com/u/471656?v=4",
+              "html_url": "https://github.com/adrielparedes"
+            },
+            {
+              "login": "paulovmr",
+              "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
+              "html_url": "https://github.com/paulovmr"
+            },
+            {
+              "login": "domhanak",
+              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
+              "html_url": "https://github.com/domhanak"
+            }
+          ],
+          "created_at": "2023-07-13T12:37:24Z",
+          "updated_at": "2023-07-13T12:37:27Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "783b3f35153c9b37ad44ed56ca8d9dc41bb47e9d",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "69dda99a336a900917b1aebe6140e3680d15a19b",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "RHPAM-4719",
-            "sha": "a2277c85158ed563675996488873eb573dc43101",
-            "label": "paulovmr:RHPAM-4719"
+            "ref": "7.67.x_RHPAM-4719",
+            "sha": "e1943b52bd9ec8cd5b33dc1a37aaf4f0aaec1b25",
+            "label": "kiegroup:7.67.x_RHPAM-4719"
           },
           "user": {
-            "login": "paulovmr",
-            "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-            "html_url": "https://github.com/paulovmr"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
-            {
-              "id": 14995876552,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535856575/jobs/10105215032",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-07-12T22:14:12Z",
-              "completed_at": "2023-07-12T23:06:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14995876307,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535856575/jobs/10105214911",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T19:55:33Z",
-              "completed_at": "2023-07-12T20:53:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14993957775,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/appformer/runs/14993957775",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T20:46:17Z",
-              "completed_at": "2023-07-12T20:48:56Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 14992156072,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535245723/jobs/10102420840",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-07-12T19:38:05Z",
-              "completed_at": "2023-07-12T19:55:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14992155760,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535245723/jobs/10102420625",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T18:40:08Z",
-              "completed_at": "2023-07-12T19:33:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14992098076,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/appformer/runs/14992098076",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T19:35:41Z",
-              "completed_at": "2023-07-12T19:35:42Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24059633283,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/274/",
-              "conclusion": "success",
-              "started_at": "2023-07-12T20:50:14Z",
-              "completed_at": "2023-07-12T20:50:14Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 24061077584,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/279/",
-              "conclusion": "failure",
-              "started_at": "2023-07-12T22:18:06Z",
-              "completed_at": "2023-07-12T22:18:06Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
+          "checks": []
         },
         {
           "number": 1399,
@@ -4707,131 +4638,6 @@
               "completed_at": "2023-07-11T04:18:14Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 1393,
-          "title": "RHPAM-4719: Persistent Cross-Site Scripting (XSS)",
-          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1393",
-          "html_url": "https://github.com/kiegroup/appformer/pull/1393",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "adrielparedes",
-              "avatar_url": "https://avatars.githubusercontent.com/u/471656?v=4",
-              "html_url": "https://github.com/adrielparedes"
-            }
-          ],
-          "created_at": "2023-06-15T07:18:15Z",
-          "updated_at": "2023-07-12T21:29:26Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "783b3f35153c9b37ad44ed56ca8d9dc41bb47e9d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "RHPAM-4719",
-            "sha": "a2277c85158ed563675996488873eb573dc43101",
-            "label": "domhanak:RHPAM-4719"
-          },
-          "user": {
-            "login": "domhanak",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-            "html_url": "https://github.com/domhanak"
-          },
-          "checks": [
-            {
-              "id": 14995876552,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535856575/jobs/10105215032",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-07-12T22:14:12Z",
-              "completed_at": "2023-07-12T23:06:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14995876307,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535856575/jobs/10105214911",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T19:55:33Z",
-              "completed_at": "2023-07-12T20:53:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14993957775,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/appformer/runs/14993957775",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T20:46:17Z",
-              "completed_at": "2023-07-12T20:48:56Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 14992156072,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535245723/jobs/10102420840",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-07-12T19:38:05Z",
-              "completed_at": "2023-07-12T19:55:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14992155760,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/appformer/actions/runs/5535245723/jobs/10102420625",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T18:40:08Z",
-              "completed_at": "2023-07-12T19:33:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14992098076,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/appformer/runs/14992098076",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T19:35:41Z",
-              "completed_at": "2023-07-12T19:35:42Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24059633283,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/274/",
-              "conclusion": "success",
-              "started_at": "2023-07-12T20:50:14Z",
-              "completed_at": "2023-07-12T20:50:14Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 24061077584,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/279/",
-              "conclusion": "failure",
-              "started_at": "2023-07-12T22:18:06Z",
-              "completed_at": "2023-07-12T22:18:06Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -9209,6 +9015,82 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2981,
+          "title": "[7.67.x] Bump h2 from 2.1.210 to 2.2.220 in /kie-server-parent/kie-server-tests",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2981",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2981",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2023-07-13T12:37:48Z",
+          "updated_at": "2023-07-13T12:37:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "86f24c2d1adee3ba9a741ae4e8d8959f6f4d4f23",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_dependabot/maven/kie-server-parent/kie-server-tests/com.h2database-h2-2.2.220",
+            "sha": "ca2abb6875e8e8af35d4532a7a61ccc888f5deb2",
+            "label": "kiegroup:7.67.x_dependabot/maven/kie-server-parent/kie-server-tests/com.h2database-h2-2.2.220"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2980,
+          "title": "[7.67.x-blue] Bump h2 from 2.1.210 to 2.2.220 in /kie-server-parent/kie-server-tests",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2980",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2980",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            }
+          ],
+          "created_at": "2023-07-13T12:37:43Z",
+          "updated_at": "2023-07-13T12:37:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "dd04f1726fc097353cb8758e75c48516524f1f74",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_dependabot/maven/kie-server-parent/kie-server-tests/com.h2database-h2-2.2.220",
+            "sha": "fc6f295900ba21315a62c6aec06af278cd7fc24b",
+            "label": "kiegroup:7.67.x-blue_dependabot/maven/kie-server-parent/kie-server-tests/com.h2database-h2-2.2.220"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2791,
           "title": "[JBPM-10092] added alias to kie-ctrl:create-container and kie-ctrl:de…",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2791",
@@ -12007,112 +11889,6 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-common",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 3815,
-          "title": "RHPAM-4723: Creating a branch via BC UI can lead to XSS",
-          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3815",
-          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3815",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "adrielparedes",
-              "avatar_url": "https://avatars.githubusercontent.com/u/471656?v=4",
-              "html_url": "https://github.com/adrielparedes"
-            },
-            {
-              "login": "domhanak",
-              "avatar_url": "https://avatars.githubusercontent.com/u/5937251?v=4",
-              "html_url": "https://github.com/domhanak"
-            }
-          ],
-          "created_at": "2023-07-05T19:38:29Z",
-          "updated_at": "2023-07-13T11:47:51Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "66ed06d492931d85d57330bc9b698090bd900f87",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "RHPAM-4719",
-            "sha": "d04901e6f619d0fc94928a126b0131320bd61123",
-            "label": "paulovmr:RHPAM-4719"
-          },
-          "user": {
-            "login": "paulovmr",
-            "avatar_url": "https://avatars.githubusercontent.com/u/832830?v=4",
-            "html_url": "https://github.com/paulovmr"
-          },
-          "checks": [
-            {
-              "id": 14994867340,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/14994867340",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T21:26:11Z",
-              "completed_at": "2023-07-12T21:26:13Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14994865531,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/runs/14994865531",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-07-12T21:21:50Z",
-              "completed_at": "2023-07-12T21:26:05Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 14994715219,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5535246278/jobs/10104351718",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-07-12T21:19:51Z",
-              "completed_at": "2023-07-12T21:52:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 14994715034,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/5535246278/jobs/10104351569",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-07-12T21:19:52Z",
-              "completed_at": "2023-07-12T21:51:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24060346031,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/307/",
-              "conclusion": "success",
-              "started_at": "2023-07-12T21:30:08Z",
-              "completed_at": "2023-07-12T21:30:08Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 24063690143,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-common-main.fdb/128/",
-              "conclusion": "success",
-              "started_at": "2023-07-13T02:54:40Z",
-              "completed_at": "2023-07-13T02:54:40Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 3737,
           "title": "Fix Whitespace Issue in Migration Tool",
