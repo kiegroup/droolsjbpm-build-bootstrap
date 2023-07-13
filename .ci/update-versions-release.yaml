@@ -23,7 +23,7 @@ build:
     build-command:
       current: |
         ${{ env.CREATE_COMMAND }}
-        ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/updateVersionsBuildChain.sh ${{ env.KIE_VERSION }}
+        ${{ env.WORKSPACE }}/bc/kiegroup_droolsjbpm-build-bootstrap/script/release/update-versions-build-chain.sh ${{ env.KIE_VERSION }}
         ${{ env.COMMIT_COMMAND }}
         ${{ env.PUSH_COMMAND }}
 
