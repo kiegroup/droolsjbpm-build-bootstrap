@@ -138,6 +138,7 @@ pipeline {
                     curl --silent --upload-file kiegroup.zip -u $kieUnpack -v http://\${LOCAL_NEXUS_IP}:8081/nexus/service/local/repositories/kieAllBuild-$baseBranch/content-compressed
                     cd .. """
                 }
+                sleep(time:5,unit:"MINUTES")
             }
         }
         stage('Additional tests for jdk11 and jdk8') {
