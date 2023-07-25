@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-25T15:06:44.155Z",
+    "date": "2023-07-25T16:07:41.365Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5658504780"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5659134241"
   },
   "projects": [
     {
@@ -6881,7 +6881,7 @@
             }
           ],
           "created_at": "2023-07-25T13:29:03Z",
-          "updated_at": "2023-07-25T13:29:33Z",
+          "updated_at": "2023-07-25T15:25:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6900,6 +6900,28 @@
             "html_url": "https://github.com/fjtirado"
           },
           "checks": [
+            {
+              "id": 15330160639,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/15330160639",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-25T15:11:49Z",
+              "completed_at": "2023-07-25T15:11:51Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15330159566,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/15330159566",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-25T15:09:51Z",
+              "completed_at": "2023-07-25T15:11:46Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 15326501566,
               "name": "[${{ matrix.target-branch }}] - Backporting",
@@ -6948,10 +6970,10 @@
               "id": 15326484373,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5657436297/job/15326484373",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-07-25T13:29:17Z",
-              "completed_at": null,
+              "completed_at": "2023-07-25T15:43:54Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -6959,20 +6981,20 @@
               "id": 15326483977,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5657436297/job/15326483977",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-07-25T13:29:15Z",
-              "completed_at": null,
+              "completed_at": "2023-07-25T15:48:56Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 24254527406,
+              "id": 24257380235,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/895/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/896/",
               "conclusion": "pending",
-              "started_at": "2023-07-25T13:29:08Z",
-              "completed_at": "2023-07-25T13:29:08Z",
+              "started_at": "2023-07-25T15:25:09Z",
+              "completed_at": "2023-07-25T15:25:09Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7381,15 +7403,9 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2023-06-05T20:11:47Z",
-          "updated_at": "2023-07-25T14:28:16Z",
+          "updated_at": "2023-07-25T15:20:46Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -16433,6 +16449,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm-wb",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1601,
+          "title": "RHPAM-4664: Date filter is not working as expected",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1601",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1601",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-07-25T15:53:20Z",
+          "updated_at": "2023-07-25T15:53:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "dde5679b7f7b1dc984c7079105b23e35db87adcb",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10167",
+            "sha": "ad12ab81973afff119bd4414dc91ff8df3471b18",
+            "label": "jesuino:JBPM-10167"
+          },
+          "user": {
+            "login": "jesuino",
+            "avatar_url": "https://avatars.githubusercontent.com/u/359820?v=4",
+            "html_url": "https://github.com/jesuino"
+          },
+          "checks": [
+            {
+              "id": 15331557512,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5658997235/job/15331557512",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-25T15:53:34Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15331557261,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/5658997235/job/15331557261",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-07-25T15:53:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24258070532,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-wb-main.pr/183/",
+              "conclusion": "pending",
+              "started_at": "2023-07-25T15:53:26Z",
+              "completed_at": "2023-07-25T15:53:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1600,
           "title": "[JBPM-10184] Build templates optimization",
