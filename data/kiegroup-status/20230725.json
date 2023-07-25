@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-25T07:06:20.200Z",
+    "date": "2023-07-25T08:08:54.572Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5653708800"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5654255568"
   },
   "projects": [
     {
@@ -6875,7 +6875,7 @@
             }
           ],
           "created_at": "2023-07-20T03:18:32Z",
-          "updated_at": "2023-07-25T05:10:10Z",
+          "updated_at": "2023-07-25T07:59:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6909,10 +6909,10 @@
               "id": 15313213293,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5652884531/job/15313213293",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-07-25T05:10:22Z",
-              "completed_at": null,
+              "completed_at": "2023-07-25T07:11:21Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -9369,7 +9369,7 @@
             }
           ],
           "created_at": "2023-07-20T03:38:36Z",
-          "updated_at": "2023-07-25T06:24:22Z",
+          "updated_at": "2023-07-25T08:01:07Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9414,10 +9414,10 @@
               "id": 15311011460,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5652021414/job/15311011460",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-07-25T02:40:17Z",
-              "completed_at": null,
+              "completed_at": "2023-07-25T07:12:50Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -9425,10 +9425,10 @@
               "id": 15311011323,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/5652021414/job/15311011323",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2023-07-25T02:40:08Z",
-              "completed_at": null,
+              "completed_at": "2023-07-25T07:14:49Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -16328,6 +16328,36 @@
       "repo_url": "https://github.com/kiegroup/jbpm-wb",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1600,
+          "title": "Build templates optimization",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1600",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1600",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-07-25T07:32:07Z",
+          "updated_at": "2023-07-25T07:32:37Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "dde5679b7f7b1dc984c7079105b23e35db87adcb",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "build-optimization",
+            "sha": "d6f5ebc31956825cb45c17aeb3ba7f972879d16d",
+            "label": "albfan:build-optimization"
+          },
+          "user": {
+            "login": "albfan",
+            "avatar_url": "https://avatars.githubusercontent.com/u/220968?v=4",
+            "html_url": "https://github.com/albfan"
+          },
+          "checks": []
+        },
         {
           "number": 1433,
           "title": "Use containsOnly insead of containsExactly in ProcessInstanceDiagramPresenterTest.java",
