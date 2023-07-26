@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-26T14:13:59.150Z",
+    "date": "2023-07-26T15:06:08.995Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5669770114"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5670472964"
   },
   "projects": [
     {
@@ -6858,76 +6858,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2303,
-          "title": "[JBPM-10185] Handling sla timer for processes",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2303",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2303",
+          "number": 2305,
+          "title": "[7.67.x-blue] [JBPM-10185] Handling sla timer for processes",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2305",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2305",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
             {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
             }
           ],
-          "created_at": "2023-07-25T13:29:03Z",
-          "updated_at": "2023-07-26T12:46:53Z",
+          "created_at": "2023-07-26T14:49:07Z",
+          "updated_at": "2023-07-26T14:49:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "1226e804099dddfae108077d87fca3f416fd0d83",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "46d7d3885d4910d5ff56f2ac0fdf0b2aa2dce072",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "JBPM-10185",
-            "sha": "ff35a8e370768c44a2f57e1e82688c4d5770277d",
-            "label": "fjtirado:JBPM-10185"
+            "ref": "7.67.x-blue_JBPM-10185",
+            "sha": "e2435bc269057ed1f1211a4593da3125c994b877",
+            "label": "kiegroup:7.67.x-blue_JBPM-10185"
           },
           "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 2304,
+          "title": "[7.67.x] [JBPM-10185] Handling sla timer for processes",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2304",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2304",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 15360610950,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5668928605/job/15360610950",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-07-26T12:55:43Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15360610725,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5668928605/job/15360610725",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-07-26T12:54:45Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24276168108,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/897/",
-              "conclusion": "pending",
-              "started_at": "2023-07-26T12:47:01Z",
-              "completed_at": "2023-07-26T12:47:01Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
             }
-          ]
+          ],
+          "created_at": "2023-07-26T14:49:05Z",
+          "updated_at": "2023-07-26T14:49:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "624ca14da2fb8d879eb851c8d47dcb98af46079c",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10185",
+            "sha": "1e456659f4238408e7717ac195df328ca28f52f0",
+            "label": "kiegroup:7.67.x_JBPM-10185"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2302,
