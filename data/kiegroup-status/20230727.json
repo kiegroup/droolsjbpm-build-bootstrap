@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-07-27T04:07:06.833Z",
+    "date": "2023-07-27T05:05:43.307Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5676407138"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5676737041"
   },
   "projects": [
     {
@@ -1081,7 +1081,7 @@
             }
           ],
           "created_at": "2023-07-20T02:02:53Z",
-          "updated_at": "2023-07-26T13:32:57Z",
+          "updated_at": "2023-07-27T04:17:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1144,12 +1144,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 24272640357,
+              "id": 24291620712,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/697/",
-              "conclusion": "failure",
-              "started_at": "2023-07-26T09:20:55Z",
-              "completed_at": "2023-07-26T09:20:55Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/698/",
+              "conclusion": "pending",
+              "started_at": "2023-07-27T04:17:11Z",
+              "completed_at": "2023-07-27T04:17:11Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2212,7 +2212,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-07-20T02:35:47Z",
-          "updated_at": "2023-07-26T07:44:17Z",
+          "updated_at": "2023-07-27T04:14:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6946,7 +6946,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-07-20T03:18:32Z",
-          "updated_at": "2023-07-25T08:47:39Z",
+          "updated_at": "2023-07-27T04:14:46Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9439,7 +9439,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-07-20T03:38:36Z",
-          "updated_at": "2023-07-26T10:29:59Z",
+          "updated_at": "2023-07-27T04:15:35Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13980,6 +13980,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
         {
+          "number": 285,
+          "title": "Bump h2 from 1.4.197 to 2.2.220",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/285",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/285",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-07-27T04:11:51Z",
+          "updated_at": "2023-07-27T04:13:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "266d28b222b7e9697e86eba56d39b965c1e2b8c8",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "bump-h2-2.2.220",
+            "sha": "966f068bf644028c91ffbd8ff1e0e276be835440",
+            "label": "tkobayas:bump-h2-2.2.220"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 15383178243,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/5676439083/job/15383178243",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-07-27T04:12:05Z",
+              "completed_at": "2023-07-27T04:27:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15383178072,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/5676439083/job/15383178072",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-07-27T04:12:04Z",
+              "completed_at": "2023-07-27T04:27:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24291754937,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-work-items-main.pr/69/",
+              "conclusion": "failure",
+              "started_at": "2023-07-27T04:35:26Z",
+              "completed_at": "2023-07-27T04:35:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 278,
           "title": "Bump json from 20140107 to 20230227",
           "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/278",
@@ -18173,6 +18236,91 @@
       "repo_url": "https://github.com/kiegroup/kie-jpmml-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 83,
+          "title": "Bump h2 from 1.4.197 to 2.2.220",
+          "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/83",
+          "html_url": "https://github.com/kiegroup/kie-jpmml-integration/pull/83",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-07-27T04:13:26Z",
+          "updated_at": "2023-07-27T04:13:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a4a297ffc41b935a80047852fcb358aed6bc6ea0",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "bump-h2-2.2.220",
+            "sha": "877c8c5a10b44ea624324b9d8533b4cbd33f2145",
+            "label": "tkobayas:bump-h2-2.2.220"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 15383200998,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5676448362/job/15383200998",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-27T04:16:37Z",
+              "completed_at": "2023-07-27T04:34:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15383200881,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5676448362/job/15383200881",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-27T04:16:01Z",
+              "completed_at": "2023-07-27T04:33:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15383200762,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5676448362/job/15383200762",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-27T04:17:05Z",
+              "completed_at": "2023-07-27T04:27:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15383200615,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5676448362/job/15383200615",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-07-27T04:18:45Z",
+              "completed_at": "2023-07-27T04:31:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24291661622,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-jpmml-integration-main.pr/44/",
+              "conclusion": "success",
+              "started_at": "2023-07-27T04:22:55Z",
+              "completed_at": "2023-07-27T04:22:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 76,
           "title": "Bump to 8.x + Migrate to Junit5 + Remove jBPM modules",
