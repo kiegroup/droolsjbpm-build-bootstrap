@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-01T13:09:28.866Z",
+    "date": "2023-08-01T14:05:29.959Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5727201735"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5727819124"
   },
   "projects": [
     {
@@ -7675,11 +7675,14 @@
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2292",
           "html_url": "https://github.com/kiegroup/jbpm/pull/2292",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-06-05T20:11:47Z",
-          "updated_at": "2023-08-01T09:11:38Z",
+          "updated_at": "2023-08-01T13:39:02Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7698,6 +7701,50 @@
             "html_url": "https://github.com/martinweiler"
           },
           "checks": [
+            {
+              "id": 15520124248,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5727528715/job/15520124248",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-01T13:37:55Z",
+              "completed_at": "2023-08-01T13:37:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15520124186,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5727528714/job/15520124186",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-01T13:37:55Z",
+              "completed_at": "2023-08-01T13:37:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15520123562,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5727528715/job/15520123562",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-01T13:37:54Z",
+              "completed_at": "2023-08-01T13:37:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15520123531,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5727528714/job/15520123531",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-01T13:37:54Z",
+              "completed_at": "2023-08-01T13:37:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 15406186091,
               "name": "SonarCloud",
