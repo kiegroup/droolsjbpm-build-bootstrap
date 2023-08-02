@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-02T20:06:20.316Z",
+    "date": "2023-08-02T21:04:20.566Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5743303850"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5743774908"
   },
   "projects": [
     {
@@ -2095,6 +2095,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 5436,
+          "title": "Sorting the transformable set to avoid deadlock",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5436",
+          "html_url": "https://github.com/kiegroup/drools/pull/5436",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-08-02T20:43:26Z",
+          "updated_at": "2023-08-02T20:44:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "5b13798ed4d265c580de5c243d65d602aeea3ebd",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "sorting_transformable_set",
+            "sha": "d1620f2f6e536c2e3f80ce445160b4a7732a9f5c",
+            "label": "fjtirado:sorting_transformable_set"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 15568292822,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/5743624861/job/15568292822",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-02T20:44:41Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15568292651,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/5743624861/job/15568292651",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-02T20:45:26Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15568292482,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/5743624861/job/15568292482",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-02T20:44:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15568292304,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/5743624861/job/15568292304",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-02T20:44:43Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24399611730,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/445/",
+              "conclusion": "pending",
+              "started_at": "2023-08-02T20:44:30Z",
+              "completed_at": "2023-08-02T20:44:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 24399611733,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/453/",
+              "conclusion": "pending",
+              "started_at": "2023-08-02T20:44:30Z",
+              "completed_at": "2023-08-02T20:44:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 5412,
           "title": "[7.67.x][kie-issues#394] Unnecessary warning when DRL file is placed in BOOT-INF/classes directory",
