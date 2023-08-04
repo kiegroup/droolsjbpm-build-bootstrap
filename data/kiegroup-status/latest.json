@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-04T09:05:59.174Z",
+    "date": "2023-08-04T10:18:03.601Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5760449548"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5760985770"
   },
   "projects": [
     {
@@ -2148,10 +2148,10 @@
               "id": 15615166106,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/5760017918/job/15615166106",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-08-04T08:16:58Z",
-              "completed_at": null,
+              "completed_at": "2023-08-04T09:32:51Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2159,10 +2159,10 @@
               "id": 15615165858,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/5760017918/job/15615165858",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-08-04T08:16:58Z",
-              "completed_at": null,
+              "completed_at": "2023-08-04T10:17:23Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2170,10 +2170,10 @@
               "id": 15615165620,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/5760017918/job/15615165620",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-08-04T08:16:56Z",
-              "completed_at": null,
+              "completed_at": "2023-08-04T09:08:12Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2181,22 +2181,12 @@
               "id": 15615165369,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/5760017918/job/15615165369",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-08-04T08:16:55Z",
-              "completed_at": null,
+              "completed_at": "2023-08-04T09:14:42Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24428380556,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/453/",
-              "conclusion": "pending",
-              "started_at": "2023-08-04T08:16:47Z",
-              "completed_at": "2023-08-04T08:16:47Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
               "id": 24428416151,
@@ -2215,6 +2205,16 @@
               "conclusion": "failure",
               "started_at": "2023-08-04T08:48:08Z",
               "completed_at": "2023-08-04T08:48:08Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 24429386563,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/453/",
+              "conclusion": "success",
+              "started_at": "2023-08-04T09:23:37Z",
+              "completed_at": "2023-08-04T09:23:37Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6781,14 +6781,13 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2312,
-          "title": "[JBPM-10186] drop-script-source for h2 test must be absolute path",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2312",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2312",
+          "number": 2314,
+          "title": "[7.67.x-blue] [JBPM-10186] drop-script-source for h2 test must be absolute path",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2314",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2314",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
@@ -6798,99 +6797,82 @@
               "html_url": "https://github.com/fjtirado"
             }
           ],
-          "created_at": "2023-08-04T07:40:53Z",
-          "updated_at": "2023-08-04T07:41:27Z",
+          "created_at": "2023-08-04T09:41:37Z",
+          "updated_at": "2023-08-04T09:42:42Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "31944ae9a09b5b1efde0ed994f2d946e62eebded",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "7e49e0ea75073715fb09be32bd4552439e291a4c",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "JBPM-10186",
-            "sha": "453e9522c81cc3cec5dcd710a4d1360f065e2efc",
-            "label": "gmunozfe:JBPM-10186"
+            "ref": "7.67.x-blue_JBPM-10186",
+            "sha": "cf68281404595009e35b3768cd968585e71decd5",
+            "label": "kiegroup:7.67.x-blue_JBPM-10186"
           },
           "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
           "checks": [
             {
-              "id": 15614305746,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5759721072/job/15614305746",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T07:41:32Z",
-              "completed_at": "2023-08-04T07:41:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15614305745,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5759721044/job/15614305745",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T07:41:32Z",
-              "completed_at": "2023-08-04T07:41:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15614305347,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5759721072/job/15614305347",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T07:41:30Z",
-              "completed_at": "2023-08-04T07:41:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15614305338,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5759721044/job/15614305338",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T07:41:30Z",
-              "completed_at": "2023-08-04T07:41:30Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15614293684,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5759716759/job/15614293684",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-08-04T07:41:05Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15614293533,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5759716759/job/15614293533",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-08-04T07:41:06Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24427904614,
+              "id": 24429676493,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/901/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/70/",
               "conclusion": "pending",
-              "started_at": "2023-08-04T07:40:58Z",
-              "completed_at": "2023-08-04T07:40:58Z",
+              "started_at": "2023-08-04T09:42:19Z",
+              "completed_at": "2023-08-04T09:42:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2313,
+          "title": "[7.67.x] [JBPM-10186] drop-script-source for h2 test must be absolute path",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2313",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2313",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-08-04T09:41:37Z",
+          "updated_at": "2023-08-04T09:43:01Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "f889726e17341c183f0a37f4d079119eda96ae0a",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10186",
+            "sha": "7d32a6fa7ab154ea4ddd1d481c642d32bbfe9d13",
+            "label": "kiegroup:7.67.x_JBPM-10186"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 24429673115,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/127/",
+              "conclusion": "pending",
+              "started_at": "2023-08-04T09:42:06Z",
+              "completed_at": "2023-08-04T09:42:06Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
