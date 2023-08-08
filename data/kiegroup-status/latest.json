@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-08T06:08:32.113Z",
+    "date": "2023-08-08T07:05:09.747Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5793374054"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5793819578"
   },
   "projects": [
     {
@@ -2108,7 +2108,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-08-07T13:07:30Z",
+      "updated_at": "2023-08-08T06:49:12Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -16716,120 +16716,98 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
       "pullRequests": [
         {
-          "number": 1232,
-          "title": "[RHPAM-4726] update EAP XP to version 4.0.1.GA-redhat-00001",
-          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1232",
-          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1232",
+          "number": 1234,
+          "title": "[7.67.x] [RHPAM-4726] update EAP XP to version 4.0.1.GA-redhat-00001",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1234",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1234",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-08-04T08:25:01Z",
-          "updated_at": "2023-08-07T12:33:00Z",
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2023-08-08T06:57:31Z",
+          "updated_at": "2023-08-08T07:01:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "83daf6ccfc92d072c0ca8af2b10362e89db83521",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "b7a7d5d2573a4d83588cc161034c8bfbf582f54f",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "RHPAM-4726",
-            "sha": "c4b904a2402e45af9d806e8f0c88edc76555f913",
-            "label": "rgdoliveira:RHPAM-4726"
+            "ref": "7.67.x_RHPAM-4726",
+            "sha": "1d7638e1d6b886926c2097fc0b642f4d7fe42979",
+            "label": "kiegroup:7.67.x_RHPAM-4726"
           },
           "user": {
-            "login": "rgdoliveira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
-            "html_url": "https://github.com/rgdoliveira"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
           "checks": [
             {
-              "id": 15669569172,
-              "name": "ubuntu-18.04 - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5760092193/job/15669569172",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-08-07T08:00:59Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15669568911,
-              "name": "ubuntu-18.04 - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5760092193/job/15669568911",
-              "status": "queued",
-              "conclusion": null,
-              "started_at": "2023-08-07T08:00:59Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15615630520,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5760180285/job/15615630520",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T08:34:25Z",
-              "completed_at": "2023-08-04T08:34:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15615630256,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5760180281/job/15615630256",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T08:34:25Z",
-              "completed_at": "2023-08-04T08:34:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15615629881,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5760180285/job/15615629881",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T08:34:24Z",
-              "completed_at": "2023-08-04T08:34:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15615629613,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/5760180281/job/15615629613",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-04T08:34:23Z",
-              "completed_at": "2023-08-04T08:34:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24456944598,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-distributions-main.pr/249/",
-              "conclusion": "success",
-              "started_at": "2023-08-07T12:01:09Z",
-              "completed_at": "2023-08-07T12:01:09Z",
+              "id": 24473178120,
+              "name": "Linux - Full Downstream Production Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdbp/job/kie-wb-distributions-7.67.x.fdbp/6/",
+              "conclusion": "pending",
+              "started_at": "2023-08-08T07:01:33Z",
+              "completed_at": "2023-08-08T07:01:33Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
+            }
+          ]
+        },
+        {
+          "number": 1233,
+          "title": "[7.67.x-blue] [RHPAM-4726] update EAP XP to version 4.0.1.GA-redhat-00001",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1233",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1233",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 24461766704,
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            }
+          ],
+          "created_at": "2023-08-08T06:57:21Z",
+          "updated_at": "2023-08-08T07:01:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "180a401aeade209b6d236ffdbf57619b6fcc53be",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_RHPAM-4726",
+            "sha": "dd8e0a95f6685cc6b61035a72dcfe0bd496dab3a",
+            "label": "kiegroup:7.67.x-blue_RHPAM-4726"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 24473179340,
               "name": "Linux - Full Downstream Production Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdbp/job/kie-wb-distributions-main.fdbp/10/",
-              "conclusion": "success",
-              "started_at": "2023-08-07T15:52:53Z",
-              "completed_at": "2023-08-07T15:52:53Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdbp/job/kie-wb-distributions-7.67.x-blue.fdbp/5/",
+              "conclusion": "pending",
+              "started_at": "2023-08-08T07:01:39Z",
+              "completed_at": "2023-08-08T07:01:39Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
