@@ -6,19 +6,19 @@
   <parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-user-bom-parent</artifactId>
-    <version>7.74.0-SNAPSHOT</version>
+    <version>7.75.0-SNAPSHOT</version>
     <relativePath>../kie-user-bom-parent/pom.xml</relativePath>
   </parent>
 
   <artifactId>kie-platform-bom</artifactId>
   <packaging>pom</packaging>
 
-  <name>KIE (Drools, jBPM, OptaPlanner) Platform BOM</name>
+  <name>KIE (Drools, jBPM) Platform BOM</name>
   <description>
     The BOM declares all internal and appformer dependency versions in dependencyManagement.
     KIE modules should _not_ directly import this BOM and instead use kie-parent and import specific KIE user BOMs.
     That is to avoid unnecessary dependencies on UberFire, Dashbuilder or Guvnor for non-UI repositories like
-    Drools, jBPM or OptaPlanner.
+    Drools or jBPM.
     Platform BOM can be used in cases when one needs to easily inherit all the different versions KIE is using.
   </description>
 
@@ -40,13 +40,6 @@
       <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-bom</artifactId>
-        <type>pom</type>
-        <version>${version.org.kie}</version>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.optaplanner</groupId>
-        <artifactId>optaplanner-bom</artifactId>
         <type>pom</type>
         <version>${version.org.kie}</version>
         <scope>import</scope>

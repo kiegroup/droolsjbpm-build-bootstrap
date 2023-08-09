@@ -4,15 +4,15 @@ import org.kie.jenkins.MavenCommand
 import org.kie.jenkins.MavenStagingHelper
 
 additionalMavenFlag = "${env.ADDITIONAL_MAVEN_FLAG?.trim() ?: ''}"
-baseBranch= "${env.BASE_BRANCH}"
-agentLabel= "${env.AGENT_LABEL}"
+baseBranch = "${env.BASE_BRANCH}"
+agentLabel = "${env.AGENT_LABEL}"
 kieVersion = "${env.KIE_VERSION}"
 mvnTool = "${env.MVN_TOOL}"
 jdkVersion = "${env.JDK_VERSION}"
 buildName = "${env.BUILD_NAME}"
 
 buildChainGroup = env.BUILDCHAIN_GROUP?.trim() ?: 'kiegroup'
-buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: 'main'
+buildChainBranch = env.BUILDCHAIN_BRANCH?.trim() ?: baseBranch
 
 pipeline {
     agent {
@@ -24,7 +24,7 @@ pipeline {
         jdk jdkVersion
     }
     options {
-        timestamps ()
+        timestamps()
     }
     environment {
         FIREFOX_FOLDER = '/opt/tools/firefox-91esr'
@@ -109,7 +109,7 @@ pipeline {
         stage('Deploy process-migration-service locally with jdk11'){
             when {
                 expression { (jdkVersion == 'kie-jdk11.0.15') }
-            }    
+            }
             steps {
                 dir("${WORKSPACE}/bc/kiegroup_process-migration-service") {
                     configFileProvider([configFile(fileId: '771ff52a-a8b4-40e6-9b22-d54c7314aa1e', targetLocation: 'jenkins-settings.xml', variable: 'SETTINGS_XML_FILE')]) {
@@ -117,14 +117,14 @@ pipeline {
                     }
                 }
             }
-        }        
+        }
         stage('check space after build') {
             steps {
                 script{
                     util.spaceLeft()
                 }
             }
-        }         
+        }
         stage('Unpack zip of artifacts to QA Nexus') {
             when {
                 expression { (jdkVersion == 'kie-jdk11.0.15' || jdkVersion == 'kie-jdk1.8') && additionalMavenFlag != '-Dproductized' }
@@ -138,6 +138,7 @@ pipeline {
                     curl --silent --upload-file kiegroup.zip -u $kieUnpack -v http://\${LOCAL_NEXUS_IP}:8081/nexus/service/local/repositories/kieAllBuild-$baseBranch/content-compressed
                     cd .. """
                 }
+                sleep(time:5,unit:"MINUTES")
             }
         }
         stage('Additional tests for jdk11 and jdk8') {
@@ -158,9 +159,9 @@ pipeline {
                     "kieServerMatrix" : {
                         build job: "kieServerMatrix", propagate: false, parameters: [[$class: 'StringParameterValue', name: 'kieVersion', value: kieVersion], [$class: 'StringParameterValue', name: 'baseBranch', value: baseBranch]]
                     }
-                )    
-            } 
-        } 
+                )
+            }
+        }
     }
     post {
         always {
@@ -170,7 +171,7 @@ pipeline {
             }
             cleanWs()
         }
-    }      
+    }
 }
 
 void sendNotification() {

@@ -14,9 +14,9 @@
   <groupId>org.kie</groupId>
   <artifactId>kie-user-bom-parent</artifactId>
   <packaging>pom</packaging>
-  <version>7.74.0-SNAPSHOT</version>
+  <version>7.75.0-SNAPSHOT</version>
 
-  <name>KIE (Drools, jBPM, OptaPlanner) user BOM parent</name>
+  <name>KIE (Drools, jBPM) user BOM parent</name>
   <description>
     The user BOM parent is used to hold common configuration for all user BOMs. User BOMs can not directly extend
     kie-parent as it brings lots of 3rd party versions in the dependencyManagement which is not desirable for user BOMs.
@@ -50,6 +50,7 @@
   <properties>
     <version.org.kie>${project.version}</version.org.kie>
     <version.org.kie.lienzo>${version.org.kie}</version.org.kie.lienzo>
+    <version.org.optaplanner>7.73.0.Final</version.org.optaplanner>
     <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
     <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
   </properties>

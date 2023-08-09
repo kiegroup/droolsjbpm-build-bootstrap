@@ -22,7 +22,7 @@ A week in advance:
 
 * All external dependencies must be on a non-SNAPSHOT version, to avoid failing to *close* the staging repo on nexus near the end of the release.
 
-* Ask kiegroup modules (appformer, kie-wb-common, drools-wb, jbpm-wb, jbpm-designer, optaplanner-wb and kie-wb-distributions) leads to update the i18n translations:
+* Ask kiegroup modules (appformer, kie-wb-common, drools-wb, jbpm-wb, jbpm-designer,and kie-wb-distributions) leads to update the i18n translations:
 
     * Translations are at the time beeing a manual process since Zanata shut down
 
@@ -227,7 +227,7 @@ To finish a release there are still a few steps to be done (that are done automa
   
               * Unzip the zips to a temporary directory.
   
-              * Start the `runExamples.sh` script for drools, droolsjbpm-integration and optaplanner
+              * Start the `runExamples.sh` script for drools and droolsjbpm-integration 
   
               * Deploy the guvnor WildFly 14 war and surf to it:
   
@@ -452,7 +452,7 @@ Releasing from a release branch
             ```shell
             $ ./droolsjbpm-build-bootstrap/script/git-all.sh push <tag> | where <tag> is 7.x.x.Final    
 
-* Go to [JIRA](https://issues.redhat.org) and for each of our JIRA projects (DROOLS, OPTAPLANNER, JBPM, APPFORMER):
+* Go to [JIRA](https://issues.redhat.org) and for each of our JIRA projects (DROOLS, JBPM, APPFORMER):
 
     * Open menu item *Administration*, link *Manage versions*, release the version.
 
@@ -504,8 +504,6 @@ for the web-pages
      https://www.drools.org
      
      https://www.jbpm.org
-     
-     https:/www.optaplanner.org
 
     You can find the docs and binaries here:
 
@@ -517,7 +515,6 @@ for the web-pages
 
      https://docs.jboss.org/drools/release/&kieVersion
      https://docs.jboss.org/jbpm/release/&kieVersion
-     https://docs.jboss.org/optaplanner/release/&kieVersion
         
      binaries:
    

@@ -22,9 +22,9 @@
   <!-- major.minor.micro.Final -->
   <!-- For example: 1.2.3 without the suffix ".Final" corrupts the OSGi eclipse updatesite -->
   <!-- For example: 1.2.3.M2 corrupts the OSGi eclipse updatesite update order -->
-  <version>7.74.0-SNAPSHOT</version>
+  <version>7.75.0-SNAPSHOT</version>
 
-  <name>KIE (Drools, jBPM, OptaPlanner) parent</name>
+  <name>KIE (Drools, jBPM) parent</name>
   <description>
     The parent contains all metadata (including plugins) including dependency versions. All modules, except for user
     BOMS,
@@ -90,12 +90,10 @@
     <version.com.google.jsinterop.base>1.0.0</version.com.google.jsinterop.base>
     <version.com.google.jsinterop.annotations>2.0.0</version.com.google.jsinterop.annotations>
     <version.com.google.protobuf>3.19.6</version.com.google.protobuf>
-    <version.com.h2database>1.4.197</version.com.h2database>
+    <version.com.h2database>2.2.220</version.com.h2database>
     <version.com.jcraft>0.1.54</version.com.jcraft>
     <version.com.lowagie.itext>2.1.7</version.com.lowagie.itext>
     <version.com.miglayout>3.7.4</version.com.miglayout>
-    <!-- Only used by optaweb-vehicle-routing, but is required -->
-    <version.com.neovisionaries>1.27</version.com.neovisionaries>
     <version.com.networknt.json-schema-validator>1.0.43</version.com.networknt.json-schema-validator>
     <version.com.sun.xml.bind>2.3.0</version.com.sun.xml.bind>
     <version.com.thoughtworks.xstream>1.4.20</version.com.thoughtworks.xstream>
@@ -177,7 +175,7 @@
     <version.org.eclipse.emf.ecore.xmi>2.5.0.v20100521-1846</version.org.eclipse.emf.ecore.xmi>
     <version.org.eclipse.jdt>3.18.0</version.org.eclipse.jdt>
     <!-- Jetty's version is aligned with CXF -->
-    <version.org.eclipse.jetty>9.4.48.v20220622</version.org.eclipse.jetty>
+    <version.org.eclipse.jetty>9.4.51.v20230217</version.org.eclipse.jetty>
     <version.org.eclipse.jgit>5.10.0.202012080955-r</version.org.eclipse.jgit>
     <version.org.eclipse.persistence>2.7.6</version.org.eclipse.persistence>
     <version.org.eclipse.sisu>0.3.2</version.org.eclipse.sisu>
@@ -186,7 +184,7 @@
     <version.org.glassfish.jaxb>2.3.6</version.org.glassfish.jaxb>
     <version.org.gwtbootstrap3>1.0.1</version.org.gwtbootstrap3>
     <version.org.gwtbootstrap3-extras>1.0.2</version.org.gwtbootstrap3-extras>
-    <version.org.hibernate>5.3.20.Final</version.org.hibernate>
+    <version.org.hibernate>5.4.24.Final</version.org.hibernate>
     <version.org.hibernate.validator>6.0.20.Final</version.org.hibernate.validator>
     <version.org.hibernate.commons.annotations>5.0.5.Final</version.org.hibernate.commons.annotations>
     <version.org.hornetq>2.4.7.Final</version.org.hornetq>
@@ -242,11 +240,12 @@
     <version.org.json>20230227</version.org.json>
     <version.org.jsoup>1.15.3</version.org.jsoup>
     <version.org.junit>5.5.2</version.org.junit>
-    <version.org.keycloak>20.0.3</version.org.keycloak>
+    <version.org.keycloak>21.1.2</version.org.keycloak>
     <version.org.mvel>2.4.15.Final</version.org.mvel>
     <version.org.apache.logging.log4j>2.17.1</version.org.apache.logging.log4j>
     <version.org.ocpsoft.prettytime>3.0.2.Final</version.org.ocpsoft.prettytime>
     <!--EAP 6.4 use 4.2.0.redhat-8 which is not OSGi compatible, so stay on 4.3.1-->
+    <version.org.optaplanner>7.73.0.Final</version.org.optaplanner>
     <version.org.osgi>4.3.1</version.org.osgi>
     <version.org.ops4j.pax.exam>4.13.4</version.org.ops4j.pax.exam>
     <version.org.owasp.encoder>1.2</version.org.owasp.encoder>
@@ -290,9 +289,8 @@
     <version.xpp3>${version.xmlpull}</version.xpp3>
 
     <!-- Internal dependencies -->
-    <version.org.kie>7.74.0-SNAPSHOT</version.org.kie>
+    <version.org.kie>7.75.0-SNAPSHOT</version.org.kie>
     <version.org.drools>${version.org.kie}</version.org.drools>
-    <version.org.optaplanner>${version.org.kie}</version.org.optaplanner>
     <version.org.jbpm>${version.org.kie}</version.org.jbpm>
     <version.org.drools.droolsjbpm-integration>${version.org.drools}</version.org.drools.droolsjbpm-integration>
     <version.org.uberfire>${version.org.kie}</version.org.uberfire>
@@ -416,7 +414,7 @@
          Default value is 1 to enable building on older machines as well (minimum is still about 4GiB of RAM memory). -->
     <gwt.compiler.localWorkers>1</gwt.compiler.localWorkers>
     <!-- property for productisation to know the last released version -->
-    <latestReleasedVersionFromThisBranch>7.74.0-SNAPSHOT</latestReleasedVersionFromThisBranch>
+    <latestReleasedVersionFromThisBranch>7.75.0-SNAPSHOT</latestReleasedVersionFromThisBranch>
     <version.io.takari.maven.plugins.compiler>1.13.5</version.io.takari.maven.plugins.compiler>
 
     <version.org.codehaus.plexus.plexus-io>3.0.0</version.org.codehaus.plexus.plexus-io>
@@ -2231,7 +2229,6 @@
     <module>kie-soup-bom</module>
     <module>uberfire-bom</module>
     <module>drools-bom</module>
-    <module>optaplanner-bom</module>
     <module>jbpm-bom</module>
     <module>kie-uberfire-extensions-bom</module>
     <module>kie-dmn-bom</module>
@@ -2558,12 +2555,6 @@
         <groupId>com.miglayout</groupId>
         <artifactId>miglayout</artifactId>
         <version>${version.com.miglayout}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.neovisionaries</groupId>
-        <artifactId>nv-i18n</artifactId>
-        <version>${version.com.neovisionaries}</version>
       </dependency>
 
       <dependency>
