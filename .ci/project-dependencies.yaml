@@ -62,6 +62,17 @@ dependencies:
     dependencies:
       - project: kiegroup/drools
       - project: kiegroup/jbpm
+    mapping:
+      dependencies:
+        default:
+          - source: 7.x
+            target: main
+      dependant:
+        default:
+          - source: main
+            target: 7.x
+      exclude:
+        - kiegroup/drools
 
   - project: kiegroup/droolsjbpm-integration
     dependencies:
