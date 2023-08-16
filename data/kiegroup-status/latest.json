@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-16T11:03:35.696Z",
+    "date": "2023-08-16T12:23:06.755Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5877944120"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5878560907"
   },
   "projects": [
     {
@@ -1050,6 +1050,52 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2368,
+          "title": "[main][Build Chain] Update build chain and repository-list files.",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2368",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2368",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "mbiarnes",
+              "avatar_url": "https://avatars.githubusercontent.com/u/3669059?v=4",
+              "html_url": "https://github.com/mbiarnes"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-08-16T11:41:24Z",
+          "updated_at": "2023-08-16T11:41:25Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "e27848e4288cda764c1f4911f3756db14cac25d9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "generate_files_20230816T114120",
+            "sha": "c25f53da687c4f0edc3add865019f3c2cb84b966",
+            "label": "kiegroup:generate_files_20230816T114120"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2367,
           "title": "Bump org.apache.maven:maven-core from 3.3.9 to 3.8.1",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2367",
@@ -1444,80 +1490,6 @@
               "completed_at": "2023-08-15T17:41:51Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2360,
-          "title": "DROOLS-7533 `kie-jpmml-integration` 7.x depends on jbpmn main",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2360",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2360",
-          "state": "open",
-          "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2023-08-11T08:47:44Z",
-          "updated_at": "2023-08-11T10:46:33Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "3224aa9c94ba66d4c513fb0e9edc1f627fe536f8",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "setup_kie_jpmml_integration_ci",
-            "sha": "d5f85dcbc9e61fc8ad6fe77cad7a72dcddd97576",
-            "label": "kiegroup:setup_kie_jpmml_integration_ci"
-          },
-          "user": {
-            "login": "radtriste",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
-            "html_url": "https://github.com/radtriste"
-          },
-          "checks": [
-            {
-              "id": 15812583399,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5830685316/job/15812583399",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-11T08:48:06Z",
-              "completed_at": "2023-08-11T08:53:26Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15812583206,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5830685316/job/15812583206",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-11T08:48:06Z",
-              "completed_at": "2023-08-11T08:53:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15812578903,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5830685316/job/15812578903",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-11T08:47:54Z",
-              "completed_at": "2023-08-11T08:47:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24541565462,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/833/",
-              "conclusion": "success",
-              "started_at": "2023-08-11T08:48:53Z",
-              "completed_at": "2023-08-11T08:48:53Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
@@ -17956,186 +17928,7 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-jpmml-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls{/number}",
-      "pullRequests": [
-        {
-          "number": 86,
-          "title": "DROOLS-7533 Setup CI for Drools 8",
-          "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/86",
-          "html_url": "https://github.com/kiegroup/kie-jpmml-integration/pull/86",
-          "state": "open",
-          "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2023-08-11T09:07:24Z",
-          "updated_at": "2023-08-11T09:46:56Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0147c822d2830bcede08981e66d3c235506f2478",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "setup_kie_jpmml_integration_ci",
-            "sha": "eb733941a261127fef4cca528f9c23a1f1fb961e",
-            "label": "radtriste:setup_kie_jpmml_integration_ci"
-          },
-          "user": {
-            "login": "radtriste",
-            "avatar_url": "https://avatars.githubusercontent.com/u/17157711?v=4",
-            "html_url": "https://github.com/radtriste"
-          },
-          "checks": [
-            {
-              "id": 15813813859,
-              "name": "ubuntu-latest / Java-11 / Maven-3.8.7",
-              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5831099272/job/15813813859",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-08-11T09:34:56Z",
-              "completed_at": "2023-08-11T09:55:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15813813827,
-              "name": "DSL",
-              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5831099271/job/15813813827",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-11T09:34:47Z",
-              "completed_at": "2023-08-11T09:37:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24542296271,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-jpmml-integration-main.pr/51/",
-              "conclusion": "success",
-              "started_at": "2023-08-11T09:41:23Z",
-              "completed_at": "2023-08-11T09:41:23Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 76,
-          "title": "Bump to 8.x + Migrate to Junit5 + Remove jBPM modules",
-          "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/76",
-          "html_url": "https://github.com/kiegroup/kie-jpmml-integration/pull/76",
-          "state": "open",
-          "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2023-01-12T13:07:54Z",
-          "updated_at": "2023-08-11T11:58:44Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0147c822d2830bcede08981e66d3c235506f2478",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "bump-8",
-            "sha": "27ae2fd6da5efb9ae9c2f5e5dc4dd813f4a6c84b",
-            "label": "danielezonca:bump-8"
-          },
-          "user": {
-            "login": "danielezonca",
-            "avatar_url": "https://avatars.githubusercontent.com/u/244607?v=4",
-            "html_url": "https://github.com/danielezonca"
-          },
-          "checks": [
-            {
-              "id": 15749742997,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5809929656/job/15749742997",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-08-09T14:01:09Z",
-              "completed_at": "2023-08-09T14:39:08Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15749742701,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5809929656/job/15749742701",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-08-09T13:53:03Z",
-              "completed_at": "2023-08-09T14:15:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15749742355,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5809929656/job/15749742355",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-08-09T13:57:23Z",
-              "completed_at": "2023-08-09T14:18:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 15749742118,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-jpmml-integration/actions/runs/5809929656/job/15749742118",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-08-09T13:55:14Z",
-              "completed_at": "2023-08-09T14:11:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24503139478,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-jpmml-integration-main.pr/46/",
-              "conclusion": "failure",
-              "started_at": "2023-08-09T13:58:45Z",
-              "completed_at": "2023-08-09T13:58:45Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 23,
-          "title": "[JBPM-9032] PMML backend for the prediction service does not work with Java 11",
-          "url": "https://api.github.com/repos/kiegroup/kie-jpmml-integration/pulls/23",
-          "html_url": "https://github.com/kiegroup/kie-jpmml-integration/pull/23",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2020-02-18T19:19:32Z",
-          "updated_at": "2021-07-25T08:21:29Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0487701af4362817196e8c1d9bab9141bf3554b1",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-9032",
-            "sha": "e0e069d9b5e6aafb865d09c5e40f9c7ded1b1e5d",
-            "label": "ruivieira:JBPM-9032"
-          },
-          "user": {
-            "login": "ruivieira",
-            "avatar_url": "https://avatars.githubusercontent.com/u/327909?v=4",
-            "html_url": "https://github.com/ruivieira"
-          },
-          "checks": []
-        }
-      ],
+      "pullRequests": [],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -18180,6 +17973,75 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 4512,
+          "title": "    NO-ISSUE: Remove obsolete desktop modeler hub documentation",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/4512",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/4512",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "hmanwani-rh",
+              "avatar_url": "https://avatars.githubusercontent.com/u/59050394?v=4",
+              "html_url": "https://github.com/hmanwani-rh"
+            }
+          ],
+          "created_at": "2023-08-16T12:19:20Z",
+          "updated_at": "2023-08-16T12:21:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c163471d9256f662ecad4624f6c3e7b0fb59eba9",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "hub-modeler-removal",
+            "sha": "cfb392412c72476ad09a491f30abbdabd15e909e",
+            "label": "jomarko:hub-modeler-removal"
+          },
+          "user": {
+            "login": "jomarko",
+            "avatar_url": "https://avatars.githubusercontent.com/u/8044780?v=4",
+            "html_url": "https://github.com/jomarko"
+          },
+          "checks": [
+            {
+              "id": 15941172145,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/5878656894/job/15941172145",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2023-08-16T12:19:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15941171870,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/5878656894/job/15941171870",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2023-08-16T12:19:28Z",
+              "completed_at": "2023-08-16T12:19:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24609286179,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-docs-main.pr/775/",
+              "conclusion": "success",
+              "started_at": "2023-08-16T12:22:23Z",
+              "completed_at": "2023-08-16T12:22:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 4303,
           "title": "Drools' docs fixes",
