@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-17T18:07:26.384Z",
+    "date": "2023-08-17T19:03:55.525Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5894382675"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5894887665"
   },
   "projects": [
     {
@@ -7003,6 +7003,116 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2319,
+          "title": "[JBPM-10188] Signaling process instances",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2319",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2319",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-08-17T18:17:05Z",
+          "updated_at": "2023-08-17T18:27:19Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "829c59f80eeffd1885c1c3d492973ebd2b7bf1fb",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10188",
+            "sha": "1ec71d03258c8165e8b5fb0cb3e1772f228aa310",
+            "label": "fjtirado:JBPM-10188"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 15988494003,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5894577885/job/15988494003",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-17T18:27:24Z",
+              "completed_at": "2023-08-17T18:27:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15988493958,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5894577892/job/15988493958",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-17T18:27:24Z",
+              "completed_at": "2023-08-17T18:27:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15988493570,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5894577885/job/15988493570",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-17T18:27:22Z",
+              "completed_at": "2023-08-17T18:27:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15988493566,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5894577892/job/15988493566",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-17T18:27:22Z",
+              "completed_at": "2023-08-17T18:27:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15988200827,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5894480273/job/15988200827",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-17T18:17:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 15988200553,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5894480273/job/15988200553",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-17T18:17:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24639242405,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/909/",
+              "conclusion": "pending",
+              "started_at": "2023-08-17T18:17:10Z",
+              "completed_at": "2023-08-17T18:17:10Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2318,
           "title": "[JBPM-10187] Sorting resources to avoid deadlock",
