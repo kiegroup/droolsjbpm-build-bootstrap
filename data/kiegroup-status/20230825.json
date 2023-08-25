@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-25T16:07:31.381Z",
+    "date": "2023-08-25T17:04:16.529Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5978019801"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/5978509563"
   },
   "projects": [
     {
@@ -1268,12 +1268,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 24764877710,
+              "id": 24772126564,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/715/",
-              "conclusion": "pending",
-              "started_at": "2023-08-25T09:21:47Z",
-              "completed_at": "2023-08-25T09:21:47Z",
+              "conclusion": "success",
+              "started_at": "2023-08-25T16:29:14Z",
+              "completed_at": "2023-08-25T16:29:14Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7189,142 +7189,90 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2320,
-          "title": "JBPM-10191 - Enhance update process timer SLAComplianceTest",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2320",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2320",
+          "number": 2322,
+          "title": "[7.67.x-blue] JBPM-10191 - Enhance update process timer SLAComplianceTest",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2322",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2322",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
+            {
+              "login": "MarianMacik",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+              "html_url": "https://github.com/MarianMacik"
+            },
             {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
-          "created_at": "2023-08-25T08:46:16Z",
-          "updated_at": "2023-08-25T10:28:47Z",
+          "created_at": "2023-08-25T16:34:18Z",
+          "updated_at": "2023-08-25T16:34:19Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "829c59f80eeffd1885c1c3d492973ebd2b7bf1fb",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "ed9df413bcb513a1c549134925ad4e38dbb1279c",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "JBPM-10191",
-            "sha": "ee740182cc2ef4e075f40faa0eabb2d4872339b4",
-            "label": "MarianMacik:JBPM-10191"
+            "ref": "7.67.x-blue_JBPM-10191",
+            "sha": "442ba37d4b83c2b3ae896cbd3da01fe473583f0f",
+            "label": "kiegroup:7.67.x-blue_JBPM-10191"
           },
           "user": {
-            "login": "MarianMacik",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
-            "html_url": "https://github.com/MarianMacik"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 2321,
+          "title": "[7.67.x] JBPM-10191 - Enhance update process timer SLAComplianceTest",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2321",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2321",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 16209654245,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16209654245",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-25T10:28:48Z",
-              "completed_at": "2023-08-25T10:28:49Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "MarianMacik",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+              "html_url": "https://github.com/MarianMacik"
             },
             {
-              "id": 16209653574,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16209653574",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-25T10:26:59Z",
-              "completed_at": "2023-08-25T10:28:46Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 16206887892,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5973851997/job/16206887892",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-25T09:12:54Z",
-              "completed_at": "2023-08-25T11:34:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16206887651,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5973851997/job/16206887651",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-08-25T09:12:03Z",
-              "completed_at": "2023-08-25T11:12:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16206887052,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5973851873/job/16206887052",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-25T08:46:21Z",
-              "completed_at": "2023-08-25T08:46:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16206887048,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5973851858/job/16206887048",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-25T08:46:21Z",
-              "completed_at": "2023-08-25T08:46:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16206886604,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5973851873/job/16206886604",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-25T08:46:20Z",
-              "completed_at": "2023-08-25T08:46:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16206886590,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/5973851858/job/16206886590",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-25T08:46:20Z",
-              "completed_at": "2023-08-25T08:46:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24765909954,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/913/",
-              "conclusion": "success",
-              "started_at": "2023-08-25T10:29:09Z",
-              "completed_at": "2023-08-25T10:29:09Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
             }
-          ]
+          ],
+          "created_at": "2023-08-25T16:34:10Z",
+          "updated_at": "2023-08-25T16:34:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "97b90e3d1f520a583e16d59a16ef5ae8f4cda550",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10191",
+            "sha": "67c69b6da3be4a5b2beb6582b8c371ff4dd2fd7c",
+            "label": "kiegroup:7.67.x_JBPM-10191"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2319,
