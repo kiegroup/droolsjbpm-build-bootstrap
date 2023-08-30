@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-30T09:15:28.982Z",
+    "date": "2023-08-30T10:06:34.379Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6022840583"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6023457920"
   },
   "projects": [
     {
@@ -2480,6 +2480,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 5498,
+          "title": "[DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/5498",
+          "html_url": "https://github.com/kiegroup/drools/pull/5498",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-08-30T09:16:42Z",
+          "updated_at": "2023-08-30T09:16:42Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "5b13798ed4d265c580de5c243d65d602aeea3ebd",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "DROOLS-7540-ClassCastException",
+            "sha": "cd720d3b795020fe0f97efe8d300b7d258dd7ca9",
+            "label": "tkobayas:DROOLS-7540-ClassCastException"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 16338768966,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768966",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-30T09:39:18Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16338768719,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768719",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-30T09:48:45Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16338768463,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768463",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-30T09:33:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16338768174,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768174",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-08-30T09:36:02Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24834526843,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/463/",
+              "conclusion": "pending",
+              "started_at": "2023-08-30T09:16:52Z",
+              "completed_at": "2023-08-30T09:16:52Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 24835125219,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/473/",
+              "conclusion": "failure",
+              "started_at": "2023-08-30T09:50:09Z",
+              "completed_at": "2023-08-30T09:50:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 5458,
           "title": "[JBPM-10187] Sorting resources to avoid deadlock",
@@ -7123,10 +7218,10 @@
               "id": 16335486765,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6021864399/job/16335486765",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-08-30T07:26:58Z",
-              "completed_at": null,
+              "completed_at": "2023-08-30T09:32:44Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7134,10 +7229,10 @@
               "id": 16335486534,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6021864399/job/16335486534",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-08-30T07:26:59Z",
-              "completed_at": null,
+              "completed_at": "2023-08-30T09:33:10Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -17052,6 +17147,104 @@
       "repo_url": "https://github.com/kiegroup/process-migration-service",
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 127,
+          "title": "[RHPAM-4700][CVE-2022-1471] snakeyaml to 2.0.0",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/127",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/127",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-08-30T09:34:55Z",
+          "updated_at": "2023-08-30T09:37:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f20e4901330a38c4a0b422cd5976dc9502d47bd0",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4700",
+            "sha": "6c68c21dfaeb630e1004be12bdb8a28b479262bd",
+            "label": "Ginxo:RHPAM-4700"
+          },
+          "user": {
+            "login": "Ginxo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+            "html_url": "https://github.com/Ginxo"
+          },
+          "checks": [
+            {
+              "id": 16339393730,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179823/job/16339393730",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-30T09:37:23Z",
+              "completed_at": "2023-08-30T09:37:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16339393665,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179819/job/16339393665",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-30T09:37:23Z",
+              "completed_at": "2023-08-30T09:37:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16339393258,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179819/job/16339393258",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-30T09:37:22Z",
+              "completed_at": "2023-08-30T09:37:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16339393257,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179823/job/16339393257",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-08-30T09:37:22Z",
+              "completed_at": "2023-08-30T09:37:22Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24835081612,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/process-migration-service-main.fdb/1/",
+              "conclusion": "success",
+              "started_at": "2023-08-30T09:47:45Z",
+              "completed_at": "2023-08-30T09:47:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 24835176973,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/process-migration-service-main.pr/204/",
+              "conclusion": "success",
+              "started_at": "2023-08-30T09:52:56Z",
+              "completed_at": "2023-08-30T09:52:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 115,
           "title": "Bump minimist, mkdirp and loader-fs-cache in /frontend",
