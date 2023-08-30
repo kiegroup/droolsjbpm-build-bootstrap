@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-08-30T10:06:34.379Z",
+    "date": "2023-08-30T11:07:23.385Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6023457920"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6024006511"
   },
   "projects": [
     {
@@ -2524,10 +2524,10 @@
               "id": 16338768719,
               "name": "windows-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768719",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-08-30T09:48:45Z",
-              "completed_at": null,
+              "completed_at": "2023-08-30T11:06:54Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2535,10 +2535,10 @@
               "id": 16338768463,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768463",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-08-30T09:33:54Z",
-              "completed_at": null,
+              "completed_at": "2023-08-30T10:26:14Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2546,22 +2546,12 @@
               "id": 16338768174,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/6022963414/job/16338768174",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-08-30T09:36:02Z",
-              "completed_at": null,
+              "completed_at": "2023-08-30T10:34:01Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24834526843,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/463/",
-              "conclusion": "pending",
-              "started_at": "2023-08-30T09:16:52Z",
-              "completed_at": "2023-08-30T09:16:52Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
               "id": 24835125219,
@@ -2570,6 +2560,16 @@
               "conclusion": "failure",
               "started_at": "2023-08-30T09:50:09Z",
               "completed_at": "2023-08-30T09:50:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 24835667076,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/463/",
+              "conclusion": "failure",
+              "started_at": "2023-08-30T10:20:05Z",
+              "completed_at": "2023-08-30T10:20:05Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -17148,102 +17148,90 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
       "pullRequests": [
         {
-          "number": 127,
-          "title": "[RHPAM-4700][CVE-2022-1471] snakeyaml to 2.0.0",
-          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/127",
-          "html_url": "https://github.com/kiegroup/process-migration-service/pull/127",
+          "number": 129,
+          "title": "[7.67.x] [RHPAM-4700][CVE-2022-1471] snakeyaml to 2.0.0",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/129",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/129",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-08-30T09:34:55Z",
-          "updated_at": "2023-08-30T09:37:18Z",
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
+            }
+          ],
+          "created_at": "2023-08-30T11:02:30Z",
+          "updated_at": "2023-08-30T11:02:31Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "f20e4901330a38c4a0b422cd5976dc9502d47bd0",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "10b9599d3fa372eb087278785662889e7d21cc9c",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "RHPAM-4700",
-            "sha": "6c68c21dfaeb630e1004be12bdb8a28b479262bd",
-            "label": "Ginxo:RHPAM-4700"
+            "ref": "7.67.x_RHPAM-4700",
+            "sha": "6c70e538233dac7f50ac8389089f85de003b0356",
+            "label": "kiegroup:7.67.x_RHPAM-4700"
           },
           "user": {
-            "login": "Ginxo",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
-            "html_url": "https://github.com/Ginxo"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 128,
+          "title": "[7.67.x-blue] [RHPAM-4700][CVE-2022-1471] snakeyaml to 2.0.0",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/128",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/128",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 16339393730,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179823/job/16339393730",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-30T09:37:23Z",
-              "completed_at": "2023-08-30T09:37:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
             },
             {
-              "id": 16339393665,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179819/job/16339393665",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-30T09:37:23Z",
-              "completed_at": "2023-08-30T09:37:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16339393258,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179819/job/16339393258",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-30T09:37:22Z",
-              "completed_at": "2023-08-30T09:37:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16339393257,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/process-migration-service/actions/runs/6023179823/job/16339393257",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-08-30T09:37:22Z",
-              "completed_at": "2023-08-30T09:37:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24835081612,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/process-migration-service-main.fdb/1/",
-              "conclusion": "success",
-              "started_at": "2023-08-30T09:47:45Z",
-              "completed_at": "2023-08-30T09:47:45Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 24835176973,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/process-migration-service-main.pr/204/",
-              "conclusion": "success",
-              "started_at": "2023-08-30T09:52:56Z",
-              "completed_at": "2023-08-30T09:52:56Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "Ginxo",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25130444?v=4",
+              "html_url": "https://github.com/Ginxo"
             }
-          ]
+          ],
+          "created_at": "2023-08-30T11:02:11Z",
+          "updated_at": "2023-08-30T11:02:13Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "935a34b599de41cfeb9e3151c1358b008c085dab",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_RHPAM-4700",
+            "sha": "4bc3d5fb7822704590345981df00a31cb6a1b7f0",
+            "label": "kiegroup:7.67.x-blue_RHPAM-4700"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 115,
