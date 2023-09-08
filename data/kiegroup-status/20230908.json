@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-08T14:11:05.412Z",
+    "date": "2023-09-08T19:34:33.499Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6122700822"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6125465231"
   },
   "projects": [
     {
@@ -2236,7 +2236,7 @@
       "name": "drools",
       "description": "Drools is a rule engine, DMN engine and complex event processing (CEP) engine for Java.",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-09-08T09:24:40Z",
+      "updated_at": "2023-09-08T16:28:34Z",
       "homepage": "http://www.drools.org",
       "language": "Java",
       "default_branch": "main",
@@ -7018,6 +7018,144 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2331,
+          "title": "[JBPM-10194] Fix TASK_AVG_DURATION query for postgres",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2331",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2331",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-09-08T17:48:27Z",
+          "updated_at": "2023-09-08T19:34:26Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0a9e54f84dfec2ef33181e492a619efa03b61a4d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10194",
+            "sha": "bbc94d54fdef102bb7a65ca68ab408af14cb2a0f",
+            "label": "gmunozfe:JBPM-10194"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 16628295254,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/16628295254",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-08T19:34:27Z",
+              "completed_at": "2023-09-08T19:34:28Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16628294645,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/16628294645",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-09-08T19:32:47Z",
+              "completed_at": "2023-09-08T19:34:24Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 16625644956,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849043/job/16625644956",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-08T17:48:40Z",
+              "completed_at": "2023-09-08T17:48:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16625644951,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849039/job/16625644951",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-08T17:48:40Z",
+              "completed_at": "2023-09-08T17:48:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16625644717,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849043/job/16625644717",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-08T17:48:39Z",
+              "completed_at": "2023-09-08T17:48:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16625644701,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849039/job/16625644701",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-08T17:48:39Z",
+              "completed_at": "2023-09-08T17:48:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16625642461,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124848052/job/16625642461",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-08T19:31:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16625642274,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124848052/job/16625642274",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-08T19:30:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 24994578681,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/925/",
+              "conclusion": "pending",
+              "started_at": "2023-09-08T17:48:32Z",
+              "completed_at": "2023-09-08T17:48:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2330,
           "title": "[7.67.x] [JBPM-10192] Tests for SLA timers are not migrated after migrating process instances",
