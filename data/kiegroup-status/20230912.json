@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-12T20:06:29.341Z",
+    "date": "2023-09-12T21:04:06.286Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6164318288"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6164830664"
   },
   "projects": [
     {
@@ -7018,6 +7018,78 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2332,
+          "title": "[JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2332",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2332",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "MarianMacik",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+              "html_url": "https://github.com/MarianMacik"
+            }
+          ],
+          "created_at": "2023-09-12T20:40:15Z",
+          "updated_at": "2023-09-12T20:56:47Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "0a9e54f84dfec2ef33181e492a619efa03b61a4d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10195",
+            "sha": "c51e81d11c28f812e81afba96edfbcc49fdbd9ad",
+            "label": "gmunozfe:JBPM-10195"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 16731205818,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6164769111/job/16731205818",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-12T20:57:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16731205670,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6164769111/job/16731205670",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-12T20:57:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25049048422,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/929/",
+              "conclusion": "pending",
+              "started_at": "2023-09-12T20:56:51Z",
+              "completed_at": "2023-09-12T20:56:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2331,
           "title": "[JBPM-10194] Fix TASK_AVG_DURATION query for postgres",
