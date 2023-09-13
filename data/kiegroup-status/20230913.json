@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-13T14:05:19.780Z",
+    "date": "2023-09-13T15:06:43.406Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6173586822"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6174332649"
   },
   "projects": [
     {
@@ -7131,6 +7131,92 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2334,
+          "title": "[7.67.x] [JBPM-10194] Fix TASK_AVG_DURATION query for postgres",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2334",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2334",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-09-13T14:06:59Z",
+          "updated_at": "2023-09-13T14:07:00Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "333e4f882e8e4d30a35403988c8f746fc8e0da05",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10194",
+            "sha": "aa074a8cb27db91fc314a6523d3ffbae116165b0",
+            "label": "kiegroup:7.67.x_JBPM-10194"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2333,
+          "title": "[7.67.x-blue] [JBPM-10194] Fix TASK_AVG_DURATION query for postgres",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2333",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2333",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-09-13T14:06:42Z",
+          "updated_at": "2023-09-13T14:06:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "543218f9d97bb55f535040d454647ade269584e2",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10194",
+            "sha": "3b89150ae8def10f2d0e8809b995843effc486d0",
+            "label": "kiegroup:7.67.x-blue_JBPM-10194"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2332,
           "title": "[JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2332",
@@ -7219,144 +7305,6 @@
               "conclusion": "success",
               "started_at": "2023-09-13T10:19:52Z",
               "completed_at": "2023-09-13T10:19:52Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2331,
-          "title": "[JBPM-10194] Fix TASK_AVG_DURATION query for postgres",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2331",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2331",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2023-09-08T17:48:27Z",
-          "updated_at": "2023-09-08T19:34:26Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0a9e54f84dfec2ef33181e492a619efa03b61a4d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10194",
-            "sha": "bbc94d54fdef102bb7a65ca68ab408af14cb2a0f",
-            "label": "gmunozfe:JBPM-10194"
-          },
-          "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
-          },
-          "checks": [
-            {
-              "id": 16628295254,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16628295254",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-08T19:34:27Z",
-              "completed_at": "2023-09-08T19:34:28Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16628294645,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16628294645",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-09-08T19:32:47Z",
-              "completed_at": "2023-09-08T19:34:24Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 16625644956,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849043/job/16625644956",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-09-08T17:48:40Z",
-              "completed_at": "2023-09-08T17:48:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16625644951,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849039/job/16625644951",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-09-08T17:48:40Z",
-              "completed_at": "2023-09-08T17:48:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16625644717,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849043/job/16625644717",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-09-08T17:48:39Z",
-              "completed_at": "2023-09-08T17:48:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16625644701,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124849039/job/16625644701",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-09-08T17:48:39Z",
-              "completed_at": "2023-09-08T17:48:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16625642461,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124848052/job/16625642461",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-08T19:31:54Z",
-              "completed_at": "2023-09-08T21:48:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16625642274,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6124848052/job/16625642274",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-08T19:30:54Z",
-              "completed_at": "2023-09-08T21:36:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 24996347578,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/925/",
-              "conclusion": "success",
-              "started_at": "2023-09-08T19:34:46Z",
-              "completed_at": "2023-09-08T19:34:46Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
