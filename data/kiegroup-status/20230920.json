@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-20T13:09:36.432Z",
+    "date": "2023-09-20T14:06:34.713Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6249046677"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6249756912"
   },
   "projects": [
     {
@@ -5157,6 +5157,89 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1404,
+          "title": "Fix without tests",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1404",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1404",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-09-20T13:42:09Z",
+          "updated_at": "2023-09-20T13:42:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a3396ef577bbee36be1e056e3afe1a8a00246510",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "DROOLS-7558-ssh",
+            "sha": "b84aef54f31c5af2758f57a9644d8295b0bbae19",
+            "label": "Rikkola:DROOLS-7558-ssh"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 16966172573,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/6249467719/job/16966172573",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-20T13:42:23Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16966172082,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/6249467719/job/16966172082",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-20T13:42:22Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25177075377,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/280/",
+              "conclusion": "pending",
+              "started_at": "2023-09-20T13:42:14Z",
+              "completed_at": "2023-09-20T13:42:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 25177075390,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/275/",
+              "conclusion": "pending",
+              "started_at": "2023-09-20T13:42:14Z",
+              "completed_at": "2023-09-20T13:42:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 25177427326,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/appformer-main.fdb/194/",
+              "conclusion": "failure",
+              "started_at": "2023-09-20T13:56:26Z",
+              "completed_at": "2023-09-20T13:56:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1403,
           "title": "Bump word-wrap from 1.2.3 to 1.2.4 in /dashbuilder/dashbuilder-shared/dashbuilder-js",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1403",
@@ -7633,7 +7716,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-09-20T10:54:04Z",
-          "updated_at": "2023-09-20T10:54:04Z",
+          "updated_at": "2023-09-20T13:43:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7675,108 +7758,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25175566033,
+              "id": 25177100657,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/130/",
-              "conclusion": "failure",
-              "started_at": "2023-09-20T12:33:28Z",
-              "completed_at": "2023-09-20T12:33:28Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2337,
-          "title": "Revert \"[7.67.x-blue] [JBPM-10192] Tests for SLA timers are not migrated after migrating process instances\"",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2337",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2337",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2023-09-20T10:53:53Z",
-          "updated_at": "2023-09-20T12:51:25Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "73fe39eb9e8166b6215b95b7522b9821de73731e",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "revert-2329-7.67.x-blue_JBPM-10192",
-            "sha": "01fc692b85a563b0fb5f6ba5ab79ab9c3a9acce6",
-            "label": "kiegroup:revert-2329-7.67.x-blue_JBPM-10192"
-          },
-          "user": {
-            "login": "mareknovotny",
-            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-            "html_url": "https://github.com/mareknovotny"
-          },
-          "checks": [
-            {
-              "id": 16964162319,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16964162319",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T12:51:27Z",
-              "completed_at": "2023-09-20T12:51:28Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16964160504,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16964160504",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T12:40:37Z",
-              "completed_at": "2023-09-20T12:51:23Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 16960375776,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6247552937/job/16960375776",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-20T10:54:06Z",
-              "completed_at": "2023-09-20T12:51:51Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16960375532,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6247552937/job/16960375532",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2023-09-20T10:54:07Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25175929564,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/73/",
-              "conclusion": "failure",
-              "started_at": "2023-09-20T12:51:44Z",
-              "completed_at": "2023-09-20T12:51:44Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/131/",
+              "conclusion": "pending",
+              "started_at": "2023-09-20T13:43:18Z",
+              "completed_at": "2023-09-20T13:43:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9578,25 +9565,10 @@
               "sha": "50b55272eb4071bde4b0f6aa78fb40d3f333b80a"
             },
             {
-              "sha": "7ac30177c129957673210019359265f4ec2741d4"
-            },
-            {
               "sha": "1a81683366595bab083aa67cf3299409a58d593e"
             },
             {
-              "sha": "063fffab8825d4a3a0cb64d2bf0911fdc5d12dce"
-            },
-            {
-              "sha": "f76a09560e0bf44b37524595d96061fc427eed70"
-            },
-            {
               "sha": "4aa7e7cfbadca500fb782b73033b50a8f49cc790"
-            },
-            {
-              "sha": "0ad27f91f9937b534cbddd93e7f3a1722a3784c3"
-            },
-            {
-              "sha": "eef6cd93625e37930250b553dba905410d6f5304"
             },
             {
               "sha": "ca19925835f87aadb0775d7c62a8f6bfeede4df2"
