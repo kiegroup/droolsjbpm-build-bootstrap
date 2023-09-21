@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-21T09:06:40.858Z",
+    "date": "2023-09-21T10:06:56.702Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6259552571"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6260195785"
   },
   "projects": [
     {
@@ -7729,6 +7729,127 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2341,
+          "title": "[JBPM-10200] Add a profile for testing postgresql with testcontainers",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2341",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2341",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "MarianMacik",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
+              "html_url": "https://github.com/MarianMacik"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-09-21T10:03:07Z",
+          "updated_at": "2023-09-21T10:03:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d0e6241dfd9c75fa30e426359f7e73724d23c41a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10200",
+            "sha": "4db8c90ab10f3360a42af45ebf06a1c1c7a5d2cb",
+            "label": "gmunozfe:JBPM-10200"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 16997670007,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260162626/job/16997670007",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-21T10:03:43Z",
+              "completed_at": "2023-09-21T10:03:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16997669991,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260162630/job/16997669991",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-21T10:03:43Z",
+              "completed_at": "2023-09-21T10:03:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16997669484,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260162630/job/16997669484",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-21T10:03:42Z",
+              "completed_at": "2023-09-21T10:03:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16997669463,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260162626/job/16997669463",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-09-21T10:03:42Z",
+              "completed_at": "2023-09-21T10:03:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16997652667,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260156815/job/16997652667",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-21T10:03:20Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 16997652298,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260156815/job/16997652298",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-09-21T10:03:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25196136044,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/941/",
+              "conclusion": "pending",
+              "started_at": "2023-09-21T10:03:11Z",
+              "completed_at": "2023-09-21T10:03:11Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2340,
           "title": "[7.67.x-blue] [JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2340",
@@ -7746,7 +7867,7 @@
             }
           ],
           "created_at": "2023-09-21T08:50:49Z",
-          "updated_at": "2023-09-21T08:56:07Z",
+          "updated_at": "2023-09-21T10:06:34Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7764,7 +7885,18 @@
             "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
             "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 25196204961,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/74/",
+              "conclusion": "pending",
+              "started_at": "2023-09-21T10:06:36Z",
+              "completed_at": "2023-09-21T10:06:36Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2339,
@@ -7784,7 +7916,7 @@
             }
           ],
           "created_at": "2023-09-21T08:50:48Z",
-          "updated_at": "2023-09-21T08:56:16Z",
+          "updated_at": "2023-09-21T10:06:13Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7802,7 +7934,18 @@
             "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
             "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 25196198196,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/132/",
+              "conclusion": "pending",
+              "started_at": "2023-09-21T10:06:16Z",
+              "completed_at": "2023-09-21T10:06:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2336,
