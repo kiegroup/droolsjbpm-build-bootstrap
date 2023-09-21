@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-21T08:08:41.805Z",
+    "date": "2023-09-21T09:06:40.858Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6258926555"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6259552571"
   },
   "projects": [
     {
@@ -3144,7 +3144,7 @@
       "name": "drools",
       "description": "Mirror of https://github.com/apache/incubator-kie-drools",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-09-20T08:33:08Z",
+      "updated_at": "2023-09-21T08:43:15Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -7729,6 +7729,82 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2340,
+          "title": "[7.67.x-blue] [JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2340",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2340",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2023-09-21T08:50:49Z",
+          "updated_at": "2023-09-21T08:56:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "903a0dc5d610c6168d5c230bafe54a82f7710598",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10195",
+            "sha": "304061af639de3dca03b598c7a8709d28e523b7d",
+            "label": "kiegroup:7.67.x-blue_JBPM-10195"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2339,
+          "title": "[7.67.x] [JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2339",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2339",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2023-09-21T08:50:48Z",
+          "updated_at": "2023-09-21T08:56:16Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c2ab91194d73a92a710c636a272165198cf3ddab",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10195",
+            "sha": "b935337b9debc17b24718bbca53f60133a2f9d0d",
+            "label": "kiegroup:7.67.x_JBPM-10195"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2336,
           "title": "[JBPM-10198] delete correct old timer rescheduling a timer",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2336",
@@ -7838,100 +7914,6 @@
               "conclusion": "failure",
               "started_at": "2023-09-15T14:55:53Z",
               "completed_at": "2023-09-15T14:55:53Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2332,
-          "title": "[JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2332",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2332",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "MarianMacik",
-              "avatar_url": "https://avatars.githubusercontent.com/u/6797884?v=4",
-              "html_url": "https://github.com/MarianMacik"
-            }
-          ],
-          "created_at": "2023-09-12T20:40:15Z",
-          "updated_at": "2023-09-13T10:19:32Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "0a9e54f84dfec2ef33181e492a619efa03b61a4d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10195",
-            "sha": "b1c304cd5af466ab344948a73994246812ab15dc",
-            "label": "gmunozfe:JBPM-10195"
-          },
-          "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
-          },
-          "checks": [
-            {
-              "id": 16748776077,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16748776077",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-13T10:19:34Z",
-              "completed_at": "2023-09-13T10:19:35Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16748774762,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/16748774762",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-13T10:17:55Z",
-              "completed_at": "2023-09-13T10:19:30Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 16745443931,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6170017780/job/16745443931",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-13T08:36:01Z",
-              "completed_at": "2023-09-13T11:03:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 16745443640,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6170017780/job/16745443640",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-09-13T08:35:59Z",
-              "completed_at": "2023-09-13T10:52:53Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25058816114,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/932/",
-              "conclusion": "success",
-              "started_at": "2023-09-13T10:19:52Z",
-              "completed_at": "2023-09-13T10:19:52Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
