@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-09-21T11:04:06.890Z",
+    "date": "2023-09-21T12:11:47.262Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6260768184"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6261437906"
   },
   "projects": [
     {
@@ -3144,7 +3144,7 @@
       "name": "drools",
       "description": "Mirror of https://github.com/apache/incubator-kie-drools",
       "html_url": "https://github.com/kiegroup/drools",
-      "updated_at": "2023-09-21T08:43:15Z",
+      "updated_at": "2023-09-21T11:59:29Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -7752,7 +7752,7 @@
             }
           ],
           "created_at": "2023-09-21T10:03:07Z",
-          "updated_at": "2023-09-21T10:03:38Z",
+          "updated_at": "2023-09-21T11:45:15Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7771,6 +7771,28 @@
             "html_url": "https://github.com/gmunozfe"
           },
           "checks": [
+            {
+              "id": 17000713733,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/17000713733",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-21T11:45:23Z",
+              "completed_at": "2023-09-21T11:45:23Z",
+              "slug": "github-code-scanning",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17000710170,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/17000710170",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-09-21T11:43:40Z",
+              "completed_at": "2023-09-21T11:45:13Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 16997670007,
               "name": "[${{ matrix.target-branch }}] - Backporting",
@@ -7819,10 +7841,10 @@
               "id": 16997652667,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260156815/job/16997652667",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "cancelled",
               "started_at": "2023-09-21T10:03:20Z",
-              "completed_at": null,
+              "completed_at": "2023-09-21T12:03:28Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -7830,69 +7852,20 @@
               "id": 16997652298,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6260156815/job/16997652298",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "failure",
               "started_at": "2023-09-21T10:03:19Z",
-              "completed_at": null,
+              "completed_at": "2023-09-21T12:03:01Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25196136044,
+              "id": 25197929404,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/941/",
-              "conclusion": "pending",
-              "started_at": "2023-09-21T10:03:11Z",
-              "completed_at": "2023-09-21T10:03:11Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2340,
-          "title": "[7.67.x-blue] [JBPM-10195] Schema validation exception when validating Spring Boot DDL Scripts for Oracle and PostgreSQL",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2340",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2340",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
-          "created_at": "2023-09-21T08:50:49Z",
-          "updated_at": "2023-09-21T10:06:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "903a0dc5d610c6168d5c230bafe54a82f7710598",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_JBPM-10195",
-            "sha": "304061af639de3dca03b598c7a8709d28e523b7d",
-            "label": "kiegroup:7.67.x-blue_JBPM-10195"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 25196204961,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/74/",
-              "conclusion": "pending",
-              "started_at": "2023-09-21T10:06:36Z",
-              "completed_at": "2023-09-21T10:06:36Z",
+              "conclusion": "failure",
+              "started_at": "2023-09-21T11:45:34Z",
+              "completed_at": "2023-09-21T11:45:34Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7916,7 +7889,7 @@
             }
           ],
           "created_at": "2023-09-21T08:50:48Z",
-          "updated_at": "2023-09-21T10:06:13Z",
+          "updated_at": "2023-09-21T12:06:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7936,12 +7909,12 @@
           },
           "checks": [
             {
-              "id": 25196198196,
+              "id": 25198293609,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/132/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/133/",
               "conclusion": "pending",
-              "started_at": "2023-09-21T10:06:16Z",
-              "completed_at": "2023-09-21T10:06:16Z",
+              "started_at": "2023-09-21T12:07:00Z",
+              "completed_at": "2023-09-21T12:07:00Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9340,6 +9313,15 @@
               "sha": "715b0649431ecac5b850722a7cecece37bcbadf3"
             },
             {
+              "sha": "f57a254f4b298f071983779bbbfbe0102006b699"
+            },
+            {
+              "sha": "821783b780ccd4902f459bae30c69e519c34c7e8"
+            },
+            {
+              "sha": "78d4e9b92a14b98e1e5f24408c43800699c0d8c3"
+            },
+            {
               "sha": "f55e8af0bf1f1a04221af6c0fce661695b65a896"
             },
             {
@@ -9782,6 +9764,12 @@
             },
             {
               "sha": "524b195870eac98d05ac140b42cb70f3f1171038"
+            },
+            {
+              "sha": "f02f4b94579967b4936d0da70f40c0e3a004430a"
+            },
+            {
+              "sha": "d36e25a6c971879ca3e08f902b3b863337a69283"
             },
             {
               "sha": "13cd82af1ded3b3b8af488358a78ad017e342004"
