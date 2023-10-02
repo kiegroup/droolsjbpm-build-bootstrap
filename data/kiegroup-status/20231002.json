@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-10-02T20:06:46.881Z",
+    "date": "2023-10-02T21:05:00.570Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6384934836"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6385457965"
   },
   "projects": [
     {
@@ -7669,6 +7669,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2343,
+          "title": "[kie-issues-597] Test case enhancement to run migration with org.jbpm.timer.disableUnmarshallerRegistration=true|false",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2343",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2343",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-02T20:37:12Z",
+          "updated_at": "2023-10-02T20:37:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d0e6241dfd9c75fa30e426359f7e73724d23c41a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "kie-issues-597",
+            "sha": "e7bcc81072e1ed045b1c53b154c803aae1479086",
+            "label": "martinweiler:kie-issues-597"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 17329515923,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6385232141/job/17329515923",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-02T20:37:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17329515674,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6385232141/job/17329515674",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-02T20:37:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25373737554,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/947/",
+              "conclusion": "pending",
+              "started_at": "2023-10-02T20:37:16Z",
+              "completed_at": "2023-10-02T20:37:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2342,
           "title": "[JBPM-10203] Fixing null pointer exception for cancelActivity",
