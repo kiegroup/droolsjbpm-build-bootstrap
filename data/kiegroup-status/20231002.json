@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-10-02T15:06:54.066Z",
+    "date": "2023-10-02T16:07:57.319Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6381929818"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6382612440"
   },
   "projects": [
     {
@@ -7714,6 +7714,122 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2342,
+          "title": "[JBPM-10203] Fixing null pointer exception for cancelActivity",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2342",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2342",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2023-10-02T15:28:59Z",
+          "updated_at": "2023-10-02T15:29:57Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "d0e6241dfd9c75fa30e426359f7e73724d23c41a",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10203",
+            "sha": "98afe31ad6ed5d8d6c20d1c18a76619863676a5b",
+            "label": "fjtirado:JBPM-10203"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 17320288658,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6382202142/job/17320288658",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-10-02T15:29:27Z",
+              "completed_at": "2023-10-02T15:29:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17320288587,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6382202070/job/17320288587",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-10-02T15:29:27Z",
+              "completed_at": "2023-10-02T15:29:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17320288267,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6382202142/job/17320288267",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-10-02T15:29:26Z",
+              "completed_at": "2023-10-02T15:29:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17320288240,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6382202070/job/17320288240",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-10-02T15:29:26Z",
+              "completed_at": "2023-10-02T15:29:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17320276675,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6382198186/job/17320276675",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-02T15:29:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17320276338,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6382198186/job/17320276338",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-02T15:29:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25367626516,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/946/",
+              "conclusion": "pending",
+              "started_at": "2023-10-02T15:29:04Z",
+              "completed_at": "2023-10-02T15:29:04Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2341,
           "title": "[JBPM-10200] Add a profile for testing postgresql with testcontainers",
