@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-10-05T08:09:21.344Z",
+    "date": "2023-10-05T09:06:42.357Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6416351432"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6416963170"
   },
   "projects": [
     {
@@ -7829,6 +7829,82 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2345,
+          "title": "[7.67.x-blue] [JBPM-10203] Fixing null pointer exception for cancelActivity",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2345",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2345",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-10-05T09:04:11Z",
+          "updated_at": "2023-10-05T09:04:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "0d7951c29d16708e02602373abde4d0c3a6e31b4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10203",
+            "sha": "1b7315334f1579f69aede3b6cf914250d819bcc9",
+            "label": "kiegroup:7.67.x-blue_JBPM-10203"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2344,
+          "title": "[7.67.x] [JBPM-10203] Fixing null pointer exception for cancelActivity",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2344",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2344",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-10-05T09:04:03Z",
+          "updated_at": "2023-10-05T09:04:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "a6100271ec21300ba6fbc2b78f2373f1f1cb2442",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10203",
+            "sha": "9e984fd8f1c156fefc022d725de31f571182e7ac",
+            "label": "kiegroup:7.67.x_JBPM-10203"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2343,
           "title": "[kie-issues-597] Test case enhancement to run migration with org.jbpm.timer.disableUnmarshallerRegistration=true|false",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2343",
@@ -7908,94 +7984,6 @@
               "conclusion": "failure",
               "started_at": "2023-10-02T22:25:59Z",
               "completed_at": "2023-10-02T22:25:59Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2342,
-          "title": "[JBPM-10203] Fixing null pointer exception for cancelActivity",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2342",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2342",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-10-02T15:28:59Z",
-          "updated_at": "2023-10-04T10:09:59Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "d0e6241dfd9c75fa30e426359f7e73724d23c41a",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10203",
-            "sha": "da65c92305d06a72fa0dbbe468e3e9fe738fb0ce",
-            "label": "fjtirado:JBPM-10203"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 17385377017,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/17385377017",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-04T10:10:00Z",
-              "completed_at": "2023-10-04T10:10:01Z",
-              "slug": "github-code-scanning",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17385375435,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/17385375435",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-04T10:08:15Z",
-              "completed_at": "2023-10-04T10:09:56Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 17382079036,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6403483811/job/17382079036",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-04T08:28:11Z",
-              "completed_at": "2023-10-04T10:26:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 17382078715,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6403483811/job/17382078715",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-04T08:28:11Z",
-              "completed_at": "2023-10-04T10:19:34Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25406034421,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/948/",
-              "conclusion": "success",
-              "started_at": "2023-10-04T10:10:19Z",
-              "completed_at": "2023-10-04T10:10:19Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
