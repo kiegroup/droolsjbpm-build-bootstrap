@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-10-19T07:06:12.979Z",
+    "date": "2023-10-19T08:08:55.593Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6571064468"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6571682827"
   },
   "projects": [
     {
@@ -1049,6 +1049,144 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2387,
+          "title": "[7.67.x] JBPM-10193 upgrade maven-jaxb2-plugin for fix PR build failed issue",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2387",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2387",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "bxf12315",
+              "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+              "html_url": "https://github.com/bxf12315"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2023-10-19T07:24:04Z",
+          "updated_at": "2023-10-19T07:26:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "6166cf63f759c0733db3a6bdcf4dfcaa68dad0a0",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10193",
+            "sha": "c318e752e11125dc7982063207690633d1bf24e2",
+            "label": "kiegroup:7.67.x_JBPM-10193"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 25658362611,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/119/",
+              "conclusion": "pending",
+              "started_at": "2023-10-19T07:26:15Z",
+              "completed_at": "2023-10-19T07:26:15Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 25658405904,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x.pr/98/",
+              "conclusion": "success",
+              "started_at": "2023-10-19T07:29:26Z",
+              "completed_at": "2023-10-19T07:29:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2386,
+          "title": "[7.67.x-blue] JBPM-10193 upgrade maven-jaxb2-plugin for fix PR build failed issue",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2386",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2386",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "bxf12315",
+              "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+              "html_url": "https://github.com/bxf12315"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2023-10-19T07:23:51Z",
+          "updated_at": "2023-10-19T07:25:46Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "4e62ad53df1cd469d145b0d671706c9043d6779b",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10193",
+            "sha": "ee91848da5051e3fc0311da2793aa0165b6b4135",
+            "label": "kiegroup:7.67.x-blue_JBPM-10193"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 25658356697,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/109/",
+              "conclusion": "pending",
+              "started_at": "2023-10-19T07:25:48Z",
+              "completed_at": "2023-10-19T07:25:48Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 25658397690,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/92/",
+              "conclusion": "success",
+              "started_at": "2023-10-19T07:28:50Z",
+              "completed_at": "2023-10-19T07:28:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2385,
           "title": "Bump org.eclipse.jetty:jetty-http from 9.4.51.v20230217 to 9.4.53.v20231009",
@@ -7666,18 +7804,13 @@
               "html_url": "https://github.com/gmunozfe"
             },
             {
-              "login": "elguardian",
-              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-              "html_url": "https://github.com/elguardian"
-            },
-            {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
           "created_at": "2023-10-16T11:18:24Z",
-          "updated_at": "2023-10-18T07:30:55Z",
+          "updated_at": "2023-10-19T08:02:59Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7762,7 +7895,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-10-05T10:05:08Z",
-          "updated_at": "2023-10-06T10:58:58Z",
+          "updated_at": "2023-10-19T07:45:40Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7772,7 +7905,7 @@
           },
           "head": {
             "ref": "incubator-kie-issues-597",
-            "sha": "99e62a09209e674c067fe37fbb0b00dda100c38a",
+            "sha": "80fc6efc9345aba57ac75472c7b9c3abafa81776",
             "label": "elguardian:incubator-kie-issues-597"
           },
           "user": {
@@ -7782,34 +7915,34 @@
           },
           "checks": [
             {
-              "id": 17462338792,
+              "id": 17850630815,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6430760204/job/17462338792",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6571454320/job/17850630815",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-10-19T07:45:54Z",
+              "completed_at": "2023-10-19T07:55:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 17850630553,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6571454320/job/17850630553",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2023-10-06T10:59:10Z",
-              "completed_at": "2023-10-06T11:08:28Z",
+              "started_at": "2023-10-19T07:45:55Z",
+              "completed_at": "2023-10-19T07:55:39Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 17462338383,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6430760204/job/17462338383",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-06T10:59:10Z",
-              "completed_at": "2023-10-06T11:08:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25452300855,
+              "id": 25658741287,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/955/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/959/",
               "conclusion": "failure",
-              "started_at": "2023-10-06T11:05:08Z",
-              "completed_at": "2023-10-06T11:05:08Z",
+              "started_at": "2023-10-19T07:52:14Z",
+              "completed_at": "2023-10-19T07:52:14Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -13172,6 +13305,134 @@
       "repo_url": "https://github.com/kiegroup/kie-wb-common",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3821,
+          "title": "[7.67.x-blue] JBPM-10193: UI error: unexpected system error occurred when access Form asset and also Task form which have listbox component",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3821",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3821",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "bxf12315",
+              "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+              "html_url": "https://github.com/bxf12315"
+            },
+            {
+              "login": "pefernan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2429832?v=4",
+              "html_url": "https://github.com/pefernan"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2023-10-19T07:23:38Z",
+          "updated_at": "2023-10-19T07:25:38Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "aecdfdbdef2d43d73657e19edf6201b44b8a624b",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10193",
+            "sha": "2532e81165765b0b5a6d8a3b03506f2701bb161b",
+            "label": "kiegroup:7.67.x-blue_JBPM-10193"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 25658354818,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/39/",
+              "conclusion": "pending",
+              "started_at": "2023-10-19T07:25:40Z",
+              "completed_at": "2023-10-19T07:25:40Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 3820,
+          "title": "[7.67.x] JBPM-10193: UI error: unexpected system error occurred when access Form asset and also Task form which have listbox component",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3820",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3820",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "bxf12315",
+              "avatar_url": "https://avatars.githubusercontent.com/u/209745?v=4",
+              "html_url": "https://github.com/bxf12315"
+            },
+            {
+              "login": "pefernan",
+              "avatar_url": "https://avatars.githubusercontent.com/u/2429832?v=4",
+              "html_url": "https://github.com/pefernan"
+            },
+            {
+              "login": "tomasdavidorg",
+              "avatar_url": "https://avatars.githubusercontent.com/u/4498639?v=4",
+              "html_url": "https://github.com/tomasdavidorg"
+            }
+          ],
+          "created_at": "2023-10-19T07:23:35Z",
+          "updated_at": "2023-10-19T07:26:29Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "d573acbf02e60cd33aca1a63029cf711bf655af1",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10193",
+            "sha": "6f09a84671fd47358d046d9095ced17410acb544",
+            "label": "kiegroup:7.67.x_JBPM-10193"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 25658366092,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-common-7.67.x.pr/36/",
+              "conclusion": "pending",
+              "started_at": "2023-10-19T07:26:31Z",
+              "completed_at": "2023-10-19T07:26:31Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3737,
           "title": "Fix Whitespace Issue in Migration Tool",
