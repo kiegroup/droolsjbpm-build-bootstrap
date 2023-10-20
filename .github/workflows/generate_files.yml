@@ -79,7 +79,7 @@ jobs:
             **Pull Request created by:** ${{ steps.build_chain_info.outputs.jobURL }}
             These files where changed by ${{ steps.build_chain_info.outputs.commitURL }}
             ${{ steps.build_chain_info.outputs.files_string }}
-          reviewers: mbiarnes,ginxo,mareknovotny
+          reviewers: mareknovotny
           draft: false
       - name: Check outputs
         run: |
