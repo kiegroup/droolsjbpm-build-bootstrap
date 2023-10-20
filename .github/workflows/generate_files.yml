@@ -33,9 +33,9 @@ jobs:
           echo "::set-output name=commitURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
           echo "::set-output name=jobURL::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Checkout BC Files Generator repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: kiegroup/build-chain-files-generator
           path: build-chain-files-generator
