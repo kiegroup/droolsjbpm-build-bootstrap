@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-10-31T10:06:53.215Z",
+    "date": "2023-10-31T11:03:54.678Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6704955914"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6705574131"
   },
   "projects": [
     {
@@ -2070,6 +2070,101 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 15,
+          "title": "[7.67.x-blue] [RHDM-1994] Performance degradation when increasing concurrency of ru…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/15",
+          "html_url": "https://github.com/kiegroup/drools/pull/15",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-10-31T11:00:53Z",
+          "updated_at": "2023-10-31T11:00:53Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "107e91d7097f6998db711fffab3a64a3d39f2de6",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHDM-1994-7.67.x-blue",
+            "sha": "0f021f4ad748f5393e34e983d3e8865dc568a4e3",
+            "label": "tkobayas:RHDM-1994-7.67.x-blue"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 18220218342,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220218342",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T11:01:10Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18220218038,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220218038",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T11:01:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18220217777,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220217777",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T11:01:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18220217491,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220217491",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T11:01:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25853357231,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/33/",
+              "conclusion": "pending",
+              "started_at": "2023-10-31T11:01:00Z",
+              "completed_at": "2023-10-31T11:01:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 25853357261,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/38/",
+              "conclusion": "pending",
+              "started_at": "2023-10-31T11:01:00Z",
+              "completed_at": "2023-10-31T11:01:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 11,
           "title": "[JBPM-10187] Sorting resources to avoid deadlock",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/11",
@@ -2088,7 +2183,7 @@
             }
           ],
           "created_at": "2023-10-26T15:07:26Z",
-          "updated_at": "2023-10-27T14:59:20Z",
+          "updated_at": "2023-10-31T10:56:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6783,7 +6878,30 @@
             "avatar_url": "https://avatars.githubusercontent.com/u/220968?v=4",
             "html_url": "https://github.com/albfan"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 18220090259,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6650582196/job/18220090259",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T10:57:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18220089986,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6650582196/job/18220089986",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T10:57:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
         },
         {
           "number": 2350,
@@ -10243,6 +10361,154 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2997,
+          "title": "[7.67.x-blue] [RHPAM-4781] KIE-OSGI: Inconsistent h2 version upgrade (#2993)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2997",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2997",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "grgrzybek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/306565?v=4",
+              "html_url": "https://github.com/grgrzybek"
+            },
+            {
+              "login": "skulisek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/60703001?v=4",
+              "html_url": "https://github.com/skulisek"
+            }
+          ],
+          "created_at": "2023-10-31T10:50:50Z",
+          "updated_at": "2023-10-31T10:52:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "50de865a7e6ab33cc3399466c56ba7217859dbb7",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-4781-osgi-h2-7.67.x-blue",
+            "sha": "30f5c137a5e604f82e4750b6942c553fe91cb00a",
+            "label": "tkobayas:RHPAM-4781-osgi-h2-7.67.x-blue"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 18219903299,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/6705446889/job/18219903299",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T10:51:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18219903052,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/6705446889/job/18219903052",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T10:51:03Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25853177199,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/97/",
+              "conclusion": "pending",
+              "started_at": "2023-10-31T10:50:55Z",
+              "completed_at": "2023-10-31T10:50:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2996,
+          "title": "[7.67.x] [RHPAM-4781] KIE-OSGI: Inconsistent h2 version upgrade (#2993)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/2996",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/2996",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "grgrzybek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/306565?v=4",
+              "html_url": "https://github.com/grgrzybek"
+            },
+            {
+              "login": "skulisek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/60703001?v=4",
+              "html_url": "https://github.com/skulisek"
+            }
+          ],
+          "created_at": "2023-10-31T10:43:34Z",
+          "updated_at": "2023-10-31T10:51:49Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "c0ee5ba034bc0467444f09cb9db243944948022d",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "RHPAM-4781-osgi-h2-7.67.x",
+            "sha": "b684ffb41c6fccd0c22bf9e6fdba37abf01ad775",
+            "label": "tkobayas:RHPAM-4781-osgi-h2-7.67.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 18219670350,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/6705374204/job/18219670350",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T10:43:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18219670059,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/6705374204/job/18219670059",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-10-31T10:43:47Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25853041035,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/130/",
+              "conclusion": "pending",
+              "started_at": "2023-10-31T10:43:38Z",
+              "completed_at": "2023-10-31T10:43:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2992,
           "title": "Bump org.apache.santuario:xmlsec from 2.1.7 to 2.2.6 in /kie-osgi/kie-karaf-features",
