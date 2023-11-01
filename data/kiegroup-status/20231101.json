@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-01T13:08:16.362Z",
+    "date": "2023-11-01T14:05:40.162Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6720067865"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6720683843"
   },
   "projects": [
     {
@@ -1062,7 +1062,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-11-01T13:01:15Z",
-          "updated_at": "2023-11-01T13:01:39Z",
+          "updated_at": "2023-11-01T13:47:14Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1253,6 +1253,16 @@
               "conclusion": "success",
               "started_at": "2023-11-01T13:04:16Z",
               "completed_at": "2023-11-01T13:04:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 25878314961,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/728/",
+              "conclusion": "pending",
+              "started_at": "2023-11-01T13:47:18Z",
+              "completed_at": "2023-11-01T13:47:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -2226,107 +2236,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
-          "number": 15,
-          "title": "[7.67.x-blue] [RHDM-1994] Performance degradation when increasing concurrency of ru…",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/15",
-          "html_url": "https://github.com/kiegroup/drools/pull/15",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
-          "created_at": "2023-10-31T11:00:53Z",
-          "updated_at": "2023-11-01T02:39:10Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "107e91d7097f6998db711fffab3a64a3d39f2de6",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "RHDM-1994-7.67.x-blue",
-            "sha": "0f021f4ad748f5393e34e983d3e8865dc568a4e3",
-            "label": "tkobayas:RHDM-1994-7.67.x-blue"
-          },
-          "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
-          },
-          "checks": [
-            {
-              "id": 18220218342,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220218342",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-31T11:01:10Z",
-              "completed_at": "2023-10-31T12:18:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18220218038,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220218038",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-31T11:01:09Z",
-              "completed_at": "2023-10-31T12:46:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18220217777,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220217777",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-31T11:01:06Z",
-              "completed_at": "2023-10-31T12:10:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18220217491,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/6705543864/job/18220217491",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-31T11:01:07Z",
-              "completed_at": "2023-10-31T12:00:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25854329327,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/38/",
-              "conclusion": "failure",
-              "started_at": "2023-10-31T11:57:48Z",
-              "completed_at": "2023-10-31T11:57:48Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 25854716044,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/33/",
-              "conclusion": "success",
-              "started_at": "2023-10-31T12:19:10Z",
-              "completed_at": "2023-10-31T12:19:10Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 11,
           "title": "[JBPM-10187] Sorting resources to avoid deadlock",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/11",
@@ -2501,6 +2410,9 @@
               "sha": "484e208332d3ede99c2a006d164905d3627ec8ac"
             },
             {
+              "sha": "4f335cf5e4fa3ce25e15ce180f8706a952bd429e"
+            },
+            {
               "sha": "979b2b4375cbc1433b5febc4ada28d61b21f33e0"
             },
             {
@@ -2513,7 +2425,10 @@
               "sha": "ed35125d209b226e57022aa3d6109aba1dbb6890"
             },
             {
-              "sha": "47869edeeaaab1786ed550a53b9f6e90407377b0"
+              "sha": "22ecfc05103103fd8cbd12d2214b26f632f0235f"
+            },
+            {
+              "sha": "1ae11a46b6ef290756c5f2c6db342e3856b51c49"
             },
             {
               "sha": "1fe134fbe7410efbb1e67ab5360779d4f412434f"
@@ -2534,7 +2449,16 @@
               "sha": "7e21fc3bb6f17a46431ec3c2f3a8bdc749cf754d"
             },
             {
+              "sha": "43715a6b02e34ca9466537213a1222c5fab12a3a"
+            },
+            {
               "sha": "a8ced3de2ca5c95ac0db0776d6d8e98f563af7ad"
+            },
+            {
+              "sha": "37cc029a0a671a48f6fddcb5fac38133d0736acf"
+            },
+            {
+              "sha": "202160eb8f9c493b688f31e29340d986ddf9ee3b"
             },
             {
               "sha": "4a5e630a3255119a56d999d2615d2b208bab4a5e"
@@ -2546,16 +2470,25 @@
               "sha": "a2011bdf6fe9f75ea4f7ef6946ac3b740674ca45"
             },
             {
+              "sha": "607be62fc014970cd5a68c57ea799521de0267f3"
+            },
+            {
               "sha": "cff7222e0f0335705753671e38f38104279da19d"
+            },
+            {
+              "sha": "00dba06ecaaaf0d1152a28ea0b7d136b8118f74a"
+            },
+            {
+              "sha": "35bdce5663238b8ceb4c64d5cabb2fdf740939f2"
             },
             {
               "sha": "86100ce22ace3da1a7c6fffa6af89430fe7f10b3"
             },
             {
-              "sha": "f59a1113acbe4fe4e758009635aff3b7f5e91728"
+              "sha": "1e27e70a6ac16477cdeff4ee71914fc654561258"
             },
             {
-              "sha": "28e60b723506de9d75fa1539c7c7b5a5a49ba55d"
+              "sha": "aa9033a866f6e3fff67a83a5ba4348a0b2fbb27e"
             },
             {
               "sha": "46a833eba9dd69f72e9c21f48cb2abc958767804"
@@ -2567,10 +2500,25 @@
               "sha": "5e7445ad0b6dede379ad91d5e188010bceb71870"
             },
             {
+              "sha": "ad16953b0d48823f253ad7d2f004ab6056bb20f5"
+            },
+            {
+              "sha": "e0c02384a3cec8a9b718f438f001b92ce4de8988"
+            },
+            {
+              "sha": "ec6496f89d58626ff9d81f8017d1bc2297cd4b3b"
+            },
+            {
+              "sha": "a0aa8b83b189d27ee27bd73dd423fe28b2d0add8"
+            },
+            {
               "sha": "1d1d9d05bafde3bb1d3c1dbea2a1214553474301"
             },
             {
               "sha": "592705c03d85b30ad5b46588d799b924edc97d16"
+            },
+            {
+              "sha": "43ebea16cba50f3daa10cbf83f9a2b41abc1d1d4"
             },
             {
               "sha": "25e93c1a343d8078034e7839d322053d3a0f4482"
@@ -2585,19 +2533,163 @@
               "sha": "1441b01568d267bbb55095699e1932236a7d5734"
             },
             {
-              "sha": "d0f8b451cb455f47ce4686529eb6405fd31efffc"
+              "sha": "487380d60ce7a32655a6c565f9676072966525e4"
             },
             {
-              "sha": "79cb07258ff963fb48ce1552e2a026f7c5e3f59c"
+              "sha": "a90f746b61ef64a4aa7cb0e10622b2e3432c06ff"
             },
             {
-              "sha": "e26ae961918f8a15aa8667a0a5f94ff6b583ec99"
+              "sha": "0d8f27c4ff3d081c332fdf1a6caa2dedc502e656"
             },
             {
-              "sha": "fef1049cc00de0b58a2aca72fe9eab512852f649"
+              "sha": "57ea581573e0f31b755032b8f6984e0ccefb0b9a"
             },
             {
-              "sha": "c0f70251badc373989e5e02c112d08efbe39b6ae"
+              "sha": "74e390eb84e4155a34e43d7b42d5bd37096406bd"
+            },
+            {
+              "sha": "0900f4519245dcfa03f0c6975cc52c130d131221"
+            },
+            {
+              "sha": "b1742eff232811de011ad0094e7df7b750fbb4b3"
+            },
+            {
+              "sha": "ba0b748a0936bbab1164c7e7054fdb1022ac91d3"
+            },
+            {
+              "sha": "57dfbfe7f690c87e5bbe98dd3b0104d41ed5330a"
+            },
+            {
+              "sha": "72103647eaeb744491d44c02ec8d47b1d438862c"
+            },
+            {
+              "sha": "7be333e5bd2e9ea883e1f7946f3aba7819303f28"
+            },
+            {
+              "sha": "40fa02b05a7ff3595f693213eb782683ffd9bc10"
+            },
+            {
+              "sha": "22dace1b33ee2fa687b3b298139db59e35b83d39"
+            },
+            {
+              "sha": "a3f7ce91f3ca6104667f345218908470bcf3bbc9"
+            },
+            {
+              "sha": "2e4c7e7f080b0c904bb82750cb75d601d6292970"
+            },
+            {
+              "sha": "4ae6ef8322b2ecd64e8ad7a756beafc6e31d9b56"
+            },
+            {
+              "sha": "880d870a2c821d575a99044303e0e31d3c262f0e"
+            },
+            {
+              "sha": "255250b90e991af8f2fda5c7136dceb8c8ce3b1f"
+            },
+            {
+              "sha": "c5658de87f67429470f61ad16f843c92bddbc115"
+            },
+            {
+              "sha": "9215caee623beab0667758be164edd9ca3f0253b"
+            },
+            {
+              "sha": "cc1f7739e9eaa3a6134302ed54d418e109cad549"
+            },
+            {
+              "sha": "a65fac04fce51de724bff452f83fc24992100b1e"
+            },
+            {
+              "sha": "5ae2519fcb2da265204f2397e4cf3adbb204456b"
+            },
+            {
+              "sha": "fd5313a03952416140964e9b5c3dadda8e3079f9"
+            },
+            {
+              "sha": "db31d143d658e9dbbc249e056f6a5fd23bbe4088"
+            },
+            {
+              "sha": "98ddca950cde18aacd30e28ede6799d993b0c3e7"
+            },
+            {
+              "sha": "42da15881c936a3872ec826fc1bfc7a88225f875"
+            },
+            {
+              "sha": "d1a174c192310c842f3d32f0edf82ee9871bd429"
+            },
+            {
+              "sha": "df4f9467cca6114b292f9be7b0f747d160334f64"
+            },
+            {
+              "sha": "4f87746679bd8563bcd9fde71d400e3c147cc4fa"
+            },
+            {
+              "sha": "b7eb338c3492075864db62e3838ff8fb7cc2133c"
+            },
+            {
+              "sha": "e46d3ff2813afe7d8d9c421b193fcbb418a4ee4a"
+            },
+            {
+              "sha": "c26efe5c02671f6da6c6bcca238df4854e2fe826"
+            },
+            {
+              "sha": "362f7bdbb5ee285fc662e99a7e02abf954b58fa8"
+            },
+            {
+              "sha": "205506ea0ccb1c6bcad455650ef51c69ac08cf60"
+            },
+            {
+              "sha": "dfa2567832a6c14d3d1192eb2f88374f1c8df613"
+            },
+            {
+              "sha": "267c1c2d25a93eaf693d7571f4784d85702fec83"
+            },
+            {
+              "sha": "ddbedb0084602d80936a67e85a53a7545a7fa0b4"
+            },
+            {
+              "sha": "d7d9e71f1177c0565d103d92664b694ed853c5aa"
+            },
+            {
+              "sha": "5d6e06df398e5056f6d537c90c7ca9163fd95c89"
+            },
+            {
+              "sha": "52214ab815c979ee8221b4864693c4139597bc42"
+            },
+            {
+              "sha": "870b5c0e64002eac0a449e87682c9a3330915e46"
+            },
+            {
+              "sha": "b1093796c5c05dbe0ec0f0a6889cd1442c3c7560"
+            },
+            {
+              "sha": "c1bec08fc4e11d101c7d951e6516aafd39aa7bed"
+            },
+            {
+              "sha": "77eb9b601369a22e172990eebf52dd2e57267dfb"
+            },
+            {
+              "sha": "f00c421c65dec2d3f0c0655777ea76a65032e2e2"
+            },
+            {
+              "sha": "9a214389af54ad4918f28f1dd641c2c078b3a3b2"
+            },
+            {
+              "sha": "df80cd074cab38f2b692170f835a5bc61585c677"
+            },
+            {
+              "sha": "6fa19fdbae339d101b5cd77b6a18ab275daa2c53"
+            },
+            {
+              "sha": "2a4da4e8beaa1f9b3cf5b9accb8f992733986877"
+            },
+            {
+              "sha": "cdd2af1389a7fd372bac887d72d0531a85a957f0"
+            },
+            {
+              "sha": "f2c64fae16fb0736640f1a6802c238d239c60f88"
+            },
+            {
+              "sha": "c18c8b00579d8c3999265f668d30e9cc0705128f"
             },
             {
               "sha": "7ba6bada24e493bec18fa7707e812e01ede04c3f"
@@ -2610,6 +2702,9 @@
             },
             {
               "sha": "2082a1236cf3cbbf36d971d3b69eab684eeb8be4"
+            },
+            {
+              "sha": "c863d824e3545e45b9ddf4147343eca3904fcf84"
             },
             {
               "sha": "3827a7dd936d7932ba3b81a241aac9742a704918"
@@ -2628,6 +2723,9 @@
             },
             {
               "sha": "b48d47a9c078edf12dc7726148de8c8e1c21dd2a"
+            },
+            {
+              "sha": "7091c049dca637c4bba64fcd2125f7689c08c1f7"
             },
             {
               "sha": "f1a57a2ef10abb49be55b8bc3c1c8421ad1817a7"
@@ -3032,10 +3130,16 @@
               "sha": "64de367d634ce8f5d25df1461eb977d26d5189f6"
             },
             {
+              "sha": "b64366317b26a04083292f59b5594e70d793d683"
+            },
+            {
               "sha": "4a871a06fedf44f5c3533fdeef4434df99cc8901"
             },
             {
               "sha": "74748b963ddd9dc877e3c659a460cbb2a9e716f6"
+            },
+            {
+              "sha": "a19c4dd126cd850ba2f23e181befd29468578374"
             },
             {
               "sha": "89f8ebe2ad26cbd7ce63febb3ba5866cd3ffba9f"
@@ -3138,201 +3242,6 @@
             },
             {
               "sha": "3d639e56d36710d2d0cb58b2ab7afb093d2b9293"
-            },
-            {
-              "sha": "a8538c2d1a4da00813ba8845878a595bcfb8f1a3"
-            },
-            {
-              "sha": "44ed4829eada9e4e48c565ac58b60ad0f8ca08c9"
-            },
-            {
-              "sha": "ce2fa5dd05eb1a4c113433a0a262f040724eda87"
-            },
-            {
-              "sha": "1130b9c83c40966815f2a73ac4c3e909e7eac4fc"
-            },
-            {
-              "sha": "a2420112000aa2494345e7b6dc0e8a423e70fe9e"
-            },
-            {
-              "sha": "068b0cee703847bb6620b6f13ad92d0ee7ce9a70"
-            },
-            {
-              "sha": "155ead0f6de0390e5aebbf863dc40a4f755392cc"
-            },
-            {
-              "sha": "8b5f4274276acc492f51f507db78676a089d61c7"
-            },
-            {
-              "sha": "bf5de3f2cadab02b2d4b5a0b2f14b0e9a29ded0b"
-            },
-            {
-              "sha": "d029f35a0d149f6f77670a4496d422c92e77c3b6"
-            },
-            {
-              "sha": "aea9aeb6671a085f9a90c13642a0c95dfdd32f3a"
-            },
-            {
-              "sha": "31461c6f18217c71d5066f56129fdf164a99d88f"
-            },
-            {
-              "sha": "efafae6316669642322771a8cd3536a4ad0ec4c0"
-            },
-            {
-              "sha": "17fe1cb131b6c4265724a3aaaea6e8a5e6c3a9fd"
-            },
-            {
-              "sha": "81f209c6244e4ff2c2fa75ad1c074d13a7dd3fe3"
-            },
-            {
-              "sha": "53222c24f92f8994f7312b8206cafa9ab36f3d20"
-            },
-            {
-              "sha": "c2e99a49c2e4e2f390f0b9def890f7ce001ebac3"
-            },
-            {
-              "sha": "eb1c3d43f1482cfd9c61814e3a03e22e3bb2a40d"
-            },
-            {
-              "sha": "809e9b1a5020fb97d75c1d4ac3305d5b091ef6cf"
-            },
-            {
-              "sha": "165796a1373a6240de07bdf53d183eb317b71d84"
-            },
-            {
-              "sha": "7e8ce28371e630702eb0b321936a483c47b8cb46"
-            },
-            {
-              "sha": "736e00141120b9547ebc1a6af087c88f0884b3e3"
-            },
-            {
-              "sha": "e5ac6d38123b2558986e7f2530d6428ea7210b32"
-            },
-            {
-              "sha": "0515a3e6b0bb76e601a474c3e7f313985e1d6396"
-            },
-            {
-              "sha": "357c574be0e834b6b74e266e53774b545fc3d7c7"
-            },
-            {
-              "sha": "1fc1152a0f575ac45bec19f7bcb072f10bb3a747"
-            },
-            {
-              "sha": "fe139f22f401afe1f32246c26f9d639aaf318693"
-            },
-            {
-              "sha": "69dfa6400f6f2324b36738c216559b4fd76d0640"
-            },
-            {
-              "sha": "6bb8df20a7170e5d9077e931d69e8576027a4955"
-            },
-            {
-              "sha": "bddc7275cb8f609d626bfc53f2cb921f7dfb2d62"
-            },
-            {
-              "sha": "2ad5d708fddbe83d5347507aa5bfbdd7a2806f7f"
-            },
-            {
-              "sha": "e14f3e4d54be2e488003bd19c4a57ebe64b9b6eb"
-            },
-            {
-              "sha": "3e094e5b26697268e3befbb46045de7c9c49e4ab"
-            },
-            {
-              "sha": "094099c09bdbf93420e1acd3295fa345d076f39a"
-            },
-            {
-              "sha": "7418b4cc3484d24c72d5cea4d9ddf3aab94a82df"
-            },
-            {
-              "sha": "708f2d49b2df6927f01f63539037a6329dbe539e"
-            },
-            {
-              "sha": "a33df56a3449a50450a1a1ef048214de5b161d1c"
-            },
-            {
-              "sha": "39cea11495816bee09cbfcde1bfa90b407d52275"
-            },
-            {
-              "sha": "523ff64f5dab9f63efd67d4a899b55769430c67a"
-            },
-            {
-              "sha": "4b377f26e060d4397adac7a1834f427dbbd856fb"
-            },
-            {
-              "sha": "97e0d285b3251654bd57541f42debdac5c333c4c"
-            },
-            {
-              "sha": "45b6741db371efef4c1b45a893ee69f8b519a64b"
-            },
-            {
-              "sha": "f68ebe8019ab0899760d5b3da98e1e96ef022373"
-            },
-            {
-              "sha": "11d441c64dfed8bf5d4825d66d8324ada65caeed"
-            },
-            {
-              "sha": "f8b8f69e803bcef6deca7e4e16c4c6b8c20d59fa"
-            },
-            {
-              "sha": "1920dbbcf64b79a7533cd8815252a2acc5811d16"
-            },
-            {
-              "sha": "ba88b75817978aaeb072c50fb1f69e04a944705c"
-            },
-            {
-              "sha": "af794971901cf4f643e543d850091b6b15a1fa07"
-            },
-            {
-              "sha": "3bb87c31bdf5b7876b6601ba248f70db2590edea"
-            },
-            {
-              "sha": "5cb1732ad96077c03dd21d19ca0515522fe935f8"
-            },
-            {
-              "sha": "55eca48a622221ce513fe22ede1b810a077786d6"
-            },
-            {
-              "sha": "734195a25cc8a08aebb83336edefcb42c77061a7"
-            },
-            {
-              "sha": "8685aeb601521a4aa4135b62b3ff3527c2312a06"
-            },
-            {
-              "sha": "9f5dbc80d0ee3c8a0afb4f22c21dc355398b454d"
-            },
-            {
-              "sha": "976780074bfc0c7c3033ad4ef071de646e64ce62"
-            },
-            {
-              "sha": "1bc2faf35730d0606ffa20880136673ea63165a7"
-            },
-            {
-              "sha": "719e599e1f7ddc2076b752bd6fdfb71f452b8692"
-            },
-            {
-              "sha": "458796d0122f31293f70a9d036e9c78f4f603309"
-            },
-            {
-              "sha": "0f8895075790bc400053aa46a1a97818ff4180dd"
-            },
-            {
-              "sha": "3d07b955a0652374fd992bd67ed8ea86962cafc6"
-            },
-            {
-              "sha": "df8b410e0627517714ec650c982b9dc1bf4319e7"
-            },
-            {
-              "sha": "457aad3f5a458aa4afadcd64271d74903b702bbe"
-            },
-            {
-              "sha": "f66281cd02b0cfe84ae403d0854ceab66e7a21bd"
-            },
-            {
-              "sha": "229df1c449baacc74ad5c1cba7091dd1ba7e0344"
-            },
-            {
-              "sha": "6d272ce2c6193c131ed940a625a71dcc989a7848"
             }
           ]
         },
