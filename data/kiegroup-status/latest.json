@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-02T14:06:06.581Z",
+    "date": "2023-11-02T15:06:40.563Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6733682612"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6734448574"
   },
   "projects": [
     {
@@ -2035,7 +2035,7 @@
             }
           ],
           "created_at": "2023-10-26T15:07:26Z",
-          "updated_at": "2023-11-02T12:14:28Z",
+          "updated_at": "2023-11-02T14:59:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2069,10 +2069,10 @@
               "id": 18298917647,
               "name": "windows-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/drools/actions/runs/6732361882/job/18298917647",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-02T12:13:21Z",
-              "completed_at": null,
+              "completed_at": "2023-11-02T14:14:24Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -2099,22 +2099,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25899914314,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/472/",
-              "conclusion": "failure",
-              "started_at": "2023-11-02T13:10:15Z",
-              "completed_at": "2023-11-02T13:10:15Z",
+              "id": 25902369354,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/483/",
+              "conclusion": "pending",
+              "started_at": "2023-11-02T14:56:40Z",
+              "completed_at": "2023-11-02T14:56:40Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 25900311905,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/482/",
-              "conclusion": "failure",
-              "started_at": "2023-11-02T13:29:41Z",
-              "completed_at": "2023-11-02T13:29:41Z",
+              "id": 25902369356,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/473/",
+              "conclusion": "pending",
+              "started_at": "2023-11-02T14:56:40Z",
+              "completed_at": "2023-11-02T14:56:40Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6534,35 +6534,26 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2352,
-          "title": "[incubator-kie-issues-646] Duplicate timer created for Task SLA Due date with AsyncMode env setting",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2352",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2352",
+          "number": 2355,
+          "title": "[incubator-kie-issues-646] fix recursion",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2355",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2355",
           "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
+          "labels": [],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "krisv",
-              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
-              "html_url": "https://github.com/krisv"
-            }
-          ],
-          "created_at": "2023-10-26T08:50:22Z",
-          "updated_at": "2023-10-30T08:57:55Z",
+          "requested_reviewers": [],
+          "created_at": "2023-11-02T14:23:28Z",
+          "updated_at": "2023-11-02T14:23:28Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "175e6b913c2f0f05441876d6928928dc939df08c",
+            "sha": "063e3e4d174b75c97f02b11d507e0ce602c0fe05",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "incubator-kie-issues-646",
-            "sha": "1fd3193f4aab21e56109e8e6deeb34d312445781",
+            "sha": "c96ed87138de1876283783280caa6833b3ea7a91",
             "label": "elguardian:incubator-kie-issues-646"
           },
           "user": {
@@ -6572,114 +6563,124 @@
           },
           "checks": [
             {
-              "id": 18126592873,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6669243405/job/18126592873",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-27T15:33:18Z",
-              "completed_at": "2023-10-27T15:33:18Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18126592427,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6669243403/job/18126592427",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-27T15:33:17Z",
-              "completed_at": "2023-10-27T15:33:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18126592030,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6669243405/job/18126592030",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-27T15:33:16Z",
-              "completed_at": "2023-10-27T15:33:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18126591479,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6669243403/job/18126591479",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-27T15:33:15Z",
-              "completed_at": "2023-10-27T15:33:15Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18077954129,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18077954129",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-26T10:41:02Z",
-              "completed_at": "2023-10-26T10:41:02Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18077952835,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18077952835",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-26T10:39:30Z",
-              "completed_at": "2023-10-26T10:40:58Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 18074268740,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6651709706/job/18074268740",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-26T08:50:36Z",
-              "completed_at": "2023-10-26T11:47:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18074268453,
+              "id": 18303645667,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6651709706/job/18074268453",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-26T08:50:36Z",
-              "completed_at": "2023-10-26T11:02:35Z",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6733916379/job/18303645667",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-02T14:23:41Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25780821138,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/962/",
-              "conclusion": "success",
-              "started_at": "2023-10-26T10:41:21Z",
-              "completed_at": "2023-10-26T10:41:21Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "id": 18303645336,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6733916379/job/18303645336",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-02T14:23:42Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25804864104,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/jbpm-main.fdb/69/",
-              "conclusion": "success",
-              "started_at": "2023-10-27T12:11:26Z",
-              "completed_at": "2023-10-27T12:11:26Z",
+              "id": 25901539498,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/970/",
+              "conclusion": "pending",
+              "started_at": "2023-11-02T14:23:34Z",
+              "completed_at": "2023-11-02T14:23:34Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
+        },
+        {
+          "number": 2354,
+          "title": "[7.67.x] [incubator-kie-issues-646] Duplicate timer created for Task SLA Due date with AsyncMode env setting",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2354",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2354",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2023-11-02T14:18:58Z",
+          "updated_at": "2023-11-02T14:19:00Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "16f3a5159f4b82918ad6db91f6e157883e9b4847",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_incubator-kie-issues-646",
+            "sha": "38b2399b48e3fffab16f42d578f5944fcfda247a",
+            "label": "kiegroup:7.67.x_incubator-kie-issues-646"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2353,
+          "title": "[7.67.x-blue] [incubator-kie-issues-646] Duplicate timer created for Task SLA Due date with AsyncMode env setting",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2353",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2353",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2023-11-02T14:18:51Z",
+          "updated_at": "2023-11-02T14:18:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "0d7951c29d16708e02602373abde4d0c3a6e31b4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_incubator-kie-issues-646",
+            "sha": "3a6c4cb2101ca469a17dc56ef42d62dad9f9a69b",
+            "label": "kiegroup:7.67.x-blue_incubator-kie-issues-646"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2351,
@@ -10229,7 +10230,7 @@
             }
           ],
           "created_at": "2023-11-02T09:28:21Z",
-          "updated_at": "2023-11-02T12:17:17Z",
+          "updated_at": "2023-11-02T14:45:43Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -10248,6 +10249,28 @@
             "html_url": "https://github.com/tkobayas"
           },
           "checks": [
+            {
+              "id": 18304536222,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/18304536222",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T14:45:45Z",
+              "completed_at": "2023-11-02T14:45:45Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18304534647,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/18304534647",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-02T14:43:24Z",
+              "completed_at": "2023-11-02T14:45:41Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
             {
               "id": 18293778986,
               "name": "ubuntu-latest - Java 11 - Maven",
@@ -10271,12 +10294,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25898966452,
+              "id": 25902138507,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1179/",
-              "conclusion": "pending",
-              "started_at": "2023-11-02T12:16:34Z",
-              "completed_at": "2023-11-02T12:16:34Z",
+              "conclusion": "success",
+              "started_at": "2023-11-02T14:47:39Z",
+              "completed_at": "2023-11-02T14:47:39Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
