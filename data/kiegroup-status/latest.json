@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-07T16:08:16.121Z",
+    "date": "2023-11-07T17:05:35.541Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6787170186"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6787864150"
   },
   "projects": [
     {
@@ -6452,16 +6452,27 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2358,
-          "title": "[JBPM-10208] Avoid signalling the same engine more than once",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2358",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2358",
+          "number": 2359,
+          "title": "[JBPM-10208] Signalling engine only once",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2359",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2359",
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-07T16:08:10Z",
-          "updated_at": "2023-11-07T16:08:10Z",
+          "requested_reviewers": [
+            {
+              "login": "martinweiler",
+              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+              "html_url": "https://github.com/martinweiler"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2023-11-07T16:40:20Z",
+          "updated_at": "2023-11-07T16:43:38Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6471,7 +6482,7 @@
           },
           "head": {
             "ref": "JBPM-10208",
-            "sha": "04079ee8eb24d5f541f5533a98a33ee85b8625ab",
+            "sha": "5b8919f1efefbca0b79ddfe94cc6d41ea2ae3c7e",
             "label": "fjtirado:JBPM-10208"
           },
           "user": {
@@ -6481,13 +6492,35 @@
           },
           "checks": [
             {
-              "id": 25976827424,
+              "id": 18450815983,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6787621965/job/18450815983",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-07T16:43:54Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18450815739,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6787621965/job/18450815739",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-07T16:43:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 25977784462,
               "name": "Linux - Pull Request",
-              "html_url": "",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/979/",
               "conclusion": "pending",
-              "started_at": "2023-11-07T16:08:17Z",
-              "completed_at": "2023-11-07T16:08:17Z",
-              "slug": "unknown",
+              "started_at": "2023-11-07T16:43:42Z",
+              "completed_at": "2023-11-07T16:43:42Z",
+              "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
@@ -6601,7 +6634,7 @@
             }
           ],
           "created_at": "2023-11-06T16:24:56Z",
-          "updated_at": "2023-11-07T14:27:33Z",
+          "updated_at": "2023-11-07T16:11:42Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6621,6 +6654,17 @@
           },
           "checks": [
             {
+              "id": 18449536227,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/18449536227",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-07T16:08:29Z",
+              "completed_at": "2023-11-07T16:11:39Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
               "id": 18435223162,
               "name": "SonarCloud",
               "html_url": "https://github.com/kiegroup/jbpm/runs/18435223162",
@@ -6632,23 +6676,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18435221540,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18435221540",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-07T09:37:20Z",
-              "completed_at": "2023-11-07T09:40:23Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 25974159204,
+              "id": 25976931415,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/81/",
-              "conclusion": "pending",
-              "started_at": "2023-11-07T14:27:35Z",
-              "completed_at": "2023-11-07T14:27:35Z",
+              "conclusion": "failure",
+              "started_at": "2023-11-07T16:12:02Z",
+              "completed_at": "2023-11-07T16:12:02Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
