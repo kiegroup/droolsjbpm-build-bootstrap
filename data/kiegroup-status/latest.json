@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-13T09:07:12.255Z",
+    "date": "2023-11-13T10:07:29.674Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6847811823"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6848460111"
   },
   "projects": [
     {
@@ -1857,6 +1857,101 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
+          "number": 21,
+          "title": "[RHDM-2007] non-matching rule fires randomly and results in infinite-loop ",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/21",
+          "html_url": "https://github.com/kiegroup/drools/pull/21",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-11-13T09:14:54Z",
+          "updated_at": "2023-11-13T09:17:01Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "a7cb32cb6f1aebac45c64bbeb3fbc80525499970",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "RHDM-2007-7.x",
+            "sha": "dadb65a5b6016b81451693bc12c088d835241ac4",
+            "label": "tkobayas:RHDM-2007-7.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 18617049946,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6847904943/job/18617049946",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-13T09:15:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18617049702,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6847904943/job/18617049702",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-13T09:15:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18617049441,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6847904943/job/18617049441",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T09:15:05Z",
+              "completed_at": "2023-11-13T09:57:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18617049200,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/6847904943/job/18617049200",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-13T09:15:06Z",
+              "completed_at": "2023-11-13T10:03:34Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26062707705,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/486/",
+              "conclusion": "pending",
+              "started_at": "2023-11-13T09:15:03Z",
+              "completed_at": "2023-11-13T09:15:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26062707818,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/476/",
+              "conclusion": "pending",
+              "started_at": "2023-11-13T09:15:03Z",
+              "completed_at": "2023-11-13T09:15:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 18,
           "title": "[7.67.x] [JBPM-10187] Sorting resources to avoid deadlock",
           "url": "https://api.github.com/repos/kiegroup/drools/pulls/18",
@@ -1868,13 +1963,23 @@
           "draft": false,
           "requested_reviewers": [
             {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "martinweiler",
+              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+              "html_url": "https://github.com/martinweiler"
+            },
+            {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
           "created_at": "2023-11-06T16:24:45Z",
-          "updated_at": "2023-11-08T13:52:51Z",
+          "updated_at": "2023-11-13T09:17:36Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2003,13 +2108,23 @@
           "draft": false,
           "requested_reviewers": [
             {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "martinweiler",
+              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+              "html_url": "https://github.com/martinweiler"
+            },
+            {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
           "created_at": "2023-11-06T16:24:37Z",
-          "updated_at": "2023-11-08T13:51:09Z",
+          "updated_at": "2023-11-13T09:14:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6744,7 +6859,7 @@
             }
           ],
           "created_at": "2023-11-06T16:24:56Z",
-          "updated_at": "2023-11-10T12:48:41Z",
+          "updated_at": "2023-11-13T09:15:02Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
