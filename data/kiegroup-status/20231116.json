@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-16T10:07:23.452Z",
+    "date": "2023-11-16T11:04:52.230Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6889197500"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6889835303"
   },
   "projects": [
     {
@@ -6849,36 +6849,27 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2362,
-          "title": "[JBPM-10209] Switching to CMT",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2362",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2362",
+          "number": 2365,
+          "title": "[JBPM-10088] Removing timers when rollback",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2365",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2365",
           "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "krisv",
-              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
-              "html_url": "https://github.com/krisv"
-            }
-          ],
-          "created_at": "2023-11-14T13:35:52Z",
-          "updated_at": "2023-11-16T10:05:47Z",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2023-11-16T10:58:22Z",
+          "updated_at": "2023-11-16T11:04:01Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "f897fccdd74c3e7e86afe7fec74b1d91ffc277c1",
+            "sha": "ababa5f79685a37fea790a0e0d9b12cf3d0eaac1",
             "label": "kiegroup:main"
           },
           "head": {
-            "ref": "JBPM-10209",
-            "sha": "2b232e16e300ee2ac077ab05b1e5259641e1ab9e",
-            "label": "fjtirado:JBPM-10209"
+            "ref": "JBPM-10088",
+            "sha": "27c29b10bb5f3014b7d626405683c73ea53005a3",
+            "label": "fjtirado:JBPM-10088"
           },
           "user": {
             "login": "fjtirado",
@@ -6887,60 +6878,124 @@
           },
           "checks": [
             {
-              "id": 18711525479,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18711525479",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-15T15:37:10Z",
-              "completed_at": "2023-11-15T15:37:11Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18711523621,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18711523621",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-15T15:35:43Z",
-              "completed_at": "2023-11-15T15:37:06Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 18707504754,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6878245439/job/18707504754",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-15T13:55:48Z",
-              "completed_at": "2023-11-15T15:27:20Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18707504509,
+              "id": 18741546466,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6878245439/job/18707504509",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-15T13:55:49Z",
-              "completed_at": "2023-11-15T16:03:50Z",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6889802158/job/18741546466",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T11:02:03Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 26115534560,
+              "id": 18741546179,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6889802158/job/18741546179",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-16T11:02:00Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26133002438,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/994/",
-              "conclusion": "success",
-              "started_at": "2023-11-15T15:37:26Z",
-              "completed_at": "2023-11-15T15:37:26Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/996/",
+              "conclusion": "pending",
+              "started_at": "2023-11-16T11:01:45Z",
+              "completed_at": "2023-11-16T11:01:45Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
+        },
+        {
+          "number": 2364,
+          "title": "[7.67.x-blue] [JBPM-10209] Switching to CMT",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2364",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2364",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-11-16T10:14:13Z",
+          "updated_at": "2023-11-16T10:14:15Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "0d7951c29d16708e02602373abde4d0c3a6e31b4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10209",
+            "sha": "6c3eaf6336a5680d6d82b7b793f9af7f86852d74",
+            "label": "kiegroup:7.67.x-blue_JBPM-10209"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2363,
+          "title": "[7.67.x] [JBPM-10209] Switching to CMT",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2363",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2363",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "krisv",
+              "avatar_url": "https://avatars.githubusercontent.com/u/408314?v=4",
+              "html_url": "https://github.com/krisv"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-11-16T10:14:09Z",
+          "updated_at": "2023-11-16T10:14:10Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "16f3a5159f4b82918ad6db91f6e157883e9b4847",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10209",
+            "sha": "8c0603a2427409eaa5f43acdabdccbefbe25d381",
+            "label": "kiegroup:7.67.x_JBPM-10209"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2361,
@@ -8995,42 +9050,6 @@
             "login": "danielemams",
             "avatar_url": "https://avatars.githubusercontent.com/u/15197745?v=4",
             "html_url": "https://github.com/danielemams"
-          },
-          "checks": []
-        },
-        {
-          "number": 2157,
-          "title": "[JBPM-10088] Subprocess rollbacked transaction makes getTimerMappingInfo query fail",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2157",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2157",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "gmunozfe",
-              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-              "html_url": "https://github.com/gmunozfe"
-            }
-          ],
-          "created_at": "2022-06-09T07:39:12Z",
-          "updated_at": "2022-07-27T14:00:28Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "692b6fccdf0189febbc2394d5158e6e9deadbcd5",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10088",
-            "sha": "f842a7e60bc04ea086f207eeb170d95a037b276c",
-            "label": "elguardian:JBPM-10088"
-          },
-          "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
           },
           "checks": []
         },
