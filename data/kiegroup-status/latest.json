@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-20T12:12:27.824Z",
+    "date": "2023-11-20T13:11:09.621Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6929904462"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6930580153"
   },
   "projects": [
     {
@@ -6269,6 +6269,137 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2366,
+          "title": "[JBPM-10210] Karaf tests failing after JBPM-10209",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2366",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2366",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-11-20T12:23:55Z",
+          "updated_at": "2023-11-20T12:24:51Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ababa5f79685a37fea790a0e0d9b12cf3d0eaac1",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10210",
+            "sha": "b8e120027f481b3e1ae98521e8d3329d9fffc2ef",
+            "label": "gmunozfe:JBPM-10210"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 18848951626,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930044286/job/18848951626",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-11-20T12:24:09Z",
+              "completed_at": "2023-11-20T12:24:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18848951567,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930044297/job/18848951567",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-11-20T12:24:09Z",
+              "completed_at": "2023-11-20T12:24:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18848950956,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930044297/job/18848950956",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-11-20T12:24:07Z",
+              "completed_at": "2023-11-20T12:24:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18848950951,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930044286/job/18848950951",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-11-20T12:24:07Z",
+              "completed_at": "2023-11-20T12:24:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18848947782,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930042997/job/18848947782",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-20T12:24:10Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18848947458,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930042997/job/18848947458",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-20T12:24:08Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26183594029,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1002/",
+              "conclusion": "pending",
+              "started_at": "2023-11-20T12:24:01Z",
+              "completed_at": "2023-11-20T12:24:01Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26183608798,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/jbpm-main.fdb/70/",
+              "conclusion": "pending",
+              "started_at": "2023-11-20T12:24:54Z",
+              "completed_at": "2023-11-20T12:24:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2365,
           "title": "[JBPM-10088] Removing timers when rollback",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2365",
@@ -6284,7 +6415,7 @@
             }
           ],
           "created_at": "2023-11-16T10:58:22Z",
-          "updated_at": "2023-11-16T19:09:22Z",
+          "updated_at": "2023-11-20T12:54:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6294,7 +6425,7 @@
           },
           "head": {
             "ref": "JBPM-10088",
-            "sha": "b7e701c134d57ec037914e8ed92c3c8565a1a9da",
+            "sha": "60f0b24285a18427d40dd9052e6b88ebe18ce02f",
             "label": "fjtirado:JBPM-10088"
           },
           "user": {
@@ -6304,78 +6435,34 @@
           },
           "checks": [
             {
-              "id": 18759149605,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6895361261/job/18759149605",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T19:09:10Z",
-              "completed_at": "2023-11-16T20:41:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18759149325,
+              "id": 18849956947,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6895361261/job/18759149325",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T19:09:10Z",
-              "completed_at": "2023-11-16T20:44:28Z",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930386823/job/18849956947",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-20T12:55:10Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18748343708,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18748343708",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T14:19:10Z",
-              "completed_at": "2023-11-16T14:19:11Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18748341385,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18748341385",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T14:17:32Z",
-              "completed_at": "2023-11-16T14:19:05Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 18744474278,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6890770170/job/18744474278",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T12:33:30Z",
-              "completed_at": "2023-11-16T14:17:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18744474005,
+              "id": 18849956612,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6890770170/job/18744474005",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-16T12:33:33Z",
-              "completed_at": "2023-11-16T14:19:51Z",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6930386823/job/18849956612",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-11-20T12:55:09Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 26136593781,
+              "id": 26184098175,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1001/",
-              "conclusion": "success",
-              "started_at": "2023-11-16T14:19:27Z",
-              "completed_at": "2023-11-16T14:19:27Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1003/",
+              "conclusion": "pending",
+              "started_at": "2023-11-20T12:55:02Z",
+              "completed_at": "2023-11-20T12:55:02Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
