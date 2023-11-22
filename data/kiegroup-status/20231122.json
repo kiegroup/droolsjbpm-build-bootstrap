@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-22T14:06:52.248Z",
+    "date": "2023-11-22T15:07:21.437Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6958413992"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/6959151653"
   },
   "projects": [
     {
@@ -6284,7 +6284,7 @@
             }
           ],
           "created_at": "2023-11-16T10:58:22Z",
-          "updated_at": "2023-11-22T13:47:26Z",
+          "updated_at": "2023-11-22T14:29:02Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6304,13 +6304,35 @@
           },
           "checks": [
             {
+              "id": 18934247929,
+              "name": "SonarCloud",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/18934247929",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-11-22T14:29:02Z",
+              "completed_at": "2023-11-22T14:29:03Z",
+              "slug": "github-advanced-security",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 18934246105,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/jbpm/runs/18934246105",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2023-11-22T14:27:30Z",
+              "completed_at": "2023-11-22T14:28:57Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
               "id": 18930494617,
               "name": "ubuntu-latest - Java 8 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6957492993/job/18930494617",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-22T12:47:34Z",
-              "completed_at": null,
+              "completed_at": "2023-11-22T14:19:57Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
@@ -6318,20 +6340,20 @@
               "id": 18930494364,
               "name": "ubuntu-latest - Java 11 - Maven",
               "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6957492993/job/18930494364",
-              "status": "in_progress",
-              "conclusion": null,
+              "status": "completed",
+              "conclusion": "success",
               "started_at": "2023-11-22T12:47:36Z",
-              "completed_at": null,
+              "completed_at": "2023-11-22T14:23:10Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 26229511714,
+              "id": 26231438524,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1009/",
-              "conclusion": "pending",
-              "started_at": "2023-11-22T12:47:14Z",
-              "completed_at": "2023-11-22T12:47:14Z",
+              "conclusion": "success",
+              "started_at": "2023-11-22T14:29:19Z",
+              "completed_at": "2023-11-22T14:29:19Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -18171,81 +18193,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
         {
-          "number": 14,
-          "title": "Merge pull request #10 from kiegroup/RHPAM-4843",
-          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/14",
-          "html_url": "https://github.com/kiegroup/kie-docs/pull/14",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-21T17:21:38Z",
-          "updated_at": "2023-11-21T17:21:38Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "bfd4152e3c1f66c2451be380992ceeedb0396c03",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "BXMSDOC-4843-7.67.x",
-            "sha": "bbe9cddb488b4fce8a5a4d0bba60849851af5313",
-            "label": "kiegroup:BXMSDOC-4843-7.67.x"
-          },
-          "user": {
-            "login": "emmurphy1",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
-            "html_url": "https://github.com/emmurphy1"
-          },
-          "checks": [
-            {
-              "id": 18901189465,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6947357424/job/18901189465",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-21T17:26:22Z",
-              "completed_at": "2023-11-21T17:26:22Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18901188938,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6947357424/job/18901188938",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-21T17:26:21Z",
-              "completed_at": "2023-11-21T17:26:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18901022931,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6947377599/job/18901022931",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-21T17:21:51Z",
-              "completed_at": "2023-11-21T17:25:39Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18901022617,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/6947377599/job/18901022617",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-11-21T17:21:45Z",
-              "completed_at": "2023-11-21T17:21:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            }
-          ]
-        },
-        {
           "number": 7,
           "title": "WIP: BXMSDOC-8688 7.67.x blue business-central-eap7-deployable, update tool bug",
           "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/7",
@@ -20289,6 +20236,9 @@
               "sha": "e1fc08b768af09e6fffa7d86583883a9ed612aff"
             },
             {
+              "sha": "f53fcdf210260389165ec8807ff1ff31ba0b8619"
+            },
+            {
               "sha": "db1995fc217d7c0d95c4bd9f5e84c24f620cf69a"
             },
             {
@@ -20302,9 +20252,6 @@
             },
             {
               "sha": "f0aad917f41482a8f3d19a7fac31709822e59d95"
-            },
-            {
-              "sha": "5a61e8884ed609504a1fae707001974e00046583"
             }
           ]
         }
