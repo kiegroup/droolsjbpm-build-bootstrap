@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-11-27T19:04:22.410Z",
+    "date": "2023-11-27T20:07:03.779Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7009598445"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7009992624"
   },
   "projects": [
     {
@@ -6495,6 +6495,52 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2369,
+          "title": "[JBPM-10097] Improving performance of getTimerByName",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2369",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2369",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "martinweiler",
+              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+              "html_url": "https://github.com/martinweiler"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2023-11-27T19:34:27Z",
+          "updated_at": "2023-11-27T19:34:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "f12331f00d6a0672e636a6db48354f5f014f1649",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10197",
+            "sha": "3460f1ed4cf3f2b2870271bc952691fbc44e2e0c",
+            "label": "fjtirado:JBPM-10197"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": []
+        },
+        {
           "number": 2365,
           "title": "[JBPM-10088] Removing timers when rollback",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2365",
@@ -7560,166 +7606,6 @@
               "conclusion": "success",
               "started_at": "2023-10-26T14:12:13Z",
               "completed_at": "2023-10-26T14:12:13Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2335,
-          "title": "[JBPM-10197] Handle TimerMappingInfo in error scenarios",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2335",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2335",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "elguardian",
-              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-              "html_url": "https://github.com/elguardian"
-            }
-          ],
-          "created_at": "2023-09-15T12:47:58Z",
-          "updated_at": "2023-10-31T14:17:09Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "175e6b913c2f0f05441876d6928928dc939df08c",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10197",
-            "sha": "88396a04229ccf84fe2e60284fa980737af33003",
-            "label": "fjtirado:JBPM-10197"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 18088497607,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6656293396/job/18088497607",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-26T15:23:31Z",
-              "completed_at": "2023-10-26T15:23:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18088497597,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6656293411/job/18088497597",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-26T15:23:31Z",
-              "completed_at": "2023-10-26T15:23:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18088497272,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6656293396/job/18088497272",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-26T15:23:31Z",
-              "completed_at": "2023-10-26T15:23:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18088497248,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6656293411/job/18088497248",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-10-26T15:23:31Z",
-              "completed_at": "2023-10-26T15:23:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18088430242,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6656271355/job/18088430242",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-10-26T15:21:53Z",
-              "completed_at": "2023-10-26T17:35:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18088429916,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6656271355/job/18088429916",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-26T15:21:54Z",
-              "completed_at": "2023-10-26T17:35:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18086868515,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18086868515",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-26T14:44:19Z",
-              "completed_at": "2023-10-26T14:44:20Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18086867135,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18086867135",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-10-26T14:42:49Z",
-              "completed_at": "2023-10-26T14:44:16Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 18082530714,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6654458881/job/18082530714",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-26T13:00:36Z",
-              "completed_at": "2023-10-26T15:09:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18082530405,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6654458881/job/18082530405",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-10-26T13:00:36Z",
-              "completed_at": "2023-10-26T15:16:10Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25785832617,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/965/",
-              "conclusion": "success",
-              "started_at": "2023-10-26T14:44:38Z",
-              "completed_at": "2023-10-26T14:44:38Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -18430,7 +18316,7 @@
       "pullRequests": [
         {
           "number": 7,
-          "title": "WIP: BXMSDOC-8688 7.67.x blue business-central-eap7-deployable, update tool bug",
+          "title": "BXMSDOC-8688 7.67.x blue business-central-eap7-deployable, update tool bug",
           "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/7",
           "html_url": "https://github.com/kiegroup/kie-docs/pull/7",
           "state": "open",
@@ -18438,7 +18324,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-11-03T16:51:25Z",
-          "updated_at": "2023-11-27T14:28:33Z",
+          "updated_at": "2023-11-27T20:05:17Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
