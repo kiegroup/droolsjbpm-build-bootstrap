@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-12-01T21:05:20.512Z",
+    "date": "2023-12-01T22:06:05.703Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7065177058"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7065680295"
   },
   "projects": [
     {
@@ -6893,6 +6893,82 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2371,
+          "title": "[7.67.x-blue] [JBPM-10088] Removing timers when rollback",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2371",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2371",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-12-01T22:04:57Z",
+          "updated_at": "2023-12-01T22:04:58Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "81247d66b7d038f9a0f46be425e256e62f16755a",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10088",
+            "sha": "70a0f59b21b547647378fc2ad9f388d1b4424a8e",
+            "label": "kiegroup:7.67.x-blue_JBPM-10088"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2370,
+          "title": "[7.67.x] [JBPM-10088] Removing timers when rollback",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2370",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2370",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-12-01T22:04:55Z",
+          "updated_at": "2023-12-01T22:04:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "6eafd50653e33b1db3682533d1c156b01bf99253",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10088",
+            "sha": "6218b86c31fde2adfd9adeca49d040025f0e2d03",
+            "label": "kiegroup:7.67.x_JBPM-10088"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2369,
           "title": "[JBPM-10097] Improving performance of getTimerByName",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2369",
@@ -6983,148 +7059,6 @@
               "conclusion": "success",
               "started_at": "2023-11-28T13:07:23Z",
               "completed_at": "2023-11-28T13:07:23Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2365,
-          "title": "[JBPM-10088] Removing timers when rollback",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2365",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2365",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-11-16T10:58:22Z",
-          "updated_at": "2023-11-28T11:37:23Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "f12331f00d6a0672e636a6db48354f5f014f1649",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10088",
-            "sha": "583e8fa7e735dfc8631da26786b0ee94be48d429",
-            "label": "fjtirado:JBPM-10088"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 19093027371,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7018186189/job/19093027371",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-28T11:37:28Z",
-              "completed_at": "2023-11-28T11:37:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19093027369,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7018186190/job/19093027369",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-28T11:37:28Z",
-              "completed_at": "2023-11-28T11:37:28Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19093027045,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7018186189/job/19093027045",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-28T11:37:27Z",
-              "completed_at": "2023-11-28T11:37:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19093027021,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7018186190/job/19093027021",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-11-28T11:37:27Z",
-              "completed_at": "2023-11-28T11:37:27Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18997466777,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18997466777",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-24T13:00:05Z",
-              "completed_at": "2023-11-24T13:00:06Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18997465208,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18997465208",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-24T12:58:27Z",
-              "completed_at": "2023-11-24T13:00:00Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 18994676730,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6980104900/job/18994676730",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-24T11:18:51Z",
-              "completed_at": "2023-11-24T12:50:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 18994676501,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/6980104900/job/18994676501",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-24T11:18:52Z",
-              "completed_at": "2023-11-24T12:54:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26262799798,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1022/",
-              "conclusion": "success",
-              "started_at": "2023-11-24T13:00:25Z",
-              "completed_at": "2023-11-24T13:00:25Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26286151703,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/jbpm-main.fdb/71/",
-              "conclusion": "success",
-              "started_at": "2023-11-27T15:37:50Z",
-              "completed_at": "2023-11-27T15:37:50Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
