@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-12-06T20:07:17.728Z",
+    "date": "2023-12-06T21:05:34.727Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7119671740"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7120237298"
   },
   "projects": [
     {
@@ -6938,6 +6938,85 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2373,
+          "title": "[private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2373",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2373",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-12-06T20:50:40Z",
+          "updated_at": "2023-12-06T20:50:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "80efbc1537074cfe7f8d00cda6d91385d13c6fc7",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4864",
+            "sha": "e027acf0cbdb7c1a85aaee4e913c5dcdbbae0b4d",
+            "label": "martinweiler:RHPAM-4864"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 19386628548,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7120096917/job/19386628548",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-06T20:50:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19386628307,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7120096917/job/19386628307",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-06T20:50:52Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26461460275,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1027/",
+              "conclusion": "pending",
+              "started_at": "2023-12-06T20:50:45Z",
+              "completed_at": "2023-12-06T20:50:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2372,
           "title": "[private-bamoe-issues-1326] [DBACLD-109939] BBVA duplicate timer issue",
