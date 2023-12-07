@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-12-07T10:07:33.128Z",
+    "date": "2023-12-07T11:05:39.007Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7126651419"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7127302429"
   },
   "projects": [
     {
@@ -1050,14 +1050,13 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2406,
-          "title": "[DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2406",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2406",
+          "number": 2408,
+          "title": "[7.67.x] [DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2408",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2408",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
@@ -1065,269 +1064,76 @@
               "login": "mariofusco",
               "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
               "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
             }
           ],
-          "created_at": "2023-12-06T07:52:10Z",
-          "updated_at": "2023-12-07T07:29:35Z",
+          "created_at": "2023-12-07T10:10:57Z",
+          "updated_at": "2023-12-07T10:10:58Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "0dfb163919f974b4504c3bbee8d15ef8ab672e53",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "e27553880b4664a7787b34475f593e165560f58d",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "DROOLS-7540-Coercion",
-            "sha": "1f264b3a6ed3059637104f38dc80f6b03f5adf7c",
-            "label": "tkobayas:DROOLS-7540-Coercion"
+            "ref": "7.67.x_DROOLS-7540-Coercion",
+            "sha": "ec6b4615f823d30c34cab6dde83f705d67d25c4b",
+            "label": "kiegroup:7.67.x_DROOLS-7540-Coercion"
           },
           "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 2407,
+          "title": "[7.67.x-blue] [DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2407",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2407",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 19375261075,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555054/job/19375261075",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T15:22:04Z",
-              "completed_at": "2023-12-06T15:23:03Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
             },
             {
-              "id": 19375260754,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555054/job/19375260754",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T15:22:05Z",
-              "completed_at": "2023-12-06T15:23:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375258614,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555069/job/19375258614",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-12-06T15:21:58Z",
-              "completed_at": "2023-12-06T15:21:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375258162,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555069/job/19375258162",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-12-06T15:21:58Z",
-              "completed_at": "2023-12-06T15:21:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375250642,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555071/job/19375250642",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:43Z",
-              "completed_at": "2023-12-06T15:21:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375250627,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555055/job/19375250627",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:43Z",
-              "completed_at": "2023-12-06T15:21:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375250173,
-              "name": "Full downstream build",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555053/job/19375250173",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:42Z",
-              "completed_at": "2023-12-06T15:21:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375249648,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555055/job/19375249648",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:41Z",
-              "completed_at": "2023-12-06T15:21:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375249259,
-              "name": "Full downstream build",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555070/job/19375249259",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:40Z",
-              "completed_at": "2023-12-06T15:21:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375249251,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555069/job/19375249251",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T15:21:49Z",
-              "completed_at": "2023-12-06T15:21:52Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375249242,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555054/job/19375249242",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T15:21:48Z",
-              "completed_at": "2023-12-06T15:21:56Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375249196,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7116555071/job/19375249196",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:40Z",
-              "completed_at": "2023-12-06T15:21:40Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360143430,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111670628/job/19360143430",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:52:38Z",
-              "completed_at": "2023-12-06T07:55:43Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360143254,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111670628/job/19360143254",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:52:32Z",
-              "completed_at": "2023-12-06T07:54:41Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360139651,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111670628/job/19360139651",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:52:21Z",
-              "completed_at": "2023-12-06T07:52:25Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360059191,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111641346/job/19360059191",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T07:48:38Z",
-              "completed_at": "2023-12-06T07:48:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360059028,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111641346/job/19360059028",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T07:48:38Z",
-              "completed_at": "2023-12-06T07:48:38Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360055970,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111638467/job/19360055970",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-12-06T07:48:35Z",
-              "completed_at": "2023-12-06T07:52:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360055813,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111638467/job/19360055813",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:48:34Z",
-              "completed_at": "2023-12-06T07:50:45Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360050943,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7111638467/job/19360050943",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:48:23Z",
-              "completed_at": "2023-12-06T07:48:26Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26445876893,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/857/",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:53:26Z",
-              "completed_at": "2023-12-06T07:53:26Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26452998146,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/730/",
-              "conclusion": "success",
-              "started_at": "2023-12-06T14:40:00Z",
-              "completed_at": "2023-12-06T14:40:00Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
             }
-          ]
+          ],
+          "created_at": "2023-12-07T10:10:51Z",
+          "updated_at": "2023-12-07T10:10:53Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9e683dc48be311e404fa946cfa4be2cef4d4b102",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_DROOLS-7540-Coercion",
+            "sha": "95de118c6540bc0a54232f2189ca9629a170ef55",
+            "label": "kiegroup:7.67.x-blue_DROOLS-7540-Coercion"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         },
         {
           "number": 2404,
@@ -2272,14 +2078,13 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
-          "number": 32,
-          "title": "[DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/32",
-          "html_url": "https://github.com/kiegroup/drools/pull/32",
+          "number": 34,
+          "title": "[7.67.x-blue] [DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/34",
+          "html_url": "https://github.com/kiegroup/drools/pull/34",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
@@ -2289,162 +2094,84 @@
               "html_url": "https://github.com/mariofusco"
             },
             {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            },
+            {
               "login": "pibizza",
               "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
               "html_url": "https://github.com/pibizza"
             }
           ],
-          "created_at": "2023-12-06T07:56:11Z",
-          "updated_at": "2023-12-06T15:21:43Z",
+          "created_at": "2023-12-07T10:12:29Z",
+          "updated_at": "2023-12-07T10:12:30Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "7.x",
-            "sha": "2c16726ba38deb37f85ca0c741b5b8c04c8e01c9",
-            "label": "kiegroup:7.x"
+            "ref": "7.67.x-blue",
+            "sha": "bf695dbbccc3e48b4aa195b8f086d5a6662b3fe3",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "DROOLS-7540-Coercion",
-            "sha": "b8d90bebd8e3c1de79fd4612eee75ba8f38cc850",
-            "label": "tkobayas:DROOLS-7540-Coercion"
+            "ref": "7.67.x-blue_DROOLS-7540-Coercion",
+            "sha": "e90524defc4a0dfb27cfd2577a7ee3b34a2c3ed6",
+            "label": "kiegroup:7.67.x-blue_DROOLS-7540-Coercion"
           },
           "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
+          "checks": []
+        },
+        {
+          "number": 33,
+          "title": "[7.67.x] [DROOLS-7540] Coercion from Interger literal to BigDecimal bind variable",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/33",
+          "html_url": "https://github.com/kiegroup/drools/pull/33",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 19375254630,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7116556484/job/19375254630",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:48Z",
-              "completed_at": "2023-12-06T15:21:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
             },
             {
-              "id": 19375254590,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7116556499/job/19375254590",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:48Z",
-              "completed_at": "2023-12-06T15:21:48Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
             },
             {
-              "id": 19375253826,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7116556484/job/19375253826",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:47Z",
-              "completed_at": "2023-12-06T15:21:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19375253775,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7116556499/job/19375253775",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2023-12-06T15:21:47Z",
-              "completed_at": "2023-12-06T15:21:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19361946458,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/drools/runs/19361946458",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T08:58:24Z",
-              "completed_at": "2023-12-06T08:58:24Z",
-              "slug": "github-advanced-security",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19361945379,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/drools/runs/19361945379",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T08:50:31Z",
-              "completed_at": "2023-12-06T08:58:20Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 19360227970,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7111701142/job/19360227970",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:56:30Z",
-              "completed_at": "2023-12-06T08:50:54Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360227804,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7111701142/job/19360227804",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:56:27Z",
-              "completed_at": "2023-12-06T08:59:36Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360227628,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7111701142/job/19360227628",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:56:24Z",
-              "completed_at": "2023-12-06T08:39:37Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19360227470,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7111701142/job/19360227470",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-12-06T07:56:25Z",
-              "completed_at": "2023-12-06T08:44:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26446778027,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/478/",
-              "conclusion": "success",
-              "started_at": "2023-12-06T09:01:07Z",
-              "completed_at": "2023-12-06T09:01:07Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26446946945,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/488/",
-              "conclusion": "failure",
-              "started_at": "2023-12-06T09:11:18Z",
-              "completed_at": "2023-12-06T09:11:18Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+              "login": "pibizza",
+              "avatar_url": "https://avatars.githubusercontent.com/u/7407073?v=4",
+              "html_url": "https://github.com/pibizza"
             }
-          ]
+          ],
+          "created_at": "2023-12-07T10:12:23Z",
+          "updated_at": "2023-12-07T10:12:24Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "abd21a9d192b38e8aa95c3178f24dc5615ea0609",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_DROOLS-7540-Coercion",
+            "sha": "497a3f023098f171569acf380532ce071915c02e",
+            "label": "kiegroup:7.67.x_DROOLS-7540-Coercion"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
         }
       ],
       "branchesComparison": {
