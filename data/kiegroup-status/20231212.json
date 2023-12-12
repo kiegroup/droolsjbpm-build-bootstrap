@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-12-12T15:07:05.820Z",
+    "date": "2023-12-12T16:08:05.518Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7183364756"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7184133354"
   },
   "projects": [
     {
@@ -3996,6 +3996,89 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1409,
+          "title": "AF-2949 : Remove unused Tomcat builds",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1409",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1409",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-12-12T15:50:33Z",
+          "updated_at": "2023-12-12T15:51:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c463ad56e6ee4386f7ba74f170fd560d441302eb",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "TOMCAT",
+            "sha": "820a0785a661e576002d1b4af7d428320c33e7e1",
+            "label": "Rikkola:TOMCAT"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 19563794546,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7183925458/job/19563794546",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-12T15:50:50Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19563794183,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7183925458/job/19563794183",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-12T15:50:51Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26550161223,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/appformer-main.pr/282/",
+              "conclusion": "pending",
+              "started_at": "2023-12-12T15:50:41Z",
+              "completed_at": "2023-12-12T15:50:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26550161298,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/appformer-main.compile/287/",
+              "conclusion": "pending",
+              "started_at": "2023-12-12T15:50:42Z",
+              "completed_at": "2023-12-12T15:50:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26550581907,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/appformer-main.fdb/201/",
+              "conclusion": "failure",
+              "started_at": "2023-12-12T16:05:50Z",
+              "completed_at": "2023-12-12T16:05:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1403,
           "title": "Bump word-wrap from 1.2.3 to 1.2.4 in /dashbuilder/dashbuilder-shared/dashbuilder-js",
