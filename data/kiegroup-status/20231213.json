@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-12-13T15:07:07.036Z",
+    "date": "2023-12-13T16:07:41.184Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7197136659"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7197917063"
   },
   "projects": [
     {
@@ -9875,6 +9875,132 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3004,
+          "title": "[JBPM-10214] Fix regression for immutable KIE container with auto scan",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3004",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3004",
+          "state": "open",
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2023-12-13T15:16:15Z",
+          "updated_at": "2023-12-13T15:27:35Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "a94c05f88cae433bcc543df8b132df31125912bc",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "JBPM-10214",
+            "sha": "50f5a50c33e0c5219c42c9a3b630c488237b6d2c",
+            "label": "gmunozfe:JBPM-10214"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 19604252360,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7197343616/job/19604252360",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-13T15:22:10Z",
+              "completed_at": "2023-12-13T15:22:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19604252325,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7197343617/job/19604252325",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-13T15:22:10Z",
+              "completed_at": "2023-12-13T15:22:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19604251850,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7197343616/job/19604251850",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-13T15:22:09Z",
+              "completed_at": "2023-12-13T15:22:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19604251824,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7197343617/job/19604251824",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2023-12-13T15:22:09Z",
+              "completed_at": "2023-12-13T15:22:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19604003588,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7197267623/job/19604003588",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-13T15:16:29Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19604003246,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7197267623/job/19604003246",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2023-12-13T15:16:28Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26573133880,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1181/",
+              "conclusion": "pending",
+              "started_at": "2023-12-13T15:16:22Z",
+              "completed_at": "2023-12-13T15:16:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26573298661,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-integration-main.fdb/134/",
+              "conclusion": "pending",
+              "started_at": "2023-12-13T15:22:41Z",
+              "completed_at": "2023-12-13T15:22:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2791,
           "title": "[JBPM-10092] added alias to kie-ctrl:create-container and kie-ctrl:de…",
