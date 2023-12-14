@@ -51,7 +51,7 @@ jobs:
       - name: Add Changes
         run: git add ./docs/project-dependencies-hierarchy.png ./script/repository-list.txt ./script/branched-7-repository-list.txt
       - name: Archive artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: generated-files
           path: |
