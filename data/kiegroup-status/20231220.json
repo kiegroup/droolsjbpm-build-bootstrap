@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2023-12-20T09:04:39.306Z",
+    "date": "2023-12-20T10:06:13.577Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7273178306"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7273844756"
   },
   "projects": [
     {
@@ -1050,6 +1050,90 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2412,
+          "title": "trying to clean tomcat depMgmt",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2412",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2412",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2023-12-20T09:12:28Z",
+          "updated_at": "2023-12-20T09:12:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "229865916211edc8448b397f514b150db99c8289",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "7.x-tomcat-changes",
+            "sha": "f5495154a81e61f6f1c6f8943b5cf1177b27457e",
+            "label": "mareknovotny:7.x-tomcat-changes"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 19816953797,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7273278861/job/19816953797",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-20T09:12:51Z",
+              "completed_at": "2023-12-20T09:16:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19816953517,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7273278861/job/19816953517",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-20T09:12:54Z",
+              "completed_at": "2023-12-20T09:16:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 19816946801,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7273278861/job/19816946801",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2023-12-20T09:12:40Z",
+              "completed_at": "2023-12-20T09:12:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26678772198,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/859/",
+              "conclusion": "success",
+              "started_at": "2023-12-20T09:15:35Z",
+              "completed_at": "2023-12-20T09:15:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26679409033,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/compile/job/droolsjbpm-build-bootstrap-main.compile/68/",
+              "conclusion": "failure",
+              "started_at": "2023-12-20T09:54:33Z",
+              "completed_at": "2023-12-20T09:54:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2411,
           "title": "[7.67.x-blue] Bump ch.qos.logback:logback-classic from 1.2.9 to 1.2.13",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2411",
@@ -1087,49 +1171,6 @@
               "conclusion": "success",
               "started_at": "2023-12-19T21:29:56Z",
               "completed_at": "2023-12-19T21:29:56Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2410,
-          "title": "[7.67.x] Bump ch.qos.logback:logback-classic from 1.2.9 to 1.2.13",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2410",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2410",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-12-19T14:37:01Z",
-          "updated_at": "2023-12-19T14:48:16Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "4c616e46eacef5c691400ab1850fdfadf123eb71",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x_dependabot/maven/ch.qos.logback-logback-classic-1.2.13",
-            "sha": "95a43da269aebc4af2b3ba270b8927214ef549e3",
-            "label": "kiegroup:7.67.x_dependabot/maven/ch.qos.logback-logback-classic-1.2.13"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 26672174157,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x.fdb/126/",
-              "conclusion": "success",
-              "started_at": "2023-12-19T21:57:28Z",
-              "completed_at": "2023-12-19T21:57:28Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -1347,7 +1388,7 @@
               "sha": "2d2169f4fc358e456df2f1574fa3e19a6ab6a347"
             },
             {
-              "sha": "b6ec0aa2377b22f383208fe30a9de178b29147f2"
+              "sha": "5eb47207a43c2602940924fbff3ce1c63b6ee0cf"
             },
             {
               "sha": "eb6b3831baacde9983999aaa715a221b526ad79a"
