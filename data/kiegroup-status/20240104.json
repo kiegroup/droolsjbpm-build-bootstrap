@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-04T11:04:32.246Z",
+    "date": "2024-01-04T12:11:31.504Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7408687883"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7409318287"
   },
   "projects": [
     {
@@ -4076,6 +4076,122 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1411,
+          "title": "AF-2949 : Remove unused Tomcat builds (#1409)",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1411",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1411",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-01-04T11:17:26Z",
+          "updated_at": "2024-01-04T12:07:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "42522e0ebf5b1d64380fb116772327c31f49685e",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "TOMCAT-7.67.x",
+            "sha": "3dce0373a290a743ea626b546e1fae03ed96aec9",
+            "label": "Rikkola:TOMCAT-7.67.x"
+          },
+          "user": {
+            "login": "Rikkola",
+            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+            "html_url": "https://github.com/Rikkola"
+          },
+          "checks": [
+            {
+              "id": 20159230864,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/appformer/runs/20159230864",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-04T12:04:28Z",
+              "completed_at": "2024-01-04T12:07:40Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 20157833441,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7408826744/job/20157833441",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-04T11:17:40Z",
+              "completed_at": "2024-01-04T11:56:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20157833158,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7408826744/job/20157833158",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-04T11:17:41Z",
+              "completed_at": "2024-01-04T12:01:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20157802913,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7408816123/job/20157802913",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-01-04T11:16:27Z",
+              "completed_at": "2024-01-04T11:16:27Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20157802456,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7408816123/job/20157802456",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-01-04T11:16:26Z",
+              "completed_at": "2024-01-04T11:16:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26817700923,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/appformer-7.67.x.compile/45/",
+              "conclusion": "pending",
+              "started_at": "2024-01-04T11:17:32Z",
+              "completed_at": "2024-01-04T11:17:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26817711778,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/appformer-7.67.x.fdb/25/",
+              "conclusion": "pending",
+              "started_at": "2024-01-04T11:18:20Z",
+              "completed_at": "2024-01-04T11:18:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 26818452632,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/appformer-7.67.x.pr/44/",
+              "conclusion": "success",
+              "started_at": "2024-01-04T12:09:23Z",
+              "completed_at": "2024-01-04T12:09:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1403,
           "title": "Bump word-wrap from 1.2.3 to 1.2.4 in /dashbuilder/dashbuilder-shared/dashbuilder-js",
