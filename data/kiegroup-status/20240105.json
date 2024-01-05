@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-05T21:05:25.279Z",
+    "date": "2024-01-05T22:06:06.232Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7426704093"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7427170341"
   },
   "projects": [
     {
@@ -6489,6 +6489,85 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2374,
+          "title": "[RHPAM-4872] Fix RepeatMode=FIXED when deleted records > RecordsPerTransaction",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2374",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2374",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-01-05T21:06:54Z",
+          "updated_at": "2024-01-05T21:06:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "80efbc1537074cfe7f8d00cda6d91385d13c6fc7",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4872",
+            "sha": "a264a11002811799e82346117a4d275f9186b982",
+            "label": "martinweiler:RHPAM-4872"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 20211028689,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7426723066/job/20211028689",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-05T21:07:06Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20211028486,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7426723066/job/20211028486",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-05T21:07:07Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 26847595177,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1029/",
+              "conclusion": "pending",
+              "started_at": "2024-01-05T21:06:59Z",
+              "completed_at": "2024-01-05T21:06:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2373,
           "title": "[private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
