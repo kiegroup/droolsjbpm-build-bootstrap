@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-08T11:05:25.874Z",
+    "date": "2024-01-08T12:12:43.700Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7446551718"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7447223928"
   },
   "projects": [
     {
@@ -6581,7 +6581,10 @@
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2374",
           "html_url": "https://github.com/kiegroup/jbpm/pull/2374",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
@@ -6593,15 +6596,10 @@
               "login": "elguardian",
               "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
               "html_url": "https://github.com/elguardian"
-            },
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
             }
           ],
           "created_at": "2024-01-05T21:06:54Z",
-          "updated_at": "2024-01-05T22:54:10Z",
+          "updated_at": "2024-01-08T11:09:09Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6620,6 +6618,50 @@
             "html_url": "https://github.com/martinweiler"
           },
           "checks": [
+            {
+              "id": 20257187949,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7446599405/job/20257187949",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-01-08T11:09:13Z",
+              "completed_at": "2024-01-08T11:09:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20257187924,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7446599399/job/20257187924",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-01-08T11:09:13Z",
+              "completed_at": "2024-01-08T11:09:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20257187665,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7446599405/job/20257187665",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-01-08T11:09:12Z",
+              "completed_at": "2024-01-08T11:09:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20257187643,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7446599399/job/20257187643",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-01-08T11:09:12Z",
+              "completed_at": "2024-01-08T11:09:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 20213355300,
               "name": "SonarCloud Code Analysis",
@@ -6724,7 +6766,7 @@
             }
           ],
           "created_at": "2023-12-01T22:04:57Z",
-          "updated_at": "2024-01-08T10:59:45Z",
+          "updated_at": "2024-01-08T12:11:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6744,22 +6786,22 @@
           },
           "checks": [
             {
-              "id": 26862413210,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/91/",
-              "conclusion": "pending",
-              "started_at": "2024-01-08T10:50:40Z",
-              "completed_at": "2024-01-08T10:50:40Z",
+              "id": 26863006064,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/13/",
+              "conclusion": "failure",
+              "started_at": "2024-01-08T11:26:46Z",
+              "completed_at": "2024-01-08T11:26:46Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 26862564629,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/13/",
-              "conclusion": "pending",
-              "started_at": "2024-01-08T10:59:46Z",
-              "completed_at": "2024-01-08T10:59:46Z",
+              "id": 26863418289,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/91/",
+              "conclusion": "failure",
+              "started_at": "2024-01-08T11:54:23Z",
+              "completed_at": "2024-01-08T11:54:23Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6783,7 +6825,7 @@
             }
           ],
           "created_at": "2023-12-01T22:04:55Z",
-          "updated_at": "2024-01-08T10:59:27Z",
+          "updated_at": "2024-01-08T12:10:21Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6803,22 +6845,22 @@
           },
           "checks": [
             {
-              "id": 26862419788,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/150/",
-              "conclusion": "pending",
-              "started_at": "2024-01-08T10:51:03Z",
-              "completed_at": "2024-01-08T10:51:03Z",
+              "id": 26863056304,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/12/",
+              "conclusion": "failure",
+              "started_at": "2024-01-08T11:30:09Z",
+              "completed_at": "2024-01-08T11:30:09Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 26862559749,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/12/",
-              "conclusion": "pending",
-              "started_at": "2024-01-08T10:59:29Z",
-              "completed_at": "2024-01-08T10:59:29Z",
+              "id": 26863475447,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/150/",
+              "conclusion": "failure",
+              "started_at": "2024-01-08T11:58:26Z",
+              "completed_at": "2024-01-08T11:58:26Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
