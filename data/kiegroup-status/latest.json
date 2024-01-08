@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-08T10:07:54.265Z",
+    "date": "2024-01-08T11:05:25.874Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7445925332"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7446551718"
   },
   "projects": [
     {
@@ -6490,6 +6490,92 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2376,
+          "title": "[7.67.x-blue] [private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2376",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2376",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "martinweiler",
+              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+              "html_url": "https://github.com/martinweiler"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-01-08T10:48:49Z",
+          "updated_at": "2024-01-08T10:48:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "b0aada30d4579c6bfad533f9b46b8f5765dc7d3c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_RHPAM-4864",
+            "sha": "a14a48b3708be6293917b02158f80d09d3f19c02",
+            "label": "kiegroup:7.67.x-blue_RHPAM-4864"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 2375,
+          "title": "[7.67.x] [private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2375",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2375",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "martinweiler",
+              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+              "html_url": "https://github.com/martinweiler"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-01-08T10:48:42Z",
+          "updated_at": "2024-01-08T10:48:43Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "8e917fb753585e5ce381c915f57cc68508a8b8ec",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_RHPAM-4864",
+            "sha": "f04f016eb6de6a68683d269e61365a879d3f9252",
+            "label": "kiegroup:7.67.x_RHPAM-4864"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
           "number": 2374,
           "title": "[RHPAM-4872] Fix RepeatMode=FIXED when deleted records > RecordsPerTransaction",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2374",
@@ -6580,83 +6666,6 @@
           ]
         },
         {
-          "number": 2373,
-          "title": "[private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2373",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2373",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-12-06T20:50:40Z",
-          "updated_at": "2024-01-03T21:34:46Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "80efbc1537074cfe7f8d00cda6d91385d13c6fc7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "RHPAM-4864",
-            "sha": "23d2adf9226e1616749297d1894cab5b17190c7f",
-            "label": "martinweiler:RHPAM-4864"
-          },
-          "user": {
-            "login": "martinweiler",
-            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
-            "html_url": "https://github.com/martinweiler"
-          },
-          "checks": [
-            {
-              "id": 20140933470,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/20140933470",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-03T21:33:11Z",
-              "completed_at": "2024-01-03T21:34:42Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 20138114034,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7401733171/job/20138114034",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-01-03T19:49:15Z",
-              "completed_at": "2024-01-03T21:33:42Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20138113818,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7401733171/job/20138113818",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-03T19:49:17Z",
-              "completed_at": "2024-01-03T21:33:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26809361111,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1028/",
-              "conclusion": "success",
-              "started_at": "2024-01-03T21:35:06Z",
-              "completed_at": "2024-01-03T21:35:06Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2372,
           "title": "[private-bamoe-issues-1326] [DBACLD-109939] BBVA duplicate timer issue",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2372",
@@ -6715,7 +6724,7 @@
             }
           ],
           "created_at": "2023-12-01T22:04:57Z",
-          "updated_at": "2023-12-19T15:32:23Z",
+          "updated_at": "2024-01-08T10:59:45Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6735,22 +6744,22 @@
           },
           "checks": [
             {
-              "id": 26665389413,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/12/",
-              "conclusion": "failure",
-              "started_at": "2023-12-19T16:03:42Z",
-              "completed_at": "2023-12-19T16:03:42Z",
+              "id": 26862413210,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/91/",
+              "conclusion": "pending",
+              "started_at": "2024-01-08T10:50:40Z",
+              "completed_at": "2024-01-08T10:50:40Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 26666163115,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/89/",
-              "conclusion": "failure",
-              "started_at": "2023-12-19T16:36:44Z",
-              "completed_at": "2023-12-19T16:36:44Z",
+              "id": 26862564629,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/13/",
+              "conclusion": "pending",
+              "started_at": "2024-01-08T10:59:46Z",
+              "completed_at": "2024-01-08T10:59:46Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6774,7 +6783,7 @@
             }
           ],
           "created_at": "2023-12-01T22:04:55Z",
-          "updated_at": "2023-12-19T15:32:17Z",
+          "updated_at": "2024-01-08T10:59:27Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6794,22 +6803,22 @@
           },
           "checks": [
             {
-              "id": 26665403283,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/11/",
-              "conclusion": "failure",
-              "started_at": "2023-12-19T16:04:18Z",
-              "completed_at": "2023-12-19T16:04:18Z",
+              "id": 26862419788,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/150/",
+              "conclusion": "pending",
+              "started_at": "2024-01-08T10:51:03Z",
+              "completed_at": "2024-01-08T10:51:03Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 26666210359,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/148/",
-              "conclusion": "failure",
-              "started_at": "2023-12-19T16:38:50Z",
-              "completed_at": "2023-12-19T16:38:50Z",
+              "id": 26862559749,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/12/",
+              "conclusion": "pending",
+              "started_at": "2024-01-08T10:59:29Z",
+              "completed_at": "2024-01-08T10:59:29Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9994,12 +10003,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 26860384027,
+              "id": 26862083368,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1187/",
-              "conclusion": "pending",
-              "started_at": "2024-01-08T08:46:07Z",
-              "completed_at": "2024-01-08T08:46:07Z",
+              "conclusion": "failure",
+              "started_at": "2024-01-08T10:31:32Z",
+              "completed_at": "2024-01-08T10:31:32Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
