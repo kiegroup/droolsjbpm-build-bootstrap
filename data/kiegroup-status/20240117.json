@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-17T16:08:27.233Z",
+    "date": "2024-01-17T17:06:30.245Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7558513333"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7559236251"
   },
   "projects": [
     {
@@ -3794,12 +3794,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 27019001167,
+              "id": 27027560186,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/lienzo-tests-main.fdb/10/",
-              "conclusion": "pending",
-              "started_at": "2024-01-17T09:43:25Z",
-              "completed_at": "2024-01-17T09:43:25Z",
+              "conclusion": "failure",
+              "started_at": "2024-01-17T16:29:04Z",
+              "completed_at": "2024-01-17T16:29:04Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9680,6 +9680,124 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3013,
+          "title": "[7.67.x-blue] [JBPM-10214] Fix regression for immutable KIE container with auto scan",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3013",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3013",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-01-17T16:41:51Z",
+          "updated_at": "2024-01-17T17:05:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "7328405b06a5565ff8389a346576e3e28564c3de",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10214",
+            "sha": "6cace9ec0e14e4d389a0683eaa4563f0b1eab401",
+            "label": "kiegroup:7.67.x-blue_JBPM-10214"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 27028181688,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/101/",
+              "conclusion": "pending",
+              "started_at": "2024-01-17T16:52:47Z",
+              "completed_at": "2024-01-17T16:52:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27028184874,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-integration-7.67.x-blue.fdb/6/",
+              "conclusion": "pending",
+              "started_at": "2024-01-17T16:52:54Z",
+              "completed_at": "2024-01-17T16:52:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 3012,
+          "title": "[7.67.x] [JBPM-10214] Fix regression for immutable KIE container with auto scan",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3012",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3012",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-01-17T16:41:49Z",
+          "updated_at": "2024-01-17T17:05:32Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "2071d5861564206b43910e84467683f854df8d6d",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10214",
+            "sha": "23e4ef4b640aaf01c76d78c141031562ab437cd3",
+            "label": "kiegroup:7.67.x_JBPM-10214"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 27028169379,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/136/",
+              "conclusion": "pending",
+              "started_at": "2024-01-17T16:52:18Z",
+              "completed_at": "2024-01-17T16:52:18Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27028173692,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-integration-7.67.x.fdb/10/",
+              "conclusion": "pending",
+              "started_at": "2024-01-17T16:52:28Z",
+              "completed_at": "2024-01-17T16:52:28Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3011,
           "title": "[RHPAM-4876] exclusion on kie server affect custom endpoints",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3011",
@@ -9737,89 +9855,6 @@
               "conclusion": "failure",
               "started_at": "2024-01-17T09:57:34Z",
               "completed_at": "2024-01-17T09:57:34Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 3010,
-          "title": "[JBPM-10217] Authentication fails on Oracle WLS in TaskAssigningIntegrationTest",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3010",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3010",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2024-01-11T23:33:08Z",
-          "updated_at": "2024-01-12T11:14:20Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "1f901ca510ec8764473e89cd29eb99ddf67a1fe7",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10217",
-            "sha": "d1700573afa71e0b31f843379e9f58989efe3a7a",
-            "label": "gmunozfe:JBPM-10217"
-          },
-          "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
-          },
-          "checks": [
-            {
-              "id": 20422030318,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/20422030318",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-12T11:11:32Z",
-              "completed_at": "2024-01-12T11:14:17Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 20417530663,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7499895352/job/20417530663",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-12T08:49:55Z",
-              "completed_at": "2024-01-12T11:11:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20417530446,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7499895352/job/20417530446",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-01-12T08:49:53Z",
-              "completed_at": "2024-01-12T11:12:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26953370040,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1191/",
-              "conclusion": "success",
-              "started_at": "2024-01-12T11:16:12Z",
-              "completed_at": "2024-01-12T11:16:12Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9910,93 +9945,6 @@
               "conclusion": "success",
               "started_at": "2023-12-20T21:51:46Z",
               "completed_at": "2023-12-20T21:51:46Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 3004,
-          "title": "[JBPM-10214] Fix regression for immutable KIE container with auto scan",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3004",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3004",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2023-12-13T15:16:15Z",
-          "updated_at": "2024-01-10T09:22:01Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "a94c05f88cae433bcc543df8b132df31125912bc",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10214",
-            "sha": "f00036a078bf60b74f95c2ce28d1ea9af39e2a07",
-            "label": "gmunozfe:JBPM-10214"
-          },
-          "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
-          },
-          "checks": [
-            {
-              "id": 20302669602,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/20302669602",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-09T13:32:25Z",
-              "completed_at": "2024-01-09T13:35:22Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 19675074064,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7221012698/job/19675074064",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2023-12-15T10:39:56Z",
-              "completed_at": "2023-12-15T13:12:55Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 19675073877,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7221012698/job/19675073877",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-12-15T10:39:57Z",
-              "completed_at": "2023-12-15T13:12:13Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26887210982,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1188/",
-              "conclusion": "success",
-              "started_at": "2024-01-09T13:37:18Z",
-              "completed_at": "2024-01-09T13:37:18Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26895954082,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-integration-main.fdb/136/",
-              "conclusion": "failure",
-              "started_at": "2024-01-09T19:56:49Z",
-              "completed_at": "2024-01-09T19:56:49Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
