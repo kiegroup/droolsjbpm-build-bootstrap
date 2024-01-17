@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-17T09:07:14.195Z",
+    "date": "2024-01-17T10:07:34.859Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7553378686"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7554086681"
   },
   "projects": [
     {
@@ -744,42 +744,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
-        },
-        {
-          "number": 2418,
-          "title": "[main][Build Chain] Update build chain and repository-list files.",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2418",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2418",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
-          "created_at": "2024-01-17T08:42:13Z",
-          "updated_at": "2024-01-17T08:42:14Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "83b864cd2915fda78292345a771e16b109cabc7d",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "generate_files_20240117T084209",
-            "sha": "bd9ee31a44fa26e1c600a877b811a5fb68bad584",
-            "label": "kiegroup:generate_files_20240117T084209"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": []
         },
         {
           "number": 2416,
@@ -3778,7 +3742,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2022-12-14T10:37:12Z",
-          "updated_at": "2024-01-17T08:58:09Z",
+          "updated_at": "2024-01-17T09:43:22Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3826,6 +3790,16 @@
               "conclusion": "success",
               "started_at": "2024-01-17T08:59:35Z",
               "completed_at": "2024-01-17T08:59:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27019001167,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/lienzo-tests-main.fdb/10/",
+              "conclusion": "pending",
+              "started_at": "2024-01-17T09:43:25Z",
+              "completed_at": "2024-01-17T09:43:25Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9715,6 +9689,69 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3011,
+          "title": "[RHPAM-4876] exclusion on kie server affect custom endpoints",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3011",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3011",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2024-01-17T09:17:05Z",
+          "updated_at": "2024-01-17T09:28:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "1f901ca510ec8764473e89cd29eb99ddf67a1fe7",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4876-revert-exclusion-7.x",
+            "sha": "c0d3b0a91038c6d026923131ae13c9abe2c33c4a",
+            "label": "tkobayas:RHPAM-4876-revert-exclusion-7.x"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 20564862309,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7553647713/job/20564862309",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2024-01-17T09:29:10Z",
+              "completed_at": "2024-01-17T09:57:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20564862054,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7553647713/job/20564862054",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-01-17T09:29:10Z",
+              "completed_at": "2024-01-17T09:56:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 27019261133,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1193/",
+              "conclusion": "failure",
+              "started_at": "2024-01-17T09:57:34Z",
+              "completed_at": "2024-01-17T09:57:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3010,
           "title": "[JBPM-10217] Authentication fails on Oracle WLS in TaskAssigningIntegrationTest",
@@ -16413,15 +16450,9 @@
             "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2024-01-16T14:37:40Z",
-          "updated_at": "2024-01-17T07:36:11Z",
+          "updated_at": "2024-01-17T09:54:12Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -16462,15 +16493,9 @@
             "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "mareknovotny",
-              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
-              "html_url": "https://github.com/mareknovotny"
-            }
-          ],
+          "requested_reviewers": [],
           "created_at": "2024-01-16T14:37:38Z",
-          "updated_at": "2024-01-17T07:36:07Z",
+          "updated_at": "2024-01-17T09:54:03Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
