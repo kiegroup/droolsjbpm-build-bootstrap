@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-18T09:07:01.190Z",
+    "date": "2024-01-18T10:07:22.482Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7567666243"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7568359617"
   },
   "projects": [
     {
@@ -673,9 +673,20 @@
             "backport-7.67.x-blue"
           ],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "rgdoliveira",
+              "avatar_url": "https://avatars.githubusercontent.com/u/25102037?v=4",
+              "html_url": "https://github.com/rgdoliveira"
+            },
+            {
+              "login": "skulisek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/60703001?v=4",
+              "html_url": "https://github.com/skulisek"
+            }
+          ],
           "created_at": "2024-01-18T08:25:51Z",
-          "updated_at": "2024-01-18T08:26:12Z",
+          "updated_at": "2024-01-18T09:47:22Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6718,216 +6729,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2382,
-          "title": "[7.67.x] [incubator-kie-issues-645] potential fix for orphans",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2382",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2382",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "elguardian",
-              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-              "html_url": "https://github.com/elguardian"
-            }
-          ],
-          "created_at": "2024-01-11T08:19:34Z",
-          "updated_at": "2024-01-17T13:27:50Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x",
-            "sha": "6d4f8bcff71863b84509f890db63b9989d9c2af3",
-            "label": "kiegroup:7.67.x"
-          },
-          "head": {
-            "ref": "7.67.x_incubator-kie-issues-597-listener",
-            "sha": "02c31769adbdffded3e1bdad425a8e5b5695eb02",
-            "label": "kiegroup:7.67.x_incubator-kie-issues-597-listener"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 20380886200,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/20380886200",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-11T10:56:48Z",
-              "completed_at": "2024-01-11T11:00:01Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 26931105238,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/158/",
-              "conclusion": "success",
-              "started_at": "2024-01-11T11:00:35Z",
-              "completed_at": "2024-01-11T11:00:35Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26935455823,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/14/",
-              "conclusion": "failure",
-              "started_at": "2024-01-11T14:48:44Z",
-              "completed_at": "2024-01-11T14:48:44Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2381,
-          "title": "[7.67.x-blue] [incubator-kie-issues-645] potential fix for orphans",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2381",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2381",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "elguardian",
-              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-              "html_url": "https://github.com/elguardian"
-            }
-          ],
-          "created_at": "2024-01-11T08:19:32Z",
-          "updated_at": "2024-01-17T13:23:25Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "77659c0e6ffb1de730f22ac0c0eec8272faa26f1",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_incubator-kie-issues-597-listener",
-            "sha": "a96f4c6c5e2716238b2d6e47eb14d2ecb988a1ad",
-            "label": "kiegroup:7.67.x-blue_incubator-kie-issues-597-listener"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 20380999586,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/20380999586",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-11T10:59:36Z",
-              "completed_at": "2024-01-11T11:02:51Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 26931156963,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/100/",
-              "conclusion": "success",
-              "started_at": "2024-01-11T11:03:14Z",
-              "completed_at": "2024-01-11T11:03:14Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26935265482,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/15/",
-              "conclusion": "success",
-              "started_at": "2024-01-11T14:40:50Z",
-              "completed_at": "2024-01-11T14:40:50Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2376,
-          "title": "[7.67.x-blue] [private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2376",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2376",
-          "state": "open",
-          "labels": [
-            "cherry-pick :cherries:"
-          ],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "fjtirado",
-              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-              "html_url": "https://github.com/fjtirado"
-            }
-          ],
-          "created_at": "2024-01-08T10:48:49Z",
-          "updated_at": "2024-01-17T13:46:45Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "b0aada30d4579c6bfad533f9b46b8f5765dc7d3c",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "7.67.x-blue_RHPAM-4864",
-            "sha": "a14a48b3708be6293917b02158f80d09d3f19c02",
-            "label": "kiegroup:7.67.x-blue_RHPAM-4864"
-          },
-          "user": {
-            "login": "github-actions[bot]",
-            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-            "html_url": "https://github.com/apps/github-actions"
-          },
-          "checks": [
-            {
-              "id": 20380990226,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/20380990226",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-01-11T10:59:30Z",
-              "completed_at": "2024-01-11T11:02:37Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 26931152939,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/101/",
-              "conclusion": "success",
-              "started_at": "2024-01-11T11:02:59Z",
-              "completed_at": "2024-01-11T11:02:59Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 26935147343,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/16/",
-              "conclusion": "success",
-              "started_at": "2024-01-11T14:35:45Z",
-              "completed_at": "2024-01-11T14:35:45Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2375,
           "title": "[7.67.x] [private-bamoe-issues#1326] Avoid duplicate timer execution with long running timers and async nodes",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2375",
@@ -6939,13 +6740,18 @@
           "draft": false,
           "requested_reviewers": [
             {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
           "created_at": "2024-01-08T10:48:42Z",
-          "updated_at": "2024-01-17T15:26:08Z",
+          "updated_at": "2024-01-18T09:41:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7216,13 +7022,18 @@
               "html_url": "https://github.com/krisv"
             },
             {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
               "login": "elguardian",
               "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
               "html_url": "https://github.com/elguardian"
             }
           ],
           "created_at": "2023-11-02T14:18:58Z",
-          "updated_at": "2024-01-17T13:56:37Z",
+          "updated_at": "2024-01-18T09:32:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7232,7 +7043,7 @@
           },
           "head": {
             "ref": "7.67.x_incubator-kie-issues-646",
-            "sha": "38b2399b48e3fffab16f42d578f5944fcfda247a",
+            "sha": "764fd21750e6c2bf52f0b41649a9ffa51ae239ac",
             "label": "kiegroup:7.67.x_incubator-kie-issues-646"
           },
           "user": {
@@ -7242,44 +7053,44 @@
           },
           "checks": [
             {
-              "id": 18309896233,
-              "name": "SonarCloud",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18309896233",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2023-11-02T17:00:46Z",
-              "completed_at": "2023-11-02T17:00:47Z",
-              "slug": "github-advanced-security",
+              "id": 20608164832,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7567962394/job/20608164832",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T09:31:57Z",
+              "completed_at": null,
+              "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 18309893829,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/18309893829",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2023-11-02T16:57:37Z",
-              "completed_at": "2023-11-02T17:00:41Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+              "id": 20608164580,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/7567962394/job/20608164580",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T09:31:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 25905726116,
+              "id": 27042595783,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/139/",
-              "conclusion": "success",
-              "started_at": "2023-11-02T17:01:04Z",
-              "completed_at": "2023-11-02T17:01:04Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/jbpm-7.67.x.pr/161/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T09:31:47Z",
+              "completed_at": "2024-01-18T09:31:47Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 26233696875,
+              "id": 27042618074,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/8/",
-              "conclusion": "success",
-              "started_at": "2023-11-22T16:10:01Z",
-              "completed_at": "2023-11-22T16:10:01Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/17/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T09:32:59Z",
+              "completed_at": "2024-01-18T09:32:59Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8911,7 +8722,7 @@
               "sha": "2bf4f2b2c6e5b88773217aeaf13d61ae07e615cc"
             },
             {
-              "sha": "2c013940f38e0356065c56f26a76fd54f6095e96"
+              "sha": "2c90e10e2db477a5c7f752cf1d423965903ff9e2"
             },
             {
               "sha": "e0bc28c823d88de6b7886355486ae6799192d22b"
@@ -9707,7 +9518,7 @@
               "sha": "2bf4f2b2c6e5b88773217aeaf13d61ae07e615cc"
             },
             {
-              "sha": "2c013940f38e0356065c56f26a76fd54f6095e96"
+              "sha": "d8ccb574ded8c2950984fe628068237e77095292"
             },
             {
               "sha": "e0bc28c823d88de6b7886355486ae6799192d22b"
