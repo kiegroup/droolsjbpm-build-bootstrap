@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-18T03:07:36.331Z",
+    "date": "2024-01-18T04:08:24.591Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7564786821"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7565192901"
   },
   "projects": [
     {
@@ -1905,7 +1905,136 @@
       "default_branch": "main-apache",
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 8,
+          "title": "[7.67.x] [RHDM-2016] [KIE-766] EXISTS and NOT don't work correctly with multiple constrain…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/8",
+          "html_url": "https://github.com/kiegroup/drools/pull/8",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            }
+          ],
+          "created_at": "2024-01-18T03:23:52Z",
+          "updated_at": "2024-01-18T03:30:55Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "31d786569e03680da4f9aaae573551f152431f94",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_RHDM-2016-7.x",
+            "sha": "10d94a050e6e62b748c9710621c1513d7d991517",
+            "label": "kiegroup:7.67.x_RHDM-2016-7.x"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 27038894533,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/drools-7.67.x.pr/61/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T03:31:00Z",
+              "completed_at": "2024-01-18T03:31:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27038894553,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/compile/job/drools-7.67.x.compile/55/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T03:31:01Z",
+              "completed_at": "2024-01-18T03:31:01Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "title": "[7.67.x-blue] [RHDM-2016] [KIE-766] EXISTS and NOT don't work correctly with multiple constrain…",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/7",
+          "html_url": "https://github.com/kiegroup/drools/pull/7",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            }
+          ],
+          "created_at": "2024-01-18T03:23:50Z",
+          "updated_at": "2024-01-18T03:31:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "4d3bcc05a30c834f395631a2f9c561bf815e7e3e",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_RHDM-2016-7.x",
+            "sha": "5329d4b772c02133042f902c2b9b68ebec9859d4",
+            "label": "kiegroup:7.67.x-blue_RHDM-2016-7.x"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 27038896191,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/48/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T03:31:13Z",
+              "completed_at": "2024-01-18T03:31:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27038896194,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/43/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T03:31:13Z",
+              "completed_at": "2024-01-18T03:31:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
@@ -9829,17 +9958,17 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2024-01-17T09:17:05Z",
-          "updated_at": "2024-01-17T09:28:59Z",
+          "updated_at": "2024-01-18T03:08:13Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
             "ref": "main",
-            "sha": "1f901ca510ec8764473e89cd29eb99ddf67a1fe7",
+            "sha": "f446eb302847bdf8a89536aa0b09a7e3656535e6",
             "label": "kiegroup:main"
           },
           "head": {
             "ref": "RHPAM-4876-revert-exclusion-7.x",
-            "sha": "c0d3b0a91038c6d026923131ae13c9abe2c33c4a",
+            "sha": "4e62f2d3d7e9cd1cbaf73a8234d301e02811b573",
             "label": "tkobayas:RHPAM-4876-revert-exclusion-7.x"
           },
           "user": {
@@ -9849,34 +9978,34 @@
           },
           "checks": [
             {
-              "id": 20564862309,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7553647713/job/20564862309",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-01-17T09:29:10Z",
-              "completed_at": "2024-01-17T09:57:04Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 20564862054,
+              "id": 20599503218,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7553647713/job/20564862054",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-01-17T09:29:10Z",
-              "completed_at": "2024-01-17T09:56:45Z",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7564795998/job/20599503218",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T03:08:25Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 27019261133,
+              "id": 20599503136,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7564795998/job/20599503136",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-18T03:08:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 27038715639,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1193/",
-              "conclusion": "failure",
-              "started_at": "2024-01-17T09:57:34Z",
-              "completed_at": "2024-01-17T09:57:34Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1194/",
+              "conclusion": "pending",
+              "started_at": "2024-01-18T03:08:17Z",
+              "completed_at": "2024-01-18T03:08:17Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
