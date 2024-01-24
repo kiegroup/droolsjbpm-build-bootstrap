@@ -431,7 +431,8 @@
     <version.bootable>6.1.2.Final</version.bootable>
     <version.net.byte-buddy>1.10.3</version.net.byte-buddy>
     <version.docker-client>3.5.12</version.docker-client>
-    <version.kubernetes-client>6.10.0</version.kubernetes-client>
+    <version.kubernetes-client>4.7.2</version.kubernetes-client>
+    <version.com.squareup.okio>1.17.6</version.com.squareup.okio>
     <version.zjsonpatch>0.3.0</version.zjsonpatch>
     <version.arquillian-cube>1.0.0.Alpha15</version.arquillian-cube>
     <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
@@ -6164,6 +6165,11 @@
           </exclusion>
         </exclusions>
       </dependency>
+      <dependency>
+		<groupId>com.squareup.okio</groupId>
+		<artifactId>okio</artifactId>
+		<version>${version.com.squareup.okio}</version>
+	</dependency>
       <dependency>
         <groupId>io.fabric8</groupId>
         <artifactId>kubernetes-client-bom</artifactId>
