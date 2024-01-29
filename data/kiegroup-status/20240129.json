@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-01-29T10:07:06.764Z",
+    "date": "2024-01-29T11:06:00.354Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7694331938"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7695061003"
   },
   "projects": [
     {
@@ -9627,6 +9627,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3021,
+          "title": "[DROOLS-7605] WebSphere kie-server-tests fails",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3021",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3021",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2024-01-29T10:08:18Z",
+          "updated_at": "2024-01-29T10:26:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "6be4a75f0faab99bd22b6ac02d9b0313d772e1ec",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "DROOLS-7605-websphere",
+            "sha": "3768df31248408ea42866a4b99cfed24ff938b52",
+            "label": "tkobayas:DROOLS-7605-websphere"
+          },
+          "user": {
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
+          },
+          "checks": [
+            {
+              "id": 20964984534,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7694355032/job/20964984534",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-29T10:08:31Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20964984241,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7694355032/job/20964984241",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-01-29T10:08:30Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 27216582742,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1208/",
+              "conclusion": "pending",
+              "started_at": "2024-01-29T10:08:24Z",
+              "completed_at": "2024-01-29T10:08:24Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3017,
           "title": "[DROOLS-7604] kie-karaf-itests fail with \"Unable to resolve org.mvel2…",
