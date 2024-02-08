@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-02-08T10:07:00.394Z",
+    "date": "2024-02-08T11:04:39.162Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7827925466"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7828619189"
   },
   "projects": [
     {
@@ -12775,6 +12775,152 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
         {
+          "number": 291,
+          "title": "okhttp3 upgrade to 3.12.12",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/291",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/291",
+          "state": "open",
+          "labels": [
+            "dependencies",
+            "java",
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-02-08T10:17:06Z",
+          "updated_at": "2024-02-08T10:17:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "524549d1a1e56446f418af559f90083c4b0ad195",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "RHPAM-4812",
+            "sha": "eff41876b76795e0b1cceb2e399159f1686f4009",
+            "label": "kiegroup:RHPAM-4812"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 21357172106,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064952/job/21357172106",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:26Z",
+              "completed_at": "2024-02-08T10:17:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171980,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064936/job/21357171980",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171962,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064939/job/21357171962",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171945,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064932/job/21357171945",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171609,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064952/job/21357171609",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171566,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064936/job/21357171566",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171554,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064932/job/21357171554",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357171551,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828064939/job/21357171551",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-02-08T10:17:25Z",
+              "completed_at": "2024-02-08T10:17:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357164022,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828061792/job/21357164022",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-02-08T10:17:19Z",
+              "completed_at": "2024-02-08T10:26:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21357163748,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/7828061792/job/21357163748",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2024-02-08T10:17:18Z",
+              "completed_at": "2024-02-08T10:26:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
+        {
           "number": 278,
           "title": "Bump json from 20140107 to 20230227",
           "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/278",
@@ -12787,7 +12933,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-04-14T17:16:49Z",
-          "updated_at": "2024-02-08T10:01:09Z",
+          "updated_at": "2024-02-08T10:11:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
