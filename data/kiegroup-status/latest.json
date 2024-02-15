@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-02-15T09:07:44.565Z",
+    "date": "2024-02-15T10:07:06.276Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7913487433"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7914193852"
   },
   "projects": [
     {
@@ -673,7 +673,7 @@
           "draft": true,
           "requested_reviewers": [],
           "created_at": "2022-01-13T07:46:40Z",
-          "updated_at": "2023-06-23T08:52:46Z",
+          "updated_at": "2024-02-15T09:12:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1404,34 +1404,85 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
-          "number": 21,
-          "title": "Missing Tags",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/21",
-          "html_url": "https://github.com/kiegroup/drools/pull/21",
+          "number": 25,
+          "title": "[DROOLS-7608] EAP 7.4.15 VFS changes make drools PMML tests fail",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/25",
+          "html_url": "https://github.com/kiegroup/drools/pull/25",
           "state": "open",
           "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-02-08T00:07:31Z",
-          "updated_at": "2024-02-08T00:07:31Z",
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            }
+          ],
+          "created_at": "2024-02-15T09:58:50Z",
+          "updated_at": "2024-02-15T10:03:49Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "7.67.x",
-            "sha": "7bc8b1be85c69bb0d6a5a5e2734642f189e90230",
-            "label": "kiegroup:7.67.x"
+            "ref": "7.x",
+            "sha": "53b1cd439d2a768924561dff2281d2694f736b71",
+            "label": "kiegroup:7.x"
           },
           "head": {
-            "ref": "7.67.x-blue",
-            "sha": "5fe5c9e6eeb9cbc5e0434cbe68dd76b5deb93d07",
-            "label": "FireBurn:7.67.x-blue"
+            "ref": "DROOLS-7608-pmml",
+            "sha": "135f311d81dcd016c50a9951858a5f202c2b8a00",
+            "label": "tkobayas:DROOLS-7608-pmml"
           },
           "user": {
-            "login": "FireBurn",
-            "avatar_url": "https://avatars.githubusercontent.com/u/86515?v=4",
-            "html_url": "https://github.com/FireBurn"
+            "login": "tkobayas",
+            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+            "html_url": "https://github.com/tkobayas"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 21603111920,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/7914091574/job/21603111920",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-15T09:59:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21603111696,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/7914091574/job/21603111696",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-15T09:59:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21603111459,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/7914091574/job/21603111459",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-15T09:59:05Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 21603111242,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/7914091574/job/21603111242",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-15T09:59:04Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
         }
       ],
       "branchesComparison": {
