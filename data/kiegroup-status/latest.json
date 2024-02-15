@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-02-15T20:04:21.559Z",
+    "date": "2024-02-15T21:04:48.828Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7921622615"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7922261011"
   },
   "projects": [
     {
@@ -8541,127 +8541,118 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
-          "number": 3029,
-          "title": "[JBPM-10222] Fix WebService integration tests by adding jaxb.index",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3029",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3029",
+          "number": 3030,
+          "title": "[7.67.x] [JBPM-10222] Fix WebService integration tests by adding jaxb.index",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3030",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3030",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
           "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
             {
               "login": "fjtirado",
               "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
               "html_url": "https://github.com/fjtirado"
             }
           ],
-          "created_at": "2024-02-14T00:08:45Z",
-          "updated_at": "2024-02-15T15:39:05Z",
+          "created_at": "2024-02-15T20:51:38Z",
+          "updated_at": "2024-02-15T20:57:34Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "5dad97aa3c64a1c8677fad35b6f266496b95c52d",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "4c3c548601dbc3c6ebd39ee5d39746fb16649686",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "JBPM-10222",
-            "sha": "d269d8ee81c5ec21a8088e64468f0914715baef7",
-            "label": "gmunozfe:JBPM-10222"
+            "ref": "7.67.x_JBPM-10222",
+            "sha": "5140c0b9d351485ea6873d68950be2efeb095961",
+            "label": "kiegroup:7.67.x_JBPM-10222"
           },
           "user": {
-            "login": "gmunozfe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
-            "html_url": "https://github.com/gmunozfe"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
           "checks": [
             {
-              "id": 21616918260,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/21616918260",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-15T15:35:44Z",
-              "completed_at": "2024-02-15T15:39:01Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 21545058428,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7894429525/job/21545058428",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-02-14T00:08:59Z",
-              "completed_at": "2024-02-14T00:08:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21545058418,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7894429523/job/21545058418",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-02-14T00:08:59Z",
-              "completed_at": "2024-02-14T00:08:59Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21545057982,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7894429523/job/21545057982",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-02-14T00:08:58Z",
-              "completed_at": "2024-02-14T00:08:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21545057981,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7894429525/job/21545057981",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-02-14T00:08:58Z",
-              "completed_at": "2024-02-14T00:08:58Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21545054020,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7894427881/job/21545054020",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-02-14T00:08:59Z",
-              "completed_at": "2024-02-14T02:32:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21545053793,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/7894427881/job/21545053793",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-02-14T00:08:58Z",
-              "completed_at": "2024-02-14T02:32:26Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27544886655,
+              "id": 27552200706,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1212/",
-              "conclusion": "success",
-              "started_at": "2024-02-15T15:41:05Z",
-              "completed_at": "2024-02-15T15:41:05Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/142/",
+              "conclusion": "pending",
+              "started_at": "2024-02-15T20:57:36Z",
+              "completed_at": "2024-02-15T20:57:36Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 3031,
+          "title": "[7.67.x-blue] [JBPM-10222] Fix WebService integration tests by adding jaxb.index",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3031",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3031",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "mareknovotny",
+              "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+              "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            },
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-02-15T20:51:38Z",
+          "updated_at": "2024-02-15T20:57:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "7a5268737cbc788ff393ee6d27198ec9994374c8",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10222",
+            "sha": "ace4a9b3303124d905aa9a4ce2aa007d551b19dc",
+            "label": "kiegroup:7.67.x-blue_JBPM-10222"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 27552195600,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/106/",
+              "conclusion": "pending",
+              "started_at": "2024-02-15T20:57:22Z",
+              "completed_at": "2024-02-15T20:57:22Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
