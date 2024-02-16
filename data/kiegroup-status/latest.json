@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-02-16T07:06:23.066Z",
+    "date": "2024-02-16T08:09:11.284Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7927202591"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/7927742617"
   },
   "projects": [
     {
@@ -1415,13 +1415,15 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
         {
-          "number": 27,
-          "title": "[DROOLS-7608] fix KieProject lookup on classpath for EAP 7.4.15 VFS",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/27",
-          "html_url": "https://github.com/kiegroup/drools/pull/27",
+          "number": 29,
+          "title": "[7.67.x-blue] [DROOLS-7608] fix KieProject lookup on classpath for EAP 7.4.15 VFS",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/29",
+          "html_url": "https://github.com/kiegroup/drools/pull/29",
           "state": "open",
-          "labels": [],
-          "draft": false,
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": true,
           "requested_reviewers": [
             {
               "login": "mariofusco",
@@ -1429,201 +1431,84 @@
               "html_url": "https://github.com/mariofusco"
             },
             {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            },
+            {
               "login": "gmunozfe",
               "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
               "html_url": "https://github.com/gmunozfe"
             }
           ],
-          "created_at": "2024-02-16T02:30:10Z",
-          "updated_at": "2024-02-16T03:58:44Z",
+          "created_at": "2024-02-16T07:19:50Z",
+          "updated_at": "2024-02-16T07:33:06Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "7.x",
-            "sha": "53b1cd439d2a768924561dff2281d2694f736b71",
-            "label": "kiegroup:7.x"
+            "ref": "7.67.x-blue",
+            "sha": "5fe5c9e6eeb9cbc5e0434cbe68dd76b5deb93d07",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "kie_d7608_rebase_7.x",
-            "sha": "08a0aec4a17ca24486f9607e1b89699db3b76395",
-            "label": "tkobayas:kie_d7608_rebase_7.x"
+            "ref": "7.67.x-blue_kie_d7608_rebase_7.x",
+            "sha": "854a7bd6205b756a0b358f1a8f0965a154e54ae3",
+            "label": "kiegroup:7.67.x-blue_kie_d7608_rebase_7.x"
           },
           "user": {
-            "login": "tkobayas",
-            "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
-            "html_url": "https://github.com/tkobayas"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
-            {
-              "id": 21638082572,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7925239172/job/21638082572",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-16T02:30:24Z",
-              "completed_at": "2024-02-16T03:25:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21638082429,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7925239172/job/21638082429",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-16T02:30:22Z",
-              "completed_at": "2024-02-16T03:14:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21638082265,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7925239172/job/21638082265",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-16T02:30:24Z",
-              "completed_at": "2024-02-16T03:35:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21638082134,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7925239172/job/21638082134",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-16T02:30:22Z",
-              "completed_at": "2024-02-16T03:19:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27557131886,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/fdb/job/drools-7.x.fdb/77/",
-              "conclusion": "pending",
-              "started_at": "2024-02-16T02:30:58Z",
-              "completed_at": "2024-02-16T02:30:58Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 27557413667,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/497/",
-              "conclusion": "failure",
-              "started_at": "2024-02-16T03:04:31Z",
-              "completed_at": "2024-02-16T03:04:31Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 27557691491,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/489/",
-              "conclusion": "success",
-              "started_at": "2024-02-16T03:39:47Z",
-              "completed_at": "2024-02-16T03:39:47Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
+          "checks": []
         },
         {
-          "number": 26,
-          "title": "[DROOLS-7608] fix KieProject lookup on classpath for EAP 7.4.15 VFS",
-          "url": "https://api.github.com/repos/kiegroup/drools/pulls/26",
-          "html_url": "https://github.com/kiegroup/drools/pull/26",
+          "number": 28,
+          "title": "[7.67.x] [DROOLS-7608] fix KieProject lookup on classpath for EAP 7.4.15 VFS",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/28",
+          "html_url": "https://github.com/kiegroup/drools/pull/28",
           "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-02-15T17:02:16Z",
-          "updated_at": "2024-02-16T02:49:38Z",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": true,
+          "requested_reviewers": [
+            {
+              "login": "mariofusco",
+              "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
+              "html_url": "https://github.com/mariofusco"
+            },
+            {
+              "login": "tkobayas",
+              "avatar_url": "https://avatars.githubusercontent.com/u/489731?v=4",
+              "html_url": "https://github.com/tkobayas"
+            },
+            {
+              "login": "gmunozfe",
+              "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+              "html_url": "https://github.com/gmunozfe"
+            }
+          ],
+          "created_at": "2024-02-16T07:19:49Z",
+          "updated_at": "2024-02-16T07:32:54Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "7.x",
-            "sha": "53b1cd439d2a768924561dff2281d2694f736b71",
-            "label": "kiegroup:7.x"
+            "ref": "7.67.x",
+            "sha": "7bc8b1be85c69bb0d6a5a5e2734642f189e90230",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "kie_d7608",
-            "sha": "15c346339b7137d01e3bf77271d6e270c998f092",
-            "label": "mariofusco:kie_d7608"
+            "ref": "7.67.x_kie_d7608_rebase_7.x",
+            "sha": "5c84c02547932e7b92df46505878d09b0557a716",
+            "label": "kiegroup:7.67.x_kie_d7608_rebase_7.x"
           },
           "user": {
-            "login": "mariofusco",
-            "avatar_url": "https://avatars.githubusercontent.com/u/372781?v=4",
-            "html_url": "https://github.com/mariofusco"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
-            {
-              "id": 21620631799,
-              "name": "windows-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7919565025/job/21620631799",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-15T17:02:32Z",
-              "completed_at": "2024-02-15T17:59:31Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21620631377,
-              "name": "windows-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7919565025/job/21620631377",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-15T17:02:30Z",
-              "completed_at": "2024-02-15T18:10:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21620630785,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7919565025/job/21620630785",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-15T17:02:27Z",
-              "completed_at": "2024-02-15T17:45:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 21620630384,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/drools/actions/runs/7919565025/job/21620630384",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-02-15T17:02:27Z",
-              "completed_at": "2024-02-15T17:52:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 27554811330,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/488/",
-              "conclusion": "failure",
-              "started_at": "2024-02-15T23:12:29Z",
-              "completed_at": "2024-02-15T23:12:29Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 27555425337,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/496/",
-              "conclusion": "failure",
-              "started_at": "2024-02-15T23:55:43Z",
-              "completed_at": "2024-02-15T23:55:43Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
+          "checks": []
         }
       ],
       "branchesComparison": {
