@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-02-27T18:08:37.096Z",
+    "date": "2024-02-27T19:03:37.589Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8069345217"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8069995475"
   },
   "projects": [
     {
@@ -1354,6 +1354,101 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls{/number}",
       "pullRequests": [
         {
+          "number": 646,
+          "title": "RHPAM-4779: New event when Process Instance related data changes",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls/646",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/pull/646",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-02-27T18:38:54Z",
+          "updated_at": "2024-02-27T18:38:54Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "b150b2010fa3d89db0f38b2b198b3cd06516916e",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "RHPAM-4779_7.x",
+            "sha": "3a9897bb5ed698845dc89356cf7ccf72461dacf8",
+            "label": "nmirasch:RHPAM-4779_7.x"
+          },
+          "user": {
+            "login": "nmirasch",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2443754?v=4",
+            "html_url": "https://github.com/nmirasch"
+          },
+          "checks": [
+            {
+              "id": 22045415626,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8069731788/job/22045415626",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-27T18:39:10Z",
+              "completed_at": "2024-02-27T18:49:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22045415424,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8069731788/job/22045415424",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-27T18:39:08Z",
+              "completed_at": "2024-02-27T18:46:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22045415147,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8069731788/job/22045415147",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-27T18:39:11Z",
+              "completed_at": "2024-02-27T18:48:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22045414902,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8069731788/job/22045414902",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-02-27T18:39:09Z",
+              "completed_at": "2024-02-27T18:46:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 27748549080,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/droolsjbpm-knowledge-7.x.compile/56/",
+              "conclusion": "pending",
+              "started_at": "2024-02-27T18:39:00Z",
+              "completed_at": "2024-02-27T18:39:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27748681423,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/droolsjbpm-knowledge-7.x.pr/50/",
+              "conclusion": "success",
+              "started_at": "2024-02-27T18:44:32Z",
+              "completed_at": "2024-02-27T18:44:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 639,
           "title": "RHPAM-4446: beforeTaskCompletedEvent shows updated value of process v…",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls/639",
@@ -1584,7 +1679,103 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 30,
+          "title": "RHPAM-4779: Added ProcessDataChangedEvent to ProcessEventSupport",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/30",
+          "html_url": "https://github.com/kiegroup/drools/pull/30",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-02-27T18:59:48Z",
+          "updated_at": "2024-02-27T18:59:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.x",
+            "sha": "82333ef3e9a5def1517c1c9922f4c0ed1768f756",
+            "label": "kiegroup:7.x"
+          },
+          "head": {
+            "ref": "RHPAM-4779_7.x",
+            "sha": "fce9238881b6143064b15b897729e408a6464484",
+            "label": "nmirasch:RHPAM-4779_7.x"
+          },
+          "user": {
+            "login": "nmirasch",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2443754?v=4",
+            "html_url": "https://github.com/nmirasch"
+          },
+          "checks": [
+            {
+              "id": 22046227867,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8069969428/job/22046227867",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-27T19:02:09Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22046227436,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8069969428/job/22046227436",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-27T19:01:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22046226956,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8069969428/job/22046226956",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-27T19:02:02Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22046226513,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8069969428/job/22046226513",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-02-27T19:02:00Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 27749093190,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/pullrequest/job/drools-7.x.pr/490/",
+              "conclusion": "pending",
+              "started_at": "2024-02-27T19:01:51Z",
+              "completed_at": "2024-02-27T19:01:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 27749093208,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.x/job/compile/job/drools-7.x.compile/498/",
+              "conclusion": "pending",
+              "started_at": "2024-02-27T19:01:51Z",
+              "completed_at": "2024-02-27T19:01:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
