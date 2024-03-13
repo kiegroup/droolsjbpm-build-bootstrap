@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-03-13T19:06:11.821Z",
+    "date": "2024-03-13T20:06:49.326Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8270199992"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8270878473"
   },
   "projects": [
     {
@@ -662,6 +662,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2441,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2441",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2441",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:13:53Z",
+          "updated_at": "2024-03-13T19:13:53Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "b570554d379f9139620ed8e42ad0fe60c87b4fb2",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "a803e6761a04bcfd773f023e4fcce46482d8d4ba",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627527724,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8270308367/job/22627527724",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:14:06Z",
+              "completed_at": "2024-03-13T19:15:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627527371,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8270308367/job/22627527371",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:14:04Z",
+              "completed_at": "2024-03-13T19:15:24Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28033741089,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/101/",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:16:47Z",
+              "completed_at": "2024-03-13T19:16:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2440,
           "title": "[incubator-kie-issues-994] add in memory token logins",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2440",
@@ -1151,6 +1214,80 @@
       "repo_url": "https://github.com/kiegroup/kie-soup",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-soup/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 275,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/kie-soup/pulls/275",
+          "html_url": "https://github.com/kiegroup/kie-soup/pull/275",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:13:55Z",
+          "updated_at": "2024-03-13T19:21:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "1d15de00d40a0b49698f9e0f6169fcd37305a426",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "1db5a39aa01ddc2b5da727b28fc21737d51e0346",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627788535,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/kie-soup/runs/22627788535",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:20:07Z",
+              "completed_at": "2024-03-13T19:21:04Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 22627530200,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/8270308861/job/22627530200",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:14:07Z",
+              "completed_at": "2024-03-13T19:22:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627529893,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-soup/actions/runs/8270308861/job/22627529893",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:14:08Z",
+              "completed_at": "2024-03-13T19:21:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28033832312,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-soup-7.67.x-blue.pr/6/",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:21:17Z",
+              "completed_at": "2024-03-13T19:21:17Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 248,
           "title": "[JBPM-10028] Use sensible default for fetching rows",
@@ -1757,6 +1894,101 @@
       "repo_url": "https://github.com/kiegroup/drools",
       "pulls_url": "https://api.github.com/repos/kiegroup/drools/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 34,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/drools/pulls/34",
+          "html_url": "https://github.com/kiegroup/drools/pull/34",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:13:56Z",
+          "updated_at": "2024-03-13T19:13:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "fd911adfd53c6d3233d250437ffc96f3a97f70f6",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "ce103be236ae5a580d77572443d344f49b83c50e",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627530910,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8270309006/job/22627530910",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:12Z",
+              "completed_at": "2024-03-13T20:01:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627530593,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8270309006/job/22627530593",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:09Z",
+              "completed_at": "2024-03-13T19:56:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627530349,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8270309006/job/22627530349",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:10Z",
+              "completed_at": "2024-03-13T19:52:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627530033,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/drools/actions/runs/8270309006/job/22627530033",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-13T19:14:12Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28033681581,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/drools-7.67.x-blue.pr/51/",
+              "conclusion": "pending",
+              "started_at": "2024-03-13T19:14:01Z",
+              "completed_at": "2024-03-13T19:14:01Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 28034069219,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/drools-7.67.x-blue.compile/46/",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:32:38Z",
+              "completed_at": "2024-03-13T19:32:38Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 30,
           "title": "RHPAM-4779: Added ProcessDataChangedEvent to ProcessEventSupport",
@@ -3828,6 +4060,79 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1414,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1414",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1414",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:13:57Z",
+          "updated_at": "2024-03-13T19:13:57Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "622f00fb1f32860b751f330d84a0f999a2028071",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "0f7b7844e18f62dc57435794788d0a42c37b0efd",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627531665,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/8270309413/job/22627531665",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:11Z",
+              "completed_at": "2024-03-13T19:33:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627531422,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/8270309413/job/22627531422",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:10Z",
+              "completed_at": "2024-03-13T19:32:50Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28034055196,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/33/",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:31:57Z",
+              "completed_at": "2024-03-13T19:31:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 28034184034,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/37/",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:38:16Z",
+              "completed_at": "2024-03-13T19:38:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1413,
           "title": "[JBPM-10218] Add italian translation",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1413",
@@ -3862,6 +4167,39 @@
             "html_url": "https://github.com/gjed"
           },
           "checks": [
+            {
+              "id": 22442879838,
+              "name": "SonarCloud Code Analysis",
+              "html_url": "https://github.com/kiegroup/appformer/runs/22442879838",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-08T15:38:11Z",
+              "completed_at": "2024-03-08T15:41:45Z",
+              "slug": "sonarcloud",
+              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
+            },
+            {
+              "id": 20533835793,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7542626428/job/20533835793",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-16T14:43:58Z",
+              "completed_at": "2024-01-16T15:26:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 20533835440,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/7542626428/job/20533835440",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-01-16T14:44:15Z",
+              "completed_at": "2024-01-16T15:36:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 27947967222,
               "name": "Linux - Compile Downstream Build",
@@ -6073,6 +6411,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2398,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2398",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2398",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:14:00Z",
+          "updated_at": "2024-03-13T19:14:00Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "3b6411d39a68d591801ebee74d0702cd284a7092",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "3a48c53bb4cec27c4a913fd46bd5e48a8b669d47",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627533065,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8270309763/job/22627533065",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-13T19:14:13Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627532740,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8270309763/job/22627532740",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-13T19:14:14Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28033683294,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/107/",
+              "conclusion": "pending",
+              "started_at": "2024-03-13T19:14:06Z",
+              "completed_at": "2024-03-13T19:14:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2397,
           "title": "[JBPM-10225] Considering time for Dates",
@@ -8984,6 +9385,69 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3041,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3041",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3041",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:14:02Z",
+          "updated_at": "2024-03-13T19:14:02Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "4da135d6c33b2e3e3fb62fb821e42306a03a0d3d",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "444e80c4cb8e8c1f610698e3ab7a30fa6ad74f51",
+            "label": "kiegroup:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627533385,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/8270309914/job/22627533385",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2024-03-13T19:14:14Z",
+              "completed_at": "2024-03-13T19:25:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627533142,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/8270309914/job/22627533142",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:13Z",
+              "completed_at": "2024-03-13T19:25:13Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28033797851,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/109/",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:19:35Z",
+              "completed_at": "2024-03-13T19:19:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3040,
           "title": "Fix maven integration tests",
@@ -12055,6 +12519,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3823,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3823",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3823",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:14:03Z",
+          "updated_at": "2024-03-13T19:14:03Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9b4f5d2fe121cd9332031abbf540d9a845cfc55d",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "09b478d677cdc26c8ad8e8ca6a591092613af2de",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627534483,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/8270310110/job/22627534483",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:15Z",
+              "completed_at": "2024-03-13T19:23:03Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627534214,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/8270310110/job/22627534214",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:15Z",
+              "completed_at": "2024-03-13T19:57:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28034404176,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/40/",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:48:35Z",
+              "completed_at": "2024-03-13T19:48:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3822,
           "title": "[JBPM-10218] Add italian translation",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3822",
@@ -13804,6 +14331,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 297,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/297",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/297",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:14:05Z",
+          "updated_at": "2024-03-13T19:14:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "e5fd44adf3469f5f62236c8fb1235dfd7abd53c5",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "195398a7d99642d43cd23312c5f1347bbc722e03",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 22627535661,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/8270310587/job/22627535661",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:14:17Z",
+              "completed_at": "2024-03-13T19:40:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22627535420,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/8270310587/job/22627535420",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2024-03-13T19:14:17Z",
+              "completed_at": "2024-03-13T19:40:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28034092153,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/11/",
+              "conclusion": "failure",
+              "started_at": "2024-03-13T19:33:49Z",
+              "completed_at": "2024-03-13T19:33:49Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 296,
           "title": "Bump org.bouncycastle:bcprov-jdk15to18 from 1.67 to 1.74",
@@ -16532,6 +17122,47 @@
       "repo_url": "https://github.com/kiegroup/process-migration-service",
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 133,
+          "title": "RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
+          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/133",
+          "html_url": "https://github.com/kiegroup/process-migration-service/pull/133",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-13T19:14:06Z",
+          "updated_at": "2024-03-13T19:14:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "e51b25bd3dcab1d593659850809a46f545bd2ffa",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "RHPAM-3709",
+            "sha": "079366440d3ed61dc30106d897db842150a14d42",
+            "label": "porcelli:RHPAM-3709"
+          },
+          "user": {
+            "login": "porcelli",
+            "avatar_url": "https://avatars.githubusercontent.com/u/119395?v=4",
+            "html_url": "https://github.com/porcelli"
+          },
+          "checks": [
+            {
+              "id": 28034064024,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/process-migration-service-7.67.x-blue.pr/17/",
+              "conclusion": "success",
+              "started_at": "2024-03-13T19:32:22Z",
+              "completed_at": "2024-03-13T19:32:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 115,
           "title": "Bump minimist, mkdirp and loader-fs-cache in /frontend",
