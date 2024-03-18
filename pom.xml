@@ -4330,6 +4330,17 @@
       </dependency>
       <dependency>
         <groupId>org.eclipse.jgit</groupId>
+        <artifactId>org.eclipse.jgit.ssh.apache</artifactId>
+        <version>${version.org.eclipse.jgit}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.sshd</groupId>
+            <artifactId>sshd-osgi</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jgit</groupId>
         <artifactId>org.eclipse.jgit.ssh.jsch</artifactId>
         <version>${version.org.eclipse.jgit}</version>
       </dependency>
