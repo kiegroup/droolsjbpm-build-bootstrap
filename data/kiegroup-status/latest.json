@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-03-18T07:06:38.547Z",
+    "date": "2024-03-18T08:09:14.650Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8322573818"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8323199105"
   },
   "projects": [
     {
@@ -928,90 +928,6 @@
               "conclusion": "failure",
               "started_at": "2024-03-14T13:30:39Z",
               "completed_at": "2024-03-14T13:30:39Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 2440,
-          "title": "[incubator-kie-issues-994] add in memory token logins",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2440",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2440",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-03-13T11:34:47Z",
-          "updated_at": "2024-03-15T13:23:28Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "efd595850b18240d2b6276563b08ca7089d9bca3",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "incubator-kie-issues-994",
-            "sha": "b1628f21c72923373accc2ebd78452141d517b67",
-            "label": "elguardian:incubator-kie-issues-994"
-          },
-          "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
-          },
-          "checks": [
-            {
-              "id": 22606497801,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8263955956/job/22606497801",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-13T11:35:09Z",
-              "completed_at": "2024-03-13T11:42:32Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22606497485,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8263955956/job/22606497485",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-13T11:35:10Z",
-              "completed_at": "2024-03-13T11:41:51Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22606490983,
-              "name": "os-prep",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8263955956/job/22606490983",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-13T11:34:59Z",
-              "completed_at": "2024-03-13T11:35:01Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 28022280161,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/879/",
-              "conclusion": "success",
-              "started_at": "2024-03-13T11:36:58Z",
-              "completed_at": "2024-03-13T11:36:58Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 28081331980,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/751/",
-              "conclusion": "success",
-              "started_at": "2024-03-15T19:53:34Z",
-              "completed_at": "2024-03-15T19:53:34Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6913,7 +6829,10 @@
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2395",
           "html_url": "https://github.com/kiegroup/jbpm/pull/2395",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "backport-7.67.x",
+            "backport-7.67.x-blue"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
@@ -6928,7 +6847,7 @@
             }
           ],
           "created_at": "2024-03-06T18:13:59Z",
-          "updated_at": "2024-03-17T10:09:36Z",
+          "updated_at": "2024-03-18T07:42:39Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6947,6 +6866,50 @@
             "html_url": "https://github.com/danielemams"
           },
           "checks": [
+            {
+              "id": 22771558913,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8322924623/job/22771558913",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-03-18T07:42:44Z",
+              "completed_at": "2024-03-18T07:42:44Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22771558733,
+              "name": "[${{ matrix.target-branch }}] - Backporting",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8322924624/job/22771558733",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-03-18T07:42:43Z",
+              "completed_at": "2024-03-18T07:42:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22771558462,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8322924623/job/22771558462",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-03-18T07:42:43Z",
+              "completed_at": "2024-03-18T07:42:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22771558242,
+              "name": "compute-targets",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8322924624/job/22771558242",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2024-03-18T07:42:42Z",
+              "completed_at": "2024-03-18T07:42:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 22705330035,
               "name": "SonarCloud Code Analysis",
@@ -9669,80 +9632,6 @@
               "conclusion": "failure",
               "started_at": "2024-03-13T19:19:35Z",
               "completed_at": "2024-03-13T19:19:35Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 3037,
-          "title": "[incubator-kie-issues-994] kafka auth feature with message header records",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3037",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3037",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-03-06T10:28:30Z",
-          "updated_at": "2024-03-15T20:15:45Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "afef8f7583c54539cd32774056fc9c51505cd092",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "incubator-kie-issues-994",
-            "sha": "3aa19f2d430f0f32aff8065e65f586705d4efd77",
-            "label": "elguardian:incubator-kie-issues-994"
-          },
-          "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
-          },
-          "checks": [
-            {
-              "id": 22701341234,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/22701341234",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-03-15T10:50:12Z",
-              "completed_at": "2024-03-15T10:53:01Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 22696527380,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/8293440864/job/22696527380",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-03-15T08:36:47Z",
-              "completed_at": "2024-03-15T10:54:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22696527176,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/8293440864/job/22696527176",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-03-15T08:36:47Z",
-              "completed_at": "2024-03-15T10:53:57Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 28070180081,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1222/",
-              "conclusion": "success",
-              "started_at": "2024-03-15T10:54:51Z",
-              "completed_at": "2024-03-15T10:54:51Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
