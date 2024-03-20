@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-03-20T19:03:50.020Z",
+    "date": "2024-03-20T22:05:42.048Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8364489618"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8366483224"
   },
   "projects": [
     {
@@ -1700,6 +1700,101 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls{/number}",
       "pullRequests": [
         {
+          "number": 647,
+          "title": "RHPAM-4442:before and after TaskAssignmentsAddedEvent show same user …",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls/647",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/pull/647",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-20T20:36:48Z",
+          "updated_at": "2024-03-20T20:36:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "eee425646eabe4311fd79663116951dfd97fe578",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-rhpam-4442",
+            "sha": "16e6ffbe9d291f5a653b877a20c9c2aca3da8c78",
+            "label": "cimbalek:7.67.x-rhpam-4442"
+          },
+          "user": {
+            "login": "cimbalek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12131154?v=4",
+            "html_url": "https://github.com/cimbalek"
+          },
+          "checks": [
+            {
+              "id": 22903651954,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365558131/job/22903651954",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:37:03Z",
+              "completed_at": "2024-03-20T20:45:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22903651744,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365558131/job/22903651744",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:37:02Z",
+              "completed_at": "2024-03-20T20:45:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22903651521,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365558131/job/22903651521",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:37:00Z",
+              "completed_at": "2024-03-20T20:43:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22903651337,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365558131/job/22903651337",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:37:00Z",
+              "completed_at": "2024-03-20T20:43:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28163307824,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-knowledge-7.67.x-blue.pr/12/",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:40:59Z",
+              "completed_at": "2024-03-20T20:40:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 28163693846,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-knowledge-7.67.x-blue.compile/13/",
+              "conclusion": "failure",
+              "started_at": "2024-03-20T20:59:13Z",
+              "completed_at": "2024-03-20T20:59:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 646,
           "title": "RHPAM-4779: New event when Process Instance related data changes",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-knowledge/pulls/646",
@@ -1804,10 +1899,10 @@
           "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/pull/639",
           "state": "open",
           "labels": [],
-          "draft": true,
+          "draft": false,
           "requested_reviewers": [],
           "created_at": "2023-05-23T07:12:49Z",
-          "updated_at": "2024-03-19T20:56:24Z",
+          "updated_at": "2024-03-20T21:19:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -1826,6 +1921,50 @@
             "html_url": "https://github.com/cimbalek"
           },
           "checks": [
+            {
+              "id": 22904103043,
+              "name": "windows-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365685304/job/22904103043",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:49:04Z",
+              "completed_at": "2024-03-20T20:56:16Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22904102800,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365685304/job/22904102800",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:49:02Z",
+              "completed_at": "2024-03-20T20:55:08Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22904102591,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365685304/job/22904102591",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:49:01Z",
+              "completed_at": "2024-03-20T20:54:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22904102385,
+              "name": "windows-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-knowledge/actions/runs/8365685304/job/22904102385",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T20:49:04Z",
+              "completed_at": "2024-03-20T20:57:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
             {
               "id": 13725025186,
               "name": "windows-latest - Java 8 - Maven",
@@ -6535,6 +6674,75 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2404,
+          "title": "RHPAM-4442: before and after TaskAssignmentsAddedEvent show same user…",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2404",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2404",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2024-03-20T20:46:37Z",
+          "updated_at": "2024-03-20T20:58:08Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "c465d635673e1ec8a96a00053d57e3c6e98a6daf",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-rhpam-4442",
+            "sha": "786ca994d1e2d8da38c1e36c6781e5d3f031c4f8",
+            "label": "cimbalek:7.67.x-rhpam-4442"
+          },
+          "user": {
+            "login": "cimbalek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12131154?v=4",
+            "html_url": "https://github.com/cimbalek"
+          },
+          "checks": [
+            {
+              "id": 22904017163,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8365660384/job/22904017163",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2024-03-20T20:46:50Z",
+              "completed_at": "2024-03-20T21:06:06Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22904016874,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8365660384/job/22904016874",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2024-03-20T20:46:51Z",
+              "completed_at": "2024-03-20T21:05:59Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28163732348,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/111/",
+              "conclusion": "failure",
+              "started_at": "2024-03-20T21:01:00Z",
+              "completed_at": "2024-03-20T21:01:00Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2403,
           "title": "avoid race condition for awaiting signals and process instance completed",
@@ -18045,6 +18253,59 @@
       "repo_url": "https://github.com/kiegroup/kie-docs",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-docs/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 22,
+          "title": "BAMOE-805 Release Notes",
+          "url": "https://api.github.com/repos/kiegroup/kie-docs/pulls/22",
+          "html_url": "https://github.com/kiegroup/kie-docs/pull/22",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2024-03-20T19:27:47Z",
+          "updated_at": "2024-03-20T19:29:20Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "72854d0cb81d9401bca2bbe2756fd0b6d4845a8c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "BAMOE-805",
+            "sha": "fe31f7ccddbc82a01df410a272e16587043d6adc",
+            "label": "kiegroup:BAMOE-805"
+          },
+          "user": {
+            "login": "emmurphy1",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30830712?v=4",
+            "html_url": "https://github.com/emmurphy1"
+          },
+          "checks": [
+            {
+              "id": 22900938188,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/8364775033/job/22900938188",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2024-03-20T19:28:02Z",
+              "completed_at": "2024-03-20T19:31:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 22900937964,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-docs/actions/runs/8364775033/job/22900937964",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2024-03-20T19:27:54Z",
+              "completed_at": "2024-03-20T19:27:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            }
+          ]
+        },
         {
           "number": 18,
           "title": "Bump actions/setup-java from 1 to 4",
