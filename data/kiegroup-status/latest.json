@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-03-21T13:07:35.140Z",
+    "date": "2024-03-21T14:06:57.083Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8375475551"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8376307788"
   },
   "projects": [
     {
@@ -6510,78 +6510,42 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2403,
-          "title": "avoid race condition for awaiting signals and process instance completed",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2403",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2403",
+          "number": 2405,
+          "title": "[7.67.x-blue] avoid race condition for awaiting signals and process instance completed",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2405",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2405",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-03-20T09:07:57Z",
-          "updated_at": "2024-03-21T12:37:49Z",
+          "requested_reviewers": [
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            }
+          ],
+          "created_at": "2024-03-21T13:12:07Z",
+          "updated_at": "2024-03-21T13:12:08Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "9e77a4f80a8135cbc8d12607a44ebe282d93f053",
-            "label": "kiegroup:main"
+            "ref": "7.67.x-blue",
+            "sha": "600f1603fa7abcd93dd5a0a5b3a443724e83b852",
+            "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "incubator-kie-issues-1016",
-            "sha": "3957069d4b6ea7a0bc4ab2bb84fc47ce7cde0337",
-            "label": "elguardian:incubator-kie-issues-1016"
+            "ref": "7.67.x-blue_incubator-kie-issues-1016",
+            "sha": "cf810c490838c32e971848f457bab9dc8a7d72d8",
+            "label": "kiegroup:7.67.x-blue_incubator-kie-issues-1016"
           },
           "user": {
-            "login": "elguardian",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
-            "html_url": "https://github.com/elguardian"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
-          "checks": [
-            {
-              "id": 22924337106,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/22924337106",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-21T09:34:28Z",
-              "completed_at": "2024-03-21T09:37:27Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 22920604022,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8371483627/job/22920604022",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-03-21T07:58:57Z",
-              "completed_at": "2024-03-21T09:36:35Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22920603845,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8371483627/job/22920603845",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-03-21T07:58:59Z",
-              "completed_at": "2024-03-21T09:36:23Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 28172673932,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1043/",
-              "conclusion": "success",
-              "started_at": "2024-03-21T09:37:49Z",
-              "completed_at": "2024-03-21T09:37:49Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
+          "checks": []
         },
         {
           "number": 2401,
@@ -9443,7 +9407,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-03-21T08:48:30Z",
-          "updated_at": "2024-03-21T11:33:36Z",
+          "updated_at": "2024-03-21T13:45:27Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -9463,13 +9427,13 @@
           },
           "checks": [
             {
-              "id": 22927564741,
+              "id": 22934680960,
               "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/22927564741",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/22934680960",
               "status": "completed",
               "conclusion": "failure",
-              "started_at": "2024-03-21T10:53:37Z",
-              "completed_at": "2024-03-21T10:56:04Z",
+              "started_at": "2024-03-21T13:42:54Z",
+              "completed_at": "2024-03-21T13:45:23Z",
               "slug": "sonarcloud",
               "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
             },
@@ -9496,12 +9460,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 28175017125,
+              "id": 28177735137,
               "name": "Linux - Pull Request",
               "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/112/",
-              "conclusion": "pending",
-              "started_at": "2024-03-21T11:33:37Z",
-              "completed_at": "2024-03-21T11:33:37Z",
+              "conclusion": "failure",
+              "started_at": "2024-03-21T13:47:06Z",
+              "completed_at": "2024-03-21T13:47:06Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
