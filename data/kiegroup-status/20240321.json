@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-03-21T07:07:24.533Z",
+    "date": "2024-03-21T08:08:50.150Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8370963527"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8371608217"
   },
   "projects": [
     {
@@ -6753,7 +6753,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2024-03-20T09:07:57Z",
-          "updated_at": "2024-03-20T15:44:56Z",
+          "updated_at": "2024-03-21T08:02:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -6763,7 +6763,7 @@
           },
           "head": {
             "ref": "incubator-kie-issues-1016",
-            "sha": "51536cfb66ffa037831b91ecf5e884bdee3adbb0",
+            "sha": "3957069d4b6ea7a0bc4ab2bb84fc47ce7cde0337",
             "label": "elguardian:incubator-kie-issues-1016"
           },
           "user": {
@@ -6773,45 +6773,34 @@
           },
           "checks": [
             {
-              "id": 22877228624,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/22877228624",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-20T10:45:54Z",
-              "completed_at": "2024-03-20T10:48:55Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 22873236895,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8356340965/job/22873236895",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-03-20T09:10:03Z",
-              "completed_at": "2024-03-20T10:47:29Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22873236551,
+              "id": 22920604022,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8356340965/job/22873236551",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-03-20T09:10:03Z",
-              "completed_at": "2024-03-20T10:47:46Z",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8371483627/job/22920604022",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-21T07:58:57Z",
+              "completed_at": null,
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 28148948045,
+              "id": 22920603845,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8371483627/job/22920603845",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-03-21T07:58:59Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28171052218,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1042/",
-              "conclusion": "success",
-              "started_at": "2024-03-20T10:49:17Z",
-              "completed_at": "2024-03-20T10:49:17Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1043/",
+              "conclusion": "pending",
+              "started_at": "2024-03-21T07:58:48Z",
+              "completed_at": "2024-03-21T07:58:48Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -9667,80 +9656,6 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
-        {
-          "number": 3042,
-          "title": "[7.67.x-blue][RHPAM-4898] Fix concurrency issue in KafkaServerRegistration",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3042",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3042",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-03-19T19:52:17Z",
-          "updated_at": "2024-03-20T08:18:51Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "ff778bca3c71c2ee69271f5716a1c2cf206d85c4",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "rhpam-4898-7.67.x-blue",
-            "sha": "8aefd1778eb25604083a61b44e6b56b2a59287cf",
-            "label": "martinweiler:rhpam-4898-7.67.x-blue"
-          },
-          "user": {
-            "login": "martinweiler",
-            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
-            "html_url": "https://github.com/martinweiler"
-          },
-          "checks": [
-            {
-              "id": 22857490171,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/runs/22857490171",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-03-19T21:57:22Z",
-              "completed_at": "2024-03-19T21:59:49Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 22853036277,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/8349258782/job/22853036277",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-03-19T19:52:29Z",
-              "completed_at": "2024-03-19T22:10:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 22853036101,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/8349258782/job/22853036101",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-03-19T19:52:30Z",
-              "completed_at": "2024-03-19T22:10:10Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 28140259590,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/110/",
-              "conclusion": "success",
-              "started_at": "2024-03-19T22:01:34Z",
-              "completed_at": "2024-03-19T22:01:34Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
         {
           "number": 3041,
           "title": "[7.67.x-blue] RHPAM-3709: upgrade maven dependencies to address CVE-2021-26291",
