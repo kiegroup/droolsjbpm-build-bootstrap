@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-04-17T17:05:23.133Z",
+    "date": "2024-04-17T18:08:49.789Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8725874872"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/8726640096"
   },
   "projects": [
     {
@@ -6660,6 +6660,80 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2410,
+          "title": "[kie-issues-1094] Increase Xmx for failing Quartz functional tests",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2410",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2410",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "elguardian",
+              "avatar_url": "https://avatars.githubusercontent.com/u/6625846?v=4",
+              "html_url": "https://github.com/elguardian"
+            },
+            {
+              "login": "cimbalek",
+              "avatar_url": "https://avatars.githubusercontent.com/u/12131154?v=4",
+              "html_url": "https://github.com/cimbalek"
+            }
+          ],
+          "created_at": "2024-04-17T17:52:03Z",
+          "updated_at": "2024-04-17T17:52:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "211671fbd91d24d48ba5573a5f1becd44d261d5a",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "kie-issues-1094",
+            "sha": "4b9320fd7e6c8b0c358f95f873a9d7f960ff5d82",
+            "label": "gmunozfe:kie-issues-1094"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 23941733751,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8726448624/job/23941733751",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-17T17:52:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 23941733411,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/8726448624/job/23941733411",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2024-04-17T17:52:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 28650671714,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/123/",
+              "conclusion": "pending",
+              "started_at": "2024-04-17T17:52:08Z",
+              "completed_at": "2024-04-17T17:52:08Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2409,
           "title": "[7.67.x-blue] [JBPM-10224] Missing index 'IDX_EventTypes_IdElement' with hibernate",
