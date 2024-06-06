@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-06-06T09:09:00.879Z",
+    "date": "2024-06-06T10:08:08.029Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9398171363"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9399000056"
   },
   "projects": [
     {
@@ -13086,7 +13086,7 @@
       "name": "kie-wb-common",
       "description": "Shared screens, widgets and services for KIE workbenches.",
       "html_url": "https://github.com/kiegroup/kie-wb-common",
-      "updated_at": "2023-06-05T01:13:31Z",
+      "updated_at": "2024-06-06T09:35:54Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
@@ -13094,79 +13094,54 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
-          "number": 3825,
-          "title": "DROOLS-7618 : Project Editor: Long description should not freeze the UI",
-          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3825",
-          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3825",
+          "number": 3826,
+          "title": "[7.67.x] DROOLS-7618 : Project Editor: Long description should not freeze the UI",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3826",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3826",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
               "login": "mareknovotny",
               "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
               "html_url": "https://github.com/mareknovotny"
+            },
+            {
+              "login": "Rikkola",
+              "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
+              "html_url": "https://github.com/Rikkola"
             }
           ],
-          "created_at": "2024-05-13T12:54:27Z",
-          "updated_at": "2024-06-06T07:28:10Z",
+          "created_at": "2024-06-06T09:35:49Z",
+          "updated_at": "2024-06-06T09:37:51Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "a3e1eaf299b5c133b8e73c831d40580f4e0523ab",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "ce18edfc0104692893db6e2c638fc9430379e7e7",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "TOO_LONG",
-            "sha": "4a6bbf6607c334eef96269fce4085542501dc900",
-            "label": "Rikkola:TOO_LONG"
+            "ref": "7.67.x_TOO_LONG",
+            "sha": "975a3faa31d0ce49018dc8dccc2f9bedd75d3bf9",
+            "label": "kiegroup:7.67.x_TOO_LONG"
           },
           "user": {
-            "login": "Rikkola",
-            "avatar_url": "https://avatars.githubusercontent.com/u/331092?v=4",
-            "html_url": "https://github.com/Rikkola"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
           "checks": [
             {
-              "id": 25849092060,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/9387067262/job/25849092060",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-05T15:34:47Z",
-              "completed_at": "2024-06-05T15:57:24Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 25849091691,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/9387067262/job/25849091691",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-05T15:34:47Z",
-              "completed_at": "2024-06-05T15:57:14Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29514461741,
+              "id": 29529597241,
               "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/kie-wb-common-main.pr/321/",
-              "conclusion": "failure",
-              "started_at": "2024-06-05T17:07:54Z",
-              "completed_at": "2024-06-05T17:07:54Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 29527112352,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/kie-wb-common-main.fdb/133/",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/kie-wb-common-7.67.x.pr/37/",
               "conclusion": "pending",
-              "started_at": "2024-06-06T07:28:13Z",
-              "completed_at": "2024-06-06T07:28:13Z",
+              "started_at": "2024-06-06T09:37:53Z",
+              "completed_at": "2024-06-06T09:37:53Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
