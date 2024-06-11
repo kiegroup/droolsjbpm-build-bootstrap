@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-06-11T09:09:12.573Z",
+    "date": "2024-06-11T10:08:48.009Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9462772646"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9463642718"
   },
   "projects": [
     {
@@ -7234,7 +7234,7 @@
       "name": "jbpm",
       "description": "a Business Process Management (BPM) Suite",
       "html_url": "https://github.com/kiegroup/jbpm",
-      "updated_at": "2024-06-07T07:12:10Z",
+      "updated_at": "2024-06-11T09:10:29Z",
       "homepage": "http://www.jbpm.org",
       "language": "Java",
       "default_branch": "main",
@@ -7242,131 +7242,98 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2424,
-          "title": "[JBPM-10233] Using original list of nodes for dispatching",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2424",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2424",
+          "number": 2426,
+          "title": "[7.67.x] [JBPM-10233] Using original list of nodes for dispatching",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2426",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2426",
           "state": "open",
           "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
+            "cherry-pick :cherries:"
           ],
           "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-06-10T12:17:55Z",
-          "updated_at": "2024-06-10T21:18:00Z",
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-06-11T09:10:51Z",
+          "updated_at": "2024-06-11T09:56:11Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
-            "ref": "main",
-            "sha": "492f41a49eab99e59598c1a9c2aee94f6de7557d",
-            "label": "kiegroup:main"
+            "ref": "7.67.x",
+            "sha": "eb28538ee4a20e0df7e5da73ba1e0b576ee6321e",
+            "label": "kiegroup:7.67.x"
           },
           "head": {
-            "ref": "JBPM-10233",
-            "sha": "6f3170ad99755d1f602de7735e7cd389bd70bce7",
-            "label": "fjtirado:JBPM-10233"
+            "ref": "7.67.x_JBPM-10233",
+            "sha": "3ae9785b295b770dd52f82f1e7a94276b794bfc1",
+            "label": "kiegroup:7.67.x_JBPM-10233"
           },
           "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
           },
           "checks": [
             {
-              "id": 26045867501,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9455642489/job/26045867501",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-06-10T21:15:07Z",
-              "completed_at": "2024-06-10T21:15:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26045867149,
-              "name": "[${{ matrix.target-branch }}] - Backporting",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9455642470/job/26045867149",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-06-10T21:15:07Z",
-              "completed_at": "2024-06-10T21:15:07Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26045866650,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9455642489/job/26045866650",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-06-10T21:15:06Z",
-              "completed_at": "2024-06-10T21:15:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26045866264,
-              "name": "compute-targets",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9455642470/job/26045866264",
-              "status": "completed",
-              "conclusion": "skipped",
-              "started_at": "2024-06-10T21:15:06Z",
-              "completed_at": "2024-06-10T21:15:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26026639387,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/26026639387",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-10T13:54:37Z",
-              "completed_at": "2024-06-10T13:58:03Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 26021577079,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9448161314/job/26021577079",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-10T12:21:08Z",
-              "completed_at": "2024-06-10T14:01:21Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26021576752,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9448161314/job/26021576752",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-06-10T12:19:30Z",
-              "completed_at": "2024-06-10T14:01:33Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29588717593,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1055/",
-              "conclusion": "success",
-              "started_at": "2024-06-10T13:58:24Z",
-              "completed_at": "2024-06-10T13:58:24Z",
+              "id": 29609037949,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/23/",
+              "conclusion": "pending",
+              "started_at": "2024-06-11T09:56:12Z",
+              "completed_at": "2024-06-11T09:56:12Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
+            }
+          ]
+        },
+        {
+          "number": 2425,
+          "title": "[7.67.x-blue] [JBPM-10233] Using original list of nodes for dispatching",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2425",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2425",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
             {
-              "id": 29594990078,
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-06-11T09:10:48Z",
+          "updated_at": "2024-06-11T09:55:47Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "211671fbd91d24d48ba5573a5f1becd44d261d5a",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10233",
+            "sha": "1e213f11f0f9d6bdb249c42b2f601863d76f29a2",
+            "label": "kiegroup:7.67.x-blue_JBPM-10233"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 29609029821,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/fdb/job/jbpm-main.fdb/84/",
-              "conclusion": "failure",
-              "started_at": "2024-06-10T17:57:35Z",
-              "completed_at": "2024-06-10T17:57:35Z",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/24/",
+              "conclusion": "pending",
+              "started_at": "2024-06-11T09:55:49Z",
+              "completed_at": "2024-06-11T09:55:49Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
