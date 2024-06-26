@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-06-26T15:08:26.741Z",
+    "date": "2024-06-26T16:08:44.395Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9682188608"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9683073109"
   },
   "projects": [
     {
@@ -7254,13 +7254,111 @@
       "name": "jbpm",
       "description": "a Business Process Management (BPM) Suite",
       "html_url": "https://github.com/kiegroup/jbpm",
-      "updated_at": "2024-06-24T18:02:38Z",
+      "updated_at": "2024-06-26T15:10:26Z",
       "homepage": "http://www.jbpm.org",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2430,
+          "title": "[7.67.x] [JBPM-10234] CancelNode should be able to cancel more than one instance",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2430",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2430",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-06-26T15:11:23Z",
+          "updated_at": "2024-06-26T15:12:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "180aeed04e09d6426ee39f7c85b5ff83549b4fcd",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10234",
+            "sha": "cdf87bdbe077934a14938d6f05b8ed478745ed0b",
+            "label": "kiegroup:7.67.x_JBPM-10234"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 29895260194,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x/job/fdb/job/jbpm-7.67.x.fdb/24/",
+              "conclusion": "pending",
+              "started_at": "2024-06-26T15:12:23Z",
+              "completed_at": "2024-06-26T15:12:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2429,
+          "title": "[7.67.x-blue] [JBPM-10234] CancelNode should be able to cancel more than one instance",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2429",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2429",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2024-06-26T15:10:59Z",
+          "updated_at": "2024-06-26T15:12:36Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5a3f22488244ba83be0ee753d9e0fb4259dd617a",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10234",
+            "sha": "5079c48f90e64e62c734eaa7382625f03e7d65cd",
+            "label": "kiegroup:7.67.x-blue_JBPM-10234"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": [
+            {
+              "id": 29895266211,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/25/",
+              "conclusion": "pending",
+              "started_at": "2024-06-26T15:12:37Z",
+              "completed_at": "2024-06-26T15:12:37Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2428,
           "title": "JBPM-10235 : Removed debug log statement exposing password",
@@ -7290,83 +7388,6 @@
             "html_url": "https://github.com/sudhishmk"
           },
           "checks": []
-        },
-        {
-          "number": 2427,
-          "title": "[JBPM-10234] CancelNode should be able to cancel more than one instance",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2427",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2427",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-06-24T17:21:57Z",
-          "updated_at": "2024-06-25T11:27:34Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "2ed7d56a07efa1f66895398d2aae8438fa5e7ecf",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10234",
-            "sha": "959e483683d6d9c476c7dc9876ca6994f39dec1a",
-            "label": "fjtirado:JBPM-10234"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 26649591501,
-              "name": "SonarCloud Code Analysis",
-              "html_url": "https://github.com/kiegroup/jbpm/runs/26649591501",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2024-06-25T11:24:05Z",
-              "completed_at": "2024-06-25T11:27:31Z",
-              "slug": "sonarcloud",
-              "avatar_url": "https://avatars.githubusercontent.com/u/545988?v=4"
-            },
-            {
-              "id": 26645235371,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9660202361/job/26645235371",
-              "status": "completed",
-              "conclusion": "cancelled",
-              "started_at": "2024-06-25T09:46:08Z",
-              "completed_at": "2024-06-25T11:23:05Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 26645235134,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/9660202361/job/26645235134",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2024-06-25T09:46:07Z",
-              "completed_at": "2024-06-25T11:22:49Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 29865007526,
-              "name": "Linux - Pull Request",
-              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/jbpm-main.pr/1060/",
-              "conclusion": "success",
-              "started_at": "2024-06-25T11:27:53Z",
-              "completed_at": "2024-06-25T11:27:53Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
         },
         {
           "number": 2423,
