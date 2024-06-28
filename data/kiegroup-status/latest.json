@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2024-06-28T17:07:38.827Z",
+    "date": "2024-06-28T18:09:36.030Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9716329767"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/9716872357"
   },
   "projects": [
     {
@@ -10391,6 +10391,47 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3049,
+          "title": "Test case to verify JSON marshalling after PR#3046 fix",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3049",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3049",
+          "state": "open",
+          "labels": [],
+          "draft": true,
+          "requested_reviewers": [],
+          "created_at": "2024-06-28T17:44:45Z",
+          "updated_at": "2024-06-28T17:44:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "1829d1e67650504842c80bfba08a381b070b8735",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "json-test",
+            "sha": "fbf7d99654212c75b6fff0ff0a33565e57ca90df",
+            "label": "martinweiler:json-test"
+          },
+          "user": {
+            "login": "martinweiler",
+            "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
+            "html_url": "https://github.com/martinweiler"
+          },
+          "checks": [
+            {
+              "id": 29946101577,
+              "name": "Linux - Pull Request",
+              "html_url": "https://eng-jenkins-csb-business-automation.apps.ocp-c1.prod.psi.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1232/",
+              "conclusion": "pending",
+              "started_at": "2024-06-28T17:46:07Z",
+              "completed_at": "2024-06-28T17:46:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3048,
           "title": "RHPAM-4779: SLA due date value in ProcessInstanceLog table is not upd…",
