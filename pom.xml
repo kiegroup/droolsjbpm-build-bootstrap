@@ -4053,6 +4053,18 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-core</artifactId>
+        <version>9.0.86</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-websocket</artifactId>
+        <version>9.0.86</version>
+      </dependency>
+
+
+      <dependency>
         <groupId>org.apache.ws.xmlschema</groupId>
         <artifactId>xmlschema-core</artifactId>
         <version>${version.org.apache.ws.xmlschema}</version>
@@ -5322,7 +5334,8 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
-        <version>${version.org.springframework}</version>
+        <!-- <version>${version.org.springframework}</version> -->
+        <version>5.3.34</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -5360,6 +5373,13 @@
         <artifactId>spring-boot-test-autoconfigure</artifactId>
         <version>${version.org.springframework.boot}</version>
       </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core</artifactId>
+        <version>5.7.12</version>
+      </dependency>
+
 
       <dependency>
         <groupId>org.subethamail</groupId>
