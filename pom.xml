@@ -887,7 +887,7 @@
                            as e.g. GWT Mockito tests are using the com.google.gwt classes inside. Ignoring it for the
                            duplicate classes check seems to be the only way. -->
                       <dependency>
-                        <groupId>com.google.gwt</groupId>
+                        <groupId>org.gwtproject</groupId>
                         <artifactId>gwt-dev</artifactId>
                         <type>jar</type>
                         <ignoreClasses>
@@ -2482,7 +2482,7 @@
         <version>${version.org.google.gwt-charts}</version>
       </dependency>
       <dependency>
-        <groupId>com.google.gwt</groupId>
+        <groupId>org.gwtproject</groupId>
         <artifactId>gwt-user</artifactId>
         <version>${version.com.google.gwt}</version>
         <exclusions>
@@ -5813,7 +5813,7 @@
 
       <!-- GWT -->
       <dependency>
-        <groupId>com.google.gwt</groupId>
+        <groupId>org.gwtproject</groupId>
         <artifactId>gwt-dev</artifactId>
         <version>${version.com.google.gwt}</version>
         <exclusions>
