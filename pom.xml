@@ -84,7 +84,7 @@
     <version.com.google.guava>32.0.1-jre</version.com.google.guava>
     <version.com.google.guava.failureaccess>1.0.1</version.com.google.guava.failureaccess>
     <version.com.google.inject.guice>4.0</version.com.google.inject.guice>
-    <version.com.google.gwt>2.9.0</version.com.google.gwt>
+    <version.com.google.gwt>2.10.0</version.com.google.gwt>
     <version.org.google.gwt-charts>0.9.9</version.org.google.gwt-charts>
     <version.com.google.gwt.gwtmockito>1.1.9</version.com.google.gwt.gwtmockito>
     <version.com.google.jsinterop.base>1.0.0</version.com.google.jsinterop.base>
@@ -5667,6 +5667,24 @@
           <exclusion>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+          </exclusion>
+          <!-- Excluding old com.google.gwt 2.8.0 gwt-user and gwt-dev assets
+               that collides with newer org.gwtproject assets in gwt 2.10+ versions -->
+          <exclusion>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-dev</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-user</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
