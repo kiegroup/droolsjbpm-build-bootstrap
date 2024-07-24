@@ -153,7 +153,7 @@
     <version.org.apache.neethi>3.1.1</version.org.apache.neethi>
     <version.org.apache.poi>4.1.2</version.org.apache.poi>
     <version.org.apache.sshd>2.9.2</version.org.apache.sshd>
-    <version.org.apache.tomcat>9.0.83</version.org.apache.tomcat>
+    <version.org.apache.tomcat>9.0.86</version.org.apache.tomcat>
     <version.org.apache.velocity>1.7</version.org.apache.velocity>
     <version.org.apache.xmlbeans>3.1.0</version.org.apache.xmlbeans>
     <version.org.apache.ws.xmlschema>2.2.5</version.org.apache.ws.xmlschema>
@@ -262,9 +262,10 @@
     <version.org.sonatype.plexus.plexus-sec-dispatcher>2.0</version.org.sonatype.plexus.plexus-sec-dispatcher>
     <version.org.sonatype.sisu>2.3.0</version.org.sonatype.sisu>
     <version.org.sonatype.sisu.sisu-guice>3.2.3</version.org.sonatype.sisu.sisu-guice>
-    <version.org.springframework>5.3.27</version.org.springframework>
+    <version.org.springframework>5.3.34</version.org.springframework>
     <version.org.springframework.boot>2.5.15</version.org.springframework.boot>
     <version.org.springframework.osgi>1.2.1</version.org.springframework.osgi>
+    <version.spring.security>5.7.12</version.spring.security>
     <version.org.subethamail>1.2</version.org.subethamail>
     <version.org.subethamail.subethasmtp>3.1.6</version.org.subethamail.subethasmtp>
     <version.org.testcontainers>1.15.2</version.org.testcontainers>
@@ -4052,15 +4053,15 @@
         </exclusions>
       </dependency>
 
-      <dependency>
+     <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-core</artifactId>
-        <version>9.0.86</version>
+        <version>${version.org.apache.tomcat}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
         <artifactId>tomcat-embed-websocket</artifactId>
-        <version>9.0.86</version>
+        <version>${version.org.apache.tomcat}</version>
       </dependency>
 
 
@@ -5334,8 +5335,8 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
-        <!-- <version>${version.org.springframework}</version> -->
-        <version>5.3.34</version>
+        <version>${version.org.springframework}</version>
+        <!-- <version>5.3.34</version> -->
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -5377,10 +5378,8 @@
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-core</artifactId>
-        <version>5.7.12</version>
+        <version>${version.spring.security}</version>
       </dependency>
-
-
       <dependency>
         <groupId>org.subethamail</groupId>
         <artifactId>subethasmtp-wiser</artifactId>
