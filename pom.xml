@@ -263,9 +263,9 @@
     <version.org.sonatype.sisu>2.3.0</version.org.sonatype.sisu>
     <version.org.sonatype.sisu.sisu-guice>3.2.3</version.org.sonatype.sisu.sisu-guice>
     <version.org.springframework>5.3.34</version.org.springframework>
-    <version.org.springframework.boot>2.5.15</version.org.springframework.boot>
+    <version.org.springframework.boot>2.7.18</version.org.springframework.boot>
     <version.org.springframework.osgi>1.2.1</version.org.springframework.osgi>
-    <version.spring.security>5.7.12</version.spring.security>
+    <spring-security.version>5.7.12</spring-security.version>
     <version.org.subethamail>1.2</version.org.subethamail>
     <version.org.subethamail.subethasmtp>3.1.6</version.org.subethamail.subethasmtp>
     <version.org.testcontainers>1.15.2</version.org.testcontainers>
@@ -4053,18 +4053,6 @@
         </exclusions>
       </dependency>
 
-     <dependency>
-        <groupId>org.apache.tomcat.embed</groupId>
-        <artifactId>tomcat-embed-core</artifactId>
-        <version>${version.org.apache.tomcat}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tomcat.embed</groupId>
-        <artifactId>tomcat-embed-websocket</artifactId>
-        <version>${version.org.apache.tomcat}</version>
-      </dependency>
-
-
       <dependency>
         <groupId>org.apache.ws.xmlschema</groupId>
         <artifactId>xmlschema-core</artifactId>
@@ -5375,11 +5363,6 @@
         <version>${version.org.springframework.boot}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-core</artifactId>
-        <version>${version.spring.security}</version>
-      </dependency>
       <dependency>
         <groupId>org.subethamail</groupId>
         <artifactId>subethasmtp-wiser</artifactId>
