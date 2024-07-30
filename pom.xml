@@ -81,10 +81,10 @@
     <version.org.jresearch.gwt.time>2.0.3</version.org.jresearch.gwt.time>
     <version.domino-slf4j-logger>1.0.1</version.domino-slf4j-logger>
     <!-- failureaccess is required for karaf features.xml to expose com.google.common.util.concurrent.internal package -->
-    <version.com.google.guava>32.0.1-jre</version.com.google.guava>
+    <version.com.google.guava>33.2.1-jre</version.com.google.guava>
     <version.com.google.guava.failureaccess>1.0.1</version.com.google.guava.failureaccess>
     <version.com.google.inject.guice>4.0</version.com.google.inject.guice>
-    <version.com.google.gwt>2.9.0</version.com.google.gwt>
+    <version.com.google.gwt>2.11.0</version.com.google.gwt>
     <version.org.google.gwt-charts>0.9.9</version.org.google.gwt-charts>
     <version.com.google.gwt.gwtmockito>1.1.9</version.com.google.gwt.gwtmockito>
     <version.com.google.jsinterop.base>1.0.0</version.com.google.jsinterop.base>
@@ -112,7 +112,7 @@
     <version.jaxen>1.1.6</version.jaxen>
     <version.jivesoftware.smack>3.1.0</version.jivesoftware.smack>
     <version.joda-time>2.9.7</version.joda-time>
-    <version.junit>4.13.1</version.junit>
+    <version.junit>4.13.2</version.junit>
     <version.enforcer.plugin>3.0.0-M3</version.enforcer.plugin>
     <version.mysql.connector-java>8.0.28</version.mysql.connector-java>
     <version.net.jcip>1.0</version.net.jcip>
@@ -165,6 +165,8 @@
     <version.org.codehaus.groovy>2.0.5</version.org.codehaus.groovy>
     <version.org.codehaus.jackson>1.9.13</version.org.codehaus.jackson>
     <version.org.codehaus.jettison>1.5.4</version.org.codehaus.jettison>
+    <!-- The latest released version of gwt-maven-plugin is 2.10.0 -->
+    <version.org.codehaus.mojo.gwt.maven.plugin>2.10.0</version.org.codehaus.mojo.gwt.maven.plugin>
     <version.org.codehaus.plexus.plexus-classworlds>2.6.0</version.org.codehaus.plexus.plexus-classworlds>
     <version.org.codehaus.plexus.plexus-containers>1.6</version.org.codehaus.plexus.plexus-containers>
     <version.org.codehaus.plexus.plexus-interpolation>1.26</version.org.codehaus.plexus.plexus-interpolation>
@@ -178,7 +180,7 @@
     <version.org.eclipse.emf.ecore.xmi>2.5.0.v20100521-1846</version.org.eclipse.emf.ecore.xmi>
     <version.org.eclipse.jdt>3.18.0</version.org.eclipse.jdt>
     <!-- Jetty's version is aligned with CXF -->
-    <version.org.eclipse.jetty>9.4.53.v20231009</version.org.eclipse.jetty>
+    <version.org.eclipse.jetty>9.4.44.v20210927</version.org.eclipse.jetty>
     <version.org.eclipse.jgit>5.10.0.202012080955-r</version.org.eclipse.jgit>
     <version.org.eclipse.sisu>0.3.5</version.org.eclipse.sisu>
     <version.org.eclipse.emf.gwt>2.9.0</version.org.eclipse.emf.gwt>
@@ -321,7 +323,7 @@
     <version.org.jboss.arquillian.extension.drone>2.5.1</version.org.jboss.arquillian.extension.drone>
     <version.org.jboss.arquillian.graphene>2.3.2</version.org.jboss.arquillian.graphene>
     <version.com.google.guava.for-selenium>23.0</version.com.google.guava.for-selenium>
-    <version.org.jboss.errai>4.16.0-SNAPSHOT</version.org.jboss.errai>
+    <version.org.jboss.errai>4.16.0.Final</version.org.jboss.errai>
     <version.com.google.elemental2>1.1.0</version.com.google.elemental2>
     <!-- WildFly version used together with  the GWT's Super Dev Mode -->
     <version.org.jboss.errai.wildfly>23.0.0.Final</version.org.jboss.errai.wildfly>
@@ -1559,7 +1561,20 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>gwt-maven-plugin</artifactId>
-          <version>${version.com.google.gwt}</version>
+          <version>${version.org.codehaus.mojo.gwt.maven.plugin}</version>
+          <dependencies>
+            <!-- Forcing gwt-maven-plugin to use GWT 2.11 -->
+            <dependency>
+              <groupId>org.gwtproject</groupId>
+              <artifactId>gwt-dev</artifactId>
+              <version>${version.com.google.gwt}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.gwtproject</groupId>
+              <artifactId>gwt-user</artifactId>
+              <version>${version.com.google.gwt}</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <localWorkers>${gwt.compiler.localWorkers}</localWorkers>
             <strict>true</strict>
@@ -2240,6 +2255,14 @@
         <version>${version.org.kie}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.gwtproject</groupId>
+        <artifactId>gwt</artifactId>
+        <version>${version.com.google.gwt}</version>
+        <scope>import</scope>
+        <type>pom</type>
       </dependency>
 
       <dependency>
@@ -5668,6 +5691,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
           </exclusion>
+          <!--
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -5675,17 +5699,7 @@
           <exclusion>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
-          </exclusion>
-          <!-- Excluding old com.google.gwt 2.8.0 gwt-user and gwt-dev assets
-               that collides with newer org.gwtproject assets in gwt 2.10+ versions -->
-          <exclusion>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-dev</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-user</artifactId>
-          </exclusion>
+          </exclusion> -->
         </exclusions>
       </dependency>
 
