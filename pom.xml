@@ -106,9 +106,9 @@
     <version.io.micrometer>1.7.3</version.io.micrometer>
     <version.io.springfox>2.9.2</version.io.springfox>
     <version.io.smallrye.openapi.core>2.1.4</version.io.smallrye.openapi.core>
-    <version.io.strimzi.strimzi-test-container>0.101.0</version.io.strimzi.strimzi-test-container>
+    <version.io.strimzi.strimzi-test-container>0.106.0</version.io.strimzi.strimzi-test-container>
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
-    <version.io.undertow>2.2.28.Final</version.io.undertow>
+    <version.io.undertow>2.2.33.Final</version.io.undertow>
     <version.jaxen>1.1.6</version.jaxen>
     <version.jivesoftware.smack>3.1.0</version.jivesoftware.smack>
     <version.joda-time>2.9.7</version.joda-time>
@@ -154,13 +154,13 @@
     <version.org.apache.poi>4.1.2</version.org.apache.poi>
     <version.org.apache.sshd>2.9.2</version.org.apache.sshd>
     <version.org.apache.tomcat>9.0.86</version.org.apache.tomcat>
-    <version.org.apache.velocity>1.7</version.org.apache.velocity>
+    <version.org.apache.velocity>2.3</version.org.apache.velocity>
     <version.org.apache.xmlbeans>3.1.0</version.org.apache.xmlbeans>
     <version.org.apache.ws.xmlschema>2.2.5</version.org.apache.ws.xmlschema>
     <version.org.apache.xmlgraphics.batik>1.17</version.org.apache.xmlgraphics.batik>
     <version.org.apache.xmlgraphics.commons>2.6</version.org.apache.xmlgraphics.commons>
     <version.org.assertj>3.14.0</version.org.assertj>
-    <version.org.bouncycastle>1.74</version.org.bouncycastle>
+    <version.org.bouncycastle>1.78.1</version.org.bouncycastle>
     <version.org.codehaus.btm>2.1.4</version.org.codehaus.btm>
     <version.org.codehaus.groovy>2.0.5</version.org.codehaus.groovy>
     <version.org.codehaus.jackson>1.9.13</version.org.codehaus.jackson>
@@ -190,7 +190,7 @@
     <version.org.hibernate.validator>6.0.20.Final</version.org.hibernate.validator>
     <version.org.hibernate.commons.annotations>5.0.5.Final</version.org.hibernate.commons.annotations>
     <version.org.hornetq>2.4.7.Final</version.org.hornetq>
-    <version.org.infinispan>11.0.9.Final</version.org.infinispan>
+    <version.org.infinispan>11.0.19.Final</version.org.infinispan>
     <!--This needs to be in sync with JUnit-->
     <version.org.hamcrest>1.3</version.org.hamcrest>
     <version.org.hsqldb>2.3.0</version.org.hsqldb>
@@ -235,7 +235,7 @@
     <version.jakarta.json.bind-api>1.0.2</version.jakarta.json.bind-api>
     <version.jakarta.jws-api>2.1.0</version.jakarta.jws-api>
     <version.jakarta.json-api>1.1.6</version.jakarta.json-api>
-    <version.org.jboss.xnio>3.8.4.Final</version.org.jboss.xnio>
+    <version.org.jboss.xnio>3.8.8.Final</version.org.jboss.xnio>
     <version.org.jdom>1.1.3</version.org.jdom>
     <version.org.jfree.jfreechart>1.5.0</version.org.jfree.jfreechart>
     <version.org.jpmml.model>1.5.1</version.org.jpmml.model> <!-- jpmml-model BSD 3C license - ATTENTION 1.5.1 intentional, because 1.5.1 evaluators works with 1.5.1 -->
@@ -342,7 +342,7 @@
     <version.org.jboss.byteman>4.0.13</version.org.jboss.byteman>
     <version.org.roboguice>3.0.1</version.org.roboguice>
     <version.org.robolectric>3.1.2</version.org.robolectric>
-    <version.org.xmlunit>2.8.2</version.org.xmlunit>
+    <version.org.xmlunit>2.10.0</version.org.xmlunit>
     <version.org.skyscreamer.jsonassert>1.2.3</version.org.skyscreamer.jsonassert>
     <version.org.jboss.jboss-dmr>1.5.1.Final</version.org.jboss.jboss-dmr>
     <version.org.jboss.jboss-msc>1.4.12.Final</version.org.jboss.jboss-msc>
@@ -380,7 +380,7 @@
     <!-- Make OSGi happy -->
     <osgi.snapshot.qualifier>${maven.build.timestamp}</osgi.snapshot.qualifier>
 
-    <version.io.netty>4.1.77.Final</version.io.netty>
+    <version.io.netty>4.1.108.Final</version.io.netty>
     <!-- IMPORTANT: Don't use this dependency. The right dependency version is the one named as "version.io.netty".
          This is just needed by Elasticsearch Transport Plugin because it has a compatibility mode with netty 3 and
          it can't be removed -->
@@ -487,7 +487,7 @@
     <version.org.hisrc.jsonix.jsonix-scripts>3.0.0</version.org.hisrc.jsonix.jsonix-scripts>
     <version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>0.15.3</version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>
     <version.org.mock-server>5.11.1</version.org.mock-server>
-    <version.org.apache.kafka>3.1.0</version.org.apache.kafka>
+    <version.org.apache.kafka>3.6.1</version.org.apache.kafka>
     <version.shade.plugin>3.2.4</version.shade.plugin>
 
     <version.lock-treatment-tool>^0.2.2</version.lock-treatment-tool>
@@ -4063,7 +4063,7 @@
 
       <dependency>
         <groupId>org.apache.velocity</groupId>
-        <artifactId>velocity</artifactId>
+        <artifactId>velocity-engine-core</artifactId>
         <version>${version.org.apache.velocity}</version>
       </dependency>
 
