@@ -496,12 +496,6 @@
   </properties>
 
   <repositories>
-    <!-- TO BE REMOVED -->
-    <repository>
-      <id>staging</id>
-      <url>https://repository.jboss.org/nexus/content/repositories/jboss_releases_staging_profile-20945/</url>
-    </repository>
-    <!-- TO BE REMOVED -->
     <repository>
       <!-- Duplicating the Maven Central repository here (as it is already coming from Super POM) makes the build much faster,
            as the Maven Central is now treated as the first (default) repository (because it is before the JBoss.org one).
