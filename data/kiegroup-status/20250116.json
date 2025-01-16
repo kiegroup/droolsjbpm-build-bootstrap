@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-01-16T14:08:08.023Z",
+    "date": "2025-01-16T15:08:48.962Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12810600310"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12811751856"
   },
   "projects": [
     {
@@ -13411,6 +13411,85 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3071,
+          "title": "[7.67.x][incubator-kie-issues-1105] Polymorphic json typing causes long delays in first request (#3046)",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3071",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3071",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2025-01-16T14:53:02Z",
+          "updated_at": "2025-01-16T14:57:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "6d46ba8222cc2828368b635961b7b95ef4f24b70",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "kie-issues-1105",
+            "sha": "c2aa7f00bd68af4ac69431038bf4ec9a791ce9d9",
+            "label": "gmunozfe:kie-issues-1105"
+          },
+          "user": {
+            "login": "gmunozfe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1962786?v=4",
+            "html_url": "https://github.com/gmunozfe"
+          },
+          "checks": [
+            {
+              "id": 35720848126,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/12811457793/job/35720848126",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-01-16T14:53:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35720847684,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/12811457793/job/35720847684",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-01-16T14:53:17Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33668775952,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x/job/pullrequest/job/droolsjbpm-integration-7.67.x.pr/149/",
+              "conclusion": "pending",
+              "started_at": "2025-01-16T14:53:07Z",
+              "completed_at": "2025-01-16T14:53:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 33668919177,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x/job/fdb/job/droolsjbpm-integration-7.67.x.fdb/18/",
+              "conclusion": "pending",
+              "started_at": "2025-01-16T14:57:58Z",
+              "completed_at": "2025-01-16T14:57:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3070,
           "title": "[JBPM-10245] Make sure that thread is clean when commit/rollback",
