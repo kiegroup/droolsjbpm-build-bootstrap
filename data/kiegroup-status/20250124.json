@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-01-24T07:08:38.784Z",
+    "date": "2025-01-24T08:12:15.316Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12944947600"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12945737640"
   },
   "projects": [
     {
@@ -2812,7 +2812,7 @@
             }
           ],
           "created_at": "2025-01-24T04:36:27Z",
-          "updated_at": "2025-01-24T04:39:00Z",
+          "updated_at": "2025-01-24T07:29:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2969,7 +2969,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-01-23T08:11:25Z",
-          "updated_at": "2025-01-23T08:16:09Z",
+          "updated_at": "2025-01-24T07:41:25Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3011,22 +3011,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 33800211892,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/288/",
-              "conclusion": "failure",
-              "started_at": "2025-01-23T08:19:16Z",
-              "completed_at": "2025-01-23T08:19:16Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 33800226947,
               "name": "Linux - Pull Request",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/177/",
               "conclusion": "success",
               "started_at": "2025-01-23T08:20:16Z",
               "completed_at": "2025-01-23T08:20:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 33827952374,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/293/",
+              "conclusion": "pending",
+              "started_at": "2025-01-24T07:41:27Z",
+              "completed_at": "2025-01-24T07:41:27Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6961,7 +6961,7 @@
             }
           ],
           "created_at": "2025-01-24T04:37:21Z",
-          "updated_at": "2025-01-24T04:37:21Z",
+          "updated_at": "2025-01-24T07:30:22Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17128,6 +17128,85 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 307,
+          "title": "DBACLD-164316: [CVE] [Critical] CVE-2019-20445, CVE-2019-20444 docker…",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/307",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/307",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-01-24T07:28:30Z",
+          "updated_at": "2025-01-24T07:28:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "47d98a1a0e196fc568c3a152b466906f1eab07ff",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "DBACLD-164316",
+            "sha": "2fd30bb711f9f5525d228b17304b67879dc3d00e",
+            "label": "akumar074:DBACLD-164316"
+          },
+          "user": {
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
+          },
+          "checks": [
+            {
+              "id": 36107366746,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/12945206957/job/36107366746",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-01-24T07:28:42Z",
+              "completed_at": "2025-01-24T07:34:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36107366574,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/12945206957/job/36107366574",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-01-24T07:28:42Z",
+              "completed_at": "2025-01-24T07:33:52Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33827803149,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-work-items-7.67.x-blue.fdb/6/",
+              "conclusion": "pending",
+              "started_at": "2025-01-24T07:28:42Z",
+              "completed_at": "2025-01-24T07:28:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 33828190725,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/22/",
+              "conclusion": "success",
+              "started_at": "2025-01-24T08:01:20Z",
+              "completed_at": "2025-01-24T08:01:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 306,
           "title": "[NO-ISSUE] Updating xmlsec library",
