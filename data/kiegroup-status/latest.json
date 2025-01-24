@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-01-24T04:11:07.810Z",
+    "date": "2025-01-24T05:09:07.064Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12943089552"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12943644376"
   },
   "projects": [
     {
@@ -2724,16 +2724,22 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
-          "number": 2540,
-          "title": "[DBACLD-164346] Bump smack jar version from 3.1.0 to 4.0.2",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2540",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2540",
+          "number": 2541,
+          "title": "DBACLD-164330: [CVE] [High] CVE-2021-33813 and more jdom-1.1.3.redhat-3.jar",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2541",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2541",
           "state": "open",
           "labels": [],
-          "draft": true,
-          "requested_reviewers": [],
-          "created_at": "2025-01-23T15:32:10Z",
-          "updated_at": "2025-01-23T15:57:59Z",
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-01-24T04:36:27Z",
+          "updated_at": "2025-01-24T04:39:00Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2742,16 +2748,59 @@
             "label": "kiegroup:7.67.x-blue"
           },
           "head": {
-            "ref": "DBACLD-164346",
-            "sha": "302728bb51d4a71230419e1747200ee262d30f4d",
-            "label": "abhijithumbe:DBACLD-164346"
+            "ref": "DBACLD-164330",
+            "sha": "66a8001f026f9898b48c7274a0e07c88e7123909",
+            "label": "akumar074:DBACLD-164330"
           },
           "user": {
-            "login": "abhijithumbe",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3941203?v=4",
-            "html_url": "https://github.com/abhijithumbe"
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
           },
-          "checks": []
+          "checks": [
+            {
+              "id": 36102519483,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12943344062/job/36102519483",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-01-24T04:36:39Z",
+              "completed_at": "2025-01-24T04:43:01Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36102519284,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/12943344062/job/36102519284",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-01-24T04:36:38Z",
+              "completed_at": "2025-01-24T04:42:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33826096374,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/290/",
+              "conclusion": "pending",
+              "started_at": "2025-01-24T04:38:34Z",
+              "completed_at": "2025-01-24T04:38:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 33826104231,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/179/",
+              "conclusion": "success",
+              "started_at": "2025-01-24T04:39:32Z",
+              "completed_at": "2025-01-24T04:39:32Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
         },
         {
           "number": 2539,
@@ -6823,6 +6872,85 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1433,
+          "title": "DBACLD-164330: [CVE] [High] CVE-2021-33813 and more jdom-1.1.3.redhat-3.jar",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1433",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1433",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-01-24T04:37:21Z",
+          "updated_at": "2025-01-24T04:37:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "8d0e4b592c8786579f55e5fe818be24ffeec1562",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "DBACLD-164330",
+            "sha": "d3446a3c320c99fad48dd6b6334d6c71e6603059",
+            "label": "akumar074:DBACLD-164330"
+          },
+          "user": {
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
+          },
+          "checks": [
+            {
+              "id": 36102542063,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/12943352849/job/36102542063",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-01-24T04:37:32Z",
+              "completed_at": "2025-01-24T04:43:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36102541867,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/12943352849/job/36102541867",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-01-24T04:37:33Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33826086540,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/94/",
+              "conclusion": "pending",
+              "started_at": "2025-01-24T04:37:25Z",
+              "completed_at": "2025-01-24T04:37:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 33826086546,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/56/",
+              "conclusion": "pending",
+              "started_at": "2025-01-24T04:37:25Z",
+              "completed_at": "2025-01-24T04:37:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1432,
           "title": "Bump cross-spawn from 6.0.5 to 6.0.6 in /appformer-js-monaco",
