@@ -781,9 +781,6 @@
                 <rules>
                   <banDuplicateClasses>
                     <ignoreClasses>
-                      <!-- Duplicated by smack-cores's transitive dependencies -->
-                      <ignoreClass>org.xmlpull.v1.XmlPullParserFactory</ignoreClass>
-                      <ignoreClass>org.xmlpull.v1.XmlSerializer</ignoreClass>
                       <!-- Duplicated by XStream's transitive deps, with very little chance to get properly fixed -->
                       <ignoreClass>org.xmlpull.v1.XmlPullParserException</ignoreClass>
                       <ignoreClass>org.xmlpull.v1.XmlPullParser</ignoreClass>
