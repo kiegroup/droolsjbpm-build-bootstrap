@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-01-31T11:07:18.752Z",
+    "date": "2025-01-31T12:15:33.606Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13071508786"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13072524415"
   },
   "projects": [
     {
@@ -2724,6 +2724,90 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2553,
+          "title": "[7.67.x-blue] update protobuf libraries version to 4.28.2",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2553",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2553",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            },
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            }
+          ],
+          "created_at": "2025-01-31T11:28:45Z",
+          "updated_at": "2025-01-31T11:31:52Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "3dc649a9145dc8ca3d88c0473fd33e81f2200445",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-protobuf",
+            "sha": "dd2803aa10b5cfca41984d0ab56794b6d598a582",
+            "label": "bncriju:upgrade-protobuf"
+          },
+          "user": {
+            "login": "bncriju",
+            "avatar_url": "https://avatars.githubusercontent.com/u/175620555?v=4",
+            "html_url": "https://github.com/bncriju"
+          },
+          "checks": [
+            {
+              "id": 36475128319,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13071850078/job/36475128319",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-01-31T11:31:18Z",
+              "completed_at": "2025-01-31T11:36:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36475127955,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13071850078/job/36475127955",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-01-31T11:31:18Z",
+              "completed_at": "2025-01-31T11:37:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33980166654,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/320/",
+              "conclusion": "pending",
+              "started_at": "2025-01-31T11:31:23Z",
+              "completed_at": "2025-01-31T11:31:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 33980638813,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/17/",
+              "conclusion": "failure",
+              "started_at": "2025-01-31T11:58:35Z",
+              "completed_at": "2025-01-31T11:58:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2552,
           "title": "[7.67.x-blue] upgrade wildfly elytron library",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2552",
@@ -2744,7 +2828,7 @@
             }
           ],
           "created_at": "2025-01-31T09:42:28Z",
-          "updated_at": "2025-01-31T10:02:03Z",
+          "updated_at": "2025-01-31T12:13:53Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3215,7 +3299,7 @@
             }
           ],
           "created_at": "2025-01-29T07:29:42Z",
-          "updated_at": "2025-01-29T11:46:48Z",
+          "updated_at": "2025-01-31T11:36:20Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3225,7 +3309,7 @@
           },
           "head": {
             "ref": "DBACLD-164336_logbackCVE",
-            "sha": "b0729144d9fbf0e063ecf6760d30870a80694881",
+            "sha": "c0e540c29383295c159f1848b9f5332fd8631c86",
             "label": "RemyaK1:DBACLD-164336_logbackCVE"
           },
           "user": {
@@ -3235,44 +3319,44 @@
           },
           "checks": [
             {
-              "id": 36336600499,
+              "id": 36475355835,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13026543663/job/36336600499",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13071894061/job/36475355835",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2025-01-29T07:31:48Z",
-              "completed_at": "2025-01-29T07:37:47Z",
+              "started_at": "2025-01-31T11:36:17Z",
+              "completed_at": "2025-01-31T11:42:04Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 36336600364,
+              "id": 36475355637,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13026543663/job/36336600364",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13071894061/job/36475355637",
               "status": "completed",
               "conclusion": "success",
-              "started_at": "2025-01-29T07:31:47Z",
-              "completed_at": "2025-01-29T07:37:36Z",
+              "started_at": "2025-01-31T11:36:17Z",
+              "completed_at": "2025-01-31T11:42:06Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 33918634185,
-              "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/184/",
-              "conclusion": "success",
-              "started_at": "2025-01-29T07:34:38Z",
-              "completed_at": "2025-01-29T07:34:38Z",
+              "id": 33980251468,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/18/",
+              "conclusion": "pending",
+              "started_at": "2025-01-31T11:36:16Z",
+              "completed_at": "2025-01-31T11:36:16Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 33919727642,
+              "id": 33980253359,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/309/",
-              "conclusion": "failure",
-              "started_at": "2025-01-29T08:49:25Z",
-              "completed_at": "2025-01-29T08:49:25Z",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/321/",
+              "conclusion": "pending",
+              "started_at": "2025-01-31T11:36:22Z",
+              "completed_at": "2025-01-31T11:36:22Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
