@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-02-05T04:11:23.052Z",
+    "date": "2025-02-05T05:09:24.761Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13150054177"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13150661048"
   },
   "projects": [
     {
@@ -11587,6 +11587,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2451,
+          "title": "[DBACLD-164346] Bump smack jar version from 3.1.0 to 4.0.2",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2451",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2451",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-02-05T05:08:27Z",
+          "updated_at": "2025-02-05T05:08:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "978e0781ac68364ec5dcf8a0735565387fe64603",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "DBACLD_164346",
+            "sha": "40a04b89fbc4eb692a2fe863d9fbd2fcef211cef",
+            "label": "abhijithumbe:DBACLD_164346"
+          },
+          "user": {
+            "login": "abhijithumbe",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3941203?v=4",
+            "html_url": "https://github.com/abhijithumbe"
+          },
+          "checks": [
+            {
+              "id": 36270836231,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/12944583623/job/36270836231",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-01-28T07:01:02Z",
+              "completed_at": "2025-01-28T07:08:43Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36270835917,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/12944583623/job/36270835917",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-01-28T07:01:03Z",
+              "completed_at": "2025-01-28T07:08:51Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 33891740010,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/36/",
+              "conclusion": "failure",
+              "started_at": "2025-01-28T09:32:25Z",
+              "completed_at": "2025-01-28T09:32:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2450,
           "title": "[DBACLD-164346] Bump smack jar version from 3.1.0 to 4.0.2",
