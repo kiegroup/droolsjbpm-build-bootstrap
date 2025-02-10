@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-02-10T15:09:21.029Z",
+    "date": "2025-02-10T16:11:02.271Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13243972519"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13245253566"
   },
   "projects": [
     {
@@ -14116,13 +14116,89 @@
       "name": "droolsjbpm-integration",
       "description": "Drools and jBPM integration with seam, spring, camel, ...",
       "html_url": "https://github.com/kiegroup/droolsjbpm-integration",
-      "updated_at": "2025-01-22T19:00:53Z",
+      "updated_at": "2025-02-10T16:10:31Z",
       "homepage": "",
       "language": "Java",
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3073,
+          "title": "[7.67.x] [JBPM-10245] Make sure that thread is clean when commit/rollback",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3073",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3073",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2025-02-10T16:10:44Z",
+          "updated_at": "2025-02-10T16:10:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x",
+            "sha": "6d46ba8222cc2828368b635961b7b95ef4f24b70",
+            "label": "kiegroup:7.67.x"
+          },
+          "head": {
+            "ref": "7.67.x_JBPM-10245",
+            "sha": "e9c8848c0f6351df085a9f6f010b49e07a9e14b4",
+            "label": "kiegroup:7.67.x_JBPM-10245"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
+        {
+          "number": 3074,
+          "title": "[7.67.x-blue] [JBPM-10245] Make sure that thread is clean when commit/rollback",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3074",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3074",
+          "state": "open",
+          "labels": [
+            "cherry-pick :cherries:"
+          ],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "fjtirado",
+              "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+              "html_url": "https://github.com/fjtirado"
+            }
+          ],
+          "created_at": "2025-02-10T16:10:44Z",
+          "updated_at": "2025-02-10T16:10:45Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "02d251d6945f3c3bb4f9244409dd7cbf83e81326",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue_JBPM-10245",
+            "sha": "48fc06adc59935b3f4a31eaf91056895138c8cd5",
+            "label": "kiegroup:7.67.x-blue_JBPM-10245"
+          },
+          "user": {
+            "login": "github-actions[bot]",
+            "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+            "html_url": "https://github.com/apps/github-actions"
+          },
+          "checks": []
+        },
         {
           "number": 3072,
           "title": "[7.67.x-blue] Fix json serialization and deserialization of decimal numbers with big scale.",
@@ -14280,82 +14356,6 @@
               "conclusion": "pending",
               "started_at": "2025-02-05T01:27:41Z",
               "completed_at": "2025-02-05T01:27:41Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
-          "number": 3070,
-          "title": "[JBPM-10245] Make sure that thread is clean when commit/rollback",
-          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3070",
-          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3070",
-          "state": "open",
-          "labels": [
-            "backport-7.67.x",
-            "backport-7.67.x-blue"
-          ],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2024-12-12T21:52:40Z",
-          "updated_at": "2025-02-10T08:15:56Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "main",
-            "sha": "b2c1cecb7c79d2c1427b12cd0734f54155ced5c6",
-            "label": "kiegroup:main"
-          },
-          "head": {
-            "ref": "JBPM-10245",
-            "sha": "4604fd354e1ffb9f68fb02758745642f9f237eb7",
-            "label": "fjtirado:JBPM-10245"
-          },
-          "user": {
-            "login": "fjtirado",
-            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
-            "html_url": "https://github.com/fjtirado"
-          },
-          "checks": [
-            {
-              "id": 36314704455,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/13018880821/job/36314704455",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-01-28T20:22:23Z",
-              "completed_at": "2025-01-28T23:24:47Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 36314704140,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/13018880821/job/36314704140",
-              "status": "completed",
-              "conclusion": "success",
-              "started_at": "2025-01-28T20:22:20Z",
-              "completed_at": "2025-01-28T22:59:00Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 33912247727,
-              "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1248/",
-              "conclusion": "success",
-              "started_at": "2025-01-28T22:35:30Z",
-              "completed_at": "2025-01-28T22:35:30Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 34170058527,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-integration-main.fdb/153/",
-              "conclusion": "success",
-              "started_at": "2025-02-10T11:09:18Z",
-              "completed_at": "2025-02-10T11:09:18Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -17415,12 +17415,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 34175781611,
+              "id": 34177328089,
               "name": "Linux - Compile Downstream Build",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/jbpm-work-items-7.67.x-blue.compile/4/",
-              "conclusion": "pending",
-              "started_at": "2025-02-10T14:58:20Z",
-              "completed_at": "2025-02-10T14:58:20Z",
+              "conclusion": "failure",
+              "started_at": "2025-02-10T15:47:12Z",
+              "completed_at": "2025-02-10T15:47:12Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
