@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-02-11T00:41:58.223Z",
+    "date": "2025-02-11T02:10:11.030Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13253425899"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13254432343"
   },
   "projects": [
     {
@@ -11375,6 +11375,79 @@
       "repo_url": "https://github.com/kiegroup/jbpm",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2453,
+          "title": "[CVE] CVE-2021-20250",
+          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2453",
+          "html_url": "https://github.com/kiegroup/jbpm/pull/2453",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-02-11T00:42:39Z",
+          "updated_at": "2025-02-11T00:52:39Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "978e0781ac68364ec5dcf8a0735565387fe64603",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "CVE-2021-20250",
+            "sha": "117683cac47ea375ba87ac10a09d53b45c14490c",
+            "label": "LightGuard:CVE-2021-20250"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 36995958409,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/13253447488/job/36995958409",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-02-11T00:42:51Z",
+              "completed_at": "2025-02-11T00:50:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36995958239,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/13253447488/job/36995958239",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-02-11T00:42:50Z",
+              "completed_at": "2025-02-11T00:50:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34191259365,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/144/",
+              "conclusion": "failure",
+              "started_at": "2025-02-11T00:45:26Z",
+              "completed_at": "2025-02-11T00:45:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34192123807,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/jbpm-7.67.x-blue.compile/1/",
+              "conclusion": "failure",
+              "started_at": "2025-02-11T01:49:17Z",
+              "completed_at": "2025-02-11T01:49:17Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2452,
           "title": "[DBACLD-162578] LogCleanupCommand rescheduling with FIXED delay not working as expected",
