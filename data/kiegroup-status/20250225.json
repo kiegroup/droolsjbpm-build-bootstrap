@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-02-25T16:11:30.584Z",
+    "date": "2025-02-25T17:09:38.885Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13525725942"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13526868470"
   },
   "projects": [
     {
@@ -2656,6 +2656,79 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2559,
+          "title": "[NO-ISSUE] Updating Strimzi to avoid Kafka errors",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2559",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2559",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-02-25T16:36:26Z",
+          "updated_at": "2025-02-25T16:36:40Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "02a3bba16d9bd541926fde2cceefa5d403ef485b",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-strimzi",
+            "sha": "25a2106660d8e6a77b473a8ece9bcddfe3f55bbc",
+            "label": "LightGuard:upgrade-strimzi"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 37797394013,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13526236264/job/37797394013",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-02-25T16:37:02Z",
+              "completed_at": "2025-02-25T16:43:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37797393508,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13526236264/job/37797393508",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-02-25T16:36:56Z",
+              "completed_at": "2025-02-25T16:43:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34516951769,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/367/",
+              "conclusion": "pending",
+              "started_at": "2025-02-25T16:36:42Z",
+              "completed_at": "2025-02-25T16:36:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34517054478,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/199/",
+              "conclusion": "success",
+              "started_at": "2025-02-25T16:39:19Z",
+              "completed_at": "2025-02-25T16:39:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2558,
           "title": "[NO_ISSUE] Embed-tomcat related multiple CVES",
