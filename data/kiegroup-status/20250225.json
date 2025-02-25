@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-02-25T11:08:11.546Z",
+    "date": "2025-02-25T12:16:56.260Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13519786253"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13520994605"
   },
   "projects": [
     {
@@ -6446,6 +6446,100 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1439,
+          "title": "[7.67.x-blue] Upgrade logback to 1.2.13.",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1439",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1439",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "gitgabrio",
+              "avatar_url": "https://avatars.githubusercontent.com/u/765578?v=4",
+              "html_url": "https://github.com/gitgabrio"
+            },
+            {
+              "login": "yesamer",
+              "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+              "html_url": "https://github.com/yesamer"
+            }
+          ],
+          "created_at": "2025-02-25T12:02:09Z",
+          "updated_at": "2025-02-25T12:03:50Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9792d6cd9802f0c7b72e7c738ea1ab344f079b30",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-logback-classic",
+            "sha": "e76062463d4f3ce895a40a178478c44368b2192b",
+            "label": "baldimir:upgrade-logback-classic"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 37779244519,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/13520730517/job/37779244519",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-02-25T12:02:24Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37779244056,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/13520730517/job/37779244056",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-02-25T12:02:23Z",
+              "completed_at": "2025-02-25T12:08:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34508798651,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/60/",
+              "conclusion": "pending",
+              "started_at": "2025-02-25T12:02:16Z",
+              "completed_at": "2025-02-25T12:02:16Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34508802186,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/105/",
+              "conclusion": "pending",
+              "started_at": "2025-02-25T12:02:25Z",
+              "completed_at": "2025-02-25T12:02:25Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34508804208,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/98/",
+              "conclusion": "pending",
+              "started_at": "2025-02-25T12:02:30Z",
+              "completed_at": "2025-02-25T12:02:30Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1438,
           "title": "[kie-issues#1821][CVE]-2023-0833 Updating okhttp",
@@ -13582,22 +13676,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 34506143765,
-              "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/163/",
-              "conclusion": "pending",
-              "started_at": "2025-02-25T10:09:31Z",
-              "completed_at": "2025-02-25T10:09:31Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 34506563669,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-integration-7.67.x-blue.fdb/43/",
               "conclusion": "pending",
               "started_at": "2025-02-25T10:26:23Z",
               "completed_at": "2025-02-25T10:26:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34509008732,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/163/",
+              "conclusion": "success",
+              "started_at": "2025-02-25T12:11:10Z",
+              "completed_at": "2025-02-25T12:11:10Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -16862,6 +16956,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
         {
+          "number": 311,
+          "title": "[NO_ISSUE] Upgrade owm-japis to fix CVE-2018-1000850",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/311",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/311",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            },
+            {
+              "login": "jstastny-cz",
+              "avatar_url": "https://avatars.githubusercontent.com/u/11939909?v=4",
+              "html_url": "https://github.com/jstastny-cz"
+            }
+          ],
+          "created_at": "2025-02-25T11:34:48Z",
+          "updated_at": "2025-02-25T11:34:48Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "9d8b628da86c5d4a77118b4b493fb9ddbd51735e",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "NO_ISSUE_CVE-2018-1000850",
+            "sha": "8db0954ed787889693f79ffe2ece09363fe29924",
+            "label": "gitgabrio:NO_ISSUE_CVE-2018-1000850"
+          },
+          "user": {
+            "login": "gitgabrio",
+            "avatar_url": "https://avatars.githubusercontent.com/u/765578?v=4",
+            "html_url": "https://github.com/gitgabrio"
+          },
+          "checks": [
+            {
+              "id": 37777788792,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/13520272929/job/37777788792",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-02-25T11:35:00Z",
+              "completed_at": "2025-02-25T11:41:12Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37777788393,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/13520272929/job/37777788393",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-02-25T11:35:01Z",
+              "completed_at": "2025-02-25T11:41:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34508485937,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/43/",
+              "conclusion": "failure",
+              "started_at": "2025-02-25T11:48:13Z",
+              "completed_at": "2025-02-25T11:48:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 309,
           "title": "[kie-issues#1821][CVE]-2023-0833 Updating okhttp",
           "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/309",
@@ -17008,12 +17176,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 34504732172,
+              "id": 34508785615,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-work-items-7.67.x-blue.fdb/18/",
-              "conclusion": "pending",
-              "started_at": "2025-02-25T09:12:09Z",
-              "completed_at": "2025-02-25T09:12:09Z",
+              "conclusion": "success",
+              "started_at": "2025-02-25T12:01:40Z",
+              "completed_at": "2025-02-25T12:01:40Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
