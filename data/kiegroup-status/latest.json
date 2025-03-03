@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-03T17:08:28.932Z",
+    "date": "2025-03-03T18:12:20.252Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13636377645"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13637505030"
   },
   "projects": [
     {
@@ -6362,6 +6362,79 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1441,
+          "title": "Bump angular to 1.8.0",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1441",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1441",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-03-03T18:00:08Z",
+          "updated_at": "2025-03-03T18:08:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "31d903245b20c5bec7ec3488681cbadc45e148fa",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue",
+            "sha": "e07ec18f2906ac7fcbb0ba53f78ae8465e3d9c95",
+            "label": "cimbalek:7.67.x-blue"
+          },
+          "user": {
+            "login": "cimbalek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12131154?v=4",
+            "html_url": "https://github.com/cimbalek"
+          },
+          "checks": [
+            {
+              "id": 38119377182,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/13637384956/job/38119377182",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-03T18:04:59Z",
+              "completed_at": "2025-03-03T18:05:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 38119376776,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/13637384956/job/38119376776",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-03T18:04:59Z",
+              "completed_at": "2025-03-03T18:05:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34648536276,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/65/",
+              "conclusion": "failure",
+              "started_at": "2025-03-03T18:05:57Z",
+              "completed_at": "2025-03-03T18:05:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34648562417,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/110/",
+              "conclusion": "failure",
+              "started_at": "2025-03-03T18:06:53Z",
+              "completed_at": "2025-03-03T18:06:53Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1440,
           "title": "[NO-ISSUE] Updating Strimzi to avoid Kafka errors",
