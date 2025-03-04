@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-04T07:10:27.857Z",
+    "date": "2025-03-04T08:11:48.169Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13648188390"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13649085698"
   },
   "projects": [
     {
@@ -2636,6 +2636,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2560,
+          "title": "[DO-NOT-MERGE] Upgrade jackson-mapper-asl",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2560",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2560",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-03-04T07:45:57Z",
+          "updated_at": "2025-03-04T07:57:27Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "736358ef7e732e585f59b18bef18f420d0d5cfca",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-jackson",
+            "sha": "b7e91f4e46d7f6ae1980c479e620e185bdc41045",
+            "label": "RishiRajAnand:upgrade-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 38152284104,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13648705723/job/38152284104",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-03-04T07:46:12Z",
+              "completed_at": "2025-03-04T07:46:14Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 38152283850,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13648705723/job/38152283850",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-04T07:46:10Z",
+              "completed_at": "2025-03-04T07:46:11Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34663240264,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/201/",
+              "conclusion": "failure",
+              "started_at": "2025-03-04T07:47:56Z",
+              "completed_at": "2025-03-04T07:47:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2559,
           "title": "[NO-ISSUE] Updating Strimzi to avoid Kafka errors",
@@ -6362,6 +6431,85 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1442,
+          "title": "Upgrade jackson mapper",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1442",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1442",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-03-04T07:30:34Z",
+          "updated_at": "2025-03-04T07:55:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "31d903245b20c5bec7ec3488681cbadc45e148fa",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-jackson",
+            "sha": "83796e42fbf8abd84bfeead2276512df4e6cf657",
+            "label": "RishiRajAnand:upgrade-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 38151875029,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/13648563743/job/38151875029",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-04T07:35:54Z",
+              "completed_at": "2025-03-04T07:35:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 38151874737,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/13648563743/job/38151874737",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-04T07:35:54Z",
+              "completed_at": "2025-03-04T07:35:57Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34663068315,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/67/",
+              "conclusion": "failure",
+              "started_at": "2025-03-04T07:36:50Z",
+              "completed_at": "2025-03-04T07:36:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34663082013,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/112/",
+              "conclusion": "failure",
+              "started_at": "2025-03-04T07:37:48Z",
+              "completed_at": "2025-03-04T07:37:48Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1441,
           "title": "Bump angular to 1.8.0",
@@ -22031,7 +22179,77 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 1247,
+          "title": "Upgrade jackson-mapper-asl",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1247",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1247",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-03-04T07:14:04Z",
+          "updated_at": "2025-03-04T07:55:07Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "718c5eef68f6b207724685a924c85ec9d9422ed4",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-jackson",
+            "sha": "73ac93af9ac24d428dfcf5603c5ebf397bc24017",
+            "label": "RishiRajAnand:upgrade-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 38152064893,
+              "name": "ubuntu-18.04 - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/13648630796/job/38152064893",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2025-03-04T07:40:37Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 38152064655,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/13648630796/job/38152064655",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2025-03-04T07:40:36Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34663121464,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/60/",
+              "conclusion": "pending",
+              "started_at": "2025-03-04T07:40:34Z",
+              "completed_at": "2025-03-04T07:40:34Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
