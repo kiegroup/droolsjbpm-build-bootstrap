@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-05T09:10:26.818Z",
+    "date": "2025-03-05T10:10:30.685Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13672351402"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13673505880"
   },
   "projects": [
     {
@@ -13988,22 +13988,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 34693807349,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-integration-7.67.x-blue.fdb/48/",
-              "conclusion": "pending",
-              "started_at": "2025-03-05T08:00:28Z",
-              "completed_at": "2025-03-05T08:00:28Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 34693860575,
               "name": "Linux - Pull Request",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/171/",
               "conclusion": "failure",
               "started_at": "2025-03-05T08:03:50Z",
               "completed_at": "2025-03-05T08:03:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34695196903,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-integration-7.67.x-blue.fdb/49/",
+              "conclusion": "failure",
+              "started_at": "2025-03-05T09:13:38Z",
+              "completed_at": "2025-03-05T09:13:38Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -16993,6 +16993,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 313,
+          "title": "Fixing duplicate dependencies issues maven build",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/313",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/313",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-03-05T09:13:33Z",
+          "updated_at": "2025-03-05T09:18:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "714bc292a08036f0635f1bd02ea710b5f27582fd",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blueCopy",
+            "sha": "7b64cce99a1a4d5593c7e058f35fa15505aa7447",
+            "label": "ChinchuAjith:7.67.x-blueCopy"
+          },
+          "user": {
+            "login": "ChinchuAjith",
+            "avatar_url": "https://avatars.githubusercontent.com/u/191845114?v=4",
+            "html_url": "https://github.com/ChinchuAjith"
+          },
+          "checks": [
+            {
+              "id": 38225647915,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/13672424402/job/38225647915",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-03-05T09:17:50Z",
+              "completed_at": "2025-03-05T09:24:36Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 38225647891,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/13672424402/job/38225647891",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-05T09:17:50Z",
+              "completed_at": "2025-03-05T09:24:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34695375729,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/47/",
+              "conclusion": "failure",
+              "started_at": "2025-03-05T09:20:57Z",
+              "completed_at": "2025-03-05T09:20:57Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 312,
           "title": "Updating checks needed with Strimzi",
