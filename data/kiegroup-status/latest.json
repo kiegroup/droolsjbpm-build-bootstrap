@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-13T09:10:13.770Z",
+    "date": "2025-03-13T10:10:29.513Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13830920632"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13832069704"
   },
   "projects": [
     {
@@ -2613,6 +2613,90 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2562,
+          "title": "[7.67.x-blue] Removes duplicate Tomcat version property that is not needed anymore",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2562",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2562",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            },
+            {
+              "login": "RishiRajAnand",
+              "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+              "html_url": "https://github.com/RishiRajAnand"
+            }
+          ],
+          "created_at": "2025-03-13T09:24:55Z",
+          "updated_at": "2025-03-13T09:25:21Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "736358ef7e732e585f59b18bef18f420d0d5cfca",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-unnecessary-tomcat-property",
+            "sha": "1aa9c2905c3681e5579aababc78f128844c941d6",
+            "label": "baldimir:remove-unnecessary-tomcat-property"
+          },
+          "user": {
+            "login": "baldimir",
+            "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+            "html_url": "https://github.com/baldimir"
+          },
+          "checks": [
+            {
+              "id": 38695715658,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13831215796/job/38695715658",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-13T09:25:06Z",
+              "completed_at": "2025-03-13T09:25:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 38695715648,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13831215796/job/38695715648",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-13T09:25:06Z",
+              "completed_at": "2025-03-13T09:25:09Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 34887661967,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/376/",
+              "conclusion": "pending",
+              "started_at": "2025-03-13T09:25:23Z",
+              "completed_at": "2025-03-13T09:25:23Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 34887711035,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/203/",
+              "conclusion": "success",
+              "started_at": "2025-03-13T09:27:29Z",
+              "completed_at": "2025-03-13T09:27:29Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2561,
           "title": "Bump org.apache.tomcat:tomcat-catalina from 9.0.98 to 9.0.99",
