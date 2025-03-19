@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-19T19:07:40.197Z",
+    "date": "2025-03-19T20:10:33.872Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13954727211"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13955767952"
   },
   "projects": [
     {
@@ -2898,11 +2898,13 @@
         },
         {
           "number": 2560,
-          "title": "[DO-NOT-MERGE] Upgrade jackson-mapper-asl",
+          "title": "[DO_NOT_MERGE][7.67.x-blue] Upgrade jackson-mapper-asl",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2560",
           "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2560",
           "state": "open",
-          "labels": [],
+          "labels": [
+            "do_not_merge"
+          ],
           "draft": false,
           "requested_reviewers": [
             {
@@ -2912,7 +2914,7 @@
             }
           ],
           "created_at": "2025-03-04T07:45:57Z",
-          "updated_at": "2025-03-19T07:04:26Z",
+          "updated_at": "2025-03-19T20:07:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2964,22 +2966,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 35014262165,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/68/",
-              "conclusion": "failure",
-              "started_at": "2025-03-19T07:38:44Z",
-              "completed_at": "2025-03-19T07:38:44Z",
+              "id": 35035230267,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/382/",
+              "conclusion": "pending",
+              "started_at": "2025-03-19T20:06:52Z",
+              "completed_at": "2025-03-19T20:06:52Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 35016491929,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/381/",
-              "conclusion": "failure",
-              "started_at": "2025-03-19T09:33:38Z",
-              "completed_at": "2025-03-19T09:33:38Z",
+              "id": 35035243580,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/69/",
+              "conclusion": "pending",
+              "started_at": "2025-03-19T20:07:19Z",
+              "completed_at": "2025-03-19T20:07:19Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6663,7 +6665,7 @@
       "pullRequests": [
         {
           "number": 1442,
-          "title": "Upgrade jackson mapper",
+          "title": "[7.67.x-blue] Upgrade jackson mapper",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1442",
           "html_url": "https://github.com/kiegroup/appformer/pull/1442",
           "state": "open",
@@ -6677,7 +6679,7 @@
             }
           ],
           "created_at": "2025-03-04T07:30:34Z",
-          "updated_at": "2025-03-12T09:51:37Z",
+          "updated_at": "2025-03-19T20:05:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -11190,7 +11192,7 @@
       "pullRequests": [
         {
           "number": 2454,
-          "title": "Update resteasy-jackson-provider",
+          "title": "[7.67.x-blue] Update resteasy-jackson-provider",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2454",
           "html_url": "https://github.com/kiegroup/jbpm/pull/2454",
           "state": "open",
@@ -11204,7 +11206,7 @@
             }
           ],
           "created_at": "2025-03-05T08:16:04Z",
-          "updated_at": "2025-03-05T08:16:16Z",
+          "updated_at": "2025-03-19T20:05:01Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -13985,6 +13987,75 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3079,
+          "title": "[7.67.x-blue] Remove jackson-core-asl packages for CVE-2016-3720",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3079",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3079",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-03-19T20:02:45Z",
+          "updated_at": "2025-03-19T20:04:06Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "adedb93a1c3a9f2cbdf6781c00552e1ba7b33df5",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-jackson",
+            "sha": "1b607101705e82fa6356f2b1feb030c184d943c4",
+            "label": "RishiRajAnand:upgrade-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 39065937975,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/13955640935/job/39065937975",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-03-19T20:02:53Z",
+              "completed_at": "2025-03-19T20:10:17Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 39065937970,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/13955640935/job/39065937970",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-19T20:02:53Z",
+              "completed_at": "2025-03-19T20:10:10Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35035113313,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/172/",
+              "conclusion": "pending",
+              "started_at": "2025-03-19T20:02:49Z",
+              "completed_at": "2025-03-19T20:02:49Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3073,
           "title": "[7.67.x] [JBPM-10245] Make sure that thread is clean when commit/rollback",
@@ -20213,7 +20284,7 @@
             }
           ],
           "created_at": "2025-03-12T06:52:37Z",
-          "updated_at": "2025-03-19T10:40:44Z",
+          "updated_at": "2025-03-19T19:44:55Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -20223,7 +20294,7 @@
           },
           "head": {
             "ref": "input-validation",
-            "sha": "8b0c6d007bab0d9f645696abbd4b6c855e485426",
+            "sha": "417327e52430c97ffb0ffb4cb806d6855037c1da",
             "label": "RishiRajAnand:input-validation"
           },
           "user": {
@@ -20233,44 +20304,54 @@
           },
           "checks": [
             {
-              "id": 39016078123,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/13940431818/job/39016078123",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2025-03-19T06:38:51Z",
-              "completed_at": "2025-03-19T06:55:06Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 39016078117,
+              "id": 39064896150,
               "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/13940431818/job/39016078117",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/13955342595/job/39064896150",
               "status": "completed",
               "conclusion": "failure",
-              "started_at": "2025-03-19T06:38:52Z",
-              "completed_at": "2025-03-19T06:44:49Z",
+              "started_at": "2025-03-19T19:43:42Z",
+              "completed_at": "2025-03-19T19:59:16Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 35013850626,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/kie-wb-common-7.67.x-blue.fdb/34/",
+              "id": 39064896136,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/13955342595/job/39064896136",
+              "status": "completed",
               "conclusion": "failure",
-              "started_at": "2025-03-19T07:09:35Z",
-              "completed_at": "2025-03-19T07:09:35Z",
+              "started_at": "2025-03-19T19:43:41Z",
+              "completed_at": "2025-03-19T20:07:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35034598676,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/76/",
+              "conclusion": "pending",
+              "started_at": "2025-03-19T19:43:37Z",
+              "completed_at": "2025-03-19T19:43:37Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 35013904687,
-              "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/75/",
-              "conclusion": "failure",
-              "started_at": "2025-03-19T07:13:28Z",
-              "completed_at": "2025-03-19T07:13:28Z",
+              "id": 35034630624,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/kie-wb-common-7.67.x-blue.fdb/35/",
+              "conclusion": "pending",
+              "started_at": "2025-03-19T19:44:51Z",
+              "completed_at": "2025-03-19T19:44:51Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 35034633107,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/kie-wb-common-7.67.x-blue.compile/3/",
+              "conclusion": "pending",
+              "started_at": "2025-03-19T19:44:57Z",
+              "completed_at": "2025-03-19T19:44:57Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -22369,7 +22450,7 @@
       "pullRequests": [
         {
           "number": 1247,
-          "title": "Upgrade jackson-mapper-asl",
+          "title": "[7.67.x-blue] Upgrade jackson-mapper-asl",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1247",
           "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1247",
           "state": "open",
@@ -22383,7 +22464,7 @@
             }
           ],
           "created_at": "2025-03-04T07:14:04Z",
-          "updated_at": "2025-03-05T08:16:41Z",
+          "updated_at": "2025-03-19T20:04:53Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
