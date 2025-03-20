@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-20T11:08:18.929Z",
+    "date": "2025-03-20T12:17:54.666Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13967855850"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/13969086935"
   },
   "projects": [
     {
@@ -2914,7 +2914,7 @@
             }
           ],
           "created_at": "2025-03-04T07:45:57Z",
-          "updated_at": "2025-03-19T20:07:18Z",
+          "updated_at": "2025-03-20T11:18:48Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2966,22 +2966,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 35037501818,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/69/",
-              "conclusion": "failure",
-              "started_at": "2025-03-19T21:28:34Z",
-              "completed_at": "2025-03-19T21:28:34Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 35041631379,
               "name": "Linux - Full Downstream Build",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/382/",
               "conclusion": "failure",
               "started_at": "2025-03-20T01:37:33Z",
               "completed_at": "2025-03-20T01:37:33Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 35050260673,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/70/",
+              "conclusion": "pending",
+              "started_at": "2025-03-20T11:18:50Z",
+              "completed_at": "2025-03-20T11:18:50Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -6679,7 +6679,7 @@
             }
           ],
           "created_at": "2025-03-04T07:30:34Z",
-          "updated_at": "2025-03-19T20:05:10Z",
+          "updated_at": "2025-03-20T11:17:47Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -11206,7 +11206,7 @@
             }
           ],
           "created_at": "2025-03-05T08:16:04Z",
-          "updated_at": "2025-03-19T20:05:01Z",
+          "updated_at": "2025-03-20T11:17:52Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -14003,7 +14003,7 @@
             }
           ],
           "created_at": "2025-03-19T20:02:45Z",
-          "updated_at": "2025-03-19T20:04:06Z",
+          "updated_at": "2025-03-20T11:15:24Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17088,6 +17088,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 314,
+          "title": "[7.67.x-blue] Remove jackson-core-asl packages for CVE-2016-3720",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/314",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/314",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-03-20T11:15:08Z",
+          "updated_at": "2025-03-20T11:15:08Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "758f5c1a16a990b8c0c3c095682b107d881a16af",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-jackson",
+            "sha": "2a8a704d0a02bbf0dd41e9a8aa17aea921be131f",
+            "label": "RishiRajAnand:upgrade-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 39102747693,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/13967988841/job/39102747693",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-03-20T11:15:20Z",
+              "completed_at": "2025-03-20T11:20:31Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 39102747690,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/13967988841/job/39102747690",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-20T11:15:20Z",
+              "completed_at": "2025-03-20T11:20:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35050846464,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/48/",
+              "conclusion": "failure",
+              "started_at": "2025-03-20T11:44:18Z",
+              "completed_at": "2025-03-20T11:44:18Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 312,
           "title": "Updating checks needed with Strimzi",
@@ -20264,90 +20327,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
-          "number": 3835,
-          "title": "[7.67.x-blue] Adding input validation on name and description fields of project and spaces",
-          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3835",
-          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3835",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [
-            {
-              "login": "baldimir",
-              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
-              "html_url": "https://github.com/baldimir"
-            },
-            {
-              "login": "martinweiler",
-              "avatar_url": "https://avatars.githubusercontent.com/u/619410?v=4",
-              "html_url": "https://github.com/martinweiler"
-            }
-          ],
-          "created_at": "2025-03-12T06:52:37Z",
-          "updated_at": "2025-03-20T08:40:23Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "1b3784667f12af7e06c856bbc5edb148f5ffc18f",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "input-validation",
-            "sha": "907e01c833e9df01d7b76bd3eeacd00446904749",
-            "label": "RishiRajAnand:input-validation"
-          },
-          "user": {
-            "login": "RishiRajAnand",
-            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
-            "html_url": "https://github.com/RishiRajAnand"
-          },
-          "checks": [
-            {
-              "id": 39089127578,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/13963557493/job/39089127578",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2025-03-20T06:49:38Z",
-              "completed_at": "2025-03-20T06:57:16Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 39089127569,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/13963557493/job/39089127569",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2025-03-20T06:49:38Z",
-              "completed_at": "2025-03-20T07:05:11Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 35045846812,
-              "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/77/",
-              "conclusion": "success",
-              "started_at": "2025-03-20T07:56:55Z",
-              "completed_at": "2025-03-20T07:56:55Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 35046478798,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/kie-wb-common-7.67.x-blue.fdb/36/",
-              "conclusion": "success",
-              "started_at": "2025-03-20T08:35:05Z",
-              "completed_at": "2025-03-20T08:35:05Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 3834,
           "title": "LoggerConfig class compilation issue",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3834",
@@ -21016,7 +20995,7 @@
               "sha": "607b1ea3ecae345a9369807accaeec8da0aa5605"
             },
             {
-              "sha": "4c61ec00e3b9f96686e9238c1bd7102ea8d4807e"
+              "sha": "86d6c8e85e3f8829aa3c629f314bac27dbcd8aee"
             },
             {
               "sha": "a563cbaa000d0cda8655e1e7e80416adab2f2a07"
@@ -21028,25 +21007,25 @@
               "sha": "1b521eb6e3a2f26c3fa20eade80179b064a4adde"
             },
             {
-              "sha": "ab26353de1fef15a64b97e276c365f47f16d45cc"
+              "sha": "f635fbdfad28170a406653bd31a3a1f20c9c33f3"
             },
             {
-              "sha": "9ac3bfcda329b7e166fa086473ac75cae6225033"
+              "sha": "cf2ca668b34614493ad84a10c3870497198ed124"
             },
             {
               "sha": "bcc39ddc258ce3ce3d5d4fc734fa9f3ddc634c86"
             },
             {
-              "sha": "33e46b41ea3642838e1f000f3efe46cd79d141f2"
+              "sha": "73f93961cdef078a32069e2ad6fbd23ddf8b8ddc"
             },
             {
-              "sha": "bb7d532b2e8b86ff086088c79957718a4ed3db34"
+              "sha": "933756bee9c3448374180ed090c7c2b77a9b1691"
             },
             {
               "sha": "e308ffe3b08489c543a60159fe5b3b7766e2e05e"
             },
             {
-              "sha": "47ef83ca2e29665900beed6220faba1c3c565721"
+              "sha": "888f183fbd8ef9c5b5a4a70d9b18ff3ff49d12d9"
             },
             {
               "sha": "c980496ad4fa3e8c52a6cdf485e50fe2ae9b3121"
@@ -21055,13 +21034,13 @@
               "sha": "9897ba44f6e48c6b196f8013c97f3a7078a1ccec"
             },
             {
-              "sha": "a9aceda65ea238eeb21650adcd4a5ff6e42a015d"
+              "sha": "7e381aa8d86132a7935a7ee6164899a5f234fb2f"
             },
             {
               "sha": "29de5700a72cd2007c0d1b14915711501bc31430"
             },
             {
-              "sha": "591924e5e954aaa60ae1cdb08c82f080aad94c6e"
+              "sha": "957c972f9bd44e31aa3043fe4a91c6acbe6846e7"
             },
             {
               "sha": "6d5d7e8dc53ab3a32029b7739b8d70533381ebc5"
@@ -21071,6 +21050,9 @@
             },
             {
               "sha": "81e913dbdacca0cf6f32d109c367b866e4192a36"
+            },
+            {
+              "sha": "ee000aa3da533ae99aa943f8e7128ffd902fd363"
             },
             {
               "sha": "6003a7767787dc689552102e69615c0eb271f81d"
@@ -21371,9 +21353,6 @@
             },
             {
               "sha": "9d08e062e9c709088eea0c6873b91dd483b593d0"
-            },
-            {
-              "sha": "1aedb2c9b99e72492125ba3b9804f7e10e34a06b"
             }
           ]
         },
@@ -22454,7 +22433,7 @@
             }
           ],
           "created_at": "2025-03-04T07:14:04Z",
-          "updated_at": "2025-03-19T20:04:53Z",
+          "updated_at": "2025-03-20T11:17:59Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
