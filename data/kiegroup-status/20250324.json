@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-03-24T10:10:56.147Z",
+    "date": "2025-03-24T11:08:22.394Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14032568703"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14033711567"
   },
   "projects": [
     {
@@ -2614,6 +2614,80 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2564,
+          "title": "Update Jenkinsfile.buildchain",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2564",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2564",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-03-24T10:58:18Z",
+          "updated_at": "2025-03-24T10:58:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "ea9119670babfa3137ba89cbff481359da46ea1d",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "jenkinsfile-nodejs-20",
+            "sha": "9d281adc5e4eaee62e98993bce18eccca18b7159",
+            "label": "kiegroup:jenkinsfile-nodejs-20"
+          },
+          "user": {
+            "login": "mareknovotny",
+            "avatar_url": "https://avatars.githubusercontent.com/u/177257?v=4",
+            "html_url": "https://github.com/mareknovotny"
+          },
+          "checks": [
+            {
+              "id": 39286270126,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14033520207/job/39286270126",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-03-24T10:58:33Z",
+              "completed_at": "2025-03-24T10:58:42Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 39286270109,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14033520207/job/39286270109",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-03-24T10:58:33Z",
+              "completed_at": "2025-03-24T10:58:41Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 39286263296,
+              "name": "os-prep",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14033520207/job/39286263296",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-03-24T10:58:25Z",
+              "completed_at": "2025-03-24T10:58:29Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35117601116,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/916/",
+              "conclusion": "failure",
+              "started_at": "2025-03-24T10:59:41Z",
+              "completed_at": "2025-03-24T10:59:41Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2562,
           "title": "[7.67.x-blue] Removes duplicate Tomcat version property that is not needed anymore",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2562",
@@ -2710,7 +2784,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-03-10T22:51:08Z",
-          "updated_at": "2025-03-10T22:51:09Z",
+          "updated_at": "2025-03-24T10:45:18Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -2893,6 +2967,26 @@
               "completed_at": "2025-03-10T22:51:12Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35117267319,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-build-bootstrap-main.pr/915/",
+              "conclusion": "failure",
+              "started_at": "2025-03-24T10:46:03Z",
+              "completed_at": "2025-03-24T10:46:03Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 35117276863,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/main/job/fdb/job/droolsjbpm-build-bootstrap-main.fdb/787/",
+              "conclusion": "failure",
+              "started_at": "2025-03-24T10:46:26Z",
+              "completed_at": "2025-03-24T10:46:26Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
           ]
         },
