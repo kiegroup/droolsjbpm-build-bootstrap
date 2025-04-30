@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-04-30T12:18:10.234Z",
+    "date": "2025-04-30T13:21:22.146Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14754353113"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/14755599609"
   },
   "projects": [
     {
@@ -14451,6 +14451,69 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-integration",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 3080,
+          "title": "Adding debug information to kiespringtransactionmanager",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3080",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3080",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-04-30T12:26:18Z",
+          "updated_at": "2025-04-30T12:26:18Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "main",
+            "sha": "c9c00f8b3aec4208ae94193b2af4c023e64bc414",
+            "label": "kiegroup:main"
+          },
+          "head": {
+            "ref": "adding_debug_info",
+            "sha": "fedc4ffc3ae2ed4ed447f2fd3108324d1f91a111",
+            "label": "fjtirado:adding_debug_info"
+          },
+          "user": {
+            "login": "fjtirado",
+            "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+            "html_url": "https://github.com/fjtirado"
+          },
+          "checks": [
+            {
+              "id": 41419405448,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/14754520662/job/41419405448",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-04-30T12:26:27Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 41419405436,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/14754520662/job/41419405436",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-04-30T12:26:25Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 35954865811,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/main/job/pullrequest/job/droolsjbpm-integration-main.pr/1249/",
+              "conclusion": "pending",
+              "started_at": "2025-04-30T12:26:22Z",
+              "completed_at": "2025-04-30T12:26:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 3079,
           "title": "[7.67.x-blue] Remove jackson-core-asl packages for CVE-2016-3720",
