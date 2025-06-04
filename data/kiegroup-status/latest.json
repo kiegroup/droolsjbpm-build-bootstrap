@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-04T19:08:26.235Z",
+    "date": "2025-06-04T20:09:07.889Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15450627285"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15451704296"
   },
   "projects": [
     {
@@ -2613,6 +2613,89 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2571,
+          "title": "Upgrade tomcat CVE related",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2571",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2571",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-06-04T19:57:15Z",
+          "updated_at": "2025-06-04T20:00:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5ccdf14a590fdc57077dcc093ecb7fed33be184c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-tomcat-cve",
+            "sha": "a6efe34ca188acef8fe9bcb750b83c6673b5be8e",
+            "label": "LightGuard:upgrade-tomcat-cve"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 43494456968,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15451495222/job/43494456968",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-04T19:57:23Z",
+              "completed_at": "2025-06-04T19:58:39Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43494456964,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15451495222/job/43494456964",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-04T19:57:24Z",
+              "completed_at": "2025-06-04T19:58:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36746815868,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/387/",
+              "conclusion": "pending",
+              "started_at": "2025-06-04T19:57:31Z",
+              "completed_at": "2025-06-04T19:57:31Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36746892265,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/76/",
+              "conclusion": "pending",
+              "started_at": "2025-06-04T20:00:19Z",
+              "completed_at": "2025-06-04T20:00:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36746967221,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/207/",
+              "conclusion": "success",
+              "started_at": "2025-06-04T20:02:54Z",
+              "completed_at": "2025-06-04T20:02:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2570,
           "title": "Upgrading logback and slf4j due to CVE",
@@ -14011,6 +14094,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3081,
+          "title": "Updating Tomcat to latest v9 CVE related",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3081",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3081",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-06-04T19:56:41Z",
+          "updated_at": "2025-06-04T19:56:41Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "adedb93a1c3a9f2cbdf6781c00552e1ba7b33df5",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-tomcat-cve",
+            "sha": "a9ae7bbead01bb4f90f744a1fb7ffde7f73595d3",
+            "label": "LightGuard:upgrade-tomcat-cve"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 43494425406,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/15451486911/job/43494425406",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-04T19:56:48Z",
+              "completed_at": "2025-06-04T20:01:28Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43494425398,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/15451486911/job/43494425398",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-06-04T19:56:50Z",
+              "completed_at": "2025-06-04T20:01:33Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36746794539,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/173/",
+              "conclusion": "pending",
+              "started_at": "2025-06-04T19:56:45Z",
+              "completed_at": "2025-06-04T19:56:45Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3080,
           "title": "Adding debug information to kiespringtransactionmanager",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3080",
@@ -17141,6 +17287,69 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 315,
+          "title": "Updating to latest tomcat v9 CVE related",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/315",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/315",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-06-04T19:55:59Z",
+          "updated_at": "2025-06-04T19:55:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "758f5c1a16a990b8c0c3c095682b107d881a16af",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-tomcat-cve",
+            "sha": "bc978a56802c4678bf2bbdc1f4b5b12da97d50cb",
+            "label": "LightGuard:upgrade-tomcat-cve"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 43494387696,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15451476219/job/43494387696",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-06-04T19:56:08Z",
+              "completed_at": "2025-06-04T20:05:46Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43494387684,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15451476219/job/43494387684",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-04T19:56:09Z",
+              "completed_at": "2025-06-04T20:05:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36746775397,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/49/",
+              "conclusion": "pending",
+              "started_at": "2025-06-04T19:56:05Z",
+              "completed_at": "2025-06-04T19:56:05Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 314,
           "title": "[7.67.x-blue] Remove jackson-core-asl packages for CVE-2016-3720",
