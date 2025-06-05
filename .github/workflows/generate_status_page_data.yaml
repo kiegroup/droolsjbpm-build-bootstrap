@@ -3,7 +3,7 @@ name: Generate status page data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */3 * * *'
 jobs:
   generate-status-page-data:
     if: github.repository_owner == 'kiegroup'
