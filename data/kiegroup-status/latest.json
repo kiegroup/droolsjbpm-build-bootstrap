@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-06T09:27:55.636Z",
+    "date": "2025-06-06T12:52:19.940Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15487352477"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15490979751"
   },
   "projects": [
     {
@@ -2613,6 +2613,112 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2575,
+          "title": "Update strimzi-test-container to run valid kafka version 3.7.1",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2575",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2575",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            },
+            {
+              "login": "RishiRajAnand",
+              "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+              "html_url": "https://github.com/RishiRajAnand"
+            }
+          ],
+          "created_at": "2025-06-06T11:52:41Z",
+          "updated_at": "2025-06-06T11:53:33Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5ccdf14a590fdc57077dcc093ecb7fed33be184c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "update-docker-java",
+            "sha": "fd89d18a313c3354368594388bc57cf25bdd3117",
+            "label": "akumar074:update-docker-java"
+          },
+          "user": {
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
+          },
+          "checks": [
+            {
+              "id": 43612784220,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15489896609/job/43612784220",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-06T11:52:52Z",
+              "completed_at": "2025-06-06T11:54:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43612784218,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15489896609/job/43612784218",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-06T11:52:51Z",
+              "completed_at": "2025-06-06T11:54:20Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43612689550,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15489866532/job/43612689550",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-06T11:51:03Z",
+              "completed_at": "2025-06-06T11:52:23Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43612689543,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15489866532/job/43612689543",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-06T11:51:03Z",
+              "completed_at": "2025-06-06T11:52:30Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36793957488,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/388/",
+              "conclusion": "pending",
+              "started_at": "2025-06-06T11:53:35Z",
+              "completed_at": "2025-06-06T11:53:35Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36794011142,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/209/",
+              "conclusion": "success",
+              "started_at": "2025-06-06T11:56:13Z",
+              "completed_at": "2025-06-06T11:56:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2573,
           "title": "Bump io.github.bonigarcia:webdrivermanager from 5.0.3 to 6.1.0",
@@ -17970,7 +18076,7 @@
             }
           ],
           "created_at": "2025-06-06T07:50:28Z",
-          "updated_at": "2025-06-06T07:52:49Z",
+          "updated_at": "2025-06-06T11:53:20Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -17980,7 +18086,7 @@
           },
           "head": {
             "ref": "update-docker-java",
-            "sha": "7e0ce2d76d9c585e641d72c3e9ecae4f06bde718",
+            "sha": "fd79f763b8b22ddf946eef40b0cd6b48af193e0f",
             "label": "akumar074:update-docker-java"
           },
           "user": {
@@ -17990,44 +18096,44 @@
           },
           "checks": [
             {
-              "id": 43599423254,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15485584710/job/43599423254",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2025-06-06T07:50:36Z",
-              "completed_at": "2025-06-06T07:58:17Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 43599423251,
+              "id": 43609118038,
               "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15485584710/job/43599423251",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15488694618/job/43609118038",
               "status": "completed",
               "conclusion": "cancelled",
-              "started_at": "2025-06-06T07:50:37Z",
-              "completed_at": "2025-06-06T07:58:23Z",
+              "started_at": "2025-06-06T10:42:28Z",
+              "completed_at": "2025-06-06T10:49:06Z",
               "slug": "github-actions",
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 36789347658,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-work-items-7.67.x-blue.fdb/22/",
+              "id": 43609118034,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15488694618/job/43609118034",
+              "status": "completed",
               "conclusion": "failure",
-              "started_at": "2025-06-06T08:08:41Z",
-              "completed_at": "2025-06-06T08:08:41Z",
+              "started_at": "2025-06-06T10:42:28Z",
+              "completed_at": "2025-06-06T10:49:00Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36792595401,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-work-items-7.67.x-blue.fdb/23/",
+              "conclusion": "pending",
+              "started_at": "2025-06-06T10:42:36Z",
+              "completed_at": "2025-06-06T10:42:36Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 36789386927,
+              "id": 36794441037,
               "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/50/",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/52/",
               "conclusion": "failure",
-              "started_at": "2025-06-06T08:10:32Z",
-              "completed_at": "2025-06-06T08:10:32Z",
+              "started_at": "2025-06-06T12:16:50Z",
+              "completed_at": "2025-06-06T12:16:50Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
