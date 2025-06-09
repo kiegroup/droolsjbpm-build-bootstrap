@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-09T06:38:55.963Z",
+    "date": "2025-06-09T09:28:56.716Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15528451109"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15531347431"
   },
   "projects": [
     {
@@ -2614,6 +2614,137 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2577,
+          "title": "Remove JDK8 PR build",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2577",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2577",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            }
+          ],
+          "created_at": "2025-06-09T09:23:18Z",
+          "updated_at": "2025-06-09T09:23:24Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5ccdf14a590fdc57077dcc093ecb7fed33be184c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-jdk8-build",
+            "sha": "a9c7bed7ce7e9a05c8e722234b0e59d8cd092dbd",
+            "label": "RishiRajAnand:remove-jdk8-build"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 43720543840,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15531256628/job/43720543840",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-09T09:23:26Z",
+              "completed_at": "2025-06-09T09:24:49Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36827820319,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/210/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T09:23:22Z",
+              "completed_at": "2025-06-09T09:23:22Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 2576,
+          "title": "[7.67.x-blue] upgrade wildfly core version from 17.0.0.Final to 22.0.0.Final",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2576",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2576",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-06-09T07:20:27Z",
+          "updated_at": "2025-06-09T07:47:28Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5ccdf14a590fdc57077dcc093ecb7fed33be184c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade_wildfly_controller",
+            "sha": "1e2fba5f31fa4f53951d11cee89761f3ca4964c9",
+            "label": "AthiraHari77:upgrade_wildfly_controller"
+          },
+          "user": {
+            "login": "AthiraHari77",
+            "avatar_url": "https://avatars.githubusercontent.com/u/183633843?v=4",
+            "html_url": "https://github.com/AthiraHari77"
+          },
+          "checks": [
+            {
+              "id": 43714734803,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15529110154/job/43714734803",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-09T07:35:35Z",
+              "completed_at": "2025-06-09T07:37:02Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43714734787,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15529110154/job/43714734787",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-09T07:35:35Z",
+              "completed_at": "2025-06-09T07:37:07Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36825905131,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/390/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T07:35:13Z",
+              "completed_at": "2025-06-09T07:35:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36827640315,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/78/",
+              "conclusion": "failure",
+              "started_at": "2025-06-09T09:14:07Z",
+              "completed_at": "2025-06-09T09:14:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2575,
           "title": "Update strimzi-test-container to run valid kafka version 3.7.1",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2575",
@@ -3391,7 +3522,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-06-04T19:57:15Z",
-          "updated_at": "2025-06-06T21:11:46Z",
+          "updated_at": "2025-06-09T07:42:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7472,6 +7603,163 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1445,
+          "title": "Remove jdk8 PR build",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1445",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1445",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            }
+          ],
+          "created_at": "2025-06-09T09:18:07Z",
+          "updated_at": "2025-06-09T09:19:05Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "446d6d735b77c5562e9807908508dec139880e18",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-jdk8-build",
+            "sha": "607f162e7bd81691c98af7f2e94e61d24cd50814",
+            "label": "RishiRajAnand:remove-jdk8-build"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 43720261166,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15531160792/job/43720261166",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-06-09T09:18:19Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36827718872,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/73/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T09:18:12Z",
+              "completed_at": "2025-06-09T09:18:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36827718875,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/118/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T09:18:12Z",
+              "completed_at": "2025-06-09T09:18:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
+          "number": 1444,
+          "title": "Upgrade Angular to 1.8.0",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1444",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1444",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            }
+          ],
+          "created_at": "2025-06-09T08:45:09Z",
+          "updated_at": "2025-06-09T08:51:34Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "446d6d735b77c5562e9807908508dec139880e18",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "angular-upgrade",
+            "sha": "439abc650c624d4a3159b330259d76aad0aefe74",
+            "label": "RishiRajAnand:angular-upgrade"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 43718378161,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15530547653/job/43718378161",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-09T08:45:28Z",
+              "completed_at": "2025-06-09T08:49:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43718378145,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15530547653/job/43718378145",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-09T08:45:18Z",
+              "completed_at": "2025-06-09T09:28:56Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36827081054,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/117/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T08:45:13Z",
+              "completed_at": "2025-06-09T08:45:13Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36827115994,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/103/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T08:47:12Z",
+              "completed_at": "2025-06-09T08:47:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36827856702,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/72/",
+              "conclusion": "success",
+              "started_at": "2025-06-09T09:25:09Z",
+              "completed_at": "2025-06-09T09:25:09Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1442,
           "title": "[7.67.x-blue] Upgrade jackson mapper",
@@ -14871,7 +15159,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-06-04T19:56:41Z",
-          "updated_at": "2025-06-04T19:56:41Z",
+          "updated_at": "2025-06-09T07:43:35Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18065,7 +18353,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-06-06T22:01:42Z",
-          "updated_at": "2025-06-06T22:01:42Z",
+          "updated_at": "2025-06-09T07:47:16Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18139,7 +18427,7 @@
             }
           ],
           "created_at": "2025-06-06T07:50:28Z",
-          "updated_at": "2025-06-09T04:51:10Z",
+          "updated_at": "2025-06-09T07:57:45Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -18191,12 +18479,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 36824256706,
+              "id": 36826661005,
               "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/55/",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/56/",
               "conclusion": "failure",
-              "started_at": "2025-06-09T05:16:05Z",
-              "completed_at": "2025-06-09T05:16:05Z",
+              "started_at": "2025-06-09T08:21:14Z",
+              "completed_at": "2025-06-09T08:21:14Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -18212,7 +18500,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-06-04T19:55:59Z",
-          "updated_at": "2025-06-04T19:55:59Z",
+          "updated_at": "2025-06-09T07:44:07Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
