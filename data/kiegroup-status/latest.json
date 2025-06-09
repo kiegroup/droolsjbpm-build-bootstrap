@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-09T18:35:07.722Z",
+    "date": "2025-06-09T21:24:56.972Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15541852602"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15544954722"
   },
   "projects": [
     {
@@ -2614,6 +2614,95 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
         {
+          "number": 2580,
+          "title": "Updating commons-io to latest",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2580",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2580",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-06-09T20:48:36Z",
+          "updated_at": "2025-06-09T20:49:12Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5ccdf14a590fdc57077dcc093ecb7fed33be184c",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-commons-io-cve",
+            "sha": "99c9001183cf8ca227ada9b0d3d1473ca5a3ea1b",
+            "label": "LightGuard:upgrade-commons-io-cve"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 43762313717,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15544329719/job/43762313717",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-09T20:48:44Z",
+              "completed_at": "2025-06-09T20:50:04Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43762313715,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15544329719/job/43762313715",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-09T20:48:44Z",
+              "completed_at": "2025-06-09T20:50:05Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36844798039,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/84/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T20:49:07Z",
+              "completed_at": "2025-06-09T20:49:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36844801520,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/394/",
+              "conclusion": "pending",
+              "started_at": "2025-06-09T20:49:14Z",
+              "completed_at": "2025-06-09T20:49:14Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36844934149,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/213/",
+              "conclusion": "success",
+              "started_at": "2025-06-09T20:53:06Z",
+              "completed_at": "2025-06-09T20:53:06Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 2579,
           "title": "[7.67.x-blue] Update `apache-poi` and related dependencies",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2579",
@@ -2760,16 +2849,6 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
             },
             {
-              "id": 36835006715,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/391/",
-              "conclusion": "pending",
-              "started_at": "2025-06-09T14:53:54Z",
-              "completed_at": "2025-06-09T14:53:54Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
               "id": 36835083087,
               "name": "Linux - Pull Request",
               "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/211/",
@@ -2786,6 +2865,16 @@
               "conclusion": "failure",
               "started_at": "2025-06-09T17:00:08Z",
               "completed_at": "2025-06-09T17:00:08Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36843733037,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/391/",
+              "conclusion": "failure",
+              "started_at": "2025-06-09T20:07:48Z",
+              "completed_at": "2025-06-09T20:07:48Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -18585,6 +18674,75 @@
       "repo_url": "https://github.com/kiegroup/jbpm-work-items",
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 319,
+          "title": "Updating commons-io to latest",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-work-items/pulls/319",
+          "html_url": "https://github.com/kiegroup/jbpm-work-items/pull/319",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-06-09T20:48:13Z",
+          "updated_at": "2025-06-09T20:48:44Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "758f5c1a16a990b8c0c3c095682b107d881a16af",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "upgrade-commons-io-cve",
+            "sha": "4bed229ac9fc1d1bb508c5aefbc63b0a64632e79",
+            "label": "LightGuard:upgrade-commons-io-cve"
+          },
+          "user": {
+            "login": "LightGuard",
+            "avatar_url": "https://avatars.githubusercontent.com/u/29971?v=4",
+            "html_url": "https://github.com/LightGuard"
+          },
+          "checks": [
+            {
+              "id": 43762293841,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15544323013/job/43762293841",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-06-09T20:48:24Z",
+              "completed_at": "2025-06-09T20:52:32Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43762293808,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-work-items/actions/runs/15544323013/job/43762293808",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-09T20:48:24Z",
+              "completed_at": "2025-06-09T20:52:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36845530166,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-work-items-7.67.x-blue.pr/59/",
+              "conclusion": "failure",
+              "started_at": "2025-06-09T21:15:19Z",
+              "completed_at": "2025-06-09T21:15:19Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 318,
           "title": "Remove jdk8",
