@@ -4659,6 +4659,12 @@
         <groupId>org.jboss</groupId>
         <artifactId>jboss-remote-naming</artifactId>
         <version>${version.org.jboss.remote-naming}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.remoting</groupId>
+            <artifactId>jboss-remoting</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.jboss.arquillian.container</groupId>
