@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-10T03:51:32.903Z",
+    "date": "2025-06-10T06:37:21.783Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15550130133"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15552363770"
   },
   "projects": [
     {
@@ -7876,6 +7876,105 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1446,
+          "title": "DBACLD-177448: CVE logback-core-1.2.11.jar",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1446",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1446",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            },
+            {
+              "login": "yesamer",
+              "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+              "html_url": "https://github.com/yesamer"
+            },
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            }
+          ],
+          "created_at": "2025-06-10T05:36:53Z",
+          "updated_at": "2025-06-10T06:33:59Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "446d6d735b77c5562e9807908508dec139880e18",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "update-logback-classic",
+            "sha": "a9fbca6a3d10289a6e09e9db7dd0ec3a76966453",
+            "label": "alishaaaqil:update-logback-classic"
+          },
+          "user": {
+            "login": "alishaaaqil",
+            "avatar_url": "https://avatars.githubusercontent.com/u/33259378?v=4",
+            "html_url": "https://github.com/alishaaaqil"
+          },
+          "checks": [
+            {
+              "id": 43783065195,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15551455749/job/43783065195",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-10T05:46:44Z",
+              "completed_at": "2025-06-10T06:28:40Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 43783065185,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15551455749/job/43783065185",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-06-10T05:46:44Z",
+              "completed_at": "2025-06-10T05:54:54Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36852813313,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/74/",
+              "conclusion": "pending",
+              "started_at": "2025-06-10T05:55:50Z",
+              "completed_at": "2025-06-10T05:55:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36853383262,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/119/",
+              "conclusion": "pending",
+              "started_at": "2025-06-10T06:32:31Z",
+              "completed_at": "2025-06-10T06:32:31Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36853389606,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/105/",
+              "conclusion": "pending",
+              "started_at": "2025-06-10T06:32:55Z",
+              "completed_at": "2025-06-10T06:32:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1445,
           "title": "Remove jdk8 PR build",
