@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-13T06:37:32.748Z",
+    "date": "2025-06-13T09:28:22.576Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15628145738"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15631256517"
   },
   "projects": [
     {
@@ -2613,6 +2613,79 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2586,
+          "title": "update jboss-ejb-client",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2586",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2586",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-06-13T06:44:28Z",
+          "updated_at": "2025-06-13T06:46:04Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "5e63aebaf3d23df50abcf5bbb57166fca99253e8",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "update-jboss-ejb-client",
+            "sha": "f9977c3bb077a8d5917beea044f2b96f714e3e57",
+            "label": "alishaaaqil:update-jboss-ejb-client"
+          },
+          "user": {
+            "login": "alishaaaqil",
+            "avatar_url": "https://avatars.githubusercontent.com/u/33259378?v=4",
+            "html_url": "https://github.com/alishaaaqil"
+          },
+          "checks": [
+            {
+              "id": 44026592137,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15628264811/job/44026592137",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-13T06:45:14Z",
+              "completed_at": "2025-06-13T06:46:45Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 44026592132,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15628264811/job/44026592132",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2025-06-13T06:45:16Z",
+              "completed_at": "2025-06-13T06:46:38Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36949231930,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/423/",
+              "conclusion": "pending",
+              "started_at": "2025-06-13T06:46:07Z",
+              "completed_at": "2025-06-13T06:46:07Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36949306783,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/222/",
+              "conclusion": "success",
+              "started_at": "2025-06-13T06:51:12Z",
+              "completed_at": "2025-06-13T06:51:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2585,
           "title": "[7.67.x-blue] Upgrade netty handler version to 4.1.118.Final",
@@ -8319,6 +8392,95 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1448,
+          "title": "[7.67.x-blue] flaky test fixed",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1448",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1448",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
+          "created_at": "2025-06-13T08:13:24Z",
+          "updated_at": "2025-06-13T08:57:46Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "0bc4d4594cd4c30d09c9271e0f1a651b80ee73f2",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-blue-flaky-test",
+            "sha": "28369b5fe32f6a939447eef2dec1b5a15679f599",
+            "label": "yesamer:7.67.x-blue-flaky-test"
+          },
+          "user": {
+            "login": "yesamer",
+            "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+            "html_url": "https://github.com/yesamer"
+          },
+          "checks": [
+            {
+              "id": 44034446829,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15629818233/job/44034446829",
+              "status": "completed",
+              "conclusion": "cancelled",
+              "started_at": "2025-06-13T08:13:34Z",
+              "completed_at": "2025-06-13T08:16:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 44034446823,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15629818233/job/44034446823",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-06-13T09:04:02Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 36951988840,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/76/",
+              "conclusion": "success",
+              "started_at": "2025-06-13T09:06:50Z",
+              "completed_at": "2025-06-13T09:06:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36952038249,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/108/",
+              "conclusion": "failure",
+              "started_at": "2025-06-13T09:08:56Z",
+              "completed_at": "2025-06-13T09:08:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 36952378380,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/123/",
+              "conclusion": "failure",
+              "started_at": "2025-06-13T09:23:59Z",
+              "completed_at": "2025-06-13T09:23:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1447,
           "title": "Updating commons-io to latest",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1447",
@@ -8407,7 +8569,7 @@
             }
           ],
           "created_at": "2025-06-09T09:18:07Z",
-          "updated_at": "2025-06-10T11:27:35Z",
+          "updated_at": "2025-06-13T08:14:41Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
