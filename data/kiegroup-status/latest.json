@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-20T03:50:19.372Z",
+    "date": "2025-06-20T06:37:25.457Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15770795128"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15772866760"
   },
   "projects": [
     {
@@ -2621,9 +2621,15 @@
           "state": "open",
           "labels": [],
           "draft": false,
-          "requested_reviewers": [],
+          "requested_reviewers": [
+            {
+              "login": "baldimir",
+              "avatar_url": "https://avatars.githubusercontent.com/u/125682?v=4",
+              "html_url": "https://github.com/baldimir"
+            }
+          ],
           "created_at": "2025-06-19T10:53:01Z",
-          "updated_at": "2025-06-19T11:09:32Z",
+          "updated_at": "2025-06-20T05:38:33Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3022,7 +3028,7 @@
             }
           ],
           "created_at": "2025-06-16T05:37:08Z",
-          "updated_at": "2025-06-19T14:21:15Z",
+          "updated_at": "2025-06-20T04:30:55Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3190,7 +3196,7 @@
             }
           ],
           "created_at": "2025-06-11T10:10:51Z",
-          "updated_at": "2025-06-19T09:04:53Z",
+          "updated_at": "2025-06-20T05:39:20Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -3879,7 +3885,7 @@
           "draft": false,
           "requested_reviewers": [],
           "created_at": "2025-06-09T15:13:33Z",
-          "updated_at": "2025-06-19T14:28:27Z",
+          "updated_at": "2025-06-20T05:37:45Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8281,6 +8287,89 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1449,
+          "title": "[7.67.x-blue] Remove netty-common from artemis-jms-client",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1449",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1449",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "yesamer",
+              "avatar_url": "https://avatars.githubusercontent.com/u/16005046?v=4",
+              "html_url": "https://github.com/yesamer"
+            },
+            {
+              "login": "RishiRajAnand",
+              "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+              "html_url": "https://github.com/RishiRajAnand"
+            }
+          ],
+          "created_at": "2025-06-20T06:13:43Z",
+          "updated_at": "2025-06-20T06:13:56Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "4d827a296e5fb21af4ca83a13d1001a2f5e3c4b8",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "netty-common-177451",
+            "sha": "62463e82e6ba0f3429278c93e61d53c1cd7d2c11",
+            "label": "akumar074:netty-common-177451"
+          },
+          "user": {
+            "login": "akumar074",
+            "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+            "html_url": "https://github.com/akumar074"
+          },
+          "checks": [
+            {
+              "id": 44459948970,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15772530033/job/44459948970",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-06-20T06:13:51Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37109698056,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/78/",
+              "conclusion": "pending",
+              "started_at": "2025-06-20T06:13:47Z",
+              "completed_at": "2025-06-20T06:13:47Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37109700144,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/113/",
+              "conclusion": "pending",
+              "started_at": "2025-06-20T06:13:56Z",
+              "completed_at": "2025-06-20T06:13:56Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37109700757,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/132/",
+              "conclusion": "pending",
+              "started_at": "2025-06-20T06:13:59Z",
+              "completed_at": "2025-06-20T06:13:59Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1447,
           "title": "Updating commons-io to latest",
