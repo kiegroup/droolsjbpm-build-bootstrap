@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-06-30T09:30:32.571Z",
+    "date": "2025-06-30T12:54:47.229Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15969204127"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/15973472536"
   },
   "projects": [
     {
@@ -5305,7 +5305,7 @@
             }
           ],
           "created_at": "2025-03-04T07:45:57Z",
-          "updated_at": "2025-06-30T08:24:48Z",
+          "updated_at": "2025-06-30T11:19:27Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -5367,12 +5367,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 37324411914,
+              "id": 37330038122,
               "name": "Linux - Compile Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/137/",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/138/",
               "conclusion": "failure",
-              "started_at": "2025-06-30T08:58:46Z",
-              "completed_at": "2025-06-30T08:58:46Z",
+              "started_at": "2025-06-30T12:46:37Z",
+              "completed_at": "2025-06-30T12:46:37Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -7927,6 +7927,78 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1452,
+          "title": "Draft: FDB test",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1452",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1452",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-06-30T12:11:48Z",
+          "updated_at": "2025-06-30T12:15:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "48a7561474ee921bbaf8a20a6c6e0675e0544fdd",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "7.67.x-fdb-test",
+            "sha": "b854940defe1fa648e59a51e4995c8f6827a7ab7",
+            "label": "cimbalek:7.67.x-fdb-test"
+          },
+          "user": {
+            "login": "cimbalek",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12131154?v=4",
+            "html_url": "https://github.com/cimbalek"
+          },
+          "checks": [
+            {
+              "id": 45046848167,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/15972546165/job/45046848167",
+              "status": "in_progress",
+              "conclusion": null,
+              "started_at": "2025-06-30T12:11:56Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37329131421,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/157/",
+              "conclusion": "pending",
+              "started_at": "2025-06-30T12:11:54Z",
+              "completed_at": "2025-06-30T12:11:54Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37329218536,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/142/",
+              "conclusion": "pending",
+              "started_at": "2025-06-30T12:15:20Z",
+              "completed_at": "2025-06-30T12:15:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37330251832,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/89/",
+              "conclusion": "failure",
+              "started_at": "2025-06-30T12:54:20Z",
+              "completed_at": "2025-06-30T12:54:20Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1450,
           "title": "Upgrade react-router-dom to get rid of its babel/runtime dependency.",
           "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1450",
@@ -7942,7 +8014,7 @@
             }
           ],
           "created_at": "2025-06-23T12:20:25Z",
-          "updated_at": "2025-06-30T07:25:33Z",
+          "updated_at": "2025-06-30T11:36:10Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -7993,12 +8065,12 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 37323496544,
+              "id": 37328293926,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/136/",
-              "conclusion": "failure",
-              "started_at": "2025-06-30T08:21:30Z",
-              "completed_at": "2025-06-30T08:21:30Z",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/141/",
+              "conclusion": "pending",
+              "started_at": "2025-06-30T11:36:14Z",
+              "completed_at": "2025-06-30T11:36:14Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8025,7 +8097,7 @@
             }
           ],
           "created_at": "2025-06-20T06:13:43Z",
-          "updated_at": "2025-06-30T07:26:47Z",
+          "updated_at": "2025-06-30T12:22:57Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -8066,22 +8138,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 37322920093,
+              "id": 37329409622,
               "name": "Linux - Compile Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/155/",
-              "conclusion": "failure",
-              "started_at": "2025-06-30T07:56:26Z",
-              "completed_at": "2025-06-30T07:56:26Z",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/158/",
+              "conclusion": "pending",
+              "started_at": "2025-06-30T12:23:02Z",
+              "completed_at": "2025-06-30T12:23:02Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 37323518139,
+              "id": 37329733649,
               "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/137/",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/143/",
               "conclusion": "failure",
-              "started_at": "2025-06-30T08:22:29Z",
-              "completed_at": "2025-06-30T08:22:29Z",
+              "started_at": "2025-06-30T12:35:08Z",
+              "completed_at": "2025-06-30T12:35:08Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -8311,22 +8383,22 @@
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 37324550277,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/140/",
-              "conclusion": "pending",
-              "started_at": "2025-06-30T09:03:58Z",
-              "completed_at": "2025-06-30T09:03:58Z",
+              "id": 37325379994,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/156/",
+              "conclusion": "failure",
+              "started_at": "2025-06-30T09:34:29Z",
+              "completed_at": "2025-06-30T09:34:29Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             },
             {
-              "id": 37324552006,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/156/",
-              "conclusion": "pending",
-              "started_at": "2025-06-30T09:04:03Z",
-              "completed_at": "2025-06-30T09:04:03Z",
+              "id": 37326116276,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/appformer-7.67.x-blue.fdb/140/",
+              "conclusion": "failure",
+              "started_at": "2025-06-30T10:02:49Z",
+              "completed_at": "2025-06-30T10:02:49Z",
               "slug": true,
               "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
             }
@@ -12951,89 +13023,6 @@
           ]
         },
         {
-          "number": 2463,
-          "title": "[7.67.x-blue] Upgrade netty handler version to 4.1.118.Final ",
-          "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2463",
-          "html_url": "https://github.com/kiegroup/jbpm/pull/2463",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2025-06-16T10:52:15Z",
-          "updated_at": "2025-06-30T09:27:30Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "49df4b7f574f28bcd87ca806d0aff97966deacf5",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "upgrade_netty_handler",
-            "sha": "d7c8313c26dee2fcdce1597bf483d3805151e638",
-            "label": "AthiraHari77:upgrade_netty_handler"
-          },
-          "user": {
-            "login": "AthiraHari77",
-            "avatar_url": "https://avatars.githubusercontent.com/u/183633843?v=4",
-            "html_url": "https://github.com/AthiraHari77"
-          },
-          "checks": [
-            {
-              "id": 45036277438,
-              "name": "ubuntu-latest - Java 8 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/15931295920/job/45036277438",
-              "status": "completed",
-              "conclusion": "failure",
-              "started_at": "2025-06-30T07:24:18Z",
-              "completed_at": "2025-06-30T07:31:50Z",
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 45036277398,
-              "name": "ubuntu-latest - Java 11 - Maven",
-              "html_url": "https://github.com/kiegroup/jbpm/actions/runs/15931295920/job/45036277398",
-              "status": "in_progress",
-              "conclusion": null,
-              "started_at": "2025-06-30T09:28:53Z",
-              "completed_at": null,
-              "slug": "github-actions",
-              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
-            },
-            {
-              "id": 37322283877,
-              "name": "Linux - Full Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/jbpm-7.67.x-blue.fdb/51/",
-              "conclusion": "pending",
-              "started_at": "2025-06-30T07:24:27Z",
-              "completed_at": "2025-06-30T07:24:27Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 37322517623,
-              "name": "Linux - Pull Request",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-7.67.x-blue.pr/158/",
-              "conclusion": "pending",
-              "started_at": "2025-06-30T07:36:42Z",
-              "completed_at": "2025-06-30T07:36:42Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            },
-            {
-              "id": 37325195786,
-              "name": "Linux - Compile Downstream Build",
-              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/jbpm-7.67.x-blue.compile/12/",
-              "conclusion": "pending",
-              "started_at": "2025-06-30T09:27:32Z",
-              "completed_at": "2025-06-30T09:27:32Z",
-              "slug": true,
-              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
-            }
-          ]
-        },
-        {
           "number": 2460,
           "title": "[JBPM-10252] Unable to update or modify timers if multiple timerbound…",
           "url": "https://api.github.com/repos/kiegroup/jbpm/pulls/2460",
@@ -13049,7 +13038,7 @@
             }
           ],
           "created_at": "2025-05-26T08:13:41Z",
-          "updated_at": "2025-06-03T13:44:08Z",
+          "updated_at": "2025-06-30T10:17:40Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -14199,7 +14188,7 @@
               "sha": "384b166a0d7445c32eb0f27d10507ef15dc5bde6"
             },
             {
-              "sha": "256a26af6fba669cc5656e55870f88e7c5929641"
+              "sha": "6ef551e18267cc05ebcafbc55942640b648569b3"
             },
             {
               "sha": "cb391f839f62ba16c9e3e2170c5fd5932d1d7ec0"
@@ -14808,7 +14797,7 @@
               "sha": "5ba4e8de5e06154150d0e2c18729b954fa702842"
             },
             {
-              "sha": "a6ca3db4777380e8ecf45695b6bd3afb5a2ba2d7"
+              "sha": "e7480337962003c2f48779f2fad950bfc88335b4"
             },
             {
               "sha": "8dc8f6417d665bdcd4376eeea6c21f4f9247aa8e"
@@ -21061,36 +21050,6 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls{/number}",
       "pullRequests": [
         {
-          "number": 138,
-          "title": "[7.67.x-blue] Upgrade netty handler version to 4.1.118.Final ",
-          "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/138",
-          "html_url": "https://github.com/kiegroup/process-migration-service/pull/138",
-          "state": "open",
-          "labels": [],
-          "draft": false,
-          "requested_reviewers": [],
-          "created_at": "2025-06-16T07:54:23Z",
-          "updated_at": "2025-06-27T15:46:48Z",
-          "closed_at": null,
-          "merged_at": null,
-          "base": {
-            "ref": "7.67.x-blue",
-            "sha": "32e23767045f042b435cd37081bafd5ec265cf3c",
-            "label": "kiegroup:7.67.x-blue"
-          },
-          "head": {
-            "ref": "upgrade_netty_handler",
-            "sha": "d3b172ef71a9e177204dd48723447a12aed66044",
-            "label": "AthiraHari77:upgrade_netty_handler"
-          },
-          "user": {
-            "login": "AthiraHari77",
-            "avatar_url": "https://avatars.githubusercontent.com/u/183633843?v=4",
-            "html_url": "https://github.com/AthiraHari77"
-          },
-          "checks": []
-        },
-        {
           "number": 115,
           "title": "Bump minimist, mkdirp and loader-fs-cache in /frontend",
           "url": "https://api.github.com/repos/kiegroup/process-migration-service/pulls/115",
@@ -21743,7 +21702,7 @@
               "sha": "90590627526bf3d6e1166487697d8ec3dfc0e644"
             },
             {
-              "sha": "b1ee37e79e3d2f55d0df196a5fcc8687cf8d99fe"
+              "sha": "bd0ddb49cc923d668c8278c0e47bbe0ab4e48a77"
             },
             {
               "sha": "bddfcf0ac1d764e501a294bc0e06fa8c2c907cb5"
