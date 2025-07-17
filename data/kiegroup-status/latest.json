@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-07-17T06:40:18.381Z",
+    "date": "2025-07-17T09:31:51.834Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/16338069070"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/16341487866"
   },
   "projects": [
     {
@@ -2629,7 +2629,7 @@
             }
           ],
           "created_at": "2025-07-17T06:13:34Z",
-          "updated_at": "2025-07-17T06:22:42Z",
+          "updated_at": "2025-07-17T07:20:23Z",
           "closed_at": null,
           "merged_at": null,
           "base": {
@@ -15703,6 +15703,58 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3084,
+          "title": "Remove resteasy-jackson-provider",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3084",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-integration/pull/3084",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-07-17T06:49:31Z",
+          "updated_at": "2025-07-17T06:49:31Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "eecd3c661d9fab7fa11a74a40eeecb035c714bfe",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-resteasy-jackson",
+            "sha": "0c157266c53b8255f6da82f69958959e31536137",
+            "label": "RishiRajAnand:remove-resteasy-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 46154500562,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-integration/actions/runs/16338233056/job/46154500562",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:49:39Z",
+              "completed_at": "2025-07-17T06:54:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37756973851,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-integration-7.67.x-blue.pr/194/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:54:58Z",
+              "completed_at": "2025-07-17T06:54:58Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3080,
           "title": "Adding debug information to kiespringtransactionmanager",
           "url": "https://api.github.com/repos/kiegroup/droolsjbpm-integration/pulls/3080",
@@ -21572,6 +21624,58 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls{/number}",
       "pullRequests": [
         {
+          "number": 3839,
+          "title": "Remove resteasy-jackson-provider",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3839",
+          "html_url": "https://github.com/kiegroup/kie-wb-common/pull/3839",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-07-17T06:44:17Z",
+          "updated_at": "2025-07-17T06:44:17Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "3e70a8e87aba9762a52a4e81262899e583113670",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-resteasy-jackson",
+            "sha": "b851db4091ef947828eade28fbabae3237863916",
+            "label": "RishiRajAnand:remove-resteasy-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 46154247727,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-common/actions/runs/16338149065/job/46154247727",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:44:25Z",
+              "completed_at": "2025-07-17T06:50:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37756873470,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-common-7.67.x-blue.pr/83/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:48:55Z",
+              "completed_at": "2025-07-17T06:48:55Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 3837,
           "title": "Upgrading logback and slf4j due to CVE",
           "url": "https://api.github.com/repos/kiegroup/kie-wb-common/pulls/3837",
@@ -23277,6 +23381,69 @@
       "pulls_url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls{/number}",
       "pullRequests": [
         {
+          "number": 1610,
+          "title": "Remove resteasy-jackson-provider",
+          "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1610",
+          "html_url": "https://github.com/kiegroup/jbpm-wb/pull/1610",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-07-17T07:20:11Z",
+          "updated_at": "2025-07-17T07:20:11Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "eda8570365b7039fdd4c09f2fb67cd0b26d2ecb1",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-resteasy-jackson",
+            "sha": "9c1b6a9a1ebb8d763bced50dc01976ea9aab5db1",
+            "label": "RishiRajAnand:remove-resteasy-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 46156197096,
+              "name": "ubuntu-latest - Java 8 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/16338793715/job/46156197096",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T07:20:18Z",
+              "completed_at": "2025-07-17T07:26:26Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 46156197092,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/jbpm-wb/actions/runs/16338793715/job/46156197092",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T07:20:18Z",
+              "completed_at": "2025-07-17T07:26:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37757532776,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/jbpm-wb-7.67.x-blue.pr/29/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T07:24:27Z",
+              "completed_at": "2025-07-17T07:24:27Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
+        {
           "number": 1609,
           "title": "[7.67.x] [RHPAM-4889] - adjustments to make it easier to consume from openshift env vars",
           "url": "https://api.github.com/repos/kiegroup/jbpm-wb/pulls/1609",
@@ -23707,7 +23874,60 @@
       "default_branch": "main",
       "repo_url": "https://github.com/kiegroup/kie-wb-distributions",
       "pulls_url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls{/number}",
-      "pullRequests": [],
+      "pullRequests": [
+        {
+          "number": 1249,
+          "title": "Remove resteasy-jackson-provider",
+          "url": "https://api.github.com/repos/kiegroup/kie-wb-distributions/pulls/1249",
+          "html_url": "https://github.com/kiegroup/kie-wb-distributions/pull/1249",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-07-17T07:00:09Z",
+          "updated_at": "2025-07-17T07:00:09Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "079a338c465ef6fa849c17d384435b1aa955ceeb",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-resteasy-jackson",
+            "sha": "431c9f0c7582b429acece8b12d3f798be8f1e8c6",
+            "label": "RishiRajAnand:remove-resteasy-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 46155049009,
+              "name": "ubuntu-18.04 - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/kie-wb-distributions/actions/runs/16338417656/job/46155049009",
+              "status": "queued",
+              "conclusion": null,
+              "started_at": "2025-07-17T07:00:15Z",
+              "completed_at": null,
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37757203656,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/kie-wb-distributions-7.67.x-blue.pr/71/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T07:07:12Z",
+              "completed_at": "2025-07-17T07:07:12Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        }
+      ],
       "branchesComparison": {
         "7.67.x": {
           "7.67.x-blue": [
