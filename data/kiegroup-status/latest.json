@@ -2,9 +2,9 @@
   "metadata": {
     "title": "Kiegroup Status",
     "subtitle": "Kiegroup organization repositories CI Status",
-    "date": "2025-07-17T04:00:47.332Z",
+    "date": "2025-07-17T06:40:18.381Z",
     "createdBy": "Github Action",
-    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/16335877570"
+    "createdUrl": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/16338069070"
   },
   "projects": [
     {
@@ -2613,6 +2613,84 @@
       "repo_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap",
       "pulls_url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 2597,
+          "title": "Remove resteasy-jackson-provider",
+          "url": "https://api.github.com/repos/kiegroup/droolsjbpm-build-bootstrap/pulls/2597",
+          "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/pull/2597",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [
+            {
+              "login": "akumar074",
+              "avatar_url": "https://avatars.githubusercontent.com/u/19465051?v=4",
+              "html_url": "https://github.com/akumar074"
+            }
+          ],
+          "created_at": "2025-07-17T06:13:34Z",
+          "updated_at": "2025-07-17T06:22:42Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "bce5a19da39987650286cad4b70e045870695bd8",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-resteasy-jackson",
+            "sha": "9f235cbcda8c2819ba20753b39ae76877eb7c596",
+            "label": "RishiRajAnand:remove-resteasy-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 46152815632,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/droolsjbpm-build-bootstrap/actions/runs/16337645253/job/46152815632",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:13:47Z",
+              "completed_at": "2025-07-17T06:14:55Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37756390787,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/droolsjbpm-build-bootstrap-7.67.x-blue.pr/233/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:18:50Z",
+              "completed_at": "2025-07-17T06:18:50Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37756404386,
+              "name": "Linux - Full Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/fdb/job/droolsjbpm-build-bootstrap-7.67.x-blue.fdb/491/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:19:42Z",
+              "completed_at": "2025-07-17T06:19:42Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37756423354,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/droolsjbpm-build-bootstrap-7.67.x-blue.compile/148/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:20:52Z",
+              "completed_at": "2025-07-17T06:20:52Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 2596,
           "title": "Bump org.apache.cxf:cxf-core from 3.4.10 to 3.6.6",
@@ -8410,6 +8488,68 @@
       "repo_url": "https://github.com/kiegroup/appformer",
       "pulls_url": "https://api.github.com/repos/kiegroup/appformer/pulls{/number}",
       "pullRequests": [
+        {
+          "number": 1453,
+          "title": "Remove resteasy-jackson-provider",
+          "url": "https://api.github.com/repos/kiegroup/appformer/pulls/1453",
+          "html_url": "https://github.com/kiegroup/appformer/pull/1453",
+          "state": "open",
+          "labels": [],
+          "draft": false,
+          "requested_reviewers": [],
+          "created_at": "2025-07-17T06:22:22Z",
+          "updated_at": "2025-07-17T06:22:22Z",
+          "closed_at": null,
+          "merged_at": null,
+          "base": {
+            "ref": "7.67.x-blue",
+            "sha": "23f33aa896d18b91a0624a371c9226293be99c72",
+            "label": "kiegroup:7.67.x-blue"
+          },
+          "head": {
+            "ref": "remove-resteasy-jackson",
+            "sha": "80eb037f6260e9058dc1f53d83d814a2c14edb30",
+            "label": "RishiRajAnand:remove-resteasy-jackson"
+          },
+          "user": {
+            "login": "RishiRajAnand",
+            "avatar_url": "https://avatars.githubusercontent.com/u/23648802?v=4",
+            "html_url": "https://github.com/RishiRajAnand"
+          },
+          "checks": [
+            {
+              "id": 46153209484,
+              "name": "ubuntu-latest - Java 11 - Maven",
+              "html_url": "https://github.com/kiegroup/appformer/actions/runs/16337784085/job/46153209484",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:22:29Z",
+              "completed_at": "2025-07-17T06:28:25Z",
+              "slug": "github-actions",
+              "avatar_url": "https://avatars.githubusercontent.com/u/9919?v=4"
+            },
+            {
+              "id": 37756571861,
+              "name": "Linux - Compile Downstream Build",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/compile/job/appformer-7.67.x-blue.compile/159/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:30:21Z",
+              "completed_at": "2025-07-17T06:30:21Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            },
+            {
+              "id": 37756574020,
+              "name": "Linux - Pull Request",
+              "html_url": "https://jenkins-csb-business-automation-eng.dno.corp.redhat.com/job/KIE/job/7.67.x-blue/job/pullrequest/job/appformer-7.67.x-blue.pr/91/",
+              "conclusion": "failure",
+              "started_at": "2025-07-17T06:30:29Z",
+              "completed_at": "2025-07-17T06:30:29Z",
+              "slug": true,
+              "avatar_url": "https://avatars.githubusercontent.com/u/11995863?v=4"
+            }
+          ]
+        },
         {
           "number": 1447,
           "title": "Updating commons-io to latest",
