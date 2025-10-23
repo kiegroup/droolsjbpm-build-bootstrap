@@ -490,6 +490,7 @@
     <version.shade.plugin>3.2.4</version.shade.plugin>
 
     <version.lock-treatment-tool>^0.2.2</version.lock-treatment-tool>
+    <version.org.apache.activemq.artemis>2.38.0</version.org.apache.activemq.artemis>
   </properties>
 
   <repositories>
@@ -2241,14 +2242,43 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- dependencies from jboss-ip-bom -->
-      <!--
-        CONVENTIONS:
-        - Dependencies must be SORTED ALPHABETICALLY on groupId (other forms of sorting were found to be unclear and ambiguous).
-        - Do not declare <scope> (exception: import) or <optional>: a child module will declare scope/optional itself.
-        - Always extract the version as a property.
-        - A element's inner order is <groupId>, <artifactId>, [<type>,] [<classifier>,] <version> (following Aether proper)
-      -->
+      <!-- Version overrides to fix vulnerabilities -->
+      <dependency>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>artemis-jms-server</artifactId>
+        <version>${version.org.apache.activemq.artemis}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_2.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jta_1.1_spec</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.activemq</groupId>
+        <artifactId>artemis-jms-client</artifactId>
+        <version>${version.org.apache.activemq.artemis}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.spec.javax.jms</groupId>
+            <artifactId>jboss-jms-api_2.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-json_1.0_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <!-- Version overrides to fix vulnerabilities - end. -->
+
       <dependency>
         <groupId>org.kie</groupId>
         <artifactId>narayana-integration-bom</artifactId>
