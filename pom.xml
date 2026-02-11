@@ -4912,6 +4912,12 @@
         <groupId>org.jboss.resteasy</groupId>
         <artifactId>resteasy-undertow</artifactId>
         <version>${version.org.jboss.resteasy}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>io.undertow</groupId>
+            <artifactId>undertow-core</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
 
