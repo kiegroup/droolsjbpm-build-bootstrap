@@ -3969,7 +3969,7 @@
         <artifactId>maven-plugin-api</artifactId>
         <version>${version.org.apache.maven}</version>
         <exclusions>
-          <!-- CVE fixes: Exclude old commons-lang3 transitive dependency -->
+          <!-- Exclude old commons-lang3 transitive dependency -->
           <exclusion>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -3989,7 +3989,7 @@
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
           </exclusion>
-          <!-- CVE fixes: Exclude old commons-io and commons-lang3 transitive dependencies -->
+          <!-- Exclude old commons-io and commons-lang3 transitive dependencies -->
           <exclusion>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -4013,7 +4013,7 @@
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
           </exclusion>
-          <!-- CVE fixes: Exclude old commons-io and commons-lang3 transitive dependencies -->
+          <!-- Exclude old commons-io and commons-lang3 transitive dependencies -->
           <exclusion>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
