@@ -4028,11 +4028,25 @@
         <groupId>org.apache.maven.shared</groupId>
         <artifactId>maven-shared-utils</artifactId>
         <version>${version.org.apache.maven.utils}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency  -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-archiver</artifactId>
         <version>${version.org.apache.maven.archiver}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
