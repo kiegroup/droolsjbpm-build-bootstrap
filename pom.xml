@@ -255,6 +255,7 @@
     <version.org.powermock>2.0.7</version.org.powermock>
     <version.org.python>2.7.2</version.org.python>
     <version.org.quartz-scheduler>2.3.2</version.org.quartz-scheduler>
+    <version.com.mchange>0.4.0</version.com.mchange>
     <version.org.reflections>0.9.11</version.org.reflections>
     <!-- Avoid using scannotation in favor of its successor org.reflections -->
     <version.org.scannotation>1.0.3</version.org.scannotation>
@@ -3951,6 +3952,13 @@
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-artifact</artifactId>
         <version>${version.org.apache.maven}</version>
+        <exclusions>
+          <!-- CVE-2024-47554: Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -3961,6 +3969,13 @@
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-plugin-api</artifactId>
         <version>${version.org.apache.maven}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -3974,6 +3989,15 @@
           <exclusion>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
+          </exclusion>
+          <!-- Exclude old commons-io and commons-lang3 transitive dependencies -->
+          <exclusion>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3990,17 +4014,40 @@
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
           </exclusion>
+          <!-- Exclude old commons-io and commons-lang3 transitive dependencies -->
+          <exclusion>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven.shared</groupId>
         <artifactId>maven-shared-utils</artifactId>
         <version>${version.org.apache.maven.utils}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency  -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-archiver</artifactId>
         <version>${version.org.apache.maven.archiver}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -5165,6 +5212,14 @@
         <version>${version.org.quartz-scheduler}</version>
       </dependency>
 
+     
+      <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>mchange-commons-java</artifactId>
+        <version>${version.com.mchange}</version>
+      </dependency>
+
+
       <dependency>
         <groupId>org.ocpsoft.prettytime</groupId>
         <artifactId>prettytime</artifactId>
@@ -5733,6 +5788,11 @@
           <exclusion>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
+          </exclusion>
+          <!-- CVE-2024-47554: Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
