@@ -4684,11 +4684,8 @@
         <version>${version.org.hamcrest}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-envers</artifactId>
-        <version>${version.org.hibernate}</version>
-      </dependency>
+      <!-- hibernate-envers/5.4.24.Final excluded - not available in BAMOE QE nexus -->
+      <!-- See exclusions in hibernate-core, hibernate-entitymanager, and hibernate-jpamodelgen -->
       <dependency>
         <groupId>org.hibernate.common</groupId>
         <artifactId>hibernate-commons-annotations</artifactId>
@@ -4702,6 +4699,10 @@
           <exclusion>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -6215,6 +6216,10 @@
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -6229,6 +6234,10 @@
           <exclusion>
             <groupId>org.jboss.spec.javax.transaction</groupId>
             <artifactId>jboss-transaction-api_1.2_spec</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-envers</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
