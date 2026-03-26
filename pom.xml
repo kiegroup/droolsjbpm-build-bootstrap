@@ -55,7 +55,7 @@
     -->
     <version.aopalliance>1.0</version.aopalliance>
     <version.ch.qos.cal10n>0.8.1</version.ch.qos.cal10n>
-    <version.ch.qos.logback>1.2.13</version.ch.qos.logback>
+    <version.ch.qos.logback>1.5.15</version.ch.qos.logback>
     <version.commons-beanutils>1.11.0</version.commons-beanutils>
     <version.commons-cli>1.4</version.commons-cli>
     <version.commons-codec>1.18.0</version.commons-codec>
@@ -105,7 +105,7 @@
     <version.io.micrometer>1.7.3</version.io.micrometer>
     <version.io.springfox>2.9.2</version.io.springfox>
     <version.io.smallrye.openapi.core>2.1.4</version.io.smallrye.openapi.core>
-    <version.io.strimzi.strimzi-test-container>0.113.0</version.io.strimzi.strimzi-test-container>
+    <version.io.strimzi.strimzi-test-container>0.111.0</version.io.strimzi.strimzi-test-container>
     <version.io.takari.maven.plugins.testing>2.9.2</version.io.takari.maven.plugins.testing>
     <version.io.undertow>2.2.38.Final</version.io.undertow>
     <version.jaxen>1.1.6</version.jaxen>
@@ -255,10 +255,13 @@
     <version.org.powermock>2.0.7</version.org.powermock>
     <version.org.python>2.7.2</version.org.python>
     <version.org.quartz-scheduler>2.3.2</version.org.quartz-scheduler>
+    <version.com.mchange>0.4.0</version.com.mchange>
+    <version.com.mchange.c3p0>0.12.0</version.com.mchange.c3p0>
     <version.org.reflections>0.9.11</version.org.reflections>
     <!-- Avoid using scannotation in favor of its successor org.reflections -->
     <version.org.scannotation>1.0.3</version.org.scannotation>
-    <version.org.slf4j>1.7.30</version.org.slf4j>
+    <!-- DBACLD-189752  Upgraded slf4j version to 2.x to make it compatible with logback-classic -->
+    <version.org.slf4j>2.0.15</version.org.slf4j>
     <version.org.sonatype.aether>1.13.1</version.org.sonatype.aether>
     <version.org.sonatype.plexus.plexus-cipher>2.0</version.org.sonatype.plexus.plexus-cipher>
     <version.org.sonatype.plexus.plexus-sec-dispatcher>2.0</version.org.sonatype.plexus.plexus-sec-dispatcher>
@@ -433,6 +436,7 @@
     <version.bootable>6.1.2.Final</version.bootable>
     <version.net.byte-buddy>1.10.3</version.net.byte-buddy>
     <version.docker-client>3.5.12</version.docker-client>
+    <version.docker-java>3.4.2</version.docker-java>
     <version.kubernetes-client>4.7.2</version.kubernetes-client>
     <version.com.squareup.okio>3.6.0</version.com.squareup.okio>
     <version.zjsonpatch>0.3.0</version.zjsonpatch>
@@ -474,9 +478,9 @@
     <jacoco.exec.file>${project.root.dir}/target/jacoco.exec</jacoco.exec.file>
     <!-- com.github.eirslett:frontend-maven-plugin version -->
     <version.frontend-maven-plugin>1.15.0</version.frontend-maven-plugin>
-    <version.node>v12.16.2</version.node>
+    <version.node>v16.2.0</version.node>
     <version.npm>7.15.1</version.npm>
-    <version.yarn>v1.22.4</version.yarn>
+    <version.yarn>v1.22.10</version.yarn>
 
     <version.org.awaitility>3.0.0</version.org.awaitility>
     <version.io.github.bonigarcia>5.9.2</version.io.github.bonigarcia>
@@ -485,7 +489,7 @@
     <version.org.hisrc.jsonix.jsonix-scripts>3.0.0</version.org.hisrc.jsonix.jsonix-scripts>
     <version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>0.15.3</version.org.jvnet.jaxb2.maven2.maven-jaxb2-plugin>
     <version.org.mock-server>5.15.0</version.org.mock-server>
-    <version.org.apache.kafka>3.7.2</version.org.apache.kafka>
+    <version.org.apache.kafka>3.9.1</version.org.apache.kafka>
     <version.shade.plugin>3.2.4</version.shade.plugin>
 
     <version.lock-treatment-tool>^0.2.2</version.lock-treatment-tool>
@@ -2534,6 +2538,12 @@
       </dependency>
 
       <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>${version.com.mchange.c3p0}</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.github.librepdf</groupId>
         <artifactId>openpdf</artifactId>
         <version>${version.openpdf}</version>
@@ -3951,6 +3961,13 @@
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-artifact</artifactId>
         <version>${version.org.apache.maven}</version>
+        <exclusions>
+          <!-- CVE-2024-47554: Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -3961,6 +3978,13 @@
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-plugin-api</artifactId>
         <version>${version.org.apache.maven}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -3974,6 +3998,15 @@
           <exclusion>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
+          </exclusion>
+          <!-- Exclude old commons-io and commons-lang3 transitive dependencies -->
+          <exclusion>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -3990,17 +4023,40 @@
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
           </exclusion>
+          <!-- Exclude old commons-io and commons-lang3 transitive dependencies -->
+          <exclusion>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven.shared</groupId>
         <artifactId>maven-shared-utils</artifactId>
         <version>${version.org.apache.maven.utils}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency  -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-archiver</artifactId>
         <version>${version.org.apache.maven.archiver}</version>
+        <exclusions>
+          <!-- Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
@@ -5171,6 +5227,14 @@
         <version>${version.org.quartz-scheduler}</version>
       </dependency>
 
+     
+      <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>mchange-commons-java</artifactId>
+        <version>${version.com.mchange}</version>
+      </dependency>
+
+
       <dependency>
         <groupId>org.ocpsoft.prettytime</groupId>
         <artifactId>prettytime</artifactId>
@@ -5740,6 +5804,11 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
           </exclusion>
+          <!-- CVE-2024-47554: Exclude old commons-lang3 transitive dependency -->
+          <exclusion>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
 
@@ -6276,6 +6345,21 @@
         </exclusions>
       </dependency>
       <dependency>
+        <groupId>com.github.docker-java</groupId>
+        <artifactId>docker-java-core</artifactId>
+        <version>${version.docker-java}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.docker-java</groupId>
+        <artifactId>docker-java-api</artifactId>
+        <version>${version.docker-java}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.docker-java</groupId>
+        <artifactId>docker-java-transport-httpclient5</artifactId>
+        <version>${version.docker-java}</version>
+      </dependency>
+      <dependency>
         <groupId>com.squareup.okio</groupId>
         <artifactId>okio</artifactId>
         <version>${version.com.squareup.okio}</version>
@@ -6605,19 +6689,20 @@
         <artifactId>java-jwt</artifactId>
         <version>${version.com.auth0-jwt}</version>
       </dependency>
+   
       <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk15to18</artifactId>
+        <artifactId>bcprov-jdk18on</artifactId>
         <version>${version.org.bouncycastle}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcpkix-jdk15to18</artifactId>
+        <artifactId>bcpkix-jdk18on</artifactId>
         <version>${version.org.bouncycastle}</version>
       </dependency>
       <dependency>
         <groupId>org.bouncycastle</groupId>
-        <artifactId>bcpg-jdk15to18</artifactId>
+        <artifactId>bcutil-jdk18on</artifactId>
         <version>${version.org.bouncycastle}</version>
       </dependency>
 
